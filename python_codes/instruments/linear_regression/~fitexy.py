@@ -78,3 +78,5 @@ def get_ab(x,sigx,y,sigy,ainit,binit,paramsprecision,N):
 					bfit = b
 					
 	return afit,bfit,epsilon
+	
+def get_ep	

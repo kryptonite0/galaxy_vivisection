@@ -2,7 +2,8 @@ import numpy as np
 import fitexy
 
 #data = open('test.dat')
-data = open('Savorgnan_2014.dat')
+#data = open('Savorgnan_2014.dat')
+data = open('msigma.out')
 
 xlist = []
 sigxlist = []
@@ -22,5 +23,4 @@ sigx = np.asarray(sigxlist)
 y = np.asarray(ylist)
 sigy = np.asarray(sigylist)
 
-fitexy.modfitexy(x,sigx,y,sigy,2.,8.,0.,4.,0.0)
-#fitexy.modfitexy(x,sigx,y,sigy,5.,9.,1,10.,0.0)
+fitexy.modfitexy(x,sigx,y,sigy)
