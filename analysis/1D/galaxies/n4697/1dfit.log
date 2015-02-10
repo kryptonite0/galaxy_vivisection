@@ -1,0 +1,2112 @@
+Input ellipse file:  n4697_op_overmos_galfitsky_logscale.ell
+Excluded data:  [[-1.2232836, 6.116418]]
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0229761801624
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 176
+Chisq:  1.4659727992e-05
+Reduced chisq:  4.88657599734e-07
+N_free:  30
+Component 1: sersic.
+R_e [pixel] =  156.42 +/- 0.00 	[initial value = 160.0 ]
+mu_e [mag/pixel^2] =  19.75 +/- 0.00 	 [initial value = 19.7 ]
+n =  7.06 +/- 0.00        [initial value = 7.2 ]
+b_n =  13.78
+m_tot [mag] =  5.09
+
+Component 6: ferrer.
+R_out [pixel] =  111.25 +/- 0.00 	[initial value = 111.0 ]
+mu_0 [mag/pixel^2] =  17.72 +/- 0.00 	 [initial value = 17.7 ]
+alpha [pixel] =  4.00 +/- 0.00        [initial value = 3.99 ]
+beta =  0.01 +/- 0.00        [initial value = 0.01 ]
+m_tot [mag] = -99
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_logscale.ell
+Excluded data:  [[-1.2232836, 6.116418]]
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0140503395217
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 98
+Chisq:  2.22188788909e-06
+Reduced chisq:  7.40629296363e-08
+N_free:  30
+Component 1: sersic.
+R_e [pixel] =  149.23 +/- 0.00 	[initial value = 150.0 ]
+mu_e [mag/pixel^2] =  20.05 +/- 0.00 	 [initial value = 20.0 ]
+n =  7.51 +/- 0.00        [initial value = 7.2 ]
+b_n =  14.68
+m_tot [mag] =  5.46
+
+Component 6: ferrer.
+R_out [pixel] =  90.04 +/- 0.00 	[initial value = 91.0 ]
+mu_0 [mag/pixel^2] =  18.38 +/- 0.00 	 [initial value = 18.4 ]
+alpha [pixel] =  4.00 +/- 0.00        [initial value = 3.99 ]
+beta =  0.01 +/- 0.00        [initial value = 0.01 ]
+m_tot [mag] = -99
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_logscale.ell
+Excluded data:  [[-1.2232836, 6.116418]]
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0234186504546
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 160
+Chisq:  1.53249577399e-05
+Reduced chisq:  5.10831924663e-07
+N_free:  30
+Component 1: sersic.
+R_e [pixel] =  158.25 +/- 0.00 	[initial value = 160.0 ]
+mu_e [mag/pixel^2] =  19.77 +/- 0.00 	 [initial value = 19.7 ]
+n =  7.04 +/- 0.00        [initial value = 7.2 ]
+b_n =  13.75
+m_tot [mag] =  5.09
+
+Component 6: ferrer.
+R_out [pixel] =  111.08 +/- 0.00 	[initial value = 111.0 ]
+mu_0 [mag/pixel^2] =  17.70 +/- 0.00 	 [initial value = 17.7 ]
+alpha [pixel] =  4.00 +/- 0.00        [initial value = 3.99 ]
+beta =  0.01 +/- 0.00        [initial value = 0.01 ]
+m_tot [mag] = -99
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_logscale.ell
+Excluded data:  [[-1.2232836, 6.116418]]
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0163327572523
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 84
+Chisq:  3.69597888704e-06
+Reduced chisq:  1.23199296235e-07
+N_free:  30
+Component 1: sersic.
+R_e [pixel] =  147.91 +/- 0.00 	[initial value = 150.0 ]
+mu_e [mag/pixel^2] =  20.03 +/- 0.00 	 [initial value = 20.0 ]
+n =  7.32 +/- 0.00        [initial value = 7.2 ]
+b_n =  14.30
+m_tot [mag] =  5.47
+
+Component 6: ferrer.
+R_out [pixel] =  88.26 +/- 0.00 	[initial value = 91.0 ]
+mu_0 [mag/pixel^2] =  18.29 +/- 0.00 	 [initial value = 18.4 ]
+alpha [pixel] =  4.00 +/- 0.00        [initial value = 3.99 ]
+beta =  0.01 +/- 0.00        [initial value = 0.01 ]
+m_tot [mag] = -99
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_combscale.ell
+Excluded data:  [[-1.2232836, 6.116418]]
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0217834056561
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 173
+Chisq:  5.90811712676e-05
+Reduced chisq:  4.01912729712e-07
+N_free:  147
+Component 1: sersic.
+R_e [pixel] =  160.64 +/- 0.00 	[initial value = 160.0 ]
+mu_e [mag/pixel^2] =  19.80 +/- 0.00 	 [initial value = 19.7 ]
+n =  7.37 +/- 0.00        [initial value = 7.2 ]
+b_n =  14.40
+m_tot [mag] =  5.06
+
+Component 6: ferrer.
+R_out [pixel] =  111.71 +/- 0.00 	[initial value = 111.0 ]
+mu_0 [mag/pixel^2] =  17.74 +/- 0.00 	 [initial value = 17.7 ]
+alpha [pixel] =  4.00 +/- 0.00        [initial value = 3.99 ]
+beta =  0.01 +/- 0.00        [initial value = 0.01 ]
+m_tot [mag] = -99
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_combscale.ell
+Excluded data:  [[-1.2232836, 6.116418]]
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0138092814211
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 176
+Chisq:  1.08337161692e-05
+Reduced chisq:  7.36987494501e-08
+N_free:  147
+Component 1: sersic.
+R_e [pixel] =  148.51 +/- 0.00 	[initial value = 150.0 ]
+mu_e [mag/pixel^2] =  20.04 +/- 0.00 	 [initial value = 20.0 ]
+n =  7.61 +/- 0.00        [initial value = 7.2 ]
+b_n =  14.88
+m_tot [mag] =  5.45
+
+Component 6: ferrer.
+R_out [pixel] =  91.85 +/- 0.00 	[initial value = 91.0 ]
+mu_0 [mag/pixel^2] =  18.50 +/- 0.00 	 [initial value = 18.4 ]
+alpha [pixel] =  4.00 +/- 0.00        [initial value = 3.99 ]
+beta =  0.01 +/- 0.00        [initial value = 0.01 ]
+m_tot [mag] = -99
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_combscale.ell
+Excluded data:  [[-1.2232836, 6.116418]]
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0220037728749
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 190
+Chisq:  6.14625466477e-05
+Reduced chisq:  4.18112562229e-07
+N_free:  147
+Component 1: sersic.
+R_e [pixel] =  157.42 +/- 0.00 	[initial value = 160.0 ]
+mu_e [mag/pixel^2] =  19.76 +/- 0.00 	 [initial value = 19.7 ]
+n =  7.24 +/- 0.00        [initial value = 7.2 ]
+b_n =  14.15
+m_tot [mag] =  5.07
+
+Component 6: ferrer.
+R_out [pixel] =  111.48 +/- 0.00 	[initial value = 111.0 ]
+mu_0 [mag/pixel^2] =  17.74 +/- 0.00 	 [initial value = 17.7 ]
+alpha [pixel] =  4.00 +/- 0.00        [initial value = 3.99 ]
+beta =  0.01 +/- 0.00        [initial value = 0.01 ]
+m_tot [mag] = -99
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_combscale.ell
+Excluded data:  [[-1.2232836, 6.116418]]
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0139667642976
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 159
+Chisq:  1.09694102387e-05
+Reduced chisq:  7.46218383588e-08
+N_free:  147
+Component 1: sersic.
+R_e [pixel] =  148.74 +/- 0.00 	[initial value = 150.0 ]
+mu_e [mag/pixel^2] =  20.04 +/- 0.00 	 [initial value = 20.0 ]
+n =  7.56 +/- 0.00        [initial value = 7.2 ]
+b_n =  14.79
+m_tot [mag] =  5.46
+
+Component 6: ferrer.
+R_out [pixel] =  91.65 +/- 0.00 	[initial value = 91.0 ]
+mu_0 [mag/pixel^2] =  18.48 +/- 0.00 	 [initial value = 18.4 ]
+alpha [pixel] =  4.00 +/- 0.00        [initial value = 3.99 ]
+beta =  0.01 +/- 0.00        [initial value = 0.01 ]
+m_tot [mag] = -99
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_logscale.ell
+Excluded data:  [[-1.2232836, 6.116418]]
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0235627784451
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 128
+Chisq:  1.56340496511e-05
+Reduced chisq:  5.21134988369e-07
+N_free:  30
+Component 1: sersic.
+R_e [pixel] =  156.28 +/- 0.00 	[initial value = 160.0 ]
+mu_e [mag/pixel^2] =  19.75 +/- 0.00 	 [initial value = 19.7 ]
+n =  6.97 +/- 0.00        [initial value = 7.2 ]
+b_n =  13.62
+m_tot [mag] =  5.09
+
+Component 6: ferrer.
+R_out [pixel] =  111.06 +/- 0.00 	[initial value = 111.0 ]
+mu_0 [mag/pixel^2] =  17.70 +/- 0.00 	 [initial value = 17.7 ]
+alpha [pixel] =  4.00 +/- 0.00        [initial value = 3.99 ]
+beta =  0.01 +/- 0.00        [initial value = 0.01 ]
+m_tot [mag] = -99
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_logscale.ell
+Excluded data:  [[-1.2232836, 6.116418]]
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0164683571226
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 99
+Chisq:  3.80044492166e-06
+Reduced chisq:  1.26681497389e-07
+N_free:  30
+Component 1: sersic.
+R_e [pixel] =  148.92 +/- 0.00 	[initial value = 150.0 ]
+mu_e [mag/pixel^2] =  20.04 +/- 0.00 	 [initial value = 20.0 ]
+n =  7.32 +/- 0.00        [initial value = 7.2 ]
+b_n =  14.31
+m_tot [mag] =  5.47
+
+Component 6: ferrer.
+R_out [pixel] =  88.28 +/- 0.00 	[initial value = 91.0 ]
+mu_0 [mag/pixel^2] =  18.27 +/- 0.00 	 [initial value = 18.4 ]
+alpha [pixel] =  4.00 +/- 0.00        [initial value = 3.99 ]
+beta =  0.01 +/- 0.00        [initial value = 0.01 ]
+m_tot [mag] = -99
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_logscale.ell
+Excluded data:  [[-1.2232836, 6.116418]]
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0246353486236
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 154
+Chisq:  1.87532435552e-05
+Reduced chisq:  6.25108118505e-07
+N_free:  30
+Component 1: sersic.
+R_e [pixel] =  156.32 +/- 0.00 	[initial value = 160.0 ]
+mu_e [mag/pixel^2] =  19.74 +/- 0.00 	 [initial value = 19.7 ]
+n =  6.85 +/- 0.00        [initial value = 7.2 ]
+b_n =  13.37
+m_tot [mag] =  5.10
+
+Component 6: ferrer.
+R_out [pixel] =  110.44 +/- 0.00 	[initial value = 111.0 ]
+mu_0 [mag/pixel^2] =  17.67 +/- 0.00 	 [initial value = 17.7 ]
+alpha [pixel] =  4.00 +/- 0.00        [initial value = 3.99 ]
+beta =  0.01 +/- 0.00        [initial value = 0.01 ]
+m_tot [mag] = -99
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_logscale.ell
+Excluded data:  [[-1.2232836, 6.116418]]
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0213657943008
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 227
+Chisq:  1.00195328964e-05
+Reduced chisq:  3.33984429881e-07
+N_free:  30
+Component 1: sersic.
+R_e [pixel] =  148.01 +/- 0.00 	[initial value = 150.0 ]
+mu_e [mag/pixel^2] =  20.03 +/- 0.00 	 [initial value = 20.0 ]
+n =  7.05 +/- 0.00        [initial value = 7.2 ]
+b_n =  13.77
+m_tot [mag] =  5.49
+
+Component 6: ferrer.
+R_out [pixel] =  85.58 +/- 0.00 	[initial value = 91.0 ]
+mu_0 [mag/pixel^2] =  18.14 +/- 0.00 	 [initial value = 18.4 ]
+alpha [pixel] =  4.00 +/- 0.00        [initial value = 3.99 ]
+beta =  0.01 +/- 0.00        [initial value = 0.01 ]
+m_tot [mag] = -99
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_combscale.ell
+Excluded data:  [[-1.2232836, 6.116418]]
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.02199774023
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 189
+Chisq:  6.14399072292e-05
+Reduced chisq:  4.17958552579e-07
+N_free:  147
+Component 1: sersic.
+R_e [pixel] =  157.37 +/- 0.00 	[initial value = 160.0 ]
+mu_e [mag/pixel^2] =  19.76 +/- 0.00 	 [initial value = 19.7 ]
+n =  7.23 +/- 0.00        [initial value = 7.2 ]
+b_n =  14.13
+m_tot [mag] =  5.08
+
+Component 6: ferrer.
+R_out [pixel] =  111.45 +/- 0.00 	[initial value = 111.0 ]
+mu_0 [mag/pixel^2] =  17.74 +/- 0.00 	 [initial value = 17.7 ]
+alpha [pixel] =  4.00 +/- 0.00        [initial value = 3.99 ]
+beta =  0.01 +/- 0.00        [initial value = 0.01 ]
+m_tot [mag] = -99
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_combscale.ell
+Excluded data:  [[-1.2232836, 6.116418]]
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0140794771284
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 175
+Chisq:  1.13797570279e-05
+Reduced chisq:  7.7413313115e-08
+N_free:  147
+Component 1: sersic.
+R_e [pixel] =  148.29 +/- 0.00 	[initial value = 150.0 ]
+mu_e [mag/pixel^2] =  20.04 +/- 0.00 	 [initial value = 20.0 ]
+n =  7.53 +/- 0.00        [initial value = 7.2 ]
+b_n =  14.72
+m_tot [mag] =  5.46
+
+Component 6: ferrer.
+R_out [pixel] =  91.56 +/- 0.00 	[initial value = 91.0 ]
+mu_0 [mag/pixel^2] =  18.47 +/- 0.00 	 [initial value = 18.4 ]
+alpha [pixel] =  4.00 +/- 0.00        [initial value = 3.99 ]
+beta =  0.01 +/- 0.00        [initial value = 0.01 ]
+m_tot [mag] = -99
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_combscale.ell
+Excluded data:  [[-1.2232836, 6.116418]]
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0219779925868
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 197
+Chisq:  6.12823972289e-05
+Reduced chisq:  4.16887055979e-07
+N_free:  147
+Component 1: sersic.
+R_e [pixel] =  157.42 +/- 0.00 	[initial value = 160.0 ]
+mu_e [mag/pixel^2] =  19.76 +/- 0.00 	 [initial value = 19.7 ]
+n =  7.20 +/- 0.00        [initial value = 7.2 ]
+b_n =  14.06
+m_tot [mag] =  5.08
+
+Component 6: ferrer.
+R_out [pixel] =  111.38 +/- 0.00 	[initial value = 111.0 ]
+mu_0 [mag/pixel^2] =  17.73 +/- 0.00 	 [initial value = 17.7 ]
+alpha [pixel] =  4.00 +/- 0.00        [initial value = 3.99 ]
+beta =  0.01 +/- 0.00        [initial value = 0.01 ]
+m_tot [mag] = -99
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_combscale.ell
+Excluded data:  [[-1.2232836, 6.116418]]
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0143803516704
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 128
+Chisq:  1.20944980854e-05
+Reduced chisq:  8.22754971796e-08
+N_free:  147
+Component 1: sersic.
+R_e [pixel] =  149.55 +/- 0.00 	[initial value = 150.0 ]
+mu_e [mag/pixel^2] =  20.06 +/- 0.00 	 [initial value = 20.0 ]
+n =  7.48 +/- 0.00        [initial value = 7.2 ]
+b_n =  14.63
+m_tot [mag] =  5.46
+
+Component 6: ferrer.
+R_out [pixel] =  91.22 +/- 0.00 	[initial value = 91.0 ]
+mu_0 [mag/pixel^2] =  18.43 +/- 0.00 	 [initial value = 18.4 ]
+alpha [pixel] =  4.00 +/- 0.00        [initial value = 3.99 ]
+beta =  0.01 +/- 0.00        [initial value = 0.01 ]
+m_tot [mag] = -99
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_logscale.ell
+Excluded data:  [[-1.2232836, 6.116418]]
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  3.0
+Zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0235627784451
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 128
+Chisq:  1.56340496511e-05
+Reduced chisq:  5.21134988369e-07
+N_free:  30
+Component 1: sersic.
+R_e [pixel] =  156.28 +/- 0.00 	[initial value = 160.0 ]
+mu_e [mag/pixel^2] =  19.75 +/- 0.00 	 [initial value = 19.7 ]
+n =  6.97 +/- 0.00        [initial value = 7.2 ]
+b_n =  13.62
+m_tot [mag] =  5.09
+
+Component 6: ferrer.
+R_out [pixel] =  111.06 +/- 0.00 	[initial value = 111.0 ]
+mu_0 [mag/pixel^2] =  17.70 +/- 0.00 	 [initial value = 17.7 ]
+alpha [pixel] =  4.00 +/- 0.00        [initial value = 3.99 ]
+beta =  0.01 +/- 0.00        [initial value = 0.01 ]
+m_tot [mag] = -99
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_logscale.ell
+Excluded data:  [[-1.2232836, 6.116418]]
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  3.0
+Zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0164683571226
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 99
+Chisq:  3.80044492166e-06
+Reduced chisq:  1.26681497389e-07
+N_free:  30
+Component 1: sersic.
+R_e [pixel] =  148.92 +/- 0.00 	[initial value = 150.0 ]
+mu_e [mag/pixel^2] =  20.04 +/- 0.00 	 [initial value = 20.0 ]
+n =  7.32 +/- 0.00        [initial value = 7.2 ]
+b_n =  14.31
+m_tot [mag] =  5.47
+
+Component 6: ferrer.
+R_out [pixel] =  88.28 +/- 0.00 	[initial value = 91.0 ]
+mu_0 [mag/pixel^2] =  18.27 +/- 0.00 	 [initial value = 18.4 ]
+alpha [pixel] =  4.00 +/- 0.00        [initial value = 3.99 ]
+beta =  0.01 +/- 0.00        [initial value = 0.01 ]
+m_tot [mag] = -99
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_logscale.ell
+Excluded data:  [[-1.2232836, 6.116418]]
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  3.0
+Zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0246353486236
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 154
+Chisq:  1.87532435552e-05
+Reduced chisq:  6.25108118505e-07
+N_free:  30
+Component 1: sersic.
+R_e [pixel] =  156.32 +/- 0.00 	[initial value = 160.0 ]
+mu_e [mag/pixel^2] =  19.74 +/- 0.00 	 [initial value = 19.7 ]
+n =  6.85 +/- 0.00        [initial value = 7.2 ]
+b_n =  13.37
+m_tot [mag] =  5.10
+
+Component 6: ferrer.
+R_out [pixel] =  110.44 +/- 0.00 	[initial value = 111.0 ]
+mu_0 [mag/pixel^2] =  17.67 +/- 0.00 	 [initial value = 17.7 ]
+alpha [pixel] =  4.00 +/- 0.00        [initial value = 3.99 ]
+beta =  0.01 +/- 0.00        [initial value = 0.01 ]
+m_tot [mag] = -99
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_logscale.ell
+Excluded data:  [[-1.2232836, 6.116418]]
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  3.0
+Zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0213657943008
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 227
+Chisq:  1.00195328964e-05
+Reduced chisq:  3.33984429881e-07
+N_free:  30
+Component 1: sersic.
+R_e [pixel] =  148.01 +/- 0.00 	[initial value = 150.0 ]
+mu_e [mag/pixel^2] =  20.03 +/- 0.00 	 [initial value = 20.0 ]
+n =  7.05 +/- 0.00        [initial value = 7.2 ]
+b_n =  13.77
+m_tot [mag] =  5.49
+
+Component 6: ferrer.
+R_out [pixel] =  85.58 +/- 0.00 	[initial value = 91.0 ]
+mu_0 [mag/pixel^2] =  18.14 +/- 0.00 	 [initial value = 18.4 ]
+alpha [pixel] =  4.00 +/- 0.00        [initial value = 3.99 ]
+beta =  0.01 +/- 0.00        [initial value = 0.01 ]
+m_tot [mag] = -99
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_combscale.ell
+Excluded data:  [[-1.2232836, 6.116418]]
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  3.0
+Zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.02199774023
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 189
+Chisq:  6.14399072292e-05
+Reduced chisq:  4.17958552579e-07
+N_free:  147
+Component 1: sersic.
+R_e [pixel] =  157.37 +/- 0.00 	[initial value = 160.0 ]
+mu_e [mag/pixel^2] =  19.76 +/- 0.00 	 [initial value = 19.7 ]
+n =  7.23 +/- 0.00        [initial value = 7.2 ]
+b_n =  14.13
+m_tot [mag] =  5.08
+
+Component 6: ferrer.
+R_out [pixel] =  111.45 +/- 0.00 	[initial value = 111.0 ]
+mu_0 [mag/pixel^2] =  17.74 +/- 0.00 	 [initial value = 17.7 ]
+alpha [pixel] =  4.00 +/- 0.00        [initial value = 3.99 ]
+beta =  0.01 +/- 0.00        [initial value = 0.01 ]
+m_tot [mag] = -99
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_combscale.ell
+Excluded data:  [[-1.2232836, 6.116418]]
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  3.0
+Zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0140794771284
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 175
+Chisq:  1.13797570279e-05
+Reduced chisq:  7.7413313115e-08
+N_free:  147
+Component 1: sersic.
+R_e [pixel] =  148.29 +/- 0.00 	[initial value = 150.0 ]
+mu_e [mag/pixel^2] =  20.04 +/- 0.00 	 [initial value = 20.0 ]
+n =  7.53 +/- 0.00        [initial value = 7.2 ]
+b_n =  14.72
+m_tot [mag] =  5.46
+
+Component 6: ferrer.
+R_out [pixel] =  91.56 +/- 0.00 	[initial value = 91.0 ]
+mu_0 [mag/pixel^2] =  18.47 +/- 0.00 	 [initial value = 18.4 ]
+alpha [pixel] =  4.00 +/- 0.00        [initial value = 3.99 ]
+beta =  0.01 +/- 0.00        [initial value = 0.01 ]
+m_tot [mag] = -99
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_combscale.ell
+Excluded data:  [[-1.2232836, 6.116418]]
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  3.0
+Zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0219779925868
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 197
+Chisq:  6.12823972289e-05
+Reduced chisq:  4.16887055979e-07
+N_free:  147
+Component 1: sersic.
+R_e [pixel] =  157.42 +/- 0.00 	[initial value = 160.0 ]
+mu_e [mag/pixel^2] =  19.76 +/- 0.00 	 [initial value = 19.7 ]
+n =  7.20 +/- 0.00        [initial value = 7.2 ]
+b_n =  14.06
+m_tot [mag] =  5.08
+
+Component 6: ferrer.
+R_out [pixel] =  111.38 +/- 0.00 	[initial value = 111.0 ]
+mu_0 [mag/pixel^2] =  17.73 +/- 0.00 	 [initial value = 17.7 ]
+alpha [pixel] =  4.00 +/- 0.00        [initial value = 3.99 ]
+beta =  0.01 +/- 0.00        [initial value = 0.01 ]
+m_tot [mag] = -99
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_combscale.ell
+Excluded data:  [[-1.2232836, 6.116418]]
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  3.0
+Zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0143803516704
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 128
+Chisq:  1.20944980854e-05
+Reduced chisq:  8.22754971796e-08
+N_free:  147
+Component 1: sersic.
+R_e [pixel] =  149.55 +/- 0.00 	[initial value = 150.0 ]
+mu_e [mag/pixel^2] =  20.06 +/- 0.00 	 [initial value = 20.0 ]
+n =  7.48 +/- 0.00        [initial value = 7.2 ]
+b_n =  14.63
+m_tot [mag] =  5.46
+
+Component 6: ferrer.
+R_out [pixel] =  91.22 +/- 0.00 	[initial value = 91.0 ]
+mu_0 [mag/pixel^2] =  18.43 +/- 0.00 	 [initial value = 18.4 ]
+alpha [pixel] =  4.00 +/- 0.00        [initial value = 3.99 ]
+beta =  0.01 +/- 0.00        [initial value = 0.01 ]
+m_tot [mag] = -99
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0566303466501
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 49
+Chisq:  0.00139234708174
+Reduced chisq:  2.40059841679e-05
+N_free:  58
+Component 1: sersic.
+R_e [pixel] =  75.43 +/- 1.46 	[initial value = 160.0 ]
+mu_e [mag/pixel^2] =  18.10 +/- 0.04 	 [initial value = 19.7 ]
+n =  3.85 +/- 0.05        [initial value = 7.2 ]
+b_n =  7.36
+m_tot [mag] =  5.34
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0307458625479
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 47
+Chisq:  0.000139795408275
+Reduced chisq:  2.41026565991e-06
+N_free:  58
+Component 1: sersic.
+R_e [pixel] =  84.04 +/- 1.67 	[initial value = 150.0 ]
+mu_e [mag/pixel^2] =  18.81 +/- 0.04 	 [initial value = 20.0 ]
+n =  4.93 +/- 0.06        [initial value = 7.2 ]
+b_n =  9.53
+m_tot [mag] =  5.69
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0569855653461
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 47
+Chisq:  0.00143497484343
+Reduced chisq:  2.47409455764e-05
+N_free:  58
+Component 1: sersic.
+R_e [pixel] =  75.80 +/- 1.51 	[initial value = 160.0 ]
+mu_e [mag/pixel^2] =  18.11 +/- 0.04 	 [initial value = 19.7 ]
+n =  3.85 +/- 0.05        [initial value = 7.2 ]
+b_n =  7.38
+m_tot [mag] =  5.34
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0292540474741
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 53
+Chisq:  0.000138640852402
+Reduced chisq:  2.39035952417e-06
+N_free:  58
+Component 1: sersic.
+R_e [pixel] =  84.89 +/- 1.61 	[initial value = 150.0 ]
+mu_e [mag/pixel^2] =  18.83 +/- 0.04 	 [initial value = 20.0 ]
+n =  4.94 +/- 0.06        [initial value = 7.2 ]
+b_n =  9.54
+m_tot [mag] =  5.69
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0724370081833
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 67
+Chisq:  0.00684435110664
+Reduced chisq:  4.41571039138e-05
+N_free:  155
+Component 1: sersic.
+R_e [pixel] =  78.31 +/- 1.12 	[initial value = 160.0 ]
+mu_e [mag/pixel^2] =  18.20 +/- 0.03 	 [initial value = 19.7 ]
+n =  4.45 +/- 0.08        [initial value = 7.2 ]
+b_n =  8.56
+m_tot [mag] =  5.28
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0393315043065
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 58
+Chisq:  0.000683957637111
+Reduced chisq:  4.41262991685e-06
+N_free:  155
+Component 1: sersic.
+R_e [pixel] =  89.40 +/- 1.16 	[initial value = 150.0 ]
+mu_e [mag/pixel^2] =  18.95 +/- 0.03 	 [initial value = 20.0 ]
+n =  5.47 +/- 0.05        [initial value = 7.2 ]
+b_n =  10.61
+m_tot [mag] =  5.64
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0725268740495
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 69
+Chisq:  0.00685502485248
+Reduced chisq:  4.42259667902e-05
+N_free:  155
+Component 1: sersic.
+R_e [pixel] =  78.35 +/- 1.13 	[initial value = 160.0 ]
+mu_e [mag/pixel^2] =  18.20 +/- 0.03 	 [initial value = 19.7 ]
+n =  4.44 +/- 0.08        [initial value = 7.2 ]
+b_n =  8.55
+m_tot [mag] =  5.28
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0393668101589
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 53
+Chisq:  0.000657796079001
+Reduced chisq:  4.24384567098e-06
+N_free:  155
+Component 1: sersic.
+R_e [pixel] =  90.07 +/- 1.17 	[initial value = 150.0 ]
+mu_e [mag/pixel^2] =  18.97 +/- 0.03 	 [initial value = 20.0 ]
+n =  5.53 +/- 0.05        [initial value = 7.2 ]
+b_n =  10.74
+m_tot [mag] =  5.63
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0241493372721
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 254
+Chisq:  3.05711333553e-05
+Reduced chisq:  5.87906410678e-07
+N_free:  52
+Component 1: sersic.
+R_e [pixel] =  282.29 +/- 13.89 	[initial value = 128.0 ]
+mu_e [mag/pixel^2] =  20.96 +/- 0.10 	 [initial value = 19.3 ]
+n =  6.75 +/- 0.11        [initial value = 5.0 ]
+b_n =  13.17
+m_tot [mag] =  5.04
+
+Component 8: sersic.
+R_e [pixel] =  36.80 +/- 0.84 	[initial value = 25.0 ]
+mu_e [mag/pixel^2] =  17.62 +/- 0.05 	 [initial value = 17.5 ]
+n =  0.68 +/- 0.06        [initial value = 1.0 ]
+b_n =  1.04
+m_tot [mag] =  7.27
+
+Component 9: sersic.
+R_e [pixel] =  7.65 +/- 0.31 	[initial value = 7.0 ]
+mu_e [mag/pixel^2] =  15.90 +/- 0.05 	 [initial value = 15.0 ]
+n =  0.50 +/- 0.05        [initial value = 1.0 ]
+b_n =  0.70
+m_tot [mag] =  9.08
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.00945017040826
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 223
+Chisq:  9.55357540918e-07
+Reduced chisq:  1.83722604023e-08
+N_free:  52
+Component 1: sersic.
+R_e [pixel] =  173.70 +/- 1.21 	[initial value = 128.0 ]
+mu_e [mag/pixel^2] =  20.36 +/- 0.01 	 [initial value = 19.3 ]
+n =  6.52 +/- 0.04        [initial value = 5.0 ]
+b_n =  12.71
+m_tot [mag] =  5.52
+
+Component 8: sersic.
+R_e [pixel] =  30.28 +/- 0.98 	[initial value = 25.0 ]
+mu_e [mag/pixel^2] =  18.39 +/- 0.10 	 [initial value = 17.5 ]
+n =  0.60 +/- 0.05        [initial value = 1.0 ]
+b_n =  0.89
+m_tot [mag] =  8.51
+
+Component 9: sersic.
+R_e [pixel] =  7.07 +/- 0.55 	[initial value = 7.0 ]
+mu_e [mag/pixel^2] =  16.57 +/- 0.07 	 [initial value = 15.0 ]
+n =  0.83 +/- 0.11        [initial value = 1.0 ]
+b_n =  1.34
+m_tot [mag] =  9.72
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0214325119176
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 180
+Chisq:  1.8644549986e-05
+Reduced chisq:  3.58549038193e-07
+N_free:  52
+Component 1: sersic.
+R_e [pixel] =  315.33 +/- 12.17 	[initial value = 128.0 ]
+mu_e [mag/pixel^2] =  21.18 +/- 0.08 	 [initial value = 19.3 ]
+n =  7.10 +/- 0.09        [initial value = 5.0 ]
+b_n =  13.87
+m_tot [mag] =  4.99
+
+Component 8: sersic.
+R_e [pixel] =  37.00 +/- 0.63 	[initial value = 25.0 ]
+mu_e [mag/pixel^2] =  17.61 +/- 0.04 	 [initial value = 17.5 ]
+n =  0.69 +/- 0.05        [initial value = 1.0 ]
+b_n =  1.07
+m_tot [mag] =  7.25
+
+Component 9: sersic.
+R_e [pixel] =  8.03 +/- 0.26 	[initial value = 7.0 ]
+mu_e [mag/pixel^2] =  16.05 +/- 0.05 	 [initial value = 15.0 ]
+n =  0.43 +/- 0.04        [initial value = 1.0 ]
+b_n =  0.56
+m_tot [mag] =  9.19
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.00689775985915
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 252
+Chisq:  3.19955344139e-07
+Reduced chisq:  6.15298738729e-09
+N_free:  52
+Component 1: sersic.
+R_e [pixel] =  193.67 +/- 0.79 	[initial value = 128.0 ]
+mu_e [mag/pixel^2] =  20.58 +/- 0.01 	 [initial value = 19.3 ]
+n =  6.97 +/- 0.02        [initial value = 5.0 ]
+b_n =  13.62
+m_tot [mag] =  5.47
+
+Component 8: sersic.
+R_e [pixel] =  30.52 +/- 0.59 	[initial value = 25.0 ]
+mu_e [mag/pixel^2] =  18.37 +/- 0.06 	 [initial value = 17.5 ]
+n =  0.63 +/- 0.03        [initial value = 1.0 ]
+b_n =  0.94
+m_tot [mag] =  8.46
+
+Component 9: sersic.
+R_e [pixel] =  8.07 +/- 0.45 	[initial value = 7.0 ]
+mu_e [mag/pixel^2] =  17.02 +/- 0.05 	 [initial value = 15.0 ]
+n =  0.63 +/- 0.07        [initial value = 1.0 ]
+b_n =  0.95
+m_tot [mag] =  10.00
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0128775722751
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 151
+Chisq:  8.79671844971e-06
+Reduced chisq:  5.90383788571e-08
+N_free:  149
+Component 1: sersic.
+R_e [pixel] =  268.06 +/- 1.99 	[initial value = 128.0 ]
+mu_e [mag/pixel^2] =  20.85 +/- 0.01 	 [initial value = 19.3 ]
+n =  7.41 +/- 0.06        [initial value = 5.0 ]
+b_n =  14.48
+m_tot [mag] =  4.99
+
+Component 8: sersic.
+R_e [pixel] =  37.87 +/- 0.21 	[initial value = 25.0 ]
+mu_e [mag/pixel^2] =  17.80 +/- 0.02 	 [initial value = 17.5 ]
+n =  0.57 +/- 0.01        [initial value = 1.0 ]
+b_n =  0.84
+m_tot [mag] =  7.46
+
+Component 9: sersic.
+R_e [pixel] =  7.91 +/- 0.19 	[initial value = 7.0 ]
+mu_e [mag/pixel^2] =  16.17 +/- 0.06 	 [initial value = 15.0 ]
+n =  0.61 +/- 0.06        [initial value = 1.0 ]
+b_n =  0.91
+m_tot [mag] =  9.20
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.00750176189795
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 252
+Chisq:  1.22902484967e-06
+Reduced chisq:  8.24848892397e-09
+N_free:  149
+Component 1: sersic.
+R_e [pixel] =  177.28 +/- 0.48 	[initial value = 128.0 ]
+mu_e [mag/pixel^2] =  20.40 +/- 0.01 	 [initial value = 19.3 ]
+n =  5.96 +/- 0.35        [initial value = 5.0 ]
+b_n =  11.58
+m_tot [mag] =  5.56
+
+Component 8: sersic.
+R_e [pixel] =  32.40 +/- 0.47 	[initial value = 25.0 ]
+mu_e [mag/pixel^2] =  18.62 +/- 0.07 	 [initial value = 17.5 ]
+n =  0.56 +/- 0.02        [initial value = 1.0 ]
+b_n =  0.82
+m_tot [mag] =  8.63
+
+Component 9: sersic.
+R_e [pixel] =  8.19 +/- 0.81 	[initial value = 7.0 ]
+mu_e [mag/pixel^2] =  16.31 +/- 0.08 	 [initial value = 15.0 ]
+n =  2.30 +/- 0.31        [initial value = 1.0 ]
+b_n =  4.27
+m_tot [mag] =  8.65
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0128175335025
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 143
+Chisq:  8.77649498483e-06
+Reduced chisq:  5.89026509049e-08
+N_free:  149
+Component 1: sersic.
+R_e [pixel] =  268.67 +/- 1.98 	[initial value = 128.0 ]
+mu_e [mag/pixel^2] =  20.85 +/- 0.01 	 [initial value = 19.3 ]
+n =  7.51 +/- 0.06        [initial value = 5.0 ]
+b_n =  14.68
+m_tot [mag] =  4.99
+
+Component 8: sersic.
+R_e [pixel] =  37.92 +/- 0.21 	[initial value = 25.0 ]
+mu_e [mag/pixel^2] =  17.81 +/- 0.02 	 [initial value = 17.5 ]
+n =  0.57 +/- 0.01        [initial value = 1.0 ]
+b_n =  0.83
+m_tot [mag] =  7.47
+
+Component 9: sersic.
+R_e [pixel] =  8.03 +/- 0.22 	[initial value = 7.0 ]
+mu_e [mag/pixel^2] =  16.27 +/- 0.07 	 [initial value = 15.0 ]
+n =  0.57 +/- 0.07        [initial value = 1.0 ]
+b_n =  0.82
+m_tot [mag] =  9.30
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.00838629535622
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 252
+Chisq:  1.88640576885e-06
+Reduced chisq:  1.26604414017e-08
+N_free:  149
+Component 1: sersic.
+R_e [pixel] =  171.87 +/- 0.52 	[initial value = 128.0 ]
+mu_e [mag/pixel^2] =  20.34 +/- 0.01 	 [initial value = 19.3 ]
+n =  6.46 +/- 0.18        [initial value = 5.0 ]
+b_n =  12.59
+m_tot [mag] =  5.52
+
+Component 8: sersic.
+R_e [pixel] =  32.42 +/- 0.70 	[initial value = 25.0 ]
+mu_e [mag/pixel^2] =  18.71 +/- 0.11 	 [initial value = 17.5 ]
+n =  0.53 +/- 0.03        [initial value = 1.0 ]
+b_n =  0.75
+m_tot [mag] =  8.74
+
+Component 9: sersic.
+R_e [pixel] =  8.28 +/- 1.10 	[initial value = 7.0 ]
+mu_e [mag/pixel^2] =  16.71 +/- 0.14 	 [initial value = 15.0 ]
+n =  2.08 +/- 0.37        [initial value = 1.0 ]
+b_n =  3.83
+m_tot [mag] =  9.08
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0246069306166
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 151
+Chisq:  3.0272719402e-05
+Reduced chisq:  5.82167680807e-07
+N_free:  52
+Component 1: sersic.
+R_e [pixel] =  584.57 +/- 41.50 	[initial value = 250.0 ]
+mu_e [mag/pixel^2] =  22.37 +/- 0.14 	 [initial value = 19.3 ]
+n =  8.31 +/- 0.15        [initial value = 6.0 ]
+b_n =  16.30
+m_tot [mag] =  4.76
+
+Component 8: sersic.
+R_e [pixel] =  37.06 +/- 0.60 	[initial value = 25.0 ]
+mu_e [mag/pixel^2] =  17.47 +/- 0.03 	 [initial value = 17.5 ]
+n =  0.84 +/- 0.05        [initial value = 0.8 ]
+b_n =  1.36
+m_tot [mag] =  7.02
+
+Component 9: sersic.
+R_e [pixel] =  7.35 +/- 0.26 	[initial value = 7.0 ]
+mu_e [mag/pixel^2] =  15.75 +/- 0.05 	 [initial value = 15.0 ]
+n =  0.53 +/- 0.05        [initial value = 0.8 ]
+b_n =  0.76
+m_tot [mag] =  9.00
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0091314430714
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 205
+Chisq:  7.71941490314e-07
+Reduced chisq:  1.48450286599e-08
+N_free:  52
+Component 1: sersic.
+R_e [pixel] =  199.38 +/- 1.41 	[initial value = 200.0 ]
+mu_e [mag/pixel^2] =  20.64 +/- 0.01 	 [initial value = 19.3 ]
+n =  6.84 +/- 0.03        [initial value = 6.0 ]
+b_n =  13.34
+m_tot [mag] =  5.47
+
+Component 8: sersic.
+R_e [pixel] =  29.94 +/- 0.72 	[initial value = 25.0 ]
+mu_e [mag/pixel^2] =  18.26 +/- 0.07 	 [initial value = 17.5 ]
+n =  0.68 +/- 0.05        [initial value = 0.8 ]
+b_n =  1.04
+m_tot [mag] =  8.36
+
+Component 9: sersic.
+R_e [pixel] =  6.76 +/- 0.36 	[initial value = 7.0 ]
+mu_e [mag/pixel^2] =  16.45 +/- 0.05 	 [initial value = 15.0 ]
+n =  0.81 +/- 0.07        [initial value = 0.8 ]
+b_n =  1.30
+m_tot [mag] =  9.71
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0227502627034
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 325
+Chisq:  2.55267513879e-05
+Reduced chisq:  4.90899065152e-07
+N_free:  52
+Component 1: sersic.
+R_e [pixel] =  183.01 +/- 5.99 	[initial value = 250.0 ]
+mu_e [mag/pixel^2] =  20.07 +/- 0.07 	 [initial value = 19.3 ]
+n =  5.89 +/- 0.07        [initial value = 6.0 ]
+b_n =  11.46
+m_tot [mag] =  5.17
+
+Component 8: sersic.
+R_e [pixel] =  37.15 +/- 0.97 	[initial value = 25.0 ]
+mu_e [mag/pixel^2] =  17.82 +/- 0.06 	 [initial value = 17.5 ]
+n =  0.53 +/- 0.06        [initial value = 0.8 ]
+b_n =  0.75
+m_tot [mag] =  7.55
+
+Component 9: sersic.
+R_e [pixel] =  8.38 +/- 0.34 	[initial value = 7.0 ]
+mu_e [mag/pixel^2] =  16.27 +/- 0.06 	 [initial value = 15.0 ]
+n =  0.38 +/- 0.05        [initial value = 0.8 ]
+b_n =  0.46
+m_tot [mag] =  9.37
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.00679163264867
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 203
+Chisq:  3.37742206486e-07
+Reduced chisq:  6.49504243243e-09
+N_free:  52
+Component 1: sersic.
+R_e [pixel] =  188.92 +/- 0.78 	[initial value = 200.0 ]
+mu_e [mag/pixel^2] =  20.53 +/- 0.01 	 [initial value = 19.3 ]
+n =  6.91 +/- 0.02        [initial value = 6.0 ]
+b_n =  13.49
+m_tot [mag] =  5.47
+
+Component 8: sersic.
+R_e [pixel] =  30.52 +/- 0.60 	[initial value = 25.0 ]
+mu_e [mag/pixel^2] =  18.39 +/- 0.06 	 [initial value = 17.5 ]
+n =  0.62 +/- 0.03        [initial value = 0.8 ]
+b_n =  0.92
+m_tot [mag] =  8.49
+
+Component 9: sersic.
+R_e [pixel] =  7.99 +/- 0.56 	[initial value = 7.0 ]
+mu_e [mag/pixel^2] =  17.01 +/- 0.08 	 [initial value = 15.0 ]
+n =  0.62 +/- 0.09        [initial value = 0.8 ]
+b_n =  0.93
+m_tot [mag] =  10.02
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0128703084874
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 253
+Chisq:  8.79039229976e-06
+Reduced chisq:  5.89959214749e-08
+N_free:  149
+Component 1: sersic.
+R_e [pixel] =  269.96 +/- 2.01 	[initial value = 250.0 ]
+mu_e [mag/pixel^2] =  20.86 +/- 0.01 	 [initial value = 19.3 ]
+n =  7.43 +/- 0.06        [initial value = 6.0 ]
+b_n =  14.53
+m_tot [mag] =  4.99
+
+Component 8: sersic.
+R_e [pixel] =  37.85 +/- 0.21 	[initial value = 25.0 ]
+mu_e [mag/pixel^2] =  17.80 +/- 0.02 	 [initial value = 17.5 ]
+n =  0.58 +/- 0.01        [initial value = 0.8 ]
+b_n =  0.84
+m_tot [mag] =  7.46
+
+Component 9: sersic.
+R_e [pixel] =  7.90 +/- 0.19 	[initial value = 7.0 ]
+mu_e [mag/pixel^2] =  16.16 +/- 0.06 	 [initial value = 15.0 ]
+n =  0.60 +/- 0.06        [initial value = 0.8 ]
+b_n =  0.90
+m_tot [mag] =  9.20
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.00632497818991
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 131
+Chisq:  5.07559342576e-07
+Reduced chisq:  3.40643854078e-09
+N_free:  149
+Component 1: sersic.
+R_e [pixel] =  217.11 +/- 0.44 	[initial value = 200.0 ]
+mu_e [mag/pixel^2] =  20.81 +/- 0.00 	 [initial value = 19.3 ]
+n =  6.21 +/- 0.26        [initial value = 6.0 ]
+b_n =  12.08
+m_tot [mag] =  5.50
+
+Component 8: sersic.
+R_e [pixel] =  33.06 +/- 0.26 	[initial value = 25.0 ]
+mu_e [mag/pixel^2] =  18.58 +/- 0.04 	 [initial value = 17.5 ]
+n =  0.62 +/- 0.01        [initial value = 0.8 ]
+b_n =  0.92
+m_tot [mag] =  8.50
+
+Component 9: sersic.
+R_e [pixel] =  9.20 +/- 0.61 	[initial value = 7.0 ]
+mu_e [mag/pixel^2] =  16.37 +/- 0.05 	 [initial value = 15.0 ]
+n =  2.48 +/- 0.20        [initial value = 0.8 ]
+b_n =  4.64
+m_tot [mag] =  8.41
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0739470667481
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 150
+Chisq:  0.00686959833715
+Reduced chisq:  4.61046868265e-05
+N_free:  149
+Component 1: sersic.
+R_e [pixel] =  78.51 +/- 0.00 	[initial value = 250.0 ]
+mu_e [mag/pixel^2] =  18.20 +/- 0.00 	 [initial value = 19.3 ]
+n =  4.45 +/- 0.00        [initial value = 6.0 ]
+b_n =  8.57
+m_tot [mag] =  5.28
+
+Component 8: sersic.
+R_e [pixel] =  0.08 +/- 0.00 	[initial value = 25.0 ]
+mu_e [mag/pixel^2] =  21.04 +/- 0.00 	 [initial value = 17.5 ]
+n =  14.95 +/- 0.00        [initial value = 0.8 ]
+b_n =  29.57
+m_tot [mag] =  22.47
+
+Component 9: sersic.
+R_e [pixel] =  2.73 +/- 0.00 	[initial value = 7.0 ]
+mu_e [mag/pixel^2] =  21.80 +/- 0.00 	 [initial value = 15.0 ]
+n =  10.71 +/- 0.00        [initial value = 0.8 ]
+b_n =  21.09
+m_tot [mag] =  15.71
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.00663553461023
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 150
+Chisq:  6.60370092897e-07
+Reduced chisq:  4.43201404629e-09
+N_free:  149
+Component 1: sersic.
+R_e [pixel] =  222.20 +/- 0.60 	[initial value = 200.0 ]
+mu_e [mag/pixel^2] =  20.86 +/- 0.00 	 [initial value = 19.3 ]
+n =  6.60 +/- 0.19        [initial value = 6.0 ]
+b_n =  12.86
+m_tot [mag] =  5.48
+
+Component 8: sersic.
+R_e [pixel] =  33.46 +/- 0.24 	[initial value = 25.0 ]
+mu_e [mag/pixel^2] =  18.76 +/- 0.05 	 [initial value = 17.5 ]
+n =  0.56 +/- 0.02        [initial value = 0.8 ]
+b_n =  0.82
+m_tot [mag] =  8.69
+
+Component 9: sersic.
+R_e [pixel] =  11.49 +/- 0.75 	[initial value = 7.0 ]
+mu_e [mag/pixel^2] =  16.88 +/- 0.06 	 [initial value = 15.0 ]
+n =  2.79 +/- 0.20        [initial value = 0.8 ]
+b_n =  5.25
+m_tot [mag] =  8.38
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0244401540138
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 162
+Chisq:  3.00584422376e-05
+Reduced chisq:  5.78046966108e-07
+N_free:  52
+Component 1: sersic.
+R_e [pixel] =  472.60 +/- 30.49 	[initial value = 250.0 ]
+mu_e [mag/pixel^2] =  21.97 +/- 0.13 	 [initial value = 19.3 ]
+n =  7.86 +/- 0.14        [initial value = 6.0 ]
+b_n =  15.39
+m_tot [mag] =  4.85
+
+Component 8: sersic.
+R_e [pixel] =  37.00 +/- 0.65 	[initial value = 25.0 ]
+mu_e [mag/pixel^2] =  17.51 +/- 0.04 	 [initial value = 17.5 ]
+n =  0.80 +/- 0.05        [initial value = 1.0 ]
+b_n =  1.28
+m_tot [mag] =  7.08
+
+Component 9: sersic.
+R_e [pixel] =  7.43 +/- 0.27 	[initial value = 7.0 ]
+mu_e [mag/pixel^2] =  15.79 +/- 0.05 	 [initial value = 15.0 ]
+n =  0.53 +/- 0.05        [initial value = 1.0 ]
+b_n =  0.75
+m_tot [mag] =  9.02
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.00898950023713
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 177
+Chisq:  7.11996822195e-07
+Reduced chisq:  1.36922465807e-08
+N_free:  52
+Component 1: sersic.
+R_e [pixel] =  219.65 +/- 1.58 	[initial value = 200.0 ]
+mu_e [mag/pixel^2] =  20.84 +/- 0.01 	 [initial value = 19.3 ]
+n =  7.05 +/- 0.03        [initial value = 6.0 ]
+b_n =  13.78
+m_tot [mag] =  5.44
+
+Component 8: sersic.
+R_e [pixel] =  29.85 +/- 0.67 	[initial value = 25.0 ]
+mu_e [mag/pixel^2] =  18.20 +/- 0.06 	 [initial value = 17.5 ]
+n =  0.72 +/- 0.05        [initial value = 1.0 ]
+b_n =  1.13
+m_tot [mag] =  8.28
+
+Component 9: sersic.
+R_e [pixel] =  6.66 +/- 0.33 	[initial value = 7.0 ]
+mu_e [mag/pixel^2] =  16.40 +/- 0.04 	 [initial value = 15.0 ]
+n =  0.81 +/- 0.07        [initial value = 1.0 ]
+b_n =  1.31
+m_tot [mag] =  9.68
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0215135592629
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 144
+Chisq:  1.86511171384e-05
+Reduced chisq:  3.58675329585e-07
+N_free:  52
+Component 1: sersic.
+R_e [pixel] =  449.78 +/- 21.04 	[initial value = 250.0 ]
+mu_e [mag/pixel^2] =  21.87 +/- 0.09 	 [initial value = 19.3 ]
+n =  7.89 +/- 0.11        [initial value = 6.0 ]
+b_n =  15.44
+m_tot [mag] =  4.86
+
+Component 8: sersic.
+R_e [pixel] =  37.11 +/- 0.54 	[initial value = 25.0 ]
+mu_e [mag/pixel^2] =  17.54 +/- 0.03 	 [initial value = 17.5 ]
+n =  0.77 +/- 0.04        [initial value = 1.0 ]
+b_n =  1.23
+m_tot [mag] =  7.11
+
+Component 9: sersic.
+R_e [pixel] =  7.84 +/- 0.25 	[initial value = 7.0 ]
+mu_e [mag/pixel^2] =  15.97 +/- 0.05 	 [initial value = 15.0 ]
+n =  0.45 +/- 0.04        [initial value = 1.0 ]
+b_n =  0.60
+m_tot [mag] =  9.14
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.00647790274447
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 205
+Chisq:  2.48211101845e-07
+Reduced chisq:  4.77329042009e-09
+N_free:  52
+Component 1: sersic.
+R_e [pixel] =  215.58 +/- 0.81 	[initial value = 200.0 ]
+mu_e [mag/pixel^2] =  20.80 +/- 0.01 	 [initial value = 19.3 ]
+n =  7.22 +/- 0.02        [initial value = 6.0 ]
+b_n =  14.11
+m_tot [mag] =  5.43
+
+Component 8: sersic.
+R_e [pixel] =  30.44 +/- 0.57 	[initial value = 25.0 ]
+mu_e [mag/pixel^2] =  18.30 +/- 0.06 	 [initial value = 17.5 ]
+n =  0.67 +/- 0.03        [initial value = 1.0 ]
+b_n =  1.03
+m_tot [mag] =  8.37
+
+Component 9: sersic.
+R_e [pixel] =  7.81 +/- 0.51 	[initial value = 7.0 ]
+mu_e [mag/pixel^2] =  16.91 +/- 0.06 	 [initial value = 15.0 ]
+n =  0.65 +/- 0.08        [initial value = 1.0 ]
+b_n =  0.99
+m_tot [mag] =  9.95
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0130964057864
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 256
+Chisq:  9.59969876174e-06
+Reduced chisq:  6.44275084681e-08
+N_free:  149
+Component 1: sersic.
+R_e [pixel] =  237.51 +/- 1.72 	[initial value = 250.0 ]
+mu_e [mag/pixel^2] =  20.61 +/- 0.01 	 [initial value = 19.3 ]
+n =  7.09 +/- 0.06        [initial value = 6.0 ]
+b_n =  13.85
+m_tot [mag] =  5.04
+
+Component 8: sersic.
+R_e [pixel] =  37.94 +/- 0.22 	[initial value = 25.0 ]
+mu_e [mag/pixel^2] =  17.84 +/- 0.02 	 [initial value = 17.5 ]
+n =  0.55 +/- 0.01        [initial value = 1.0 ]
+b_n =  0.78
+m_tot [mag] =  7.52
+
+Component 9: sersic.
+R_e [pixel] =  7.91 +/- 0.22 	[initial value = 7.0 ]
+mu_e [mag/pixel^2] =  16.20 +/- 0.07 	 [initial value = 15.0 ]
+n =  0.62 +/- 0.07        [initial value = 1.0 ]
+b_n =  0.94
+m_tot [mag] =  9.23
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.00626115456771
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 170
+Chisq:  4.49825502874e-07
+Reduced chisq:  3.01896310654e-09
+N_free:  149
+Component 1: sersic.
+R_e [pixel] =  218.06 +/- 0.82 	[initial value = 200.0 ]
+mu_e [mag/pixel^2] =  20.83 +/- 0.00 	 [initial value = 19.3 ]
+n =  4.51 +/- 0.54        [initial value = 6.0 ]
+b_n =  8.69
+m_tot [mag] =  5.68
+
+Component 8: sersic.
+R_e [pixel] =  33.66 +/- 0.18 	[initial value = 25.0 ]
+mu_e [mag/pixel^2] =  18.66 +/- 0.03 	 [initial value = 17.5 ]
+n =  0.60 +/- 0.01        [initial value = 1.0 ]
+b_n =  0.90
+m_tot [mag] =  8.55
+
+Component 9: sersic.
+R_e [pixel] =  13.13 +/- 1.09 	[initial value = 7.0 ]
+mu_e [mag/pixel^2] =  16.43 +/- 0.02 	 [initial value = 15.0 ]
+n =  3.21 +/- 0.09        [initial value = 1.0 ]
+b_n =  6.09
+m_tot [mag] =  7.56
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.0130481726597
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 285
+Chisq:  9.5781916976e-06
+Reduced chisq:  6.42831657557e-08
+N_free:  149
+Component 1: sersic.
+R_e [pixel] =  239.29 +/- 1.74 	[initial value = 250.0 ]
+mu_e [mag/pixel^2] =  20.62 +/- 0.01 	 [initial value = 19.3 ]
+n =  7.22 +/- 0.06        [initial value = 6.0 ]
+b_n =  14.11
+m_tot [mag] =  5.03
+
+Component 8: sersic.
+R_e [pixel] =  38.01 +/- 0.22 	[initial value = 25.0 ]
+mu_e [mag/pixel^2] =  17.86 +/- 0.02 	 [initial value = 17.5 ]
+n =  0.54 +/- 0.01        [initial value = 1.0 ]
+b_n =  0.78
+m_tot [mag] =  7.53
+
+Component 9: sersic.
+R_e [pixel] =  8.09 +/- 0.25 	[initial value = 7.0 ]
+mu_e [mag/pixel^2] =  16.33 +/- 0.08 	 [initial value = 15.0 ]
+n =  0.56 +/- 0.08        [initial value = 1.0 ]
+b_n =  0.81
+m_tot [mag] =  9.35
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n4697_op_overmos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.03
+Delta:  0.00657260052037
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 152
+Chisq:  6.22625847721e-07
+Reduced chisq:  4.17869696457e-09
+N_free:  149
+Component 1: sersic.
+R_e [pixel] =  226.38 +/- 0.60 	[initial value = 200.0 ]
+mu_e [mag/pixel^2] =  20.90 +/- 0.00 	 [initial value = 19.3 ]
+n =  6.67 +/- 0.18        [initial value = 6.0 ]
+b_n =  13.00
+m_tot [mag] =  5.47
+
+Component 8: sersic.
+R_e [pixel] =  33.51 +/- 0.24 	[initial value = 25.0 ]
+mu_e [mag/pixel^2] =  18.75 +/- 0.05 	 [initial value = 17.5 ]
+n =  0.57 +/- 0.02        [initial value = 1.0 ]
+b_n =  0.83
+m_tot [mag] =  8.67
+
+Component 9: sersic.
+R_e [pixel] =  11.37 +/- 0.72 	[initial value = 7.0 ]
+mu_e [mag/pixel^2] =  16.87 +/- 0.06 	 [initial value = 15.0 ]
+n =  2.74 +/- 0.19        [initial value = 1.0 ]
+b_n =  5.16
+m_tot [mag] =  8.40
+
+--------------------------------------------
+--------------------------------------------
+

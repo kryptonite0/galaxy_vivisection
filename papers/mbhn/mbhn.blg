@@ -1,0 +1,47 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: mbhn.aux
+The style file: apj.bst
+Database file #1: /Users/gsavorgnan/Dropbox/giulia_e_basta/Literature/SMBHbibliography.bib
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+You've used 7 entries,
+            3085 wiz_defined-function locations,
+            689 strings with 5742 characters,
+and the built_in function-call counts, 3636 in all, are:
+= -- 313
+> -- 273
+< -- 1
++ -- 94
+- -- 107
+* -- 314
+:= -- 680
+add.period$ -- 7
+call.type$ -- 7
+change.case$ -- 58
+chr.to.int$ -- 7
+cite$ -- 7
+duplicate$ -- 133
+empty$ -- 199
+format.name$ -- 110
+if$ -- 715
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 7
+newline$ -- 25
+num.names$ -- 28
+pop$ -- 63
+preamble$ -- 1
+purify$ -- 58
+quote$ -- 0
+skip$ -- 111
+stack$ -- 0
+substring$ -- 153
+swap$ -- 0
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 63
+warning$ -- 0
+while$ -- 28
+width$ -- 0
+write$ -- 73

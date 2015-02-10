@@ -1,0 +1,16 @@
+# Component/    parameter   constraint	Comment
+# operation	(see below)   range
+
+    2/3		   re	       0  0.5	# Soft constraint:  Couples components 
+					# 3 and 5 Re or Rs ratio to be greater 
+					# than 1, but less than 3. 
+
+
+
+# Note on parameter column:
+#   The parameter name options are x, y, mag, re (or rs -- it doesn't matter),
+#   n, alpha, beta, gamma, pa, q, c, f1a (Fourier amplitude), f1p (Fourier
+#   phase angle), f2a, f2p, r5 (coordinate rotation), etc., .  Or 
+#   alternatively, one can specify the parameter number instead (for the
+#   classical parameters only) corresponding to the same numbers in the 
+#   galfit input file.

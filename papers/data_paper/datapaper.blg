@@ -1,0 +1,77 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: datapaper.aux
+The style file: apj.bst
+Database file #1: datapaperNotes.bib
+Database file #2: /Users/gsavorgnan/Dropbox/giulia_e_basta/Literature/SMBHbibliography.bib
+Repeated entry---line 280 of file /Users/gsavorgnan/Dropbox/giulia_e_basta/Literature/SMBHbibliography.bib
+ : @article{rixwhite1992
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1139 of file /Users/gsavorgnan/Dropbox/giulia_e_basta/Literature/SMBHbibliography.bib
+ : @article{scorzabender1995
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 5846 of file /Users/gsavorgnan/Dropbox/giulia_e_basta/Literature/SMBHbibliography.bib
+ : @article{haringrix2004
+ :                       ,
+I'm skipping whatever remains of this entry
+Name 1 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
+while executing---line 1587 of file apj.bst
+Name 1 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
+while executing---line 1587 of file apj.bst
+Name 2 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
+while executing---line 1587 of file apj.bst
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--empty publisher in RC3
+Name 1 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
+while executing---line 1671 of file apj.bst
+Name 2 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
+while executing---line 1671 of file apj.bst
+Name 1 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
+while executing---line 1671 of file apj.bst
+Name 2 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
+while executing---line 1671 of file apj.bst
+Warning--empty publisher in sersic1968
+You've used 75 entries,
+            3085 wiz_defined-function locations,
+            1141 strings with 23924 characters,
+and the built_in function-call counts, 37297 in all, are:
+= -- 2988
+> -- 2909
+< -- 33
++ -- 974
+- -- 1046
+* -- 3275
+:= -- 7088
+add.period$ -- 75
+call.type$ -- 75
+change.case$ -- 501
+chr.to.int$ -- 71
+cite$ -- 77
+duplicate$ -- 1430
+empty$ -- 2146
+format.name$ -- 1143
+if$ -- 7339
+int.to.chr$ -- 5
+int.to.str$ -- 0
+missing$ -- 72
+newline$ -- 229
+num.names$ -- 303
+pop$ -- 549
+preamble$ -- 1
+purify$ -- 501
+quote$ -- 0
+skip$ -- 1186
+stack$ -- 0
+substring$ -- 1539
+swap$ -- 32
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 669
+warning$ -- 2
+while$ -- 285
+width$ -- 0
+write$ -- 751
+(There were 10 error messages)

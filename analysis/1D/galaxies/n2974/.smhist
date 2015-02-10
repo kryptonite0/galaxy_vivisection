@@ -1,0 +1,112 @@
+params2
+x11
+device postencap n2974_bestfitreqmoffat.eps
+bestfitreqmoffat
+x11
+device postencap n2974_profreqmoffat.eps
+profreqmoffat
+x11
+quit
+macro read smfigures.mac
+start
+device postencap n2974_bestfit.eps
+bestfit
+x11
+device postencap n2974_params2.eps
+params2
+x11
+device postencap n2974_bestfitreqmoffat.eps
+bestfitreqmoffat
+x11
+device postencap n2974_profreqmoffat.eps
+profreqmoffat
+x11
+quit
+macro read smfigures.mac
+start
+device postencap n2974_bestfit.eps
+bestfit
+x11
+device postencap n2974_params2.eps
+params2
+x11
+device postencap n2974_bestfitreqmoffat.eps
+bestfitreqmoffat
+x11
+device postencap n2974_profreqmoffat.eps
+profreqmoffat
+x11
+quit
+macro read smfigures.mac
+start
+device postencap n2974_bestfit.eps
+bestfit
+x11
+device postencap n2974_params2.eps
+params2
+x11
+device postencap n2974_bestfitreqmoffat.eps
+bestfitreqmoffat
+x11
+device postencap n2974_profreqmoffat.eps
+profreqmoffat
+x11
+quit
+macro read smfigures.mac
+start
+device postencap n2974_bestfit.eps
+bestfit
+x11
+device postencap n2974_params2.eps
+params2
+x11
+device postencap n2974_bestfitreqmoffat.eps
+bestfitreqmoffat
+x11
+device postencap n2974_profreqmoffat.eps
+profreqmoffat
+x11
+quit
+macro read smfigures.mac
+start
+params2
+macro read smfigures.mac
+params2
+macro read smfigures.mac
+params2
+macro read smfigures.mac
+params2
+macro read smfigures.mac
+params2
+macro read smfigures.mac
+params2
+macro read smfigures.mac
+params2
+macro read smfigures.mac
+params2
+macro read smfigures.mac
+params2
+macro read smfigures.mac
+params2
+macro read smfigures.mac
+params2
+macro read smfigures.mac
+params2
+macro read smfigures.mac
+params2
+quit
+macro read smfigures.mac
+start
+device postencap n2974_bestfit.eps
+bestfit
+x11
+device postencap n2974_params2.eps
+params2
+x11
+device postencap n2974_bestfitreqmoffat.eps
+bestfitreqmoffat
+x11
+device postencap n2974_profreqmoffat.eps
+profreqmoffat
+x11
+quit

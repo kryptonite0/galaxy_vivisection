@@ -1,0 +1,112 @@
+device postencap m89_bestfitreqmoffat.eps
+bestfitreqmoffat
+x11
+device postencap m89_profreqmoffat.eps
+profreqmoffat
+x11
+quit
+macro read smfigures.mac
+start
+device postencap m89_bestfit.eps
+bestfit
+x11
+device postencap m89_params2.eps
+params2
+x11
+device postencap m89_bestfitreqmoffat.eps
+bestfitreqmoffat
+x11
+device postencap m89_profreqmoffat.eps
+profreqmoffat
+x11
+quit
+macro read smfigures.mac
+start
+device postencap m89_bestfit.eps
+bestfit
+x11
+device postencap m89_params2.eps
+params2
+x11
+device postencap m89_bestfitreqmoffat.eps
+bestfitreqmoffat
+x11
+device postencap m89_profreqmoffat.eps
+profreqmoffat
+x11
+quit
+macro read smfigures.mac
+start
+device postencap m89_bestfit.eps
+bestfit
+x11
+device postencap m89_params2.eps
+params2
+x11
+device postencap m89_bestfitreqmoffat.eps
+bestfitreqmoffat
+x11
+device postencap m89_profreqmoffat.eps
+profreqmoffat
+x11
+quit
+macro read smfigures.mac
+start
+device postencap m89_bestfit.eps
+bestfit
+x11
+device postencap m89_params2.eps
+params2
+x11
+device postencap m89_bestfitreqmoffat.eps
+bestfitreqmoffat
+x11
+device postencap m89_profreqmoffat.eps
+profreqmoffat
+x11
+quit
+macro read smfigures.mac
+start
+bestfit
+macro read smfigures.mac
+bestfit
+help combscale_sma_red
+help combscale_mu_red
+!ls
+!nedit init.mac&
+!nedit Rmaj_gaussian_combscale_res_SM.dat&
+!nedit *ell&
+!nedit Req_gaussian_combscale_res_SM.dat&
+!nedit Req_gaussian_logscale_res_SM.dat&
+!nedit Rmaj_gaussian_logscale_res_SM.dat&
+quit
+macro read smfigures.mac
+start
+device postencap m89_bestfit.eps
+bestfit
+x11
+device postencap m89_params2.eps
+params2
+x11
+device postencap m89_bestfitreqmoffat.eps
+bestfitreqmoffat
+x11
+device postencap m89_profreqmoffat.eps
+profreqmoffat
+x11
+quit
+macro read smfigures.mac
+start
+device postencap m89_bestfit.eps
+bestfit
+x11
+device postencap m89_params2.eps
+params2
+x11
+device postencap m89_bestfitreqmoffat.eps
+bestfitreqmoffat
+x11
+device postencap m89_profreqmoffat.eps
+profreqmoffat
+x11
+quit

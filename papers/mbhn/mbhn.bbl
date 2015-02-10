@@ -1,0 +1,35 @@
+\begin{thebibliography}{}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{{Beifiori} {et~al.}(2012){Beifiori}, {Courteau}, {Corsini}, \&
+  {Zhu}}]{beifiori2012}
+{Beifiori}, A., {Courteau}, S., {Corsini}, E.~M., \& {Zhu}, Y. 2012, \mnras,
+  419, 2497
+
+\bibitem[{{Graham} \& {Driver}(2007)}]{grahamdriver2007}
+{Graham}, A.~W., \& {Driver}, S.~P. 2007, \apj, 655, 77
+
+\bibitem[{{L{\"a}sker} {et~al.}(2014){L{\"a}sker}, {Ferrarese}, \& {van de
+  Ven}}]{lasker2014data}
+{L{\"a}sker}, R., {Ferrarese}, L., \& {van de Ven}, G. 2014, \apj, 780, 69
+
+\bibitem[{{Laurikainen} {et~al.}(2010){Laurikainen}, {Salo}, {Buta}, {Knapen},
+  \& {Comer{\'o}n}}]{laurikainen2010}
+{Laurikainen}, E., {Salo}, H., {Buta}, R., {Knapen}, J.~H., \& {Comer{\'o}n},
+  S. 2010, \mnras, 405, 1089
+
+\bibitem[{{Rusli} {et~al.}(2013){Rusli}, {Erwin}, {Saglia}, {Thomas},
+  {Fabricius}, {Bender}, \& {Nowak}}]{rusli2013}
+{Rusli}, S.~P., {Erwin}, P., {Saglia}, R.~P., {et~al.} 2013, \aj, 146, 160
+
+\bibitem[{{Sani} {et~al.}(2011){Sani}, {Marconi}, {Hunt}, \&
+  {Risaliti}}]{sani2011}
+{Sani}, E., {Marconi}, A., {Hunt}, L.~K., \& {Risaliti}, G. 2011, \mnras, 413,
+  1479
+
+\bibitem[{{Vika} {et~al.}(2012){Vika}, {Driver}, {Cameron}, {Kelvin}, \&
+  {Robotham}}]{vika2012}
+{Vika}, M., {Driver}, S.~P., {Cameron}, E., {Kelvin}, L., \& {Robotham}, A.
+  2012, \mnras, 419, 2264
+
+\end{thebibliography}

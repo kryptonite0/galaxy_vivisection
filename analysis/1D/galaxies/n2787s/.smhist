@@ -1,0 +1,106 @@
+x11
+quit
+macro read smfigures.mac
+start
+params2
+quit
+macro read smfigures.mac
+start
+bestfit
+!nedit init.mac&
+data $combscalef
+lines 7 0
+read {combscale_row 1.i  combscale_int 3  combscale_int_err 4  combscale_ellip 7}
+start
+params2
+quit
+macro read smfigures.mac
+start
+device postencap n2787_bestfit.eps
+bestfit
+x11
+device postencap n2787_params2.eps
+params2
+x11
+device postencap n2787_bestfitreqmoffat.eps
+bestfitreqmoffat
+x11
+device postencap n2787_profreqmoffat.eps
+profreqmoffat
+x11
+quit
+macro read smfigures.mac
+start
+device postencap n2787_bestfit.eps
+bestfit
+x11
+device postencap n2787_params2.eps
+params2
+x11
+device postencap n2787_bestfitreqmoffat.eps
+bestfitreqmoffat
+x11
+device postencap n2787_profreqmoffat.eps
+profreqmoffat
+x11
+quit
+macro read smfigures.mac
+start
+device postencap n2787_bestfit.eps
+bestfit
+x11
+device postencap n2787_params2.eps
+params2
+x11
+device postencap n2787_bestfitreqmoffat.eps
+bestfitreqmoffat
+x11
+device postencap n2787_profreqmoffat.eps
+profreqmoffat
+x11
+quit
+macro read smfigures.mac
+start
+device postencap n2787_bestfit.eps
+bestfit
+x11
+device postencap n2787_params2.eps
+params2
+x11
+device postencap n2787_bestfitreqmoffat.eps
+bestfitreqmoffat
+x11
+device postencap n2787_profreqmoffat.eps
+profreqmoffat
+x11
+quit
+macro read smfigures.mac
+start
+device postencap n2787_bestfit.eps
+bestfit
+x11
+device postencap n2787_params2.eps
+params2
+x11
+device postencap n2787_bestfitreqmoffat.eps
+bestfitreqmoffat
+x11
+device postencap n2787_profreqmoffat.eps
+profreqmoffat
+x11
+quit
+macro read smfigures.mac
+start
+device postencap n2787_bestfit.eps
+bestfit
+x11
+device postencap n2787_params2.eps
+params2
+x11
+device postencap n2787_bestfitreqmoffat.eps
+bestfitreqmoffat
+x11
+device postencap n2787_profreqmoffat.eps
+profreqmoffat
+x11
+quit

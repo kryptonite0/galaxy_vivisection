@@ -1,0 +1,14 @@
+# id   function   par1    vpar1   par2    vpar2   par3   vpar3
+#      sersic     r_e     	  mu_e   	  n
+#      expdisc    h       	  mu_0   	  ---
+#      gaussian   fwhm    	  int	 	  ---    
+    1	sersic   3.5	 True	 14.6	 True	 1.9	True
+    2	disc	 11.1	 True 	 15.65	 True 	 -99	True 
+    7	ferrer   19.	 True	 16.9	 True	 3.99	True      0.01    True
+#   4	gaussian   3.0    True    14.0    True    -99    True
+#    5    psf        -99     True    13.0     True    -99    True
+#    6	disc     20	 True	 17.	 True	 -99	True
+#   8	sersic   10.0	 True	 15.0	 True	 2.0	True
+#   9	sersic   10.0	 True	 15.0	 True	 2.0	True
+# ids have to be all different!!!
+# no white lines

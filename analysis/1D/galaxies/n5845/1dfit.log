@@ -1,0 +1,1872 @@
+Input ellipse file:  n5845_op_mos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0232602173444
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 64
+Chisq:  1.62781117451e-05
+Reduced chisq:  4.78767992502e-07
+N_free:  34
+Component 1: sersic.
+R_e [pixel] =  3.41 +/- 0.11 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  14.71 +/- 0.04 	 [initial value = 14.4 ]
+n =  1.63 +/- 0.04        [initial value = 2.0 ]
+b_n =  2.92
+m_tot [mag] =  9.12
+
+Component 2: disc.
+h [pixel] =  7.32 +/- 0.30        [initial value = 6.4 ]
+mu_0 [mag/pixel^2] =  16.21 +/- 0.16 	 [initial value = 15.8 ]
+m_tot [mag] =  9.89
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0416617646192
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 110
+Chisq:  0.000149564250471
+Reduced chisq:  4.39894854327e-06
+N_free:  34
+Component 1: sersic.
+R_e [pixel] =  3.60 +/- 0.18 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  14.95 +/- 0.08 	 [initial value = 14.4 ]
+n =  2.01 +/- 0.10        [initial value = 2.0 ]
+b_n =  3.69
+m_tot [mag] =  9.14
+
+Component 2: disc.
+h [pixel] =  23.49 +/- 33.15        [initial value = 6.4 ]
+mu_0 [mag/pixel^2] =  19.41 +/- 1.50 	 [initial value = 15.8 ]
+m_tot [mag] =  10.56
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0200847645225
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 62
+Chisq:  1.04794568979e-05
+Reduced chisq:  3.08219320525e-07
+N_free:  34
+Component 1: sersic.
+R_e [pixel] =  4.29 +/- 0.13 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  15.12 +/- 0.05 	 [initial value = 14.4 ]
+n =  2.18 +/- 0.05        [initial value = 2.0 ]
+b_n =  4.03
+m_tot [mag] =  8.89
+
+Component 2: disc.
+h [pixel] =  8.57 +/- 0.42        [initial value = 6.4 ]
+mu_0 [mag/pixel^2] =  17.38 +/- 0.26 	 [initial value = 15.8 ]
+m_tot [mag] =  10.72
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0364291969857
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 129
+Chisq:  9.95815587803e-05
+Reduced chisq:  2.92886937589e-06
+N_free:  34
+Component 1: sersic.
+R_e [pixel] =  3.77 +/- 0.15 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  15.11 +/- 0.07 	 [initial value = 14.4 ]
+n =  2.35 +/- 0.11        [initial value = 2.0 ]
+b_n =  4.38
+m_tot [mag] =  9.11
+
+Component 2: disc.
+h [pixel] =  65.55 +/- 395.33        [initial value = 6.4 ]
+mu_0 [mag/pixel^2] =  20.54 +/- 2.21 	 [initial value = 15.8 ]
+m_tot [mag] =  9.46
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0205459956135
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 63
+Chisq:  4.98860168196e-06
+Reduced chisq:  3.56328691568e-07
+N_free:  14
+Component 1: sersic.
+R_e [pixel] =  2.76 +/- 0.08 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  14.28 +/- 0.05 	 [initial value = 14.4 ]
+n =  1.31 +/- 0.08        [initial value = 2.0 ]
+b_n =  2.29
+m_tot [mag] =  9.26
+
+Component 2: disc.
+h [pixel] =  6.03 +/- 0.13        [initial value = 6.4 ]
+mu_0 [mag/pixel^2] =  15.44 +/- 0.10 	 [initial value = 15.8 ]
+m_tot [mag] =  9.54
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0225274078453
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 72
+Chisq:  7.29163700859e-06
+Reduced chisq:  5.20831214899e-07
+N_free:  14
+Component 1: sersic.
+R_e [pixel] =  2.78 +/- 0.06 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  14.38 +/- 0.04 	 [initial value = 14.4 ]
+n =  1.47 +/- 0.07        [initial value = 2.0 ]
+b_n =  2.60
+m_tot [mag] =  9.28
+
+Component 2: disc.
+h [pixel] =  6.99 +/- 0.31        [initial value = 6.4 ]
+mu_0 [mag/pixel^2] =  16.61 +/- 0.16 	 [initial value = 15.8 ]
+m_tot [mag] =  10.39
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0253160796227
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 40
+Chisq:  8.38585118507e-06
+Reduced chisq:  5.98989370362e-07
+N_free:  14
+Component 1: sersic.
+R_e [pixel] =  2.85 +/- 0.16 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  14.35 +/- 0.09 	 [initial value = 14.4 ]
+n =  1.51 +/- 0.14        [initial value = 2.0 ]
+b_n =  2.70
+m_tot [mag] =  9.18
+
+Component 2: disc.
+h [pixel] =  6.28 +/- 0.27        [initial value = 6.4 ]
+mu_0 [mag/pixel^2] =  15.64 +/- 0.20 	 [initial value = 15.8 ]
+m_tot [mag] =  9.65
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0221944159212
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 82
+Chisq:  7.1581791711e-06
+Reduced chisq:  5.11298512221e-07
+N_free:  14
+Component 1: sersic.
+R_e [pixel] =  2.75 +/- 0.06 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  14.37 +/- 0.04 	 [initial value = 14.4 ]
+n =  1.56 +/- 0.08        [initial value = 2.0 ]
+b_n =  2.80
+m_tot [mag] =  9.27
+
+Component 2: disc.
+h [pixel] =  7.14 +/- 0.34        [initial value = 6.4 ]
+mu_0 [mag/pixel^2] =  16.71 +/- 0.18 	 [initial value = 15.8 ]
+m_tot [mag] =  10.45
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0230723130961
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 63
+Chisq:  1.61124562734e-05
+Reduced chisq:  4.73895772748e-07
+N_free:  34
+Component 1: sersic.
+R_e [pixel] =  3.38 +/- 0.11 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  14.70 +/- 0.04 	 [initial value = 14.4 ]
+n =  1.61 +/- 0.05        [initial value = 2.0 ]
+b_n =  2.90
+m_tot [mag] =  9.13
+
+Component 2: disc.
+h [pixel] =  7.23 +/- 0.32        [initial value = 10.0 ]
+mu_0 [mag/pixel^2] =  16.16 +/- 0.17 	 [initial value = 15.8 ]
+m_tot [mag] =  9.87
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0416617646192
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 110
+Chisq:  0.000149564250471
+Reduced chisq:  4.39894854327e-06
+N_free:  34
+Component 1: sersic.
+R_e [pixel] =  3.60 +/- 0.18 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  14.95 +/- 0.08 	 [initial value = 14.4 ]
+n =  2.01 +/- 0.10        [initial value = 2.0 ]
+b_n =  3.69
+m_tot [mag] =  9.14
+
+Component 2: disc.
+h [pixel] =  23.49 +/- 33.15        [initial value = 6.4 ]
+mu_0 [mag/pixel^2] =  19.41 +/- 1.50 	 [initial value = 15.8 ]
+m_tot [mag] =  10.56
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0188613544514
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 73
+Chisq:  8.14000386035e-06
+Reduced chisq:  2.39411878246e-07
+N_free:  34
+Component 1: sersic.
+R_e [pixel] =  3.83 +/- 0.10 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  14.96 +/- 0.04 	 [initial value = 14.4 ]
+n =  2.01 +/- 0.04        [initial value = 2.0 ]
+b_n =  3.69
+m_tot [mag] =  9.01
+
+Component 2: disc.
+h [pixel] =  7.75 +/- 0.25        [initial value = 10.0 ]
+mu_0 [mag/pixel^2] =  16.70 +/- 0.15 	 [initial value = 15.8 ]
+m_tot [mag] =  10.26
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0364291969857
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 129
+Chisq:  9.95815587803e-05
+Reduced chisq:  2.92886937589e-06
+N_free:  34
+Component 1: sersic.
+R_e [pixel] =  3.77 +/- 0.15 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  15.11 +/- 0.07 	 [initial value = 14.4 ]
+n =  2.35 +/- 0.11        [initial value = 2.0 ]
+b_n =  4.38
+m_tot [mag] =  9.11
+
+Component 2: disc.
+h [pixel] =  65.55 +/- 395.33        [initial value = 6.4 ]
+mu_0 [mag/pixel^2] =  20.54 +/- 2.21 	 [initial value = 15.8 ]
+m_tot [mag] =  9.46
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0191078259257
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 69
+Chisq:  4.42801871892e-06
+Reduced chisq:  3.16287051351e-07
+N_free:  14
+Component 1: sersic.
+R_e [pixel] =  2.73 +/- 0.07 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  14.27 +/- 0.05 	 [initial value = 14.4 ]
+n =  1.26 +/- 0.08        [initial value = 2.0 ]
+b_n =  2.20
+m_tot [mag] =  9.28
+
+Component 2: disc.
+h [pixel] =  5.96 +/- 0.11        [initial value = 10.0 ]
+mu_0 [mag/pixel^2] =  15.39 +/- 0.08 	 [initial value = 15.8 ]
+m_tot [mag] =  9.51
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0225274078453
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 72
+Chisq:  7.29163700859e-06
+Reduced chisq:  5.20831214899e-07
+N_free:  14
+Component 1: sersic.
+R_e [pixel] =  2.78 +/- 0.06 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  14.38 +/- 0.04 	 [initial value = 14.4 ]
+n =  1.47 +/- 0.07        [initial value = 2.0 ]
+b_n =  2.60
+m_tot [mag] =  9.28
+
+Component 2: disc.
+h [pixel] =  6.99 +/- 0.31        [initial value = 6.4 ]
+mu_0 [mag/pixel^2] =  16.61 +/- 0.16 	 [initial value = 15.8 ]
+m_tot [mag] =  10.39
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.017865954572
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 57
+Chisq:  4.27017379358e-06
+Reduced chisq:  3.05012413827e-07
+N_free:  14
+Component 1: sersic.
+R_e [pixel] =  2.61 +/- 0.09 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  14.21 +/- 0.08 	 [initial value = 14.4 ]
+n =  1.24 +/- 0.12        [initial value = 2.0 ]
+b_n =  2.16
+m_tot [mag] =  9.33
+
+Component 2: disc.
+h [pixel] =  5.84 +/- 0.09        [initial value = 10.0 ]
+mu_0 [mag/pixel^2] =  15.31 +/- 0.07 	 [initial value = 15.8 ]
+m_tot [mag] =  9.48
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0221944159212
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 82
+Chisq:  7.1581791711e-06
+Reduced chisq:  5.11298512221e-07
+N_free:  14
+Component 1: sersic.
+R_e [pixel] =  2.75 +/- 0.06 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  14.37 +/- 0.04 	 [initial value = 14.4 ]
+n =  1.56 +/- 0.08        [initial value = 2.0 ]
+b_n =  2.80
+m_tot [mag] =  9.27
+
+Component 2: disc.
+h [pixel] =  7.14 +/- 0.34        [initial value = 6.4 ]
+mu_0 [mag/pixel^2] =  16.71 +/- 0.18 	 [initial value = 15.8 ]
+m_tot [mag] =  10.45
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0241069704248
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 65
+Chisq:  1.86248111361e-05
+Reduced chisq:  5.47788562828e-07
+N_free:  34
+Component 1: sersic.
+R_e [pixel] =  3.58 +/- 0.12 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  14.78 +/- 0.05 	 [initial value = 14.4 ]
+n =  1.70 +/- 0.05        [initial value = 3.0 ]
+b_n =  3.06
+m_tot [mag] =  9.06
+
+Component 2: disc.
+h [pixel] =  7.71 +/- 0.35        [initial value = 10.0 ]
+mu_0 [mag/pixel^2] =  16.44 +/- 0.19 	 [initial value = 15.8 ]
+m_tot [mag] =  10.01
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0416398435865
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 81
+Chisq:  0.000149141561032
+Reduced chisq:  4.38651650094e-06
+N_free:  34
+Component 1: sersic.
+R_e [pixel] =  3.61 +/- 0.18 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  14.95 +/- 0.08 	 [initial value = 14.4 ]
+n =  2.01 +/- 0.10        [initial value = 3.0 ]
+b_n =  3.69
+m_tot [mag] =  9.13
+
+Component 2: disc.
+h [pixel] =  24.07 +/- 34.03        [initial value = 6.4 ]
+mu_0 [mag/pixel^2] =  19.44 +/- 1.48 	 [initial value = 15.8 ]
+m_tot [mag] =  10.54
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0199138176659
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 81
+Chisq:  1.01950232139e-05
+Reduced chisq:  2.99853623939e-07
+N_free:  34
+Component 1: sersic.
+R_e [pixel] =  4.24 +/- 0.13 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  15.11 +/- 0.05 	 [initial value = 14.4 ]
+n =  2.17 +/- 0.05        [initial value = 3.0 ]
+b_n =  4.00
+m_tot [mag] =  8.90
+
+Component 2: disc.
+h [pixel] =  8.43 +/- 0.38        [initial value = 10.0 ]
+mu_0 [mag/pixel^2] =  17.29 +/- 0.23 	 [initial value = 15.8 ]
+m_tot [mag] =  10.66
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0363734763823
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 144
+Chisq:  9.88005647084e-05
+Reduced chisq:  2.90589896201e-06
+N_free:  34
+Component 1: sersic.
+R_e [pixel] =  3.78 +/- 0.14 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  15.11 +/- 0.07 	 [initial value = 14.4 ]
+n =  2.35 +/- 0.10        [initial value = 3.0 ]
+b_n =  4.38
+m_tot [mag] =  9.11
+
+Component 2: disc.
+h [pixel] =  91.41 +/- 712.79        [initial value = 6.4 ]
+mu_0 [mag/pixel^2] =  20.63 +/- 2.07 	 [initial value = 15.8 ]
+m_tot [mag] =  8.83
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0185465916075
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 71
+Chisq:  4.22378534525e-06
+Reduced chisq:  3.01698953232e-07
+N_free:  14
+Component 1: sersic.
+R_e [pixel] =  2.70 +/- 0.07 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  14.25 +/- 0.04 	 [initial value = 14.4 ]
+n =  1.24 +/- 0.08        [initial value = 3.0 ]
+b_n =  2.15
+m_tot [mag] =  9.30
+
+Component 2: disc.
+h [pixel] =  5.92 +/- 0.10        [initial value = 10.0 ]
+mu_0 [mag/pixel^2] =  15.35 +/- 0.07 	 [initial value = 15.8 ]
+m_tot [mag] =  9.50
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0222804174287
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 75
+Chisq:  7.20978586867e-06
+Reduced chisq:  5.14984704905e-07
+N_free:  14
+Component 1: sersic.
+R_e [pixel] =  2.75 +/- 0.06 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  14.36 +/- 0.04 	 [initial value = 14.4 ]
+n =  1.43 +/- 0.07        [initial value = 3.0 ]
+b_n =  2.54
+m_tot [mag] =  9.30
+
+Component 2: disc.
+h [pixel] =  6.84 +/- 0.27        [initial value = 6.4 ]
+mu_0 [mag/pixel^2] =  16.53 +/- 0.14 	 [initial value = 15.8 ]
+m_tot [mag] =  10.36
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0197494620602
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 89
+Chisq:  5.07095606086e-06
+Reduced chisq:  3.62211147204e-07
+N_free:  14
+Component 1: sersic.
+R_e [pixel] =  2.70 +/- 0.11 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  14.27 +/- 0.09 	 [initial value = 14.4 ]
+n =  1.34 +/- 0.13        [initial value = 3.0 ]
+b_n =  2.36
+m_tot [mag] =  9.28
+
+Component 2: disc.
+h [pixel] =  5.99 +/- 0.15        [initial value = 10.0 ]
+mu_0 [mag/pixel^2] =  15.42 +/- 0.11 	 [initial value = 15.8 ]
+m_tot [mag] =  9.54
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.022137794097
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 88
+Chisq:  7.09962951695e-06
+Reduced chisq:  5.07116394068e-07
+N_free:  14
+Component 1: sersic.
+R_e [pixel] =  2.75 +/- 0.06 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  14.37 +/- 0.04 	 [initial value = 14.4 ]
+n =  1.55 +/- 0.08        [initial value = 3.0 ]
+b_n =  2.78
+m_tot [mag] =  9.27
+
+Component 2: disc.
+h [pixel] =  7.09 +/- 0.33        [initial value = 6.4 ]
+mu_0 [mag/pixel^2] =  16.69 +/- 0.17 	 [initial value = 15.8 ]
+m_tot [mag] =  10.44
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.035294186
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 130
+Chisq:  8.90590153e-05
+Reduced chisq:  2.61938280294e-06
+N_free:  34
+Component 1: sersic.
+R_e [pixel] =  5.40 +/- 0.10 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  15.74 +/- 0.10 	 [initial value = 14.4 ]
+n =  3.16 +/- 0.21        [initial value = 3.0 ]
+b_n =  6.00
+m_tot [mag] =  8.81
+
+Component 2: disc.
+h [pixel] =  3.28 +/- 0.17        [initial value = 10.0 ]
+mu_0 [mag/pixel^2] =  15.53 +/- 0.36 	 [initial value = 15.8 ]
+m_tot [mag] =  10.96
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.069615266706
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 76
+Chisq:  0.00123071574333
+Reduced chisq:  3.61975218627e-05
+N_free:  34
+Component 1: sersic.
+R_e [pixel] =  4.12 +/- 0.00 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  15.33 +/- 0.00 	 [initial value = 14.4 ]
+n =  2.76 +/- 0.00        [initial value = 3.0 ]
+b_n =  5.19
+m_tot [mag] =  9.06
+
+Component 2: disc.
+h [pixel] =  0.05 +/- 0.00        [initial value = 6.4 ]
+mu_0 [mag/pixel^2] =  17.50 +/- 0.00 	 [initial value = 15.8 ]
+m_tot [mag] =  21.92
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0259391341452
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 88
+Chisq:  2.81262702079e-05
+Reduced chisq:  8.27243241408e-07
+N_free:  34
+Component 1: sersic.
+R_e [pixel] =  5.13 +/- 0.10 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  15.87 +/- 0.07 	 [initial value = 14.4 ]
+n =  4.12 +/- 0.23        [initial value = 3.0 ]
+b_n =  7.91
+m_tot [mag] =  8.92
+
+Component 2: disc.
+h [pixel] =  3.91 +/- 0.12        [initial value = 10.0 ]
+mu_0 [mag/pixel^2] =  15.40 +/- 0.13 	 [initial value = 15.8 ]
+m_tot [mag] =  10.45
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0395899411646
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 135
+Chisq:  0.000149688037012
+Reduced chisq:  4.40258932388e-06
+N_free:  34
+Component 1: sersic.
+R_e [pixel] =  4.96 +/- 0.27 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  16.46 +/- 0.11 	 [initial value = 14.4 ]
+n =  9.98 +/- 0.05        [initial value = 3.0 ]
+b_n =  19.62
+m_tot [mag] =  9.11
+
+Component 2: disc.
+h [pixel] =  2.67 +/- 0.07        [initial value = 6.4 ]
+mu_0 [mag/pixel^2] =  14.58 +/- 0.06 	 [initial value = 15.8 ]
+m_tot [mag] =  10.44
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0267438550774
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 92
+Chisq:  1.11105051968e-05
+Reduced chisq:  7.93607514059e-07
+N_free:  14
+Component 1: sersic.
+R_e [pixel] =  2.83 +/- 0.18 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  14.36 +/- 0.10 	 [initial value = 14.4 ]
+n =  1.62 +/- 0.18        [initial value = 3.0 ]
+b_n =  2.92
+m_tot [mag] =  9.17
+
+Component 2: disc.
+h [pixel] =  6.27 +/- 0.28        [initial value = 10.0 ]
+mu_0 [mag/pixel^2] =  15.66 +/- 0.23 	 [initial value = 15.8 ]
+m_tot [mag] =  9.68
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0302794501777
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 84
+Chisq:  1.64781998502e-05
+Reduced chisq:  1.17701427502e-06
+N_free:  14
+Component 1: sersic.
+R_e [pixel] =  2.83 +/- 0.10 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  14.43 +/- 0.06 	 [initial value = 14.4 ]
+n =  1.77 +/- 0.11        [initial value = 3.0 ]
+b_n =  3.22
+m_tot [mag] =  9.21
+
+Component 2: disc.
+h [pixel] =  7.74 +/- 0.72        [initial value = 6.4 ]
+mu_0 [mag/pixel^2] =  17.07 +/- 0.33 	 [initial value = 15.8 ]
+m_tot [mag] =  10.63
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0217609650158
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 84
+Chisq:  7.52085276959e-06
+Reduced chisq:  5.37203769256e-07
+N_free:  14
+Component 1: sersic.
+R_e [pixel] =  2.50 +/- 0.09 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  14.17 +/- 0.06 	 [initial value = 14.4 ]
+n =  1.45 +/- 0.13        [initial value = 3.0 ]
+b_n =  2.57
+m_tot [mag] =  9.31
+
+Component 2: disc.
+h [pixel] =  5.86 +/- 0.13        [initial value = 10.0 ]
+mu_0 [mag/pixel^2] =  15.35 +/- 0.11 	 [initial value = 15.8 ]
+m_tot [mag] =  9.52
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Settings.zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0280948947931
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 83
+Chisq:  1.2936140089e-05
+Reduced chisq:  9.24010006354e-07
+N_free:  14
+Component 1: sersic.
+R_e [pixel] =  2.82 +/- 0.11 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  14.45 +/- 0.07 	 [initial value = 14.4 ]
+n =  1.98 +/- 0.13        [initial value = 3.0 ]
+b_n =  3.63
+m_tot [mag] =  9.17
+
+Component 2: disc.
+h [pixel] =  8.06 +/- 0.81        [initial value = 6.4 ]
+mu_0 [mag/pixel^2] =  17.30 +/- 0.38 	 [initial value = 15.8 ]
+m_tot [mag] =  10.77
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  3.0
+Zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.035294186
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 130
+Chisq:  8.90590153e-05
+Reduced chisq:  2.61938280294e-06
+N_free:  34
+Component 1: sersic.
+R_e [pixel] =  5.40 +/- 0.10 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  15.74 +/- 0.10 	 [initial value = 14.4 ]
+n =  3.16 +/- 0.21        [initial value = 3.0 ]
+b_n =  6.00
+m_tot [mag] =  8.81
+
+Component 2: disc.
+h [pixel] =  3.28 +/- 0.17        [initial value = 10.0 ]
+mu_0 [mag/pixel^2] =  15.53 +/- 0.36 	 [initial value = 15.8 ]
+m_tot [mag] =  10.96
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  3.0
+Zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.069615266706
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 76
+Chisq:  0.00123071574333
+Reduced chisq:  3.61975218627e-05
+N_free:  34
+Component 1: sersic.
+R_e [pixel] =  4.12 +/- 0.00 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  15.33 +/- 0.00 	 [initial value = 14.4 ]
+n =  2.76 +/- 0.00        [initial value = 3.0 ]
+b_n =  5.19
+m_tot [mag] =  9.06
+
+Component 2: disc.
+h [pixel] =  0.05 +/- 0.00        [initial value = 6.4 ]
+mu_0 [mag/pixel^2] =  17.50 +/- 0.00 	 [initial value = 15.8 ]
+m_tot [mag] =  21.92
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  3.0
+Zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0259391341452
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 88
+Chisq:  2.81262702079e-05
+Reduced chisq:  8.27243241408e-07
+N_free:  34
+Component 1: sersic.
+R_e [pixel] =  5.13 +/- 0.10 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  15.87 +/- 0.07 	 [initial value = 14.4 ]
+n =  4.12 +/- 0.23        [initial value = 3.0 ]
+b_n =  7.91
+m_tot [mag] =  8.92
+
+Component 2: disc.
+h [pixel] =  3.91 +/- 0.12        [initial value = 10.0 ]
+mu_0 [mag/pixel^2] =  15.40 +/- 0.13 	 [initial value = 15.8 ]
+m_tot [mag] =  10.45
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  3.0
+Zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0395899411646
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 135
+Chisq:  0.000149688037012
+Reduced chisq:  4.40258932388e-06
+N_free:  34
+Component 1: sersic.
+R_e [pixel] =  4.96 +/- 0.27 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  16.46 +/- 0.11 	 [initial value = 14.4 ]
+n =  9.98 +/- 0.05        [initial value = 3.0 ]
+b_n =  19.62
+m_tot [mag] =  9.11
+
+Component 2: disc.
+h [pixel] =  2.67 +/- 0.07        [initial value = 6.4 ]
+mu_0 [mag/pixel^2] =  14.58 +/- 0.06 	 [initial value = 15.8 ]
+m_tot [mag] =  10.44
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  3.0
+Zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0267438550774
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 92
+Chisq:  1.11105051968e-05
+Reduced chisq:  7.93607514059e-07
+N_free:  14
+Component 1: sersic.
+R_e [pixel] =  2.83 +/- 0.18 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  14.36 +/- 0.10 	 [initial value = 14.4 ]
+n =  1.62 +/- 0.18        [initial value = 3.0 ]
+b_n =  2.92
+m_tot [mag] =  9.17
+
+Component 2: disc.
+h [pixel] =  6.27 +/- 0.28        [initial value = 10.0 ]
+mu_0 [mag/pixel^2] =  15.66 +/- 0.23 	 [initial value = 15.8 ]
+m_tot [mag] =  9.68
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  3.0
+Zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0302794501777
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 84
+Chisq:  1.64781998502e-05
+Reduced chisq:  1.17701427502e-06
+N_free:  14
+Component 1: sersic.
+R_e [pixel] =  2.83 +/- 0.10 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  14.43 +/- 0.06 	 [initial value = 14.4 ]
+n =  1.77 +/- 0.11        [initial value = 3.0 ]
+b_n =  3.22
+m_tot [mag] =  9.21
+
+Component 2: disc.
+h [pixel] =  7.74 +/- 0.72        [initial value = 6.4 ]
+mu_0 [mag/pixel^2] =  17.07 +/- 0.33 	 [initial value = 15.8 ]
+m_tot [mag] =  10.63
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  3.0
+Zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0217609650158
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 84
+Chisq:  7.52085276959e-06
+Reduced chisq:  5.37203769256e-07
+N_free:  14
+Component 1: sersic.
+R_e [pixel] =  2.50 +/- 0.09 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  14.17 +/- 0.06 	 [initial value = 14.4 ]
+n =  1.45 +/- 0.13        [initial value = 3.0 ]
+b_n =  2.57
+m_tot [mag] =  9.31
+
+Component 2: disc.
+h [pixel] =  5.86 +/- 0.13        [initial value = 10.0 ]
+mu_0 [mag/pixel^2] =  15.35 +/- 0.11 	 [initial value = 15.8 ]
+m_tot [mag] =  9.52
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  3.0
+Zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0280948947931
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 83
+Chisq:  1.2936140089e-05
+Reduced chisq:  9.24010006354e-07
+N_free:  14
+Component 1: sersic.
+R_e [pixel] =  2.82 +/- 0.11 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  14.45 +/- 0.07 	 [initial value = 14.4 ]
+n =  1.98 +/- 0.13        [initial value = 3.0 ]
+b_n =  3.63
+m_tot [mag] =  9.17
+
+Component 2: disc.
+h [pixel] =  8.06 +/- 0.81        [initial value = 6.4 ]
+mu_0 [mag/pixel^2] =  17.30 +/- 0.38 	 [initial value = 15.8 ]
+m_tot [mag] =  10.77
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0356056025485
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 75
+Chisq:  8.95273809198e-05
+Reduced chisq:  2.63315826235e-06
+N_free:  34
+Component 1: sersic.
+R_e [pixel] =  5.43 +/- 0.11 	[initial value = 5.0 ]
+mu_e [mag/pixel^2] =  15.79 +/- 0.10 	 [initial value = 16.0 ]
+n =  3.28 +/- 0.23        [initial value = 4.0 ]
+b_n =  6.23
+m_tot [mag] =  8.83
+
+Component 2: disc.
+h [pixel] =  3.25 +/- 0.14        [initial value = 4.0 ]
+mu_0 [mag/pixel^2] =  15.36 +/- 0.29 	 [initial value = 15.4 ]
+m_tot [mag] =  10.80
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.069615266706
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 76
+Chisq:  0.00123071574333
+Reduced chisq:  3.61975218627e-05
+N_free:  34
+Component 1: sersic.
+R_e [pixel] =  4.12 +/- 0.00 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  15.33 +/- 0.00 	 [initial value = 14.4 ]
+n =  2.76 +/- 0.00        [initial value = 3.0 ]
+b_n =  5.19
+m_tot [mag] =  9.06
+
+Component 2: disc.
+h [pixel] =  0.05 +/- 0.00        [initial value = 6.4 ]
+mu_0 [mag/pixel^2] =  17.50 +/- 0.00 	 [initial value = 15.8 ]
+m_tot [mag] =  21.92
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0261145707753
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 69
+Chisq:  2.86319318411e-05
+Reduced chisq:  8.42115642385e-07
+N_free:  34
+Component 1: sersic.
+R_e [pixel] =  5.15 +/- 0.10 	[initial value = 5.0 ]
+mu_e [mag/pixel^2] =  15.90 +/- 0.07 	 [initial value = 16.0 ]
+n =  4.22 +/- 0.25        [initial value = 4.0 ]
+b_n =  8.11
+m_tot [mag] =  8.92
+
+Component 2: disc.
+h [pixel] =  3.87 +/- 0.11        [initial value = 4.0 ]
+mu_0 [mag/pixel^2] =  15.35 +/- 0.13 	 [initial value = 15.4 ]
+m_tot [mag] =  10.41
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0395899411646
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 135
+Chisq:  0.000149688037012
+Reduced chisq:  4.40258932388e-06
+N_free:  34
+Component 1: sersic.
+R_e [pixel] =  4.96 +/- 0.27 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  16.46 +/- 0.11 	 [initial value = 14.4 ]
+n =  9.98 +/- 0.05        [initial value = 3.0 ]
+b_n =  19.62
+m_tot [mag] =  9.11
+
+Component 2: disc.
+h [pixel] =  2.67 +/- 0.07        [initial value = 6.4 ]
+mu_0 [mag/pixel^2] =  14.58 +/- 0.06 	 [initial value = 15.8 ]
+m_tot [mag] =  10.44
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0405120536329
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 76
+Chisq:  4.152125117e-05
+Reduced chisq:  2.965803655e-06
+N_free:  14
+Component 1: sersic.
+R_e [pixel] =  4.16 +/- 1.05 	[initial value = 5.0 ]
+mu_e [mag/pixel^2] =  14.97 +/- 0.42 	 [initial value = 16.0 ]
+n =  2.55 +/- 0.65        [initial value = 4.0 ]
+b_n =  4.78
+m_tot [mag] =  8.72
+
+Component 2: disc.
+h [pixel] =  7.03 +/- 2.05        [initial value = 4.0 ]
+mu_0 [mag/pixel^2] =  17.41 +/- 1.57 	 [initial value = 15.4 ]
+m_tot [mag] =  11.18
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0302794501777
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 84
+Chisq:  1.64781998502e-05
+Reduced chisq:  1.17701427502e-06
+N_free:  14
+Component 1: sersic.
+R_e [pixel] =  2.83 +/- 0.10 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  14.43 +/- 0.06 	 [initial value = 14.4 ]
+n =  1.77 +/- 0.11        [initial value = 3.0 ]
+b_n =  3.22
+m_tot [mag] =  9.21
+
+Component 2: disc.
+h [pixel] =  7.74 +/- 0.72        [initial value = 6.4 ]
+mu_0 [mag/pixel^2] =  17.07 +/- 0.33 	 [initial value = 15.8 ]
+m_tot [mag] =  10.63
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0350138541753
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 70
+Chisq:  2.58172201467e-05
+Reduced chisq:  1.84408715334e-06
+N_free:  14
+Component 1: sersic.
+R_e [pixel] =  3.64 +/- 0.78 	[initial value = 5.0 ]
+mu_e [mag/pixel^2] =  14.79 +/- 0.37 	 [initial value = 16.0 ]
+n =  2.53 +/- 0.64        [initial value = 4.0 ]
+b_n =  4.73
+m_tot [mag] =  8.84
+
+Component 2: disc.
+h [pixel] =  6.64 +/- 0.72        [initial value = 4.0 ]
+mu_0 [mag/pixel^2] =  16.61 +/- 0.71 	 [initial value = 15.4 ]
+m_tot [mag] =  10.50
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0280948947931
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 83
+Chisq:  1.2936140089e-05
+Reduced chisq:  9.24010006354e-07
+N_free:  14
+Component 1: sersic.
+R_e [pixel] =  2.82 +/- 0.11 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  14.45 +/- 0.07 	 [initial value = 14.4 ]
+n =  1.98 +/- 0.13        [initial value = 3.0 ]
+b_n =  3.63
+m_tot [mag] =  9.17
+
+Component 2: disc.
+h [pixel] =  8.06 +/- 0.81        [initial value = 6.4 ]
+mu_0 [mag/pixel^2] =  17.30 +/- 0.38 	 [initial value = 15.8 ]
+m_tot [mag] =  10.77
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0356056025485
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 75
+Chisq:  8.95273809198e-05
+Reduced chisq:  2.63315826235e-06
+N_free:  34
+Component 1: sersic.
+R_e [pixel] =  5.43 +/- 0.11 	[initial value = 5.0 ]
+mu_e [mag/pixel^2] =  15.79 +/- 0.10 	 [initial value = 16.0 ]
+n =  3.28 +/- 0.23        [initial value = 4.0 ]
+b_n =  6.23
+m_tot [mag] =  8.83
+
+Component 2: disc.
+h [pixel] =  3.25 +/- 0.14        [initial value = 4.0 ]
+mu_0 [mag/pixel^2] =  15.36 +/- 0.29 	 [initial value = 15.4 ]
+m_tot [mag] =  10.80
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0696411794245
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 68
+Chisq:  0.00123071387488
+Reduced chisq:  3.61974669082e-05
+N_free:  34
+Component 1: sersic.
+R_e [pixel] =  4.13 +/- 0.07 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  15.33 +/- 0.03 	 [initial value = 14.4 ]
+n =  2.76 +/- 0.08        [initial value = 3.0 ]
+b_n =  5.19
+m_tot [mag] =  9.06
+
+Component 2: disc.
+h [pixel] =  6.28 +/- 559.18        [initial value = 4.0 ]
+mu_0 [mag/pixel^2] =  27.55 +/- 484.36 	 [initial value = 15.8 ]
+m_tot [mag] =  21.57
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0261145707753
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 69
+Chisq:  2.86319318411e-05
+Reduced chisq:  8.42115642385e-07
+N_free:  34
+Component 1: sersic.
+R_e [pixel] =  5.15 +/- 0.10 	[initial value = 5.0 ]
+mu_e [mag/pixel^2] =  15.90 +/- 0.07 	 [initial value = 16.0 ]
+n =  4.22 +/- 0.25        [initial value = 4.0 ]
+b_n =  8.11
+m_tot [mag] =  8.92
+
+Component 2: disc.
+h [pixel] =  3.87 +/- 0.11        [initial value = 4.0 ]
+mu_0 [mag/pixel^2] =  15.35 +/- 0.13 	 [initial value = 15.4 ]
+m_tot [mag] =  10.41
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0418929657418
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 528
+Chisq:  0.000193303421785
+Reduced chisq:  5.68539475838e-06
+N_free:  34
+Component 1: sersic.
+R_e [pixel] =  4.48 +/- 0.06 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  15.58 +/- 0.03 	 [initial value = 14.4 ]
+n =  2.62 +/- 0.07        [initial value = 3.0 ]
+b_n =  4.91
+m_tot [mag] =  9.16
+
+Component 2: disc.
+h [pixel] =  0.06 +/- 0.08        [initial value = 4.0 ]
+mu_0 [mag/pixel^2] =  1.42 +/- 15.68 	 [initial value = 15.8 ]
+m_tot [mag] =  5.53
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0405120536329
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 76
+Chisq:  4.152125117e-05
+Reduced chisq:  2.965803655e-06
+N_free:  14
+Component 1: sersic.
+R_e [pixel] =  4.16 +/- 1.05 	[initial value = 5.0 ]
+mu_e [mag/pixel^2] =  14.97 +/- 0.42 	 [initial value = 16.0 ]
+n =  2.55 +/- 0.65        [initial value = 4.0 ]
+b_n =  4.78
+m_tot [mag] =  8.72
+
+Component 2: disc.
+h [pixel] =  7.03 +/- 2.05        [initial value = 4.0 ]
+mu_0 [mag/pixel^2] =  17.41 +/- 1.57 	 [initial value = 15.4 ]
+m_tot [mag] =  11.18
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0277386691179
+Convolution done?  True
+PSF:  gaussian
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 175
+Chisq:  1.44755908314e-05
+Reduced chisq:  1.03397077367e-06
+N_free:  14
+Component 1: sersic.
+R_e [pixel] =  4.34 +/- 0.16 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  15.63 +/- 0.09 	 [initial value = 14.4 ]
+n =  3.30 +/- 0.26        [initial value = 3.0 ]
+b_n =  6.26
+m_tot [mag] =  9.16
+
+Component 2: disc.
+h [pixel] =  1.64 +/- 0.13        [initial value = 4.0 ]
+mu_0 [mag/pixel^2] =  13.69 +/- 0.19 	 [initial value = 15.8 ]
+m_tot [mag] =  10.62
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0350138541753
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 70
+Chisq:  2.58172201467e-05
+Reduced chisq:  1.84408715334e-06
+N_free:  14
+Component 1: sersic.
+R_e [pixel] =  3.64 +/- 0.78 	[initial value = 5.0 ]
+mu_e [mag/pixel^2] =  14.79 +/- 0.37 	 [initial value = 16.0 ]
+n =  2.53 +/- 0.64        [initial value = 4.0 ]
+b_n =  4.73
+m_tot [mag] =  8.84
+
+Component 2: disc.
+h [pixel] =  6.64 +/- 0.72        [initial value = 4.0 ]
+mu_0 [mag/pixel^2] =  16.61 +/- 0.71 	 [initial value = 15.4 ]
+m_tot [mag] =  10.50
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n5845_op_mos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: pixel
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.15
+Delta:  0.0307211700104
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 104
+Chisq:  1.8058965682e-05
+Reduced chisq:  1.28992612014e-06
+N_free:  14
+Component 1: sersic.
+R_e [pixel] =  3.14 +/- 0.21 	[initial value = 2.8 ]
+mu_e [mag/pixel^2] =  14.64 +/- 0.12 	 [initial value = 14.4 ]
+n =  2.34 +/- 0.26        [initial value = 3.0 ]
+b_n =  4.35
+m_tot [mag] =  9.05
+
+Component 2: disc.
+h [pixel] =  13.42 +/- 8.97        [initial value = 4.0 ]
+mu_0 [mag/pixel^2] =  18.85 +/- 1.48 	 [initial value = 15.8 ]
+m_tot [mag] =  11.21
+
+--------------------------------------------
+--------------------------------------------
+

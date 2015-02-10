@@ -1,0 +1,104 @@
+start
+device postencap circinus_bestfit.eps
+bestfit
+x11
+device postencap circinus_params2.eps
+params2
+x11
+device postencap circinus_bestfitreqmoffat.eps
+bestfitreqmoffat
+x11
+device postencap circinus_profreqmoffat.eps
+profreqmoffat
+x11
+quit
+macro read smfigures.mac
+start
+device postencap circinus_bestfit.eps
+bestfit
+x11
+device postencap circinus_params2.eps
+params2
+x11
+device postencap circinus_bestfitreqmoffat.eps
+bestfitreqmoffat
+x11
+device postencap circinus_profreqmoffat.eps
+profreqmoffat
+x11
+quit
+macro read smfigures.mac
+start
+device postencap circinus_bestfit.eps
+bestfit
+x11
+device postencap circinus_params2.eps
+params2
+x11
+device postencap circinus_bestfitreqmoffat.eps
+bestfitreqmoffat
+x11
+device postencap circinus_profreqmoffat.eps
+profreqmoffat
+x11
+quit
+macro read smfigures.mac
+start
+device postencap circinus_bestfit.eps
+bestfit
+x11
+device postencap circinus_params2.eps
+params2
+x11
+device postencap circinus_bestfitreqmoffat.eps
+bestfitreqmoffat
+x11
+device postencap circinus_profreqmoffat.eps
+profreqmoffat
+x11
+quit
+macro read smfigures.mac
+start
+device postencap circinus_bestfit.eps
+bestfit
+x11
+device postencap circinus_params2.eps
+params2
+x11
+device postencap circinus_bestfitreqmoffat.eps
+bestfitreqmoffat
+x11
+device postencap circinus_profreqmoffat.eps
+profreqmoffat
+x11
+quit
+macro read smfigures.mac
+start
+device postencap circinus_bestfit.eps
+bestfit
+x11
+device postencap circinus_params2.eps
+params2
+x11
+device postencap circinus_bestfitreqmoffat.eps
+bestfitreqmoffat
+x11
+device postencap circinus_profreqmoffat.eps
+profreqmoffat
+x11
+quit
+macro read smfigures.mac
+start
+device postencap circinus_bestfit.eps
+bestfit
+x11
+device postencap circinus_params2.eps
+params2
+x11
+device postencap circinus_bestfitreqmoffat.eps
+bestfitreqmoffat
+x11
+device postencap circinus_profreqmoffat.eps
+profreqmoffat
+x11
+quit

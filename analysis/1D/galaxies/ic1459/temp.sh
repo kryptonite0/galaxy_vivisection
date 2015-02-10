@@ -1,0 +1,13 @@
+mv Req_gaussian_linscale.5px_SM.dat	     Req_gaussian_linscale05px_SM.dat
+mv Req_gaussian_linscale.5px_par_SM.dat      Req_gaussian_linscale05px_par_SM.dat
+mv Req_gaussian_linscale.5px_res_SM.dat      Req_gaussian_linscale05px_res_SM.dat
+mv Req_moffat_linscale.5px_SM.dat	     Req_moffat_linscale05px_SM.dat
+mv Req_moffat_linscale.5px_par_SM.dat	     Req_moffat_linscale05px_par_SM.dat
+mv Req_moffat_linscale.5px_res_SM.dat	     Req_moffat_linscale05px_res_SM.dat
+mv Rmaj_gaussian_linscale.5px_SM.dat	     Rmaj_gaussian_linscale05px_SM.dat
+mv Rmaj_gaussian_linscale.5px_par_SM.dat     Rmaj_gaussian_linscale05px_par_SM.dat
+mv Rmaj_gaussian_linscale.5px_res_SM.dat     Rmaj_gaussian_linscale05px_res_SM.dat
+mv Rmaj_moffat_linscale.5px_SM.dat	     Rmaj_moffat_linscale05px_SM.dat
+mv Rmaj_moffat_linscale.5px_par_SM.dat	     Rmaj_moffat_linscale05px_par_SM.dat
+mv Rmaj_moffat_linscale.5px_res_SM.dat	     Rmaj_moffat_linscale05px_res_SM.dat
+mv ic1459_op_mos_galfitsky_linscale.5px.tab  ic1459_op_mos_galfitsky_linscale05px.tab
