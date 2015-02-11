@@ -53,7 +53,7 @@ C     f77 FITEXY-driver.f -L$PGPLOT_DIR -lpgplot -L/usr/X11R6 -lX11 bces_regress
             epsstart=0.0
          elseif (choice.eq.4) then
             astart=8.0
-            bstart=6.0 
+            bstart=5.0 
             epsstart=0.0
          endif
 

@@ -6,7 +6,9 @@ import matplotlib
 from scipy import stats
 from instruments.linear_regression import bces
 from instruments.linear_regression import predband
+from instruments.linear_regression import fitexy
 from instruments import b_n
+
 
 from matplotlib import rc
 rc('font',**{'family':'sans-serif','sans-serif':['CenturyGothic']})
@@ -58,63 +60,97 @@ def mag_sph_vs_logn(axis):
         ax.set_xticks(xticks)
         ax.set_xticklabels(xticks_labels)
 	
-	print 'Ellipticals'
-	#print log_n-np.average(log_n),0.5*(perr_log_n+merr_log_n),mag_sph, 0.5*(merr_mag_sph + perr_mag_sph),log_n*[0.0]
-	A,B,Aerr,Berr,covAB=bces.bces(log_n[ELL==1]-np.average(log_n[ELL==1]),0.5*(perr_log_n[ELL==1]+merr_log_n[ELL==1]),mag_sph[ELL==1],
-		0.5*(merr_mag_sph[ELL==1] + perr_mag_sph[ELL==1]),log_n[ELL==1]*[0.0])
-	print '---------------------------------'
-	print 'y = A*(x-<x>) + B '
-	print '<x> =', np.average(log_n[ELL==1])
-	print
-	print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0])
-	print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1])
-	print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2])
-	print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3])
-	print '---------------------------------'
+	### fit using BCES ####
+       #print 'Ellipticals'
+       ##print log_n-np.average(log_n),0.5*(perr_log_n+merr_log_n),mag_sph, 0.5*(merr_mag_sph + perr_mag_sph),log_n*[0.0]
+       #A,B,Aerr,Berr,covAB=bces.bces(log_n[ELL==1]-np.average(log_n[ELL==1]),0.5*(perr_log_n[ELL==1]+merr_log_n[ELL==1]),mag_sph[ELL==1],
+       #	0.5*(merr_mag_sph[ELL==1] + perr_mag_sph[ELL==1]),log_n[ELL==1]*[0.0])
+       #print '---------------------------------'
+       #print 'y = A*(x-<x>) + B '
+       #print '<x> =', np.average(log_n[ELL==1])
+       #print
+       #print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0])
+       #print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1])
+       #print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2])
+       #print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3])
+       #print '---------------------------------'
+       #
+       #xx = np.arange(0.001,30,0.1)
+       #logxx = np.log10(xx)
+       ##print A[2], B[2]
+       ## calculates the prediction bands for the given input arrays
+       #lpb68,upb68,logxx = predband.predband(log_n[ELL==1]-np.average(log_n[ELL==1]),mag_sph[ELL==1],A[2],B[2],conf=0.68,x=logxx)
+       ##lpb95,upb95,logxx = predband.predband(log_n-np.average(log_n),log_mbh,A[2],B[2],conf=0.95,x=logxx)
+       ##lpb99,upb99,logxx = predband.predband(log_n-np.average(log_n),log_mbh,A[2],B[2],conf=0.99,x=logxx)
+       #yy = (A[2]*(logxx) + B[2])
+       #
+       #ax.plot(logxx+np.average(log_n[ELL==1]),yy, color='red', linewidth=2.)
+       ## plots a shaded area containing the prediction band  
+       #plt.fill_between(logxx+np.average(log_n[ELL==1]), lpb68, upb68, alpha=0.15, facecolor='red')
+       #ax.plot(logxx+np.average(log_n[ELL==1]),lpb68, color='red')
+       #ax.plot(logxx+np.average(log_n[ELL==1]),upb68, color='red')
+       #
+       #print 'Bulges'
+       #A,B,Aerr,Berr,covAB=bces.bces(log_n[ELL==0]-np.average(log_n[ELL==0]),0.5*(perr_log_n[ELL==0]+merr_log_n[ELL==0]),mag_sph[ELL==0],
+       #	0.5*(merr_mag_sph[ELL==0] + perr_mag_sph[ELL==0]),log_n[ELL==0]*[0.0])
+       #print '---------------------------------'
+       #print 'y = A*(x-<x>) + B '
+       #print '<x> =', np.average(log_n[ELL==0])
+       #print
+       #print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0])
+       #print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1])
+       #print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2])
+       #print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3])
+       #print '---------------------------------'
+       #
+       #xx = np.arange(0.001,30,0.1)
+       #logxx = np.log10(xx)
+       ##print A[2], B[2]
+       ## calculates the prediction bands for the given input arrays
+       #lpb68,upb68,logxx = predband.predband(log_n[ELL==0]-np.average(log_n[ELL==0]),mag_sph[ELL==0],A[2],B[2],conf=0.68,x=logxx)
+       ##lpb95,upb95,logxx = predband.predband(log_n-np.average(log_n),log_mbh,A[2],B[2],conf=0.95,x=logxx)
+       ##lpb99,upb99,logxx = predband.predband(log_n-np.average(log_n),log_mbh,A[2],B[2],conf=0.99,x=logxx)
+       #yy = (A[2]*(logxx) + B[2])
+       #
+       #ax.plot(logxx+np.average(log_n[ELL==0]),yy, color='blue', linewidth=2.)
+       ## plots a shaded area containing the prediction band  
+       #plt.fill_between(logxx+np.average(log_n[ELL==0]), lpb68, upb68, alpha=0.15, facecolor='blue')
+       #ax.plot(logxx+np.average(log_n[ELL==0]),lpb68, color='blue')
+       #ax.plot(logxx+np.average(log_n[ELL==0]),upb68, color='blue')
+       
+        ### fit using FITEXY ###
+        print 'Ellipticals'
+        A,B = fitexy.bisect_modfitexy(log_n[ELL==1]-np.average(log_n[ELL==1]), 0.5*(perr_log_n[ELL==1]+merr_log_n[ELL==1]),
+        	mag_sph[ELL==1], 0.5*(merr_mag_sph[ELL==1] + perr_mag_sph[ELL==1]))
+        xx = np.arange(0.001,30,0.1)
+        logxx = np.log10(xx)
+        # plot y|x relation
+        y_1 = A[0] + B[0]*logxx
+        ax.plot(logxx+np.average(log_n[ELL==1]), y_1, ls='--', color='red', alpha=0.5, linewidth=2.)
+        # plot x|y relation
+        y_2 = A[1] + B[1]*logxx
+        ax.plot(logxx+np.average(log_n[ELL==1]), y_2, ls='--', color='red', alpha=0.5, linewidth=2.)
+        # plot bisectore relation
+        y_bisec = A[2] + B[2]*logxx
+        ax.plot(logxx+np.average(log_n[ELL==1]), y_bisec, ls='-', color='red', linewidth=2.)
 	
+        ### fit using FITEXY ###
+	print 'Bulges'
+	A,B = fitexy.bisect_modfitexy(log_n[ELL==0]-np.average(log_n[ELL==0]), 0.5*(perr_log_n[ELL==0]+merr_log_n[ELL==0]),
+		mag_sph[ELL==0], 0.5*(merr_mag_sph[ELL==0] + perr_mag_sph[ELL==0]))
 	xx = np.arange(0.001,30,0.1)
 	logxx = np.log10(xx)
-	#print A[2], B[2]
-	# calculates the prediction bands for the given input arrays
-	lpb68,upb68,logxx = predband.predband(log_n[ELL==1]-np.average(log_n[ELL==1]),mag_sph[ELL==1],A[2],B[2],conf=0.68,x=logxx)
-	#lpb95,upb95,logxx = predband.predband(log_n-np.average(log_n),log_mbh,A[2],B[2],conf=0.95,x=logxx)
-	#lpb99,upb99,logxx = predband.predband(log_n-np.average(log_n),log_mbh,A[2],B[2],conf=0.99,x=logxx)
-	yy = (A[2]*(logxx) + B[2])
+	# plot y|x relation
+	y_1 = A[0] + B[0]*logxx
+	ax.plot(logxx+np.average(log_n[ELL==0]), y_1, ls='--', color='blue', alpha=0.5, linewidth=2.)
+	# plot x|y relation
+	y_2 = A[1] + B[1]*logxx
+	ax.plot(logxx+np.average(log_n[ELL==0]), y_2, ls='--', color='blue', alpha=0.5, linewidth=2.)
+	# plot bisector relation
+	y_bisec = A[2] + B[2]*logxx
+	ax.plot(logxx+np.average(log_n[ELL==0]), y_bisec, ls='-', color='blue', linewidth=2.)
 	
-	ax.plot(logxx+np.average(log_n[ELL==1]),yy, color='red', linewidth=2.)
-	# plots a shaded area containing the prediction band  
-	plt.fill_between(logxx+np.average(log_n[ELL==1]), lpb68, upb68, alpha=0.15, facecolor='red')
-	ax.plot(logxx+np.average(log_n[ELL==1]),lpb68, color='red')
-	ax.plot(logxx+np.average(log_n[ELL==1]),upb68, color='red')
-
-        print 'Bulges'
-        A,B,Aerr,Berr,covAB=bces.bces(log_n[ELL==0]-np.average(log_n[ELL==0]),0.5*(perr_log_n[ELL==0]+merr_log_n[ELL==0]),mag_sph[ELL==0],
-        	0.5*(merr_mag_sph[ELL==0] + perr_mag_sph[ELL==0]),log_n[ELL==0]*[0.0])
-        print '---------------------------------'
-        print 'y = A*(x-<x>) + B '
-        print '<x> =', np.average(log_n[ELL==0])
-        print
-        print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0])
-        print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1])
-        print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2])
-        print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3])
-        print '---------------------------------'
-	
-	xx = np.arange(0.001,30,0.1)
-	logxx = np.log10(xx)
-	#print A[2], B[2]
-	# calculates the prediction bands for the given input arrays
-	lpb68,upb68,logxx = predband.predband(log_n[ELL==0]-np.average(log_n[ELL==0]),mag_sph[ELL==0],A[2],B[2],conf=0.68,x=logxx)
-	#lpb95,upb95,logxx = predband.predband(log_n-np.average(log_n),log_mbh,A[2],B[2],conf=0.95,x=logxx)
-	#lpb99,upb99,logxx = predband.predband(log_n-np.average(log_n),log_mbh,A[2],B[2],conf=0.99,x=logxx)
-	yy = (A[2]*(logxx) + B[2])
-	
-	ax.plot(logxx+np.average(log_n[ELL==0]),yy, color='blue', linewidth=2.)
-	# plots a shaded area containing the prediction band  
-	plt.fill_between(logxx+np.average(log_n[ELL==0]), lpb68, upb68, alpha=0.15, facecolor='blue')
-	ax.plot(logxx+np.average(log_n[ELL==0]),lpb68, color='blue')
-	ax.plot(logxx+np.average(log_n[ELL==0]),upb68, color='blue')
-
+	#print A,B
 	
         #ax.plot(logn,mag_sph, color='green', linewidth=2.)
         # plots a shaded area containing the prediction band  
@@ -131,8 +167,8 @@ def mag_sph_vs_logn(axis):
         plt.xlabel(r'$n^{\rm ' + axis + '}$', labelpad=20)
         plt.ylabel(r'$MAG_{\rm sph} \rm ~[mag]$', labelpad=20)
         plt.subplots_adjust(left=0.15,bottom=0.15)
-        plt.show()
-        #plt.savefig(path_scalrel_plots + 'mag_sph_vs_logn' + axis + '.pdf', format='pdf', dpi=1000)
+        #plt.show()
+        plt.savefig(path_scalrel_plots + 'mag_sph_vs_logn' + axis + '.pdf', format='pdf', dpi=1000)
         #plt.clf()
 		
 	
@@ -191,7 +227,7 @@ def log_mbh_vs_logn(axis):
         #ax.errorbar(log_n[ELL==1 ], mbh[ELL==1 ], xerr=[merr_log_n[ELL==1 ],perr_log_n[ELL==1 ]], 
 	#	yerr=[merr_mbh[ELL==1 ],perr_mbh[ELL==1 ]], ecolor='gray', fmt='ro', markersize=12, elinewidth=1.2, capthick=1.2, barsabove=False) 
         #ax.errorbar(log_n, mbh, xerr=[merr_log_n,perr_log_n], yerr=[merr_mbh,perr_mbh], ecolor='gray', fmt='ko', markersize=12, elinewidth=1.2, capthick=1.2, barsabove=False) 
-        ax.scatter(log_n[ELL==1] and (core==1)], mbh[(ELL==1) and (core==1)], c='black', s=60)
+        #ax.scatter(log_n[ELL==1] and (core==1)], mbh[(ELL==1) and (core==1)], c='black', s=60)
         ax.set_yscale('log')
         xticks = np.log10(np.asarray([0.5,1,2,3,4,5,6,10]))
         xticks_labels = ['$0.5$','$1$','$2$','$3$','$4$','$5$','$6$','$10$']
@@ -244,70 +280,103 @@ def log_mbh_vs_mag_sph():
 		
         fig, ax = plt.subplots()
 
-        print 'core-Sersic'
-	A,B,Aerr,Berr,covAB=bces.bces(mag_sph[core==1]-np.average(mag_sph[core==1]),0.5*(perr_mag_sph[core==1]+merr_mag_sph[core==1]),
-		log_mbh[core==1],0.5*(merr_log_mbh[core==1] + perr_log_mbh[core==1]),mag_sph[core==1]*[0.0])
-        print '---------------------------------'
-        print 'y = A*(x-<x>) + B '
-        print '<x> =', np.average(mag_sph[core==1])
-        print
-        print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0])
-        print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1])
-        print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2])
-        print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3])
-        print '---------------------------------'
-       
-        logxx = np.arange(-40,40,0.01)
-        # calculates the prediction bands for the given input arrays
-        lpb68,upb68,logxx = predband.predband(mag_sph[core==1]-np.average(mag_sph[core==1]),log_mbh[core==1],A[2],B[2],conf=0.68,x=logxx)
-        lpb95,upb95,logxx = predband.predband(mag_sph[core==1]-np.average(mag_sph[core==1]),log_mbh[core==1],A[2],B[2],conf=0.95,x=logxx)
-        lpb99,upb99,logxx = predband.predband(mag_sph[core==1]-np.average(mag_sph[core==1]),log_mbh[core==1],A[2],B[2],conf=0.99,x=logxx)
-        yy = (A[2]*(logxx) + B[2])
-        #print lpb, upb,xx
-        ax.plot(logxx+np.average(mag_sph[core==1]),10**yy, color='pink', linewidth=2.)
-        # plots a shaded area containing the prediction band
-        plt.fill_between(logxx+np.average(mag_sph[core==1]), 10**lpb68, 10**upb68, alpha=0.15, facecolor='pink')
-        ax.plot(logxx+np.average(mag_sph[core==1]),10**lpb68, color='pink')
-        ax.plot(logxx+np.average(mag_sph[core==1]),10**upb68, color='pink')
-        plt.fill_between(logxx+np.average(mag_sph[core==1]), 10**lpb95, 10**upb95, alpha=0.1, facecolor='pink')
-        ax.plot(logxx+np.average(mag_sph[core==1]),10**lpb95, color='pink')
-        ax.plot(logxx+np.average(mag_sph[core==1]),10**upb95, color='pink')
-        plt.fill_between(logxx+np.average(mag_sph[core==1]), 10**lpb99, 10**upb99, alpha=0.05, facecolor='pink')
-        ax.plot(logxx+np.average(mag_sph[core==1]),10**lpb99, color='pink')
-        ax.plot(logxx+np.average(mag_sph[core==1]),10**upb99, color='pink')
+       #print 'core-Sersic'
+       #A,B,Aerr,Berr,covAB=bces.bces(mag_sph[core==1]-np.average(mag_sph[core==1]),0.5*(perr_mag_sph[core==1]+merr_mag_sph[core==1]),
+       #	log_mbh[core==1],0.5*(merr_log_mbh[core==1] + perr_log_mbh[core==1]),mag_sph[core==1]*[0.0])
+       #print '---------------------------------'
+       #print 'y = A*(x-<x>) + B '
+       #print '<x> =', np.average(mag_sph[core==1])
+       #print
+       #print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0])
+       #print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1])
+       #print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2])
+       #print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3])
+       #print '---------------------------------'
+       #
+       #logxx = np.arange(-40,40,0.01)
+       ## calculates the prediction bands for the given input arrays
+       #lpb68,upb68,logxx = predband.predband(mag_sph[core==1]-np.average(mag_sph[core==1]),log_mbh[core==1],A[2],B[2],conf=0.68,x=logxx)
+       #lpb95,upb95,logxx = predband.predband(mag_sph[core==1]-np.average(mag_sph[core==1]),log_mbh[core==1],A[2],B[2],conf=0.95,x=logxx)
+       #lpb99,upb99,logxx = predband.predband(mag_sph[core==1]-np.average(mag_sph[core==1]),log_mbh[core==1],A[2],B[2],conf=0.99,x=logxx)
+       #yy = (A[2]*(logxx) + B[2])
+       ##print lpb, upb,xx
+       #ax.plot(logxx+np.average(mag_sph[core==1]),10**yy, color='pink', linewidth=2.)
+       ## plots a shaded area containing the prediction band
+       #plt.fill_between(logxx+np.average(mag_sph[core==1]), 10**lpb68, 10**upb68, alpha=0.15, facecolor='pink')
+       #ax.plot(logxx+np.average(mag_sph[core==1]),10**lpb68, color='pink')
+       #ax.plot(logxx+np.average(mag_sph[core==1]),10**upb68, color='pink')
+       #plt.fill_between(logxx+np.average(mag_sph[core==1]), 10**lpb95, 10**upb95, alpha=0.1, facecolor='pink')
+       #ax.plot(logxx+np.average(mag_sph[core==1]),10**lpb95, color='pink')
+       #ax.plot(logxx+np.average(mag_sph[core==1]),10**upb95, color='pink')
+       #plt.fill_between(logxx+np.average(mag_sph[core==1]), 10**lpb99, 10**upb99, alpha=0.05, facecolor='pink')
+       #ax.plot(logxx+np.average(mag_sph[core==1]),10**lpb99, color='pink')
+       #ax.plot(logxx+np.average(mag_sph[core==1]),10**upb99, color='pink')
+       #
+       #print 'Sersic'
+       #A,B,Aerr,Berr,covAB=bces.bces(mag_sph[core==0]-np.average(mag_sph[core==0]),0.5*(perr_mag_sph[core==0]+merr_mag_sph[core==0]),
+       #	log_mbh[core==0],0.5*(merr_log_mbh[core==0] + perr_log_mbh[core==0]),mag_sph[core==0]*[0.0])
+       #print '---------------------------------'
+       #print 'y = A*(x-<x>) + B '
+       #print '<x> =', np.average(mag_sph[core==0])
+       #print
+       #print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0])
+       #print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1])
+       #print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2])
+       #print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3])
+       #print '---------------------------------'
+       #
+       #logxx = np.arange(-40,40,0.01)
+       ## calculates the prediction bands for the given input arrays
+       #lpb68,upb68,logxx = predband.predband(mag_sph[core==0]-np.average(mag_sph[core==0]),log_mbh[core==0],A[2],B[2],conf=0.68,x=logxx)
+       #lpb95,upb95,logxx = predband.predband(mag_sph[core==0]-np.average(mag_sph[core==0]),log_mbh[core==0],A[2],B[2],conf=0.95,x=logxx)
+       #lpb99,upb99,logxx = predband.predband(mag_sph[core==0]-np.average(mag_sph[core==0]),log_mbh[core==0],A[2],B[2],conf=0.99,x=logxx)
+       #yy = (A[2]*(logxx) + B[2])
+       ##print lpb, upb,xx
+       #ax.plot(logxx+np.average(mag_sph[core==0]),10**yy, color='cyan', linewidth=2.)
+       ## plots a shaded area containing the prediction band
+       #plt.fill_between(logxx+np.average(mag_sph[core==0]), 10**lpb68, 10**upb68, alpha=0.15, facecolor='cyan')
+       #ax.plot(logxx+np.average(mag_sph[core==0]),10**lpb68, color='cyan')
+       #ax.plot(logxx+np.average(mag_sph[core==0]),10**upb68, color='cyan')
+       #plt.fill_between(logxx+np.average(mag_sph[core==0]), 10**lpb95, 10**upb95, alpha=0.1, facecolor='cyan')
+       #ax.plot(logxx+np.average(mag_sph[core==0]),10**lpb95, color='cyan')
+       #ax.plot(logxx+np.average(mag_sph[core==0]),10**upb95, color='cyan')
+       #plt.fill_between(logxx+np.average(mag_sph[core==0]), 10**lpb99, 10**upb99, alpha=0.05, facecolor='cyan')
+       #ax.plot(logxx+np.average(mag_sph[core==0]),10**lpb99, color='cyan')
+       #ax.plot(logxx+np.average(mag_sph[core==0]),10**upb99, color='cyan')
 	
-        print 'Sersic'
-	A,B,Aerr,Berr,covAB=bces.bces(mag_sph[core==0]-np.average(mag_sph[core==0]),0.5*(perr_mag_sph[core==0]+merr_mag_sph[core==0]),
-		log_mbh[core==0],0.5*(merr_log_mbh[core==0] + perr_log_mbh[core==0]),mag_sph[core==0]*[0.0])
-        print '---------------------------------'
-        print 'y = A*(x-<x>) + B '
-        print '<x> =', np.average(mag_sph[core==0])
-        print
-        print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0])
-        print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1])
-        print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2])
-        print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3])
-        print '---------------------------------'
-       
+	### fit using FITEXY ###
+	print 'core-Sersic'
+        A,B = fitexy.bisect_modfitexy(mag_sph[core==1]-np.average(mag_sph[core==1]), 0.5*(perr_mag_sph[core==1]+merr_mag_sph[core==1]),
+        	log_mbh[core==1], 0.5*(merr_log_mbh[core==1] + perr_log_mbh[core==1]))
         logxx = np.arange(-40,40,0.01)
-        # calculates the prediction bands for the given input arrays
-        lpb68,upb68,logxx = predband.predband(mag_sph[core==0]-np.average(mag_sph[core==0]),log_mbh[core==0],A[2],B[2],conf=0.68,x=logxx)
-        lpb95,upb95,logxx = predband.predband(mag_sph[core==0]-np.average(mag_sph[core==0]),log_mbh[core==0],A[2],B[2],conf=0.95,x=logxx)
-        lpb99,upb99,logxx = predband.predband(mag_sph[core==0]-np.average(mag_sph[core==0]),log_mbh[core==0],A[2],B[2],conf=0.99,x=logxx)
-        yy = (A[2]*(logxx) + B[2])
-        #print lpb, upb,xx
-        ax.plot(logxx+np.average(mag_sph[core==0]),10**yy, color='cyan', linewidth=2.)
-        # plots a shaded area containing the prediction band
-        plt.fill_between(logxx+np.average(mag_sph[core==0]), 10**lpb68, 10**upb68, alpha=0.15, facecolor='cyan')
-        ax.plot(logxx+np.average(mag_sph[core==0]),10**lpb68, color='cyan')
-        ax.plot(logxx+np.average(mag_sph[core==0]),10**upb68, color='cyan')
-        plt.fill_between(logxx+np.average(mag_sph[core==0]), 10**lpb95, 10**upb95, alpha=0.1, facecolor='cyan')
-        ax.plot(logxx+np.average(mag_sph[core==0]),10**lpb95, color='cyan')
-        ax.plot(logxx+np.average(mag_sph[core==0]),10**upb95, color='cyan')
-        plt.fill_between(logxx+np.average(mag_sph[core==0]), 10**lpb99, 10**upb99, alpha=0.05, facecolor='cyan')
-        ax.plot(logxx+np.average(mag_sph[core==0]),10**lpb99, color='cyan')
-        ax.plot(logxx+np.average(mag_sph[core==0]),10**upb99, color='cyan')
+        # plot y|x relation
+        y_1 = A[0] + B[0]*logxx
+        #ax.plot(logxx+np.average(mag_sph[core==1]), 10**y_1, ls='--', color='gray', linewidth=2.)
+        # plot x|y relation
+        y_2 = A[1] + B[1]*logxx
+        #ax.plot(logxx+np.average(mag_sph[core==1]), 10**y_2, ls='--', color='gray', linewidth=2.)
+        # plot bisectore relation
+        y_bisec = A[2] + B[2]*logxx
+        ax.plot(logxx+np.average(mag_sph[core==1]), 10**y_bisec, ls='-', color='gray', linewidth=2.)
+	label_cS = r'$B_{\rm cS} = $' + str("{0:.2f}".format(B[2])) 
+	ax.text(-19.5, 10**10.5, label_cS, fontsize=20)
 	
+	### fit using FITEXY ###
+	print 'Sersic'
+        A,B = fitexy.bisect_modfitexy(mag_sph[core==0]-np.average(mag_sph[core==0]), 0.5*(perr_mag_sph[core==0]+merr_mag_sph[core==0]),
+        	log_mbh[core==0], 0.5*(merr_log_mbh[core==0] + perr_log_mbh[core==0]))
+        logxx = np.arange(-40,40,0.01)
+        # plot y|x relation
+        y_1 = A[0] + B[0]*logxx
+        #ax.plot(logxx+np.average(mag_sph[core==0]), 10**y_1, ls='--', color='k', linewidth=2.)
+        # plot x|y relation
+        y_2 = A[1] + B[1]*logxx
+        #ax.plot(logxx+np.average(mag_sph[core==0]), 10**y_2, ls='--', color='k', linewidth=2.)
+        # plot bisectore relation
+        y_bisec = A[2] + B[2]*logxx
+        ax.plot(logxx+np.average(mag_sph[core==0]), 10**y_bisec, ls='-', color='k', linewidth=2.)
+	label_S = r'$B_{\rm S} = $' + str("{0:.2f}".format(B[2])) 
+	ax.text(-19.5, 10**10, label_S, fontsize=20)
 	
         ax.errorbar(mag_sph[core==1], mbh[core==1], xerr=[merr_mag_sph[core==1],perr_mag_sph[core==1]], yerr=[merr_mbh[core==1],perr_mbh[core==1]], ecolor='gray', fmt='wo', markersize=12, elinewidth=1.2, capthick=1.2, barsabove=False) 
         ax.errorbar(mag_sph[core==0], mbh[core==0], xerr=[merr_mag_sph[core==0],perr_mag_sph[core==0]], yerr=[merr_mbh[core==0],perr_mbh[core==0]], ecolor='gray', fmt='ko', markersize=12, elinewidth=1.2, capthick=1.2, barsabove=False) 
@@ -317,8 +386,8 @@ def log_mbh_vs_mag_sph():
         plt.xlabel(r'$MAG_{\rm sph}\rm~[mag]$', labelpad=20)
         plt.ylabel(r'$M_{\rm BH} \rm ~[M_\odot]$', labelpad=20)
 	plt.subplots_adjust(left=0.15,bottom=0.15)
-        plt.show()
-	#plt.savefig(path_scalrel_plots + 'mbh_vs_mag_sph.pdf', format='pdf', dpi=1000)
+        #plt.show()
+	plt.savefig(path_scalrel_plots + 'mbh_vs_mag_sph.pdf', format='pdf', dpi=1000)
 	plt.clf()
 	
 def log_mbh_vs_mu_0(axis):
@@ -512,7 +581,7 @@ def log_mbh_vs_mu_0(axis):
 
 
 def main():
-	log_mbh_vs_logn('maj')	
+	#log_mbh_vs_logn('maj')	
 	#log_mbh_vs_logn('eq')		
 	#log_mbh_vs_mu_0('maj')
 	#log_mbh_vs_mu_0('eq')
@@ -520,6 +589,6 @@ def main():
 	#mbh_vs_logn('eq')		
 	#mbh_vs_logr_e('comparison')
 	#mbh_vs_logr_e()
-	#mag_sph_vs_logn('maj')
+	mag_sph_vs_logn('maj')
 	#mag_sph_vs_logn('eq')
 main()
