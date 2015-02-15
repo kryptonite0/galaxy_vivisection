@@ -109,6 +109,9 @@
 \bibitem[{{Graham}(2012)}]{graham2012bent}
 {Graham}, A.~W. 2012, \apj, 746, 113
 
+\bibitem[{{Graham}(2015)}]{graham2015bulges}
+---. 2015, ArXiv e-prints, arXiv:1501.02937
+
 \bibitem[{{Graham} {et~al.}(1998){Graham}, {Colless}, {Busarello}, {Zaggia}, \&
   {Longo}}]{graham1998fornax}
 {Graham}, A.~W., {Colless}, M.~M., {Busarello}, G., {Zaggia}, S., \& {Longo},
@@ -145,6 +148,9 @@
 \bibitem[{{Graham} \& {Scott}(2013)}]{grahamscott2013}
 {Graham}, A.~W., \& {Scott}, N. 2013, \apj, 764, 151
 
+\bibitem[{{Graham} \& {Scott}(2015)}]{grahamscott2015}
+---. 2015, \apj, 798, 54
+
 \bibitem[{{Greenhill} {et~al.}(2003){Greenhill}, {Booth}, {Ellingsen},
   {Herrnstein}, {Jauncey}, {McCulloch}, {Moran}, {Norris}, {Reynolds}, \&
   {Tzioumis}}]{greenhill2003}
@@ -171,6 +177,9 @@
 \bibitem[{{Jedrzejewski}(1987)}]{taskellipse}
 {Jedrzejewski}, R.~I. 1987, \mnras, 226, 747
 
+\bibitem[{{King} \& {Minkowski}(1966)}]{kingminkowski1966}
+{King}, I.~R., \& {Minkowski}, R. 1966, \apj, 143, 1002
+
 \bibitem[{{Kormendy} \& {Richstone}(1995)}]{kormendyrichstone1995}
 {Kormendy}, J., \& {Richstone}, D. 1995, \araa, 33, 581
 
@@ -189,6 +198,11 @@
   {Young}}]{krajnovic2013}
 {Krajnovi{\'c}}, D., {Alatalo}, K., {Blitz}, L., {et~al.} 2013, \mnras, 432,
   1768
+
+\bibitem[{{Laor} {et~al.}(1997){Laor}, {Fiore}, {Elvis}, {Wilkes}, \&
+  {McDowell}}]{laor1997}
+{Laor}, A., {Fiore}, F., {Elvis}, M., {Wilkes}, B.~J., \& {McDowell}, J.~C.
+  1997, \apj, 477, 93
 
 \bibitem[{{L{\"a}sker} {et~al.}(2014{\natexlab{a}}){L{\"a}sker}, {Ferrarese},
   \& {van de Ven}}]{lasker2014data}
@@ -320,6 +334,10 @@
   {Graham}}]{trujillo2004coresersicmodel}
 {Trujillo}, I., {Erwin}, P., {Asensio Ramos}, A., \& {Graham}, A.~W. 2004, \aj,
   127, 1917
+
+\bibitem[{{Trujillo} {et~al.}(2001){Trujillo}, {Graham}, \&
+  {Caon}}]{trujillo2001}
+{Trujillo}, I., {Graham}, A.~W., \& {Caon}, N. 2001, \mnras, 326, 869
 
 \bibitem[{{V{\'e}ron-Cetty} \& {V{\'e}ron}(2006)}]{veroncettyveron2006}
 {V{\'e}ron-Cetty}, M.-P., \& {V{\'e}ron}, P. 2006, \aap, 455, 773

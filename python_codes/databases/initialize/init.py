@@ -54,9 +54,9 @@ def ancillary():
 	cur.execute('''CREATE TABLE Ancillary
 		(gal_id text, gal_name text, IRAC_image integer, fit1D_done integer, fit2D_done integer, 
 		ELLIPTICAL_my integer, source text, RA real, DEC real, 
-		z real, distance real, core integer, 
+		z real, bar integer, distance real, core integer, 
 		core_inferred_from_sigma integer, sigma real, mass_BH real, perr_mass_BH real, merr_mass_BH real,
-		size_core real, ref_size_core text)''')
+		size_core real, ref_size_core text, KMAG_sph real)''')
 	
 	for line in data:
 		if line.split()[0] != '#':
@@ -80,6 +80,8 @@ def ancillary():
 			DEC = replaceNull(DEC)
 			z = line.split()[19]
 			z = replaceNull(z)
+			bar = line.split()[22]
+			bar = replaceBoolean(bar)
 			distance = line.split()[23]
 			distance = replaceNull(distance)
 			core = line.split()[24]
@@ -98,10 +100,12 @@ def ancillary():
 			perr_mass_BH = replaceNull(perr_mass_BH)
 			merr_mass_BH = line.split()[32]
 			merr_mass_BH = replaceNull(merr_mass_BH)
+			KMAG_sph = line.split()[47]
+			KMAG_sph = replaceNull(KMAG_sph)
 			
-			collection = [gal_id, gal_name, IRAC_image, fit1D_done, fit2D_done, ELLIPTICAL_my, source, RA, DEC, z, distance, 
-				core, core_inferred_from_sigma, sigma, mass_BH, perr_mass_BH, merr_mass_BH, size_core, ref_size_core]
-			cur.execute('INSERT INTO Ancillary VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', collection)
+			collection = [gal_id, gal_name, IRAC_image, fit1D_done, fit2D_done, ELLIPTICAL_my, source, RA, DEC, z, bar, distance, 
+				core, core_inferred_from_sigma, sigma, mass_BH, perr_mass_BH, merr_mass_BH, size_core, ref_size_core, KMAG_sph]
+			cur.execute('INSERT INTO Ancillary VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', collection)
 
 	connection.commit()
 	cur.close()

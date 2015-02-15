@@ -24,6 +24,175 @@ dbname = '/Users/gsavorgnan/galaxy_vivisection/python_codes/databases/galaxy_viv
 path_auxiliary_plots = '/Users/gsavorgnan/galaxy_vivisection/results/plots/auxiliary/'
 path_scalrel_plots = '/Users/gsavorgnan/galaxy_vivisection/results/plots/scaling_relations/'
 
+def KMAG_sph_vs_mag_sph():
+	connection = sql3.connect(dbname)
+        cur = connection.cursor()
+       
+        getdata_query = 'SELECT anc.gal_id, anc.KMAG_sph, anc.ELLIPTICAL_my, anc.core, \
+		pysres.mag_sph_eq_moffat_comb \
+		FROM Ancillary AS anc \
+		JOIN OneDFitResultsPhysicalUnits AS pysres ON anc.gal_id = pysres.gal_id \
+		WHERE anc.fit1D_done = 1;'
+	cur.execute(getdata_query)
+        datalist = cur.fetchall()
+        data= np.asarray(datalist).transpose()
+	gal_id = data[0]
+	KMAG_sph = data[1].astype(np.float)
+        ELL = data[2].astype(np.int)
+	core = data[3].astype(np.int)
+	mag_sph = data[4].astype(np.float)
+	
+	fig, ax = plt.subplots()
+	ax.scatter(mag_sph[ELL==1], KMAG_sph[ELL==1], color='red', s=50)	
+	ax.scatter(mag_sph[ELL==0], KMAG_sph[ELL==0], color='blue', s=50)
+	ax.scatter(mag_sph[core==1], KMAG_sph[core==1], color='white', s=20)	
+	
+        full_names = {'n4388' : 'NGC 4388', 'n3585' : 'NGC 3585', 'n3607' : 'NGC 3607', 'n3414' : 'NGC 3414', 'n3115' : 'NGC 3115', 'n3377' : 'NGC 3377'}
+	
+	for g, m, k in zip(gal_id, mag_sph, KMAG_sph):
+		if g in ['n4388']:
+			ax.annotate(full_names[g], xy = (m, k), xytext = (0, 20),
+        			textcoords = 'offset points', ha = 'right', va = 'bottom',
+        			bbox = dict(boxstyle = 'round,pad=0.2', fc = 'blue', alpha = 0.1),
+        			arrowprops = dict(arrowstyle = '-', connectionstyle = 'arc3,rad=0'))
+		elif g in ['n3607']:	
+        		ax.annotate(full_names[g], xy = (m, k), xytext = (110, -30),
+        			textcoords = 'offset points', ha = 'right', va = 'bottom',
+        			bbox = dict(boxstyle = 'round,pad=0.2', fc = 'red', alpha = 0.1),
+        			arrowprops = dict(arrowstyle = '-', connectionstyle = 'arc3,rad=0'))
+		elif g in ['n3414']:	
+        		ax.annotate(full_names[g], xy = (m, k), xytext = (120, -35),
+        			textcoords = 'offset points', ha = 'right', va = 'bottom',
+        			bbox = dict(boxstyle = 'round,pad=0.2', fc = 'red', alpha = 0.1),
+        			arrowprops = dict(arrowstyle = '-', connectionstyle = 'arc3,rad=0'))
+		elif g in ['n3585']:	
+        		ax.annotate(full_names[g], xy = (m, k), xytext = (100, 10),
+        			textcoords = 'offset points', ha = 'right', va = 'bottom',
+        			bbox = dict(boxstyle = 'round,pad=0.2', fc = 'red', alpha = 0.1),
+        			arrowprops = dict(arrowstyle = '-', connectionstyle = 'arc3,rad=0'))
+		elif g in ['n3115']:	
+        		ax.annotate(full_names[g], xy = (m, k), xytext = (80, -80),
+        			textcoords = 'offset points', ha = 'right', va = 'bottom',
+        			bbox = dict(boxstyle = 'round,pad=0.2', fc = 'red', alpha = 0.1),
+        			arrowprops = dict(arrowstyle = '-', connectionstyle = 'arc3,rad=0'))
+		elif g in ['n3377']:	
+        		ax.annotate(full_names[g], xy = (m, k), xytext = (40, -105),
+        			textcoords = 'offset points', ha = 'right', va = 'bottom',
+        			bbox = dict(boxstyle = 'round,pad=0.2', fc = 'red', alpha = 0.1),
+        			arrowprops = dict(arrowstyle = '-', connectionstyle = 'arc3,rad=0'))
+				
+	xx = np.arange(-50,0,1)
+	ax.plot(xx,xx, color='k', ls='--')
+
+        plt.axis([-19.01,-27.99,-19.01,-27.99])
+        plt.xlabel(r'$3.6{\rm~\mu m}~MAG_{\rm sph} \rm ~[mag]$', labelpad=20)
+        plt.ylabel(r'$K-$band $MAG_{\rm sph} \rm ~[mag]$', labelpad=20)
+        plt.subplots_adjust(left=0.15,bottom=0.15)
+	#plt.show()
+	plt.savefig(path_scalrel_plots + 'KMAG_sph_vs_mag_sph.pdf', format='pdf', dpi=1000)
+
+def log_mbh_vs_KMAG_sph():
+	connection = sql3.connect(dbname)
+        cur = connection.cursor()
+       
+        getdata_query = 'SELECT anc.gal_id, anc.KMAG_sph, anc.mass_BH, anc.perr_mass_BH, anc.merr_mass_BH, anc.core, anc.ELLIPTICAL_my \
+		FROM Ancillary AS anc \
+		WHERE anc.source = "GS13" AND anc.KMAG_sph>-99;'
+	cur.execute(getdata_query)
+        datalist = cur.fetchall()
+        data= np.asarray(datalist).transpose()
+	gal_id = data[0]
+	KMAG_sph = data[1].astype(np.float)
+        mbh = data[2].astype(np.float)
+	log_mbh = np.log10(mbh)
+	perr_mbh = data[3].astype(np.float)
+	perr_log_mbh = np.log10(1 + perr_mbh/mbh)
+	merr_mbh = data[4].astype(np.float)
+	merr_log_mbh = -np.log10(1 - merr_mbh/mbh)
+	core = data[5].astype(np.int)
+        ELL = data[6].astype(np.int)
+	
+	err_KMAG_sph = KMAG_sph*[0.0] + 0.25
+	err_KMAG_sph[ELL==0] = 0.75
+	
+	fig, ax = plt.subplots()
+        
+	### fit using FITEXY ###
+        print 'core-Sersic'
+        A,B = fitexy.bisect_modfitexy(KMAG_sph[core==1]-np.average(KMAG_sph[core==1]), err_KMAG_sph[core==1],
+        	log_mbh[core==1], 0.5*(perr_log_mbh[core==1] + merr_log_mbh[core==1]))
+        logxx = np.arange(-50,50,0.1)
+        # plot y|x relation
+        y_1 = A[0] + B[0]*logxx
+       # ax.plot(logxx+np.average(KMAG_sph[core==1]), 10**y_1, ls='--', color='gray', linewidth=2.)
+        # plot x|y relation
+        y_2 = A[1] + B[1]*logxx
+       # ax.plot(logxx+np.average(KMAG_sph[core==1]), 10**y_2, ls='--', color='gray', linewidth=2.)
+        # plot bisectore relation
+        y_bisec = A[2] + B[2]*logxx
+        ax.plot(logxx+np.average(KMAG_sph[core==1]), 10**y_bisec, ls='-', color='gray', linewidth=2.)
+	slope_cS = B[2]
+      
+        print 'Sersic'
+        A,B = fitexy.bisect_modfitexy(KMAG_sph[core==0]-np.average(KMAG_sph[core==0]), err_KMAG_sph[core==0],
+        	log_mbh[core==0], 0.5*(perr_log_mbh[core==0] + merr_log_mbh[core==0]))
+        logxx = np.arange(-50,50,0.1)
+        # plot y|x relation
+        y_1 = A[0] + B[0]*logxx
+       # ax.plot(logxx+np.average(KMAG_sph[core==0]), 10**y_1, ls='--', color='black', linewidth=2.)
+        # plot x|y relation
+        y_2 = A[1] + B[1]*logxx
+       # ax.plot(logxx+np.average(KMAG_sph[core==0]), 10**y_2, ls='--', color='black', linewidth=2.)
+        # plot bisectore relation
+        y_bisec = A[2] + B[2]*logxx
+        ax.plot(logxx+np.average(KMAG_sph[core==0]), 10**y_bisec, ls='-', color='black', linewidth=2.)
+	slope_S = B[2]
+	print 'slope_cS=', slope_cS
+	print 'slope_S=', slope_S
+	
+	### fit using BCES ####
+        print 'core-Sersic'
+        A,B,Aerr,Berr,covAB=bces.bces(KMAG_sph[core==1]-np.average(KMAG_sph[core==1]), err_KMAG_sph[core==1], log_mbh[core==1],
+        	0.5*(perr_log_mbh[core==1] + merr_log_mbh[core==1]),KMAG_sph[core==1]*[0.0])
+        print '---------------------------------'
+        print 'y = A*(x-<x>) + B '
+        print '<x> =', np.average(KMAG_sph[core==1])
+        print
+        print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0])
+        print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1])
+        print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2])
+        print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3])
+        print '---------------------------------'
+       
+        logxx = np.arange(-50,50,0.1)
+	y_bcesbisec = (A[2]*(logxx) + B[2])
+	ax.plot(logxx+np.average(KMAG_sph[core==1]),10**y_bcesbisec, color='red', linewidth=2.)
+	
+        print 'Sersic'
+        A,B,Aerr,Berr,covAB=bces.bces(KMAG_sph[core==0]-np.average(KMAG_sph[core==0]), err_KMAG_sph[core==0], log_mbh[core==0],
+        	0.5*(perr_log_mbh[core==0] + merr_log_mbh[core==0]),KMAG_sph[core==0]*[0.0])
+        print '---------------------------------'
+        print 'y = A*(x-<x>) + B '
+        print '<x> =', np.average(KMAG_sph[core==0])
+        print
+        print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0])
+        print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1])
+        print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2])
+        print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3])
+        print '---------------------------------'
+       
+        logxx = np.arange(-50,50,0.1)
+	y_bcesbisec = (A[2]*(logxx) + B[2])
+	ax.plot(logxx+np.average(KMAG_sph[core==0]),10**y_bcesbisec, color='blue', linewidth=2.)
+	
+
+
+	ax.set_yscale('log')
+        ax.errorbar(KMAG_sph[core==1], mbh[core==1], xerr=err_KMAG_sph[core==1], yerr=[merr_mbh[core==1],perr_mbh[core==1]], ecolor='gray', fmt='wo', markersize=12, elinewidth=1.2, capthick=1.2, barsabove=False) 
+        ax.errorbar(KMAG_sph[core==0], mbh[core==0], xerr=err_KMAG_sph[core==0], yerr=[merr_mbh[core==0],perr_mbh[core==0]], ecolor='gray', fmt='ko', markersize=12, elinewidth=1.2, capthick=1.2, barsabove=False) 
+	plt.axis([-18.01,-27.99,10**5.001,10**10.999])
+	plt.show()
+
 
 def mag_sph_vs_logn(axis):
         connection = sql3.connect(dbname)
@@ -589,6 +758,10 @@ def main():
 	#mbh_vs_logn('eq')		
 	#mbh_vs_logr_e('comparison')
 	#mbh_vs_logr_e()
-	mag_sph_vs_logn('maj')
+	#mag_sph_vs_logn('maj')
 	#mag_sph_vs_logn('eq')
+	#KMAG_sph_vs_mag_sph()
+	log_mbh_vs_KMAG_sph()
+
+
 main()

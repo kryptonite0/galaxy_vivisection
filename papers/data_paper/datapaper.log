@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  9 FEB 2015 10:11
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  13 FEB 2015 16:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -440,14 +440,14 @@ Package epstopdf Info: Source file: <images/m49nooverlap.eps>
 (epstopdf)                    size: 176171 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/m49nooverlap-eps-co
 nverted-to.pdf images/m49nooverlap.eps>
-(epstopdf)             \includegraphics on input line 226.
+(epstopdf)             \includegraphics on input line 234.
 Package epstopdf Info: Output file is already uptodate.
  <images/m49nooverlap-eps-converted-to.pdf, id=19, 616.3025pt x 815.045pt>
 File: images/m49nooverlap-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/m49nooverlap-eps-converted-to.pdf>
 Package pdftex.def Info: images/m49nooverlap-eps-converted-to.pdf used on input
- line 226.
+ line 234.
 (pdftex.def)             Requested size: 120.18193pt x 158.92691pt.
 Package epstopdf Info: Source file: <images/m49overlap.eps>
 (epstopdf)                    date: 2014-11-18 14:30:42
@@ -457,7 +457,7 @@ Package epstopdf Info: Source file: <images/m49overlap.eps>
 (epstopdf)                    size: 185649 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/m49overlap-eps-conv
 erted-to.pdf images/m49overlap.eps>
-(epstopdf)             \includegraphics on input line 227.
+(epstopdf)             \includegraphics on input line 235.
 Package epstopdf Info: Output file is already uptodate.
 
 <images/m49overlap-eps-converted-to.pdf, id=20, 616.3025pt x 815.045pt>
@@ -465,32 +465,43 @@ File: images/m49overlap-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/m49overlap-eps-converted-to.pdf>
 Package pdftex.def Info: images/m49overlap-eps-converted-to.pdf used on input l
-ine 227.
+ine 235.
 (pdftex.def)             Requested size: 120.18193pt x 158.92691pt.
- [2 <./images/m49nooverlap-eps-converted-to.pdf> <./images/m49overlap-eps-conve
-rted-to.pdf>] [3]
+ [2] [3]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 245.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 242.
 
 [4]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 245.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 242.
 
 
 Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
 
 [5]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 245.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 242.
 
 [6]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 245.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 242.
 
 
 Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 [7]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 265.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 265.
+
+
+Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
+
 Package epstopdf Info: Source file: <images/n4459brightstar.eps>
 (epstopdf)                    date: 2014-11-18 14:42:55
 (epstopdf)                    size: 1000751 bytes
@@ -500,15 +511,14 @@ f>
 (epstopdf)                    size: 99170 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n4459brightstar-eps
 -converted-to.pdf images/n4459brightstar.eps>
-(epstopdf)             \includegraphics on input line 267.
+(epstopdf)             \includegraphics on input line 276.
 Package epstopdf Info: Output file is already uptodate.
-
-<images/n4459brightstar-eps-converted-to.pdf, id=55, 698.61pt x 707.64375pt>
+<images/n4459brightstar-eps-converted-to.pdf, id=49, 698.61pt x 707.64375pt>
 File: images/n4459brightstar-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n4459brightstar-eps-converted-to.pdf>
 Package pdftex.def Info: images/n4459brightstar-eps-converted-to.pdf used on in
-put line 267.
+put line 276.
 (pdftex.def)             Requested size: 120.18193pt x 121.73395pt.
 Package epstopdf Info: Source file: <images/n4459nobrightstar.eps>
 (epstopdf)                    date: 2014-11-18 14:43:05
@@ -519,19 +529,19 @@ pdf>
 (epstopdf)                    size: 117123 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n4459nobrightstar-e
 ps-converted-to.pdf images/n4459nobrightstar.eps>
-(epstopdf)             \includegraphics on input line 268.
+(epstopdf)             \includegraphics on input line 277.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/n4459nobrightstar-eps-converted-to.pdf, id=56, 698.61pt x 707.64375pt>
+<images/n4459nobrightstar-eps-converted-to.pdf, id=50, 698.61pt x 707.64375pt>
 File: images/n4459nobrightstar-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n4459nobrightstar-eps-converted-to.pdf>
 Package pdftex.def Info: images/n4459nobrightstar-eps-converted-to.pdf used on 
-input line 268.
+input line 277.
 (pdftex.def)             Requested size: 120.18193pt x 121.73395pt.
 
-Underfull \hbox (badness 2512) in paragraph at lines 292--307
-[]\OT1/cmr/m/n/10 The one-dimensional Point Spread Func-tion was
+Underfull \hbox (badness 3758) in paragraph at lines 301--316
+\OT1/cmr/m/n/10 Func-tion was char-ac-ter-ized us-ing the IRAF task
  []
 
 Package epstopdf Info: Source file: <images/psf.eps>
@@ -542,36 +552,37 @@ Package epstopdf Info: Source file: <images/psf.eps>
 (epstopdf)                    size: 462556 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/psf-eps-converted-t
 o.pdf images/psf.eps>
-(epstopdf)             \includegraphics on input line 334.
+(epstopdf)             \includegraphics on input line 344.
 Package epstopdf Info: Output file is already uptodate.
-<images/psf-eps-converted-to.pdf, id=57, 578.16pt x 433.62pt>
+<images/psf-eps-converted-to.pdf, id=51, 578.16pt x 433.62pt>
 File: images/psf-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/psf-eps-converted-to.pdf>
-Package pdftex.def Info: images/psf-eps-converted-to.pdf used on input line 334
+Package pdftex.def Info: images/psf-eps-converted-to.pdf used on input line 344
 .
 (pdftex.def)             Requested size: 245.26653pt x 278.85017pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[8 <./images/n4459brightstar-eps-converted-to.pdf> <./images/n4459nobrightstar-
-eps-converted-to.pdf>]
+[8 <./images/m49nooverlap-eps-converted-to.pdf> <./images/m49overlap-eps-conver
+ted-to.pdf> <./images/n4459brightstar-eps-converted-to.pdf> <./images/n4459nobr
+ightstar-eps-converted-to.pdf>]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 386.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 385.
 
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 386.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 385.
 
 
 Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
 
 
-LaTeX Warning: Reference `sec:indgal' on page 9 undefined on input line 431.
+LaTeX Warning: Reference `sec:indgal' on page 9 undefined on input line 446.
 
 [9 <./images/psf-eps-converted-to.pdf>]
 
-LaTeX Warning: Reference `sec:indgal' on page 10 undefined on input line 490.
+LaTeX Warning: Reference `sec:indgal' on page 10 undefined on input line 518.
 
 [10]
 Package epstopdf Info: Source file: <images/n2974_1Dfit.eps>
@@ -582,14 +593,14 @@ Package epstopdf Info: Source file: <images/n2974_1Dfit.eps>
 (epstopdf)                    size: 101289 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n2974_1Dfit-eps-con
 verted-to.pdf images/n2974_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 644.
+(epstopdf)             \includegraphics on input line 672.
 Package epstopdf Info: Output file is already uptodate.
  <images/n2974_1Dfit-eps-converted-to.pdf, id=93, 578.16pt x 433.62pt>
 File: images/n2974_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n2974_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n2974_1Dfit-eps-converted-to.pdf used on input 
-line 644.
+line 672.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
 
 
@@ -599,44 +610,52 @@ Class revtex4-1 Warning: Float cannot be placed.
 File: images/n2974_imgmsk.pdf Graphic file (type pdf)
 
 <use images/n2974_imgmsk.pdf>
-Package pdftex.def Info: images/n2974_imgmsk.pdf used on input line 715.
+Package pdftex.def Info: images/n2974_imgmsk.pdf used on input line 743.
 (pdftex.def)             Requested size: 245.26653pt x 148.14058pt.
 
 <images/n2974_model.pdf, id=95, 800.9925pt x 484.81125pt>
 File: images/n2974_model.pdf Graphic file (type pdf)
 
 <use images/n2974_model.pdf>
-Package pdftex.def Info: images/n2974_model.pdf used on input line 716.
+Package pdftex.def Info: images/n2974_model.pdf used on input line 744.
 (pdftex.def)             Requested size: 245.26653pt x 148.44792pt.
 
 <images/n2974_resid.pdf, id=96, 799.98875pt x 484.81125pt>
 File: images/n2974_resid.pdf Graphic file (type pdf)
 
 <use images/n2974_resid.pdf>
-Package pdftex.def Info: images/n2974_resid.pdf used on input line 717.
+Package pdftex.def Info: images/n2974_resid.pdf used on input line 745.
 (pdftex.def)             Requested size: 245.26653pt x 148.63286pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-(./table_fitresults.tex) [11] [12]
+[11]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 765.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 791.
 
-[13 <./images/n2974_1Dfit-eps-converted-to.pdf>]
+[12 <./images/n2974_1Dfit-eps-converted-to.pdf>]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 765.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 791.
 
 
 Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 774.
+(./table_fitresults.tex)
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 803.
+
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 774.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 803.
+ [13 <./images/n2974_imgmsk.pdf> <./images/n2974_model.pdf> <./images/n2974_res
+id.pdf>] [14]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 833.
+
+[15]
 Package epstopdf Info: Source file: <images/comparison_r_e.eps>
 (epstopdf)                    date: 2015-02-05 10:21:26
 (epstopdf)                    size: 121155 bytes
@@ -646,15 +665,14 @@ Package epstopdf Info: Source file: <images/comparison_r_e.eps>
 (epstopdf)                    size: 12682 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/comparison_r_e-eps-
 converted-to.pdf images/comparison_r_e.eps>
-(epstopdf)             \includegraphics on input line 808.
+(epstopdf)             \includegraphics on input line 837.
 Package epstopdf Info: Output file is already uptodate.
-
-<images/comparison_r_e-eps-converted-to.pdf, id=164, 578.16pt x 433.62pt>
+ <images/comparison_r_e-eps-converted-to.pdf, id=200, 578.16pt x 433.62pt>
 File: images/comparison_r_e-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/comparison_r_e-eps-converted-to.pdf>
 Package pdftex.def Info: images/comparison_r_e-eps-converted-to.pdf used on inp
-ut line 808.
+ut line 837.
 (pdftex.def)             Requested size: 245.26653pt x 183.94531pt.
 Package epstopdf Info: Source file: <images/comparison_n.eps>
 (epstopdf)                    date: 2015-02-05 10:21:32
@@ -664,20 +682,16 @@ Package epstopdf Info: Source file: <images/comparison_n.eps>
 (epstopdf)                    size: 11442 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/comparison_n-eps-co
 nverted-to.pdf images/comparison_n.eps>
-(epstopdf)             \includegraphics on input line 817.
+(epstopdf)             \includegraphics on input line 846.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/comparison_n-eps-converted-to.pdf, id=165, 578.16pt x 433.62pt>
+<images/comparison_n-eps-converted-to.pdf, id=201, 578.16pt x 433.62pt>
 File: images/comparison_n-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/comparison_n-eps-converted-to.pdf>
 Package pdftex.def Info: images/comparison_n-eps-converted-to.pdf used on input
- line 817.
+ line 846.
 (pdftex.def)             Requested size: 245.26653pt x 183.94531pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 Package epstopdf Info: Source file: <images/comparison_mag.eps>
 (epstopdf)                    date: 2015-02-05 10:21:36
 (epstopdf)                    size: 119482 bytes
@@ -687,41 +701,32 @@ Package epstopdf Info: Source file: <images/comparison_mag.eps>
 (epstopdf)                    size: 12079 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/comparison_mag-eps-
 converted-to.pdf images/comparison_mag.eps>
-(epstopdf)             \includegraphics on input line 826.
+(epstopdf)             \includegraphics on input line 855.
 Package epstopdf Info: Output file is already uptodate.
-<images/comparison_mag-eps-converted-to.pdf, id=166, 578.16pt x 433.62pt>
+
+<images/comparison_mag-eps-converted-to.pdf, id=202, 578.16pt x 433.62pt>
 File: images/comparison_mag-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/comparison_mag-eps-converted-to.pdf>
 Package pdftex.def Info: images/comparison_mag-eps-converted-to.pdf used on inp
-ut line 826.
+ut line 855.
 (pdftex.def)             Requested size: 245.26653pt x 183.94531pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[14 <./images/n2974_imgmsk.pdf> <./images/n2974_model.pdf> <./images/n2974_resi
-d.pdf> <./images/comparison_r_e-eps-converted-to.pdf>]
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 853.
-
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 853.
-
-
-Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
-
-[15 <./images/comparison_n-eps-converted-to.pdf> <./images/comparison_mag-eps-c
-onverted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 909--924
+[16 <./images/comparison_r_e-eps-converted-to.pdf> <./images/comparison_n-eps-c
+onverted-to.pdf> <./images/comparison_mag-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 938--953
 
  []
 
 
-Underfull \hbox (badness 2057) in paragraph at lines 934--945
+Underfull \hbox (badness 2057) in paragraph at lines 963--974
 \OT1/cmr/bx/n/10 Galac-tic ab-sorp-tion was not taken into ac-
  []
 
+[17]
 Package epstopdf Info: Source file: <images/comparison_all_n.eps>
 (epstopdf)                    date: 2015-01-29 10:57:41
 (epstopdf)                    size: 211168 bytes
@@ -731,17 +736,18 @@ df>
 (epstopdf)                    size: 38531 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/comparison_all_n-ep
 s-converted-to.pdf images/comparison_all_n.eps>
-(epstopdf)             \includegraphics on input line 981.
+(epstopdf)             \includegraphics on input line 1010.
 Package epstopdf Info: Output file is already uptodate.
-<images/comparison_all_n-eps-converted-to.pdf, id=221, 578.16pt x 433.62pt>
+
+<images/comparison_all_n-eps-converted-to.pdf, id=230, 578.16pt x 433.62pt>
 File: images/comparison_all_n-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/comparison_all_n-eps-converted-to.pdf>
 Package pdftex.def Info: images/comparison_all_n-eps-converted-to.pdf used on i
-nput line 981.
+nput line 1010.
 (pdftex.def)             Requested size: 269.79466pt x 202.3458pt.
 
-Overfull \hbox (24.52814pt too wide) in paragraph at lines 981--982
+Overfull \hbox (24.52814pt too wide) in paragraph at lines 1010--1011
  [] 
  []
 
@@ -754,17 +760,17 @@ Package epstopdf Info: Source file: <images/comparison_all_r_e.eps>
 (epstopdf)                    size: 36368 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/comparison_all_r_e-
 eps-converted-to.pdf images/comparison_all_r_e.eps>
-(epstopdf)             \includegraphics on input line 1008.
+(epstopdf)             \includegraphics on input line 1037.
 Package epstopdf Info: Output file is already uptodate.
-<images/comparison_all_r_e-eps-converted-to.pdf, id=222, 578.16pt x 433.62pt>
+<images/comparison_all_r_e-eps-converted-to.pdf, id=231, 578.16pt x 433.62pt>
 File: images/comparison_all_r_e-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/comparison_all_r_e-eps-converted-to.pdf>
 Package pdftex.def Info: images/comparison_all_r_e-eps-converted-to.pdf used on
- input line 1008.
+ input line 1037.
 (pdftex.def)             Requested size: 269.79466pt x 202.3458pt.
 
-Overfull \hbox (24.52814pt too wide) in paragraph at lines 1008--1009
+Overfull \hbox (24.52814pt too wide) in paragraph at lines 1037--1038
  [] 
  []
 
@@ -777,19 +783,19 @@ d-to.pdf>
 (epstopdf)                    size: 30228 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/comparison_all_mag_
 sph-eps-converted-to.pdf images/comparison_all_mag_sph.eps>
-(epstopdf)             \includegraphics on input line 1035.
+(epstopdf)             \includegraphics on input line 1064.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/comparison_all_mag_sph-eps-converted-to.pdf, id=223, 578.16pt x 433.62p
+<images/comparison_all_mag_sph-eps-converted-to.pdf, id=232, 578.16pt x 433.62p
 t>
 File: images/comparison_all_mag_sph-eps-converted-to.pdf Graphic file (type pdf
 )
  <use images/comparison_all_mag_sph-eps-converted-to.pdf>
 Package pdftex.def Info: images/comparison_all_mag_sph-eps-converted-to.pdf use
-d on input line 1035.
+d on input line 1064.
 (pdftex.def)             Requested size: 269.79466pt x 202.3458pt.
 
-Overfull \hbox (24.52814pt too wide) in paragraph at lines 1035--1036
+Overfull \hbox (24.52814pt too wide) in paragraph at lines 1064--1065
  [] 
  []
 
@@ -802,18 +808,18 @@ o.pdf>
 (epstopdf)                    size: 31284 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/comparison_all_mu_e
 -eps-converted-to.pdf images/comparison_all_mu_e.eps>
-(epstopdf)             \includegraphics on input line 1062.
+(epstopdf)             \includegraphics on input line 1091.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/comparison_all_mu_e-eps-converted-to.pdf, id=224, 578.16pt x 433.62pt>
+<images/comparison_all_mu_e-eps-converted-to.pdf, id=233, 578.16pt x 433.62pt>
 File: images/comparison_all_mu_e-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/comparison_all_mu_e-eps-converted-to.pdf>
 Package pdftex.def Info: images/comparison_all_mu_e-eps-converted-to.pdf used o
-n input line 1062.
+n input line 1091.
 (pdftex.def)             Requested size: 269.79466pt x 202.3458pt.
 
-Overfull \hbox (24.52814pt too wide) in paragraph at lines 1062--1063
+Overfull \hbox (24.52814pt too wide) in paragraph at lines 1091--1092
  [] 
  []
 
@@ -826,91 +832,91 @@ o.pdf>
 (epstopdf)                    size: 31030 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/comparison_all_mu_0
 -eps-converted-to.pdf images/comparison_all_mu_0.eps>
-(epstopdf)             \includegraphics on input line 1089.
+(epstopdf)             \includegraphics on input line 1118.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/comparison_all_mu_0-eps-converted-to.pdf, id=225, 578.16pt x 433.62pt>
+<images/comparison_all_mu_0-eps-converted-to.pdf, id=234, 578.16pt x 433.62pt>
 File: images/comparison_all_mu_0-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/comparison_all_mu_0-eps-converted-to.pdf>
 Package pdftex.def Info: images/comparison_all_mu_0-eps-converted-to.pdf used o
-n input line 1089.
+n input line 1118.
 (pdftex.def)             Requested size: 269.79466pt x 202.3458pt.
 
-Overfull \hbox (24.52814pt too wide) in paragraph at lines 1089--1090
+Overfull \hbox (24.52814pt too wide) in paragraph at lines 1118--1119
  [] 
  []
 
-[16]
-Underfull \hbox (badness 2189) in paragraph at lines 1171--1172
+[18 <./images/comparison_all_n-eps-converted-to.pdf> <./images/comparison_all_r
+_e-eps-converted-to.pdf>]
+Underfull \hbox (badness 2189) in paragraph at lines 1200--1201
  []\OT1/cmr/m/n/10 A one-dimensional isopho-tal anal-y-sis was ex-
  []
 
-[17 <./images/comparison_all_n-eps-converted-to.pdf> <./images/comparison_all_r
-_e-eps-converted-to.pdf>]
+[19 <./images/comparison_all_mag_sph-eps-converted-to.pdf> <./images/comparison
+_all_mu_e-eps-converted-to.pdf>]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 1177.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 1211.
 
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 1177.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 1211.
 
 
 Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
 
 
-Underfull \hbox (badness 2744) in paragraph at lines 4207--4218
+Underfull \hbox (badness 2744) in paragraph at lines 4236--4247
 \OT1/cmr/m/n/10 Coun-cil fund-ing through grants DP110103509 and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4223--4227
-
- []
-
-[18 <./images/comparison_all_mag_sph-eps-converted-to.pdf> <./images/comparison
-_all_mu_e-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 4246--4247
+Underfull \hbox (badness 10000) in paragraph at lines 4252--4256
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4252--4254
+Underfull \hbox (badness 10000) in paragraph at lines 4275--4276
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4259--4262
+Underfull \hbox (badness 10000) in paragraph at lines 4281--4283
 
  []
 
-[19 <./images/comparison_all_mu_0-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 4272--4274
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 4283--4288
+[20 <./images/comparison_all_mu_0-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 4288--4291
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4293--4297
+Underfull \hbox (badness 10000) in paragraph at lines 4301--4303
 
  []
 
-(./datapaper.bbl [20]) [21] (./datapaper.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 4312--4317
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4322--4326
+
+ []
+
+(./datapaper.bbl [21]) [22] (./datapaper.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 5246 strings out of 493488
- 70257 string characters out of 3141326
- 268414 words of memory out of 3000000
- 8419 multiletter control sequences out of 15000+200000
+ 5252 strings out of 493488
+ 70346 string characters out of 3141326
+ 272016 words of memory out of 3000000
+ 8425 multiletter control sequences out of 15000+200000
  18668 words of font info for 73 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 42i,13n,31p,1620b,407s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,13n,31p,1620b,379s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb><
 /usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></u
@@ -943,10 +949,10 @@ ts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2012/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2012/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2012/texmf-dist/fonts/ty
 pe1/public/amsfonts/symbols/msam10.pfb>
-Output written on datapaper.pdf (21 pages, 2857558 bytes).
+Output written on datapaper.pdf (22 pages, 2861916 bytes).
 PDF statistics:
- 394 PDF objects out of 1000 (max. 8388607)
- 257 compressed objects within 3 object streams
+ 397 PDF objects out of 1000 (max. 8388607)
+ 259 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  92 words of extra memory for PDF output out of 10000 (max. 10000000)
 

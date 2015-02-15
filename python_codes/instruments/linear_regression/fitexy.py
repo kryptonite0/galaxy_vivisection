@@ -2,7 +2,7 @@ import numpy as np
 import bces
 import matplotlib.pyplot as plt
 
-tolerance = 0.001
+tolerance = 0.1
 
 def modfitexy(x,sigx,y,sigy,mode):
 
