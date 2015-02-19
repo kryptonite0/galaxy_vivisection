@@ -24,6 +24,115 @@ dbname = '/Users/gsavorgnan/galaxy_vivisection/python_codes/databases/galaxy_viv
 path_auxiliary_plots = '/Users/gsavorgnan/galaxy_vivisection/results/plots/auxiliary/'
 path_scalrel_plots = '/Users/gsavorgnan/galaxy_vivisection/results/plots/scaling_relations/'
 
+def mag_tot_GS13_vs_me():
+	connection = sql3.connect(dbname)
+        cur = connection.cursor()
+       
+        getdata_query = 'SELECT anc.gal_id, anc.KMAG_tot, \
+		pysres.mag_tot_eq_moffat_comb \
+		FROM Ancillary AS anc \
+		JOIN OneDFitResultsPhysicalUnits AS pysres ON anc.gal_id = pysres.gal_id \
+		WHERE anc.fit1D_done = 1 \
+		ORDER BY pysres.mag_tot_eq_moffat_comb;'
+	cur.execute(getdata_query)
+        datalist = cur.fetchall()
+        data= np.asarray(datalist).transpose()
+	gal_id = data[0]
+	kmag_tot = data[1].astype(np.float)
+	mag_tot = data[2].astype(np.float)
+	
+	for a,b,c in zip(gal_id,mag_tot,kmag_tot):	
+		print a,b,c
+	
+	fig, ax = plt.subplots()
+	ax.scatter(mag_tot,kmag_tot)
+	ax.plot(np.arange(-30,-19,1),np.arange(-30,-19,1)+0.27, ls='--')
+	ax.axis([-21.01,-27.99,-21.01,-27.99])
+	plt.xlabel(r'$3.6{\rm~\mu m}~MAG_{\rm tot} \rm ~[mag]$', labelpad=20)
+        plt.ylabel(r'$K$-band $MAG_{\rm tot} \rm ~[mag]$', labelpad=20)
+        plt.subplots_adjust(left=0.20,bottom=0.20)
+	#plt.show()
+	plt.savefig(path_scalrel_plots + 'mag_tot_GS13_vs_me.pdf', format='pdf', dpi=1000)
+
+def BTratios_GS13_vs_me():
+	connection = sql3.connect(dbname)
+        cur = connection.cursor()
+       
+        getdata_query = 'SELECT anc.gal_id, anc.morphtype, \
+		pysres.mag_sph_eq_moffat_comb, pysres.mag_tot_eq_moffat_comb \
+		FROM Ancillary AS anc \
+		JOIN OneDFitResultsPhysicalUnits AS pysres ON anc.gal_id = pysres.gal_id \
+		WHERE anc.fit1D_done = 1 \
+		ORDER BY pysres.mag_sph_eq_moffat_comb;'
+		
+	cur.execute(getdata_query)
+        datalist = cur.fetchall()
+        data= np.asarray(datalist).transpose()
+	gal_id = data[0]
+	morphtype = data[1]
+	mag_sph = data[2].astype(np.float)	
+	mag_tot = data[3].astype(np.float)
+	
+	BT_my = 10**(-0.4*(mag_sph))/10**(-0.4*(mag_tot))
+	
+	BT_GS13 = mag_sph*[0.0] + 1.0
+	BT_GS13[morphtype=='S0'] = 0.49
+	BT_GS13[morphtype=='SB0'] = 0.49
+	BT_GS13[morphtype=='S0a'] = 0.49
+	BT_GS13[morphtype=='SB0a'] = 0.49
+	BT_GS13[morphtype=='Sa'] = 0.46
+	BT_GS13[morphtype=='SBa'] = 0.46
+	BT_GS13[morphtype=='Sab'] = 0.29
+	BT_GS13[morphtype=='SBab'] = 0.29
+	BT_GS13[morphtype=='Sb'] = 0.25
+	BT_GS13[morphtype=='SBb'] = 0.25
+	BT_GS13[morphtype=='Sbc'] = 0.15
+	BT_GS13[morphtype=='SBbc'] = 0.15		
+	BT_GS13[morphtype=='Sc'] = 0.09
+	BT_GS13[morphtype=='SBc'] = 0.09
+	BT_GS13[morphtype=='Scd'] = 0.06
+	BT_GS13[morphtype=='SBcd'] = 0.06
+	
+	for a,b,c,d,e in zip(gal_id,mag_sph,morphtype,BT_my,BT_GS13):
+		print a,round(b,2),c,round(d,2),e 
+		
+	diff = BT_my - BT_GS13	
+	
+	fig, ax = plt.subplots()
+	ax.scatter(mag_sph,diff)
+	plt.axis([-19.01,-27.99,-1,1])
+	plt.xlabel(r'$3.6{\rm~\mu m}~MAG_{\rm sph} \rm ~[mag]$', labelpad=20)
+        plt.ylabel(r'$B/T_{my} - B/T_{GS13}$', labelpad=20)
+        plt.subplots_adjust(left=0.20,bottom=0.20)
+	#plt.show()
+	plt.savefig(path_scalrel_plots + 'BTratios_GS13_vs_me.pdf', format='pdf', dpi=1000)
+	
+	
+def sani_vs_me():
+	connection = sql3.connect(dbname)
+        cur = connection.cursor()
+       
+        getdata_query = 'SELECT anc.gal_id,  \
+		pysres.mag_sph_eq_moffat_comb, \
+		pyssani.mag_sph \
+		FROM Ancillary AS anc \
+		JOIN OneDFitResultsPhysicalUnits AS pysres ON anc.gal_id = pysres.gal_id \
+		JOIN LiteratureDecompositionsSanietal2011PhysicalUnits AS pyssani ON anc.gal_id = pyssani.gal_id \
+		WHERE anc.fit1D_done = 1;'
+	cur.execute(getdata_query)
+        datalist = cur.fetchall()
+        data= np.asarray(datalist).transpose()
+	gal_id = data[0]
+	mag_sph_my = data[1].astype(np.float)	
+	mag_sph_sani = data[2].astype(np.float)	
+	
+	fig, ax = plt.subplots()
+	ax.scatter(mag_sph_my, mag_sph_sani)
+	ax.plot(np.arange(-28,-19,1),np.arange(-28,-19,1))
+	plt.axis([-19.01,-27.99,-19.01,-27.99])
+	plt.show()
+		
+
 def KMAG_sph_vs_mag_sph():
 	connection = sql3.connect(dbname)
         cur = connection.cursor()
@@ -82,7 +191,7 @@ def KMAG_sph_vs_mag_sph():
         			arrowprops = dict(arrowstyle = '-', connectionstyle = 'arc3,rad=0'))
 				
 	xx = np.arange(-50,0,1)
-	ax.plot(xx,xx, color='k', ls='--')
+	ax.plot(xx,xx+0.27, color='k', ls='--')
 
         plt.axis([-19.01,-27.99,-19.01,-27.99])
         plt.xlabel(r'$3.6{\rm~\mu m}~MAG_{\rm sph} \rm ~[mag]$', labelpad=20)
@@ -289,34 +398,22 @@ def mag_sph_vs_logn(axis):
        
         ### fit using FITEXY ###
         print 'Ellipticals'
-        A,B = fitexy.bisect_modfitexy(log_n[ELL==1]-np.average(log_n[ELL==1]), 0.5*(perr_log_n[ELL==1]+merr_log_n[ELL==1]),
+        A,perr_A,merr_A,B,perr_B,merr_B = fitexy.bisect_modfitexy(log_n[ELL==1]-np.average(log_n[ELL==1]), 0.5*(perr_log_n[ELL==1]+merr_log_n[ELL==1]),
         	mag_sph[ELL==1], 0.5*(merr_mag_sph[ELL==1] + perr_mag_sph[ELL==1]))
         xx = np.arange(0.001,30,0.1)
         logxx = np.log10(xx)
-        # plot y|x relation
-        y_1 = A[0] + B[0]*logxx
-        ax.plot(logxx+np.average(log_n[ELL==1]), y_1, ls='--', color='red', alpha=0.5, linewidth=2.)
-        # plot x|y relation
-        y_2 = A[1] + B[1]*logxx
-        ax.plot(logxx+np.average(log_n[ELL==1]), y_2, ls='--', color='red', alpha=0.5, linewidth=2.)
-        # plot bisectore relation
-        y_bisec = A[2] + B[2]*logxx
+        # plot bisector relation
+        y_bisec = A + B*logxx
         ax.plot(logxx+np.average(log_n[ELL==1]), y_bisec, ls='-', color='red', linewidth=2.)
 	
         ### fit using FITEXY ###
 	print 'Bulges'
-	A,B = fitexy.bisect_modfitexy(log_n[ELL==0]-np.average(log_n[ELL==0]), 0.5*(perr_log_n[ELL==0]+merr_log_n[ELL==0]),
+	A,perr_A,merr_A,B,perr_B,merr_B = fitexy.bisect_modfitexy(log_n[ELL==0]-np.average(log_n[ELL==0]), 0.5*(perr_log_n[ELL==0]+merr_log_n[ELL==0]),
 		mag_sph[ELL==0], 0.5*(merr_mag_sph[ELL==0] + perr_mag_sph[ELL==0]))
 	xx = np.arange(0.001,30,0.1)
 	logxx = np.log10(xx)
-	# plot y|x relation
-	y_1 = A[0] + B[0]*logxx
-	ax.plot(logxx+np.average(log_n[ELL==0]), y_1, ls='--', color='blue', alpha=0.5, linewidth=2.)
-	# plot x|y relation
-	y_2 = A[1] + B[1]*logxx
-	ax.plot(logxx+np.average(log_n[ELL==0]), y_2, ls='--', color='blue', alpha=0.5, linewidth=2.)
 	# plot bisector relation
-	y_bisec = A[2] + B[2]*logxx
+	y_bisec = A + B*logxx
 	ax.plot(logxx+np.average(log_n[ELL==0]), y_bisec, ls='-', color='blue', linewidth=2.)
 	
 	#print A,B
@@ -427,7 +524,8 @@ def log_mbh_vs_mag_sph():
 
 	getdata_query = 'SELECT anc.gal_id, anc.mass_BH, anc.perr_mass_BH, anc.merr_mass_BH, anc.core, \
 		pysres.mag_sph_eq_moffat_comb, \
-		errV.perr_mag_sph, errV.merr_mag_sph \
+		errV.perr_mag_sph, errV.merr_mag_sph, \
+		anc.ELLIPTICAL_my \
 		FROM Ancillary AS anc \
 		JOIN OneDFitResultsPhysicalUnits AS pysres ON anc.gal_id = pysres.gal_id \
 		JOIN ErrorsVote as errV ON anc.gal_id = errV.gal_id \
@@ -446,110 +544,106 @@ def log_mbh_vs_mag_sph():
 	mag_sph = data[5].astype(np.float)
 	perr_mag_sph = data[6].astype(np.float)
 	merr_mag_sph = data[7].astype(np.float)
-		
+	ELL = data[8].astype(np.int)
+	
+	ELL_core = ELL*[0]
+	ELL_sersic = ELL*[0]
+	BUL_core = ELL*[0]
+	BUL_sersic = ELL*[0]
+	
+	for i in range(len(ELL)):
+		if ELL[i]==1 and core[i]==1:
+			ELL_core[i] = 1
+		elif ELL[i]==1 and core[i]==0:	
+			ELL_sersic[i] = 1
+		elif ELL[i]==0 and core[i]==1:	
+			BUL_core[i] = 1
+		elif ELL[i]==0 and core[i]==0:	
+			BUL_sersic[i] = 1	
+	
         fig, ax = plt.subplots()
 
-       #print 'core-Sersic'
-       #A,B,Aerr,Berr,covAB=bces.bces(mag_sph[core==1]-np.average(mag_sph[core==1]),0.5*(perr_mag_sph[core==1]+merr_mag_sph[core==1]),
-       #	log_mbh[core==1],0.5*(merr_log_mbh[core==1] + perr_log_mbh[core==1]),mag_sph[core==1]*[0.0])
-       #print '---------------------------------'
-       #print 'y = A*(x-<x>) + B '
-       #print '<x> =', np.average(mag_sph[core==1])
-       #print
-       #print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0])
-       #print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1])
-       #print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2])
-       #print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3])
-       #print '---------------------------------'
-       #
-       #logxx = np.arange(-40,40,0.01)
-       ## calculates the prediction bands for the given input arrays
-       #lpb68,upb68,logxx = predband.predband(mag_sph[core==1]-np.average(mag_sph[core==1]),log_mbh[core==1],A[2],B[2],conf=0.68,x=logxx)
-       #lpb95,upb95,logxx = predband.predband(mag_sph[core==1]-np.average(mag_sph[core==1]),log_mbh[core==1],A[2],B[2],conf=0.95,x=logxx)
-       #lpb99,upb99,logxx = predband.predband(mag_sph[core==1]-np.average(mag_sph[core==1]),log_mbh[core==1],A[2],B[2],conf=0.99,x=logxx)
-       #yy = (A[2]*(logxx) + B[2])
-       ##print lpb, upb,xx
-       #ax.plot(logxx+np.average(mag_sph[core==1]),10**yy, color='pink', linewidth=2.)
-       ## plots a shaded area containing the prediction band
-       #plt.fill_between(logxx+np.average(mag_sph[core==1]), 10**lpb68, 10**upb68, alpha=0.15, facecolor='pink')
-       #ax.plot(logxx+np.average(mag_sph[core==1]),10**lpb68, color='pink')
-       #ax.plot(logxx+np.average(mag_sph[core==1]),10**upb68, color='pink')
-       #plt.fill_between(logxx+np.average(mag_sph[core==1]), 10**lpb95, 10**upb95, alpha=0.1, facecolor='pink')
-       #ax.plot(logxx+np.average(mag_sph[core==1]),10**lpb95, color='pink')
-       #ax.plot(logxx+np.average(mag_sph[core==1]),10**upb95, color='pink')
-       #plt.fill_between(logxx+np.average(mag_sph[core==1]), 10**lpb99, 10**upb99, alpha=0.05, facecolor='pink')
-       #ax.plot(logxx+np.average(mag_sph[core==1]),10**lpb99, color='pink')
-       #ax.plot(logxx+np.average(mag_sph[core==1]),10**upb99, color='pink')
-       #
-       #print 'Sersic'
-       #A,B,Aerr,Berr,covAB=bces.bces(mag_sph[core==0]-np.average(mag_sph[core==0]),0.5*(perr_mag_sph[core==0]+merr_mag_sph[core==0]),
-       #	log_mbh[core==0],0.5*(merr_log_mbh[core==0] + perr_log_mbh[core==0]),mag_sph[core==0]*[0.0])
-       #print '---------------------------------'
-       #print 'y = A*(x-<x>) + B '
-       #print '<x> =', np.average(mag_sph[core==0])
-       #print
-       #print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0])
-       #print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1])
-       #print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2])
-       #print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3])
-       #print '---------------------------------'
-       #
-       #logxx = np.arange(-40,40,0.01)
-       ## calculates the prediction bands for the given input arrays
-       #lpb68,upb68,logxx = predband.predband(mag_sph[core==0]-np.average(mag_sph[core==0]),log_mbh[core==0],A[2],B[2],conf=0.68,x=logxx)
-       #lpb95,upb95,logxx = predband.predband(mag_sph[core==0]-np.average(mag_sph[core==0]),log_mbh[core==0],A[2],B[2],conf=0.95,x=logxx)
-       #lpb99,upb99,logxx = predband.predband(mag_sph[core==0]-np.average(mag_sph[core==0]),log_mbh[core==0],A[2],B[2],conf=0.99,x=logxx)
-       #yy = (A[2]*(logxx) + B[2])
-       ##print lpb, upb,xx
-       #ax.plot(logxx+np.average(mag_sph[core==0]),10**yy, color='cyan', linewidth=2.)
-       ## plots a shaded area containing the prediction band
-       #plt.fill_between(logxx+np.average(mag_sph[core==0]), 10**lpb68, 10**upb68, alpha=0.15, facecolor='cyan')
-       #ax.plot(logxx+np.average(mag_sph[core==0]),10**lpb68, color='cyan')
-       #ax.plot(logxx+np.average(mag_sph[core==0]),10**upb68, color='cyan')
-       #plt.fill_between(logxx+np.average(mag_sph[core==0]), 10**lpb95, 10**upb95, alpha=0.1, facecolor='cyan')
-       #ax.plot(logxx+np.average(mag_sph[core==0]),10**lpb95, color='cyan')
-       #ax.plot(logxx+np.average(mag_sph[core==0]),10**upb95, color='cyan')
-       #plt.fill_between(logxx+np.average(mag_sph[core==0]), 10**lpb99, 10**upb99, alpha=0.05, facecolor='cyan')
-       #ax.plot(logxx+np.average(mag_sph[core==0]),10**lpb99, color='cyan')
-       #ax.plot(logxx+np.average(mag_sph[core==0]),10**upb99, color='cyan')
+      ##print 'ELL'
+      ##A,B,Aerr,Berr,covAB=bces.bces(mag_sph[ELL==1]-np.average(mag_sph[ELL==1]),0.5*(perr_mag_sph[ELL==1]+merr_mag_sph[ELL==1]),
+      ##	log_mbh[ELL==1],0.5*(merr_log_mbh[ELL==1] + perr_log_mbh[ELL==1]),mag_sph[ELL==1]*[0.0])
+      ##print '---------------------------------'
+      ##print 'y = A*(x-<x>) + B '
+      ##print '<x> =', np.average(mag_sph[ELL==1])
+      ##print
+      ##print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0])
+      ##print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1])
+      ##print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2])
+      ##print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3])
+      ##print '---------------------------------'
+      ##
+      ##logxx = np.arange(-40,40,0.01)
+      ##yy = (A[2]*(logxx) + B[2])
+      ##ax.plot(logxx+np.average(mag_sph[ELL==1]),10**yy, color='red', linewidth=2.)
+      ##
+      ##print 'BUL'
+      ##A,B,Aerr,Berr,covAB=bces.bces(mag_sph[ELL==0]-np.average(mag_sph[ELL==0]),0.5*(perr_mag_sph[ELL==0]+merr_mag_sph[ELL==0]),
+      ##	log_mbh[ELL==0],0.5*(merr_log_mbh[ELL==0] + perr_log_mbh[ELL==0]),mag_sph[ELL==0]*[0.0])
+      ##print '---------------------------------'
+      ##print 'y = A*(x-<x>) + B '
+      ##print '<x> =', np.average(mag_sph[ELL==0])
+      ##print
+      ##print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0])
+      ##print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1])
+      ##print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2])
+      ##print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3])
+      ##print '---------------------------------'
+      ##
+      ##yy = (A[2]*(logxx) + B[2])
+      ##ax.plot(logxx+np.average(mag_sph[ELL==0]),10**yy, color='blue', linewidth=2.)
 	
-	### fit using FITEXY ###
-	print 'core-Sersic'
-        A,B = fitexy.bisect_modfitexy(mag_sph[core==1]-np.average(mag_sph[core==1]), 0.5*(perr_mag_sph[core==1]+merr_mag_sph[core==1]),
+        ### fit using FITEXY ###
+        print 'core-Sersic'
+        A,perr_A,merr_A,B,perr_B,merr_B = fitexy.bisect_modfitexy(mag_sph[core==1]-np.average(mag_sph[core==1]), 0.5*(perr_mag_sph[core==1]+merr_mag_sph[core==1]),
         	log_mbh[core==1], 0.5*(merr_log_mbh[core==1] + perr_log_mbh[core==1]))
         logxx = np.arange(-40,40,0.01)
-        # plot y|x relation
-        y_1 = A[0] + B[0]*logxx
-        #ax.plot(logxx+np.average(mag_sph[core==1]), 10**y_1, ls='--', color='gray', linewidth=2.)
-        # plot x|y relation
-        y_2 = A[1] + B[1]*logxx
-        #ax.plot(logxx+np.average(mag_sph[core==1]), 10**y_2, ls='--', color='gray', linewidth=2.)
-        # plot bisectore relation
-        y_bisec = A[2] + B[2]*logxx
-        ax.plot(logxx+np.average(mag_sph[core==1]), 10**y_bisec, ls='-', color='gray', linewidth=2.)
-	label_cS = r'$B_{\rm cS} = $' + str("{0:.2f}".format(B[2])) 
-	ax.text(-19.5, 10**10.5, label_cS, fontsize=20)
-	
-	### fit using FITEXY ###
-	print 'Sersic'
-        A,B = fitexy.bisect_modfitexy(mag_sph[core==0]-np.average(mag_sph[core==0]), 0.5*(perr_mag_sph[core==0]+merr_mag_sph[core==0]),
+        # plot bisector relation
+        y_bisec = A + B*logxx
+        ax.plot(logxx+np.average(mag_sph[core==1]), 10**y_bisec, ls='--', color='k', linewidth=2.)
+        label_cS = r'$B_{\rm c-Ser} = ' + str("{0:.2f}".format(B)) + r'^{+' + str("{0:.2f}".format(perr_B)) + r'}_{-' + str("{0:.2f}".format(merr_B)) +r'}$'
+        ax.text(-19.5, 10**10.5, label_cS, fontsize=20)
+      
+        ### fit using FITEXY ###
+        print 'Sersic'
+        A,perr_A,merr_A,B,perr_B,merr_B = fitexy.bisect_modfitexy(mag_sph[core==0]-np.average(mag_sph[core==0]), 0.5*(perr_mag_sph[core==0]+merr_mag_sph[core==0]),
         	log_mbh[core==0], 0.5*(merr_log_mbh[core==0] + perr_log_mbh[core==0]))
         logxx = np.arange(-40,40,0.01)
-        # plot y|x relation
-        y_1 = A[0] + B[0]*logxx
-        #ax.plot(logxx+np.average(mag_sph[core==0]), 10**y_1, ls='--', color='k', linewidth=2.)
-        # plot x|y relation
-        y_2 = A[1] + B[1]*logxx
-        #ax.plot(logxx+np.average(mag_sph[core==0]), 10**y_2, ls='--', color='k', linewidth=2.)
-        # plot bisectore relation
-        y_bisec = A[2] + B[2]*logxx
+        # plot bisector relation
+        y_bisec = A + B*logxx
         ax.plot(logxx+np.average(mag_sph[core==0]), 10**y_bisec, ls='-', color='k', linewidth=2.)
-	label_S = r'$B_{\rm S} = $' + str("{0:.2f}".format(B[2])) 
-	ax.text(-19.5, 10**10, label_S, fontsize=20)
+        label_S = r'$B_{\rm Ser} = ' + str("{0:.2f}".format(B)) + r'^{+' + str("{0:.2f}".format(perr_B)) + r'}_{-' + str("{0:.2f}".format(merr_B)) +r'}$'
+        ax.text(-19.5, 10**10, label_S, fontsize=20)
 	
-        ax.errorbar(mag_sph[core==1], mbh[core==1], xerr=[merr_mag_sph[core==1],perr_mag_sph[core==1]], yerr=[merr_mbh[core==1],perr_mbh[core==1]], ecolor='gray', fmt='wo', markersize=12, elinewidth=1.2, capthick=1.2, barsabove=False) 
-        ax.errorbar(mag_sph[core==0], mbh[core==0], xerr=[merr_mag_sph[core==0],perr_mag_sph[core==0]], yerr=[merr_mbh[core==0],perr_mbh[core==0]], ecolor='gray', fmt='ko', markersize=12, elinewidth=1.2, capthick=1.2, barsabove=False) 
-        #ax.scatter(mag_sph, mbh, c='black', s=60)
+        ### fit using FITEXY ###
+        print 'ELL'
+        A,perr_A,merr_A,B,perr_B,merr_B = fitexy.bisect_modfitexy(mag_sph[ELL==1]-np.average(mag_sph[ELL==1]), 0.5*(perr_mag_sph[ELL==1]+merr_mag_sph[ELL==1]),
+        	log_mbh[ELL==1], 0.5*(merr_log_mbh[ELL==1] + perr_log_mbh[ELL==1]))
+        logxx = np.arange(-40,40,0.01)
+        # plot bisector relation
+        y_bisec = A + B*logxx
+        ax.plot(logxx+np.average(mag_sph[ELL==1]), 10**y_bisec, ls='-', color='red', linewidth=2.)
+        label_ell = r'$B_{\rm ell} = ' + str("{0:.2f}".format(B)) + r'^{+' + str("{0:.2f}".format(perr_B)) + r'}_{-' + str("{0:.2f}".format(merr_B)) +r'}$'
+        ax.text(-24, 10**6.7, label_ell, fontsize=20)
+      
+        ### fit using FITEXY ###
+        print 'BUL'
+        A,perr_A,merr_A,B,perr_B,merr_B = fitexy.bisect_modfitexy(mag_sph[ELL==0]-np.average(mag_sph[ELL==0]), 0.5*(perr_mag_sph[ELL==0]+merr_mag_sph[ELL==0]),
+        	log_mbh[ELL==0], 0.5*(merr_log_mbh[ELL==0] + perr_log_mbh[ELL==0]))
+        logxx = np.arange(-40,40,0.01)
+        # plot bisector relation
+        y_bisec = A + B*logxx
+        ax.plot(logxx+np.average(mag_sph[ELL==0]), 10**y_bisec, ls='-', color='blue', linewidth=2.)
+        label_bul = r'$B_{\rm bul} = ' + str("{0:.2f}".format(B)) + r'^{+' + str("{0:.2f}".format(perr_B)) + r'}_{-' + str("{0:.2f}".format(merr_B)) +r'}$'
+        ax.text(-24, 10**6, label_bul, fontsize=20)
+	
+        ax.errorbar(mag_sph[ELL_core==1], mbh[ELL_core==1], xerr=[merr_mag_sph[ELL_core==1],perr_mag_sph[ELL_core==1]], yerr=[merr_mbh[ELL_core==1],perr_mbh[ELL_core==1]], ecolor='red', fmt='wo', markersize=12, elinewidth=1.2, capthick=1.2, barsabove=False) 
+        ax.errorbar(mag_sph[ELL_sersic==1], mbh[ELL_sersic==1], xerr=[merr_mag_sph[ELL_sersic==1],perr_mag_sph[ELL_sersic==1]], yerr=[merr_mbh[ELL_sersic==1],perr_mbh[ELL_sersic==1]], ecolor='red', fmt='ro', markersize=12, elinewidth=1.2, capthick=1.2, barsabove=False) 
+        ax.errorbar(mag_sph[BUL_core==1], mbh[BUL_core==1], xerr=[merr_mag_sph[BUL_core==1],perr_mag_sph[BUL_core==1]], yerr=[merr_mbh[BUL_core==1],perr_mbh[BUL_core==1]], ecolor='blue', fmt='wo', markersize=12, elinewidth=1.2, capthick=1.2, barsabove=False) 
+        ax.errorbar(mag_sph[BUL_sersic==1], mbh[BUL_sersic==1], xerr=[merr_mag_sph[BUL_sersic==1],perr_mag_sph[BUL_sersic==1]], yerr=[merr_mbh[BUL_sersic==1],perr_mbh[BUL_sersic==1]], ecolor='blue', fmt='bo', markersize=12, elinewidth=1.2, capthick=1.2, barsabove=False) 
         ax.set_yscale('log')
         plt.axis([-19.01,-27.99,10**5.5,10**11.2])
         plt.xlabel(r'$MAG_{\rm sph}\rm~[mag]$', labelpad=20)
@@ -557,7 +651,178 @@ def log_mbh_vs_mag_sph():
 	plt.subplots_adjust(left=0.15,bottom=0.15)
         #plt.show()
 	plt.savefig(path_scalrel_plots + 'mbh_vs_mag_sph.pdf', format='pdf', dpi=1000)
-	plt.clf()
+	
+def log_mbh_vs_mag_tot():
+	connection = sql3.connect(dbname)
+	cur = connection.cursor()
+
+	getdata_query = 'SELECT anc.gal_id, anc.mass_BH, anc.perr_mass_BH, anc.merr_mass_BH, anc.core, \
+		pysres.mag_sph_eq_moffat_comb, pysres.mag_tot_eq_moffat_comb, \
+		errV.perr_mag_sph, errV.merr_mag_sph, \
+		anc.ELLIPTICAL_my \
+		FROM Ancillary AS anc \
+		JOIN OneDFitResultsPhysicalUnits AS pysres ON anc.gal_id = pysres.gal_id \
+		JOIN ErrorsVote as errV ON anc.gal_id = errV.gal_id \
+		WHERE anc.fit1D_done = 1;'
+	cur.execute(getdata_query)
+	datalist = cur.fetchall()
+	data= np.asarray(datalist).transpose()
+	#print data
+	mbh = data[1].astype(np.float)
+	log_mbh = np.log10(mbh)
+	perr_mbh = data[2].astype(np.float)
+	perr_log_mbh = np.log10(1 + perr_mbh/mbh)
+	merr_mbh = data[3].astype(np.float)
+	merr_log_mbh = -np.log10(1 - merr_mbh/mbh)
+	core = data[4].astype(np.int)
+	mag_sph = data[5].astype(np.float)
+	mag_tot = data[6].astype(np.float)
+	perr_mag_sph = data[7].astype(np.float)
+	merr_mag_sph = data[8].astype(np.float)
+	ELL = data[9].astype(np.int)
+	
+	ELL_core = ELL*[0]
+	ELL_sersic = ELL*[0]
+	BUL_core = ELL*[0]
+	BUL_sersic = ELL*[0]
+	
+	for i in range(len(ELL)):
+		if ELL[i]==1 and core[i]==1:
+			ELL_core[i] = 1
+		elif ELL[i]==1 and core[i]==0:	
+			ELL_sersic[i] = 1
+		elif ELL[i]==0 and core[i]==1:	
+			BUL_core[i] = 1
+		elif ELL[i]==0 and core[i]==0:	
+			BUL_sersic[i] = 1	
+	
+        fig, ax = plt.subplots()
+
+      ##print 'ELL'
+      ##A,B,Aerr,Berr,covAB=bces.bces(mag_sph[ELL==1]-np.average(mag_sph[ELL==1]),0.5*(perr_mag_sph[ELL==1]+merr_mag_sph[ELL==1]),
+      ##	log_mbh[ELL==1],0.5*(merr_log_mbh[ELL==1] + perr_log_mbh[ELL==1]),mag_sph[ELL==1]*[0.0])
+      ##print '---------------------------------'
+      ##print 'y = A*(x-<x>) + B '
+      ##print '<x> =', np.average(mag_sph[ELL==1])
+      ##print
+      ##print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0])
+      ##print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1])
+      ##print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2])
+      ##print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3])
+      ##print '---------------------------------'
+      ##
+      ##logxx = np.arange(-40,40,0.01)
+      ##yy = (A[2]*(logxx) + B[2])
+      ##ax.plot(logxx+np.average(mag_sph[ELL==1]),10**yy, color='red', linewidth=2.)
+      ##
+      ##print 'BUL'
+      ##A,B,Aerr,Berr,covAB=bces.bces(mag_sph[ELL==0]-np.average(mag_sph[ELL==0]),0.5*(perr_mag_sph[ELL==0]+merr_mag_sph[ELL==0]),
+      ##	log_mbh[ELL==0],0.5*(merr_log_mbh[ELL==0] + perr_log_mbh[ELL==0]),mag_sph[ELL==0]*[0.0])
+      ##print '---------------------------------'
+      ##print 'y = A*(x-<x>) + B '
+      ##print '<x> =', np.average(mag_sph[ELL==0])
+      ##print
+      ##print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0])
+      ##print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1])
+      ##print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2])
+      ##print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3])
+      ##print '---------------------------------'
+      ##
+      ##yy = (A[2]*(logxx) + B[2])
+      ##ax.plot(logxx+np.average(mag_sph[ELL==0]),10**yy, color='blue', linewidth=2.)
+	
+       #### fit using FITEXY ###
+       #print 'core-Sersic'
+       #A,perr_A,merr_A,B,perr_B,merr_B = fitexy.bisect_modfitexy(mag_sph[core==1]-np.average(mag_sph[core==1]), 0.5*(perr_mag_sph[core==1]+merr_mag_sph[core==1]),
+       #	log_mbh[core==1], 0.5*(merr_log_mbh[core==1] + perr_log_mbh[core==1]))
+       #logxx = np.arange(-40,40,0.01)
+       ## plot bisector relation
+       #y_bisec = A + B*logxx
+       #ax.plot(logxx+np.average(mag_sph[core==1]), 10**y_bisec, ls='--', color='k', linewidth=2.)
+       #label_cS = r'$B_{\rm c-Ser} = ' + str("{0:.2f}".format(B)) + r'^{+' + str("{0:.2f}".format(perr_B)) + r'}_{-' + str("{0:.2f}".format(merr_B)) +r'}$'
+       #ax.text(-19.5, 10**10.5, label_cS, fontsize=20)
+       #
+       #### fit using FITEXY ###
+       #print 'Sersic'
+       #A,perr_A,merr_A,B,perr_B,merr_B = fitexy.bisect_modfitexy(mag_sph[core==0]-np.average(mag_sph[core==0]), 0.5*(perr_mag_sph[core==0]+merr_mag_sph[core==0]),
+       #	log_mbh[core==0], 0.5*(merr_log_mbh[core==0] + perr_log_mbh[core==0]))
+       #logxx = np.arange(-40,40,0.01)
+       ## plot bisector relation
+       #y_bisec = A + B*logxx
+       #ax.plot(logxx+np.average(mag_sph[core==0]), 10**y_bisec, ls='-', color='k', linewidth=2.)
+       #label_S = r'$B_{\rm Ser} = ' + str("{0:.2f}".format(B)) + r'^{+' + str("{0:.2f}".format(perr_B)) + r'}_{-' + str("{0:.2f}".format(merr_B)) +r'}$'
+       #ax.text(-19.5, 10**10, label_S, fontsize=20)
+       #
+       #### fit using FITEXY ###
+       #print 'ELL'
+       #A,perr_A,merr_A,B,perr_B,merr_B = fitexy.bisect_modfitexy(mag_sph[ELL==1]-np.average(mag_sph[ELL==1]), 0.5*(perr_mag_sph[ELL==1]+merr_mag_sph[ELL==1]),
+       #	log_mbh[ELL==1], 0.5*(merr_log_mbh[ELL==1] + perr_log_mbh[ELL==1]))
+       #logxx = np.arange(-40,40,0.01)
+       ## plot bisector relation
+       #y_bisec = A + B*logxx
+       #ax.plot(logxx+np.average(mag_sph[ELL==1]), 10**y_bisec, ls='-', color='red', linewidth=2.)
+       #label_ell = r'$B_{\rm ell} = ' + str("{0:.2f}".format(B)) + r'^{+' + str("{0:.2f}".format(perr_B)) + r'}_{-' + str("{0:.2f}".format(merr_B)) +r'}$'
+       #ax.text(-24, 10**6.7, label_ell, fontsize=20)
+       #
+       #### fit using FITEXY ###
+       #print 'BUL'
+       #A,perr_A,merr_A,B,perr_B,merr_B = fitexy.bisect_modfitexy(mag_sph[ELL==0]-np.average(mag_sph[ELL==0]), 0.5*(perr_mag_sph[ELL==0]+merr_mag_sph[ELL==0]),
+       #	log_mbh[ELL==0], 0.5*(merr_log_mbh[ELL==0] + perr_log_mbh[ELL==0]))
+       #logxx = np.arange(-40,40,0.01)
+       ## plot bisector relation
+       #y_bisec = A + B*logxx
+       #ax.plot(logxx+np.average(mag_sph[ELL==0]), 10**y_bisec, ls='-', color='blue', linewidth=2.)
+       #label_bul = r'$B_{\rm bul} = ' + str("{0:.2f}".format(B)) + r'^{+' + str("{0:.2f}".format(perr_B)) + r'}_{-' + str("{0:.2f}".format(merr_B)) +r'}$'
+       #ax.text(-24, 10**6, label_bul, fontsize=20)
+       #
+       #ax.errorbar(mag_sph[ELL_core==1], mbh[ELL_core==1], xerr=[merr_mag_sph[ELL_core==1],perr_mag_sph[ELL_core==1]], yerr=[merr_mbh[ELL_core==1],perr_mbh[ELL_core==1]], ecolor='red', fmt='wo', markersize=12, elinewidth=1.2, capthick=1.2, barsabove=False)
+       #ax.errorbar(mag_sph[ELL_sersic==1], mbh[ELL_sersic==1], xerr=[merr_mag_sph[ELL_sersic==1],perr_mag_sph[ELL_sersic==1]], yerr=[merr_mbh[ELL_sersic==1],perr_mbh[ELL_sersic==1]], ecolor='red', fmt='ro', markersize=12, elinewidth=1.2, capthick=1.2, barsabove=False)
+       #ax.errorbar(mag_sph[BUL_core==1], mbh[BUL_core==1], xerr=[merr_mag_sph[BUL_core==1],perr_mag_sph[BUL_core==1]], yerr=[merr_mbh[BUL_core==1],perr_mbh[BUL_core==1]], ecolor='blue', fmt='wo', markersize=12, elinewidth=1.2, capthick=1.2, barsabove=False)
+       #ax.errorbar(mag_sph[BUL_sersic==1], mbh[BUL_sersic==1], xerr=[merr_mag_sph[BUL_sersic==1],perr_mag_sph[BUL_sersic==1]], yerr=[merr_mbh[BUL_sersic==1],perr_mbh[BUL_sersic==1]], ecolor='blue', fmt='bo', markersize=12, elinewidth=1.2, capthick=1.2, barsabove=False)
+        ax.scatter(mag_tot[core==1],mbh[core==1], marker='*', color='k')
+        ax.scatter(mag_tot[core==0],mbh[core==0], marker='o', color='k')
+        ax.scatter(mag_sph[core==1],mbh[core==1], marker='*', color='red')
+        ax.scatter(mag_sph[core==0],mbh[core==0], marker='o', color='red')
+	ax.set_yscale('log')
+        plt.axis([-19.01,-28.99,10**5.5,10**11.2])
+        plt.xlabel(r'$MAG_{\rm tot}\rm~[mag]$', labelpad=20)
+        plt.ylabel(r'$M_{\rm BH} \rm ~[M_\odot]$', labelpad=20)
+	plt.subplots_adjust(left=0.15,bottom=0.15)
+        plt.show()
+	#plt.savefig(path_scalrel_plots + 'mbh_vs_mag_tot.pdf', format='pdf', dpi=1000)
+	
+def mag_tot_vs_sigma():
+	connection = sql3.connect(dbname)
+	cur = connection.cursor()
+
+	getdata_query = 'SELECT anc.gal_id, anc.core, anc.ELLIPTICAL_my, anc.sigma, \
+		pysres.mag_sph_eq_moffat_comb, pysres.mag_tot_eq_moffat_comb \
+		FROM Ancillary AS anc \
+		JOIN OneDFitResultsPhysicalUnits AS pysres ON anc.gal_id = pysres.gal_id \
+		WHERE anc.fit1D_done = 1;'
+	cur.execute(getdata_query)
+	datalist = cur.fetchall()
+	data= np.asarray(datalist).transpose()
+	#print data
+	core = data[1].astype(np.int)
+	ELL = data[2].astype(np.int)
+	sigma = data[3].astype(np.float)
+	mag_sph = data[4].astype(np.float)
+	mag_tot = data[5].astype(np.float)
+	
+	
+        fig, ax = plt.subplots()
+
+        ax.scatter(sigma[ELL==1], mag_tot[ELL==1], marker='o', color='red', s=30)
+        ax.scatter(sigma[ELL==0], mag_tot[ELL==0], marker='o', color='blue', s=30)
+	ax.set_xscale('log')
+	
+        plt.axis([70,400,-19.01,-28.99])
+        plt.xlabel(r'$\sigma$', labelpad=20)
+        plt.ylabel(r'$magtot$', labelpad=20)
+	plt.subplots_adjust(left=0.15,bottom=0.15)
+        plt.show()
+	#plt.savefig(path_scalrel_plots + 'mbh_vs_mag_tot.pdf', format='pdf', dpi=1000)
 	
 def log_mbh_vs_mu_0(axis):
 	connection = sql3.connect(dbname)
@@ -637,8 +902,8 @@ def log_mbh_vs_mu_0(axis):
         plt.xlabel(r'$\mu_0^{\rm ' + axis + r'} \rm ~[mag~arcsec^{-2}]$', labelpad=20)
         plt.ylabel(r'$M_{\rm BH} \rm ~[M_\odot]$', labelpad=20)
 	plt.subplots_adjust(left=0.15,bottom=0.17)
-        #plt.show()
-	plt.savefig(path_scalrel_plots + 'mbh_vs_mu_0_' + axis + '.pdf', format='pdf', dpi=1000)
+        plt.show()
+	#plt.savefig(path_scalrel_plots + 'mbh_vs_mu_0_' + axis + '.pdf', format='pdf', dpi=1000)
 	#plt.clf()
 	
 		
@@ -752,16 +1017,20 @@ def log_mbh_vs_mu_0(axis):
 def main():
 	#log_mbh_vs_logn('maj')	
 	#log_mbh_vs_logn('eq')		
-	#log_mbh_vs_mu_0('maj')
+	log_mbh_vs_mu_0('maj')
 	#log_mbh_vs_mu_0('eq')
 	#log_mbh_vs_mag_sph()
+	#log_mbh_vs_mag_tot()
 	#mbh_vs_logn('eq')		
 	#mbh_vs_logr_e('comparison')
 	#mbh_vs_logr_e()
 	#mag_sph_vs_logn('maj')
 	#mag_sph_vs_logn('eq')
 	#KMAG_sph_vs_mag_sph()
-	log_mbh_vs_KMAG_sph()
-
-
+	#log_mbh_vs_KMAG_sph()
+	#sani_vs_me()
+	#BTratios_GS13_vs_me()
+	#mag_tot_GS13_vs_me()
+	#mag_tot_vs_sigma()
+	
 main()

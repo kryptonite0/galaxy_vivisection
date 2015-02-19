@@ -670,20 +670,22 @@ and a significantly brighter apparent magnitude ($m_{\rm sph} = 7.28~\rm mag$).
 \begin{figure*}[h]
 \begin{center}
 \includegraphics[width=\fitfigurewidth]{images/n2974_1Dfit.eps}
-\caption{Best-fit model and isophotal parameters for the galaxy NGC 2974. 
+\caption{Best-fit model, and isophotal parameters, for the galaxy NGC 2974. 
 The left panels refer to the major-axis $R_{\rm maj}$, 
-whereas the right panels refer to the equivalent-axis $R_{\rm eq}$.
+while the right panels refer to the equivalent-axis $R_{\rm eq}$.
 The top panels display the galaxy surface brightness radial profiles obtained with a linear sampling. 
 The black points are the observed data.  
 The color lines represent the individual (PSF-convolved) model components:
-red=S\'ersic (bulge), blue=exponential (disk), green=Gaussian (AGN), cyan=Ferrer (bar), gray=Gaussian ring (ring). 
-The best-fit parameters for the S\'ersic profile are included.
+red=S\'ersic (bulge), dark blue=exponential (disk), green=Gaussian (AGN), cyan=Ferrer (bar), gray=Gaussian ring (ring). 
+The best-fit parameters for the S\'ersic bulge model are inset.
 The total (PSF-convolved) model is shown with a black dashed line, 
-but it is hard to distinguish because it almost perfectly matches the data.
-The horizontal grey dashed line indicates the $3~RMS_{\rm sky}$ level.
+but it is hard to distinguish because it almost perfectly matches the data, 
+hence the residual profile is additionally shown as $\Delta \mu$ in the second row.
+The horizontal grey dashed line corresponds to an intensity 
+equal to three times the root mean square of the sky background fluctuations ($3 \times RMS_{\rm sky}$).
 $\Delta$ denotes the rms scatter of the fit in units of $\rm mag~arcsec^{-2}$.
-$\Delta \mu$ are the residuals from the fit.
-The six panels below show the ellipticity ($\epsilon$), position angle ($PA$) and fourth harmonic ($B4$) radial profiles.}
+The lower six panels show the ellipticity ($\epsilon$), position angle ($PA$) and fourth harmonic ($B4$) radial profiles. 
+Such profiles are available online for all other galaxies successfully modelled in 1D (see Table \ref{tab:fitres}).}
 \label{fig:n2974ex}
 \end{center}
 \end{figure*}
@@ -743,8 +745,8 @@ Fits and descriptions for the other galaxies are available online.
 \includegraphics[width=\columnwidth]{images/n2974_imgmsk.pdf}
 \includegraphics[width=\columnwidth]{images/n2974_model.pdf}
 \includegraphics[width=\columnwidth]{images/n2974_resid.pdf}
-\caption{The image of the galaxy NGC 2974 with its mask (top panel), the best-fit 2D model (middle panel), 
-and the residual image after the subtraction of the 2D model (bottom panel).
+\caption{Image of the galaxy NGC 2974 with its mask (top panel), best-fit 2D model (middle panel), 
+and residual image after the subtraction of the 2D model (bottom panel).
 The ring has not been modeled, and therefore appears in the residual image.}
 \label{fig:n29742d}
 \end{center}
@@ -792,50 +794,51 @@ Table \ref{tab:fitres} lists the results from both the 1D and 2D fits.
 \input{table_fitresults.tex}
 
 \subsection{1D versus 2D decompositions}
-%In Figures \ref{fig:re1d2d}, \ref{fig:n1d2d} and \ref{fig:mag1d2d}, we compare the bulge best-fit parameters obtained 
-%from the 1D decompositions with those obtained from the 2D decompositions.
-How do 1D and 2D decompositions compare with each other? 
-Although an exhaustive analysis is beyond the scope of the present work, 
-we believe that some of the readers might be interested in our practical knowledge, 
-having dealt with 1D and 2D techniques of galaxy modeling at the same time. \\
+Here we explore how 1D and 2D decompositions compare with each other. 
+Readers not interested in our practical knowledge, 
+having dealt with 1D and 2D techniques of galaxy modeling at the same time, can skip to Section \ref{sec:err}. 
 We summarize our experience in the following points:
 \begin{itemize}
-\item A visual inspection of galaxy images and their unsharp masks is often not sufficient to accurately identify all galaxy components. 
-Embedded disks or weak bars can easily be missed, and (inclined) intermediate-scale disks can be confused with large-scale ones.
+\item A visual inspection of galaxy images and their unsharp masks is often not sufficient to accurately identify all of a galaxy's components. 
+Weak bars and some embedded disks can easily be missed. 
+Other (inclined) embedded disks can be confused with large-scale disks.
 In this regards, the 1D isophotal analysis is extremely helpful. 
 Local minima/maxima or abrupt changes in the ellipticity, position angle and fourth harmonic profiles contain precious information 
-about the galaxy constituents.
-\item The ellipticity and position angle of bulges can vary with radius.
+about a galaxy's constituents.
+\item The ellipticity and position angle of triaxial bulges can vary with radius.
 The analytic functions used by 2D decomposition codes to fit galaxy components have fixed ellipticity and position angle, 
-thus they cannot account for their radial gradients. 
+thus they cannot account for these radial gradients. 
 This problem is overcome with 1D decomposition techniques.
-\item The interpretation of the residuals is often crucial to identify the optimal decomposition for a galaxy. 
-In our experience, we found that the reading of 1D residuals was easier than that of 2D residuals.
+\item The interpretation of the residual surface brightness profile is often crucial to identify the optimal decomposition for a galaxy. 
+In our experience, we found that interpreting 1D residuals was easier and more productive than 2D residuals.
 \end{itemize}
-Although we attempted 2D modeling for all galaxies in our sample, 
-nearly half of the 2D decompositions were not successful or did not converge.
-For the 31 galaxies that had successful 1D and 2D decompositions, 
-we compare their 1D and 2D best-fit parameters in Figures \ref{fig:re1d2d}, \ref{fig:n1d2d} and \ref{fig:mag1d2d}.
+Although we attempted 2D modeling for the 72 galaxies in our sample, 
+more than half of the 2D decompositions were not successful or did not converge to a meaningful solution. 
+This should serve as a tip to users of 2D fitting codes. 
+When physically meaningful bulge parameters are required, 
+the output may not be reliable and should be inspected.
+For the 31 galaxies that had successful 2D decompositions, 
+we compare with their 1D parameters in Figures \ref{fig:re1d2d}, \ref{fig:n1d2d} and \ref{fig:mag1d2d}.
 %The software \textsc{Imfit} returns major-axis measurements of effective radii, 
 %which are plotted in Figure \ref{fig:re1d2d} versus the corresponding 1D major-axis measurements.
 %2D measurements of S\'ersic indices can be approximated to 1D equivalent-axis measurements, 
 %and are therefore compared to them in Figure \ref{fig:n1d2d}.
 %Figure \ref{fig:mag1d2d} shows 2D versus 1D measurements of bulge magnitudes. 
 The agreement between 1D and 2D effective radii and magnitudes is remarkable, 
-whereas a larger amount of scatter in the S\'ersic indices plot might be caused by the fact that 
+whereas a larger amount of scatter in the S\'ersic indices can be caused by the fact that 
 2D measurements do not exactly correspond to 1D equivalent-axis measurements. 
 No systematic effects are observed in any of these three plots, 
 which indicates that 1D and 2D techniques of galaxy modeling -- when performed on the same galaxy -- 
-give consistent results. \\
+can give consistent results. \\
 In conclusion, since we found that the best-fit parameters do not depend on the decomposition method (1D or 2D) used, 
-but we obtained more successful 1D decompositions than 2D, 
-we will base our analysis only on the results from 1D fits.
+and given that we obtained more successful 1D decompositions than 2D, 
+we will base our analysis on the results from the 1D fits.
 
 
 \begin{figure}[h]
 \begin{center}
 \includegraphics[width=\columnwidth]{images/comparison_r_e.eps} 
-\caption{2D versus 1D major-axis measurements of effective radii. 
+\caption{2D versus 1D major-axis measurements of the effective radii. 
 The dashed line displays the 1:1 relation.}
 \label{fig:re1d2d}
 \end{center}
@@ -844,8 +847,8 @@ The dashed line displays the 1:1 relation.}
 \begin{figure}[h]
 \begin{center}
 \includegraphics[width=\columnwidth]{images/comparison_n.eps} 
-\caption{2D measurements of S\'ersic indices can be approximated to 1D equivalent-axis measurements, 
-and are therefore compared to them in this plot. The dashed line displays the 1:1 relation.}
+\caption{2D measurements of the S\'ersic indices roughly approximate the 1D equivalent-axis measurements. 
+The dashed line displays the 1:1 relation.}
 \label{fig:n1d2d}
 \end{center}
 \end{figure}
@@ -853,7 +856,7 @@ and are therefore compared to them in this plot. The dashed line displays the 1:
 \begin{figure}[h]
 \begin{center}
 \includegraphics[width=\columnwidth]{images/comparison_mag.eps} 
-\caption{2D versus 1D measurements of $3.6~\rm \mu m$ bulge magnitudes. The dashed line displays the 1:1 relation.}
+\caption{2D versus 1D measurements of the $3.6~\rm \mu m$ bulge magnitudes. The dashed line displays the 1:1 relation.}
 \label{fig:mag1d2d}
 \end{center}
 \end{figure}
@@ -864,7 +867,7 @@ and are therefore compared to them in this plot. The dashed line displays the 1:
 \label{sec:err}
 Estimating the uncertainties associated with the best-fit parameters of our 1D galaxy decompositions is not straightforward.
 Monte Carlo simulations could be used for this purpose, 
-but they would take into account only random errors and not unknown systematic ones.
+but they would take into account only random errors and not unknown systematic errors.
 Systematic errors include incorrect sky subtraction, 
 inaccurate masking of contaminating sources, 
 imprecise description of the PSF, 
@@ -872,24 +875,20 @@ erroneous choice of model components
 (for example, when failing to identify a galaxy sub-component and thus omitting it in the model, 
 or when describing a galaxy sub-component with an inadequate function),
 the radial extent of the surface brightness profile and its sampling.
-%(if no weighting scheme is applied to the data points during the minimization routine, 
-%then, for the same galaxy, the fit of a logarithmically sampled light profile will naturally put more weight on the inner part of the profile 
-%than in the case of linear sampling).
-When performing multi-component decomposition of high signal-to-noise images of nearby -- therefore well resolved -- galaxies, 
+These factors are not included in popular 2D fitting codes which report only the random errors associated with their fitted parameters.  
+Moreover, when performing multi-component decomposition of high signal-to-noise images of nearby -- therefore well resolved -- galaxies, 
 errors are dominated by systematics rather than Poisson noise.
 For this reason, we decided to estimate the uncertainties of the bulge best-fit parameters 
 with a method that took into account systematic errors. 
 
 \subsubsection{Goodness of the bulge modeling}
-To do this, we first had to evaluate the goodness of the modeling of the bulge component.
-For each of our fits, we calculated the associated $RMS$ scatter\footnote{The $RMS$ scatter of a fit was computed as:
+For each of our fits, we calculated the associated $RMS$ scatter using:
 \begin{equation}
-\Delta = \sqrt{\frac{\sum_{\rm i=0}^{N} (\mu_{\rm i}^{\rm observed} - \mu_{\rm i}^{\rm model})^2}{N_{\rm DOF}} } ,
+\Delta = \sqrt{\frac{\sum_{\rm i=0}^{N} (\mu_{\rm i}^{\rm obs} - \mu_{\rm i}^{\rm mod})^2}{N_{\rm DOF}} } ,
 \end{equation} 
-where %$N$ is the number of data points used in the fit, 
-$N_{\rm DOF}$ is the number of degrees-of-freedom, 
-$\mu^{\rm observed}$ is the observed surface brightness 
-and $\mu^{\rm model}$ is the model surface brightness.}.
+where $N_{\rm DOF}$ is the number of degrees-of-freedom, 
+$\mu_{\rm i}^{\rm obs}$ is the observed surface brightness 
+and $\mu_{\rm i}^{\rm mod}$ is the model surface brightness at each data point $i$.
 Although useful to evaluate the overall quality of a galaxy decomposition, 
 the $RMS$ scatter alone cannot be used to assess the goodness of the fit for the spheroidal component only, 
 unless the galaxy is a pure spheroid and has consequently been modeled with a single S\'ersic profile.
@@ -900,51 +899,53 @@ The exponential function provides an excellent description of the light profile 
 whereas the S\'ersic function does not do the same for the bulge.
 The residuals of the fit will then be flat and close to zero at large radii, 
 where the emission of the disk dominates over that of the bulge,
-while they will display significant structures at small radii, 
-in correspondence of the poorly fit spheroidal component.
-In case of linear sampling, 
-because the part of the surface brightness profile pertaining to the disk contains more data points 
+while they will display significant departures at small radii, 
+in correspondence with the poorly fit spheroidal component.
+In the case of linear sampling, 
+because the part of the surface brightness profile pertaining to the disk may contain more data points 
 than the part pertaining to the bulge, 
 the global $RMS$ scatter will be relatively small, 
 but it obviously will not reflect the accuracy of the fit to the spheroidal component only. \\
-A simple but powerful way to get a feeling of how precisely the global model describes the spheroidal component 
+A simple but powerful way to get a feeling of how precisely the global model and its spheroidal component have fared
 is to look at the major- and equivalent-axis fits of each galaxy 
-and visually inspect the structures of the residuals within $\sim 1 - 2$ bulge effective radii. 
+and visually inspect the structures of the residual surface brightness profile 
+(i.e.~the second row in Figure \ref{fig:n2974ex}) within $\sim 1 - 2$ bulge effective radii. 
 We did this using a grade from 1 to 3, assigned according to the following criteria.
 \begin{itemize}
 \item [1)] A grade of 1 was given to the best fits, i.e.~fits that do not exhibit any of the problems listed below.
-\item [2)] A grade of 2 was used in the following cases: 
-the residuals in correspondence of the bulge component are not randomly distributed around zero, 
+\item [2)] A grade of 2 was issued in the following cases. 
+The residuals in correspondence with the radial extent of the bulge component are not randomly distributed around zero, 
 being symptomatic of a S\'ersic model having a curvature (regulated by the S\'ersic index $n$) 
-that does not match the real ``shape'' of the bulge; 
-when we identified, but were not able to accurately model a galaxy sub-component;
-in the case of significant inconsistencies between the model and the observed galaxy properties 
+that does not quite match the real ``shape'' of the bulge. 
+When we identified, but were not able to accurately model. a galaxy sub-component.
+In the case of apparent inconsistencies between the model and the observed galaxy properties 
 (e.g.~an embedded disk modeled with an exponential function, 
-whose scale length does not match the size of the disk as expected from the ellipticity profile or the velocity map);
-when the S\'ersic profile used to describe the bulge component has a size -- as measured by the effective radius -- 
+whose scale length does not quite match the size of the disk as expected from the ellipticity profile or the velocity map).
+When the S\'ersic model used to describe the bulge component has a size -- as measured by the effective radius -- 
 comparable to a few times the $FWHM$ of the PSF.
+Galaxies in this category are reasonably well fit despite these issues.
 \item [3)] A grade of 3 was assigned to the poorer and more anomalous fits, 
 or those affected by an obvious degeneracy between the bulge S\'ersic profile and the remaining model components 
-(e.g.~when the bulge S\'ersic index varies for more than 50\% {\bf TBD: how often what?} among the four different realizations of the fit, 
+(e.g.~when the bulge S\'ersic index varies by as much as 50\% among the four different realizations of the fit, 
 or when the output of the fit strongly depends on the choice of the initial parameters).
 \end{itemize}
 As a result, we classified 27 galaxies (38\% of the 72 galaxies for which we attempted a 1D decomposition) with grade 1, 
 29 galaxies (40\%) with grade 2 and 10 galaxies (14\%) with grade 3.
-%The absolute values of the uncertainties of the S\'ersic parameters will be estimated in a forthcoming paper, 
-%according to the grades assigned here to the fits.
+Six galaxies could not be modelled.
+We report the assigned grades in Table \ref{tab:fitres} (column 10).
 
 \subsubsection{Uncertainties on $n_{\rm sph}$}
 %\label{sec:sigman}
 In Figure \ref{fig:compn}, for 58 galaxies, 
 we compare the measurements of the bulge S\'ersic index obtained by different authors 
 with those obtained by us. 
-For each galaxy, we computed the average value $\langle \log(n_{\rm sph}) \rangle$ of all the available measurements, 
-and we plot it against the scatter of the individual measurements around $\langle \log(n_{\rm sph}) \rangle$.
-The measurements are deliberately heterogeneous, 
+For each galaxy, we computed the average value $\langle \log(n_{\rm sph}) \rangle$ of the available measurements, 
+and we plot it against the scatter of the individual measurements around each spheroid's $\langle \log(n_{\rm sph}) \rangle$.
+The measurements are heterogeneous, 
 in the sense that they were obtained from 1D or 2D decompositions of data in different wavelengths, 
-and they refer either to the major-axis or to the equivalent-axis.
+and they refer either to the major-axis, the equivalent-axis or some 2D average.
 In Figure \ref{fig:compn}, the black histogram shows the distribution of the scatter around $\langle \log(n_{\rm sph}) \rangle$ 
-only for our measurements. 
+for our measurements. 
 38\% of this distribution lie within $-\sigma_1^- = -0.08~\rm dex$ and $+\sigma_1^+ = +0.06~\rm dex$, 
 78\% lie within $-\sigma_2^- = -0.21~\rm dex$ and $+\sigma_2^+ = +0.17~\rm dex$,
 and 92\% lie within $-\sigma_3^- = -0.25~\rm dex$ and $+\sigma_3^+ = +0.25~\rm dex$. 
@@ -952,7 +953,7 @@ We elect to use $\pm \sigma_1^\pm$, $\pm \sigma_2^\pm$ and $\pm \sigma_3^\pm$ as
 for our measurements of $\log(n_{\rm sph})$ obtained from ``grade 1'', ``grade 2'' and ``grade 3'' fits, respectively. \\
 
 \subsubsection{Uncertainties on $R_{\rm e,sph}$}
-The uncertainties on the bulge effective radii were computed with the same method used for the S\'ersic indices. 
+The uncertainties on the bulge effective radii were computed using the same methodology as employed for the S\'ersic indices. 
 However, in Figure \ref{fig:compre} we include only major-axis measurements of $R_{\rm e,sph}$. 
 The associated $1\sigma$ uncertainties for our measurements of $\log(R_{\rm e,sph})$ are 
 $-\sigma_1^- = -0.11~\rm dex$ and $+\sigma_1^+ = +0.07~\rm dex$, 
@@ -961,28 +962,25 @@ and $-\sigma_3^- = -0.39~\rm dex$ and $+\sigma_3^+ = +0.42~\rm dex$.
 
 \subsubsection{Uncertainties on $m_{\rm sph}$}
 To estimate the uncertainties on the bulge magnitudes, 
-we compared (see Figure \ref{fig:compmag}) only measurements coming from $K$-band or $3.6~\rm \mu m$ observations.
-$3.6~\rm \mu m$ magnitudes were converted into $K$-band magnitudes by an additive factor of $+0.27\rm~mag$, 
+we compared (see Figure \ref{fig:compmag}) only those literature measurements coming from $K$-band or $3.6~\rm \mu m$ observations.
+To do this, the $3.6~\rm \mu m$ magnitudes were converted into $K$-band magnitudes by applying an additive factor of $0.27\rm~mag$, 
 which was estimated using the stellar population models of \cite{worthey1994},
 assuming a 13 Gyr old single-burst stellar population with solar metallicity. 
 The associated $1\sigma$ uncertainties for our measurements of $m_{\rm sph}$ are 
 $-\sigma_1^- = -0.11~\rm mag$ and $+\sigma_1^+ = +0.18~\rm mag$, 
 $-\sigma_2^- = -0.58~\rm mag$ and $+\sigma_2^+ = +0.66~\rm mag$,
-and $-\sigma_3^- = -0.66~\rm mag$ and $+\sigma_3^+ = +0.88~\rm mag$. \\
-{\bf NOTE: When converting from K-band to 3.6, 
-Galactic absorption was not taken into account!!!!! But I have the feeling that it's not significant...}
-
+and $-\sigma_3^- = -0.66~\rm mag$ and $+\sigma_3^+ = +0.88~\rm mag$. 
 
 \subsubsection{Uncertainties on $\mu_{\rm e,sph}$}
 As for the bulge magnitudes, we estimated the uncertainties on the bulge effective surface brightnesses $\mu_{\rm e,sph}$ 
 by comparing only $K$-band or $3.6~\rm \mu m$ measurements (see Figure \ref{fig:compmue}), 
-and accounting for the corrective factor. 
-Because not explicitly reported by their authors, literature effective surface brightnesses were calculated by us as:
+and accounting for the mean color difference of $0.27\rm~mag$. 
+Not explicitly reported in the literature, effective surface brightnesses were calculated by us using:
 \begin{multline}
 \mu_{\rm e,sph} = m_{\rm sph} + 5\log \Bigl(R_{\rm e,sph}^{\rm maj}\sqrt{(b/a)_{\rm sph}} \Bigr) + \\
 + 2.5\log \Bigl[2\pi n_{\rm sph} e^{b_n} b_n^{-2n_{\rm sph}} \Gamma(2n_{\rm sph})\Bigr], 
 \end{multline}
-where $b_n$ and $\Gamma(2n_{\rm sph})$ are defined in Section \ref{sec:app1}, 
+where $b_n$ and $\Gamma(2n_{\rm sph})$ are defined in the Appendix, 
 and $(b/a)_{\rm sph}$ is the bulge axis ratio.
 While \cite{laurikainen2010} and \cite{sani2011} reported their estimates of $(b/a)_{\rm sph}$, 
 \cite{vika2012} and \cite{lasker2014data} did not. 
@@ -993,7 +991,7 @@ $-\sigma_2^- = -0.84~\rm mag$ and $+\sigma_2^+ = +1.59~\rm mag$,
 and $-\sigma_3^- = -1.06~\rm mag$ and $+\sigma_3^+ = +1.74~\rm mag$. 
 
 \subsubsection{Uncertainties on $\mu_{\rm 0,sph}$}
-From the values of $\mu_{\rm e,sph}$, we derived the central surface brightnesses $\mu_{\rm 0,sph}$ as
+From the values of $\mu_{\rm e,sph}$, we derived the central surface brightnesses $\mu_{\rm 0,sph}$ from the equation
 \begin{equation}
 \mu_{\rm 0,sph} = \mu_{\rm e,sph} - \frac{2.5 b_n}{\ln(10)}.
 \end{equation}
@@ -1147,23 +1145,22 @@ of the black histogram, respectively.}
 The widespread presence of embedded components -- such as intermediate-scale disks -- in massive early-type galaxies 
 makes galaxy decomposition an essential tool to properly investigate the scaling relations between black hole masses 
 and host bulge properties. \\
-The bulge best-fit parameters are model-dependent. 
 Past studies often used different models for the same galaxy, and obtained significantly discrepant results,  
-which led them to draw contrasting conclusions about the black hole-bulge correlations.
+which led them to draw contrasting conclusions about the black hole--bulge correlations.
 These inconsistencies motivated our effort to secure and refine the measure of bulge properties in a sample of 75 galaxies 
 with a dynamical estimate of the black hole mass. 
 Using $3.6~\rm \mu m$ \emph{Spitzer} satellite imagery, 
 we performed state-of-the-art galaxy decompositions. 
-We compared our best-fit models with those from the past literature, 
-and explained discrepancies when present. 
+The $3.6~\rm \mu m$ band is an excellent tracer of the stellar mass, superior to optical bands or the $K$-band. 
+Considerable care has been taken in the data reduction, image mosaicking, sky subtraction and component model fitting to the galaxy light.
+We have compared our best-fit models with those from the literature, 
+to identify and explain discrepancies when present. 
+Our analysis additionally benefited from recourse to kinematical information -- not previously used -- to aid the identification of 
+somewhat face-on disks, or the distinction between intermediate-scale disks and large-scale disks, 
+missed in some past investigations and decompositions.
 Table \ref{tab:lit} summarizes the main characteristics of the five past studies that, since 2007, attempted galaxy decomposition 
 to derive black hole-bulge scaling relations, 
-and highlights why our endeavor represents a substantial improvement over the past literature.
-Our sample of galaxies is the largest ever used. 
-The $3.6~\rm \mu m$ band is an excellent tracer for the stellar mass, superior to optical bands or the $K$-band. 
-\cite{lasker2014data} and this work identified and modeled more galaxy components than any other study, 
-and therefore obtained more accurate decompositions,
-but we are the first that did it with the assistance of kinematical information. 
+and highlights, in part, why our endeavor represents a substantial improvement over the past literature.
 
 \begin{table*}%[ht] 
 \begin{center}  				      
@@ -1188,18 +1185,17 @@ S+11 = \cite{sani2011}, V+12 \cite{vika2012}, B+12 = \cite{beifiori2012}, L+14 =
 \end{center}	
 \end{table*}
 
-Our principal conclusions are summarized in the following points.
 \begin{itemize}
 \item One-dimensional and two-dimensional techniques of galaxy decomposition return the same results when applied to the same galaxy.
 However, in our practical experience, two-dimensional decompositions {\bf HOW DO YOU WRITE THIS IN ENGLISH?? fail twice as much as one-dimensional ones}, 
 either because the fit does not converge or because the result is unphysical. 
 A strong limitation of two-dimensional codes is their inability to accommodate the radial gradients of ellipticity and position angle 
 often observed in galaxy bulges.
-\item We found the interpretation of one-dimensional residuals easier than that of two-dimensional residual images. 
+\item We found the interpretation of one-dimensional residual surface brightness profiles easier than that of two-dimensional residual images. 
 A correct interpretation of the residuals is fundamental to determine the optimal model for a galaxy.
 \item A one-dimensional isophotal analysis was extremely helpful and sometimes even necessary to accurately identify galaxy components.
 \item Given the level of detail to which each galaxy decomposition was performed, 
-we believe that our analysis cannot be reproduced by any current automatic routine. 
+we believe that our analysis cannot be reproduced by current automatic routines. 
 \item The uncertainties associated with the bulge best-fit parameters are dominated by systematic errors (e.g.~incorrect sky subtraction, 
 inaccurate masking of contaminating sources, erroneous choice of model components), and only marginally affected by random errors. 
 For this reason, we developed a method to estimate the uncertainties on the best-fit parameters that takes into account systematic errors.
@@ -4233,6 +4229,7 @@ These results will be presented in a series of forthcoming papers.
 
 
 \acknowledgments
+{\bf marconi, sani, hunt...}
 GS warmly thanks Chieng Peng, Peter Erwin, Luca Cortese, Elisabete Lima Da Cunha and Gonzalo Diaz 
 for useful discussion. \\
 This research was supported by Australian Research Council funding through grants
@@ -4249,22 +4246,21 @@ under contract with the National Aeronautics and Space Administration.
 
 \section{1D analytical functions}
 \label{sec:app1}
-Below we give the mathematical expressions of all the analytical functions used in this work to model 
-the observed surface brightness profiles ($\mu$) of galaxies.
-We indicate with $R$ the projected galactic radius, 
-corresponding to the distance of the isophotes from the galaxy center (along the major- or equivalent-axis). \\
+Here we provide the mathematical expressions of the analytical functions used to model 
+the observed surface brightness profiles, $\mu(R)$, of galaxies.
+The projected galactic radius, $R$,
+corresponds to the distance of the isophotes from the galaxy center (along either the major- or equivalent-axis). \\
 
-The \emph{S\'ersic profile} \citep{sersic1963,sersic1968} is a three-parameter function with the following form:
+The \citeauthor{sersic1963} (\citeyear{sersic1963,sersic1968}) model is a three-parameter function of the following form:
 \begin{equation}
 \mu_{\rm S\acute{e}rsic}(\mu_{\rm e},R_{\rm e},n;R) = \mu_{\rm e} + \frac{2.5~b_{\rm n}}{\ln(10)} 
 \Biggl[\biggl(\frac{R}{R_{\rm e}}\biggr)^{1/n}-1\Biggr] ,
 \end{equation}
 \citep{caon1993,andredakis1995,grahamdriver2005}
 where $\mu_{\rm e}$ is the surface brightness at the effective radius $R_{\rm e}$ that encloses 
-half of the total light from the model, 
-the S\'ersic index $n$ is the parameter that measures the curvature of the radial light profile,
-and $b_{\rm n}$ is a scalar value defined in terms of the S\'ersic index $n$.
-The value of $b_{\rm n}$ is found by solving numerically the following expression:
+half of the total light from the model. 
+The S\'ersic index $n$ is the parameter that measures the curvature of the radial light profile,
+and $b_{\rm n}$ is a scalar value defined in terms of the S\'ersic index $n$ such that:
 \begin{equation}
 \Gamma(2n) = 2\gamma(2n,b_{\rm n}),
 \end{equation}
@@ -4274,22 +4270,23 @@ and $\gamma$ is the incomplete gamma function defined by
 \gamma(2n,x) = \int_{0}^{x} {\rm e}^{-t} t^{2n-1} {\rm d}t .
 \end{equation} \\
 
-The \emph{exponential profile} is a special case ($n=1$) of the S\'ersic profile.
-It is therefore a two-parameter function, with the following form:
+The exponential model is a special case ($n=1$) of the S\'ersic model.
+It can therefore be written as a two-parameter function such that:
 \begin{equation}
 \mu_{\rm exponential}(\mu_{\rm 0},h;R) = \mu_{\rm 0} + \frac{2.5}{\ln(10)} \biggl(\frac{R}{h} \biggr) ,
 \end{equation}
-where $\mu_{\rm 0}$ is the central surface brightness and $h$ is the scale length. \\
+where $\mu_{\rm 0}$ is the central surface brightness and $h$ is the scale length equal to $R_{\rm e}/1.678$. \\
 
-The \emph{Gaussian profile} is a two-parameter function with the following form:
+The Gaussian model is another special case ($n=0.5$) of the S\'ersic model, and thus also a two-parameter function of the following form:
 \begin{equation}
 \mu_{\rm Gaussian}(\mu_{\rm 0},FWHM;R) = \mu_{\rm 0} + \frac{2.5}{\ln(10)} 
 \biggl[\frac{R^2}{2(FWHM/2.355)^2} \biggr] ,
+\label{eq:gauss}
 \end{equation}
 where $\mu_{\rm 0}$ is the central surface brightness 
 and $FWHM$ is the full width at half maximum of the Gaussian profile. \\
 
-The \emph{Moffat profile} \citep{moffat1969} is a three-parameter function with the following form:
+The \cite{moffat1969} model is a three-parameter function that can be expressed as:
 \begin{equation}
 \mu_{\rm Moffat}(\mu_{\rm 0},\alpha,\beta;R) = \mu_{\rm 0} - 2.5 
 \log \Biggl[ 1 + \biggl( \frac{R}{\alpha} \biggr)^2 \Biggr]^{-\beta} ,
@@ -4297,11 +4294,11 @@ The \emph{Moffat profile} \citep{moffat1969} is a three-parameter function with 
 where $\mu_{\rm 0}$ is the central surface brightness,
 $\alpha$ is related to the $FWHM$ through 
 \begin{equation}
-FWHM = 2\alpha \sqrt{2^{1/\beta}-1}
+FWHM = 2\alpha \sqrt{2^{1/\beta}-1} ,
 \end{equation}
 and $\beta$ regulates the shape of the profile at large radii. \\
 
-The \emph{Ferrer profile} is a four-parameter function with the following form:
+The Ferrer model is a four-parameter function defined as:
 \begin{equation}
 \mu_{\rm Ferrer}(\mu_{\rm 0},R_{\rm out},\alpha,\beta;R) = \left\{
   \begin{array}{l l}
@@ -4313,16 +4310,15 @@ The \emph{Ferrer profile} is a four-parameter function with the following form:
 where $\mu_{\rm 0}$ is the central surface brightness,
 $\alpha$ controls the sharpness of the truncation,
 $\beta$ is related to the central slope,
-and $R_{\rm out}$ is the limit within which the function is defined. \\
+and $R_{\rm out}$ is the outer radial limit within which the function is defined. \\
 
-The \emph{symmetric Gaussian ring} is a three-parameter function with the following form:
+The symmetric Gaussian ring is a three-parameter function of the following form:
 \begin{equation}
 \mu_{\rm Gaussian}(\mu_{\rm 0},R_{\rm 0},FWHM;R) = \mu_{\rm 0} + \frac{2.5}{\ln(10)} 
 \biggl[\frac{(R-R_{\rm 0})^2}{2(FWHM/2.355)^2} \biggr] ,
 \end{equation}
-where $\mu_{\rm 0}$ is the central surface brightness,
-$R_{\rm 0}$ is the radius at which the Gaussian profile is centered, 
-and $FWHM$ is the full width at half maximum of the Gaussian profile. \\
+where $\mu_{\rm 0}$ and $FWHM$ have the same meaning as in equation \ref{eq:gauss}, 
+and $R_{\rm 0}$ is the radius at which the Gaussian profile is centered. \\
 
 
 

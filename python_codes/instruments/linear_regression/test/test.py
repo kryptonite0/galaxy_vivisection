@@ -2,8 +2,8 @@ import numpy as np
 from instruments.linear_regression import fitexy
 
 #data = open('test.dat')
-#data = open('Savorgnan_2014.dat')
-data = open('msigma.out')
+data = open('Savorgnan_2014.dat')
+#data = open('msigma.out')
 
 xlist = []
 sigxlist = []
@@ -27,3 +27,4 @@ sigy = np.asarray(sigylist)
 #fitexy.modfitexy(x,sigx,y,sigy,'x|y')
 
 fitexy.bisect_modfitexy(x,sigx,y,sigy)
+

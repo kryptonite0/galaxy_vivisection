@@ -1,8 +1,11 @@
 import numpy as np
 import bces
 import matplotlib.pyplot as plt
+import matplotlib.cm as cm
 
-tolerance = 0.1
+tolerance = 0.005
+tolerance = 0.01  # good one
+#tolerance = 0.05
 
 def modfitexy(x,sigx,y,sigy,mode):
 
@@ -31,13 +34,15 @@ def modfitexy(x,sigx,y,sigy,mode):
 	print
 	
 	
-	a, b, epsilon = get_ab(x,sigx,y,sigy,ainit,binit,paramsprecision,N,mode)
+	a, b, epsilon, chisqmin = get_ab(x,sigx,y,sigy,ainit,binit,paramsprecision,N,mode)
 	
 	while paramsprecision > tolerance:
 		paramsprecision = paramsprecision/3
-		a, b, epsilon = get_ab(x,sigx,y,sigy,a,b,paramsprecision,N,mode)
+		a, b, epsilon, chisqmin = get_ab(x,sigx,y,sigy,a,b,paramsprecision,N,mode)
 		
-	afit, bfit = a, b 	
+	afit, bfit, epsilonfit, chisqminfit = a, b, epsilon, chisqmin 	
+	
+	merr_afit,perr_afit,merr_bfit,perr_bfit = get_errors_ab(x,sigx,y,sigy,afit,bfit,ainit_err,binit_err,epsilonfit,chisqmin,tolerance,N,mode)
 		
 	# print chisqmin,afit,bfit
 	# compute absolute scatter
@@ -48,10 +53,10 @@ def modfitexy(x,sigx,y,sigy,mode):
 	
 	print 'y = a + bx'
 	print 'Mode fit:', mode
-	print 'a =', afit, '; b =', bfit, '; epsilon =', epsilon
+	print 'a =', afit, '; b =', bfit, '; epsilon =', epsilonfit
 	print 'absolute scatter Delta =', absscat
 	
-	return afit, bfit, epsilon, absscat					
+	return afit,merr_afit,perr_afit, bfit,merr_bfit,perr_bfit, epsilonfit, absscat					
 
 	
 def get_ab(x,sigx,y,sigy,ainit,binit,paramsprecision,N,mode):
@@ -65,11 +70,11 @@ def get_ab(x,sigx,y,sigy,ainit,binit,paramsprecision,N,mode):
 		epsilon = epsilon + paramsprecision
 		iteration = iteration + 1
 		print 'Iteration', iteration, '; chisq =', chisqmin, '; N-2 =', (N-2)
-		print 'Range for a:', ainit-paramsprecision*6,ainit+paramsprecision*6
-		print 'Range for b:', binit-paramsprecision*6,binit+paramsprecision*6
-		print 'Epsilon =', epsilon
-		print 'Precision =', paramsprecision
-		print 
+	       #print 'Range for a:', ainit-paramsprecision*6,ainit+paramsprecision*6
+	       #print 'Range for b:', binit-paramsprecision*6,binit+paramsprecision*6
+	       #print 'Epsilon =', epsilon
+	       #print 'Precision =', paramsprecision
+	       #print 
 			
 		for a in np.arange(ainit-paramsprecision*6,ainit+paramsprecision*6,paramsprecision):
 	
@@ -88,23 +93,40 @@ def get_ab(x,sigx,y,sigy,ainit,binit,paramsprecision,N,mode):
 					afit = a
 					bfit = b
 					
-	return afit,bfit,epsilon
+	return afit,bfit,epsilon,chisqmin
 
  
 def bisect_modfitexy(x,sigx,y,sigy):
 	
+	afit_1,merr_afit_1,perr_afit_1, bfit_1,merr_bfit_1,perr_bfit_1, epsilonfit_1, absscat_1 = modfitexy(x,sigx,y,sigy,'y|x')
+	afit_2,merr_afit_2,perr_afit_2, bfit_2,merr_bfit_2,perr_bfit_2, epsilonfit_2, absscat_2 = modfitexy(x,sigx,y,sigy,'x|y')
 	
-	afit_1, bfit_1, epsilon_1, absscat_1 = modfitexy(x,sigx,y,sigy,'y|x')
-	afit_2, bfit_2, epsilon_2, absscat_2 = modfitexy(x,sigx,y,sigy,'x|y')
-
 	b_bisec = np.tan(0.5*(np.arctan(bfit_1)+np.arctan(bfit_2)))
 	a_bisec = (afit_2-afit_1)*(bfit_1-b_bisec)/(bfit_1-bfit_2) + afit_1
+	
+	## compute errors
+	# error on slope
+	perr_alpha_1 = np.arctan(bfit_1+perr_bfit_1) - np.arctan(bfit_1)
+	merr_alpha_1 = np.arctan(bfit_1) - np.arctan(bfit_1-merr_bfit_1)
+	perr_alpha_2 = np.arctan(bfit_2+perr_bfit_2) - np.arctan(bfit_2)
+	merr_alpha_2 = np.arctan(bfit_2) - np.arctan(bfit_2-merr_bfit_2)
+	
+	perr_alpha_bisec = (perr_alpha_1**2+perr_alpha_2**2)**0.5
+	merr_alpha_bisec = (merr_alpha_1**2+merr_alpha_2**2)**0.5
+	
+	perr_b_bisec = np.tan(perr_alpha_bisec+np.arctan(b_bisec)) - b_bisec
+	merr_b_bisec = b_bisec - np.tan(np.arctan(b_bisec)-merr_alpha_bisec)
+	
+	#error on intercept
+	#true only in the approximation afit_1 ~ afit_2
+	perr_a_bisec = (perr_afit_1**2 + perr_afit_2**2)**0.5
+	merr_a_bisec = (merr_afit_1**2 + merr_afit_2**2)**0.5
 	
 	print '--------------------------'
 	print 'Bisector FITEXY'
 	print 'y = a + bx'
-	print 'a =', a_bisec
-	print 'b =', b_bisec
+	print 'a =', a_bisec, '+', perr_a_bisec, '-', merr_a_bisec
+	print 'b =', b_bisec, '+', perr_b_bisec, '-', merr_b_bisec
 	
 	
         # plot data and regressions
@@ -123,6 +145,81 @@ def bisect_modfitexy(x,sigx,y,sigy):
        #plt.show()
        #print 'test', [afit_1, afit_2, a_bisec], [bfit_1, bfit_2, b_bisec]
 	
-	return [afit_1, afit_2, a_bisec], [bfit_1, bfit_2, b_bisec]
+	#return [afit_1, afit_2, a_bisec], [bfit_1, bfit_2, b_bisec]
+	return a_bisec,perr_a_bisec,merr_a_bisec,b_bisec,perr_b_bisec,merr_b_bisec
+
+
+def get_errors_ab(x,sigx,y,sigy,afit,bfit,ainit_err,binit_err,epsilonfit,chisqmin,tolerance,N,mode):
+	
+	a_range = np.arange(afit-3*ainit_err,afit+3*ainit_err+tolerance,tolerance)
+	b_range = np.arange(bfit-3*binit_err,bfit+3*binit_err+tolerance,tolerance)
+	chisqgrid = np.zeros((len(a_range), len(b_range)))
+		
+	for n1 in range(len(a_range)):
+		
+		for n2 in range(len(b_range)):
+			
+			chisq = 0.000
+			for i in range(0,N):
+				numer = y[i] - (a_range[n1] + b_range[n2]*x[i])
+				if mode == 'y|x':
+					denom = (sigy[i])**2 + (b_range[n2]**2)*(sigx[i])**2 + epsilonfit**2
+				elif mode == 'x|y':
+					denom = (sigy[i])**2 + (b_range[n2]**2)*(sigx[i])**2 + (b_range[n2]**2)*(epsilonfit**2)
+				chisq = chisq + numer**2/denom
+			
+			chisqgrid[n1,n2] = chisq
+			
+	chisqimg = np.zeros((len(a_range), len(b_range))) + 1
+	chisqimg[chisqgrid>chisqmin+1] = 0
+	
+	chisqimg_collapsed_a = np.sum(chisqimg, axis=1)
+	chisqimg_collapsed_b = np.sum(chisqimg, axis=0)
+	
+	for j in range(len(chisqimg_collapsed_a)):
+		if chisqimg_collapsed_a[j]>0 and chisqimg_collapsed_a[j-1]<0.5:
+			jleft = j
+		if chisqimg_collapsed_a[j+1]<0.5 and chisqimg_collapsed_a[j]>0:	
+			jright = j
+			break
+			
+			
+	for k in range(len(chisqimg_collapsed_b)):
+		if chisqimg_collapsed_b[k]>0 and chisqimg_collapsed_b[k-1]<0.5:
+			kleft = k
+		if chisqimg_collapsed_b[k+1]<0.5 and chisqimg_collapsed_b[k]>0:	
+			kright = k
+			break
+			
+	
+	merr_afit = afit - a_range[jleft]
+	perr_afit = a_range[jright] - afit	
+	merr_bfit = bfit - b_range[kleft]
+	perr_bfit = b_range[kright] - bfit
+	
+	err_afit = (a_range[jright] - a_range[jleft])/2
+	err_bfit = (b_range[kright] - b_range[kleft])/2	
+			
+	
+	fig, ax = plt.subplots()
+	ax.imshow(chisqimg, interpolation='none', cmap=cm.Greys_r)
+	ax.axhline(y=jleft, linewidth=2, color = 'red')
+	ax.axhline(y=jright, linewidth=2, color = 'red')
+	ax.axhline(y=0.5*len(chisqimg_collapsed_a)-1, linewidth=2, color = 'red')
+	ax.axvline(x=kleft, linewidth=2, color = 'red')
+	ax.axvline(x=kright, linewidth=2, color = 'red')
+	ax.axvline(x=0.5*len(chisqimg_collapsed_b)-1, linewidth=2, color = 'red')
+	
+	plt.show()
+	print 'errors', merr_afit,perr_afit,merr_bfit,perr_bfit
+	print 'errors', err_afit,err_bfit
+	return merr_afit,perr_afit,merr_bfit,perr_bfit
+	
+
+
+
+
+
+
 
 
