@@ -12,7 +12,7 @@ rc('font',**{'family':'sans-serif','sans-serif':['CenturyGothic']})
 #rc('font',**{'family':'serif','serif':['Palatino']})
 rc('text', usetex=True)
 
-matplotlib.rcParams.update({'font.size': 25})
+matplotlib.rcParams.update({'font.size': 15})
 
 pxlToArcsec = 1.22
 fwhm_gauss = 2.03/pxlToArcsec
@@ -52,7 +52,7 @@ def plotRadialProfile(fig, ax, fitsFileName, imageFileName, title, ypos, xc, yc,
 	intens_norm = intens_red/max(intens_red)
 			
 	#fig, ax1 = plt.subplots()
-	ax.scatter(radius_pixel, intens_norm, c='black', s=80, zorder=1)
+	ax.scatter(radius_pixel, intens_norm, c='black', s=40, zorder=1)
         ax.axis([-0.9,(6.9),-0.1,1.1])
         #ax.set_xlabel(r'$R \rm~[pixel]$', labelpad=10)
         ax.set_ylabel(r'norm. flux', labelpad=10)

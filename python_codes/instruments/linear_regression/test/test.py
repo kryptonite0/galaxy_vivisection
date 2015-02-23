@@ -2,8 +2,11 @@ import numpy as np
 from instruments.linear_regression import fitexy
 
 #data = open('test.dat')
-data = open('Savorgnan_2014.dat')
+#data = open('Savorgnan_2014.dat')
 #data = open('msigma.out')
+#data = open('allcoreell.dat')
+#data = open('goodnocoresp.dat')
+data = open('allnocorespi.dat')
 
 xlist = []
 sigxlist = []
