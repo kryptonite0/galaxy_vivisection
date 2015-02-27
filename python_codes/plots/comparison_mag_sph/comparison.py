@@ -106,10 +106,10 @@ def comparison_mag_sph():
 	ax1.text(-msigma_grade3-0.1, 45,   r'$\sigma_3$', fontsize=25)
 	
 	ax2.axis([2.49,-2.49,11.99,2.99])
-	ax2.set_xlabel(r'$m_{\rm sph} - <m_{\rm sph}>~{\rm [mag]}$', labelpad=20)
-	ax2.set_ylabel(r'$<m_{\rm sph}>~{\rm [mag]}$', labelpad=20)
+	ax2.set_xlabel(r'$m_{\rm sph} - <m_{\rm sph}>~{\rm [mag]}$', labelpad=10)
+	ax2.set_ylabel(r'$<m_{\rm sph}>~{\rm [mag]}$', labelpad=10)
 	
-	plt.subplots_adjust(left=0.15,bottom=0.15)
+	plt.subplots_adjust(left=0.11,bottom=0.14)
 	fig.subplots_adjust(hspace=0)
 	#plt.show()
 	plt.savefig(path_comp_plots + 'comparison_all_mag_sph.eps', format='eps', dpi=1000)

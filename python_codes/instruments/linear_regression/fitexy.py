@@ -232,16 +232,16 @@ def get_errors_ab(x,sigx,y,sigy,afit,bfit,ainit_err,binit_err,epsilonfit,chisqmi
 	err_afit = (a_range[jright] - a_range[jleft])/2
 	err_bfit = (b_range[kright] - b_range[kleft])/2	
 			
-	fig, ax = plt.subplots()
-	ax.imshow(chisqimg, interpolation='none', cmap=cm.Greys_r)
-	ax.axhline(y=jleft, linewidth=2, color = 'red')
-	ax.axhline(y=jright, linewidth=2, color = 'red')
-	ax.axhline(y=0.5*len(chisqimg_collapsed_a)-1, linewidth=2, color = 'red')
-	ax.axvline(x=kleft, linewidth=2, color = 'red')
-	ax.axvline(x=kright, linewidth=2, color = 'red')
-	ax.axvline(x=0.5*len(chisqimg_collapsed_b)-1, linewidth=2, color = 'red')
-	
-	plt.show()
+       #fig, ax = plt.subplots()
+       #ax.imshow(chisqimg, interpolation='none', cmap=cm.Greys_r)
+       #ax.axhline(y=jleft, linewidth=2, color = 'red')
+       #ax.axhline(y=jright, linewidth=2, color = 'red')
+       #ax.axhline(y=0.5*len(chisqimg_collapsed_a)-1, linewidth=2, color = 'red')
+       #ax.axvline(x=kleft, linewidth=2, color = 'red')
+       #ax.axvline(x=kright, linewidth=2, color = 'red')
+       #ax.axvline(x=0.5*len(chisqimg_collapsed_b)-1, linewidth=2, color = 'red')
+       #
+       #plt.show()
 	#print 'errors', merr_afit,perr_afit,merr_bfit,perr_bfit
 	#print 'errors', err_afit,err_bfit
 	return merr_afit,perr_afit,merr_bfit,perr_bfit

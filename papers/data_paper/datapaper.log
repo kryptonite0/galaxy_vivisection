@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  20 FEB 2015 14:18
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  23 FEB 2015 15:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -739,12 +739,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 942--957
 
 [17]
 Package epstopdf Info: Source file: <images/comparison_all_n.eps>
-(epstopdf)                    date: 2015-01-29 10:57:41
-(epstopdf)                    size: 211168 bytes
+(epstopdf)                    date: 2015-02-23 13:16:15
+(epstopdf)                    size: 210948 bytes
 (epstopdf)             Output file: <images/comparison_all_n-eps-converted-to.p
 df>
-(epstopdf)                    date: 2015-01-29 10:58:05
-(epstopdf)                    size: 38531 bytes
+(epstopdf)                    date: 2015-02-23 13:16:21
+(epstopdf)                    size: 38415 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/comparison_all_n-ep
 s-converted-to.pdf images/comparison_all_n.eps>
 (epstopdf)             \includegraphics on input line 1011.
@@ -763,38 +763,38 @@ Overfull \hbox (24.52814pt too wide) in paragraph at lines 1011--1012
  []
 
 Package epstopdf Info: Source file: <images/comparison_all_r_e.eps>
-(epstopdf)                    date: 2015-01-29 10:58:43
-(epstopdf)                    size: 203399 bytes
+(epstopdf)                    date: 2015-02-23 13:13:00
+(epstopdf)                    size: 203061 bytes
 (epstopdf)             Output file: <images/comparison_all_r_e-eps-converted-to
 .pdf>
-(epstopdf)                    date: 2015-01-29 10:59:28
-(epstopdf)                    size: 36368 bytes
+(epstopdf)                    date: 2015-02-23 13:13:02
+(epstopdf)                    size: 36382 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/comparison_all_r_e-
 eps-converted-to.pdf images/comparison_all_r_e.eps>
-(epstopdf)             \includegraphics on input line 1038.
+(epstopdf)             \includegraphics on input line 1041.
 Package epstopdf Info: Output file is already uptodate.
 <images/comparison_all_r_e-eps-converted-to.pdf, id=207, 578.16pt x 433.62pt>
 File: images/comparison_all_r_e-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/comparison_all_r_e-eps-converted-to.pdf>
 Package pdftex.def Info: images/comparison_all_r_e-eps-converted-to.pdf used on
- input line 1038.
+ input line 1041.
 (pdftex.def)             Requested size: 269.79466pt x 202.3458pt.
 
-Overfull \hbox (24.52814pt too wide) in paragraph at lines 1038--1039
+Overfull \hbox (24.52814pt too wide) in paragraph at lines 1041--1042
  [] 
  []
 
 Package epstopdf Info: Source file: <images/comparison_all_mag_sph.eps>
-(epstopdf)                    date: 2015-01-29 10:53:30
-(epstopdf)                    size: 182238 bytes
+(epstopdf)                    date: 2015-02-23 13:32:20
+(epstopdf)                    size: 181994 bytes
 (epstopdf)             Output file: <images/comparison_all_mag_sph-eps-converte
 d-to.pdf>
-(epstopdf)                    date: 2015-01-29 10:56:32
-(epstopdf)                    size: 30228 bytes
+(epstopdf)                    date: 2015-02-23 13:32:28
+(epstopdf)                    size: 30319 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/comparison_all_mag_
 sph-eps-converted-to.pdf images/comparison_all_mag_sph.eps>
-(epstopdf)             \includegraphics on input line 1065.
+(epstopdf)             \includegraphics on input line 1054.
 Package epstopdf Info: Output file is already uptodate.
 
 <images/comparison_all_mag_sph-eps-converted-to.pdf, id=208, 578.16pt x 433.62p
@@ -803,23 +803,23 @@ File: images/comparison_all_mag_sph-eps-converted-to.pdf Graphic file (type pdf
 )
  <use images/comparison_all_mag_sph-eps-converted-to.pdf>
 Package pdftex.def Info: images/comparison_all_mag_sph-eps-converted-to.pdf use
-d on input line 1065.
+d on input line 1054.
 (pdftex.def)             Requested size: 269.79466pt x 202.3458pt.
 
-Overfull \hbox (24.52814pt too wide) in paragraph at lines 1065--1066
+Overfull \hbox (24.52814pt too wide) in paragraph at lines 1054--1055
  [] 
  []
 
 Package epstopdf Info: Source file: <images/comparison_all_mu_e.eps>
-(epstopdf)                    date: 2015-01-29 10:55:34
-(epstopdf)                    size: 184317 bytes
+(epstopdf)                    date: 2015-02-23 13:38:27
+(epstopdf)                    size: 184812 bytes
 (epstopdf)             Output file: <images/comparison_all_mu_e-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2015-01-29 10:56:33
-(epstopdf)                    size: 31284 bytes
+(epstopdf)                    date: 2015-02-23 13:38:59
+(epstopdf)                    size: 31191 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/comparison_all_mu_e
 -eps-converted-to.pdf images/comparison_all_mu_e.eps>
-(epstopdf)             \includegraphics on input line 1092.
+(epstopdf)             \includegraphics on input line 1068.
 Package epstopdf Info: Output file is already uptodate.
 
 <images/comparison_all_mu_e-eps-converted-to.pdf, id=209, 578.16pt x 433.62pt>
@@ -827,23 +827,23 @@ File: images/comparison_all_mu_e-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/comparison_all_mu_e-eps-converted-to.pdf>
 Package pdftex.def Info: images/comparison_all_mu_e-eps-converted-to.pdf used o
-n input line 1092.
+n input line 1068.
 (pdftex.def)             Requested size: 269.79466pt x 202.3458pt.
 
-Overfull \hbox (24.52814pt too wide) in paragraph at lines 1092--1093
+Overfull \hbox (24.52814pt too wide) in paragraph at lines 1068--1069
  [] 
  []
 
 Package epstopdf Info: Source file: <images/comparison_all_mu_0.eps>
-(epstopdf)                    date: 2015-02-02 17:01:54
-(epstopdf)                    size: 183867 bytes
+(epstopdf)                    date: 2015-02-23 13:50:15
+(epstopdf)                    size: 183726 bytes
 (epstopdf)             Output file: <images/comparison_all_mu_0-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2015-02-02 17:05:56
-(epstopdf)                    size: 31030 bytes
+(epstopdf)                    date: 2015-02-23 13:50:42
+(epstopdf)                    size: 31126 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/comparison_all_mu_0
 -eps-converted-to.pdf images/comparison_all_mu_0.eps>
-(epstopdf)             \includegraphics on input line 1119.
+(epstopdf)             \includegraphics on input line 1082.
 Package epstopdf Info: Output file is already uptodate.
 
 <images/comparison_all_mu_0-eps-converted-to.pdf, id=210, 578.16pt x 433.62pt>
@@ -851,82 +851,73 @@ File: images/comparison_all_mu_0-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/comparison_all_mu_0-eps-converted-to.pdf>
 Package pdftex.def Info: images/comparison_all_mu_0-eps-converted-to.pdf used o
-n input line 1119.
+n input line 1082.
 (pdftex.def)             Requested size: 269.79466pt x 202.3458pt.
 
-Overfull \hbox (24.52814pt too wide) in paragraph at lines 1119--1120
+Overfull \hbox (24.52814pt too wide) in paragraph at lines 1082--1083
  [] 
  []
 
 
-Underfull \hbox (badness 2189) in paragraph at lines 1199--1200
+Underfull \hbox (badness 2189) in paragraph at lines 1149--1150
  []\OT1/cmr/m/n/10 A one-dimensional isopho-tal anal-y-sis was ex-
  []
 
 [18 <./images/comparison_all_n-eps-converted-to.pdf>]
-Underfull \hbox (badness 2744) in paragraph at lines 4235--4247
+Underfull \hbox (badness 2744) in paragraph at lines 4189--4201
 \OT1/cmr/m/n/10 Coun-cil fund-ing through grants DP110103509 and
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 4206--4210
+
+ []
+
 [19 <./images/comparison_all_r_e-eps-converted-to.pdf> <./images/comparison_all
-_mag_sph-eps-converted-to.pdf>]
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 4247.
-
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 4247.
-
-
-Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 4252--4256
+_mag_sph-eps-converted-to.pdf>] [20 <./images/comparison_all_mu_e-eps-converted
+-to.pdf> <./images/comparison_all_mu_0-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 4228--4229
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4274--4275
+Underfull \hbox (badness 10000) in paragraph at lines 4234--4236
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4280--4282
-
- []
-
-[20 <./images/comparison_all_mu_e-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 4288--4291
+Underfull \hbox (badness 10000) in paragraph at lines 4242--4245
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4301--4303
+Underfull \hbox (badness 10000) in paragraph at lines 4255--4257
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4312--4317
+Underfull \hbox (badness 10000) in paragraph at lines 4266--4271
 
  []
 
-[21 <./images/comparison_all_mu_0-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 4322--4325
+
+Underfull \hbox (badness 10000) in paragraph at lines 4276--4279
 
  []
 
-(./datapaper.bbl) [22] (./datapaper.aux)
+(./datapaper.bbl [21]) [22] (./datapaper.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 5260 strings out of 493488
- 70519 string characters out of 3141326
- 272598 words of memory out of 3000000
- 8431 multiletter control sequences out of 15000+200000
+ 5259 strings out of 493488
+ 70509 string characters out of 3141326
+ 272035 words of memory out of 3000000
+ 8430 multiletter control sequences out of 15000+200000
  18668 words of font info for 73 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 42i,13n,31p,1620b,373s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,13n,31p,1899b,371s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb><
 /usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></u
@@ -960,7 +951,7 @@ s/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2012/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2012/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2012/texmf-dist/fonts/typ
 e1/public/amsfonts/symbols/msam10.pfb>
-Output written on datapaper.pdf (22 pages, 3296712 bytes).
+Output written on datapaper.pdf (22 pages, 3294674 bytes).
 PDF statistics:
  373 PDF objects out of 1000 (max. 8388607)
  242 compressed objects within 3 object streams

@@ -103,10 +103,10 @@ def comparison_log_n():
 	ax1.text(psigma_grade3+0.03, 40,   r'$\sigma_3$', fontsize=25)
 	
 	ax2.axis([-0.59,0.59,np.log10(0.7),np.log10(20)])
-	ax2.set_xlabel(r'$\log(n_{\rm sph}) - <\log(n_{\rm sph})>$', labelpad=20)
-	ax2.set_ylabel(r'$<\log(n_{\rm sph})>$', labelpad=20)
+	ax2.set_xlabel(r'$\log(n_{\rm sph}) - <\log(n_{\rm sph})>$', labelpad=15)
+	ax2.set_ylabel(r'$<\log(n_{\rm sph})>$', labelpad=15)
 	
-	plt.subplots_adjust(left=0.15,bottom=0.15)
+	plt.subplots_adjust(left=0.13,bottom=0.15)
 	fig.subplots_adjust(hspace=0)
 	#plt.show()
 	plt.savefig(path_comp_plots + 'comparison_all_n.eps', format='eps', dpi=1000)

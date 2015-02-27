@@ -108,10 +108,10 @@ def comparison_mu_0():
 	ax1.text(-msigma_grade3-0.1, 45,   r'$\sigma_3$', fontsize=25)
 	
 	ax2.axis([3.99,-3.99,16.99,10.01])
-	ax2.set_xlabel(r'$\mu_{\rm 0, sph} - <\mu_{\rm 0, sph}>~{\rm [mag~arcsec^{-2}]}$', labelpad=20)
-	ax2.set_ylabel(r'$<\mu_{\rm 0, sph}>~{\rm [mag~arcsec^{-2}]}$', labelpad=20)
+	ax2.set_xlabel(r'$\mu_{\rm 0, sph} - <\mu_{\rm 0, sph}>~{\rm [mag~arcsec^{-2}]}$', labelpad=11)
+	ax2.set_ylabel(r'$<\mu_{\rm 0, sph}>~{\rm [mag~arcsec^{-2}]}$', labelpad=13)
 	
-	plt.subplots_adjust(left=0.15,bottom=0.15)
+	plt.subplots_adjust(left=0.11,bottom=0.15)
 	fig.subplots_adjust(hspace=0)
 	#plt.show()
 	plt.savefig(path_comp_plots + 'comparison_all_mu_0.eps', format='eps', dpi=1000)

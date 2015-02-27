@@ -53,9 +53,9 @@ def ancillary():
 
 	cur.execute('''CREATE TABLE Ancillary
 		(gal_id text, gal_name text, IRAC_image integer, fit1D_done integer, fit2D_done integer, 
-		ELLIPTICAL_my integer, source text, RA real, DEC real, 
-		z real, morphtype text, bar integer, distance real, core integer, 
-		core_inferred_from_sigma integer, sigma real, mass_BH real, perr_mass_BH real, merr_mass_BH real,
+		ELLIPTICAL_my integer, edgeon integer, source text, RA real, DEC real, 
+		z real, morphtype text, simplemorphtype text, bar integer, distance real, core integer, 
+		core_inferred_from_sigma integer, core_my integer, sigma real, mass_BH real, perr_mass_BH real, merr_mass_BH real,
 		size_core real, ref_size_core text, KMAG_sph real, KMAG_tot real)''')
 	
 	for line in data:
@@ -71,7 +71,11 @@ def ancillary():
 			fit2D_done = line.split()[4]
 			fit2D_done = replaceBoolean(fit2D_done)	
 			ELLIPTICAL_my = line.split()[8]
-			ELLIPTICAL_my = replaceBoolean(ELLIPTICAL_my)	 
+			ELLIPTICAL_my = replaceBoolean(ELLIPTICAL_my)
+			core_my = line.split()[9]
+			core_my = replaceBoolean(core_my)	 
+			edgeon = line.split()[10]
+			edgeon = replaceBoolean(edgeon)	 
 			source = line.split()[16]
 			source = replaceNull(source)
 			RA = line.split()[17]
@@ -82,6 +86,8 @@ def ancillary():
 			z = replaceNull(z)
 			morphtype = line.split()[20]
 			morphtype = replaceNull(morphtype)
+			simplemorphtype = line.split()[21]
+			simplemorphtype = replaceNull(simplemorphtype)
 			bar = line.split()[22]
 			bar = replaceBoolean(bar)
 			distance = line.split()[23]
@@ -107,9 +113,9 @@ def ancillary():
 			KMAG_sph = line.split()[47]
 			KMAG_sph = replaceNull(KMAG_sph)
 			
-			collection = [gal_id, gal_name, IRAC_image, fit1D_done, fit2D_done, ELLIPTICAL_my, source, RA, DEC, z, morphtype, bar, distance, 
-				core, core_inferred_from_sigma, sigma, mass_BH, perr_mass_BH, merr_mass_BH, size_core, ref_size_core, KMAG_sph, KMAG_tot]
-			cur.execute('INSERT INTO Ancillary VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', collection)
+			collection = [gal_id, gal_name, IRAC_image, fit1D_done, fit2D_done, ELLIPTICAL_my, edgeon, source, RA, DEC, z, morphtype, simplemorphtype, bar, distance, 
+				core, core_inferred_from_sigma, core_my, sigma, mass_BH, perr_mass_BH, merr_mass_BH, size_core, ref_size_core, KMAG_sph, KMAG_tot]
+			cur.execute('INSERT INTO Ancillary VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', collection)
 
 	connection.commit()
 	cur.close()

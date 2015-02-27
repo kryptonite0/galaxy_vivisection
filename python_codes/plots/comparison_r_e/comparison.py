@@ -108,10 +108,10 @@ def comparison_log_r_e():
 	ax1.text(psigma_grade3+0.06, 55,   r'$\sigma_3$', fontsize=25)
 	
 	ax2.axis([-1.29,1.29,np.log10(1.01),np.log10(500)])
-	ax2.set_xlabel(r'$\log(R_{\rm e,sph}^{\rm maj} ~{\rm [arcsec]}) - <\log(R_{\rm e,sph}^{\rm maj}~{\rm [arcsec]})>$', labelpad=20)
-	ax2.set_ylabel(r'$<\log(R_{\rm e,sph}^{\rm maj} ~{\rm [arcsec]})>$', labelpad=20)
+	ax2.set_xlabel(r'$\log(R_{\rm e,sph}^{\rm maj} ~{\rm [arcsec]}) - <\log(R_{\rm e,sph}^{\rm maj}~{\rm [arcsec]})>$', labelpad=10)
+	ax2.set_ylabel(r'$<\log(R_{\rm e,sph}^{\rm maj} ~{\rm [arcsec]})>$', labelpad=10)
 	
-	plt.subplots_adjust(left=0.15,bottom=0.17)
+	plt.subplots_adjust(left=0.12,bottom=0.15)
 	fig.subplots_adjust(hspace=0)
 	#plt.show()
 	plt.savefig(path_comp_plots + 'comparison_all_r_e.eps', format='eps', dpi=1000)
