@@ -42,6 +42,8 @@ def collect_single_1D(directory):
 							mag_sph = float(line.split()[6])
 						if (line.split()[0] == 'Total_galaxy_magnitude'):
 							mag_tot = float(line.split()[1])
+						if (line.split()[0] == 'Delta'):
+							delta = float(line.split()[1])	
 													
 					fitResultsFile.close()
 					
@@ -53,6 +55,7 @@ def collect_single_1D(directory):
 				collection.append(n)
 				collection.append(mag_sph)
 				collection.append(mag_tot)
+				collection.append(delta)
 	
 	return collection
 	
@@ -163,6 +166,7 @@ def collect_all_1D():
 				create_table_string += 'n_' + axis + '_' + psf + '_' + scale + ' real, '
 				create_table_string += 'mag_sph_' + axis + '_' + psf + '_' + scale + ' real, '
 				create_table_string += 'mag_tot_' + axis + '_' + psf + '_' + scale + ' real, '
+				create_table_string += 'delta_' + axis + '_' + psf + '_' + scale + ' real, '
 	create_table_string = create_table_string[:-2]
 	create_table_string += ')'
 	

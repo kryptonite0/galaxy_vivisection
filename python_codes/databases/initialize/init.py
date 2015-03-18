@@ -8,6 +8,9 @@ dbname = '/Users/gsavorgnan/galaxy_vivisection/python_codes/databases/galaxy_viv
 ancillaryfilename = '/Users/gsavorgnan/galaxy_vivisection/data/ancillary/SMBHgalaxysample2013.top'
 literaturefilename = '/Users/gsavorgnan/galaxy_vivisection/data/ancillary/literature_decompositions.top'
 mosaicsfilename = '/Users/gsavorgnan/galaxy_vivisection/data/galaxies/mosaics.list'
+sgs2013filename = '/Users/gsavorgnan/galaxy_vivisection/data/Alister-data/SGS13/kmagssph.dat'
+colorfilename = '/Users/gsavorgnan/galaxy_vivisection/data/ancillary/iraccolor.dat'
+
 
 def replaceNull(entry):
 	if entry == '""':
@@ -56,7 +59,7 @@ def ancillary():
 		ELLIPTICAL_my integer, edgeon integer, source text, RA real, DEC real, 
 		z real, morphtype text, simplemorphtype text, bar integer, distance real, core integer, 
 		core_inferred_from_sigma integer, core_my integer, sigma real, mass_BH real, perr_mass_BH real, merr_mass_BH real,
-		size_core real, ref_size_core text, KMAG_sph real, KMAG_tot real)''')
+		size_core real, ref_size_core text, KMAG_sph real, KMAG_tot real, pseudobulge_KH13 integer)''')
 	
 	for line in data:
 		if line.split()[0] != '#':
@@ -112,15 +115,44 @@ def ancillary():
 			KMAG_tot = replaceNull(KMAG_tot)
 			KMAG_sph = line.split()[47]
 			KMAG_sph = replaceNull(KMAG_sph)
+			pseudobulge_KH13 = line.split()[83]
+			pseudobulge_KH13 = replaceBoolean(pseudobulge_KH13)
 			
 			collection = [gal_id, gal_name, IRAC_image, fit1D_done, fit2D_done, ELLIPTICAL_my, edgeon, source, RA, DEC, z, morphtype, simplemorphtype, bar, distance, 
-				core, core_inferred_from_sigma, core_my, sigma, mass_BH, perr_mass_BH, merr_mass_BH, size_core, ref_size_core, KMAG_sph, KMAG_tot]
-			cur.execute('INSERT INTO Ancillary VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', collection)
+				core, core_inferred_from_sigma, core_my, sigma, mass_BH, perr_mass_BH, merr_mass_BH, size_core, ref_size_core, KMAG_sph, KMAG_tot, pseudobulge_KH13]
+			cur.execute('INSERT INTO Ancillary VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', collection)
 
 	connection.commit()
 	cur.close()
 	connection.close()
 	data.close()
+	
+def colors():
+	connection = sql3.connect(dbname)
+	cur = connection.cursor()
+
+	data = open(colorfilename)
+	
+	cur.execute('''CREATE TABLE Colors
+		(gal_id text, source text, color real)''')
+		
+	for line in data:
+		if line.split()[0] != '#':
+			gal_id = line.split()[0]	
+			gal_id = replaceNull(gal_id)
+			source = line.split()[1]
+			source = replaceNull(source)
+			color = line.split()[2]
+			color = replaceNull(color)
+			
+			collection = [gal_id, source, color]
+			cur.execute('INSERT INTO Colors VALUES (?,?,?)', collection)
+	
+	connection.commit()
+	cur.close()
+	connection.close()
+	data.close()
+		
 	
 def kinematics():
 	connection = sql3.connect(dbname)
@@ -642,6 +674,31 @@ def literatureLaskeretal2014PhysicalUnits():
 	connection.close()
 	data.close()
 	
+def kmagSGS2013PhysicalUnits():
+	connection = sql3.connect(dbname)
+	cur = connection.cursor()
+
+	data = open(sgs2013filename)
+
+	cur.execute('''CREATE TABLE KmagSGS2013PhysicalUnits
+		(gal_id text, mag_sph real)''')
+	
+	for line in data:
+		if line.split()[0] != '#':
+			gal_id = line.split()[1]	
+			gal_id = replaceNull(gal_id)
+			KMAG_sph = line.split()[2]
+			KMAG_sph = replaceNull(KMAG_sph)
+			
+			collection = [gal_id, KMAG_sph]		
+			cur.execute('INSERT INTO KmagSGS2013PhysicalUnits VALUES (?,?)', collection)
+
+	connection.commit()
+
+	cur.close()
+	connection.close()
+	data.close()
+	
 def spitzerdata():
 	connection = sql3.connect(dbname)
 	cur = connection.cursor()
@@ -677,6 +734,8 @@ def main():
 	
 	ancillary()
 	print 'Table Ancillary has been created.'
+	colors()
+	print 'Table Colors has been created.'
 	kinematics()
 	print 'Table Kinematics has been created.'
 	literatureGrahamDriver2007()
@@ -702,7 +761,8 @@ def main():
 	print 'Table LiteratureDecompositionsLaskeretal2014 has been created.'
 	#spitzerdata()
 	#print 'Table SpitzerData has been created.'
-	
+	kmagSGS2013PhysicalUnits()
+	print 'Table KmagSGS2013PhysicalUnits has been created.'
 	
 	
 main()	
