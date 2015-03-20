@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  18 MAR 2015 14:33
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  20 MAR 2015 14:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -426,70 +426,109 @@ LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
 (Font)              Font shape `U/lasy/m/n' tried instead on input line 66.
 
-<images/mag_lit_vs_mag_my.pdf, id=1, 578.16pt x 433.62pt>
+Underfull \hbox (badness 3713) in paragraph at lines 68--137
+\OT1/cmr/m/n/10 re-la-tion, con-sis-tent with a dry-merging for-ma-tion
+ []
+
+
+Underfull \hbox (badness 1803) in paragraph at lines 68--137
+\OT1/cmr/m/n/10 of these cor-re-la-tions) used sim-i-lar galaxy sam-ples,
+ []
+
+
+Underfull \hbox (badness 1852) in paragraph at lines 68--137
+\OT1/cmr/m/n/10 When Gra-ham (2012) pointed out this over-looked
+ []
+
+
+Underfull \hbox (badness 1107) in paragraph at lines 68--137
+\OT1/cmr/m/n/10 of galax-ies, namely the core-S^^Sersic (Gra-ham et al.
+ []
+
+
+Underfull \hbox (badness 1838) in paragraph at lines 68--137
+\OT1/cmr/m/n/10 spheroids in the $\OML/cmm/m/it/10 M[] \OMS/cmsy/m/n/10 ^^@ \OM
+L/cmm/m/it/10 L[]$ \OT1/cmr/m/n/10 and $\OML/cmm/m/it/10 M[] \OMS/cmsy/m/n/10 ^
+^@ \OML/cmm/m/it/10 M[]$
+ []
+
+
+Underfull \hbox (badness 1264) in paragraph at lines 68--137
+\OT1/cmr/m/n/10 (spheroid stel-lar mass) di-a-grams, re-spec-tively. To
+ []
+
+
+Underfull \hbox (badness 1048) in paragraph at lines 68--137
+\OT1/cmr/m/n/10 not per-form bulge/disc de-com-po-si-tions, but in-stead
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--137
+
+ []
+
+[1{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+<images/mag_lit_vs_mag_my.pdf, id=22, 578.16pt x 433.62pt>
 File: images/mag_lit_vs_mag_my.pdf Graphic file (type pdf)
 
 <use images/mag_lit_vs_mag_my.pdf>
-Package pdftex.def Info: images/mag_lit_vs_mag_my.pdf used on input line 101.
+Package pdftex.def Info: images/mag_lit_vs_mag_my.pdf used on input line 148.
 (pdftex.def)             Requested size: 245.26653pt x 183.94531pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images/mbh_vs_mass_sph_agn.pdf, id=2, 578.16pt x 433.62pt>
+<images/mbh_vs_mass_sph_agn.pdf, id=23, 578.16pt x 433.62pt>
 File: images/mbh_vs_mass_sph_agn.pdf Graphic file (type pdf)
 
 <use images/mbh_vs_mass_sph_agn.pdf>
-Package pdftex.def Info: images/mbh_vs_mass_sph_agn.pdf used on input line 113.
+Package pdftex.def Info: images/mbh_vs_mass_sph_agn.pdf used on input line 160.
 
 (pdftex.def)             Requested size: 245.26653pt x 183.94531pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 2735) in paragraph at lines 135--144
+Underfull \hbox (badness 2735) in paragraph at lines 182--191
 []\OT1/cmr/m/n/10 This re-search was sup-ported by Aus-tralian Re-
  []
 
-(./mm.bbl [1{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.m
-ap} <./images/mag_lit_vs_mag_my.pdf> <./images/mbh_vs_mass_sph_agn.pdf
+(./mm.bbl [2 <./images/mag_lit_vs_mag_my.pdf> <./images/mbh_vs_mass_sph_agn.pdf
+
 
 pdfTeX warning: pdflatex (file ./images/mbh_vs_mass_sph_agn.pdf): PDF inclusion
 : multiple pdfs with page group included in a single page
->]) [2] (./mm.aux)
+>]) [3] (./mm.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5023 strings out of 493488
- 65058 string characters out of 3141326
- 152382 words of memory out of 3000000
- 8227 multiletter control sequences out of 15000+200000
+ 5054 strings out of 493488
+ 65540 string characters out of 3141326
+ 150798 words of memory out of 3000000
+ 8258 multiletter control sequences out of 15000+200000
  17854 words of font info for 70 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 42i,7n,31p,778b,359s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,7n,31p,779b,375s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pf
 b></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 ></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
-</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
-usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
-r/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/
-local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/loc
-al/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/
-texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/tex
-live/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texliv
-e/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/local/texlive
-/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
-2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/20
-12/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/201
-2/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2012/
-texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on mm.pdf (2 pages, 346620 bytes).
+</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></
+usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
+r/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
+local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/lo
+cal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loca
+l/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/t
+exlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texl
+ive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
+/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/20
+12/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2012/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/local/texlive/2012/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2012/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2012/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2012/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2012/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2012/texmf-dis
+t/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on mm.pdf (3 pages, 387536 bytes).
 PDF statistics:
- 257 PDF objects out of 1000 (max. 8388607)
- 81 compressed objects within 1 object stream
+ 276 PDF objects out of 1000 (max. 8388607)
+ 95 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

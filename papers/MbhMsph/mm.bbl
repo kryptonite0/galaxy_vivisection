@@ -1,14 +1,42 @@
 \begin{thebibliography}{}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
+\bibitem[{{Balcells} {et~al.}(2007){Balcells}, {Graham}, \&
+  {Peletier}}]{balcells2007screl}
+{Balcells}, M., {Graham}, A.~W., \& {Peletier}, R.~F. 2007, \apj, 665, 1104
+
 \bibitem[{{Beifiori} {et~al.}(2012){Beifiori}, {Courteau}, {Corsini}, \&
   {Zhu}}]{beifiori2012}
 {Beifiori}, A., {Courteau}, S., {Corsini}, E.~M., \& {Zhu}, Y. 2012, \mnras,
   419, 2497
 
+\bibitem[{{Chilingarian} {et~al.}(2008){Chilingarian}, {Cayatte}, {Durret},
+  {Adami}, {Balkowski}, {Chemin}, {Lagan{\'a}}, \&
+  {Prugniel}}]{chilingarian2008}
+{Chilingarian}, I.~V., {Cayatte}, V., {Durret}, F., {et~al.} 2008, \aap, 486,
+  85
+
+\bibitem[{{Cody} {et~al.}(2009){Cody}, {Carter}, {Bridges}, {Mobasher}, \&
+  {Poggianti}}]{cody2009}
+{Cody}, A.~M., {Carter}, D., {Bridges}, T.~J., {Mobasher}, B., \& {Poggianti},
+  B.~M. 2009, \mnras, 396, 1647
+
+\bibitem[{{Davies} {et~al.}(1983){Davies}, {Efstathiou}, {Fall}, {Illingworth},
+  \& {Schechter}}]{davies1983}
+{Davies}, R.~L., {Efstathiou}, G., {Fall}, S.~M., {Illingworth}, G., \&
+  {Schechter}, P.~L. 1983, \apj, 266, 41
+
+\bibitem[{{de Rijcke} {et~al.}(2005){de Rijcke}, {Michielsen}, {Dejonghe},
+  {Zeilinger}, \& {Hau}}]{derijcke2005}
+{de Rijcke}, S., {Michielsen}, D., {Dejonghe}, H., {Zeilinger}, W.~W., \&
+  {Hau}, G.~K.~T. 2005, \aap, 438, 491
+
 \bibitem[{{Dressler}(1989)}]{dressler1989}
 {Dressler}, A. 1989, in IAU Symposium, Vol. 134, Active Galactic Nuclei, ed.
   D.~E. {Osterbrock} \& J.~S. {Miller}, 217
+
+\bibitem[{{Dullo} \& {Graham}(2014)}]{dullograham2014cores}
+{Dullo}, B.~T., \& {Graham}, A.~W. 2014, \mnras, 444, 2700
 
 \bibitem[{{Erwin} \& {Gadotti}(2012)}]{erwingadotti2012}
 {Erwin}, P., \& {Gadotti}, D.~A. 2012, Advances in Astronomy, 2012, 4
@@ -28,10 +56,23 @@
 \bibitem[{{Ferrarese} \& {Ford}(2005)}]{ferrareseford2005}
 {Ferrarese}, L., \& {Ford}, H. 2005, \ssr, 116, 523
 
+\bibitem[{{Ferrarese} \& {Merritt}(2000)}]{ferraresemerritt2000}
+{Ferrarese}, L., \& {Merritt}, D. 2000, \apjl, 539, L9
+
+\bibitem[{{Forbes} {et~al.}(2008){Forbes}, {Lasky}, {Graham}, \&
+  {Spitler}}]{forbes2008}
+{Forbes}, D.~A., {Lasky}, P., {Graham}, A.~W., \& {Spitler}, L. 2008, \mnras,
+  389, 1924
+
 \bibitem[{{Gavazzi} {et~al.}(2003){Gavazzi}, {Boselli}, {Donati}, {Franzetti},
   \& {Scodeggio}}]{goldmine}
 {Gavazzi}, G., {Boselli}, A., {Donati}, A., {Franzetti}, P., \& {Scodeggio}, M.
   2003, \aap, 400, 451
+
+\bibitem[{{Gebhardt} {et~al.}(2000){Gebhardt}, {Bender}, {Bower}, {Dressler},
+  {Faber}, {Filippenko}, {Green}, {Grillmair}, {Ho}, {Kormendy}, {Lauer},
+  {Magorrian}, {Pinkney}, {Richstone}, \& {Tremaine}}]{gebhardt2000}
+{Gebhardt}, K., {Bender}, R., {Bower}, G., {et~al.} 2000, \apjl, 539, L13
 
 \bibitem[{{Graham}(2007)}]{graham2007}
 {Graham}, A.~W. 2007, \mnras, 379, 711
@@ -39,8 +80,27 @@
 \bibitem[{{Graham}(2008)}]{graham2008bar}
 ---. 2008, \pasa, 25, 167
 
+\bibitem[{{Graham}(2012)}]{graham2012bent}
+---. 2012, \apj, 746, 113
+
 \bibitem[{{Graham}(2015)}]{graham2015bulges}
 ---. 2015, ArXiv e-prints, arXiv:1501.02937
+
+\bibitem[{{Graham} {et~al.}(2003){Graham}, {Erwin}, {Trujillo}, \& {Asensio
+  Ramos}}]{graham2003coresersicmodel}
+{Graham}, A.~W., {Erwin}, P., {Trujillo}, I., \& {Asensio Ramos}, A. 2003, \aj,
+  125, 2951
+
+\bibitem[{{Graham} \& {Guzm{\'a}n}(2003)}]{grahamguzman2003}
+{Graham}, A.~W., \& {Guzm{\'a}n}, R. 2003, \aj, 125, 2936
+
+\bibitem[{{Graham} {et~al.}(2011){Graham}, {Onken}, {Athanassoula}, \&
+  {Combes}}]{graham2011}
+{Graham}, A.~W., {Onken}, C.~A., {Athanassoula}, E., \& {Combes}, F. 2011,
+  \mnras, 412, 2211
+
+\bibitem[{{Graham} \& {Scott}(2013)}]{grahamscott2013}
+{Graham}, A.~W., \& {Scott}, N. 2013, \apj, 764, 151
 
 \bibitem[{{G{\"u}ltekin} {et~al.}(2009){G{\"u}ltekin}, {Richstone}, {Gebhardt},
   {Lauer}, {Tremaine}, {Aller}, {Bender}, {Dressler}, {Faber}, {Filippenko},
@@ -52,11 +112,23 @@
 \bibitem[{{H{\"a}ring} \& {Rix}(2004)}]{haringrix2004}
 {H{\"a}ring}, N., \& {Rix}, H.-W. 2004, \apjl, 604, L89
 
+\bibitem[{{Held} {et~al.}(1992){Held}, {de Zeeuw}, {Mould}, \&
+  {Picard}}]{held1992}
+{Held}, E.~V., {de Zeeuw}, T., {Mould}, J., \& {Picard}, A. 1992, in IAU
+  Symposium, Vol. 149, The Stellar Populations of Galaxies, ed. B.~{Barbuy} \&
+  A.~{Renzini}, 429
+
 \bibitem[{{Kormendy} \& {Ho}(2013)}]{kormendyho2013}
 {Kormendy}, J., \& {Ho}, L.~C. 2013, \araa, 51, 511
 
 \bibitem[{{Kormendy} \& {Richstone}(1995)}]{kormendyrichstone1995}
 {Kormendy}, J., \& {Richstone}, D. 1995, \araa, 33, 581
+
+\bibitem[{{Kourkchi} {et~al.}(2012){Kourkchi}, {Khosroshahi}, {Carter},
+  {Karick}, {M{\'a}rmol-Queralt{\'o}}, {Chiboucas}, {Tully}, {Mobasher},
+  {Guzm{\'a}n}, {Matkovi{\'c}}, \& {Gruel}}]{kourkchi2012}
+{Kourkchi}, E., {Khosroshahi}, H.~G., {Carter}, D., {et~al.} 2012, \mnras, 420,
+  2819
 
 \bibitem[{{Laor}(1998)}]{laor1998}
 {Laor}, A. 1998, \apjl, 505, L83
@@ -64,21 +136,51 @@
 \bibitem[{{Laor}(2001)}]{laor2001}
 ---. 2001, \apj, 553, 677
 
-\bibitem[{{Lauer} {et~al.}(2007){Lauer}, {Faber}, {Richstone}, {Gebhardt},
-  {Tremaine}, {Postman}, {Dressler}, {Aller}, {Filippenko}, {Green}, {Ho},
-  {Kormendy}, {Magorrian}, \& {Pinkney}}]{lauer2007}
-{Lauer}, T.~R., {Faber}, S.~M., {Richstone}, D., {et~al.} 2007, \apj, 662, 808
+\bibitem[{{L{\"a}sker} {et~al.}(2014{\natexlab{a}}){L{\"a}sker}, {Ferrarese},
+  \& {van de Ven}}]{lasker2014data}
+{L{\"a}sker}, R., {Ferrarese}, L., \& {van de Ven}, G. 2014{\natexlab{a}},
+  \apj, 780, 69
+
+\bibitem[{{L{\"a}sker} {et~al.}(2014{\natexlab{b}}){L{\"a}sker}, {Ferrarese},
+  {van de Ven}, \& {Shankar}}]{lasker2014anal}
+{L{\"a}sker}, R., {Ferrarese}, L., {van de Ven}, G., \& {Shankar}, F.
+  2014{\natexlab{b}}, \apj, 780, 70
+
+\bibitem[{{Lauer} {et~al.}(2007{\natexlab{a}}){Lauer}, {Faber}, {Richstone},
+  {Gebhardt}, {Tremaine}, {Postman}, {Dressler}, {Aller}, {Filippenko},
+  {Green}, {Ho}, {Kormendy}, {Magorrian}, \& {Pinkney}}]{lauer2007}
+{Lauer}, T.~R., {Faber}, S.~M., {Richstone}, D., {et~al.} 2007{\natexlab{a}},
+  \apj, 662, 808
+
+\bibitem[{{Lauer} {et~al.}(2007{\natexlab{b}}){Lauer}, {Faber}, {Richstone},
+  {Gebhardt}, {Tremaine}, {Postman}, {Dressler}, {Aller}, {Filippenko},
+  {Green}, {Ho}, {Kormendy}, {Magorrian}, \& {Pinkney}}]{lauer2007lumell}
+---. 2007{\natexlab{b}}, \apj, 662, 808
+
+\bibitem[{{Liu} {et~al.}(2008){Liu}, {Xia}, {Mao}, {Wu}, \& {Deng}}]{liu2008}
+{Liu}, F.~S., {Xia}, X.~Y., {Mao}, S., {Wu}, H., \& {Deng}, Z.~G. 2008, \mnras,
+  385, 23
 
 \bibitem[{{Magorrian} {et~al.}(1998){Magorrian}, {Tremaine}, {Richstone},
   {Bender}, {Bower}, {Dressler}, {Faber}, {Gebhardt}, {Green}, {Grillmair},
   {Kormendy}, \& {Lauer}}]{magorrian1998}
 {Magorrian}, J., {Tremaine}, S., {Richstone}, D., {et~al.} 1998, \aj, 115, 2285
 
+\bibitem[{{Malumuth} \& {Kirshner}(1981)}]{malumuthkrishner1981}
+{Malumuth}, E.~M., \& {Kirshner}, R.~P. 1981, \apj, 251, 508
+
 \bibitem[{{Marconi} \& {Hunt}(2003)}]{marconihunt2003}
 {Marconi}, A., \& {Hunt}, L.~K. 2003, \apjl, 589, L21
 
+\bibitem[{{Matkovi{\'c}} \& {Guzm{\'a}n}(2005)}]{matkovicguzman2005}
+{Matkovi{\'c}}, A., \& {Guzm{\'a}n}, R. 2005, \mnras, 362, 289
+
 \bibitem[{{McConnell} \& {Ma}(2013)}]{mcconnellma2013}
 {McConnell}, N.~J., \& {Ma}, C.-P. 2013, \apj, 764, 184
+
+\bibitem[{{McConnell} {et~al.}(2011){McConnell}, {Ma}, {Gebhardt}, {Wright},
+  {Murphy}, {Lauer}, {Graham}, \& {Richstone}}]{mcconnell2011}
+{McConnell}, N.~J., {Ma}, C.-P., {Gebhardt}, K., {et~al.} 2011, \nat, 480, 215
 
 \bibitem[{{Rusli} {et~al.}(2013){Rusli}, {Erwin}, {Saglia}, {Thomas},
   {Fabricius}, {Bender}, \& {Nowak}}]{rusli2013}
@@ -94,6 +196,22 @@
 {Sani}, E., {Marconi}, A., {Hunt}, L.~K., \& {Risaliti}, G. 2011, \mnras, 413,
   1479
 
+\bibitem[{{Schechter}(1980)}]{schechter1980}
+{Schechter}, P.~L. 1980, \aj, 85, 801
+
+\bibitem[{{Scott} {et~al.}(2013){Scott}, {Graham}, \& {Schombert}}]{scott2013}
+{Scott}, N., {Graham}, A.~W., \& {Schombert}, J. 2013, \apj, 768, 76
+
+\bibitem[{{Tortora} {et~al.}(2009){Tortora}, {Napolitano}, {Romanowsky},
+  {Capaccioli}, \& {Covone}}]{tortora2009}
+{Tortora}, C., {Napolitano}, N.~R., {Romanowsky}, A.~J., {Capaccioli}, M., \&
+  {Covone}, G. 2009, \mnras, 396, 1132
+
+\bibitem[{{Trujillo} {et~al.}(2004){Trujillo}, {Erwin}, {Asensio Ramos}, \&
+  {Graham}}]{trujillo2004coresersicmodel}
+{Trujillo}, I., {Erwin}, P., {Asensio Ramos}, A., \& {Graham}, A.~W. 2004, \aj,
+  127, 1917
+
 \bibitem[{{van den Bosch} {et~al.}(2012){van den Bosch}, {Gebhardt},
   {G{\"u}ltekin}, {van de Ven}, {van der Wel}, \& {Walsh}}]{vandenbosch2012}
 {van den Bosch}, R.~C.~E., {Gebhardt}, K., {G{\"u}ltekin}, K., {et~al.} 2012,
@@ -103,6 +221,11 @@
   {Robotham}}]{vika2012}
 {Vika}, M., {Driver}, S.~P., {Cameron}, E., {Kelvin}, L., \& {Robotham}, A.
   2012, \mnras, 419, 2264
+
+\bibitem[{{von der Linden} {et~al.}(2007){von der Linden}, {Best}, {Kauffmann},
+  \& {White}}]{vonderlinden2007}
+{von der Linden}, A., {Best}, P.~N., {Kauffmann}, G., \& {White}, S.~D.~M.
+  2007, \mnras, 379, 867
 
 \bibitem[{{Wandel}(1999)}]{wandel1999}
 {Wandel}, A. 1999, \apjl, 519, L39
