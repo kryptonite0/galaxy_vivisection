@@ -81,17 +81,17 @@ see \citealt{graham2015bulges} for an extensive review about the early discovery
 used similar galaxy samples, which remained dominated by high-mass, early-type objects having $M_{\rm BH} \gtrsim 0.5 \times 10^8~\rm M_\odot$, 
 and recovered a near-linear relation. 
 However, the consensus about a linear $M_{\rm BH} - M_{\rm sph}$ correlation was not unanimous. 
-Some studies reported a slope steeper than 1,  
+Some studies reported a slope steeper than one,  
 or noticed that low-mass spheroids were downwards offset from the relation traced by their high-mass counterparts 
 \citep{laor1998,wandel1999,laor2001,ryan2007}.
 Recently, \cite{lasker2014data,lasker2014anal} derived $2.2~\rm \mu m$ bulge luminosities for 35 galaxies 
 (among which only 4 were classified as spiral galaxies), 
-and reported a slope of $0.75 \pm 0.10$ for their $M_{\rm BH} - L_{\rm sph}$ relation. 
+and reported a slope below unity for their $M_{\rm BH} - M_{\rm sph}$ relation. 
 They also claimed that the black hole mass correlates equally well with the total galaxy luminosity 
 as it does with the bulge luminosity. \\
 The $M_{\rm BH} - L_{\rm sph}$ relation can be predicted from other two correlations involving the bulge velocity dispersion, $\sigma$.
 The first of these two is the $M_{\rm BH} - \sigma$ relation \citep{ferraresemerritt2000,gebhardt2000},
-which can be described by a single power-law $M_{\rm BH} \propto \sigma^5$ 
+which can be described by a single power-law ($M_{\rm BH} \propto \sigma^5$) 
 over the range in velocity dispersion $70-350~\rm km~s^{-1}$ (e.g.~\citealt{graham2011,mcconnell2011,grahamscott2013}).
 The second is the $L_{\rm sph} - \sigma$ relation, 
 which has long been known to be a ``double power-law'', 
@@ -100,12 +100,12 @@ and $L_{\rm sph} \propto \sigma^2$ at intermediate and faint luminosities
 \citep{davies1983,held1992,matkovicguzman2005,derijcke2005,balcells2007screl,chilingarian2008,forbes2008,cody2009,tortora2009,kourkchi2012}. 
 The change in slope of the $L_{\rm sph} - \sigma$ relation occurs at $M_B \approx -20.5\rm~mag$, 
 corresponding to $\sigma \approx 200~\rm km~s^{-1}$. 
-That is, the $M_{\rm BH} - L_{\rm sph}$ relation should be better described by a ``broken'', rather than single, power-law, 
+That is, the $M_{\rm BH} - L_{\rm sph}$ relation should be better described by a ``broken'', rather than a single, power-law, 
 having $M_{\rm BH} \propto L_{\rm sph}^{2.5}$ at the low-luminosity end, 
 and $M_{\rm BH} \propto L_{\rm sph}^1$ at the high-luminosity end.  
 Due to the scatter in the $M_{\rm BH} - L_{\rm sph}$ (or $M_{\rm BH} - M_{\rm sph}$) diagram, 
 studies that have not sufficiently probed below $M_{\rm BH} \approx 10^7\rm~M_\odot$ 
-miss the change in slope occuring at $M_{\rm BH} \approx 10^{(8 \pm 1)}\rm~M_\odot$, 
+can easily miss the change in slope occuring at $M_{\rm BH} \approx 10^{(8 \pm 1)}\rm~M_\odot$, 
 and erroneously recover a single log-linear relation. \\
 When \cite{graham2012bent} pointed out this overlooked inconsistency, 
 he identified two different populations of galaxies, 
@@ -113,35 +113,49 @@ namely the core-S\'ersic \citep{graham2003coresersicmodel,trujillo2004coresersic
 spheroids\footnote{Core-S\'ersic spheroids have partially depleted cores relative to their outer S\'ersic light profile, 
 whereas S\'ersic spheroids have no central deficit of stars. 
 While core-S\'ersic spheroids are also ``core galaxies'', as given by the Nuker definition \citep{lauer2007lumell},
-it should be noted that $\sim$ $20\%$ of ``core galaxies'' are not core-S\'ersic spheroids 
+it should be noted that $\sim$20\% of ``core galaxies'' are not core-S\'ersic spheroids 
 (\citealt{dullograham2014cores}, their Appendix A.2), i.e. do not have depleted cores.
 The change in slope of the $L_{\rm sph} - \sigma$ relation corresponds to the division between 
 core-S\'ersic and S\'ersic spheroids (e.g. \citealt{grahamguzman2003}).},
 and attributed the change in slope (from log-quadratic to log-linear) to their different formation mechanisms. 
 In this scenario, core-S\'ersic spheroids are built in additive dry merger events, 
-where the black hole and the bulge grow in lock steps ($M_{\rm BH} \propto L_{\rm sph}^1$), 
+where the black hole and the bulge grow at the same pace, increasing their mass in lock steps ($M_{\rm BH} \propto L_{\rm sph}^1$), 
 whereas S\'ersic spheroids originate from gas-rich processes, 
 in which the mass of the black hole increases more rapidly than the mass of its host spheroid ($M_{\rm BH} \propto L_{\rm sph}^{2.5}$). 
 \cite{grahamscott2013} and \cite{scott2013} presented double power-law linear regressions 
-for the S\'ersic/core-S\'ersic spheroids in the $M_{\rm BH} - L_{\rm sph}$ and $M_{\rm BH} - M_{\rm *,sph}$ 
-(spheroid stellar mass) diagrams, respectively.
+for S\'ersic/core-S\'ersic spheroids in the $M_{\rm BH} - L_{\rm sph}$ and $M_{\rm BH} - M_{\rm *,sph}$ 
+(spheroid stellar mass) diagrams, respectively, probing down to $M_{\rm BH} \approx 10^6\rm~M_\odot$. 
 To obtain their dust-corrected \emph{bulge} magnitudes, they did not perform bulge/disc decompositions, 
 but instead they converted $B-$band and $K_S-$band observed, total \emph{galaxy} magnitudes 
 using a mean statistical correction based on each object's morphological type and disc 
 inclination\footnote{While this resulted in individual bulge magnitudes not being exactly correct, 
 their large sample size allowed them to obtain a reasonably ensemble average correction.}. 
 It should be noted that $\sim$80\% of their core-S\'ersic spheroids were morphologically classified as elliptical galaxies, 
-and $\sim$80\% of their S\'ersic spheroids were morphologically classified as bulges of disk galaxies.
-\\
+and $\sim$80\% of their S\'ersic spheroids were morphologically classified as bulges of disk galaxies (lenticulars and spirals). \\
+Several recent papers \citep{jiang2011a,jiang2013,mathur2012,reines2013} claimed an offset at the low-mass end of the $M_{\rm BH} - M_{\rm *,sph}$ diagram,
+such that the black hole mass is lower than expected from the near-linear correlation traced by the high-mass, early-type spheroids. 
+However, \cite{grahamscott2015} showed that the low-mass spheroids ($10^{8.5} \lesssim M_{\rm *,sph}/{\rm M_\odot} \lesssim 10^{10.5}$) 
+are not randomly offset from the high-mass, near-linear correlation, 
+but lie on the two times steeper relation traced by the S\'ersic spheroids. \\
+here: 66 galaxies, largest dataset to date
+status-of-the-art decomp.
+3.6 um best tracer of stellar mass
+9 systems w $M_{\rm BH} \lesssim 10^7\rm~M_\odot$
+17 spirals
 
 
-range mbh not to miss the bend
 
 
  
 
 \section{Data}
 \label{sec:data}
+
+
+
+
+
+
 \begin{figure}[h]
 \begin{center}
 \includegraphics[width=\columnwidth]{images/mag_lit_vs_mag_my.pdf}

@@ -4,50 +4,50 @@ The top-level auxiliary file: mm.aux
 The style file: apj.bst
 Database file #1: mmNotes.bib
 Database file #2: /Users/gsavorgnan/Dropbox_notsync/giulia_e_basta/Literature/SMBHbibliography.bib
-Repeated entry---line 6155 of file /Users/gsavorgnan/Dropbox_notsync/giulia_e_basta/Literature/SMBHbibliography.bib
+Repeated entry---line 6249 of file /Users/gsavorgnan/Dropbox_notsync/giulia_e_basta/Literature/SMBHbibliography.bib
  : @article{haringrix2004
  :                       ,
 I'm skipping whatever remains of this entry
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-You've used 54 entries,
+You've used 59 entries,
             3085 wiz_defined-function locations,
-            1021 strings with 17014 characters,
-and the built_in function-call counts, 26653 in all, are:
-= -- 2195
-> -- 2000
-< -- 26
-+ -- 673
-- -- 728
-* -- 2299
-:= -- 5025
-add.period$ -- 54
-call.type$ -- 54
-change.case$ -- 373
-chr.to.int$ -- 52
-cite$ -- 54
-duplicate$ -- 1036
-empty$ -- 1540
-format.name$ -- 794
-if$ -- 5268
+            1052 strings with 17870 characters,
+and the built_in function-call counts, 29014 in all, are:
+= -- 2404
+> -- 2166
+< -- 27
++ -- 729
+- -- 791
+* -- 2497
+:= -- 5464
+add.period$ -- 59
+call.type$ -- 59
+change.case$ -- 410
+chr.to.int$ -- 57
+cite$ -- 59
+duplicate$ -- 1131
+empty$ -- 1677
+format.name$ -- 862
+if$ -- 5737
 int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 51
-newline$ -- 166
-num.names$ -- 219
-pop$ -- 410
+missing$ -- 56
+newline$ -- 181
+num.names$ -- 239
+pop$ -- 447
 preamble$ -- 1
-purify$ -- 373
+purify$ -- 410
 quote$ -- 0
-skip$ -- 864
+skip$ -- 942
 stack$ -- 0
-substring$ -- 1124
+substring$ -- 1220
 swap$ -- 28
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 486
+type$ -- 531
 warning$ -- 0
-while$ -- 211
+while$ -- 231
 width$ -- 0
-write$ -- 543
+write$ -- 593
 (There was 1 error message)

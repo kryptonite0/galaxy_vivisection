@@ -102,6 +102,9 @@
 \bibitem[{{Graham} \& {Scott}(2013)}]{grahamscott2013}
 {Graham}, A.~W., \& {Scott}, N. 2013, \apj, 764, 151
 
+\bibitem[{{Graham} \& {Scott}(2015)}]{grahamscott2015}
+---. 2015, \apj, 798, 54
+
 \bibitem[{{G{\"u}ltekin} {et~al.}(2009){G{\"u}ltekin}, {Richstone}, {Gebhardt},
   {Lauer}, {Tremaine}, {Aller}, {Bender}, {Dressler}, {Faber}, {Filippenko},
   {Green}, {Ho}, {Kormendy}, {Magorrian}, {Pinkney}, \&
@@ -117,6 +120,14 @@
 {Held}, E.~V., {de Zeeuw}, T., {Mould}, J., \& {Picard}, A. 1992, in IAU
   Symposium, Vol. 149, The Stellar Populations of Galaxies, ed. B.~{Barbuy} \&
   A.~{Renzini}, 429
+
+\bibitem[{{Jiang} {et~al.}(2013){Jiang}, {Ho}, {Dong}, {Yang}, \&
+  {Wang}}]{jiang2013}
+{Jiang}, N., {Ho}, L.~C., {Dong}, X.-B., {Yang}, H., \& {Wang}, J. 2013, \apj,
+  770, 3
+
+\bibitem[{{Jiang} {et~al.}(2011){Jiang}, {Greene}, \& {Ho}}]{jiang2011a}
+{Jiang}, Y.-F., {Greene}, J.~E., \& {Ho}, L.~C. 2011, \apjl, 737, L45
 
 \bibitem[{{Kormendy} \& {Ho}(2013)}]{kormendyho2013}
 {Kormendy}, J., \& {Ho}, L.~C. 2013, \araa, 51, 511
@@ -172,6 +183,11 @@
 \bibitem[{{Marconi} \& {Hunt}(2003)}]{marconihunt2003}
 {Marconi}, A., \& {Hunt}, L.~K. 2003, \apjl, 589, L21
 
+\bibitem[{{Mathur} {et~al.}(2012){Mathur}, {Fields}, {Peterson}, \&
+  {Grupe}}]{mathur2012}
+{Mathur}, S., {Fields}, D., {Peterson}, B.~M., \& {Grupe}, D. 2012, \apj, 754,
+  146
+
 \bibitem[{{Matkovi{\'c}} \& {Guzm{\'a}n}(2005)}]{matkovicguzman2005}
 {Matkovi{\'c}}, A., \& {Guzm{\'a}n}, R. 2005, \mnras, 362, 289
 
@@ -181,6 +197,9 @@
 \bibitem[{{McConnell} {et~al.}(2011){McConnell}, {Ma}, {Gebhardt}, {Wright},
   {Murphy}, {Lauer}, {Graham}, \& {Richstone}}]{mcconnell2011}
 {McConnell}, N.~J., {Ma}, C.-P., {Gebhardt}, K., {et~al.} 2011, \nat, 480, 215
+
+\bibitem[{{Reines} {et~al.}(2013){Reines}, {Greene}, \& {Geha}}]{reines2013}
+{Reines}, A.~E., {Greene}, J.~E., \& {Geha}, M. 2013, \apj, 775, 116
 
 \bibitem[{{Rusli} {et~al.}(2013){Rusli}, {Erwin}, {Saglia}, {Thomas},
   {Fabricius}, {Bender}, \& {Nowak}}]{rusli2013}
