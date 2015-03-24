@@ -8,46 +8,60 @@ Repeated entry---line 6249 of file /Users/gsavorgnan/Dropbox_notsync/giulia_e_ba
  : @article{haringrix2004
  :                       ,
 I'm skipping whatever remains of this entry
+Name 1 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
+while executing---line 1587 of file apj.bst
+Name 1 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
+while executing---line 1587 of file apj.bst
+Name 2 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
+while executing---line 1587 of file apj.bst
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-You've used 59 entries,
+Name 1 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
+while executing---line 1671 of file apj.bst
+Name 2 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
+while executing---line 1671 of file apj.bst
+Name 1 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
+while executing---line 1671 of file apj.bst
+Name 2 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
+while executing---line 1671 of file apj.bst
+You've used 63 entries,
             3085 wiz_defined-function locations,
-            1052 strings with 17870 characters,
-and the built_in function-call counts, 29014 in all, are:
-= -- 2404
-> -- 2166
+            1083 strings with 19609 characters,
+and the built_in function-call counts, 31494 in all, are:
+= -- 2569
+> -- 2431
 < -- 27
-+ -- 729
-- -- 791
-* -- 2497
-:= -- 5464
-add.period$ -- 59
-call.type$ -- 59
-change.case$ -- 410
-chr.to.int$ -- 57
-cite$ -- 59
-duplicate$ -- 1131
-empty$ -- 1677
-format.name$ -- 862
-if$ -- 5737
++ -- 817
+- -- 886
+* -- 2750
+:= -- 5957
+add.period$ -- 63
+call.type$ -- 63
+change.case$ -- 437
+chr.to.int$ -- 61
+cite$ -- 63
+duplicate$ -- 1207
+empty$ -- 1789
+format.name$ -- 960
+if$ -- 6205
 int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 56
-newline$ -- 181
-num.names$ -- 239
-pop$ -- 447
+missing$ -- 60
+newline$ -- 193
+num.names$ -- 255
+pop$ -- 477
 preamble$ -- 1
-purify$ -- 410
+purify$ -- 437
 quote$ -- 0
-skip$ -- 942
+skip$ -- 1003
 stack$ -- 0
-substring$ -- 1220
+substring$ -- 1304
 swap$ -- 28
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 531
+type$ -- 567
 warning$ -- 0
-while$ -- 231
+while$ -- 245
 width$ -- 0
-write$ -- 593
-(There was 1 error message)
+write$ -- 633
+(There were 8 error messages)

@@ -1,6 +1,12 @@
 \begin{thebibliography}{}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
+\bibitem[{{Arnold} {et~al.}(2014){Arnold}, {Romanowsky}, {Brodie}, {Forbes},
+  {Strader}, {Spitler}, {Foster}, {Blom}, {Kartha}, {Pastorello}, {Pota},
+  {Usher}, \& {Woodley}}]{arnold2014}
+{Arnold}, J.~A., {Romanowsky}, A.~J., {Brodie}, J.~P., {et~al.} 2014, \apj,
+  791, 80
+
 \bibitem[{{Balcells} {et~al.}(2007){Balcells}, {Graham}, \&
   {Peletier}}]{balcells2007screl}
 {Balcells}, M., {Graham}, A.~W., \& {Peletier}, R.~F. 2007, \apj, 665, 1104
@@ -37,6 +43,10 @@
 
 \bibitem[{{Dullo} \& {Graham}(2014)}]{dullograham2014cores}
 {Dullo}, B.~T., \& {Graham}, A.~W. 2014, \mnras, 444, 2700
+
+\bibitem[{{Emsellem} {et~al.}(2011){Emsellem}, {}, \& {E. et
+  al.}}]{atlas3dIII-MNRAS}
+{Emsellem}, {}, \& {E. et al.} 2011, \mnras, 414, 888
 
 \bibitem[{{Erwin} \& {Gadotti}(2012)}]{erwingadotti2012}
 {Erwin}, P., \& {Gadotti}, D.~A. 2012, Advances in Astronomy, 2012, 4
@@ -218,8 +228,22 @@
 \bibitem[{{Schechter}(1980)}]{schechter1980}
 {Schechter}, P.~L. 1980, \aj, 85, 801
 
+\bibitem[{{Scott} {et~al.}(2014){Scott}, {Davies}, {Houghton}, {Cappellari},
+  {Graham}, \& {Pimbblet}}]{scott2014}
+{Scott}, N., {Davies}, R.~L., {Houghton}, R.~C.~W., {et~al.} 2014, \mnras, 441,
+  274
+
 \bibitem[{{Scott} {et~al.}(2013){Scott}, {Graham}, \& {Schombert}}]{scott2013}
 {Scott}, N., {Graham}, A.~W., \& {Schombert}, J. 2013, \apj, 768, 76
+
+\bibitem[{{Sheth} {et~al.}(2010){Sheth}, {Regan}, {Hinz}, {Gil de Paz},
+  {Men{\'e}ndez-Delmestre}, {Mu{\~n}oz-Mateos}, {Seibert}, {Kim},
+  {Laurikainen}, {Salo}, {Gadotti}, {Laine}, {Mizusawa}, {Armus},
+  {Athanassoula}, {Bosma}, {Buta}, {Capak}, {Jarrett}, {Elmegreen},
+  {Elmegreen}, {Knapen}, {Koda}, {Helou}, {Ho}, {Madore}, {Masters},
+  {Mobasher}, {Ogle}, {Peng}, {Schinnerer}, {Surace}, {Zaritsky},
+  {Comer{\'o}n}, {de Swardt}, {Meidt}, {Kasliwal}, \& {Aravena}}]{sheth2010}
+{Sheth}, K., {Regan}, M., {Hinz}, J.~L., {et~al.} 2010, \pasp, 122, 1397
 
 \bibitem[{{Tortora} {et~al.}(2009){Tortora}, {Napolitano}, {Romanowsky},
   {Capaccioli}, \& {Covone}}]{tortora2009}
