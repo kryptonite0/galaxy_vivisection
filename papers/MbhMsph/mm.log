@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  24 MAR 2015 17:24
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  25 MAR 2015 16:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -320,6 +320,9 @@ LaTeX Warning: Unused global option(s):
 
 (./mm.aux
 
+LaTeX Warning: Label `sec:anal' multiply defined.
+
+
 LaTeX Warning: Label `fig:' multiply defined.
 
 )
@@ -426,11 +429,11 @@ LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
 (Font)              Font shape `U/lasy/m/n' tried instead on input line 66.
  [1{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<images/mag_lit_vs_mag_my.pdf, id=22, 578.16pt x 433.62pt>
-File: images/mag_lit_vs_mag_my.pdf Graphic file (type pdf)
+<images/mbh_vs_mag_sph.pdf, id=22, 578.16pt x 433.62pt>
+File: images/mbh_vs_mag_sph.pdf Graphic file (type pdf)
 
-<use images/mag_lit_vs_mag_my.pdf>
-Package pdftex.def Info: images/mag_lit_vs_mag_my.pdf used on input line 180.
+<use images/mbh_vs_mag_sph.pdf>
+Package pdftex.def Info: images/mbh_vs_mag_sph.pdf used on input line 192.
 (pdftex.def)             Requested size: 245.26653pt x 183.94531pt.
 
 
@@ -440,7 +443,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: images/mbh_vs_mass_sph_agn.pdf Graphic file (type pdf)
 
 <use images/mbh_vs_mass_sph_agn.pdf>
-Package pdftex.def Info: images/mbh_vs_mass_sph_agn.pdf used on input line 192.
+Package pdftex.def Info: images/mbh_vs_mass_sph_agn.pdf used on input line 204.
 
 (pdftex.def)             Requested size: 245.26653pt x 183.94531pt.
 
@@ -448,12 +451,11 @@ Package pdftex.def Info: images/mbh_vs_mass_sph_agn.pdf used on input line 192.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 2735) in paragraph at lines 214--223
+Underfull \hbox (badness 2735) in paragraph at lines 226--235
 []\OT1/cmr/m/n/10 This re-search was sup-ported by Aus-tralian Re-
  []
 
-(./mm.bbl [2 <./images/mag_lit_vs_mag_my.pdf> <./images/mbh_vs_mass_sph_agn.pdf
-
+(./mm.bbl [2 <./images/mbh_vs_mag_sph.pdf> <./images/mbh_vs_mass_sph_agn.pdf
 
 pdfTeX warning: pdflatex (file ./images/mbh_vs_mass_sph_agn.pdf): PDF inclusion
 : multiple pdfs with page group included in a single page
@@ -464,8 +466,8 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  5063 strings out of 493488
- 65656 string characters out of 3141326
- 176840 words of memory out of 3000000
+ 65641 string characters out of 3141326
+ 182266 words of memory out of 3000000
  8267 multiletter control sequences out of 15000+200000
  17854 words of font info for 70 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -483,17 +485,16 @@ exlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texl
 ive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
 /2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/20
 12/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2012/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/local/texlive/2012/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2012/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2012/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2012/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2012/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2012/texmf-dis
-t/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on mm.pdf (3 pages, 392376 bytes).
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2012/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2012/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2012/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2012/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2012/texmf-di
+st/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on mm.pdf (3 pages, 428612 bytes).
 PDF statistics:
- 276 PDF objects out of 1000 (max. 8388607)
- 95 compressed objects within 1 object stream
+ 402 PDF objects out of 1000 (max. 8388607)
+ 90 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

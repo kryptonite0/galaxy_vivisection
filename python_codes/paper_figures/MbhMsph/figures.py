@@ -131,7 +131,8 @@ def mag_lit_vs_mag_my():
 	
 def mbh_vs_mass_sph_agn():
 	
-	outliers = [u'n1374', u'n3842exp', u'n4889']
+	#outliers = [u'n1374', u'n3842exp', u'n4889']
+	outliers = []
 	
 	connection = sql3.connect(dbname)
 	cur = connection.cursor()
@@ -245,9 +246,9 @@ def mbh_vs_mass_sph_agn():
 	scatter_kwargs = {"zorder":100}
 	error_kwargs = {"lw":.5, "zorder":0}
 
-	ax.scatter(mass_sph_Jiangagn, mbh_Jiangagn, marker='o', color='k', s=15)
-	ax.scatter(mass_sph_lowmassagn, mbh_lowmassagn, marker='o', facecolors='none', edgecolors='k', s=80)
-	ax.scatter(mass_sph_lowmassagn, mbh_lowmassagn, marker='+', color='k', s=80)
+	ax.scatter(mass_sph_Jiangagn, mbh_Jiangagn, marker='o', color='b', s=15)
+	ax.scatter(mass_sph_lowmassagn, mbh_lowmassagn, marker='o', facecolors='none', edgecolors='b', s=80)
+	ax.scatter(mass_sph_lowmassagn, mbh_lowmassagn, marker='+', color='b', s=80)
 
 	ax.errorbar(mass_sph[morph_core=='E_1'], mbh[morph_core=='E_1'], 
 		xerr=[merr_mass_sph[morph_core=='E_1'],perr_mass_sph[morph_core=='E_1']], 
@@ -455,10 +456,10 @@ def mbh_vs_mass_sph_agn():
 	
 	ax.set_xscale('log')
 	ax.set_yscale('log')
-        plt.axis([10**7.9,10**12.5,10**4.1,10**11.2])
+        plt.axis([10**7.9,10**12.3,10**4.1,10**11.2])
         plt.xlabel(r'$M_{\rm *,sph}\rm~[M_\odot]$', labelpad=15)
         plt.ylabel(r'$M_{\rm BH} \rm ~[M_\odot]$', labelpad=15)
-	plt.subplots_adjust(left=0.15,bottom=0.15)
+	plt.subplots_adjust(left=0.15,bottom=0.15,right=0.97,top=0.9)
         #plt.show()
 	plt.savefig(path_paper_figures + 'mbh_vs_mass_sph_agn.pdf', format='pdf', dpi=1000)
 
@@ -642,15 +643,60 @@ def mbh_vs_mass_sph_psb():
         plt.show()
 	#plt.savefig(path_paper_figures + 'mbh_vs_mass_sph_psb.pdf', format='pdf', dpi=1000)
 
-def mbh_vs_mass_tot():
+def mbh_vs_mag_tot():
 
-	outliers = [u'n1374', u'n3842exp', u'n4889']
+	#outliers = [u'n1374', u'n3842exp', u'n4889']
+	outliers = []
 	
 	connection = sql3.connect(dbname)
 	cur = connection.cursor()
 
 	getdata_query = 'SELECT anc.gal_id, anc.mass_BH, anc.perr_mass_BH, anc.merr_mass_BH, anc.core, \
+		pysres.mag_tot_eq_moffat_comb, \
+		errV.perr_mag_sph, errV.merr_mag_sph, \
+		res.delta_eq_moffat_comb, \
+		anc.ELLIPTICAL_my, anc.simplemorphtype, \
+		col.color  \
+		FROM Ancillary AS anc \
+		JOIN OneDFitResultsPhysicalUnits AS pysres ON anc.gal_id = pysres.gal_id \
+		JOIN ErrorsVote as errV ON anc.gal_id = errV.gal_id \
+		JOIN Colors as col ON anc.gal_id = col.gal_id \
+		WHERE anc.fit1D_done = 1;'
+	cur.execute(getdata_query)
+	datalist = cur.fetchall()
+	data= np.asarray(datalist).transpose()
+	#print data
+	gal_id = data[0]
+	mbh = data[1].astype(np.float)
+	log_mbh = np.log10(mbh)
+	perr_mbh = data[2].astype(np.float)
+	perr_log_mbh = np.log10(1 + perr_mbh/mbh)
+	merr_mbh = data[3].astype(np.float)
+	merr_log_mbh = -np.log10(1 - merr_mbh/mbh)
+	core = data[4].astype(np.int)
+	mag_tot = data[5].astype(np.float)
+	perr_mag_sph = data[6].astype(np.float)
+	merr_mag_sph = data[7].astype(np.float)
+	delta = data[8].astype(np.float)
+	ELL = data[9].astype(np.int)
+	simplemorphtype = data[10]
+	color = data[11].astype(np.float)
+	
+	log_ML = 3.98*color+0.13 # meidt+2014
+	ML = 10**log_ML
+	
+	mass_tot = ML*10**(-0.4*(mag_tot-3.25))
+	perr_mass_sph = ML*10**(-0.4*(mag_sph+perr_mag_sph-3.25)) - mass_sph
+	merr_mass_sph = -ML*10**(-0.4*(mag_sph-merr_mag_sph-3.25)) + mass_sph
+	
+	log_mass_sph = np.log10(mass_sph)
+	perr_log_mass_sph = np.log10(1+perr_mass_sph/mass_sph)
+	merr_log_mass_sph = -np.log10(1-merr_mass_sph/mass_sph)
+		
+
+	getdata_query = 'SELECT anc.gal_id, anc.mass_BH, anc.perr_mass_BH, anc.merr_mass_BH, anc.core, \
 		physres.mag_tot_eq_moffat_comb, \
+		errV.perr_mag_sph, errV.merr_mag_sph, \
 		res.delta_eq_moffat_comb, \
 		anc.ELLIPTICAL_my, anc.simplemorphtype \
 		FROM Ancillary AS anc \
@@ -726,6 +772,9 @@ def mbh_vs_mass_tot():
 
         fig, ax = plt.subplots()
 	
+	scatter_kwargs = {"zorder":100}
+	error_kwargs = {"lw":.5, "zorder":0}
+
 	ax.errorbar(mass_tot[morph_core=='E_1'], mbh[morph_core=='E_1'], 
 		xerr=[merr_mass_tot[morph_core=='E_1'],perr_mass_tot[morph_core=='E_1']], 
 		yerr=[merr_mbh[morph_core=='E_1'],perr_mbh[morph_core=='E_1']], 
@@ -739,12 +788,12 @@ def mbh_vs_mass_tot():
         ax.errorbar(mass_tot[morph_core=='S0_1'], mbh[morph_core=='S0_1'], 
 		xerr=[merr_mass_tot[morph_core=='S0_1'],perr_mass_tot[morph_core=='S0_1']], 
 		yerr=[merr_mbh[morph_core=='S0_1'],perr_mbh[morph_core=='S0_1']], 
-		ecolor='green', marker='o', mfc='white', mec='green', mew=1.5, markersize=12, ls=' ', elinewidth=1.2, capthick=1.2, barsabove=False)
+		ecolor='red', marker='^', mfc='white', mec='red', mew=1.5, markersize=12, ls=' ', elinewidth=1.2, capthick=1.2, barsabove=False)
 	
         ax.errorbar(mass_tot[morph_core=='S0_0'], mbh[morph_core=='S0_0'], 
 		xerr=[merr_mass_tot[morph_core=='S0_0'],perr_mass_tot[morph_core=='S0_0']], 
 		yerr=[merr_mbh[morph_core=='S0_0'],perr_mbh[morph_core=='S0_0']], 
-		ecolor='green', marker='o', mfc='green', mec='green', markersize=12, ls=' ', elinewidth=1.2, capthick=1.2, barsabove=False)
+		ecolor='red', marker='^', mfc='red', mec='red', markersize=12, ls=' ', elinewidth=1.2, capthick=1.2, barsabove=False)
 	
         ax.errorbar(mass_tot[morph_core=='E/S0_1'], mbh[morph_core=='E/S0_1'], 
 		xerr=[merr_mass_tot[morph_core=='E/S0_1'],perr_mass_tot[morph_core=='E/S0_1']], 
@@ -759,39 +808,44 @@ def mbh_vs_mass_tot():
         ax.errorbar(mass_tot[morph_core=='S_1'], mbh[morph_core=='S_1'], 
         	xerr=[merr_mass_tot[morph_core=='S_1'],perr_mass_tot[morph_core=='S_1']], 
         	yerr=[merr_mbh[morph_core=='S_1'],perr_mbh[morph_core=='S_1']], 
-        	ecolor='blue', marker='o', mfc='white', mec='blue', mew=1.5, markersize=12, ls=' ', elinewidth=1.2, capthick=1.2, barsabove=False)
+        	ecolor='blue', marker='s', mfc='white', mec='blue', mew=1.5, markersize=9, ls=' ', elinewidth=1.2, capthick=1.2, barsabove=False)
 
         ax.errorbar(mass_tot[morph_core=='S_0'], mbh[morph_core=='S_0'], 
         	xerr=[merr_mass_tot[morph_core=='S_0'],perr_mass_tot[morph_core=='S_0']], 
         	yerr=[merr_mbh[morph_core=='S_0'],perr_mbh[morph_core=='S_0']], 
-        	ecolor='blue', marker='o', mfc='blue', mec='blue', markersize=12, ls=' ', elinewidth=1.2, capthick=1.2, barsabove=False)
+        	ecolor='blue', marker='s', mfc='blue', mec='blue', markersize=9, ls=' ', elinewidth=1.2, capthick=1.2, barsabove=False)
 
         ax.errorbar(mass_tot[morph_core=='S0/S_1'], mbh[morph_core=='S0/S_1'], 
 		xerr=[merr_mass_tot[morph_core=='S0/S_1'],perr_mass_tot[morph_core=='S0/S_1']], 
 		yerr=[merr_mbh[morph_core=='S0/S_1'],perr_mbh[morph_core=='S0/S_1']], 
-		ecolor='blue', marker='*', mfc='white', mec='blue', mew=1.5, markersize=20, ls=' ', elinewidth=1.2, capthick=1.2, barsabove=False)
+		ecolor='blue', marker='v', mfc='white', mec='blue', mew=1.5, markersize=12, ls=' ', elinewidth=1.2, capthick=1.2, barsabove=False)
 
         ax.errorbar(mass_tot[morph_core=='S0/S_0'], mbh[morph_core=='S0/S_0'], 
 		xerr=[merr_mass_tot[morph_core=='S0/S_0'],perr_mass_tot[morph_core=='S0/S_0']], 
 		yerr=[merr_mbh[morph_core=='S0/S_0'],perr_mbh[morph_core=='S0/S_0']], 
-		ecolor='blue', marker='*', mfc='blue', mec='blue', markersize=20, ls=' ', elinewidth=1.2, capthick=1.2, barsabove=False)
+		ecolor='blue', marker='v', mfc='blue', mec='blue', markersize=12, ls=' ', elinewidth=1.2, capthick=1.2, barsabove=False)
 
         ax.errorbar(mass_tot[simplemorphtype=='merger'], mbh[simplemorphtype=='merger'], 
 		xerr=[merr_mass_tot[simplemorphtype=='merger'],perr_mass_tot[simplemorphtype=='merger']], 
 		yerr=[merr_mbh[simplemorphtype=='merger'],perr_mbh[simplemorphtype=='merger']], 
 		ecolor='k', fmt='kd', markersize=12, elinewidth=1.2, capthick=1.2, barsabove=False)
 	
-	ax.scatter(mass_tot[morph_core=='outlier'], mbh[morph_core=='outlier'], marker='x', c='k', s=100, lw=2)
+	ax.errorbar(mass_tot[morph_core=='outlier'], mbh[morph_core=='outlier'], 
+		xerr=[merr_mass_tot[morph_core=='outlier'],perr_mass_tot[morph_core=='outlier']], 
+		yerr=[merr_mbh[morph_core=='outlier'],perr_mbh[morph_core=='outlier']], 
+		ecolor='gray', fmt='kx', markersize=12, elinewidth=1.2, capthick=1.2, barsabove=False)
 	
-	###### CHECK MESS HERE IN FIT
-	print 'core'
-	#print 'n', len(log_mass_tot[core==1])
-        A,B,Aerr,Berr,covAB=bces.bces(log_mass_tot[core==1]-np.average(log_mass_tot[core==1]),
-		err_log_mass_tot[core==1],
-        	log_mbh[core==1],0.5*(merr_log_mbh[core==1] + perr_log_mbh[core==1]),log_mass_tot[core==1]*[0.0])
+	ax.scatter(mass_tot[morph_core=='outlier'], mbh[morph_core=='outlier'], marker='x', c='k', s=100, lw=2, **scatter_kwargs)
+	
+		
+	print 'early'
+	print 'n', len(log_mass_tot[earlytype==1])
+        A,B,Aerr,Berr,covAB=bces.bces(log_mass_tot[earlytype==1]-np.average(log_mass_tot[earlytype==1]),
+		0.5*(perr_log_mass_tot[earlytype==1] + merr_log_mass_tot[earlytype==1]),
+        	log_mbh[earlytype==1],0.5*(merr_log_mbh[earlytype==1] + perr_log_mbh[earlytype==1]),log_mass_tot[earlytype==1]*[0.0])
         print '---------------------------------'
         print 'y = A*(x-<x>) + B '
-        print '<x> =', np.average(log_mass_tot[core==1])
+        print '<x> =', np.average(log_mass_tot[earlytype==1])
         print
         #print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0])
         #print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1])
@@ -801,24 +855,40 @@ def mbh_vs_mass_tot():
        
         logxx = np.arange(-10,20,0.1)
         yy = (A[2]*(logxx) + B[2])
-        ax.plot(10**(logxx+np.average(log_mass_tot[core==1])),10**yy, color='r', ls='--', linewidth=2.)
+        ax.plot(10**(logxx+np.average(log_mass_tot[earlytype==1])),10**yy, color='r', ls='--', linewidth=2.)
+	#colorline.colorline(10**(logxx+np.average(log_mass_tot[earlytype==1])), 10**yy, cmap=green_red)
 	
-	##### calculates the prediction bands for the given input arrays
-        lpb68,upb68,logxx = predband.predband(log_mass_tot[core==1]-np.average(log_mass_tot[core==1]),log_mbh[core==1],A[2],B[2],conf=0.68,x=logxx)
-        lpb95,upb95,logxx = predband.predband(log_mass_tot[core==1]-np.average(log_mass_tot[core==1]),log_mbh[core==1],A[2],B[2],conf=0.95,x=logxx)
-        lpb99,upb99,logxx = predband.predband(log_mass_tot[core==1]-np.average(log_mass_tot[core==1]),log_mbh[core==1],A[2],B[2],conf=0.99,x=logxx)
-        #### plots a shaded area containing the prediction band  
-        ax.fill_between(10**(logxx+np.average(log_mass_tot[core==1])), 10**lpb68, 10**upb68, alpha=0.1, facecolor='r')
-        #ax.fill_between(10**(logxx+np.average(log_mass_tot[core==1])), 10**lpb95, 10**upb95, alpha=0.07, facecolor='r')
-        #ax.fill_between(10**(logxx+np.average(log_mass_tot[core==1])), 10**lpb99, 10**upb99, alpha=0.04, facecolor='r')
+	##### calculates 1sigma uncertainty band
+	yy_1 = ((A[2]+Aerr[2])*(logxx) + (B[2]+Berr[2]))
+	yy_2 = ((A[2]-Aerr[2])*(logxx) + (B[2]+Berr[2]))
+	yy_3 = ((A[2]+Aerr[2])*(logxx) + (B[2]-Berr[2]))
+	yy_4 = ((A[2]-Aerr[2])*(logxx) + (B[2]-Berr[2]))
+	yy_up = yy_1*[0.0]
+	for i in range(len(yy_1)):
+		if yy_1[i] > yy_2[i]:
+			yy_up[i] = yy_1[i]
+		elif yy_1[i] <= yy_2[i]:
+			yy_up[i] = yy_2[i]	
+	yy_up = np.asarray(yy_up)
+	yy_lo = yy_1*[0.0]
+	for i in range(len(yy_3)):
+		if yy_3[i] < yy_4[i]:
+			yy_lo[i] = yy_3[i]
+		elif yy_3[i] >= yy_4[i]:
+			yy_lo[i] = yy_4[i]	
+	yy_lo = np.asarray(yy_lo)
+				
+	ax.fill_between(10**(logxx+np.average(log_mass_tot[earlytype==1])), 10**yy_lo, 10**yy_up, alpha=0.1, facecolor='r')
 	
-	print 'sersic'
-        A,B,Aerr,Berr,covAB=bces.bces(log_mass_tot[core==0]-np.average(log_mass_tot[core==0]),
-		err_log_mass_tot[core==0],
-        	log_mbh[core==0],0.5*(merr_log_mbh[core==0] + perr_log_mbh[core==0]),log_mass_tot[core==0]*[0.0])
+        
+        print 'sersic bul of spi'
+        print 'n', len(log_mass_tot[morph_core=='S_0'])
+        A,B,Aerr,Berr,covAB=bces.bces(log_mass_tot[morph_core=='S_0']-np.average(log_mass_tot[morph_core=='S_0']),
+		0.5*(perr_log_mass_tot[morph_core=='S_0'] + merr_log_mass_tot[morph_core=='S_0']),
+        	log_mbh[morph_core=='S_0'],0.5*(merr_log_mbh[morph_core=='S_0'] + perr_log_mbh[morph_core=='S_0']),log_mass_tot[morph_core=='S_0']*[0.0])
         print '---------------------------------'
         print 'y = A*(x-<x>) + B '
-        print '<x> =', np.average(log_mass_tot[core==0])
+        print '<x> =', np.average(log_mass_tot[morph_core=='S_0'])
         print
         #print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0])
         #print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1])
@@ -828,16 +898,29 @@ def mbh_vs_mass_tot():
        
         logxx = np.arange(-10,20,0.1)
         yy = (A[2]*(logxx) + B[2])
-        ax.plot(10**(logxx+np.average(log_mass_tot[core==0])),10**yy, color='b', ls='-', linewidth=2.)
+        ax.plot(10**(logxx+np.average(log_mass_tot[morph_core=='S_0'])),10**yy, color='b', ls='-', linewidth=2.)
 	
-	##### calculates the prediction bands for the given input arrays
-        lpb68,upb68,logxx = predband.predband(log_mass_tot[core==0]-np.average(log_mass_tot[core==0]),log_mbh[core==0],A[2],B[2],conf=0.68,x=logxx)
-        lpb95,upb95,logxx = predband.predband(log_mass_tot[core==0]-np.average(log_mass_tot[core==0]),log_mbh[core==0],A[2],B[2],conf=0.95,x=logxx)
-        lpb99,upb99,logxx = predband.predband(log_mass_tot[core==0]-np.average(log_mass_tot[core==0]),log_mbh[core==0],A[2],B[2],conf=0.99,x=logxx)
-        #### plots a shaded area containing the prediction band  
-        ax.fill_between(10**(logxx+np.average(log_mass_tot[core==0])), 10**lpb68, 10**upb68, alpha=0.1, facecolor='b')
-        #ax.fill_between(10**(logxx+np.average(log_mass_tot[morph_core=='E_1'])), 10**lpb95, 10**upb95, alpha=0.07, facecolor='r')
-        #ax.fill_between(10**(logxx+np.average(log_mass_tot[morph_core=='E_1'])), 10**lpb99, 10**upb99, alpha=0.04, facecolor='r')
+	##### calculates 1sigma uncertainty band
+	yy_1 = ((A[2]+Aerr[2])*(logxx) + (B[2]+Berr[2]))
+	yy_2 = ((A[2]-Aerr[2])*(logxx) + (B[2]+Berr[2]))
+	yy_3 = ((A[2]+Aerr[2])*(logxx) + (B[2]-Berr[2]))
+	yy_4 = ((A[2]-Aerr[2])*(logxx) + (B[2]-Berr[2]))
+	yy_up = yy_1*[0.0]
+	for i in range(len(yy_1)):
+		if yy_1[i] > yy_2[i]:
+			yy_up[i] = yy_1[i]
+		elif yy_1[i] <= yy_2[i]:
+			yy_up[i] = yy_2[i]	
+	yy_up = np.asarray(yy_up)
+	yy_lo = yy_1*[0.0]
+	for i in range(len(yy_3)):
+		if yy_3[i] < yy_4[i]:
+			yy_lo[i] = yy_3[i]
+		elif yy_3[i] >= yy_4[i]:
+			yy_lo[i] = yy_4[i]	
+	yy_lo = np.asarray(yy_lo)
+				
+	ax.fill_between(10**(logxx+np.average(log_mass_tot[morph_core=='S_0'])), 10**yy_lo, 10**yy_up, alpha=0.1, facecolor='b')
 	
 	
 	JiangAGNDataFileName = '/Users/gsavorgnan/galaxy_vivisection/data/Alister-data/AGNs-lowmassBHs/GS15-AGN-Jiang_expanded.dat'
@@ -859,26 +942,299 @@ def mbh_vs_mass_tot():
 	
 	mass_tot_Jiangagn = mass_sph_Jiangagn/BT_Jiangagn
 	
-	ax.scatter(mass_tot_Jiangagn, mbh_Jiangagn, marker='o', color='k', s=15)	
-	
-	
-	
+	ax.scatter(mass_tot_Jiangagn, mbh_Jiangagn, marker='o', color='b', s=15)	
+		
 	ax.set_xscale('log')
 	ax.set_yscale('log')
-        plt.axis([10**8.9,10**12.2,10**4.5,10**10.8])
+        plt.axis([10**8.9,10**12.5,10**4.5,10**11.2])
         plt.xlabel(r'$M_{\rm *,tot}\rm~[M_\odot]$', labelpad=15)
         plt.ylabel(r'$M_{\rm BH} \rm ~[M_\odot]$', labelpad=15)
 	plt.subplots_adjust(left=0.15,bottom=0.15)
         plt.show()
 	#plt.savefig(path_scalrel_plots + 'mbh_vs_mass_tot.pdf', format='pdf', dpi=1000)
 
+def mbh_vs_mag_sph():
+	
+	#outliers = [u'n1374', u'n3842exp', u'n4889']
+	outliers = []
+	
+	connection = sql3.connect(dbname)
+	cur = connection.cursor()
+
+	getdata_query = 'SELECT anc.gal_id, anc.mass_BH, anc.perr_mass_BH, anc.merr_mass_BH, anc.core, \
+		pysres.mag_sph_eq_moffat_comb, \
+		errV.perr_mag_sph, errV.merr_mag_sph, \
+		anc.ELLIPTICAL_my, anc.simplemorphtype, \
+		pysres.log_n_eq_moffat_comb, \
+		col.color  \
+		FROM Ancillary AS anc \
+		JOIN OneDFitResultsPhysicalUnits AS pysres ON anc.gal_id = pysres.gal_id \
+		JOIN ErrorsVote as errV ON anc.gal_id = errV.gal_id \
+		JOIN Colors as col ON anc.gal_id = col.gal_id \
+		WHERE anc.fit1D_done = 1;'
+	cur.execute(getdata_query)
+	datalist = cur.fetchall()
+	data= np.asarray(datalist).transpose()
+	#print data
+	gal_id = data[0]
+	mbh = data[1].astype(np.float)
+	log_mbh = np.log10(mbh)
+	perr_mbh = data[2].astype(np.float)
+	perr_log_mbh = np.log10(1 + perr_mbh/mbh)
+	merr_mbh = data[3].astype(np.float)
+	merr_log_mbh = -np.log10(1 - merr_mbh/mbh)
+	core = data[4].astype(np.int)
+	mag_sph = data[5].astype(np.float)
+	perr_mag_sph = data[6].astype(np.float)
+	merr_mag_sph = data[7].astype(np.float)
+	ELL = data[8].astype(np.int)
+	simplemorphtype = data[9]
+	log_n = data[10].astype(np.float)
+	n = 10**log_n
+	color = data[11].astype(np.float)
+			
+        ELL_core = ELL*[0]
+        ELL_sersic = ELL*[0]
+        BUL_core = ELL*[0]
+        BUL_sersic = ELL*[0]
+       
+        earlytype = ELL*[0]
+	earlytype[simplemorphtype=='E'] = 1
+	earlytype[simplemorphtype=='S0'] = 1
+	earlytype[simplemorphtype=='E/S0'] = 1
+	
+	bulge = core*[0]
+	bulge[simplemorphtype=='S0'] = 1
+	bulge[simplemorphtype=='S'] = 1
+	bulge[simplemorphtype=='S0/S'] = 1
+	
+        for i in range(len(ELL)):
+        	if simplemorphtype[i]=='E' and core[i]==1 and gal_id[i] not in outliers:
+        		ELL_core[i] = 1
+        	elif simplemorphtype[i]=='E' and core[i]==0 and gal_id[i] not in outliers:
+        		ELL_sersic[i] = 1
+        	elif bulge[i]==1 and core[i]==1 and gal_id[i] not in outliers:
+        		BUL_core[i] = 1
+        	elif bulge[i]==1 and core[i]==0 and gal_id[i] not in outliers:
+        		BUL_sersic[i] = 1
+        
+	morph_coreList = []
+        for i in range(len(simplemorphtype)):
+        	if gal_id[i] not in outliers:
+			morph_coreList.append(simplemorphtype[i] + '_' + str(core[i]))
+		else:
+			morph_coreList.append('outlier')	
+        morph_core = np.asarray(morph_coreList)
+	        
+        fig, ax = plt.subplots()
+
+	print 'early'
+	print 'n', len(mag_sph[earlytype==1])
+        A,B,Aerr,Berr,covAB=bces.bces(mag_sph[earlytype==1]-np.average(mag_sph[earlytype==1]),
+		0.5*(perr_mag_sph[earlytype==1] + merr_mag_sph[earlytype==1]),
+        	log_mbh[earlytype==1],0.5*(merr_log_mbh[earlytype==1] + perr_log_mbh[earlytype==1]),mag_sph[earlytype==1]*[0.0])
+        print '---------------------------------'
+        print 'y = A*(x-<x>) + B '
+        print '<x> =', np.average(mag_sph[earlytype==1])
+        print
+        #print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0])
+        #print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1])
+        print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2])
+        #print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3])
+        print '---------------------------------'
+       
+        logxx = np.arange(-10,20,0.1)
+        yy = (A[2]*(logxx) + B[2])
+        ax.plot((logxx+np.average(mag_sph[earlytype==1])),10**yy, color='r', ls='--', linewidth=2.)
+	#colorline.colorline(10**(logxx+np.average(mag_sph[earlytype==1])), 10**yy, cmap=green_red)
+	
+	##### calculates 1sigma uncertainty band
+	yy_1 = ((A[2]+Aerr[2])*(logxx) + (B[2]+Berr[2]))
+	yy_2 = ((A[2]-Aerr[2])*(logxx) + (B[2]+Berr[2]))
+	yy_3 = ((A[2]+Aerr[2])*(logxx) + (B[2]-Berr[2]))
+	yy_4 = ((A[2]-Aerr[2])*(logxx) + (B[2]-Berr[2]))
+	yy_up = yy_1*[0.0]
+	for i in range(len(yy_1)):
+		if yy_1[i] > yy_2[i]:
+			yy_up[i] = yy_1[i]
+		elif yy_1[i] <= yy_2[i]:
+			yy_up[i] = yy_2[i]	
+	yy_up = np.asarray(yy_up)
+	yy_lo = yy_1*[0.0]
+	for i in range(len(yy_3)):
+		if yy_3[i] < yy_4[i]:
+			yy_lo[i] = yy_3[i]
+		elif yy_3[i] >= yy_4[i]:
+			yy_lo[i] = yy_4[i]	
+	yy_lo = np.asarray(yy_lo)
+				
+	ax.fill_between((logxx+np.average(mag_sph[earlytype==1])), 10**yy_lo, 10**yy_up, alpha=0.1, facecolor='r')
+        
+        print 'sersic bul of spi'
+        print 'n', len(mag_sph[morph_core=='S_0'])
+        A,B,Aerr,Berr,covAB=bces.bces(mag_sph[morph_core=='S_0']-np.average(mag_sph[morph_core=='S_0']),
+		0.5*(perr_mag_sph[morph_core=='S_0'] + merr_mag_sph[morph_core=='S_0']),
+        	log_mbh[morph_core=='S_0'],0.5*(merr_log_mbh[morph_core=='S_0'] + perr_log_mbh[morph_core=='S_0']),mag_sph[morph_core=='S_0']*[0.0])
+        print '---------------------------------'
+        print 'y = A*(x-<x>) + B '
+        print '<x> =', np.average(mag_sph[morph_core=='S_0'])
+        print
+        #print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0])
+        #print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1])
+        print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2])
+        #print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3])
+        print '---------------------------------'
+       
+        logxx = np.arange(-10,20,0.1)
+        yy = (A[2]*(logxx) + B[2])
+        ax.plot((logxx+np.average(mag_sph[morph_core=='S_0'])),10**yy, color='b', ls='-', linewidth=2.)
+	
+	##### calculates 1sigma uncertainty band
+	yy_1 = ((A[2]+Aerr[2])*(logxx) + (B[2]+Berr[2]))
+	yy_2 = ((A[2]-Aerr[2])*(logxx) + (B[2]+Berr[2]))
+	yy_3 = ((A[2]+Aerr[2])*(logxx) + (B[2]-Berr[2]))
+	yy_4 = ((A[2]-Aerr[2])*(logxx) + (B[2]-Berr[2]))
+	yy_up = yy_1*[0.0]
+	for i in range(len(yy_1)):
+		if yy_1[i] > yy_2[i]:
+			yy_up[i] = yy_1[i]
+		elif yy_1[i] <= yy_2[i]:
+			yy_up[i] = yy_2[i]	
+	yy_up = np.asarray(yy_up)
+	yy_lo = yy_1*[0.0]
+	for i in range(len(yy_3)):
+		if yy_3[i] < yy_4[i]:
+			yy_lo[i] = yy_3[i]
+		elif yy_3[i] >= yy_4[i]:
+			yy_lo[i] = yy_4[i]	
+	yy_lo = np.asarray(yy_lo)
+				
+	ax.fill_between((logxx+np.average(mag_sph[morph_core=='S_0'])), 10**yy_lo, 10**yy_up, alpha=0.1, facecolor='b')
+	
+	##########################
+	
+	print 'core'
+        print 'n', len(mag_sph[core==1])
+        A,B,Aerr,Berr,covAB=bces.bces(mag_sph[core==1]-np.average(mag_sph[core==1]),
+		0.5*(perr_mag_sph[core==1] + merr_mag_sph[core==1]),
+        	log_mbh[core==1],0.5*(merr_log_mbh[core==1] + perr_log_mbh[core==1]),mag_sph[core==1]*[0.0])
+        print '---------------------------------'
+        print 'y = A*(x-<x>) + B '
+        print '<x> =', np.average(mag_sph[core==1])
+        print
+        #print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0])
+        #print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1])
+        print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2])
+        #print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3])
+        print '---------------------------------'
+       
+        logxx = np.arange(-10,20,0.1)
+        yy = (A[2]*(logxx) + B[2])
+        ax.plot((logxx+np.average(mag_sph[core==1])),10**yy, color='k', ls='-.', linewidth=2.)
+	
+	print 'sersic'
+        print 'n', len(mag_sph[core==0])
+        A,B,Aerr,Berr,covAB=bces.bces(mag_sph[core==0]-np.average(mag_sph[core==0]),
+		0.5*(perr_mag_sph[core==0] + merr_mag_sph[core==0]),
+        	log_mbh[core==0],0.5*(merr_log_mbh[core==0] + perr_log_mbh[core==0]),mag_sph[core==0]*[0.0])
+        print '---------------------------------'
+        print 'y = A*(x-<x>) + B '
+        print '<x> =', np.average(mag_sph[core==0])
+        print
+        #print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0])
+        #print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1])
+        print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2])
+        #print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3])
+        print '---------------------------------'
+       
+        logxx = np.arange(-10,20,0.1)
+        yy = (A[2]*(logxx) + B[2])
+        ax.plot((logxx+np.average(mag_sph[core==0])),10**yy, color='k', ls=':', linewidth=2.)
+	
+	
+	scatter_kwargs = {"zorder":100}
+	error_kwargs = {"lw":.5, "zorder":0}
+
+	ax.errorbar(mag_sph[morph_core=='E_1'], mbh[morph_core=='E_1'], 
+		xerr=[merr_mag_sph[morph_core=='E_1'],perr_mag_sph[morph_core=='E_1']], 
+		yerr=[merr_mbh[morph_core=='E_1'],perr_mbh[morph_core=='E_1']], 
+		ecolor='red', marker='o', mfc='white', mec='red', mew=1.5, markersize=12, ls=' ', elinewidth=1.2, capthick=1.2, barsabove=False)
+	
+	ax.errorbar(mag_sph[morph_core==u'E_0'], mbh[morph_core==u'E_0'], 
+		xerr=[merr_mag_sph[morph_core==u'E_0'],perr_mag_sph[morph_core==u'E_0']], 
+		yerr=[merr_mbh[morph_core==u'E_0'],perr_mbh[morph_core==u'E_0']], 
+		ecolor='red', marker='o', mfc='red', mec='red', markersize=12, ls=' ', elinewidth=1.2, capthick=1.2, barsabove=False)
+	
+        ax.errorbar(mag_sph[morph_core=='S0_1'], mbh[morph_core=='S0_1'], 
+		xerr=[merr_mag_sph[morph_core=='S0_1'],perr_mag_sph[morph_core=='S0_1']], 
+		yerr=[merr_mbh[morph_core=='S0_1'],perr_mbh[morph_core=='S0_1']], 
+		ecolor='red', marker='^', mfc='white', mec='red', mew=1.5, markersize=12, ls=' ', elinewidth=1.2, capthick=1.2, barsabove=False)
+	
+        ax.errorbar(mag_sph[morph_core=='S0_0'], mbh[morph_core=='S0_0'], 
+		xerr=[merr_mag_sph[morph_core=='S0_0'],perr_mag_sph[morph_core=='S0_0']], 
+		yerr=[merr_mbh[morph_core=='S0_0'],perr_mbh[morph_core=='S0_0']], 
+		ecolor='red', marker='^', mfc='red', mec='red', markersize=12, ls=' ', elinewidth=1.2, capthick=1.2, barsabove=False)
+	
+        ax.errorbar(mag_sph[morph_core=='E/S0_1'], mbh[morph_core=='E/S0_1'], 
+		xerr=[merr_mag_sph[morph_core=='E/S0_1'],perr_mag_sph[morph_core=='E/S0_1']], 
+		yerr=[merr_mbh[morph_core=='E/S0_1'],perr_mbh[morph_core=='E/S0_1']], 
+		ecolor='red', marker='*', mfc='white', mec='red', mew=1.5, markersize=20, ls=' ', elinewidth=1.2, capthick=1.2, barsabove=False)
+	
+        ax.errorbar(mag_sph[morph_core=='E/S0_0'], mbh[morph_core=='E/S0_0'], 
+		xerr=[merr_mag_sph[morph_core=='E/S0_0'],perr_mag_sph[morph_core=='E/S0_0']], 
+		yerr=[merr_mbh[morph_core=='E/S0_0'],perr_mbh[morph_core=='E/S0_0']], 
+		ecolor='red', marker='*', mfc='red', mec='red', markersize=20, ls=' ', elinewidth=1.2, capthick=1.2, barsabove=False)
+	
+        ax.errorbar(mag_sph[morph_core=='S_1'], mbh[morph_core=='S_1'], 
+        	xerr=[merr_mag_sph[morph_core=='S_1'],perr_mag_sph[morph_core=='S_1']], 
+        	yerr=[merr_mbh[morph_core=='S_1'],perr_mbh[morph_core=='S_1']], 
+        	ecolor='blue', marker='s', mfc='white', mec='blue', mew=1.5, markersize=9, ls=' ', elinewidth=1.2, capthick=1.2, barsabove=False)
+
+        ax.errorbar(mag_sph[morph_core=='S_0'], mbh[morph_core=='S_0'], 
+        	xerr=[merr_mag_sph[morph_core=='S_0'],perr_mag_sph[morph_core=='S_0']], 
+        	yerr=[merr_mbh[morph_core=='S_0'],perr_mbh[morph_core=='S_0']], 
+        	ecolor='blue', marker='s', mfc='blue', mec='blue', markersize=9, ls=' ', elinewidth=1.2, capthick=1.2, barsabove=False)
+
+        ax.errorbar(mag_sph[morph_core=='S0/S_1'], mbh[morph_core=='S0/S_1'], 
+		xerr=[merr_mag_sph[morph_core=='S0/S_1'],perr_mag_sph[morph_core=='S0/S_1']], 
+		yerr=[merr_mbh[morph_core=='S0/S_1'],perr_mbh[morph_core=='S0/S_1']], 
+		ecolor='blue', marker='v', mfc='white', mec='blue', mew=1.5, markersize=12, ls=' ', elinewidth=1.2, capthick=1.2, barsabove=False)
+
+        ax.errorbar(mag_sph[morph_core=='S0/S_0'], mbh[morph_core=='S0/S_0'], 
+		xerr=[merr_mag_sph[morph_core=='S0/S_0'],perr_mag_sph[morph_core=='S0/S_0']], 
+		yerr=[merr_mbh[morph_core=='S0/S_0'],perr_mbh[morph_core=='S0/S_0']], 
+		ecolor='blue', marker='v', mfc='blue', mec='blue', markersize=12, ls=' ', elinewidth=1.2, capthick=1.2, barsabove=False)
+
+        ax.errorbar(mag_sph[simplemorphtype=='merger'], mbh[simplemorphtype=='merger'], 
+		xerr=[merr_mag_sph[simplemorphtype=='merger'],perr_mag_sph[simplemorphtype=='merger']], 
+		yerr=[merr_mbh[simplemorphtype=='merger'],perr_mbh[simplemorphtype=='merger']], 
+		ecolor='k', fmt='kd', markersize=12, elinewidth=1.2, capthick=1.2, barsabove=False)
+	
+	ax.errorbar(mag_sph[morph_core=='outlier'], mbh[morph_core=='outlier'], 
+		xerr=[merr_mag_sph[morph_core=='outlier'],perr_mag_sph[morph_core=='outlier']], 
+		yerr=[merr_mbh[morph_core=='outlier'],perr_mbh[morph_core=='outlier']], 
+		ecolor='gray', fmt='kx', markersize=12, elinewidth=1.2, capthick=1.2, barsabove=False)
+	
+	ax.scatter(mag_sph[morph_core=='outlier'], mbh[morph_core=='outlier'], marker='x', c='k', s=100, lw=2, **scatter_kwargs)
+	
+	
+	
+	ax.set_yscale('log')
+        plt.axis([-19.01,-27.99,10**5.1,10**11.2])
+        plt.xlabel(r'$MAG_{\rm sph}\rm~[mag]$', labelpad=15)
+        plt.ylabel(r'$M_{\rm BH} \rm ~[M_\odot]$', labelpad=15)
+	plt.subplots_adjust(left=0.15,bottom=0.15,right=0.97,top=0.9)
+        #plt.show()
+	plt.savefig(path_paper_figures + 'mbh_vs_mag_sph.pdf', format='pdf', dpi=1000)
+
 	
 	
 def main():
 	#mag_lit_vs_mag_my()
-	mbh_vs_mass_sph_agn()
+	#mbh_vs_mass_sph_agn()
 	#mbh_vs_mass_sph_psb()
-	#mbh_vs_mass_tot()
+	mbh_vs_mass_tot()
+	#mbh_vs_mag_sph()
 
 
 
