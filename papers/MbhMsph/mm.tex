@@ -155,7 +155,7 @@ representing a notable improvement over the past studies dominated by early-type
 \section{Data}
 \label{sec:data}
 Our galaxy sample consists of 66 objects for which a dynamical measurement of the black hole mass had been reported in the literature 
-at the time we started this project, 
+\citep{grahamscott2013,rusli2013bhmassesDM} at the time we started this project, 
 and for which we were able to obtain useful bulge parameters from $3.6\rm~\mu m$ \emph{Spitzer} satellite imagery. 
 Bulge luminosities were derived from our state-of-the-art galaxy decompositions, which take into account 
 bulges, disks, spiral arms, bars, rings, haloes, extended or unresolved nuclear sources and partially depleted cores.
@@ -164,11 +164,24 @@ to confirm the presence of rotationally supported components in most early-type 
 and to identify their extent (intermediate-scale, embedded disks or large-scale disks). 
 \emph{Paper I} will present the dataset used here to investigate the $M_{\rm BH} - L_{\rm sph}$ and $M_{\rm BH} - M_{\rm *,sph}$ diagrams, 
 give details about the data reduction process and the sophisticated galaxy modelling technique that we developed, 
-and illustrate the individual 66 galaxy decompositions. 
+discuss how we estimated the uncertainties on the bulge parameters, 
+and illustrate the individual 66 galaxy decompositions. \\
+Bulge luminosities\footnote{Absolute luminosities were calculated assuming a $3.6\rm~\mu m$ solar absolute magnitude of $3.25\rm~mag$ \citep{sani2011}.} 
+were converted into stellar masses using the colour-$\Gamma_{3.6}$ relation published by 
+\citeauthor{meidt2014} (\citeyear{meidt2014}, their equation 4), 
+which allows one to estimate the $3.6\rm~\mu m$ mass-to-light ratio, $\Gamma_{3.6}$, of a galaxy 
+from its $[3.6] - [4.5]$ colour. 
+Individual $[3.6] - [4.5]$ colours\footnote{These are integrated $[3.6] - [4.5]$ colours, measured in a circular aperture 
+within one galaxy's effective radius.} were taken from 
+\citeauthor{peletier2012} (\citeyear{peletier2012}, column 8 of their Table 1) 
+when available for our galaxies, 
+or were estimated from the bulge stellar velocity dispersion, $\sigma$, 
+using the colour-$\sigma$ relation presented by \citeauthor{peletier2012} (\citeyear{peletier2012}, their Figure 6).
+We point out here that using a single $\Gamma_{3.6} = 0.6$, independent of $[3.6] - [4.5]$ colour, 
+does not significantly affect the results of our analysis.
 
 
-
-
+\input{table_sample.tex}
 
  
 
@@ -190,6 +203,16 @@ and illustrate the individual 66 galaxy decompositions.
 \begin{figure}[h]
 \begin{center}
 \includegraphics[width=\columnwidth]{images/mbh_vs_mag_sph.pdf}
+\caption{}
+\label{fig:}
+\end{center}
+\end{figure}
+
+\section{Analysis}
+\label{sec:anal}
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=\columnwidth]{images/mbh_vs_mag_tot.pdf}
 \caption{}
 \label{fig:}
 \end{center}

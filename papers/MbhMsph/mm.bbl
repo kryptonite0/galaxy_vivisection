@@ -208,12 +208,35 @@
   {Murphy}, {Lauer}, {Graham}, \& {Richstone}}]{mcconnell2011}
 {McConnell}, N.~J., {Ma}, C.-P., {Gebhardt}, K., {et~al.} 2011, \nat, 480, 215
 
+\bibitem[{{Meidt} {et~al.}(2014){Meidt}, {Schinnerer}, {van de Ven},
+  {Zaritsky}, {Peletier}, {Knapen}, {Sheth}, {Regan}, {Querejeta},
+  {Mu{\~n}oz-Mateos}, {Kim}, {Hinz}, {Gil de Paz}, {Athanassoula}, {Bosma},
+  {Buta}, {Cisternas}, {Ho}, {Holwerda}, {Skibba}, {Laurikainen}, {Salo},
+  {Gadotti}, {Laine}, {Erroz-Ferrer}, {Comer{\'o}n}, {Men{\'e}ndez-Delmestre},
+  {Seibert}, \& {Mizusawa}}]{meidt2014}
+{Meidt}, S.~E., {Schinnerer}, E., {van de Ven}, G., {et~al.} 2014, \apj, 788,
+  144
+
+\bibitem[{{Peletier} {et~al.}(2012){Peletier}, {Kutdemir}, {van der Wolk},
+  {Falc{\'o}n-Barroso}, {Bacon}, {Bureau}, {Cappellari}, {Davies}, {de Zeeuw},
+  {Emsellem}, {Krajnovi{\'c}}, {Kuntschner}, {McDermid}, {Sarzi}, {Scott},
+  {Shapiro}, {van den Bosch}, \& {van de Ven}}]{peletier2012}
+{Peletier}, R.~F., {Kutdemir}, E., {van der Wolk}, G., {et~al.} 2012, \mnras,
+  419, 2031
+
 \bibitem[{{Reines} {et~al.}(2013){Reines}, {Greene}, \& {Geha}}]{reines2013}
 {Reines}, A.~E., {Greene}, J.~E., \& {Geha}, M. 2013, \apj, 775, 116
 
-\bibitem[{{Rusli} {et~al.}(2013){Rusli}, {Erwin}, {Saglia}, {Thomas},
-  {Fabricius}, {Bender}, \& {Nowak}}]{rusli2013}
-{Rusli}, S.~P., {Erwin}, P., {Saglia}, R.~P., {et~al.} 2013, \aj, 146, 160
+\bibitem[{{Rusli} {et~al.}(2013{\natexlab{a}}){Rusli}, {Erwin}, {Saglia},
+  {Thomas}, {Fabricius}, {Bender}, \& {Nowak}}]{rusli2013}
+{Rusli}, S.~P., {Erwin}, P., {Saglia}, R.~P., {et~al.} 2013{\natexlab{a}}, \aj,
+  146, 160
+
+\bibitem[{{Rusli} {et~al.}(2013{\natexlab{b}}){Rusli}, {Thomas}, {Saglia},
+  {Fabricius}, {Erwin}, {Bender}, {Nowak}, {Lee}, {Riffeser}, \&
+  {Sharp}}]{rusli2013bhmassesDM}
+{Rusli}, S.~P., {Thomas}, J., {Saglia}, R.~P., {et~al.} 2013{\natexlab{b}},
+  \aj, 146, 45
 
 \bibitem[{{Ryan} {et~al.}(2007){Ryan}, {De Robertis}, {Virani}, {Laor}, \&
   {Dawson}}]{ryan2007}

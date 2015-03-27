@@ -75,7 +75,7 @@ def get_ab(x,sigx,y,sigy,ainit,binit,paramsprecision,N,mode):
 	
 		epsilon = epsilon + paramsprecision
 		iteration = iteration + 1
-		print 'Iteration', iteration, '; chisq =', chisqmin, '; N-2 =', (N-2)
+		#print 'Iteration', iteration, '; chisq =', chisqmin, '; N-2 =', (N-2)
 	       #print 'Range for a:', ainit-paramsprecision*6,ainit+paramsprecision*6
 	       #print 'Range for b:', binit-paramsprecision*6,binit+paramsprecision*6
 	       #print 'Epsilon =', epsilon
@@ -152,21 +152,21 @@ def bisect_modfitexy(x,sigx,y,sigy):
 	#print 'epsilon =', epsilon_bisec
 	
 	
-        # plot data and regressions
-        fig, ax = plt.subplots()
-        ax.errorbar(x, y, xerr=sigx, yerr=sigy, ecolor='gray', 
-        	fmt='ko', markersize=12, elinewidth=1.2, capthick=1.2, barsabove=False) 
-        #xxx = np.arange(1.33*min(x)-0.33*max(x),1.33*max(x)-0.33*min(x),(max(x)-min(x))/10.)
-        xxx = np.arange(min(x),max(x),(max(x)-min(x))/10.)
-        y_1 = afit_1 + bfit_1*xxx
-        y_2 = afit_2 + bfit_2*xxx
-        y_test = afit_1 - xxx
-        y_bisec = a_bisec + b_bisec*xxx
-        ax.plot(xxx, y_1, ls='--', color='gray', linewidth=2.)
-        ax.plot(xxx, y_2, ls='--', color='gray', linewidth=2.)
-        #ax.plot(xxx, y_bisec, ls='-', color='black', linewidth=2.)
-        plt.show()
-        #print 'test', [afit_1, afit_2, a_bisec], [bfit_1, bfit_2, b_bisec]
+       ## plot data and regressions
+       #fig, ax = plt.subplots()
+       #ax.errorbar(x, y, xerr=sigx, yerr=sigy, ecolor='gray', 
+       #	fmt='ko', markersize=12, elinewidth=1.2, capthick=1.2, barsabove=False) 
+       ##xxx = np.arange(1.33*min(x)-0.33*max(x),1.33*max(x)-0.33*min(x),(max(x)-min(x))/10.)
+       #xxx = np.arange(min(x),max(x),(max(x)-min(x))/10.)
+       #y_1 = afit_1 + bfit_1*xxx
+       #y_2 = afit_2 + bfit_2*xxx
+       #y_test = afit_1 - xxx
+       #y_bisec = a_bisec + b_bisec*xxx
+       #ax.plot(xxx, y_1, ls='--', color='gray', linewidth=2.)
+       #ax.plot(xxx, y_2, ls='--', color='gray', linewidth=2.)
+       ##ax.plot(xxx, y_bisec, ls='-', color='black', linewidth=2.)
+       #plt.show()
+       ##print 'test', [afit_1, afit_2, a_bisec], [bfit_1, bfit_2, b_bisec]
 	
 	#return [afit_1, afit_2, a_bisec], [bfit_1, bfit_2, b_bisec]
 	return a_bisec,perr_a_bisec,merr_a_bisec,b_bisec,perr_b_bisec,merr_b_bisec
@@ -246,31 +246,6 @@ def get_errors_ab(x,sigx,y,sigy,afit,bfit,ainit_err,binit_err,epsilonfit,chisqmi
 	#print 'errors', err_afit,err_bfit
 	return merr_afit,perr_afit,merr_bfit,perr_bfit
 	
-
-def get_epsilon_bisec(x,sigx,y,sigy,a_bisec,b_bisec,paramsprecision,N):
-
-	chisqmin = N + 0.000
-	epsilon = -paramsprecision
-	iteration = -1			
-	while chisqmin>(N-2): 
-	
-		epsilon = epsilon + paramsprecision
-		iteration = iteration + 1
-		#print 'Iteration', iteration, '; chisq =', chisqmin, '; N-2 =', (N-2)
-	       #print 'Range for a:', ainit-paramsprecision*6,ainit+paramsprecision*6
-	       #print 'Range for b:', binit-paramsprecision*6,binit+paramsprecision*6
-	       #print 'Epsilon =', epsilon
-	       #print 'Precision =', paramsprecision
-	       #print 
-			
-			
-		chisq = 0.000
-		for i in range(0,N):
-			numer = y[i] - (a_bisec + b_bisec*x[i])
-			denom = (sigy[i])**2 + (b_bisec**2)*(sigx[i])**2 + epsilon**2
-			chisq = chisq + numer**2/denom
-					
-	return epsilon
 	
 
 

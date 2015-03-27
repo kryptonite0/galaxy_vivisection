@@ -7,6 +7,7 @@ terminal = sys.stdout
 dbname = '/Users/gsavorgnan/galaxy_vivisection/python_codes/databases/galaxy_vivisection.db'
 sampletableFileName = '/Users/gsavorgnan/galaxy_vivisection/papers/data_paper/table_sample.tex'
 fitresultstableFileName = '/Users/gsavorgnan/galaxy_vivisection/papers/data_paper/table_fitresults.tex'
+mmsampletableFileName = '/Users/gsavorgnan/galaxy_vivisection/papers/MbhMsph/table_sample.tex'
 
 def putBlankInPlaceOfNone(entry):
         if entry is None:
@@ -76,6 +77,63 @@ def header_datapaper_sampletable(caption):
         print '\\hline                                                '
 
 def footer_datapaper_sampletable(label):
+
+        print '\\hline         '
+        print '\\end{tabular}   '
+        if label:
+		print '\\label{tab:sample} '
+        print '\\end{center}    '
+        print '\\end{table*}    '
+
+def header_mmpaper_sampletable(caption):
+
+        print '\\begin{table*}                                        '
+        print '\\small                                                '
+        print '\\begin{center}                                        '
+	if caption:
+        	print '\\caption{{\\bf Galaxy sample.}                        '
+        	print '\\emph{Column (1):} Galaxy name.                       '
+		print '\\emph{Column (2):} Morphological type.                       '
+        	print '\\emph{Column (3):} Presence of a partially depleted core. \
+			The question mark is used when the classification has come from the velocity dispersion criteria mentioned in Section \\ref{sec:??}.   '
+        	print '\\emph{Column (4):} Distance.                                   '
+        	print '\\emph{Column (5):} Black hole mass.                                   '
+		print '\\emph{Column (6):} Absolute $3.6\\rm~\mu m$ bulge magnitude.                                   '
+		print '\\emph{Column (7):} Absolute $3.6\\rm~\mu m$ galaxy magnitude.                                   '
+		print '\\emph{Column (8):} $[3.6]-[4.5]$ colour.                                   '
+		print '\\emph{Column (9):} Bulge stellar mass. }                      '
+        print '\\begin{tabular}{lllllllll}                           '
+        print '\\hline                                                '
+        print '\\multicolumn{1}{l}{{\\bf Galaxy}} &                   '
+        print '\\multicolumn{1}{l}{{\\bf Type}} &                     '
+        print '\\multicolumn{1}{l}{{\\bf Core}} &                     '
+        print '\\multicolumn{1}{l}{{\\bf Distance}} &                 '
+        print '\\multicolumn{1}{l}{{\\bf $\\bm{M_{\\rm BH}}$}} &  '
+        print '\\multicolumn{1}{l}{{\\bf $\\bm{MAG_{\\rm sph}}$}} &  '
+        print '\\multicolumn{1}{l}{{\\bf $\\bm{MAG_{\\rm gal}}$}} &  '
+        print '\\multicolumn{1}{l}{{\\bf $\\bm{[3.6]-[4.5]}$}} &  '
+        print '\\multicolumn{1}{l}{{\\bf $\\bm{M_{\\rm *,sph}}$}} \\\\  '
+        print '\\multicolumn{1}{l}{} &                                '
+        print '\\multicolumn{1}{l}{} &                                '
+        print '\\multicolumn{1}{l}{} &                                '
+        print '\\multicolumn{1}{l}{[Mpc]} &                           '
+        print '\\multicolumn{1}{l}{$[10^8~\\rm M_{\odot}]$} &         '
+        print '\\multicolumn{1}{l}{[mag]} &                                '
+        print '\\multicolumn{1}{l}{[mag]} &                                '
+        print '\\multicolumn{1}{l}{[mag]} &                                '
+        print '\\multicolumn{1}{l}{$[10^{10}~\\rm M_{\odot}]$} \\\\                             '
+        print '\\multicolumn{1}{l}{(1)} &                             '
+        print '\\multicolumn{1}{l}{(2)} &                             '
+        print '\\multicolumn{1}{l}{(3)} &                             '
+        print '\\multicolumn{1}{l}{(4)} &                             '
+        print '\\multicolumn{1}{l}{(5)} &                             '
+        print '\\multicolumn{1}{l}{(6)} &                             '
+        print '\\multicolumn{1}{l}{(7)} &                             '
+        print '\\multicolumn{1}{l}{(8)} &                             '
+        print '\\multicolumn{1}{l}{(9)} \\\\                         '
+        print '\\hline                                                '
+
+def footer_mmpaper_sampletable(label):
 
         print '\\hline         '
         print '\\end{tabular}   '
@@ -215,6 +273,15 @@ def print_bhmass(mass,merr,perr):
         
         print '$' + mass_trunc + '_{-' + merr_trunc + '}^{+' + perr_trunc + '}$ ', ' & ',
 
+def print_mass(mass,merr,perr):
+
+	if mass<1:
+		print '$' + str("{0:.2f}".format(mass)) + '_{' + str("{0:.2f}".format(merr)) + '}^{+' + str("{0:.2f}".format(perr)) + '}$ ', 
+	if mass>1 and mass<10:
+		print '$' + str("{0:.1f}".format(mass)) + '_{' + str("{0:.1f}".format(merr)) + '}^{+' + str("{0:.1f}".format(perr)) + '}$ ', 
+	if mass>10:
+		print '$' + str("{0:.0f}".format(mass)) + '_{' + str("{0:.0f}".format(merr)) + '}^{+' + str("{0:.0f}".format(perr)) + '}$ ', 
+		
 def header_datapaper_fitresultstable(caption):
 
         print '\\begin{table*}                                        '
@@ -412,9 +479,104 @@ def datapaper_fitresultstable():
         terminal = sys.stdout
         #("{0:.2f}".format(b))
         #("{0:.2f}".format(b))
+
+def mmpaper_sampletable():
+	connection = sql3.connect(dbname)
+        cur = connection.cursor()
+
+        cur.execute('''SELECT anc.gal_id, anc.simplemorphtype, anc.core, anc.core_inferred_from_sigma, anc.distance,  
+		anc.mass_BH, anc.perr_mass_BH, anc.merr_mass_BH, 
+		physres.mag_sph_eq_moffat_comb, 
+		errV.perr_mag_sph, errV.merr_mag_sph, 
+		physres.mag_tot_eq_moffat_comb, 
+		col.color
+		FROM Ancillary AS anc 
+		JOIN OneDFitResultsPhysicalUnits AS physres ON anc.gal_id = physres.gal_id 
+		JOIN ErrorsVote as errV ON anc.gal_id = errV.gal_id 
+		JOIN Colors as col ON anc.gal_id = col.gal_id 
+		WHERE anc.fit1D_done = 1
+                ORDER BY anc.gal_id;''')
+                
+        datat = cur.fetchall()
+        data= np.asarray(datat).transpose()
+	
+        shape = np.shape(data)
+        columns = shape[0]
+        rows = shape[1]
+        #for i in range(columns):
+        #        for j in range(rows):
+        #                data[i,j] = putBlankInPlaceOfNone(data[i,j])
+        
+        gal_name = data[0]
+	morphtype = data[1]
+        core = data[2]
+        core[core=='1'] = 'yes'
+        core[core=='0'] = 'no'
+        core_inferred_from_sigma = data[3]
+        core_inferred_from_sigma[core_inferred_from_sigma=='1'] = '?'
+        core_inferred_from_sigma[core_inferred_from_sigma=='0'] = ' '
+        distance = data[4].astype(np.float)
+        mass_BH = data[5].astype(np.float)/10**8
+        perr_mass_BH = data[6].astype(np.float)/10**8
+        merr_mass_BH = data[7].astype(np.float)/10**8
+	mag_sph = data[8].astype(np.float)
+	perr_mag_sph = data[9].astype(np.float)
+	merr_mag_sph = data[10].astype(np.float)
+	mag_tot = data[11].astype(np.float)
+	color = data[12].astype(np.float)
+		
+	log_ML = 3.98*color+0.13 # meidt+2014
+	ML = 10**log_ML
+	
+	mass_sph = ML*10**(-0.4*(mag_sph-3.25))/10**10
+	perr_mass_sph = (ML*10**(-0.4*(mag_sph-merr_mag_sph-3.25)) - mass_sph ) /10**10
+	merr_mass_sph = (mass_sph - ML*10**(-0.4*(mag_sph+perr_mag_sph-3.25)) ) /10**10
+		
+	mmsampletableFile = open(mmsampletableFileName, 'w')
+        sys.stdout = mmsampletableFile
+        
+        header_mmpaper_sampletable(True)
+        for i in range(rows):
+		if gal_name[i] == 'n4473':
+			footer_mmpaper_sampletable(True)
+			print
+			header_mmpaper_sampletable(False)
+                gal_name[i] = gal_name[i].replace('circinus', 'Circinus ')
+                if gal_name[i][0] == 'n':
+                        gal_name[i] = gal_name[i].replace('n', 'NGC ')
+                if gal_name[i][0] == 'i':
+                        gal_name[i] = gal_name[i].replace('ic', 'IC ')
+                if gal_name[i][0] == 'u':
+                        gal_name[i] = gal_name[i].replace('ugc', 'UGC ')
+                if gal_name[i][0] == 'm':
+                        gal_name[i] = gal_name[i].replace('m', 'M')
+                if gal_name[i][-1] == 'a':
+                        gal_name[i] = gal_name[i].replace('a', 'A')
+                gal_name[i] = gal_name[i].replace('exp', '')    
+                print gal_name[i], ' & ', 
+		print morphtype[i], ' & ', 
+                print str(core[i])+str(core_inferred_from_sigma[i]), ' & ',  
+                print '$'+str("{0:.1f}".format(distance[i]))+'$', ' & ', 
+                print_bhmass(mass_BH[i],merr_mass_BH[i],perr_mass_BH[i])
+		print '$' + str("{0:.2f}".format(mag_sph[i])) + '_{-' + str("{0:.2f}".format(merr_mag_sph[i])) + '}^{+' + str("{0:.2f}".format(perr_mag_sph[i])) + '}$ ', ' & ',
+		print '$' + str("{0:.2f}".format(mag_tot[i])) + '$ ', ' & ',
+		print '$' + str("{0:.2f}".format(color[i])) +'$', ' & ', 
+		#print '$' + str("{0:.2f}".format(mass_sph[i])) + '_{' + str("{0:.2f}".format(merr_mass_sph[i])) + '}^{+' + str("{0:.2f}".format(perr_mass_sph[i])) + '}$ ', 
+                print_mass(mass_sph[i],merr_mass_sph[i],perr_mass_sph[i])
+		print ' \\\\ '
+        footer_mmpaper_sampletable(False)
+	
+        mmsampletableFile.close() 
+        terminal = sys.stdout
+        #("{0:.2f}".format(b))
+        #("{0:.2f}".format(b))
+
+
+
         
 def main():
         #datapaper_sampletable()
-	datapaper_fitresultstable()
+	#datapaper_fitresultstable()
+	mmpaper_sampletable()
 
 main()
