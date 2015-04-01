@@ -154,10 +154,11 @@ representing a notable improvement over the past studies dominated by early-type
 
 \section{Data}
 \label{sec:data}
-Our galaxy sample consists of 66 objects for which a dynamical measurement of the black hole mass had been reported in the literature 
+Our galaxy sample (see Table \ref{tab:sample}) 
+consists of 66 objects for which a dynamical measurement of the black hole mass had been reported in the literature 
 \citep{grahamscott2013,rusli2013bhmassesDM} at the time we started this project, 
 and for which we were able to obtain useful bulge parameters from $3.6\rm~\mu m$ \emph{Spitzer} satellite imagery. 
-Bulge luminosities were derived from our state-of-the-art galaxy decompositions, which take into account 
+Bulge magnitudes were derived from our state-of-the-art galaxy decompositions, which take into account 
 bulges, disks, spiral arms, bars, rings, haloes, extended or unresolved nuclear sources and partially depleted cores.
 Kinematical information \citep{atlas3dIII-MNRAS,scott2014,arnold2014} was used 
 to confirm the presence of rotationally supported components in most early-type galaxies, 
@@ -178,7 +179,19 @@ when available for our galaxies,
 or were estimated from the bulge stellar velocity dispersion, $\sigma$, 
 using the colour-$\sigma$ relation presented by \citeauthor{peletier2012} (\citeyear{peletier2012}, their Figure 6).
 We point out here that using a single $\Gamma_{3.6} = 0.6$, independent of $[3.6] - [4.5]$ colour, 
-does not significantly affect the results of our analysis.
+does not significantly affect the results of our analysis. \\
+The S\'ersic/core-S\'ersic classification presented in this work 
+comes from the compilation of \citet{savorgnangraham2014},
+who identified partially depleted cores according to the same criteria used by \citet{grahamscott2013}.
+When no high-resolution image analysis was available from the literature, 
+they inferred the presence of a partially depleted core based on the stellar velocity dispersion:
+a galaxy is classified as core-S\'ersic if $\sigma > 270\rm~km~s^{-1}$,
+or as S\'ersic if $\sigma < 166\rm~km~s^{-1}$. \\
+For each galaxy, the total luminosity (or galaxy luminosity) is the sum of the luminosities of all its sub-components. 
+Due to the complexity of their modelling, 
+four galaxies (see Table \ref{tab:sample}, column 7) had their galaxy luminosities 
+underestimated\footnote{These four cases will be discussed in \emph{Paper I}.}, 
+which are given here as lower limits. 
 
 
 \input{table_sample.tex}
@@ -200,41 +213,128 @@ does not significantly affect the results of our analysis.
 
 \section{Analysis}
 \label{sec:anal}
+
 \begin{figure}[h]
 \begin{center}
 \includegraphics[width=\columnwidth]{images/mbh_vs_mag_sph.pdf}
-\caption{}
-\label{fig:}
+\caption{Black hole mass against $3.6\rm~\mu m$ spheroid absolute magnitude. 
+Symbols are coded according to the galaxy morphological type: red circle = elliptical, red star = elliptical/lenticular, 
+red upward triangle = lenticular, blue downward triangle = lenticular/spiral, blue square = spiral, black diamond = merger. 
+Empty symbols represent core-S\'ersic spheroids, whereas filled symbols are used for S\'ersic spheroids. 
+The red dashed line indicates the BCES bisector linear regression for early-type galaxies (ellipticals+lenticulars), 
+with the red shaded area denoting its $1\sigma$ uncertainty. 
+The blue solid line shows the BCES bisector linear regression for spiral galaxies, 
+with the blue shaded area denoting its $1\sigma$ uncertainty. 
+The black dashed-dotted and dotted lines represent the BCES bisector linear regressions for core-S\'ersic and S\'ersic spheroids, respectively.}
+\label{fig:mbhmagsph}
 \end{center}
 \end{figure}
 
-\section{Analysis}
-\label{sec:anal}
 \begin{figure}[h]
 \begin{center}
 \includegraphics[width=\columnwidth]{images/mbh_vs_mag_tot.pdf}
-\caption{}
+\caption{Black hole mass against $3.6\rm~\mu m$ galaxy absolute magnitude. 
+Symbols are coded as in Figure \ref{fig:mbhmagsph}.
+Four spiral galaxies had their magnitudes overestimated and are shown as upper limits. 
+}
 \label{fig:}
 \end{center}
 \end{figure}
 
 
 
-\section{Analysis}
-\label{sec:anal}
 \begin{figure}[h]
 \begin{center}
 \includegraphics[width=\columnwidth]{images/mbh_vs_mass_sph_agn.pdf}
-\caption{}
-\label{fig:}
+\caption{Black hole mass against spheroid stellar mass. 
+Symbols are coded as in Figure \ref{fig:mbhmagsph}, 
+with the addition of the blue dots representing {\bf the AGN sample Jiang}, 
+and the blue crossed circles denoting {\bf the other AGNs}.
+The red dashed line indicates the BCES bisector linear regression for early-type galaxies (ellipticals+lenticulars), 
+with the red shaded area denoting its $1\sigma$ uncertainty. 
+The blue solid line shows the BCES bisector linear regression for spiral galaxies, 
+with the blue shaded area denoting its $1\sigma$ uncertainty. }
+\label{fig:mbhmasssph}
 \end{center}
 \end{figure}
 
 
+
+
+\begin{table*}
+\centering
+\caption{Linear regression analysis.}
+\begin{tabular}{llccccc}
+\hline
+\hline
+{\bf Subsample (size)} & {\bf Regression} & $\boldsymbol \alpha$ & $\boldsymbol \beta$ & $\boldsymbol X_0$ & $\boldsymbol \epsilon$ & $\boldsymbol \Delta$ \\ 
+\hline 
+\\
+ & \multicolumn{6}{c}{$\log[M_{\rm BH}/{\rm M_\odot}] = \alpha + \beta[(MAG_{\rm sph} - X_0)/{\rm mag}]$} \\ [0.5em]
+Core-S\'ersic (22) & BCES OLS$(Y|X)$   & $9.06 \pm 0.09$ & $-0.3  \pm 0.1$  & $-25.73$ & $-$    & $0.42$ \\ 
+                   & BCES OLS$(X|Y)$   & $9.1  \pm 0.1$  & $-0.6  \pm 0.1$  & $-25.73$ & $-$    & $0.61$ \\
+                   & BCES Bisector     & $9.1  \pm 0.1$  & $-0.47 \pm 0.08$ & $-25.73$ & $-$    & $0.48$ \\
+                   & FITEXY OLS$(Y|X)$ & $9.06^{+0.09}_{-0.08}$ & $-0.26^{+0.07}_{-0.08}$ & $-25.73$ & $0.37$ & $0.42$ \\
+                   & FITEXY OLS$(X|Y)$ & $9.0^{+0.1}_{-0.1}$ & $-0.7^{+0.2}_{-0.3}$ & $-25.73$ & $0.85$ & $0.67$ \\
+                   & FITEXY Bisector   & $9.0^{+0.1}_{-0.1}$ & $-0.5^{+0.1}_{-0.2}$ & $-25.73$ & $-$    & $0.48$ \\
+
+S\'ersic (44) & BCES OLS$(Y|X)$   & $7.71 \pm 0.09$ & $-0.41 \pm 0.08$ & $-22.92$ & $-$    & $0.61$ \\
+              & BCES OLS$(X|Y)$   & $7.7  \pm 0.1$  & $-0.9  \pm 0.2 $ & $-22.92$ & $-$    & $0.93$ \\
+              & BCES Bisector     & $7.7  \pm 0.1$  & $-0.61 \pm 0.08$ & $-22.92$ & $-$    & $0.71$ \\
+              & FITEXY OLS$(Y|X)$ & $7.72^{+0.08}_{-0.08}$ & ${-0.41}^{+0.07}_{-0.07}$ & $-22.92$ & $0.54$ & $0.61$ \\
+              & FITEXY OLS$(X|Y)$ & $7.7^{+0.1}_{-0.1}$ & $-0.9^{+0.1}_{-0.2}$ & $-22.92$ & $0.89$ & $0.93$ \\
+              & FITEXY Bisector   & $7.7^{+0.1}_{-0.1}$ & $-0.61^{+0.09}_{-0.12}$ & $-22.92$ & $-$	& $0.71$ \\
+
+%Ellipticals (E) (30)   & BCES OLS$(Y|X)$   & $8.80 \pm 0.07$ & $-0.53 \pm 0.09$ & $-25.45$ & $-$    & $0.42$ \\
+% 		       & BCES OLS$(X|Y)$   & $8.80 \pm 0.08$ & $-0.66 \pm 0.07$ & $-25.45$ & $-$    & $0.48$ \\
+% 		       & BCES Bisector     & $8.80 \pm 0.08$ & $-0.59 \pm 0.07$ & $-25.45$ & $-$    & $0.44$ \\
+% 		       & FITEXY OLS$(Y|X)$ & $8.81^{+0.07}_{-0.07}$ & $-0.44^{+0.06}_{-0.07}$ & $-25.45$ & $0.33$     & $0.40$ \\
+% 		       & FITEXY OLS$(X|Y)$ & $8.78^{+0.09}_{-0.09}$ & $-0.7^{+0.1}_{-0.1}$    & $-25.45$ & $0.60$     & $0.50$\\
+% 		       & FITEXY Bisector   & $8.80^{+0.08}_{-0.08}$ & $-0.56^{+0.08}_{-0.10}$ & $-25.45$ & $-$        & $0.43$ \\
+%
+%Lenticulars (S0) (13)  & BCES OLS$(Y|X)$   & $7.9 \pm 0.1$ & $-0.4 \pm 0.2$ & $-22.19$ & $-$    & $0.56$ \\
+% 		       & BCES OLS$(X|Y)$   & $7.9 \pm 0.3$ & $-1.1 \pm 0.5$ & $-22.19$ & $-$    & $1.01$ \\
+% 		       & BCES Bisector     & $7.9 \pm 0.2$ & $-0.7 \pm 0.2$ & $-22.19$ & $-$    & $0.69$ \\
+% 		       & FITEXY OLS$(Y|X)$ & $7.9^{+0.2}_{-0.1}$ & $-0.3^{+0.2}_{-0.2}$ & $-22.19$ & $0.51$     & $0.56$ \\
+% 		       & FITEXY OLS$(X|Y)$ & $7.8^{+0.3}_{-0.4}$ & $-1.3^{+0.4}_{-1.3}$ & $-22.19$ & $0.71$     & $1.20$\\
+% 		       & FITEXY Bisector   & $7.9^{+0.2}_{-0.3}$ & $-0.7^{+0.3}_{-0.4}$ & $-22.19$ & $-$        & $0.71$ \\
+%
+Early-type (E+S0) (45) & BCES OLS$(Y|X)$   & $8.56 \pm 0.07$ & $-0.33 \pm 0.04$ & $-24.47$ & $-$    & $0.46$ \\
+ 		       & BCES OLS$(X|Y)$   & $8.56 \pm 0.08$ & $-0.48 \pm 0.05$ & $-24.47$ & $-$    & $0.55$ \\
+ 		       & BCES Bisector     & $8.56 \pm 0.07$ & $-0.40 \pm 0.04$ & $-24.47$ & $-$    & $0.49$ \\
+ 		       & FITEXY OLS$(Y|X)$ & $8.56^{+0.06}_{-0.06}$ & $-0.32^{+0.03}_{-0.04}$ & $-24.47$ & $0.40$ & $0.46$ \\
+ 		       & FITEXY OLS$(X|Y)$ & $8.54^{+0.08}_{-0.08}$ & $-0.49^{+0.05}_{-0.06}$ & $-24.47$ & $1.00$ & $0.57$\\
+ 		       & FITEXY Bisector   & $8.55^{+0.07}_{-0.07}$ & $-0.41^{+0.04}_{-0.05}$ & $-24.47$ & $-$    & $0.49$ \\
+
+Late-type (S) (17) & BCES OLS$(Y|X)$   & $7.2 \pm 0.2$ & $-0.8 \pm 0.4$ & $-22.33$ & $-$    & $0.70$ \\
+ 		   & BCES OLS$(X|Y)$   & $7.2 \pm 0.3$ & $-1.7 \pm 0.7$ & $-22.33$ & $-$    & $1.26$ \\
+ 		   & BCES Bisector     & $7.2 \pm 0.2$ & $-1.1 \pm 0.3$ & $-22.33$ & $-$    & $0.88$ \\
+ 		   & FITEXY OLS$(Y|X)$ & $7.2^{+0.1}_{-0.1}$ & $-0.5^{+0.2}_{-0.2}$ & $-22.33$ & $0.54$ & $0.63$ \\
+ 		   & FITEXY OLS$(X|Y)$ & $7.4^{+0.5}_{-0.3}$ & $-2.0^{+0.7}_{-2.3}$ & $-22.33$ & $0.54$ & $1.51$ \\
+ 		   & FITEXY Bisector   & $7.3^{+0.4}_{-0.3}$ & $-1.0^{+0.3}_{-0.5}$ & $-22.33$ & $-$    & $0.82$ \\
+\hline 
+\\
+ & \multicolumn{6}{c}{$\log[M_{\rm BH}/{\rm M_\odot}] = \alpha + \beta[(MAG_{\rm gal} - X_0)/{\rm mag}]$} \\ [0.5em]
+Early-type (E+S0) (45) & BCES OLS$(Y|X)$   & $8.56 \pm 0.06$ & $-0.43 \pm 0.05$ & $$ & $-$ & $0.4487$ \\
+ 		       & BCES OLS$(X|Y)$   & $8.56 \pm 0.08$ & $-0.63 \pm 0.05$ & $$ & $-$ & $0.5329$ \\
+ 		       & BCES Bisector     & $8.56 \pm 0.07$ & $-0.53 \pm 0.04$ & $$ & $-$ & $0.4713$ \\
+ 		       & FITEXY OLS$(Y|X)$ & $$ & $$ & $$ & $$ & $$ \\
+ 		       & FITEXY OLS$(X|Y)$ & $$ & $$ & $$ & $$ & $$ \\
+ 		       & FITEXY Bisector   & $$ & $$ & $$ & $-$    & $$ \\
+		   
+		  
+\hline 
+\hline
+\end{tabular}
+\label{tab:lreg} 
+\end{table*}
 
 \section{Results}
 \label{sec:res}
 
+compare scatter mbh-msph and mbh-mgal for early types
+
+if 2 overmassive bhs removed, what happens?
 
 
 \section{Conclusions}

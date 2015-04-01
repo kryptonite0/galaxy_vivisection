@@ -23,45 +23,45 @@ Name 1 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry
 while executing---line 1671 of file apj.bst
 Name 2 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
 while executing---line 1671 of file apj.bst
-You've used 66 entries,
+You've used 67 entries,
             3085 wiz_defined-function locations,
-            1103 strings with 21335 characters,
-and the built_in function-call counts, 33421 in all, are:
-= -- 2683
-> -- 2653
-< -- 27
-+ -- 890
-- -- 964
-* -- 2961
-:= -- 6347
-add.period$ -- 66
-call.type$ -- 66
-change.case$ -- 452
-chr.to.int$ -- 63
-cite$ -- 66
-duplicate$ -- 1264
-empty$ -- 1873
-format.name$ -- 1041
-if$ -- 6565
+            1107 strings with 21541 characters,
+and the built_in function-call counts, 33806 in all, are:
+= -- 2718
+> -- 2675
+< -- 28
++ -- 897
+- -- 971
+* -- 2989
+:= -- 6419
+add.period$ -- 67
+call.type$ -- 67
+change.case$ -- 458
+chr.to.int$ -- 64
+cite$ -- 67
+duplicate$ -- 1284
+empty$ -- 1900
+format.name$ -- 1052
+if$ -- 6642
 int.to.chr$ -- 4
 int.to.str$ -- 0
-missing$ -- 63
-newline$ -- 202
-num.names$ -- 267
-pop$ -- 493
+missing$ -- 64
+newline$ -- 205
+num.names$ -- 271
+pop$ -- 501
 preamble$ -- 1
-purify$ -- 452
+purify$ -- 458
 quote$ -- 0
-skip$ -- 1047
+skip$ -- 1060
 stack$ -- 0
-substring$ -- 1367
+substring$ -- 1378
 swap$ -- 30
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 594
+type$ -- 603
 warning$ -- 0
-while$ -- 254
+while$ -- 257
 width$ -- 0
-write$ -- 663
+write$ -- 673
 (There were 8 error messages)

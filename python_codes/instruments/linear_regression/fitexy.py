@@ -2,6 +2,7 @@ import numpy as np
 import bces
 import matplotlib.pyplot as plt
 import matplotlib.cm as cm
+import absolutescatter
 
 logfileName = './fitexy.log'
 
@@ -50,10 +51,7 @@ def modfitexy(x,sigx,y,sigy,mode):
 		
 	# print chisqmin,afit,bfit
 	# compute absolute scatter
-	absscat = 0.0
-	for i in range(0,N):
-		absscat = absscat + (y[i] - afit - bfit*x[i])**2
-	absscat = (absscat/N)**0.5 # check if N or N-1	
+	absscat = absolutescatter.get_absscatter(x, y, afit, bfit)
 	
 	print 'y = a + bx'
 	print 'Mode fit:', mode
@@ -125,22 +123,26 @@ def bisect_modfitexy(x,sigx,y,sigy):
 	perr_alpha_2 = np.arctan(bfit_2+perr_bfit_2) - np.arctan(bfit_2)
 	merr_alpha_2 = np.arctan(bfit_2) - np.arctan(bfit_2-merr_bfit_2)
 	
-	perr_alpha_bisec = (perr_alpha_1**2+perr_alpha_2**2)**0.5
-	merr_alpha_bisec = (merr_alpha_1**2+merr_alpha_2**2)**0.5
+	perr_alpha_bisec = (perr_alpha_1**2+perr_alpha_2**2)**0.5/2**0.5
+	merr_alpha_bisec = (merr_alpha_1**2+merr_alpha_2**2)**0.5/2**0.5
 	
 	perr_b_bisec = np.tan(perr_alpha_bisec+np.arctan(b_bisec)) - b_bisec
 	merr_b_bisec = b_bisec - np.tan(np.arctan(b_bisec)-merr_alpha_bisec)
 	
 	#error on intercept
 	#true only in the approximation afit_1 ~ afit_2
-	perr_a_bisec = (perr_afit_1**2 + perr_afit_2**2)**0.5
-	merr_a_bisec = (merr_afit_1**2 + merr_afit_2**2)**0.5
+	perr_a_bisec = (perr_afit_1**2 + perr_afit_2**2)**0.5/2**0.5
+	merr_a_bisec = (merr_afit_1**2 + merr_afit_2**2)**0.5/2**0.5
+	
+	absscat_bisec = absolutescatter.get_absscatter(x, y, a_bisec, b_bisec)
+
 	
 	print '--------------------------'
 	print 'Bisector FITEXY'
 	print 'y = a + bx'
 	print 'a =', a_bisec, '+', perr_a_bisec, '-', merr_a_bisec
 	print 'b =', b_bisec, '+', perr_b_bisec, '-', merr_b_bisec
+	print 'absolute scatter Delta =', absscat_bisec
 	
 	logfile.write('\n\nBisector FITEXY \n')
 	logfile.write('a =' + str(a_bisec) + '+' + str(perr_a_bisec) + '-' + str(merr_a_bisec) + '\n')
@@ -174,8 +176,8 @@ def bisect_modfitexy(x,sigx,y,sigy):
 
 def get_errors_ab(x,sigx,y,sigy,afit,bfit,ainit_err,binit_err,epsilonfit,chisqmin,tolerance,N,mode):
 	
-	a_range = np.arange(afit-3*ainit_err,afit+3*ainit_err+tolerance,tolerance)
-	b_range = np.arange(bfit-3*binit_err,bfit+3*binit_err+tolerance,tolerance)
+	a_range = np.arange(afit-15*ainit_err,afit+15*ainit_err+tolerance,tolerance)
+	b_range = np.arange(bfit-15*binit_err,bfit+15*binit_err+tolerance,tolerance)
 	chisqgrid = np.zeros((len(a_range), len(b_range)))
 		
 	for n1 in range(len(a_range)):

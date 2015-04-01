@@ -95,11 +95,12 @@ def header_mmpaper_sampletable(caption):
         	print '\\emph{Column (1):} Galaxy name.                       '
 		print '\\emph{Column (2):} Morphological type.                       '
         	print '\\emph{Column (3):} Presence of a partially depleted core. \
-			The question mark is used when the classification has come from the velocity dispersion criteria mentioned in Section \\ref{sec:??}.   '
+			The question mark is used when the classification has come from the velocity dispersion criteria mentioned in Section \\ref{sec:data}.   '
         	print '\\emph{Column (4):} Distance.                                   '
         	print '\\emph{Column (5):} Black hole mass.                                   '
 		print '\\emph{Column (6):} Absolute $3.6\\rm~\mu m$ bulge magnitude.                                   '
-		print '\\emph{Column (7):} Absolute $3.6\\rm~\mu m$ galaxy magnitude.                                   '
+		print '\\emph{Column (7):} Absolute $3.6\\rm~\mu m$ galaxy magnitude. \
+			The four galaxy magnitudes marked with a * are lower limits.                                   '
 		print '\\emph{Column (8):} $[3.6]-[4.5]$ colour.                                   '
 		print '\\emph{Column (9):} Bulge stellar mass. }                      '
         print '\\begin{tabular}{lllllllll}                           '
@@ -559,7 +560,10 @@ def mmpaper_sampletable():
                 print '$'+str("{0:.1f}".format(distance[i]))+'$', ' & ', 
                 print_bhmass(mass_BH[i],merr_mass_BH[i],perr_mass_BH[i])
 		print '$' + str("{0:.2f}".format(mag_sph[i])) + '_{-' + str("{0:.2f}".format(merr_mag_sph[i])) + '}^{+' + str("{0:.2f}".format(perr_mag_sph[i])) + '}$ ', ' & ',
-		print '$' + str("{0:.2f}".format(mag_tot[i])) + '$ ', ' & ',
+		print '$' + str("{0:.2f}".format(mag_tot[i])) + '$ ', 
+		if gal_name[i] in ['M94', 'NGC 3079', 'NGC 4388', 'NGC 4945']:
+			print '*',
+		print ' & ',
 		print '$' + str("{0:.2f}".format(color[i])) +'$', ' & ', 
 		#print '$' + str("{0:.2f}".format(mass_sph[i])) + '_{' + str("{0:.2f}".format(merr_mass_sph[i])) + '}^{+' + str("{0:.2f}".format(perr_mass_sph[i])) + '}$ ', 
                 print_mass(mass_sph[i],merr_mass_sph[i],perr_mass_sph[i])
