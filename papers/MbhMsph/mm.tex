@@ -26,9 +26,9 @@
 
 \begin{document}
 
-\title{M-M paper, morphological bias }
+\title{M-M paper, morphological dependence }
 
-\author{G. A. D. Savorgnan\altaffilmark{1} and A. W. Graham\altaffilmark{1}}
+\author{G. A. D. Savorgnan\altaffilmark{1} and A. W. Graham\altaffilmark{1} and A. Marconi and E. Sani and L.K. Hunt}
 \affil{Centre for Astrophysics and Supercomputing, Swinburne University of Technology, Hawthorn, Victoria 3122, Australia.}
 \email{gsavorgn@astro.swin.edu.au}
 
@@ -58,7 +58,20 @@
 %% editorial office after submission.
 
 \begin{abstract}
-abstract 
+We have the best latest M-L and M-M diagrams (66 galaxies = biggest sample ever used, IR imaging = minimally affected by dust and star formation, 
+state-of-the-art multicomponent galaxy decompositions = 
+we fit bulges, disks, spiral arms, bars, rings, haloes, extended or unresolved nuclear sources and partially depleted cores).
+Previous samples were overwhelmingly dominated by early-type galaxies, our sample includes 17 spiral galaxies, half of which have $M_{\rm BH} < 10^7 M_\odot$,
+thus we can explore the low-mass end of the diagrams.
+We provide a table with spheroid luminosities, spheroid stellar masses and galaxy luminosities. 
+We give updated linear regressions for Sersic/core-Sersic galaxies and for different morphological types (E/S0, Sp). 
+Sersic and core-Sersic galaxies have slopes consistent with each other (contrary to what claimed by GS13). 
+In the M-M diagram, bulges of early type galaxies have a slope of $\sim$1, while bulges of spiral galaxies have a slope of 2-3.
+Linear regressions that we provide are symmetrical (to be compared with theoretical expectations) and non-symmetrical (to be used to predict BH masses).
+Contrary to a previous claim, the bulge luminosity appears to be a better indicator of the BH mass than the galaxy luminosity.
+Bulges with $n<2$, claimed by some to be pseudobulges, are not offset to lower BH masses from the correlation defined by bulges with $n>2$.
+
+
 \end{abstract}
 
 \keywords{keywords}
@@ -271,6 +284,13 @@ with the blue shaded area denoting its $1\sigma$ uncertainty. }
 \hline 
 \\
  & \multicolumn{6}{c}{$\log[M_{\rm BH}/{\rm M_\odot}] = \alpha + \beta[(MAG_{\rm sph} - X_0)/{\rm mag}]$} \\ [0.5em]
+All (66)	       & BCES OLS$(Y|X)$   & $8.16 \pm 0.07$ & $-0.44 \pm 0.04$ & $-23.86$ & $-$ & $0.56$ \\
+		       & BCES OLS$(X|Y)$   & $8.16 \pm 0.08$ & $-0.61 \pm 0.05$ & $-23.86$ & $-$ & $0.68$ \\
+		       & BCES Bisector     & $8.16 \pm 0.07$ & $-0.52 \pm 0.04$ & $-23.86$ & $-$ & $0.60$ \\
+		       & FITEXY OLS$(Y|X)$ & $8.17^{+0.07}_{-0.06}$ & $-0.43^{+0.03}_{-0.03}$ & $-23.86$ & $0.49$ & $0.56$ \\
+		       & FITEXY OLS$(X|Y)$ & $8.15^{+0.07}_{-0.07}$ & $-0.61^{+0.04}_{-0.05}$ & $-23.86$ & $0.96$ & $0.67$ \\
+		       & FITEXY Bisector   & $8.16^{+0.07}_{-0.07}$ & $-0.51^{+0.04}_{-0.04}$ & $-23.86$ & $-$    & $0.60$ \\
+
 Core-S\'ersic (22) & BCES OLS$(Y|X)$   & $9.06 \pm 0.09$ & $-0.3  \pm 0.1$  & $-25.73$ & $-$    & $0.42$ \\ 
                    & BCES OLS$(X|Y)$   & $9.1  \pm 0.1$  & $-0.6  \pm 0.1$  & $-25.73$ & $-$    & $0.61$ \\
                    & BCES Bisector     & $9.1  \pm 0.1$  & $-0.47 \pm 0.08$ & $-25.73$ & $-$    & $0.48$ \\
@@ -315,12 +335,26 @@ Late-type (S) (17) & BCES OLS$(Y|X)$   & $7.2 \pm 0.2$ & $-0.8 \pm 0.4$ & $-22.3
 \hline 
 \\
  & \multicolumn{6}{c}{$\log[M_{\rm BH}/{\rm M_\odot}] = \alpha + \beta[(MAG_{\rm gal} - X_0)/{\rm mag}]$} \\ [0.5em]
-Early-type (E+S0) (45) & BCES OLS$(Y|X)$   & $8.56 \pm 0.06$ & $-0.43 \pm 0.05$ & $$ & $-$ & $0.4487$ \\
- 		       & BCES OLS$(X|Y)$   & $8.56 \pm 0.08$ & $-0.63 \pm 0.05$ & $$ & $-$ & $0.5329$ \\
- 		       & BCES Bisector     & $8.56 \pm 0.07$ & $-0.53 \pm 0.04$ & $$ & $-$ & $0.4713$ \\
- 		       & FITEXY OLS$(Y|X)$ & $$ & $$ & $$ & $$ & $$ \\
- 		       & FITEXY OLS$(X|Y)$ & $$ & $$ & $$ & $$ & $$ \\
- 		       & FITEXY Bisector   & $$ & $$ & $$ & $-$    & $$ \\
+All (62)               & BCES OLS$(Y|X)$   & $8.26 \pm 0.08$ & $-0.49 \pm 0.06$ & $-24.78$ & $-$ & $0.64$ \\
+ 		       & BCES OLS$(X|Y)$   & $8.3 \pm 0.1$   & $-1.0 \pm 0.1$   & $-24.78$ & $-$ & $0.92$ \\
+ 		       & BCES Bisector     & $8.26 \pm 0.09$ & $-0.72 \pm 0.07$ & $-24.78$ & $-$ & $0.71$ \\
+ 		       & FITEXY OLS$(Y|X)$ & $8.26^{+0.08}_{-0.08}$ & $-0.48^{+0.06}_{-0.07}$ & $-24.78$ & $0.62$ & $0.64$ \\
+ 		       & FITEXY OLS$(X|Y)$ & $8.3^{+0.1}_{-0.1}$    & $-1.0^{+0.1}_{-0.2}$    & $-24.78$ & $0.87$ & $0.93$ \\
+ 		       & FITEXY Bisector   & $8.3^{+0.1}_{-0.1}$    & $-0.72^{+0.08}_{-0.10}$ & $-24.78$ & $-$    & $0.71$ \\
+		   
+Early-type (E+S0) (45) & BCES OLS$(Y|X)$   & $8.56 \pm 0.06$ & $-0.43 \pm 0.05$ & $-24.88$ & $-$ & $0.45$ \\
+ 		       & BCES OLS$(X|Y)$   & $8.56 \pm 0.08$ & $-0.63 \pm 0.05$ & $-24.88$ & $-$ & $0.53$ \\
+ 		       & BCES Bisector     & $8.56 \pm 0.07$ & $-0.53 \pm 0.04$ & $-24.88$ & $-$ & $0.47$ \\
+ 		       & FITEXY OLS$(Y|X)$ & $8.56^{+0.06}_{-0.06}$ & $-0.41^{+0.05}_{-0.05}$ & $-24.88$ & $0.41$ & $0.45$ \\
+ 		       & FITEXY OLS$(X|Y)$ & $8.56^{+0.07}_{-0.09}$ & $-0.66^{+0.06}_{-0.08}$ & $-24.88$ & $0.79$ & $0.55$ \\
+ 		       & FITEXY Bisector   & $8.56^{+0.07}_{-0.07}$ & $-0.53^{+0.05}_{-0.07}$ & $-24.88$ & $-$    & $0.47$ \\
+		   
+%All (62)		& BCES OLS$(Y|X)$   & $$ & $$ & $$ & $-$ & $$ \\
+%			& BCES OLS$(X|Y)$   & $$ & $$ & $$ & $-$ & $$ \\
+%			& BCES Bisector     & $$ & $$ & $$ & $-$ & $$ \\
+%			& FITEXY OLS$(Y|X)$ & $$ & $$ & $$ & $$ & $$ \\
+%			& FITEXY OLS$(X|Y)$ & $$ & $$ & $$ & $$ & $$ \\
+%			& FITEXY Bisector   & $$ & $$ & $$ & $-$    & $$ \\
 		   
 		  
 \hline 
@@ -335,6 +369,7 @@ Early-type (E+S0) (45) & BCES OLS$(Y|X)$   & $8.56 \pm 0.06$ & $-0.43 \pm 0.05$ 
 compare scatter mbh-msph and mbh-mgal for early types
 
 if 2 overmassive bhs removed, what happens?
+
 
 
 \section{Conclusions}

@@ -176,8 +176,8 @@ def bisect_modfitexy(x,sigx,y,sigy):
 
 def get_errors_ab(x,sigx,y,sigy,afit,bfit,ainit_err,binit_err,epsilonfit,chisqmin,tolerance,N,mode):
 	
-	a_range = np.arange(afit-15*ainit_err,afit+15*ainit_err+tolerance,tolerance)
-	b_range = np.arange(bfit-15*binit_err,bfit+15*binit_err+tolerance,tolerance)
+	a_range = np.arange(afit-3*ainit_err,afit+3*ainit_err+tolerance,tolerance)
+	b_range = np.arange(bfit-3*binit_err,bfit+3*binit_err+tolerance,tolerance)
 	chisqgrid = np.zeros((len(a_range), len(b_range)))
 		
 	for n1 in range(len(a_range)):
