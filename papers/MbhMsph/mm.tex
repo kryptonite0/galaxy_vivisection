@@ -26,7 +26,7 @@
 
 \begin{document}
 
-\title{M-M paper, morphological dependence }
+\title{M-M paper, morphological dependence, red sequence }
 
 \author{G. A. D. Savorgnan\altaffilmark{1} and A. W. Graham\altaffilmark{1} and A. Marconi and E. Sani and L.K. Hunt}
 \affil{Centre for Astrophysics and Supercomputing, Swinburne University of Technology, Hawthorn, Victoria 3122, Australia.}
@@ -58,17 +58,22 @@
 %% editorial office after submission.
 
 \begin{abstract}
-We have the best latest M-L and M-M diagrams (66 galaxies = biggest sample ever used, IR imaging = minimally affected by dust and star formation, 
+We have the best latest M-L and M-M diagrams (66 galaxies = biggest sample ever used, IR imaging = 
+minimally affected by dust and star formation, 
 state-of-the-art multicomponent galaxy decompositions = 
 we fit bulges, disks, spiral arms, bars, rings, haloes, extended or unresolved nuclear sources and partially depleted cores).
-Previous samples were overwhelmingly dominated by early-type galaxies, our sample includes 17 spiral galaxies, half of which have $M_{\rm BH} < 10^7 M_\odot$,
+Previous samples were overwhelmingly dominated by early-type galaxies, our sample includes 17 spiral galaxies, 
+half of which have $M_{\rm BH} < 10^7 M_\odot$,
 thus we can explore the low-mass end of the diagrams.
 We provide a table with spheroid luminosities, spheroid stellar masses and galaxy luminosities. 
 We give updated linear regressions for Sersic/core-Sersic galaxies and for different morphological types (E/S0, Sp). 
 Sersic and core-Sersic galaxies have slopes consistent with each other (contrary to what claimed by GS13). 
 In the M-M diagram, bulges of early type galaxies have a slope of $\sim$1, while bulges of spiral galaxies have a slope of 2-3.
-Linear regressions that we provide are symmetrical (to be compared with theoretical expectations) and non-symmetrical (to be used to predict BH masses).
-Contrary to a previous claim, the bulge luminosity appears to be a better indicator of the BH mass than the galaxy luminosity.
+Linear regressions that we provide are symmetrical (to be compared with theoretical expectations) 
+and non-symmetrical (to be used to predict BH masses).
+Contrary to a previous claim, 
+the bulge luminosity appears to be a better indicator of the BH mass than the galaxy luminosity.
+only for early type galaxies one can use the tot luminosity as bh mass indicator {\bf check and expand}
 Bulges with $n<2$, claimed by some to be pseudobulges, are not offset to lower BH masses from the correlation defined by bulges with $n>2$.
 
 
@@ -143,27 +148,30 @@ but instead they converted $B-$band and $K_S-$band observed, total \emph{galaxy}
 using a mean statistical correction based on each object's morphological type and disc 
 inclination\footnote{While this resulted in individual bulge magnitudes not being exactly correct, 
 their large sample size allowed them to obtain a reasonably ensemble average correction.}. 
-It should be noted that $\sim$80\% of their core-S\'ersic spheroids were morphologically classified as elliptical galaxies, 
+However, this mean statistical correction was obtained from the results of non-modern bulge/disk decompositions, 
+which did not include extra components. 
+It should also be noted that $\sim$80\% of their core-S\'ersic spheroids were morphologically classified as elliptical galaxies, 
 and $\sim$80\% of their S\'ersic spheroids were morphologically classified as bulges of disk galaxies (lenticulars and spirals). \\
 Several recent papers \citep{jiang2011a,jiang2013,mathur2012,reines2013} claimed an offset at the low-mass end of the $M_{\rm BH} - M_{\rm *,sph}$ diagram,
 such that the black hole mass is lower than expected from the near-linear correlation traced by the high-mass, early-type spheroids. 
 However, \cite{grahamscott2015} showed that the low-mass spheroids ($10^{8.5} \lesssim M_{\rm *,sph}/{\rm M_\odot} \lesssim 10^{10.5}$) 
-are not randomly offset from the high-mass, near-linear correlation, 
-but lie on the two times steeper relation traced by the S\'ersic spheroids. \\
+are not somehow randomly offset from the high-mass, near-linear correlation, 
+but lie on the two times steeper relation traced by the S\'ersic spheroids. 
+{\bf AL: would you like to add a sentence here, mentioning your forthcoming paper with ewan?} \\
 Here we investigate substructure in the $M_{\rm BH} - L_{\rm sph}$ and $M_{\rm BH} - M_{\rm *,sph}$ diagrams 
 using state-of-the-art galaxy decompositions (Savorgnan \& Graham \emph{in preparation}, hereafter \emph{Paper I}) 
 for the largest sample of galaxies with directly measured black hole masses.
+Our galaxies are large and nearby, which allows us to perform accurate multicomponent decompositions 
+(instead of simple bulge/disk decompositions) without incurring in significant parameter degeneracies. 
 Our decompositions were obtained from $3.6\rm~\mu m$ \emph{Spitzer} satellite imagery, 
 which is an excellent proxy for the stellar mass, superior to the $K-$band (\citealt{sheth2010} and references therein).
 Nine of our galaxies have $M_{\rm BH} \lesssim 10^7\rm~M_\odot$, 
 which allows us to accurately constrain the slope of the correlation at the low-mass end.
 In addition to this, our galaxy sample includes 17 spiral galaxies, 
-representing a notable improvement over the past studies dominated by early-type systems.
-
-
-
-
- 
+representing a notable improvement over the past studies dominated by early-type systems. 
+In a forthcoming paper, we will explore the relation between black hole mass and bulge dynamical mass, 
+$M_{\rm dyn,sph} \propto R_{\rm e} \sigma^2$, and address the issue of a black hole fundamental plane.
+This paper is structured as follows... 
 
 \section{Data}
 \label{sec:data}
@@ -180,19 +188,24 @@ and to identify their extent (intermediate-scale, embedded disks or large-scale 
 give details about the data reduction process and the sophisticated galaxy modelling technique that we developed, 
 discuss how we estimated the uncertainties on the bulge parameters, 
 and illustrate the individual 66 galaxy decompositions. \\
-Bulge luminosities\footnote{Absolute luminosities were calculated assuming a $3.6\rm~\mu m$ solar absolute magnitude of $3.25\rm~mag$ \citep{sani2011}.} 
-were converted into stellar masses using the colour-$\Gamma_{3.6}$ relation published by 
+Bulge luminosities\footnote{Absolute luminosities were calculated 
+assuming a $3.6\rm~\mu m$ solar absolute magnitude of $3.25\rm~mag$ \citep{sani2011}.} 
+were first converted into stellar masses using a constant $3.6\rm~\mu m$ mass-to-light ratio, $\Gamma_{3.6} = 0.6$ \citep{meidt2014}.
+We then explored a more sophisticated way to compute mass-to-light ratios, 
+using the color-$\Gamma_{3.6}$ relation published by 
 \citeauthor{meidt2014} (\citeyear{meidt2014}, their equation 4), 
-which allows one to estimate the $3.6\rm~\mu m$ mass-to-light ratio, $\Gamma_{3.6}$, of a galaxy 
-from its $[3.6] - [4.5]$ colour. 
-Individual $[3.6] - [4.5]$ colours\footnote{These are integrated $[3.6] - [4.5]$ colours, measured in a circular aperture 
+which allows one to estimate $\Gamma_{3.6}$ of a galaxy from its $[3.6] - [4.5]$ color. 
+Individual $[3.6] - [4.5]$ colors\footnote{These are integrated $[3.6] - [4.5]$ colors, measured in a circular aperture 
 within one galaxy's effective radius.} were taken from 
 \citeauthor{peletier2012} (\citeyear{peletier2012}, column 8 of their Table 1) 
 when available for our galaxies, 
 or were estimated from the bulge stellar velocity dispersion, $\sigma$, 
-using the colour-$\sigma$ relation presented by \citeauthor{peletier2012} (\citeyear{peletier2012}, their Figure 6).
-We point out here that using a single $\Gamma_{3.6} = 0.6$, independent of $[3.6] - [4.5]$ colour, 
-does not significantly affect the results of our analysis. \\
+using the color-$\sigma$ relation presented by \citeauthor{peletier2012} (\citeyear{peletier2012}, their Figure 6).
+We found that the range in $[3.6] - [4.5]$ color is small ($0.06\rm~mag$), 
+and thus the range in $\Gamma_{3.6}$ is also small ($0.04$).
+After checking that using a single $\Gamma_{3.6} = 0.6$, independent of $[3.6] - [4.5]$ color, 
+does not significantly affect the results of our analysis, 
+we decided to use individual, color-dependent mass-to-light ratios. \\
 The S\'ersic/core-S\'ersic classification presented in this work 
 comes from the compilation of \citet{savorgnangraham2014},
 who identified partially depleted cores according to the same criteria used by \citet{grahamscott2013}.
@@ -200,20 +213,13 @@ When no high-resolution image analysis was available from the literature,
 they inferred the presence of a partially depleted core based on the stellar velocity dispersion:
 a galaxy is classified as core-S\'ersic if $\sigma > 270\rm~km~s^{-1}$,
 or as S\'ersic if $\sigma < 166\rm~km~s^{-1}$. \\
-For each galaxy, the total luminosity (or galaxy luminosity) is the sum of the luminosities of all its sub-components. 
+For each galaxy, the total luminosity (or galaxy luminosity, $L_{\rm gal}$) is the sum of the luminosities of all its sub-components. 
 Due to the complexity of their modelling, 
 four galaxies (see Table \ref{tab:sample}, column 7) had their galaxy luminosities 
 underestimated\footnote{These four cases will be discussed in \emph{Paper I}.}, 
 which are given here as lower limits. 
 
-
 \input{table_sample.tex}
-
- 
-
-
-
-
 
 %\begin{figure}[h]
 %\begin{center}
@@ -224,8 +230,6 @@ which are given here as lower limits.
 %\end{figure}
 
 
-\section{Analysis}
-\label{sec:anal}
 
 \begin{figure}[h]
 \begin{center}
@@ -272,38 +276,61 @@ with the blue shaded area denoting its $1\sigma$ uncertainty. }
 \end{figure}
 
 
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=\columnwidth]{images/mbh_vs_mag_sph_psb.pdf}
+\caption{Black hole mass against $3.6\rm~\mu m$ spheroid absolute magnitude. 
+Symbols are color coded according to the spheroid S\'ersic index $n_{\rm sph}$. 
+Bulges with $n_{\rm sph}<2$, claimed by some to be pseudobulges, are marked with an empty square. 
+The black solid line shows the BCES bisector linear regression for spheroids with $n_{\rm sph} \geq 2$. 
+The inset displays, for all spheroids, the vertical offset 
+from the correlation defined by spheroids with $n_{\rm sph} \geq 2$ only 
+versus the spheroid S\'ersic index. 
+The vertical dashed line corresponds to $n_{\rm sph} = 2$.
+Bulges with $n_{\rm sph}<2$ are not randomly offset to lower black hole masses 
+from the correlation traced by bulges with $n_{\rm sph} \geq 2$.}
+\label{fig:pseudob}
+\end{center}
+\end{figure}
 
 
 \begin{table*}
 \centering
-\caption{Linear regression analysis.}
+\caption{Linear regression analysis. {\bf X0 is the average X of the subsample...}}
 \begin{tabular}{llccccc}
 \hline
 \hline
 {\bf Subsample (size)} & {\bf Regression} & $\boldsymbol \alpha$ & $\boldsymbol \beta$ & $\boldsymbol X_0$ & $\boldsymbol \epsilon$ & $\boldsymbol \Delta$ \\ 
 \hline 
 \\
- & \multicolumn{6}{c}{$\log[M_{\rm BH}/{\rm M_\odot}] = \alpha + \beta[(MAG_{\rm sph} - X_0)/{\rm mag}]$} \\ [0.5em]
+{\bf Spheroids} & \multicolumn{6}{l}{$\log[M_{\rm BH}/{\rm M_\odot}] = \alpha + \beta[(MAG_{\rm sph} - X_0)/{\rm mag}]$} \\ [0.5em]
 All (66)	       & BCES OLS$(Y|X)$   & $8.16 \pm 0.07$ & $-0.44 \pm 0.04$ & $-23.86$ & $-$ & $0.56$ \\
 		       & BCES OLS$(X|Y)$   & $8.16 \pm 0.08$ & $-0.61 \pm 0.05$ & $-23.86$ & $-$ & $0.68$ \\
 		       & BCES Bisector     & $8.16 \pm 0.07$ & $-0.52 \pm 0.04$ & $-23.86$ & $-$ & $0.60$ \\
-		       & FITEXY OLS$(Y|X)$ & $8.17^{+0.07}_{-0.06}$ & $-0.43^{+0.03}_{-0.03}$ & $-23.86$ & $0.49$ & $0.56$ \\
-		       & FITEXY OLS$(X|Y)$ & $8.15^{+0.07}_{-0.07}$ & $-0.61^{+0.04}_{-0.05}$ & $-23.86$ & $0.96$ & $0.67$ \\
-		       & FITEXY Bisector   & $8.16^{+0.07}_{-0.07}$ & $-0.51^{+0.04}_{-0.04}$ & $-23.86$ & $-$    & $0.60$ \\
+		       & mFITEXY OLS$(Y|X)$ & $8.17^{+0.07}_{-0.06}$ & $-0.43^{+0.03}_{-0.03}$ & $-23.86$ & $0.49$ & $0.56$ \\
+		       & mFITEXY OLS$(X|Y)$ & $8.15^{+0.07}_{-0.07}$ & $-0.61^{+0.04}_{-0.05}$ & $-23.86$ & $0.96$ & $0.67$ \\
+		       & mFITEXY Bisector   & $8.16^{+0.07}_{-0.07}$ & $-0.51^{+0.04}_{-0.04}$ & $-23.86$ & $-$    & $0.60$ \\
 
+$n>2$ (43)	       & BCES OLS$(Y|X)$   & $8.58 \pm 0.07$ & $-0.42 \pm 0.06$ & $-24.77$ & $-$ & $0.46$ \\
+		       & BCES OLS$(X|Y)$   & $8.58 \pm 0.08$ & $-0.58 \pm 0.06$ & $-24.77$ & $-$ & $0.56$ \\
+		       & BCES Bisector     & $8.58 \pm 0.07$ & $-0.50 \pm 0.05$ & $-24.77$ & $-$ & $0.49$ \\
+		       & mFITEXY OLS$(Y|X)$ & $8.57^{+0.07}_{-0.06}$ & $-0.41^{+0.04}_{-0.04}$ & $-24.77$ & $0.38$ & $0.46$ \\
+		       & mFITEXY OLS$(X|Y)$ & $8.56^{+0.08}_{-0.08}$ & $-0.57^{+0.06}_{-0.07}$ & $-24.77$ & $0.78$ & $0.55$ \\
+		       & mFITEXY Bisector   & $8.57^{+0.07}_{-0.07}$ & $-0.49^{+0.05}_{-0.05}$ & $-24.77$ & $-$    & $0.49$ \\
+		   
 Core-S\'ersic (22) & BCES OLS$(Y|X)$   & $9.06 \pm 0.09$ & $-0.3  \pm 0.1$  & $-25.73$ & $-$    & $0.42$ \\ 
                    & BCES OLS$(X|Y)$   & $9.1  \pm 0.1$  & $-0.6  \pm 0.1$  & $-25.73$ & $-$    & $0.61$ \\
                    & BCES Bisector     & $9.1  \pm 0.1$  & $-0.47 \pm 0.08$ & $-25.73$ & $-$    & $0.48$ \\
-                   & FITEXY OLS$(Y|X)$ & $9.06^{+0.09}_{-0.08}$ & $-0.26^{+0.07}_{-0.08}$ & $-25.73$ & $0.37$ & $0.42$ \\
-                   & FITEXY OLS$(X|Y)$ & $9.0^{+0.1}_{-0.1}$ & $-0.7^{+0.2}_{-0.3}$ & $-25.73$ & $0.85$ & $0.67$ \\
-                   & FITEXY Bisector   & $9.0^{+0.1}_{-0.1}$ & $-0.5^{+0.1}_{-0.2}$ & $-25.73$ & $-$    & $0.48$ \\
+                   & mFITEXY OLS$(Y|X)$ & $9.06^{+0.09}_{-0.08}$ & $-0.26^{+0.07}_{-0.08}$ & $-25.73$ & $0.37$ & $0.42$ \\
+                   & mFITEXY OLS$(X|Y)$ & $9.0^{+0.1}_{-0.1}$ & $-0.7^{+0.2}_{-0.3}$ & $-25.73$ & $0.85$ & $0.67$ \\
+                   & mFITEXY Bisector   & $9.0^{+0.1}_{-0.1}$ & $-0.5^{+0.1}_{-0.2}$ & $-25.73$ & $-$    & $0.48$ \\
 
 S\'ersic (44) & BCES OLS$(Y|X)$   & $7.71 \pm 0.09$ & $-0.41 \pm 0.08$ & $-22.92$ & $-$    & $0.61$ \\
               & BCES OLS$(X|Y)$   & $7.7  \pm 0.1$  & $-0.9  \pm 0.2 $ & $-22.92$ & $-$    & $0.93$ \\
               & BCES Bisector     & $7.7  \pm 0.1$  & $-0.61 \pm 0.08$ & $-22.92$ & $-$    & $0.71$ \\
-              & FITEXY OLS$(Y|X)$ & $7.72^{+0.08}_{-0.08}$ & ${-0.41}^{+0.07}_{-0.07}$ & $-22.92$ & $0.54$ & $0.61$ \\
-              & FITEXY OLS$(X|Y)$ & $7.7^{+0.1}_{-0.1}$ & $-0.9^{+0.1}_{-0.2}$ & $-22.92$ & $0.89$ & $0.93$ \\
-              & FITEXY Bisector   & $7.7^{+0.1}_{-0.1}$ & $-0.61^{+0.09}_{-0.12}$ & $-22.92$ & $-$	& $0.71$ \\
+              & mFITEXY OLS$(Y|X)$ & $7.72^{+0.08}_{-0.08}$ & ${-0.41}^{+0.07}_{-0.07}$ & $-22.92$ & $0.54$ & $0.61$ \\
+              & mFITEXY OLS$(X|Y)$ & $7.7^{+0.1}_{-0.1}$ & $-0.9^{+0.1}_{-0.2}$ & $-22.92$ & $0.89$ & $0.93$ \\
+              & mFITEXY Bisector   & $7.7^{+0.1}_{-0.1}$ & $-0.61^{+0.09}_{-0.12}$ & $-22.92$ & $-$	& $0.71$ \\
 
 %Ellipticals (E) (30)   & BCES OLS$(Y|X)$   & $8.80 \pm 0.07$ & $-0.53 \pm 0.09$ & $-25.45$ & $-$    & $0.42$ \\
 % 		       & BCES OLS$(X|Y)$   & $8.80 \pm 0.08$ & $-0.66 \pm 0.07$ & $-25.45$ & $-$    & $0.48$ \\
@@ -322,32 +349,32 @@ S\'ersic (44) & BCES OLS$(Y|X)$   & $7.71 \pm 0.09$ & $-0.41 \pm 0.08$ & $-22.92
 Early-type (E+S0) (45) & BCES OLS$(Y|X)$   & $8.56 \pm 0.07$ & $-0.33 \pm 0.04$ & $-24.47$ & $-$    & $0.46$ \\
  		       & BCES OLS$(X|Y)$   & $8.56 \pm 0.08$ & $-0.48 \pm 0.05$ & $-24.47$ & $-$    & $0.55$ \\
  		       & BCES Bisector     & $8.56 \pm 0.07$ & $-0.40 \pm 0.04$ & $-24.47$ & $-$    & $0.49$ \\
- 		       & FITEXY OLS$(Y|X)$ & $8.56^{+0.06}_{-0.06}$ & $-0.32^{+0.03}_{-0.04}$ & $-24.47$ & $0.40$ & $0.46$ \\
- 		       & FITEXY OLS$(X|Y)$ & $8.54^{+0.08}_{-0.08}$ & $-0.49^{+0.05}_{-0.06}$ & $-24.47$ & $1.00$ & $0.57$\\
- 		       & FITEXY Bisector   & $8.55^{+0.07}_{-0.07}$ & $-0.41^{+0.04}_{-0.05}$ & $-24.47$ & $-$    & $0.49$ \\
+ 		       & mFITEXY OLS$(Y|X)$ & $8.56^{+0.06}_{-0.06}$ & $-0.32^{+0.03}_{-0.04}$ & $-24.47$ & $0.40$ & $0.46$ \\
+ 		       & mFITEXY OLS$(X|Y)$ & $8.54^{+0.08}_{-0.08}$ & $-0.49^{+0.05}_{-0.06}$ & $-24.47$ & $1.00$ & $0.57$\\
+ 		       & mFITEXY Bisector   & $8.55^{+0.07}_{-0.07}$ & $-0.41^{+0.04}_{-0.05}$ & $-24.47$ & $-$    & $0.49$ \\
 
 Late-type (S) (17) & BCES OLS$(Y|X)$   & $7.2 \pm 0.2$ & $-0.8 \pm 0.4$ & $-22.33$ & $-$    & $0.70$ \\
  		   & BCES OLS$(X|Y)$   & $7.2 \pm 0.3$ & $-1.7 \pm 0.7$ & $-22.33$ & $-$    & $1.26$ \\
  		   & BCES Bisector     & $7.2 \pm 0.2$ & $-1.1 \pm 0.3$ & $-22.33$ & $-$    & $0.88$ \\
- 		   & FITEXY OLS$(Y|X)$ & $7.2^{+0.1}_{-0.1}$ & $-0.5^{+0.2}_{-0.2}$ & $-22.33$ & $0.54$ & $0.63$ \\
- 		   & FITEXY OLS$(X|Y)$ & $7.4^{+0.5}_{-0.3}$ & $-2.0^{+0.7}_{-2.3}$ & $-22.33$ & $0.54$ & $1.51$ \\
- 		   & FITEXY Bisector   & $7.3^{+0.4}_{-0.3}$ & $-1.0^{+0.3}_{-0.5}$ & $-22.33$ & $-$    & $0.82$ \\
+ 		   & mFITEXY OLS$(Y|X)$ & $7.2^{+0.1}_{-0.1}$ & $-0.5^{+0.2}_{-0.2}$ & $-22.33$ & $0.54$ & $0.63$ \\
+ 		   & mFITEXY OLS$(X|Y)$ & $7.4^{+0.5}_{-0.3}$ & $-2.0^{+0.7}_{-2.3}$ & $-22.33$ & $0.54$ & $1.51$ \\
+ 		   & mFITEXY Bisector   & $7.3^{+0.4}_{-0.3}$ & $-1.0^{+0.3}_{-0.5}$ & $-22.33$ & $-$    & $0.82$ \\
 \hline 
 \\
- & \multicolumn{6}{c}{$\log[M_{\rm BH}/{\rm M_\odot}] = \alpha + \beta[(MAG_{\rm gal} - X_0)/{\rm mag}]$} \\ [0.5em]
+{\bf Total galaxies} & \multicolumn{6}{l}{$\log[M_{\rm BH}/{\rm M_\odot}] = \alpha + \beta[(MAG_{\rm gal} - X_0)/{\rm mag}]$} \\ [0.5em]
 All (62)               & BCES OLS$(Y|X)$   & $8.26 \pm 0.08$ & $-0.49 \pm 0.06$ & $-24.78$ & $-$ & $0.64$ \\
  		       & BCES OLS$(X|Y)$   & $8.3 \pm 0.1$   & $-1.0 \pm 0.1$   & $-24.78$ & $-$ & $0.92$ \\
  		       & BCES Bisector     & $8.26 \pm 0.09$ & $-0.72 \pm 0.07$ & $-24.78$ & $-$ & $0.71$ \\
- 		       & FITEXY OLS$(Y|X)$ & $8.26^{+0.08}_{-0.08}$ & $-0.48^{+0.06}_{-0.07}$ & $-24.78$ & $0.62$ & $0.64$ \\
- 		       & FITEXY OLS$(X|Y)$ & $8.3^{+0.1}_{-0.1}$    & $-1.0^{+0.1}_{-0.2}$    & $-24.78$ & $0.87$ & $0.93$ \\
- 		       & FITEXY Bisector   & $8.3^{+0.1}_{-0.1}$    & $-0.72^{+0.08}_{-0.10}$ & $-24.78$ & $-$    & $0.71$ \\
+ 		       & mFITEXY OLS$(Y|X)$ & $8.26^{+0.08}_{-0.08}$ & $-0.48^{+0.06}_{-0.07}$ & $-24.78$ & $0.62$ & $0.64$ \\
+ 		       & mFITEXY OLS$(X|Y)$ & $8.3^{+0.1}_{-0.1}$    & $-1.0^{+0.1}_{-0.2}$    & $-24.78$ & $0.87$ & $0.93$ \\
+ 		       & mFITEXY Bisector   & $8.3^{+0.1}_{-0.1}$    & $-0.72^{+0.08}_{-0.10}$ & $-24.78$ & $-$    & $0.71$ \\
 		   
 Early-type (E+S0) (45) & BCES OLS$(Y|X)$   & $8.56 \pm 0.06$ & $-0.43 \pm 0.05$ & $-24.88$ & $-$ & $0.45$ \\
  		       & BCES OLS$(X|Y)$   & $8.56 \pm 0.08$ & $-0.63 \pm 0.05$ & $-24.88$ & $-$ & $0.53$ \\
  		       & BCES Bisector     & $8.56 \pm 0.07$ & $-0.53 \pm 0.04$ & $-24.88$ & $-$ & $0.47$ \\
- 		       & FITEXY OLS$(Y|X)$ & $8.56^{+0.06}_{-0.06}$ & $-0.41^{+0.05}_{-0.05}$ & $-24.88$ & $0.41$ & $0.45$ \\
- 		       & FITEXY OLS$(X|Y)$ & $8.56^{+0.07}_{-0.09}$ & $-0.66^{+0.06}_{-0.08}$ & $-24.88$ & $0.79$ & $0.55$ \\
- 		       & FITEXY Bisector   & $8.56^{+0.07}_{-0.07}$ & $-0.53^{+0.05}_{-0.07}$ & $-24.88$ & $-$    & $0.47$ \\
+ 		       & mFITEXY OLS$(Y|X)$ & $8.56^{+0.06}_{-0.06}$ & $-0.41^{+0.05}_{-0.05}$ & $-24.88$ & $0.41$ & $0.45$ \\
+ 		       & mFITEXY OLS$(X|Y)$ & $8.56^{+0.07}_{-0.09}$ & $-0.66^{+0.06}_{-0.08}$ & $-24.88$ & $0.79$ & $0.55$ \\
+ 		       & mFITEXY Bisector   & $8.56^{+0.07}_{-0.07}$ & $-0.53^{+0.05}_{-0.07}$ & $-24.88$ & $-$    & $0.47$ \\
 		   
 %All (62)		& BCES OLS$(Y|X)$   & $$ & $$ & $$ & $-$ & $$ \\
 %			& BCES OLS$(X|Y)$   & $$ & $$ & $$ & $-$ & $$ \\
@@ -363,13 +390,45 @@ Early-type (E+S0) (45) & BCES OLS$(Y|X)$   & $8.56 \pm 0.06$ & $-0.43 \pm 0.05$ 
 \label{tab:lreg} 
 \end{table*}
 
-\section{Results}
+\section{Analysis and results}
 \label{sec:res}
+We performed a linear regression analysis of the $M_{\rm BH} - L_{\rm sph}$ and $M_{\rm BH} - L_{\rm gal}$ diagrams 
+using the BCES code from \cite{akritasbershady1996} 
+and also the FITEXY routine \citep{press1992} 
+modified by \cite{tremaine2002} to account for the intrinsic vertical scatter, $\epsilon$. 
+Because the BCES routine {\bf AL: did you wanna write (correctly) this sentence for me please? 
+can give biased results (wrong slope) when the scatter is comparable to the range of the data},
+we checked that the best-fit parameters obtained with the BCES code were consistent with those output by the modified FITEXY code.
+In Table \ref{tab:lreg} we report the BCES and modified FITEXY linear regressions for S\'ersic/core-S\'ersic 
+galaxies and for different morphological types (elliptical/lenticular, spiral).
+
+\subsection{Black hole mass -- spheroid luminosity}
+We show the $M_{\rm BH} - L_{\rm sph}$ diagram in Figure \ref{fig:mbhmagsph}. 
+S\'ersic and core-S\'ersic spheroids have slopes consistent with each other (within their $1\sigma$ uncertainties), 
+in disagreement with the findings of \cite{grahamscott2013}. 
+core galaxies have same slope
+sersic gal have shallower slope
+magnitudes of bulges are brighter for the high luminosity sersic galaxies (embedded disks confused with large scale ones)
+and fainter for the low luminosity ones (more components in galaxies)
+
+
+ELL and S0s separately have both slopes consistent with 1. 
+they define a single sequence.
+vertical scatter along the early type sequence is constant?
+if 2 overmassive bhs removed, what happens?
+In the M-M diagram, bulges of early type galaxies have a slope of $\sim$1, while bulges of spiral galaxies have a slope of 2-3.
+Linear regressions that we provide are symmetrical (to be compared with theoretical expectations) and non-symmetrical (to be used to predict BH masses).
+Contrary to a previous claim, the bulge luminosity appears to be a better indicator of the BH mass than the galaxy luminosity.
 
 compare scatter mbh-msph and mbh-mgal for early types
+intrinsic scatter of early type gals in m-mbul is slightly more than in m-mgal, but this might just depend 
+on the ability of measuring the bulge luminosity, which is model dependent, the gal lum is not.
+only for early type galaxies one can use the tot luminosity as bh mass indicator
 
-if 2 overmassive bhs removed, what happens?
 
+Bulges with $n<2$, claimed by some to be pseudobulges, are not offset to lower BH masses from the correlation defined by bulges with $n>2$.
+
+\subsection{Black hole mass -- galaxy luminosity}
 
 
 \section{Conclusions}

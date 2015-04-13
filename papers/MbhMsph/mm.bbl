@@ -1,6 +1,9 @@
 \begin{thebibliography}{}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
+\bibitem[{{Akritas} \& {Bershady}(1996)}]{akritasbershady1996}
+{Akritas}, M.~G., \& {Bershady}, M.~A. 1996, \apj, 470, 706
+
 \bibitem[{{Arnold} {et~al.}(2014){Arnold}, {Romanowsky}, {Brodie}, {Forbes},
   {Strader}, {Spitler}, {Foster}, {Blom}, {Kartha}, {Pastorello}, {Pota},
   {Usher}, \& {Woodley}}]{arnold2014}
@@ -224,6 +227,11 @@
 {Peletier}, R.~F., {Kutdemir}, E., {van der Wolk}, G., {et~al.} 2012, \mnras,
   419, 2031
 
+\bibitem[{{Press} {et~al.}(1992){Press}, {Teukolsky}, {Vetterling}, \&
+  {Flannery}}]{press1992}
+{Press}, W.~H., {Teukolsky}, S.~A., {Vetterling}, W.~T., \& {Flannery}, B.~P.
+  1992, {Numerical recipes in FORTRAN. The art of scientific computing}
+
 \bibitem[{{Reines} {et~al.}(2013){Reines}, {Greene}, \& {Geha}}]{reines2013}
 {Reines}, A.~E., {Greene}, J.~E., \& {Geha}, M. 2013, \apj, 775, 116
 
@@ -275,6 +283,11 @@
   {Capaccioli}, \& {Covone}}]{tortora2009}
 {Tortora}, C., {Napolitano}, N.~R., {Romanowsky}, A.~J., {Capaccioli}, M., \&
   {Covone}, G. 2009, \mnras, 396, 1132
+
+\bibitem[{{Tremaine} {et~al.}(2002){Tremaine}, {Gebhardt}, {Bender}, {Bower},
+  {Dressler}, {Faber}, {Filippenko}, {Green}, {Grillmair}, {Ho}, {Kormendy},
+  {Lauer}, {Magorrian}, {Pinkney}, \& {Richstone}}]{tremaine2002}
+{Tremaine}, S., {Gebhardt}, K., {Bender}, R., {et~al.} 2002, \apj, 574, 740
 
 \bibitem[{{Trujillo} {et~al.}(2004){Trujillo}, {Erwin}, {Asensio Ramos}, \&
   {Graham}}]{trujillo2004coresersicmodel}

@@ -100,7 +100,7 @@ def header_mmpaper_sampletable(caption):
         	print '\\emph{Column (5):} Black hole mass.                                   '
 		print '\\emph{Column (6):} Absolute $3.6\\rm~\mu m$ bulge magnitude.                                   '
 		print '\\emph{Column (7):} Absolute $3.6\\rm~\mu m$ galaxy magnitude. \
-			The four galaxy magnitudes marked with a * are lower limits.                                   '
+			The four galaxy magnitudes marked with a * are upper limits.                                   '
 		print '\\emph{Column (8):} $[3.6]-[4.5]$ colour.                                   '
 		print '\\emph{Column (9):} Bulge stellar mass. }                      '
         print '\\begin{tabular}{lllllllll}                           '
