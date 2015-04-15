@@ -37,13 +37,13 @@ def modfitexy(x,sigx,y,sigy,mode):
 	print
 	
 	
-	a, b, epsilon, chisqmin = get_ab(x,sigx,y,sigy,ainit,binit,paramsprecision,N,mode)
+	a, b, epsilon, merr_epsilon, perr_epsilon, chisqmin = get_ab(x,sigx,y,sigy,ainit,binit,paramsprecision,N,mode)
 	
 	while paramsprecision > tolerance:
 		paramsprecision = paramsprecision/3
-		a, b, epsilon, chisqmin = get_ab(x,sigx,y,sigy,a,b,paramsprecision,N,mode)
+		a, b, epsilon, merr_epsilon, perr_epsilon, chisqmin = get_ab(x,sigx,y,sigy,a,b,paramsprecision,N,mode)
 		
-	afit, bfit, epsilonfit, chisqminfit = a, b, epsilon, chisqmin 	
+	afit, bfit, epsilonfit, merr_epsilonfit, perr_epsilonfit, chisqminfit = a, b, epsilon, merr_epsilon, perr_epsilon, chisqmin 	
 	print 'get_ab completed'				
 	
 	merr_afit,perr_afit,merr_bfit,perr_bfit = get_errors_ab(x,sigx,y,sigy,afit,bfit,ainit_err,binit_err,epsilonfit,chisqmin,tolerance,N,mode)
@@ -57,7 +57,7 @@ def modfitexy(x,sigx,y,sigy,mode):
 	print 'Mode fit:', mode
 	print 'a =', afit, '+', perr_afit, '-', merr_afit
 	print 'b =', bfit, '+', perr_bfit, '-', merr_bfit 
-	print 'epsilon =', epsilonfit
+	print 'epsilon =', epsilonfit, '+', perr_epsilonfit, '-', merr_epsilonfit 
 	print 'absolute scatter Delta =', absscat
 	
 	return afit,merr_afit,perr_afit, bfit,merr_bfit,perr_bfit, epsilonfit, absscat					
@@ -97,6 +97,55 @@ def get_ab(x,sigx,y,sigy,ainit,binit,paramsprecision,N,mode):
 					afit = a
 					bfit = b
 	return afit,bfit,epsilon,chisqmin
+
+def get_ab_beta(x,sigx,y,sigy,ainit,binit,paramsprecision,N,mode):
+	
+	chisq_var = N + 0.000
+	afit,bfit = -9999.,-9999.
+	epsilon = -paramsprecision
+	iteration = -1	
+	epsilon_minus = None
+	epsilon_plus = None
+	epsilon_value = None
+	chisqmin = None
+			
+	while chisq_var>(N-2)*(1-(2/N)**0.5): 
+	
+		epsilon = epsilon + paramsprecision
+		iteration = iteration + 1
+		#print 'Iteration', iteration, '; chisq =', chisqmin, '; N-2 =', (N-2)
+	       #print 'Range for a:', ainit-paramsprecision*6,ainit+paramsprecision*6
+	       #print 'Range for b:', binit-paramsprecision*6,binit+paramsprecision*6
+	       #print 'Epsilon =', epsilon
+	       #print 'Precision =', paramsprecision
+	       #print 
+			
+		for a in np.arange(ainit-paramsprecision*6,ainit+paramsprecision*6,paramsprecision):
+	
+			for b in np.arange(binit-paramsprecision*6,binit+paramsprecision*6,paramsprecision):
+		
+				chisq = 0.000
+				for i in range(0,N):
+					numer = y[i] - (a + b*x[i])
+					if mode == 'y|x':
+						denom = (sigy[i])**2 + (b**2)*(sigx[i])**2 + epsilon**2
+					elif mode == 'x|y':
+						denom = (sigy[i])**2 + (b**2)*(sigx[i])**2 + (b**2)*(epsilon**2)	
+					chisq = chisq + numer**2/denom
+				if chisq <= (N-2)*(1+(2/N)**0.5) and epsilon_minus is None:
+					epsilon_minus = epsilon
+				if chisq <= (N-2) and epsilon_value is None and chisqmin is None:
+					epsilon_value = epsilon
+					chisqmin = chisq
+					afit = a
+					bfit = b
+				chisq_var = chisq
+	epsilon_plus = epsilon
+	
+	merr_epsilon_value = epsilon_value - epsilon_minus
+	perr_epsilon_value = epsilon_plus - epsilon_value
+					
+	return afit,bfit,epsilon_value,merr_epsilon_value,perr_epsilon_value,chisqmin
 
  
 def bisect_modfitexy(x,sigx,y,sigy):
