@@ -93,7 +93,7 @@ def header_mmpaper_sampletable(caption):
 	if caption:
         	print '\\caption{{\\bf Galaxy sample.}                        '
         	print '\\emph{Column (1):} Galaxy name.                       '
-		print '\\emph{Column (2):} Morphological type.                       '
+		print '\\emph{Column (2):} Morphological type (E=elliptical, S0(B)=(barred) lenticular, Sp(B)=(barred) spiral, merger=merger).                       '
         	print '\\emph{Column (3):} Presence of a partially depleted core. \
 			The question mark is used when the classification has come from the velocity dispersion criteria mentioned in Section \\ref{sec:data}.   '
         	print '\\emph{Column (4):} Distance.                                   '
@@ -490,7 +490,7 @@ def mmpaper_sampletable():
 		physres.mag_sph_eq_moffat_comb, 
 		errV.perr_mag_sph, errV.merr_mag_sph, 
 		physres.mag_tot_eq_moffat_comb, 
-		col.color
+		col.color, anc.bar
 		FROM Ancillary AS anc 
 		JOIN OneDFitResultsPhysicalUnits AS physres ON anc.gal_id = physres.gal_id 
 		JOIN ErrorsVote as errV ON anc.gal_id = errV.gal_id 
@@ -525,6 +525,7 @@ def mmpaper_sampletable():
 	merr_mag_sph = data[10].astype(np.float)
 	mag_tot = data[11].astype(np.float)
 	color = data[12].astype(np.float)
+	bar = data[13].astype(np.int)
 		
 	log_ML = 3.98*color+0.13 # meidt+2014
 	ML = 10**log_ML
@@ -555,7 +556,10 @@ def mmpaper_sampletable():
                         gal_name[i] = gal_name[i].replace('a', 'A')
                 gal_name[i] = gal_name[i].replace('exp', '')    
                 print gal_name[i], ' & ', 
-		print morphtype[i], ' & ', 
+		if bar[i] == 0 or morphtype[i] == 'merger':
+			print morphtype[i], ' & ', 
+		elif bar[i] == 1:
+			print morphtype[i] + 'B', ' & ', 	
                 print str(core[i])+str(core_inferred_from_sigma[i]), ' & ',  
                 print '$'+str("{0:.1f}".format(distance[i]))+'$', ' & ', 
                 print_bhmass(mass_BH[i],merr_mass_BH[i],perr_mass_BH[i])

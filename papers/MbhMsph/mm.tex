@@ -58,23 +58,32 @@
 %% editorial office after submission.
 
 \begin{abstract}
-We have the best latest M-L and M-M diagrams (66 galaxies = biggest sample ever used, IR imaging = 
-minimally affected by dust and star formation, 
-state-of-the-art multicomponent galaxy decompositions = 
-we fit bulges, disks, spiral arms, bars, rings, haloes, extended or unresolved nuclear sources and partially depleted cores).
-Previous samples were overwhelmingly dominated by early-type galaxies, our sample includes 17 spiral galaxies, 
-half of which have $M_{\rm BH} < 10^7 M_\odot$,
-thus we can explore the low-mass end of the diagrams.
-We provide a table with spheroid luminosities, spheroid stellar masses and galaxy luminosities. 
-We give updated linear regressions for Sersic/core-Sersic galaxies and for different morphological types (E/S0, Sp). 
-Sersic and core-Sersic galaxies have slopes consistent with each other (contrary to what claimed by GS13). 
-In the M-M diagram, bulges of early type galaxies have a slope of $\sim$1, while bulges of spiral galaxies have a slope of 2-3.
-Linear regressions that we provide are symmetrical (to be compared with theoretical expectations) 
-and non-symmetrical (to be used to predict BH masses).
-Contrary to a previous claim, 
-the bulge luminosity appears to be a better indicator of the BH mass than the galaxy luminosity.
-only for early type galaxies one can use the tot luminosity as bh mass indicator {\bf check and expand}
-Bulges with $n<2$, claimed by some to be pseudobulges, are not offset to lower BH masses from the correlation defined by bulges with $n>2$.
+We present the latest scaling relations between black hole mass, $M_{\rm BH}$, 
+and spheroid luminosity, $L_{\rm sph}$, spheroid stellar mass, $M_{\rm *,sph}$, and galaxy luminosity, $L_{\rm gal}$,
+built upon an unprecedented high-quality data set (provided here in a ready-to-use table).
+Our sample, the largest ever used, counts 66 local galaxies with a dynamical measurement of $M_{\rm BH}$.
+Spheroid luminosities come from high signal-to-noise $3.6\rm~\mu m$ \emph{Spitzer} satellite imagery, 
+which is minimally affected by dust and star formation. 
+These luminosities were derived from our state-of-the-art multicomponent galaxy decompositions, 
+that take into account bulges, disks, bars, spiral arms, rings, haloes, extended or unresolved nuclear sources and partially depleted cores, 
+and that -- for the first time -- were checked to be consistent with the galaxy kinematics. 
+Previous studies used galaxy samples that were overwhelmingly dominated by high-mass, early-type objects.
+Instead, our sample includes 17 spiral galaxies, half of which have $M_{\rm BH} < 10^7\rm~M_\odot$, 
+and allows us to investigate the poorly studied low-mass end of the correlations.
+We provide updated linear regressions 
+(symmetrical, to be compared with theoretical expectations, and non-symmetrical, to be used to predict black hole masses) 
+for S\'ersic/core-S\'ersic galaxies and for different morphological types (E/S0, Sp). 
+The bulges of early-type (E/S0) galaxies follow $M_{\rm BH} \propto M_{\rm *,sph}^{1.0 \pm 0.1}$, 
+as expected from a dry-merging formation scenario,
+and define a tight \emph{red sequence} with intrinsic scatter {\bf ???}.
+On the other hand, the bulges of late-type (Sp) galaxies define a much steeper \emph{blue sequence}, 
+with $M_{\rm BH} \propto M_{\rm *,sph}^{3.0 \pm 1.3}$, 
+indicating that gas-rich processes feed the black hole three times more efficiently than the host bulge. 
+Disproving some previous claims, we also conclude that: 1) S\'ersic and core-S\'ersic galaxies do not define two distinct sequences; 
+2) bulges with S\'ersic index $n_{\rm sph}<2$, argued by some to be pseudo-bulges, 
+are not offset to lower $M_{\rm BH}$ from the correlation defined by bulges with $n_{\rm sph}>2$; 
+3) $L_{\rm sph}$ and $L_{\rm gal}$ correlate equally well with $M_{\rm BH}$ only for early-type galaxies.
+
 
 
 \end{abstract}
@@ -220,7 +229,7 @@ four galaxies (see Table \ref{tab:sample}, column 7) had their galaxy luminositi
 underestimated\footnote{These four cases will be discussed in \emph{Paper I}.}, 
 which are given here as lower limits. 
 
-%\input{table_sample.tex}
+\input{table_sample.tex}
 
 
 
@@ -448,7 +457,7 @@ are on average larger than those adopted by GS13.
 In this case, the host systems are early-type elliptical/lenticular galaxies that feature intermediate-scale disks\footnote{explain}.
 Past bulge/disk decompositions failed to correctly identify the extent of such disks and treated them as large-scale disks, 
 thus underestimating the bulge luminosity.
-Our bulge magnitudes for such spheroids are on average $\sim$$1\rm~mag$ brighter. \\
+The magnitudes that we obtained for such spheroids are on average $\sim$$1\rm~mag$ brighter. \\
 We have seen that the change in slope of the $M_{\rm BH} - L_{\rm sph}$ correlation -- 
 which is expected for consistency with other scaling relations 
 (a single power-law $M_{\rm BH} - \sigma$ correlation and a double power-law $L_{\rm sph} - \sigma$ correlation) -- 
@@ -465,9 +474,19 @@ in excellent agreement with the theoretical expectations of our hypothesis.
 {\bf vertical scatter along the early type sequence is constant?
 if 2 overmassive bhs removed, what happens?}
 
+{\bf coming now to figure 1: if I look at the blue points it is difficult to believe that they define a linear relation, 
+their magnitude range is too small and it could just be that at low galaxy luminosities the scatter of the MBH-L relation increases. 
+This is what most models predict. Do the galaxies below the correlation have some special property? 
+Could it just be that spiral bulges simple do not follow a tight relation with BH mass? 
+
+Giulia, I think you already plan to do this, but can you include the error bars in all places where a relation is presented, so that readers know if there is a relation or not.
+Remember also Ewan's remark about the unsuitability of the Pearson and Spearman correlation coefficients because they do not take into account the error bars on our data - 
+so don't include those simple coefficients.  Actually, it would be worth pointing out to readers that a visual inspection of the plotted data requires 
+the viewer to take into account the error bars when judging-by-eye the strength of a correlation. 
+Maybe then mention in the following sentence that this is why the correlation coefficients are not applicable here. }
 
 In Figure \ref{fig:pseudob}, we show the distribution of spheroid S\'ersic indices\footnote{The spheroid S\'ersic indices 
-are taken from our one-dimensional fits of the major-axis surface brightness profiles of galaxies (\emph{Paper I}).}, 
+are taken from our one-dimensional fits of the galaxy major-axis surface brightness profiles (\emph{Paper I}).}, 
 $n_{\rm sph}$, in the $M_{\rm BH} - L_{\rm sph}$ diagram.
 Our aim is to check whether bulges with $n_{\rm sph}<2$, claimed by some to be pseudobulges (e.g.~ cite), 
 are offset to lower black hole masses from the correlation defined by (classical) bulges with $n_{\rm sph}>2$, 
@@ -476,6 +495,14 @@ To do this, we fit a symmetrical linear regression to the bulges that have $n_{\
 and we compute the vertical offset of all bulges from the regression. 
 In the inset of Figure \ref{fig:pseudob}, we plot the vertical offset against $n_{\rm sph}$. 
 From a visual inspection, bulges with $n_{\rm sph}<2$ do not appear to be offset from the correlation traced by bulges with $n_{\rm sph}>2$.
+
+{\bf As you probably know, and as explained in many of my papers (e.g. http://arxiv.org/abs/1501.02937 ; http://arxiv.org/abs/1108.0997 ; http://arxiv.org/abs/1311.7207 ), 
+pseudobulges are notoriously hard to identify.  It would be a mistake to have a column labelled "pseudobulge".   
+However a galaxy classification column, indicating the presence of a bar, is good to include.  
+While we do not wish to publish the Sersic indices here (that will be kept for a different paper), 
+we could have a column indicating if n is above or below 2 - given that some people mistakingly think that they can use this as a dividing point. 
+Giulia, can you also include a nearby reference to Graham (2013, http://arxiv.org/abs/1108.0997) so that people can read and understand why $n < 2$ 
+does not necessarily equate to a pseudobulge. }
 
 
 \subsection{Black hole mass -- galaxy luminosity}
@@ -490,6 +517,8 @@ compare scatter mbh-msph and mbh-mgal for early types
 intrinsic scatter of early type gals in m-mbul is slightly more than in m-mgal, but this might just depend 
 on the ability of measuring the bulge luminosity, which is model dependent, the gal lum is not.
 only for early type galaxies one can use the tot luminosity as bh mass indicator
+
+errors on gal mag??????????????? 0.2 constant 
 
 \subsection{Black hole mass -- spheroid stellar mass}
 Finally, we present the $M_{\rm BH} - M_{\rm *,sph}$ diagram in Figure \ref{fig:mbhmasssph}, 
