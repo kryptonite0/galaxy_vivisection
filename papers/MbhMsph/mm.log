@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  17 APR 2015 14:20
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  20 APR 2015 08:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -461,7 +461,7 @@ ine 285.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Float too large for page by 22.56609pt on input line 414.
+LaTeX Warning: Float too large for page by 276.32616pt on input line 449.
 
 [3 <./images/mbh_vs_mag_sph.pdf> <./images/mbh_vs_mag_sph_psb.pdf
 
@@ -473,57 +473,57 @@ pdfTeX warning: pdflatex (file ./images/mbh_vs_mag_tot.pdf): PDF inclusion: mul
 tiple pdfs with page group included in a single page
 >] [4]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 476.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 511.
 
 [5]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 476.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 511.
 
 
 Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
 
 [6]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 476.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 511.
 
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 476.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 511.
 
 
 Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
 
 [7 <./images/mbh_vs_mass_sph_galsymb_agn.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 499--506
+Underfull \hbox (badness 10000) in paragraph at lines 534--541
 []\OT1/cmr/bx/n/10 As you prob-a-bly know, and as
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 499--506
+Underfull \hbox (badness 10000) in paragraph at lines 534--541
 \OT1/cmr/bx/n/10 ex-plained in many of my pa-pers
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 499--506
+Underfull \hbox (badness 10000) in paragraph at lines 534--541
 \OT1/cmr/bx/n/10 (e.g. http://arxiv.org/abs/1501.02937
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 499--506
+Underfull \hbox (badness 10000) in paragraph at lines 534--541
 \OT1/cmr/bx/n/10 ; http://arxiv.org/abs/1108.0997 ;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 499--506
+Underfull \hbox (badness 10000) in paragraph at lines 534--541
 \OT1/cmr/bx/n/10 http://arxiv.org/abs/1311.7207 ), pseu-dob-
  []
 
 
-Underfull \hbox (badness 1968) in paragraph at lines 499--506
+Underfull \hbox (badness 1968) in paragraph at lines 534--541
 \OT1/cmr/bx/n/10 ulges are no-to-ri-ously hard to iden-tify. It
  []
 
 
-Underfull \hbox (badness 2735) in paragraph at lines 542--551
+Underfull \hbox (badness 2735) in paragraph at lines 577--586
 []\OT1/cmr/m/n/10 This re-search was sup-ported by Aus-tralian Re-
  []
 
@@ -531,7 +531,7 @@ Underfull \hbox (badness 2735) in paragraph at lines 542--551
 Here is how much of TeX's memory you used:
  5102 strings out of 493488
  66384 string characters out of 3141326
- 240506 words of memory out of 3000000
+ 261581 words of memory out of 3000000
  8300 multiletter control sequences out of 15000+200000
  18199 words of font info for 71 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -571,7 +571,7 @@ y9.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti1
 0.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.
 pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/symbols/msa
 m10.pfb>
-Output written on mm.pdf (9 pages, 1554729 bytes).
+Output written on mm.pdf (9 pages, 1555422 bytes).
 PDF statistics:
  973 PDF objects out of 1000 (max. 8388607)
  178 compressed objects within 2 object streams

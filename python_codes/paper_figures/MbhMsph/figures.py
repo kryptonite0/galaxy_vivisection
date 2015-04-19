@@ -979,7 +979,7 @@ def mbh_vs_mag_tot():
         ax.fill_between((logxx+np.average(mag_tot[all==1])), 10**yy_lo, 10**yy_up, alpha=0.1, facecolor='k')
 	
 	### fit using lnr ###
-	fit = lnr.bces(mag_tot[all==1]-np.average(mag_tot[all==1]),log_mbh[all==1])
+	fit = lnr.kelly(mag_tot[all==1]-np.average(mag_tot[all==1]),log_mbh[all==1])
 	
        
        #### fit using FITEXY ###
@@ -991,15 +991,15 @@ def mbh_vs_mag_tot():
        #print '----------------------------'
        #print '----------------------------'
        #
-        ### produce .dat file
-	datfileName = '/Users/gsavorgnan/galaxy_vivisection/data/marconi_fit/mbh_vs_mag_gal_all.dat'
-	datfile = open(datfileName, 'w')
-	datfile.write('# MAGGal err_MAGGal logMassBH err_logMassBH \n')
-	for MAGGal, err_MAGGal, logMassBH, err_logMassBH in zip(mag_tot[all==1]-np.average(mag_tot[all==1]),
-        	err_mag_tot[all==1],
-        	log_mbh[all==1],0.5*(merr_log_mbh[all==1] + perr_log_mbh[all==1])):
-		datfile.write(str(MAGGal) + ' ' + str(err_MAGGal) + ' ' + str(logMassBH) + ' ' + str(err_logMassBH) + ' ' + '\n')
-	datfile.close()
+       #### produce .dat file
+       #datfileName = '/Users/gsavorgnan/galaxy_vivisection/data/marconi_fit/mbh_vs_mag_gal_all.dat'
+       #datfile = open(datfileName, 'w')
+       #datfile.write('# MAGGal err_MAGGal logMassBH err_logMassBH \n')
+       #for MAGGal, err_MAGGal, logMassBH, err_logMassBH in zip(mag_tot[all==1]-np.average(mag_tot[all==1]),
+       #	err_mag_tot[all==1],
+       #	log_mbh[all==1],0.5*(merr_log_mbh[all==1] + perr_log_mbh[all==1])):
+       #	datfile.write(str(MAGGal) + ' ' + str(err_MAGGal) + ' ' + str(logMassBH) + ' ' + str(err_logMassBH) + ' ' + '\n')
+       #datfile.close()
 
 	###########################
         
@@ -1058,15 +1058,15 @@ def mbh_vs_mag_tot():
        #print '----------------------------'
        #print '----------------------------'
        #
-        ### produce .dat file
-	datfileName = '/Users/gsavorgnan/galaxy_vivisection/data/marconi_fit/mbh_vs_mag_gal_early.dat'
-	datfile = open(datfileName, 'w')
-	datfile.write('# MAGGal err_MAGGal logMassBH err_logMassBH \n')
-	for MAGGal, err_MAGGal, logMassBH, err_logMassBH in zip(mag_tot[earlytype==1]-np.average(mag_tot[earlytype==1]),
-        	err_mag_tot[earlytype==1],
-        	log_mbh[earlytype==1],0.5*(merr_log_mbh[earlytype==1] + perr_log_mbh[earlytype==1])):
-		datfile.write(str(MAGGal) + ' ' + str(err_MAGGal) + ' ' + str(logMassBH) + ' ' + str(err_logMassBH) + ' ' + '\n')
-	datfile.close()
+       #### produce .dat file
+       #datfileName = '/Users/gsavorgnan/galaxy_vivisection/data/marconi_fit/mbh_vs_mag_gal_early.dat'
+       #datfile = open(datfileName, 'w')
+       #datfile.write('# MAGGal err_MAGGal logMassBH err_logMassBH \n')
+       #for MAGGal, err_MAGGal, logMassBH, err_logMassBH in zip(mag_tot[earlytype==1]-np.average(mag_tot[earlytype==1]),
+       #	err_mag_tot[earlytype==1],
+       #	log_mbh[earlytype==1],0.5*(merr_log_mbh[earlytype==1] + perr_log_mbh[earlytype==1])):
+       #	datfile.write(str(MAGGal) + ' ' + str(err_MAGGal) + ' ' + str(logMassBH) + ' ' + str(err_logMassBH) + ' ' + '\n')
+       #datfile.close()
 
         #######################################
 	
