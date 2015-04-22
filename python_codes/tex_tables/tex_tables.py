@@ -490,9 +490,11 @@ def mmpaper_sampletable():
 		physres.mag_sph_eq_moffat_comb, 
 		errV.perr_mag_sph, errV.merr_mag_sph, 
 		physres.mag_tot_eq_moffat_comb, 
-		col.color, anc.bar
+		col.color, anc.bar,
+		res.delta_eq_moffat_comb
 		FROM Ancillary AS anc 
 		JOIN OneDFitResultsPhysicalUnits AS physres ON anc.gal_id = physres.gal_id 
+		JOIN OneDFitResults AS res ON anc.gal_id = res.gal_id \
 		JOIN ErrorsVote as errV ON anc.gal_id = errV.gal_id 
 		JOIN Colors as col ON anc.gal_id = col.gal_id 
 		WHERE anc.fit1D_done = 1
@@ -526,7 +528,14 @@ def mmpaper_sampletable():
 	mag_tot = data[11].astype(np.float)
 	color = data[12].astype(np.float)
 	bar = data[13].astype(np.int)
+	delta = data[14].astype(np.float)
 		
+	## error from 0 to 0.3 mag according to Delta_RMS of profile fit
+	## has mean error = 0.08
+	goodness = delta - min(delta)
+	goodness = goodness/max(goodness)
+	err_mag_tot = 0.3*goodness
+	       
 	log_ML = 3.98*color+0.13 # meidt+2014
 	ML = 10**log_ML
 	
@@ -564,7 +573,7 @@ def mmpaper_sampletable():
                 print '$'+str("{0:.1f}".format(distance[i]))+'$', ' & ', 
                 print_bhmass(mass_BH[i],merr_mass_BH[i],perr_mass_BH[i])
 		print '$' + str("{0:.2f}".format(mag_sph[i])) + '_{-' + str("{0:.2f}".format(merr_mag_sph[i])) + '}^{+' + str("{0:.2f}".format(perr_mag_sph[i])) + '}$ ', ' & ',
-		print '$' + str("{0:.2f}".format(mag_tot[i])) + '$ ', 
+		print '$' + str("{0:.2f}".format(mag_tot[i])) + ' \pm ' + str("{0:.2f}".format(err_mag_tot[i])) + '$ ', 
 		if gal_name[i] in ['M94', 'NGC 3079', 'NGC 4388', 'NGC 4945']:
 			print '*',
 		print ' & ',

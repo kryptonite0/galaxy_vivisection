@@ -13,10 +13,11 @@ tolerance = 0.01  # good one
 def modfitexy(x,sigx,y,sigy,mode):
 
 	N = len(x)
-	# compute first guess of slope and intercept with OLS Y|X method ignoring errors
+	# compute first guess of slope and intercept with OLS Y|X method (NON) ignoring errors
 	cov = [0.0]*x
 	# y = A + Bx
-	B,A,Berr,Aerr,covAB=bces.bces(x,sigx*[0.0],y,sigy*[0.0],cov)
+	#B,A,Berr,Aerr,covAB=bces.bces(x,sigx*[0.0],y,sigy*[0.0],cov)
+	B,A,Berr,Aerr,covAB=bces.bces(x,sigx,y,sigy,cov)
 	index = {'y|x' : 0 , 'x|y': 1}
 	
 	ainit = A[index[mode]]
@@ -37,13 +38,19 @@ def modfitexy(x,sigx,y,sigy,mode):
 	print
 	
 	
-	a, b, epsilon, merr_epsilon, perr_epsilon, chisqmin = get_ab(x,sigx,y,sigy,ainit,binit,paramsprecision,N,mode)
+	a, b, epsilon, chisqmin = get_ab(x,sigx,y,sigy,ainit,binit,paramsprecision,N,mode)
 	
 	while paramsprecision > tolerance:
 		paramsprecision = paramsprecision/3
-		a, b, epsilon, merr_epsilon, perr_epsilon, chisqmin = get_ab(x,sigx,y,sigy,a,b,paramsprecision,N,mode)
+		a, b, epsilon, chisqmin = get_ab(x,sigx,y,sigy,a,b,paramsprecision,N,mode)
 		
-	afit, bfit, epsilonfit, merr_epsilonfit, perr_epsilonfit, chisqminfit = a, b, epsilon, merr_epsilon, perr_epsilon, chisqmin 	
+	afit, bfit, epsilonfit, chisqminfit = a, b, epsilon, chisqmin 	
+	
+	epsilonfit_minus, epsilonfit_plus = get_err_epsilon(x,sigx,y,sigy,afit,bfit,epsilonfit,chisqminfit,0.001,N,mode)
+	
+	perr_epsilonfit = epsilonfit_plus - epsilonfit
+	merr_epsilonfit = epsilonfit - epsilonfit_minus
+	
 	print 'get_ab completed'				
 	
 	merr_afit,perr_afit,merr_bfit,perr_bfit = get_errors_ab(x,sigx,y,sigy,afit,bfit,ainit_err,binit_err,epsilonfit,chisqmin,tolerance,N,mode)
@@ -53,6 +60,11 @@ def modfitexy(x,sigx,y,sigy,mode):
 	# compute absolute scatter
 	absscat = absolutescatter.get_absscatter(x, y, afit, bfit)
 	
+	if mode == 'x|y':
+		epsilonfit = epsilonfit*abs(bfit)
+		perr_epsilonfit = perr_epsilonfit*abs(bfit)
+		merr_epsilonfit = merr_epsilonfit*abs(bfit)
+	
 	print 'y = a + bx'
 	print 'Mode fit:', mode
 	print 'a =', afit, '+', perr_afit, '-', merr_afit
@@ -60,7 +72,7 @@ def modfitexy(x,sigx,y,sigy,mode):
 	print 'epsilon =', epsilonfit, '+', perr_epsilonfit, '-', merr_epsilonfit 
 	print 'absolute scatter Delta =', absscat
 	
-	return afit,merr_afit,perr_afit, bfit,merr_bfit,perr_bfit, epsilonfit, absscat					
+	return afit,merr_afit,perr_afit, bfit,merr_bfit,perr_bfit, epsilonfit,merr_epsilonfit,perr_epsilonfit, absscat					
 
 	
 def get_ab(x,sigx,y,sigy,ainit,binit,paramsprecision,N,mode):
@@ -69,16 +81,16 @@ def get_ab(x,sigx,y,sigy,ainit,binit,paramsprecision,N,mode):
 	afit,bfit = -9999.,-9999.
 	epsilon = -paramsprecision
 	iteration = -1			
-	while chisqmin>(N-2): 
+	while chisqmin>(N-2.): 
 	
 		epsilon = epsilon + paramsprecision
 		iteration = iteration + 1
 		#print 'Iteration', iteration, '; chisq =', chisqmin, '; N-2 =', (N-2)
-	       #print 'Range for a:', ainit-paramsprecision*6,ainit+paramsprecision*6
-	       #print 'Range for b:', binit-paramsprecision*6,binit+paramsprecision*6
-	       #print 'Epsilon =', epsilon
-	       #print 'Precision =', paramsprecision
-	       #print 
+	        #print 'Range for a:', ainit-paramsprecision*6,ainit+paramsprecision*6
+	        #print 'Range for b:', binit-paramsprecision*6,binit+paramsprecision*6
+	        #print 'Epsilon =', epsilon
+	        #print 'Precision =', paramsprecision
+	        #print 
 			
 		for a in np.arange(ainit-paramsprecision*6,ainit+paramsprecision*6,paramsprecision):
 	
@@ -98,68 +110,65 @@ def get_ab(x,sigx,y,sigy,ainit,binit,paramsprecision,N,mode):
 					bfit = b
 	return afit,bfit,epsilon,chisqmin
 
-def get_ab_beta(x,sigx,y,sigy,ainit,binit,paramsprecision,N,mode):
+def get_err_epsilon(x,sigx,y,sigy,afit,bfit,epsilonfit,chisqminfit,precision,N,mode):
 	
-	chisq_var = N + 0.000
-	afit,bfit = -9999.,-9999.
-	epsilon = -paramsprecision
-	iteration = -1	
-	epsilon_minus = None
-	epsilon_plus = None
-	epsilon_value = None
-	chisqmin = None
+	epsilon_minus, epsilon_plus = -9999.,-9999.
+	
+	chisqmin = chisqminfit
+	epsilon = epsilonfit
+	
+	while chisqmin<((N-2.)*(1.+(2./N)**0.5)): 
+	
+		epsilon = epsilon - precision
+		#print 'e', epsilon
 			
-	while chisq_var>(N-2)*(1-(2/N)**0.5): 
+		chisq = 0.000
+		for i in range(0,N):
+			numer = y[i] - (afit + bfit*x[i])
+			if mode == 'y|x':
+				denom = (sigy[i])**2 + (bfit**2)*(sigx[i])**2 + epsilon**2
+			elif mode == 'x|y':
+				denom = (sigy[i])**2 + (bfit**2)*(sigx[i])**2 + (bfit**2)*(epsilon**2)	
+			chisq = chisq + numer**2/denom
+		chisqmin = chisq
+		#print 'chi', chisqmin, ((N-2.)*(1.+(2./N)**0.5))
+		epsilon_minus = epsilon
 	
-		epsilon = epsilon + paramsprecision
-		iteration = iteration + 1
-		#print 'Iteration', iteration, '; chisq =', chisqmin, '; N-2 =', (N-2)
-	       #print 'Range for a:', ainit-paramsprecision*6,ainit+paramsprecision*6
-	       #print 'Range for b:', binit-paramsprecision*6,binit+paramsprecision*6
-	       #print 'Epsilon =', epsilon
-	       #print 'Precision =', paramsprecision
-	       #print 
+	chisqmin = chisqminfit
+	epsilon = epsilonfit
+	
+	while chisqmin>((N-2.)*(1.-(2./N)**0.5)): 
+	
+		epsilon = epsilon + precision
 			
-		for a in np.arange(ainit-paramsprecision*6,ainit+paramsprecision*6,paramsprecision):
+		chisq = 0.000
+		for i in range(0,N):
+			numer = y[i] - (afit + bfit*x[i])
+			if mode == 'y|x':
+				denom = (sigy[i])**2 + (bfit**2)*(sigx[i])**2 + epsilon**2
+			elif mode == 'x|y':
+				denom = (sigy[i])**2 + (bfit**2)*(sigx[i])**2 + (bfit**2)*(epsilon**2)	
+			chisq = chisq + numer**2/denom
+		chisqmin = chisq
+		epsilon_plus = epsilon
 	
-			for b in np.arange(binit-paramsprecision*6,binit+paramsprecision*6,paramsprecision):
-		
-				chisq = 0.000
-				for i in range(0,N):
-					numer = y[i] - (a + b*x[i])
-					if mode == 'y|x':
-						denom = (sigy[i])**2 + (b**2)*(sigx[i])**2 + epsilon**2
-					elif mode == 'x|y':
-						denom = (sigy[i])**2 + (b**2)*(sigx[i])**2 + (b**2)*(epsilon**2)	
-					chisq = chisq + numer**2/denom
-				if chisq <= (N-2)*(1+(2/N)**0.5) and epsilon_minus is None:
-					epsilon_minus = epsilon
-				if chisq <= (N-2) and epsilon_value is None and chisqmin is None:
-					epsilon_value = epsilon
-					chisqmin = chisq
-					afit = a
-					bfit = b
-				chisq_var = chisq
-	epsilon_plus = epsilon
-	
-	merr_epsilon_value = epsilon_value - epsilon_minus
-	perr_epsilon_value = epsilon_plus - epsilon_value
-					
-	return afit,bfit,epsilon_value,merr_epsilon_value,perr_epsilon_value,chisqmin
+	return epsilon_minus, epsilon_plus
 
  
 def bisect_modfitexy(x,sigx,y,sigy):
 
 	logfile = open(logfileName, 'a')
 	
-	afit_1,merr_afit_1,perr_afit_1, bfit_1,merr_bfit_1,perr_bfit_1, epsilonfit_1, absscat_1 = modfitexy(x,sigx,y,sigy,'y|x')
+	afit_1,merr_afit_1,perr_afit_1, bfit_1,merr_bfit_1,perr_bfit_1, epsilonfit_1,merr_epsilonfit_1,perr_epsilonfit_1, absscat_1 = modfitexy(x,sigx,y,sigy,'y|x')
 	logfile.write('--------------------------------------------------------- \n')
 	logfile.write('\ny = a + bx \n\nMode fit: y|x \na =' + str(afit_1) + '+' + str(perr_afit_1) + '-' + str(merr_afit_1) + '\n')
-	logfile.write('b =' + str(bfit_1) + '+' + str(perr_bfit_1) + '-' + str(merr_bfit_1) + '\nepsilon =' + str(epsilonfit_1) + '\n')
+	logfile.write('b =' + str(bfit_1) + '+' + str(perr_bfit_1) + '-' + str(merr_bfit_1) + '\n')
+	logfile.write('epsilon =' + str(epsilonfit_1) + '+' + str(perr_epsilonfit_1) + '-' + str(merr_epsilonfit_1) + '\n')
 	logfile.write('absolute scatter Delta =' + str(absscat_1) + '\n')
-	afit_2,merr_afit_2,perr_afit_2, bfit_2,merr_bfit_2,perr_bfit_2, epsilonfit_2, absscat_2 = modfitexy(x,sigx,y,sigy,'x|y')
+	afit_2,merr_afit_2,perr_afit_2, bfit_2,merr_bfit_2,perr_bfit_2, epsilonfit_2,merr_epsilonfit_2,perr_epsilonfit_2, absscat_2 = modfitexy(x,sigx,y,sigy,'x|y')
 	logfile.write('\nMode fit: x|y \na =' + str(afit_2) + '+' + str(perr_afit_2) + '-' + str(merr_afit_2) + '\n')
-	logfile.write('b =' + str(bfit_2) + '+' + str(perr_bfit_2) + '-' + str(merr_bfit_2) + '\nepsilon =' + str(epsilonfit_2) + '\n')
+	logfile.write('b =' + str(bfit_2) + '+' + str(perr_bfit_2) + '-' + str(merr_bfit_2) + '\n')
+	logfile.write('epsilon =' + str(epsilonfit_2) + '+' + str(perr_epsilonfit_2) + '-' + str(merr_epsilonfit_2) + '\n')
 	logfile.write('absolute scatter Delta =' + str(absscat_2))
 	
 	b_bisec = np.tan(0.5*(np.arctan(bfit_1)+np.arctan(bfit_2)))
@@ -246,18 +255,18 @@ def get_errors_ab(x,sigx,y,sigy,afit,bfit,ainit_err,binit_err,epsilonfit,chisqmi
 			
 	print 'chisq grid calculated'
 	
-	print 'producing ab plot...'
-	chisqimg = np.zeros((len(a_range), len(b_range))) + 1
-	chisqimg[chisqgrid>chisqmin+1] = 0
-	
-	#fig, ax = plt.subplots()
-	#ax.imshow(chisqimg, interpolation='none', cmap=cm.Greys_r)
-	
-	chisqimg_collapsed_a = np.sum(chisqimg, axis=1)
-	chisqimg_collapsed_b = np.sum(chisqimg, axis=0)
-	#ax.axhline(y=0.5*len(chisqimg_collapsed_a)-1, linewidth=2, color = 'red')
-	#ax.axvline(x=0.5*len(chisqimg_collapsed_b)-1, linewidth=2, color = 'red')
-	#plt.show()
+        chisqimg = np.zeros((len(a_range), len(b_range))) + 1
+        chisqimg[chisqgrid>chisqmin+1] = 0
+        
+        chisqimg_collapsed_a = np.sum(chisqimg, axis=1)
+        chisqimg_collapsed_b = np.sum(chisqimg, axis=0)
+        
+       #print 'producing ab plot...'
+       #fig, ax = plt.subplots()
+       #ax.imshow(chisqimg, interpolation='none', cmap=cm.Greys_r)
+       #ax.axhline(y=0.5*len(chisqimg_collapsed_a)-1, linewidth=2, color = 'red')
+       #ax.axvline(x=0.5*len(chisqimg_collapsed_b)-1, linewidth=2, color = 'red')
+       #plt.show()
 	
 	for j in range(len(chisqimg_collapsed_a)-1):
 		if chisqimg_collapsed_a[j]>0 and chisqimg_collapsed_a[j-1]<0.5:
