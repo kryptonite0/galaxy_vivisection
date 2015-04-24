@@ -10,14 +10,24 @@
 {Arnold}, J.~A., {Romanowsky}, A.~J., {Brodie}, J.~P., {et~al.} 2014, \apj,
   791, 80
 
+\bibitem[{{Athanassoula}(2005)}]{athanassoula2005}
+{Athanassoula}, E. 2005, \mnras, 358, 1477
+
 \bibitem[{{Balcells} {et~al.}(2007){Balcells}, {Graham}, \&
   {Peletier}}]{balcells2007screl}
 {Balcells}, M., {Graham}, A.~W., \& {Peletier}, R.~F. 2007, \apj, 665, 1104
+
+\bibitem[{{Bardeen}(1975)}]{bardeen1975}
+{Bardeen}, J.~M. 1975, in IAU Symposium, Vol.~69, Dynamics of the Solar
+  Systems, ed. A.~{Hayli}, 297
 
 \bibitem[{{Beifiori} {et~al.}(2012){Beifiori}, {Courteau}, {Corsini}, \&
   {Zhu}}]{beifiori2012}
 {Beifiori}, A., {Courteau}, S., {Corsini}, E.~M., \& {Zhu}, Y. 2012, \mnras,
   419, 2497
+
+\bibitem[{{Bekki}(2010)}]{bekki2010}
+{Bekki}, K. 2010, \mnras, 401, L58
 
 \bibitem[{{Chilingarian} {et~al.}(2008){Chilingarian}, {Cayatte}, {Durret},
   {Adami}, {Balkowski}, {Chemin}, {Lagan{\'a}}, \&
@@ -30,6 +40,19 @@
 {Cody}, A.~M., {Carter}, D., {Bridges}, T.~J., {Mobasher}, B., \& {Poggianti},
   B.~M. 2009, \mnras, 396, 1647
 
+\bibitem[{{Combes} {et~al.}(1990){Combes}, {Debbasch}, {Friedli}, \&
+  {Pfenniger}}]{combes1990}
+{Combes}, F., {Debbasch}, F., {Friedli}, D., \& {Pfenniger}, D. 1990, \aap,
+  233, 82
+
+\bibitem[{{Combes} \& {Sanders}(1981)}]{combessanders1981}
+{Combes}, F., \& {Sanders}, R.~H. 1981, \aap, 96, 164
+
+\bibitem[{{Davies} {et~al.}(1988){Davies}, {Phillipps}, {Cawson}, {Disney}, \&
+  {Kibblewhite}}]{davies1988}
+{Davies}, J.~I., {Phillipps}, S., {Cawson}, M.~G.~M., {Disney}, M.~J., \&
+  {Kibblewhite}, E.~J. 1988, \mnras, 232, 239
+
 \bibitem[{{Davies} {et~al.}(1983){Davies}, {Efstathiou}, {Fall}, {Illingworth},
   \& {Schechter}}]{davies1983}
 {Davies}, R.~L., {Efstathiou}, G., {Fall}, S.~M., {Illingworth}, G., \&
@@ -40,6 +63,10 @@
 {de Rijcke}, S., {Michielsen}, D., {Dejonghe}, H., {Zeilinger}, W.~W., \&
   {Hau}, G.~K.~T. 2005, \aap, 438, 491
 
+\bibitem[{{dos Anjos} \& {da Silva}(2013)}]{dosanjosdasilva2013}
+{dos Anjos}, S., \& {da Silva}, M.~B. 2013, Memorie della Societa Astronomica
+  Italiana Supplementi, 25, 33
+
 \bibitem[{{Dressler}(1989)}]{dressler1989}
 {Dressler}, A. 1989, in IAU Symposium, Vol. 134, Active Galactic Nuclei, ed.
   D.~E. {Osterbrock} \& J.~S. {Miller}, 217
@@ -47,12 +74,29 @@
 \bibitem[{{Dullo} \& {Graham}(2014)}]{dullograham2014cores}
 {Dullo}, B.~T., \& {Graham}, A.~W. 2014, \mnras, 444, 2700
 
+\bibitem[{{Eliche-Moral} {et~al.}(2011){Eliche-Moral},
+  {Gonz{\'a}lez-Garc{\'{\i}}a}, {Balcells}, {Aguerri}, {Gallego}, {Zamorano},
+  \& {Prieto}}]{elichemoral2011}
+{Eliche-Moral}, M.~C., {Gonz{\'a}lez-Garc{\'{\i}}a}, A.~C., {Balcells}, M.,
+  {et~al.} 2011, \aap, 533, A104
+
 \bibitem[{{Emsellem} {et~al.}(2011){Emsellem}, {}, \& {E. et
   al.}}]{atlas3dIII-MNRAS}
 {Emsellem}, {}, \& {E. et al.} 2011, \mnras, 414, 888
 
+\bibitem[{{Erwin} {et~al.}(2003){Erwin}, {Beltr{\'a}n}, {Graham}, \&
+  {Beckman}}]{erwin2003}
+{Erwin}, P., {Beltr{\'a}n}, J.~C.~V., {Graham}, A.~W., \& {Beckman}, J.~E.
+  2003, \apj, 597, 929
+
 \bibitem[{{Erwin} \& {Gadotti}(2012)}]{erwingadotti2012}
 {Erwin}, P., \& {Gadotti}, D.~A. 2012, Advances in Astronomy, 2012, 4
+
+\bibitem[{{Erwin} {et~al.}(2015){Erwin}, {Saglia}, {Thomas}, {Fabricius},
+  {Bender}, {Rusli}, {Nowak}, {Beckman}, \& {Vega Beltr{\'a}n}}]{erwin2015}
+{Erwin}, P., {Saglia}, R., {Thomas}, J., {et~al.} 2015, in IAU Symposium, Vol.
+  309, IAU Symposium, ed. B.~L. {Ziegler}, F.~{Combes}, H.~{Dannerbauer}, \&
+  M.~{Verdugo}, 359--360
 
 \bibitem[{{Fazio} {et~al.}(2004){Fazio}, {Hora}, {Allen}, {Ashby}, {Barmby},
   {Deutsch}, {Huang}, {Kleiner}, {Marengo}, {Megeath}, {Melnick}, {Pahre},
@@ -72,10 +116,16 @@
 \bibitem[{{Ferrarese} \& {Merritt}(2000)}]{ferraresemerritt2000}
 {Ferrarese}, L., \& {Merritt}, D. 2000, \apjl, 539, L9
 
+\bibitem[{{Fisher} \& {Drory}(2010)}]{fisherdrory2010}
+{Fisher}, D.~B., \& {Drory}, N. 2010, \apj, 716, 942
+
 \bibitem[{{Forbes} {et~al.}(2008){Forbes}, {Lasky}, {Graham}, \&
   {Spitler}}]{forbes2008}
 {Forbes}, D.~A., {Lasky}, P., {Graham}, A.~W., \& {Spitler}, L. 2008, \mnras,
   389, 1924
+
+\bibitem[{{Gadotti}(2009)}]{Gadotti2009}
+{Gadotti}, D.~A. 2009, \mnras, 393, 1531
 
 \bibitem[{{Gavazzi} {et~al.}(2003){Gavazzi}, {Boselli}, {Donati}, {Franzetti},
   \& {Scodeggio}}]{goldmine}
@@ -87,6 +137,9 @@
   {Magorrian}, {Pinkney}, {Richstone}, \& {Tremaine}}]{gebhardt2000}
 {Gebhardt}, K., {Bender}, R., {Bower}, G., {et~al.} 2000, \apjl, 539, L13
 
+\bibitem[{{Graham}(2015{\natexlab{a}})}]{graham2015pseudo}
+{Graham}, A. 2015{\natexlab{a}}, Highlights of Astronomy, 16, 360
+
 \bibitem[{{Graham}(2007)}]{graham2007}
 {Graham}, A.~W. 2007, \mnras, 379, 711
 
@@ -96,8 +149,20 @@
 \bibitem[{{Graham}(2012)}]{graham2012bent}
 ---. 2012, \apj, 746, 113
 
-\bibitem[{{Graham}(2015)}]{graham2015bulges}
----. 2015, ArXiv e-prints, arXiv:1501.02937
+\bibitem[{{Graham}(2013)}]{graham2013review}
+---. 2013, {Elliptical and Disk Galaxy Structure and Modern Scaling Laws}, ed.
+  T.~D. {Oswalt} \& W.~C. {Keel}, 91
+
+\bibitem[{{Graham}(2014)}]{graham2014review}
+{Graham}, A.~W. 2014, in Astronomical Society of the Pacific Conference Series,
+  Vol. 480, Structure and Dynamics of Disk Galaxies, ed. M.~S. {Seigar} \&
+  P.~{Treuthardt}, 185
+
+\bibitem[{{Graham}(2015{\natexlab{b}})}]{graham2015bulges}
+---. 2015{\natexlab{b}}, ArXiv e-prints, arXiv:1501.02937
+
+\bibitem[{{Graham}(2015{\natexlab{c}})}]{graham2015review}
+---. 2015{\natexlab{c}}, ArXiv e-prints, arXiv:1501.02937
 
 \bibitem[{{Graham} {et~al.}(2003){Graham}, {Erwin}, {Trujillo}, \& {Asensio
   Ramos}}]{graham2003coresersicmodel}
@@ -118,6 +183,9 @@
 \bibitem[{{Graham} \& {Scott}(2015)}]{grahamscott2015}
 ---. 2015, \apj, 798, 54
 
+\bibitem[{{Graham} \& {Worley}(2008)}]{grahamworley2008}
+{Graham}, A.~W., \& {Worley}, C.~C. 2008, \mnras, 388, 1708
+
 \bibitem[{{G{\"u}ltekin} {et~al.}(2009){G{\"u}ltekin}, {Richstone}, {Gebhardt},
   {Lauer}, {Tremaine}, {Aller}, {Bender}, {Dressler}, {Faber}, {Filippenko},
   {Green}, {Ho}, {Kormendy}, {Magorrian}, {Pinkney}, \&
@@ -134,6 +202,10 @@
   Symposium, Vol. 149, The Stellar Populations of Galaxies, ed. B.~{Barbuy} \&
   A.~{Renzini}, 429
 
+\bibitem[{{Hohl}(1975)}]{hohl1975}
+{Hohl}, F. 1975, in IAU Symposium, Vol.~69, Dynamics of the Solar Systems, ed.
+  A.~{Hayli}, 349
+
 \bibitem[{{Jiang} {et~al.}(2013){Jiang}, {Ho}, {Dong}, {Yang}, \&
   {Wang}}]{jiang2013}
 {Jiang}, N., {Ho}, L.~C., {Dong}, X.-B., {Yang}, H., \& {Wang}, J. 2013, \apj,
@@ -141,6 +213,12 @@
 
 \bibitem[{{Jiang} {et~al.}(2011){Jiang}, {Greene}, \& {Ho}}]{jiang2011a}
 {Jiang}, Y.-F., {Greene}, J.~E., \& {Ho}, L.~C. 2011, \apjl, 737, L45
+
+\bibitem[{{Kelly}(2007)}]{linmixerr}
+{Kelly}, B.~C. 2007, \apj, 665, 1489
+
+\bibitem[{{Keselman} \& {Nusser}(2012)}]{keselmannusser2012}
+{Keselman}, J.~A., \& {Nusser}, A. 2012, \mnras, 424, 1232
 
 \bibitem[{{Kormendy} \& {Ho}(2013)}]{kormendyho2013}
 {Kormendy}, J., \& {Ho}, L.~C. 2013, \araa, 51, 511
@@ -185,6 +263,11 @@
 {Liu}, F.~S., {Xia}, X.~Y., {Mao}, S., {Wu}, H., \& {Deng}, Z.~G. 2008, \mnras,
   385, 23
 
+\bibitem[{{MacArthur} {et~al.}(2009){MacArthur}, {Gonz{\'a}lez}, \&
+  {Courteau}}]{macarthur2009}
+{MacArthur}, L.~A., {Gonz{\'a}lez}, J.~J., \& {Courteau}, S. 2009, \mnras, 395,
+  28
+
 \bibitem[{{Magorrian} {et~al.}(1998){Magorrian}, {Tremaine}, {Richstone},
   {Bender}, {Bower}, {Dressler}, {Faber}, {Gebhardt}, {Green}, {Grillmair},
   {Kormendy}, \& {Lauer}}]{magorrian1998}
@@ -220,6 +303,11 @@
 {Meidt}, S.~E., {Schinnerer}, E., {van de Ven}, G., {et~al.} 2014, \apj, 788,
   144
 
+\bibitem[{{Nemmen} {et~al.}(2012){Nemmen}, {Georganopoulos}, {Guiriec},
+  {Meyer}, {Gehrels}, \& {Sambruna}}]{nemmen2012}
+{Nemmen}, R.~S., {Georganopoulos}, M., {Guiriec}, S., {et~al.} 2012, Science,
+  338, 1445
+
 \bibitem[{{Peletier} {et~al.}(2012){Peletier}, {Kutdemir}, {van der Wolk},
   {Falc{\'o}n-Barroso}, {Bacon}, {Bureau}, {Cappellari}, {Davies}, {de Zeeuw},
   {Emsellem}, {Krajnovi{\'c}}, {Kuntschner}, {McDermid}, {Sarzi}, {Scott},
@@ -227,10 +315,19 @@
 {Peletier}, R.~F., {Kutdemir}, E., {van der Wolk}, G., {et~al.} 2012, \mnras,
   419, 2031
 
+\bibitem[{{Pfenniger} \& {Friedli}(1991)}]{pfennigerfriedli1991}
+{Pfenniger}, D., \& {Friedli}, D. 1991, \aap, 252, 75
+
 \bibitem[{{Press} {et~al.}(1992){Press}, {Teukolsky}, {Vetterling}, \&
   {Flannery}}]{press1992}
 {Press}, W.~H., {Teukolsky}, S.~A., {Vetterling}, W.~T., \& {Flannery}, B.~P.
   1992, {Numerical recipes in FORTRAN. The art of scientific computing}
+
+\bibitem[{{Querejeta} {et~al.}(2015){Querejeta}, {Eliche-Moral}, {Tapia},
+  {Borlaff}, {Rodr{\'{\i}}guez-P{\'e}rez}, {Zamorano}, \&
+  {Gallego}}]{querejeta2015}
+{Querejeta}, M., {Eliche-Moral}, M.~C., {Tapia}, T., {et~al.} 2015, \aap, 573,
+  A78
 
 \bibitem[{{Reines} {et~al.}(2013){Reines}, {Greene}, \& {Geha}}]{reines2013}
 {Reines}, A.~E., {Greene}, J.~E., \& {Geha}, M. 2013, \apj, 775, 116
@@ -251,6 +348,10 @@
 {Ryan}, C.~J., {De Robertis}, M.~M., {Virani}, S., {Laor}, A., \& {Dawson},
   P.~C. 2007, \apj, 654, 799
 
+\bibitem[{{Saha} {et~al.}(2012){Saha}, {Martinez-Valpuesta}, \&
+  {Gerhard}}]{saha2012}
+{Saha}, K., {Martinez-Valpuesta}, I., \& {Gerhard}, O. 2012, \mnras, 421, 333
+
 \bibitem[{{Sani} {et~al.}(2011){Sani}, {Marconi}, {Hunt}, \&
   {Risaliti}}]{sani2011}
 {Sani}, E., {Marconi}, A., {Hunt}, L.~K., \& {Risaliti}, G. 2011, \mnras, 413,
@@ -258,6 +359,11 @@
 
 \bibitem[{{Savorgnan} \& {Graham}(2014)}]{savorgnangraham2014}
 {Savorgnan}, G.~A.~D., \& {Graham}, A.~W. 2014, ArXiv e-prints, arXiv:1410.7405
+
+\bibitem[{{Scannapieco} {et~al.}(2011){Scannapieco}, {White}, {Springel}, \&
+  {Tissera}}]{scannapieco2011}
+{Scannapieco}, C., {White}, S.~D.~M., {Springel}, V., \& {Tissera}, P.~B. 2011,
+  \mnras, 417, 154
 
 \bibitem[{{Schechter}(1980)}]{schechter1980}
 {Schechter}, P.~L. 1980, \aj, 85, 801
@@ -269,6 +375,11 @@
 
 \bibitem[{{Scott} {et~al.}(2013){Scott}, {Graham}, \& {Schombert}}]{scott2013}
 {Scott}, N., {Graham}, A.~W., \& {Schombert}, J. 2013, \apj, 768, 76
+
+\bibitem[{{Seidel} {et~al.}(2015){Seidel}, {Cacho}, {Ruiz-Lara},
+  {Falc{\'o}n-Barroso}, {P{\'e}rez}, {S{\'a}nchez-Bl{\'a}zquez}, {Vogt},
+  {Ness}, {Freeman}, \& {Aniyan}}]{seidel2015}
+{Seidel}, M.~K., {Cacho}, R., {Ruiz-Lara}, T., {et~al.} 2015, \mnras, 446, 2837
 
 \bibitem[{{Sheth} {et~al.}(2010){Sheth}, {Regan}, {Hinz}, {Gil de Paz},
   {Men{\'e}ndez-Delmestre}, {Mu{\~n}oz-Mateos}, {Seibert}, {Kim},
@@ -316,5 +427,8 @@
 {Yee}, H.~K.~C. 1992, in Astronomical Society of the Pacific Conference Series,
   Vol.~31, Relationships Between Active Galactic Nuclei and Starburst Galaxies,
   ed. A.~V. {Filippenko}, 417
+
+\bibitem[{{Young} \& {Currie}(1994)}]{youngcurrie1994}
+{Young}, C.~K., \& {Currie}, M.~J. 1994, \mnras, 268, L11
 
 \end{thebibliography}
