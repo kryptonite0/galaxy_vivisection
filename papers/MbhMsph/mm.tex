@@ -589,7 +589,7 @@ From a visual inspection, bulges with $n_{\rm sph}<2$ do not appear to be offset
 \subsection{Black hole mass -- galaxy luminosity}
 Figure \ref{fig:mbhmaggal} illustrates the $M_{\rm BH} - L_{\rm gal}$ diagram.
 Four spiral galaxies had their total luminosities underestimated (see Section \ref{sec:data}) 
-and thus are not included in the linear regression analysis. 
+and thus are not included in the linear regression analysis. \\
 Upon analyzing a sample of 35 galaxies, among which only four were classified as spiral galaxies, 
 \cite{lasker2014anal} claimed that the $M_{\rm BH} - L_{\rm sph}$ and $M_{\rm BH} - L_{\rm gal}$ relations, 
 which they fit with a single power-law, have consistent intrinsic scatter.
@@ -600,21 +600,31 @@ has intrinsic scatter $\epsilon_{(Y|X)} = 0.51 \pm 0.06\rm~dex$ (direct linear r
 and $\epsilon_{(X|Y)} = 0.60 \pm 0.09\rm~dex$ (inverse linear regression), 
 whereas the $M_{\rm BH} - L_{\rm gal}$ correlation for all galaxies has $\epsilon_{(Y|X)} = 0.63 \pm 0.07\rm~dex$ 
 and $\epsilon_{(X|Y)} = 0.91 \pm 0.17\rm~dex$.
-When considering only early-type galaxies, 
-we find that the $M_{\rm BH} - L_{\rm sph}$ and $M_{\rm BH} - L_{\rm gal}$ relations have the same level of intrinsic scatter 
-($\epsilon_{(Y|X)} = 0.41 \pm 0.06\rm~dex$ and $\epsilon_{(X|Y)} = 0.51 \pm 0.10\rm~dex$ 
-against $\epsilon_{(Y|X)} = 0.43 \pm 0.06\rm~dex$ and $\epsilon_{(X|Y)} = 0.53 \pm 0.10\rm~dex$).
-{\bf We point out here that this result does not strongly depend on the value that we assumed for the uncertainty of galaxy magnitudes (0.25). 
-In fact, we tested different values and found that we need $error >= 0.7 mag$ to say that gal lum has smaller intrinsic scatter.
-
-From the observer's perspective, measuring galaxy luminosities is obviously easier and faster 
-than performing galaxy decompositions to obtain bulge luminosities. 
-This, combined with the results from our analysis, suggests that one should prefer the galaxy luminosity over the bulge luminosity 
-to predict black hole masses in a sample of elliptical and lenticular galaxies only.
+However, when considering only early-type galaxies, 
+we find that the $M_{\rm BH} - L_{\rm sph}$ and $M_{\rm BH} - L_{\rm gal}$ relations have the same level of intrinsic scatter. 
+%($\epsilon_{(Y|X)} = 0.41 \pm 0.06\rm~dex$ and $\epsilon_{(X|Y)} = 0.51 \pm 0.10\rm~dex$ 
+%against $\epsilon_{(Y|X)} = 0.43 \pm 0.06\rm~dex$ and $\epsilon_{(X|Y)} = 0.53 \pm 0.10\rm~dex$).
+Because the value of the intrinsic scatter depends on the uncertainties associated to the luminosities\footnote{The 
+smaller (larger) the uncertainties, the larger (smaller) the intrinsic scatter.}, 
+we tested the robustness of our last conclusion by increasing/decreasing the errors associated to $L_{\rm gal}$ 
+(that we originally assumed to be $0.25\rm~mag$) and repeating the linear regression analysis. 
+On the other hand, the uncertainties associated to $L_{\rm sph}$ have been estimated 
+with an advanced method that takes into account the systematic errors related to the galaxy decomposition process. 
+We consider these uncertainties trustworthy and, therefore, we decided to vary only the errors associated to $L_{\rm gal}$.
+We found that the $M_{\rm BH} - L_{\rm sph}$ and $M_{\rm BH} - L_{\rm gal}$ relations for early-type galaxies 
+have inconsistent intrinsic scatter when assuming an error $\geq 0.7\rm~mag$ on $L_{\rm gal}$. 
+Because such error is larger than the typical error on $L_{\rm sph}$ used here
+-- and, in general, is significantly larger than the uncertainties on $L_{\rm gal}$ that are typically used in the literature --, 
+we come to the conclusion that our determination of the intrinsic scatter is reliable, 
+and that, for early-type galaxies, $M_{\rm BH}$ correlates equally well with $L_{\rm sph}$ and $L_{\rm gal}$.
+As \cite{lasker2014anal} pointed out, from the observer's perspective, measuring galaxy luminosities is obviously easier and faster 
+than performing accurate %galaxy decompositions to obtain bulge luminosities. 
+This, combined with our last conclusion, suggests that one should prefer the galaxy luminosity over the bulge luminosity 
+to predict black hole masses when dealing with samples of elliptical and lenticular galaxies only.
 
 
 \subsection{Black hole mass -- spheroid stellar mass}
-Finally, we present the $M_{\rm BH} - M_{\rm *,sph}$ diagram in Figure \ref{fig:mbhmasssph}.
+Finally, we present the $M_{\rm BH} - M_{\rm *,sph}$ diagram in Figure \ref{fig:mbhmasssph}. 
 
 relations
 agns consistent w spirals, but analysis deferred to other paper
@@ -623,7 +633,7 @@ cubic growth
 
 \section{Conclusions}
 \label{sec:concl}
-ngc0524 outlier, n1332 non outlier
+%ngc0524 outlier, n1332 non outlier
 
 
 \acknowledgments
@@ -641,7 +651,7 @@ under contract with the National Aeronautics and Space Administration.
 The BCES routine \citep{akritasbershady1996} was run via the python module 
 written by Rodrigo Nemmen \citep{nemmen2012}, which is available at {\url https://github.com/rsnemmen/BCES}.
 
-\bibliography{/Users/gsavorgnan/Dropbox_notsync/giulia_e_basta/Literature/SMBHbibliography}
+\bibliography{/Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography}
 
 
 \clearpage

@@ -3,8 +3,8 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: mm.aux
 The style file: apj.bst
 Database file #1: mmNotes.bib
-Database file #2: /Users/gsavorgnan/Dropbox_notsync/giulia_e_basta/Literature/SMBHbibliography.bib
-Repeated entry---line 6709 of file /Users/gsavorgnan/Dropbox_notsync/giulia_e_basta/Literature/SMBHbibliography.bib
+Database file #2: /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+Repeated entry---line 6709 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  : @article{haringrix2004
  :                       ,
 I'm skipping whatever remains of this entry
@@ -28,7 +28,7 @@ Warning--empty publisher in graham2013review
 Warning--empty publisher in press1992
 You've used 98 entries,
             3085 wiz_defined-function locations,
-            1303 strings with 27688 characters,
+            1303 strings with 27672 characters,
 and the built_in function-call counts, 48015 in all, are:
 = -- 3931
 > -- 3569
