@@ -24,7 +24,7 @@ rc('font',**{'family':'sans-serif','sans-serif':['CenturyGothic']})
 rc('text', usetex=True)
 
 
-matplotlib.rcParams.update({'font.size': 22})
+matplotlib.rcParams.update({'font.size': 26})
 
 dbname = '/Users/gsavorgnan/galaxy_vivisection/python_codes/databases/galaxy_vivisection.db'
 
@@ -1029,15 +1029,15 @@ def mbh_vs_mag_sph_psb():
         yy = (A[2]*(logxx) + B[2])
         ax.plot((logxx+np.average(mag_sph[n>2])),10**yy, color='k', ls='-', linewidth=2.)
 	
-        ### fit using FITEXY ###
-        print '-----------------------------'
-        print 'FITEXY n>2'
-        A,perr_A,merr_A,B,perr_B,merr_B = fitexy.bisect_modfitexy(mag_sph[n>2]-np.average(mag_sph[n>2]),
-        	0.5*(perr_mag_sph[n>2] + merr_mag_sph[n>2]),
-        	log_mbh[n>2],0.5*(merr_log_mbh[n>2] + perr_log_mbh[n>2]))
-        print '-----------------------------'
-        print '-----------------------------'
-	
+       #### fit using FITEXY ###
+       #print '-----------------------------'
+       #print 'FITEXY n>2'
+       #A,perr_A,merr_A,B,perr_B,merr_B = fitexy.bisect_modfitexy(mag_sph[n>2]-np.average(mag_sph[n>2]),
+       #	0.5*(perr_mag_sph[n>2] + merr_mag_sph[n>2]),
+       #	log_mbh[n>2],0.5*(merr_log_mbh[n>2] + perr_log_mbh[n>2]))
+       #print '-----------------------------'
+       #print '-----------------------------'
+       #
        #### produce .dat file
        #datfileName = '/Users/gsavorgnan/galaxy_vivisection/data/marconi_fit/mbh_vs_mag_sph_classbul.dat'
        #datfile = open(datfileName, 'w')
@@ -1050,26 +1050,121 @@ def mbh_vs_mag_sph_psb():
 
 	###########################
 
-	# make inset
-	ins = plt.axes([.62, .25, .18, .2])
-	ins.axis([0.01,11,-1.99,1.99])
-	ins.xaxis.set_ticks([1,5,10])
-	ins.yaxis.set_ticks([-1,0,1])
-	ins.set_xlabel(r'$n_{\rm sph}$')
-	ins.set_ylabel(r'offset')
-	ins.plot([-1,15], [0,0], ls='-', c='k')
-	ins.plot([2,2], [-3,3], ls='--', c='k')
-	offset = log_mbh - (slope_n_grt_2*(mag_sph-np.average(mag_sph[n>2])) + intercept_n_grt_2)
-	ins.scatter(n, offset, marker='o', facecolor='k', edgecolor='k', s=15, **scatter_kwargs)
-	#ins.scatter(n[pseudobulge_KH13==1], offset[pseudobulge_KH13==1], marker='o', facecolor='b', edgecolor='gray', s=20, **scatter_kwargs)
+       ## make inset
+       #ins = plt.axes([.62, .25, .18, .2])
+       #ins.axis([0.01,11,-1.99,1.99])
+       #ins.xaxis.set_ticks([1,5,10])
+       #ins.yaxis.set_ticks([-1,0,1])
+       #ins.set_xlabel(r'$n_{\rm sph}$')
+       #ins.set_ylabel(r'offset')
+       #ins.plot([-1,15], [0,0], ls='-', c='k')
+       #ins.plot([2,2], [-3,3], ls='--', c='k')
+       #offset = log_mbh - (slope_n_grt_2*(mag_sph-np.average(mag_sph[n>2])) + intercept_n_grt_2)
+       #ins.scatter(n, offset, marker='o', facecolor='k', edgecolor='k', s=15, **scatter_kwargs)
+       ##ins.scatter(n[pseudobulge_KH13==1], offset[pseudobulge_KH13==1], marker='o', facecolor='b', edgecolor='gray', s=20, **scatter_kwargs)
 	
 	ax.set_yscale('log')
         ax.axis([-19.01,-27.99,10**5.1,10**11.2])
-        ax.set_xlabel(r'$MAG_{\rm sph}\rm~[mag]$', labelpad=15)
-        ax.set_ylabel(r'$M_{\rm BH} \rm ~[M_\odot]$', labelpad=15)
+        xticks_labels = ['$-28$','','$-26$','','$-24$','','$-22$','','$-20$']
+        ax.set_xticklabels(xticks_labels)
+        ax.set_xlabel(r'$MAG_{\rm sph}\rm~[mag]$', labelpad=12)
+        ax.set_ylabel(r'$M_{\rm BH} \rm ~[M_\odot]$', labelpad=12)
 	plt.subplots_adjust(left=0.15,bottom=0.15,right=0.99,top=0.9)
-        plt.show()
-	#plt.savefig(path_paper_figures + 'mbh_vs_mag_sph_psb.pdf', format='pdf', dpi=1000)
+        #plt.show()
+	plt.savefig(path_paper_figures + 'mbh_vs_mag_sph_psb.pdf', format='pdf', dpi=1000)
+	
+def inset_psb():
+	
+	#outliers = [u'n1374', u'n3842exp', u'n4889']
+	outliers = []
+	
+	connection = sql3.connect(dbname)
+	cur = connection.cursor()
+
+	getdata_query = 'SELECT anc.gal_id, anc.mass_BH, anc.perr_mass_BH, anc.merr_mass_BH, anc.core, \
+		pysres.mag_sph_eq_moffat_comb, \
+		errV.perr_mag_sph, errV.merr_mag_sph, \
+		anc.ELLIPTICAL_my, anc.simplemorphtype, \
+		pysres.log_n_eq_moffat_comb, \
+		errV.merr_log_n, errV.perr_log_n \
+		FROM Ancillary AS anc \
+		JOIN OneDFitResultsPhysicalUnits AS pysres ON anc.gal_id = pysres.gal_id \
+		JOIN ErrorsVote as errV ON anc.gal_id = errV.gal_id \
+		WHERE anc.fit1D_done = 1;'
+		
+	cur.execute(getdata_query)
+	datalist = cur.fetchall()
+	data= np.asarray(datalist).transpose()
+	#print data
+	gal_id = data[0]
+	mbh = data[1].astype(np.float)
+	log_mbh = np.log10(mbh)
+	perr_mbh = data[2].astype(np.float)
+	perr_log_mbh = np.log10(1 + perr_mbh/mbh)
+	merr_mbh = data[3].astype(np.float)
+	merr_log_mbh = -np.log10(1 - merr_mbh/mbh)
+	core = data[4].astype(np.int)
+	mag_sph = data[5].astype(np.float)
+	perr_mag_sph = data[6].astype(np.float)
+	merr_mag_sph = data[7].astype(np.float)
+	ELL = data[8].astype(np.int)
+	simplemorphtype = data[9]
+	log_n = data[10].astype(np.float)
+	n = 10**log_n
+	merr_log_n = data[11].astype(np.float)
+	perr_log_n = data[12].astype(np.float)
+	#merr_n = (-10**(-merr_log_n)+1)*n
+	#perr_n = (10**perr_log_n-1)*n
+			
+        ###########################
+
+	print 'BCES n>2'
+	print 'n', len(mag_sph[n>2])
+        A,B,Aerr,Berr,covAB=bces.bces(mag_sph[n>2]-np.average(mag_sph[n>2]),
+		0.5*(perr_mag_sph[n>2] + merr_mag_sph[n>2]),
+        	log_mbh[n>2],0.5*(merr_log_mbh[n>2] + perr_log_mbh[n>2]),mag_sph[n>2]*[0.0])
+        absscat_0 = absolutescatter.get_absscatter(mag_sph[n>2]-np.average(mag_sph[n>2]), log_mbh[n>2], B[0], A[0])
+        absscat_1 = absolutescatter.get_absscatter(mag_sph[n>2]-np.average(mag_sph[n>2]), log_mbh[n>2], B[1], A[1])
+        absscat_2 = absolutescatter.get_absscatter(mag_sph[n>2]-np.average(mag_sph[n>2]), log_mbh[n>2], B[2], A[2])
+        absscat_3 = absolutescatter.get_absscatter(mag_sph[n>2]-np.average(mag_sph[n>2]), log_mbh[n>2], B[3], A[3])
+        print '---------------------------------'
+        print 'y = A*(x-<x>) + B '
+        print '<x> =', np.average(mag_sph[n>2])
+        print
+        print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0]), 'Delta =', "{0:.4f}".format(absscat_0)
+	print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1]), 'Delta =', "{0:.4f}".format(absscat_1)
+        print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2]), 'Delta =', "{0:.4f}".format(absscat_2)
+        #print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3]), 'Delta =', "{0:.4f}".format(absscat_3)
+        print '---------------------------------'
+        
+	slope_n_grt_2 = A[2]
+	intercept_n_grt_2 = B[2]
+		
+	###########################
+
+	fig, ax = plt.subplots()
+	
+	ax.axis([np.log10(0.25),np.log10(18),-1.99,1.99])
+        xticks = np.log10(np.asarray([0.5,1,2,3,4,5,6,10]))
+        xticks_labels = ['$0.5$','$1$','$2$','$3$','$4$','$5$','$6$','$10$']
+        ax.set_xticks(xticks)
+        ax.set_xticklabels(xticks_labels)
+
+	#ax.xaxis.set_ticks([1,5,10])
+	ax.yaxis.set_ticks([-1,0,1])
+	ax.set_xlabel(r'$n_{\rm sph}$', labelpad=13, fontsize=30)
+	ax.set_ylabel(r'offset', labelpad=13, fontsize=30)
+	ax.plot([-1,15], [0,0], ls='-', c='k', linewidth=1.5)
+	ax.plot([np.log10(2),np.log10(2)], [-3,3], ls='--', c='k', linewidth=2.)
+	offset = log_mbh - (slope_n_grt_2*(mag_sph-np.average(mag_sph[n>2])) + intercept_n_grt_2)
+	ax.errorbar(log_n, offset, xerr=[merr_log_n,perr_log_n], yerr=[merr_log_mbh,perr_log_mbh], 
+		ecolor='gray', marker='o', mfc='gray', mec='k', mew=1.5, markersize=10, ls=' ', elinewidth=1.2, capthick=1.2, barsabove=False)
+	
+	
+	plt.subplots_adjust(left=0.15,bottom=0.15,right=0.97,top=0.9)
+        #plt.show()
+	plt.savefig(path_paper_figures + 'inset_psb.pdf', format='pdf', dpi=1000)
+		
 
 def mbh_vs_mag_tot():
 
@@ -2237,7 +2332,8 @@ def main():
 	#mbh_vs_mass_sph_agn()
 	#mbh_vs_mass_sph()
 	#mbh_vs_mag_sph_psb()
-	mbh_vs_mag_tot()
+	inset_psb()
+	#mbh_vs_mag_tot()
 	#mbh_vs_mag_sph()
 	#mbh_vs_mass_sph_galsymb_agn()
 

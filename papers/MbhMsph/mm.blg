@@ -4,10 +4,11 @@ The top-level auxiliary file: mm.aux
 The style file: apj.bst
 Database file #1: mmNotes.bib
 Database file #2: /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
-Repeated entry---line 6709 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+Repeated entry---line 6713 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  : @article{haringrix2004
  :                       ,
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "savorgnangraham2014"
 Name 1 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
 while executing---line 1587 of file apj.bst
 Name 1 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
@@ -26,45 +27,45 @@ while executing---line 1671 of file apj.bst
 Warning--can't use both author and editor fields in graham2013review
 Warning--empty publisher in graham2013review
 Warning--empty publisher in press1992
-You've used 98 entries,
+You've used 97 entries,
             3085 wiz_defined-function locations,
-            1303 strings with 27672 characters,
-and the built_in function-call counts, 48015 in all, are:
-= -- 3931
-> -- 3569
-< -- 50
-+ -- 1197
-- -- 1284
-* -- 4128
-:= -- 9046
-add.period$ -- 98
-call.type$ -- 98
-change.case$ -- 658
-chr.to.int$ -- 93
-cite$ -- 101
-duplicate$ -- 1898
-empty$ -- 2827
-format.name$ -- 1414
-if$ -- 9509
+            1300 strings with 27485 characters,
+and the built_in function-call counts, 47630 in all, are:
+= -- 3896
+> -- 3547
+< -- 49
++ -- 1190
+- -- 1277
+* -- 4100
+:= -- 8974
+add.period$ -- 97
+call.type$ -- 97
+change.case$ -- 652
+chr.to.int$ -- 92
+cite$ -- 100
+duplicate$ -- 1878
+empty$ -- 2800
+format.name$ -- 1403
+if$ -- 9432
 int.to.chr$ -- 6
 int.to.str$ -- 0
-missing$ -- 91
-newline$ -- 298
-num.names$ -- 400
-pop$ -- 729
+missing$ -- 90
+newline$ -- 295
+num.names$ -- 396
+pop$ -- 721
 preamble$ -- 1
-purify$ -- 658
+purify$ -- 652
 quote$ -- 0
-skip$ -- 1588
+skip$ -- 1575
 stack$ -- 0
-substring$ -- 2021
+substring$ -- 2010
 swap$ -- 72
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 876
+type$ -- 867
 warning$ -- 3
-while$ -- 382
+while$ -- 379
 width$ -- 0
-write$ -- 982
+write$ -- 972
 (There were 8 error messages)
