@@ -261,10 +261,10 @@ def mbh_vs_mass_sph_agn():
        #print 'y = A*(x-<x>) + B '
        #print '<x> =', np.average(log_mass_sph)
        #print
-       #print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0]), 'Delta =', "{0:.4f}".format(absscat_0)
-       #print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1]), 'Delta =', "{0:.4f}".format(absscat_1)
-       #print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2]), 'Delta =', "{0:.4f}".format(absscat_2)
-       ##print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3]), 'Delta =', "{0:.4f}".format(absscat_3)
+       #print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '   B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0]), 'Delta =', "{0:.2f}".format(absscat_0)
+       #print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '   B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1]), 'Delta =', "{0:.2f}".format(absscat_1)
+       #print 'bisector    A =', "{0:.2f}".format(A[2]), '\pm', "{0:.2f}".format(Aerr[2]), '   B = ', "{0:.2f}".format(B[2]), '\pm', "{0:.2f}".format(Berr[2]), 'Delta =', "{0:.2f}".format(absscat_2)
+       ##print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '   B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3]), 'Delta =', "{0:.2f}".format(absscat_3)
        #print '---------------------------------'
        #
        #logxx = np.arange(-10,20,0.1)
@@ -304,8 +304,8 @@ def mbh_vs_mass_sph_agn():
        #print '-----------------------------'
        #
        #
-       ############################
-       #
+        ###########################
+       
        #print 'BCES early'
        #print 'n', len(log_mass_sph[earlytype==1])
        #A,B,Aerr,Berr,covAB=bces.bces(log_mass_sph[earlytype==1]-np.average(log_mass_sph[earlytype==1]),
@@ -319,10 +319,10 @@ def mbh_vs_mass_sph_agn():
        #print 'y = A*(x-<x>) + B '
        #print '<x> =', np.average(log_mass_sph[earlytype==1])
        #print
-       #print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0]), 'Delta =', "{0:.4f}".format(absscat_0)
-       #print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1]), 'Delta =', "{0:.4f}".format(absscat_1)
-       #print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2]), 'Delta =', "{0:.4f}".format(absscat_2)
-       ##print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3]), 'Delta =', "{0:.4f}".format(absscat_3)
+       #print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '   B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0]), 'Delta =', "{0:.2f}".format(absscat_0)
+       #print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '   B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1]), 'Delta =', "{0:.2f}".format(absscat_1)
+       #print 'bisector    A =', "{0:.2f}".format(A[2]), '\pm', "{0:.2f}".format(Aerr[2]), '   B = ', "{0:.2f}".format(B[2]), '\pm', "{0:.2f}".format(Berr[2]), 'Delta =', "{0:.2f}".format(absscat_2)
+       ##print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '	B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3]), 'Delta =', "{0:.2f}".format(absscat_3)
        #print '---------------------------------'
        #
        #logxx = np.arange(-10,20,0.1)
@@ -373,217 +373,85 @@ def mbh_vs_mass_sph_agn():
        #datfile.close()
        #
        #############################
-       #
-       #print 'sersic bul of spi'
-       #print 'n', len(log_mass_sph[morph_core=='Sp_0'])
-       #A,B,Aerr,Berr,covAB=bces.bces(log_mass_sph[morph_core=='Sp_0']-np.average(log_mass_sph[morph_core=='Sp_0']),
-       #	0.5*(perr_log_mass_sph[morph_core=='Sp_0'] + merr_log_mass_sph[morph_core=='Sp_0']),
-       #	log_mbh[morph_core=='Sp_0'],0.5*(merr_log_mbh[morph_core=='Sp_0'] + perr_log_mbh[morph_core=='Sp_0']),log_mass_sph[morph_core=='Sp_0']*[0.0])
-       #absscat_0 = absolutescatter.get_absscatter(log_mass_sph[morph_core=='Sp_0']-np.average(log_mass_sph[morph_core=='Sp_0']), log_mbh[morph_core=='Sp_0'], B[0], A[0])
-       #absscat_1 = absolutescatter.get_absscatter(log_mass_sph[morph_core=='Sp_0']-np.average(log_mass_sph[morph_core=='Sp_0']), log_mbh[morph_core=='Sp_0'], B[1], A[1])
-       #absscat_2 = absolutescatter.get_absscatter(log_mass_sph[morph_core=='Sp_0']-np.average(log_mass_sph[morph_core=='Sp_0']), log_mbh[morph_core=='Sp_0'], B[2], A[2])
-       #absscat_3 = absolutescatter.get_absscatter(log_mass_sph[morph_core=='Sp_0']-np.average(log_mass_sph[morph_core=='Sp_0']), log_mbh[morph_core=='Sp_0'], B[3], A[3])
-       #print '---------------------------------'
-       #print 'y = A*(x-<x>) + B '
-       #print '<x> =', np.average(log_mass_sph[morph_core=='Sp_0'])
-       #print
-       #print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0]), 'Delta =', "{0:.4f}".format(absscat_0)
-       #print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1]), 'Delta =', "{0:.4f}".format(absscat_1)
-       #print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2]), 'Delta =', "{0:.4f}".format(absscat_2)
-       ##print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3]), 'Delta =', "{0:.4f}".format(absscat_3)
-       #print '---------------------------------'
-       #
-       #logxx = np.arange(-10,20,0.1)
-       #yy = (A[2]*(logxx) + B[2])
-       #ax.plot(10**(logxx+np.average(log_mass_sph[morph_core=='Sp_0'])),10**yy, color='b', ls='-', linewidth=2.)
-       #
-       ###### calculates 1sigma uncertainty band
-       #yy_1 = ((A[2]+Aerr[2])*(logxx) + (B[2]+Berr[2]))
-       #yy_2 = ((A[2]-Aerr[2])*(logxx) + (B[2]+Berr[2]))
-       #yy_3 = ((A[2]+Aerr[2])*(logxx) + (B[2]-Berr[2]))
-       #yy_4 = ((A[2]-Aerr[2])*(logxx) + (B[2]-Berr[2]))
-       #yy_up = yy_1*[0.0]
-       #for i in range(len(yy_1)):
-       #	if yy_1[i] > yy_2[i]:
-       #		yy_up[i] = yy_1[i]
-       #	elif yy_1[i] <= yy_2[i]:
-       #		yy_up[i] = yy_2[i]	
-       #yy_up = np.asarray(yy_up)
-       #yy_lo = yy_1*[0.0]
-       #for i in range(len(yy_3)):
-       #	if yy_3[i] < yy_4[i]:
-       #		yy_lo[i] = yy_3[i]
-       #	elif yy_3[i] >= yy_4[i]:
-       #		yy_lo[i] = yy_4[i]	
-       #yy_lo = np.asarray(yy_lo)
-       #			
-       #ax.fill_between(10**(logxx+np.average(log_mass_sph[morph_core=='Sp_0'])), 10**yy_lo, 10**yy_up, alpha=0.1, facecolor='b')
-       #
-       #### fit using FITEXY ###
-       #print '-----------------------------'
-       #print 'FITEXY sersic bul of spi'
-       #A,perr_A,merr_A,B,perr_B,merr_B = fitexy.bisect_modfitexy(log_mass_sph[morph_core=='Sp_0']-np.average(log_mass_sph[morph_core=='Sp_0']),
-       #	0.5*(perr_log_mass_sph[morph_core=='Sp_0'] + merr_log_mass_sph[morph_core=='Sp_0']),
-       #	log_mbh[morph_core=='Sp_0'],0.5*(merr_log_mbh[morph_core=='Sp_0'] + perr_log_mbh[morph_core=='Sp_0']))
-       #print '-----------------------------'
-       #print '-----------------------------'
-       #
-       #### produce .dat file
-       #datfileName = '/Users/gsavorgnan/galaxy_vivisection/data/marconi_fit/mbh_vs_mass_sph_late.dat'
-       #datfile = open(datfileName, 'w')
-       #datfile.write('# logMassSph err_logMassSph logMassBH err_logMassBH \n')
-       #for logMassSph, err_logMassSph, logMassBH, err_logMassBH in zip(log_mass_sph[morph_core=='Sp_0']-np.average(log_mass_sph[morph_core=='Sp_0']),
-       #	0.5*(perr_log_mass_sph[morph_core=='Sp_0'] + merr_log_mass_sph[morph_core=='Sp_0']),
-       #	log_mbh[morph_core=='Sp_0'],0.5*(merr_log_mbh[morph_core=='Sp_0'] + perr_log_mbh[morph_core=='Sp_0'])):
-       #	datfile.write(str(logMassSph) + ' ' + str(err_logMassSph) + ' ' + str(logMassBH) + ' ' + str(err_logMassBH) + ' ' + '\n')
-       #datfile.close()
-       #
-       #
-       ###########################
-       #
-       #print '-----------------------------'
-       #print '-----------------------------'
-       #
-       #print 'ellipticals'
-       #print 'n', len(log_mass_sph[simplemorphtype=='E'])
-       #A,B,Aerr,Berr,covAB=bces.bces(log_mass_sph[simplemorphtype=='E']-np.average(log_mass_sph[simplemorphtype=='E']),
-       #	0.5*(perr_log_mass_sph[simplemorphtype=='E'] + merr_log_mass_sph[simplemorphtype=='E']),
-       #	log_mbh[simplemorphtype=='E'],0.5*(merr_log_mbh[simplemorphtype=='E'] + perr_log_mbh[simplemorphtype=='E']),log_mass_sph[simplemorphtype=='E']*[0.0])
-       #absscat_0 = absolutescatter.get_absscatter(log_mass_sph[simplemorphtype=='E']-np.average(log_mass_sph[simplemorphtype=='E']), log_mbh[simplemorphtype=='E'], B[0], A[0])
-       #absscat_1 = absolutescatter.get_absscatter(log_mass_sph[simplemorphtype=='E']-np.average(log_mass_sph[simplemorphtype=='E']), log_mbh[simplemorphtype=='E'], B[1], A[1])
-       #absscat_2 = absolutescatter.get_absscatter(log_mass_sph[simplemorphtype=='E']-np.average(log_mass_sph[simplemorphtype=='E']), log_mbh[simplemorphtype=='E'], B[2], A[2])
-       #absscat_3 = absolutescatter.get_absscatter(log_mass_sph[simplemorphtype=='E']-np.average(log_mass_sph[simplemorphtype=='E']), log_mbh[simplemorphtype=='E'], B[3], A[3])
-       #print '---------------------------------'
-       #print 'y = A*(x-<x>) + B '
-       #print '<x> =', np.average(log_mass_sph[simplemorphtype=='E'])
-       #print
-       #print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0]), 'Delta =', "{0:.4f}".format(absscat_0)
-       #print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1]), 'Delta =', "{0:.4f}".format(absscat_1)
-       #print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2]), 'Delta =', "{0:.4f}".format(absscat_2)
-       ##print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3]), 'Delta =', "{0:.4f}".format(absscat_3)
-       #print '---------------------------------'
-       #
-       #
-       #### fit using FITEXY ###
-       #print '-----------------------------'
-       #print 'FITEXY ellipticals'
-       #A,perr_A,merr_A,B,perr_B,merr_B = fitexy.bisect_modfitexy(log_mass_sph[simplemorphtype=='E']-np.average(log_mass_sph[simplemorphtype=='E']),
-       #	0.5*(perr_log_mass_sph[simplemorphtype=='E'] + merr_log_mass_sph[simplemorphtype=='E']),
-       #	log_mbh[simplemorphtype=='E'],0.5*(merr_log_mbh[simplemorphtype=='E'] + perr_log_mbh[simplemorphtype=='E']))
-       #print '-----------------------------'
-       #print '-----------------------------'
-       #
-       #
-       ###########################
-       #
-       #print 'S0s'
-       #print 'n', len(log_mass_sph[simplemorphtype=='S0'])
-       #A,B,Aerr,Berr,covAB=bces.bces(log_mass_sph[simplemorphtype=='S0']-np.average(log_mass_sph[simplemorphtype=='S0']),
-       #	0.5*(perr_log_mass_sph[simplemorphtype=='S0'] + merr_log_mass_sph[simplemorphtype=='S0']),
-       #	log_mbh[simplemorphtype=='S0'],0.5*(merr_log_mbh[simplemorphtype=='S0'] + perr_log_mbh[simplemorphtype=='S0']),log_mass_sph[simplemorphtype=='S0']*[0.0])
-       #absscat_0 = absolutescatter.get_absscatter(log_mass_sph[simplemorphtype=='S0']-np.average(log_mass_sph[simplemorphtype=='S0']), log_mbh[simplemorphtype=='S0'], B[0], A[0])
-       #absscat_1 = absolutescatter.get_absscatter(log_mass_sph[simplemorphtype=='S0']-np.average(log_mass_sph[simplemorphtype=='S0']), log_mbh[simplemorphtype=='S0'], B[1], A[1])
-       #absscat_2 = absolutescatter.get_absscatter(log_mass_sph[simplemorphtype=='S0']-np.average(log_mass_sph[simplemorphtype=='S0']), log_mbh[simplemorphtype=='S0'], B[2], A[2])
-       #absscat_3 = absolutescatter.get_absscatter(log_mass_sph[simplemorphtype=='S0']-np.average(log_mass_sph[simplemorphtype=='S0']), log_mbh[simplemorphtype=='S0'], B[3], A[3])
-       #print '---------------------------------'
-       #print 'y = A*(x-<x>) + B '
-       #print '<x> =', np.average(log_mass_sph[simplemorphtype=='S0'])
-       #print
-       #print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0]), 'Delta =', "{0:.4f}".format(absscat_0)
-       #print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1]), 'Delta =', "{0:.4f}".format(absscat_1)
-       #print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2]), 'Delta =', "{0:.4f}".format(absscat_2)
-       ##print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3]), 'Delta =', "{0:.4f}".format(absscat_3)
-       #print '---------------------------------'
-       #
-       #### fit using FITEXY ###
-       #print '-----------------------------'
-       #print 'FITEXY S0s'
-       #A,perr_A,merr_A,B,perr_B,merr_B = fitexy.bisect_modfitexy(log_mass_sph[simplemorphtype=='S0']-np.average(log_mass_sph[simplemorphtype=='S0']),
-       #	0.5*(perr_log_mass_sph[simplemorphtype=='S0'] + merr_log_mass_sph[simplemorphtype=='S0']),
-       #	log_mbh[simplemorphtype=='S0'],0.5*(merr_log_mbh[simplemorphtype=='S0'] + perr_log_mbh[simplemorphtype=='S0']))
-       #print '-----------------------------'
-       #print '-----------------------------'
-       #
-       #
-       ###########################
-       #
-       #print 'core'
-       #print 'n', len(log_mass_sph[core==1])
-       #A,B,Aerr,Berr,covAB=bces.bces(log_mass_sph[core==1]-np.average(log_mass_sph[core==1]),
-       #	0.5*(perr_log_mass_sph[core==1] + merr_log_mass_sph[core==1]),
-       #	log_mbh[core==1],0.5*(merr_log_mbh[core==1] + perr_log_mbh[core==1]),log_mass_sph[core==1]*[0.0])
-       #absscat_0 = absolutescatter.get_absscatter(log_mass_sph[core==1]-np.average(log_mass_sph[core==1]), log_mbh[core==1], B[0], A[0])
-       #absscat_1 = absolutescatter.get_absscatter(log_mass_sph[core==1]-np.average(log_mass_sph[core==1]), log_mbh[core==1], B[1], A[1])
-       #absscat_2 = absolutescatter.get_absscatter(log_mass_sph[core==1]-np.average(log_mass_sph[core==1]), log_mbh[core==1], B[2], A[2])
-       #absscat_3 = absolutescatter.get_absscatter(log_mass_sph[core==1]-np.average(log_mass_sph[core==1]), log_mbh[core==1], B[3], A[3])
-       #print '---------------------------------'
-       #print 'y = A*(x-<x>) + B '
-       #print '<x> =', np.average(log_mass_sph[core==1])
-       #print
-       #print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0]), 'Delta =', "{0:.4f}".format(absscat_0)
-       #print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1]), 'Delta =', "{0:.4f}".format(absscat_1)
-       #print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2]), 'Delta =', "{0:.4f}".format(absscat_2)
-       ##print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3]), 'Delta =', "{0:.4f}".format(absscat_3)
-       #print '---------------------------------'
-       #
-       #logxx = np.arange(-10,20,0.1)
-       #yy = (A[2]*(logxx) + B[2])
-       #ax.plot((logxx+np.average(log_mass_sph[core==1])),10**yy, color='k', ls='-.', linewidth=2.)
-       #
-       #### fit using FITEXY ###
-       #print '-----------------------------'
-       #print 'FITEXY core'
-       #A,perr_A,merr_A,B,perr_B,merr_B = fitexy.bisect_modfitexy(log_mass_sph[core==1]-np.average(log_mass_sph[core==1]),
-       #	0.5*(perr_log_mass_sph[core==1] + merr_log_mass_sph[core==1]),
-       #	log_mbh[core==1],0.5*(merr_log_mbh[core==1] + perr_log_mbh[core==1]))
-       #print '-----------------------------'
-       #print '-----------------------------'
-       #
-       #print 'sersic'
-       #print 'n', len(log_mass_sph[core==0])
-       #A,B,Aerr,Berr,covAB=bces.bces(log_mass_sph[core==0]-np.average(log_mass_sph[core==0]),
-       #	0.5*(perr_log_mass_sph[core==0] + merr_log_mass_sph[core==0]),
-       #	log_mbh[core==0],0.5*(merr_log_mbh[core==0] + perr_log_mbh[core==0]),log_mass_sph[core==0]*[0.0])
-       #absscat_0 = absolutescatter.get_absscatter(log_mass_sph[core==0]-np.average(log_mass_sph[core==0]), log_mbh[core==0], B[0], A[0])
-       #absscat_1 = absolutescatter.get_absscatter(log_mass_sph[core==0]-np.average(log_mass_sph[core==0]), log_mbh[core==0], B[1], A[1])
-       #absscat_2 = absolutescatter.get_absscatter(log_mass_sph[core==0]-np.average(log_mass_sph[core==0]), log_mbh[core==0], B[2], A[2])
-       #absscat_3 = absolutescatter.get_absscatter(log_mass_sph[core==0]-np.average(log_mass_sph[core==0]), log_mbh[core==0], B[3], A[3])
-       #print '---------------------------------'
-       #print 'y = A*(x-<x>) + B '
-       #print '<x> =', np.average(log_mass_sph[core==0])
-       #print
-       #print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0]), 'Delta =', "{0:.4f}".format(absscat_0)
-       #print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1]), 'Delta =', "{0:.4f}".format(absscat_1)
-       #print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2]), 'Delta =', "{0:.4f}".format(absscat_2)
-       ##print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3]), 'Delta =', "{0:.4f}".format(absscat_3)
-       #print '---------------------------------'
-       #
-       #logxx = np.arange(-10,20,0.1)
-       #yy = (A[2]*(logxx) + B[2])
-       #ax.plot((logxx+np.average(log_mass_sph[core==0])),10**yy, color='k', ls=':', linewidth=2.)
-       #
-       #### fit using FITEXY ###
-       #print '-----------------------------'
-       #print 'FITEXY sersic'
-       #A,perr_A,merr_A,B,perr_B,merr_B = fitexy.bisect_modfitexy(log_mass_sph[core==0]-np.average(log_mass_sph[core==0]),
-       #	0.5*(perr_log_mass_sph[core==0] + merr_log_mass_sph[core==0]),
-       #	log_mbh[core==0],0.5*(merr_log_mbh[core==0] + perr_log_mbh[core==0]))
-       #print '-----------------------------'
-       #print '-----------------------------'
-
-	###################################
-
-        ### produce .dat file for ewan
-        datfileName = '/Users/gsavorgnan/galaxy_vivisection/data/marconi_fit/mbh_vs_mass_sph_serbul.dat'
+       
+        print 'sersic bul of spi'
+        print 'n', len(log_mass_sph[morph_core=='Sp_0'])
+        A,B,Aerr,Berr,covAB=bces.bces(log_mass_sph[morph_core=='Sp_0']-np.average(log_mass_sph[morph_core=='Sp_0']),
+        	0.5*(perr_log_mass_sph[morph_core=='Sp_0'] + merr_log_mass_sph[morph_core=='Sp_0']),
+        	log_mbh[morph_core=='Sp_0'],0.5*(merr_log_mbh[morph_core=='Sp_0'] + perr_log_mbh[morph_core=='Sp_0']),log_mass_sph[morph_core=='Sp_0']*[0.0])
+        absscat_0 = absolutescatter.get_absscatter(log_mass_sph[morph_core=='Sp_0']-np.average(log_mass_sph[morph_core=='Sp_0']), log_mbh[morph_core=='Sp_0'], B[0], A[0])
+        absscat_1 = absolutescatter.get_absscatter(log_mass_sph[morph_core=='Sp_0']-np.average(log_mass_sph[morph_core=='Sp_0']), log_mbh[morph_core=='Sp_0'], B[1], A[1])
+        absscat_2 = absolutescatter.get_absscatter(log_mass_sph[morph_core=='Sp_0']-np.average(log_mass_sph[morph_core=='Sp_0']), log_mbh[morph_core=='Sp_0'], B[2], A[2])
+        absscat_3 = absolutescatter.get_absscatter(log_mass_sph[morph_core=='Sp_0']-np.average(log_mass_sph[morph_core=='Sp_0']), log_mbh[morph_core=='Sp_0'], B[3], A[3])
+        print '---------------------------------'
+        print 'y = A*(x-<x>) + B '
+        print '<x> =', np.average(log_mass_sph[morph_core=='Sp_0'])
+        print
+        print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '   B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0]), 'Delta =', "{0:.2f}".format(absscat_0)
+        print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '   B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1]), 'Delta =', "{0:.2f}".format(absscat_1)
+        print 'bisector    A =', "{0:.2f}".format(A[2]), '\pm', "{0:.2f}".format(Aerr[2]), '   B = ', "{0:.2f}".format(B[2]), '\pm', "{0:.2f}".format(Berr[2]), 'Delta =', "{0:.2f}".format(absscat_2)
+        #print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '	B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3]), 'Delta =', "{0:.2f}".format(absscat_3)
+        print '---------------------------------'
+       
+        logxx = np.arange(-10,20,0.1)
+        yy = (A[2]*(logxx) + B[2])
+        ax.plot(10**(logxx+np.average(log_mass_sph[morph_core=='Sp_0'])),10**yy, color='b', ls='-', linewidth=2.)
+       
+        ##### calculates 1sigma uncertainty band
+        yy_1 = ((A[2]+Aerr[2])*(logxx) + (B[2]+Berr[2]))
+        yy_2 = ((A[2]-Aerr[2])*(logxx) + (B[2]+Berr[2]))
+        yy_3 = ((A[2]+Aerr[2])*(logxx) + (B[2]-Berr[2]))
+        yy_4 = ((A[2]-Aerr[2])*(logxx) + (B[2]-Berr[2]))
+        yy_up = yy_1*[0.0]
+        for i in range(len(yy_1)):
+        	if yy_1[i] > yy_2[i]:
+        		yy_up[i] = yy_1[i]
+        	elif yy_1[i] <= yy_2[i]:
+        		yy_up[i] = yy_2[i]	
+        yy_up = np.asarray(yy_up)
+        yy_lo = yy_1*[0.0]
+        for i in range(len(yy_3)):
+        	if yy_3[i] < yy_4[i]:
+        		yy_lo[i] = yy_3[i]
+        	elif yy_3[i] >= yy_4[i]:
+        		yy_lo[i] = yy_4[i]	
+        yy_lo = np.asarray(yy_lo)
+        			
+        ax.fill_between(10**(logxx+np.average(log_mass_sph[morph_core=='Sp_0'])), 10**yy_lo, 10**yy_up, alpha=0.1, facecolor='b')
+       
+        ### fit using FITEXY ###
+        print '-----------------------------'
+        print 'FITEXY sersic bul of spi'
+        A,perr_A,merr_A,B,perr_B,merr_B = fitexy.bisect_modfitexy(log_mass_sph[morph_core=='Sp_0']-np.average(log_mass_sph[morph_core=='Sp_0']),
+        	0.5*(perr_log_mass_sph[morph_core=='Sp_0'] + merr_log_mass_sph[morph_core=='Sp_0']),
+        	log_mbh[morph_core=='Sp_0'],0.5*(merr_log_mbh[morph_core=='Sp_0'] + perr_log_mbh[morph_core=='Sp_0']))
+        print '-----------------------------'
+        print '-----------------------------'
+       
+        ### produce .dat file
+        datfileName = '/Users/gsavorgnan/galaxy_vivisection/data/marconi_fit/mbh_vs_mass_sph_late.dat'
         datfile = open(datfileName, 'w')
-        datfile.write('# Msph err_Msph logMassBH err_logMassBH \n')
-        for logMsph, err_logMsph, logMassBH, err_logMassBH in zip(log_mass_sph[BUL_sersic==1]-np.average(log_mass_sph[BUL_sersic==1]),
-        	0.5*(perr_log_mass_sph[BUL_sersic==1]+merr_log_mass_sph[BUL_sersic==1]),
-        	log_mbh[BUL_sersic==1],0.5*(merr_log_mbh[BUL_sersic==1] + perr_log_mbh[BUL_sersic==1])):
-        	datfile.write(str(logMsph) + ' ' + str(err_logMsph) + ' ' + str(logMassBH) + ' ' + str(err_logMassBH) + ' ' + '\n')
+        datfile.write('# logMassSph err_logMassSph logMassBH err_logMassBH \n')
+        for logMassSph, err_logMassSph, logMassBH, err_logMassBH in zip(log_mass_sph[morph_core=='Sp_0']-np.average(log_mass_sph[morph_core=='Sp_0']),
+        	0.5*(perr_log_mass_sph[morph_core=='Sp_0'] + merr_log_mass_sph[morph_core=='Sp_0']),
+        	log_mbh[morph_core=='Sp_0'],0.5*(merr_log_mbh[morph_core=='Sp_0'] + perr_log_mbh[morph_core=='Sp_0'])):
+        	datfile.write(str(logMassSph) + ' ' + str(err_logMassSph) + ' ' + str(logMassBH) + ' ' + str(err_logMassBH) + ' ' + '\n')
         datfile.close()
        
-	###################################
+       
+       ####################################
+       #
+       #### produce .dat file for ewan
+       #datfileName = '/Users/gsavorgnan/galaxy_vivisection/data/marconi_fit/mbh_vs_mass_sph_serbul.dat'
+       #datfile = open(datfileName, 'w')
+       #datfile.write('# Msph err_Msph logMassBH err_logMassBH \n')
+       #for logMsph, err_logMsph, logMassBH, err_logMassBH in zip(log_mass_sph[BUL_sersic==1]-np.average(log_mass_sph[BUL_sersic==1]),
+       #	0.5*(perr_log_mass_sph[BUL_sersic==1]+merr_log_mass_sph[BUL_sersic==1]),
+       #	log_mbh[BUL_sersic==1],0.5*(merr_log_mbh[BUL_sersic==1] + perr_log_mbh[BUL_sersic==1])):
+       #	datfile.write(str(logMsph) + ' ' + str(err_logMsph) + ' ' + str(logMassBH) + ' ' + str(err_logMassBH) + ' ' + '\n')
+       #datfile.close()
+       #
+       ####################################
 
 
 	scatter_kwargs = {"zorder":100}
@@ -768,6 +636,9 @@ def mbh_vs_mass_sph():
         for x0,y0 in zip(mass_sph[simplemorphtype=='Sp'], mbh[simplemorphtype=='Sp']):
 		markers.spiral(ax, 'blue', np.log10(x0), np.log10(y0), 0.04)
 		
+        for x0,y0 in zip(mass_sph[simplemorphtype=='Sp'], mbh[simplemorphtype=='Sp']):
+		markers.spiral(ax, 'blue', np.log10(x0), np.log10(y0), 0.04)
+
 	ax.scatter(mass_sph[simplemorphtype=='merger'], mbh[simplemorphtype=='merger'], marker=r'$\star$', s=500, color='k', **scatter_kwargs)	
 			
 	
@@ -780,10 +651,10 @@ def mbh_vs_mass_sph():
         print 'y = A*(x-<x>) + B '
         print '<x> =', np.average(log_mass_sph[earlytype==1])
         print
-        #print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0])
-        #print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1])
-        print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2])
-        #print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3])
+        #print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '   B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0])
+        #print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '   B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1])
+        print 'bisector    A =', "{0:.2f}".format(A[2]), '\pm', "{0:.2f}".format(Aerr[2]), '   B = ', "{0:.2f}".format(B[2]), '\pm', "{0:.2f}".format(Berr[2])
+        #print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '   B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3])
         print '---------------------------------'
        
         logxx = np.arange(-10,20,0.1)
@@ -822,10 +693,10 @@ def mbh_vs_mass_sph():
         print 'y = A*(x-<x>) + B '
         print '<x> =', np.average(log_mass_sph[morph_core=='Sp_0'])
         print
-        #print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0])
-        #print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1])
-        print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2])
-        #print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3])
+        #print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '   B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0])
+        #print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '   B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1])
+        print 'bisector    A =', "{0:.2f}".format(A[2]), '\pm', "{0:.2f}".format(Aerr[2]), '   B = ', "{0:.2f}".format(B[2]), '\pm', "{0:.2f}".format(Berr[2])
+        #print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '   B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3])
         print '---------------------------------'
        
         logxx = np.arange(-10,20,0.1)
@@ -870,8 +741,8 @@ def mbh_vs_mass_sph():
 	ax.set_xscale('log')
 	ax.set_yscale('log')
         plt.axis([10**8.6,10**12.3,10**5.3,10**11.2])
-        plt.xlabel(r'$M_{\rm *,sph}\rm~[M_\odot]$', labelpad=15)
-        plt.ylabel(r'$M_{\rm BH} \rm ~[M_\odot]$', labelpad=15)
+        plt.xlabel(r'$M_{\rm *,sph}\rm~[M_\odot]$', labelpad=13)
+        plt.ylabel(r'$M_{\rm BH} \rm ~[M_\odot]$', labelpad=13)
 	plt.subplots_adjust(left=0.15,bottom=0.15,right=0.97,top=0.9)
         #plt.show()
 	plt.savefig(path_paper_figures + 'mbh_vs_mass_sph.pdf', format='pdf', dpi=1000)
@@ -982,10 +853,10 @@ def mbh_vs_mag_sph_psb():
        #print 'y = A*(x-<x>) + B '
        #print '<x> =', np.average(mag_sph)
        #print
-       ##print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0]), 'Delta =', "{0:.4f}".format(absscat_0)
-       ##print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1]), 'Delta =', "{0:.4f}".format(absscat_1)
-       #print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2]), 'Delta =', "{0:.4f}".format(absscat_2)
-       ##print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3]), 'Delta =', "{0:.4f}".format(absscat_3)
+       ##print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '   B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0]), 'Delta =', "{0:.2f}".format(absscat_0)
+       ##print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '   B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1]), 'Delta =', "{0:.2f}".format(absscat_1)
+       #print 'bisector    A =', "{0:.2f}".format(A[2]), '\pm', "{0:.2f}".format(Aerr[2]), '   B = ', "{0:.2f}".format(B[2]), '\pm', "{0:.2f}".format(Berr[2]), 'Delta =', "{0:.2f}".format(absscat_2)
+       ##print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '   B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3]), 'Delta =', "{0:.2f}".format(absscat_3)
        #print '---------------------------------'
        #
        #logxx = np.arange(-10,20,0.1)
@@ -1016,10 +887,10 @@ def mbh_vs_mag_sph_psb():
         print 'y = A*(x-<x>) + B '
         print '<x> =', np.average(mag_sph[n>2])
         print
-        print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0]), 'Delta =', "{0:.4f}".format(absscat_0)
-	print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1]), 'Delta =', "{0:.4f}".format(absscat_1)
-        print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2]), 'Delta =', "{0:.4f}".format(absscat_2)
-        #print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3]), 'Delta =', "{0:.4f}".format(absscat_3)
+        print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '   B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0]), 'Delta =', "{0:.2f}".format(absscat_0)
+	print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '   B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1]), 'Delta =', "{0:.2f}".format(absscat_1)
+        print 'bisector    A =', "{0:.2f}".format(A[2]), '\pm', "{0:.2f}".format(Aerr[2]), '   B = ', "{0:.2f}".format(B[2]), '\pm', "{0:.2f}".format(Berr[2]), 'Delta =', "{0:.2f}".format(absscat_2)
+        #print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '   B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3]), 'Delta =', "{0:.2f}".format(absscat_3)
         print '---------------------------------'
         
 	slope_n_grt_2 = A[2]
@@ -1029,15 +900,15 @@ def mbh_vs_mag_sph_psb():
         yy = (A[2]*(logxx) + B[2])
         ax.plot((logxx+np.average(mag_sph[n>2])),10**yy, color='k', ls='-', linewidth=2.)
 	
-       #### fit using FITEXY ###
-       #print '-----------------------------'
-       #print 'FITEXY n>2'
-       #A,perr_A,merr_A,B,perr_B,merr_B = fitexy.bisect_modfitexy(mag_sph[n>2]-np.average(mag_sph[n>2]),
-       #	0.5*(perr_mag_sph[n>2] + merr_mag_sph[n>2]),
-       #	log_mbh[n>2],0.5*(merr_log_mbh[n>2] + perr_log_mbh[n>2]))
-       #print '-----------------------------'
-       #print '-----------------------------'
-       #
+        ### fit using FITEXY ###
+        print '-----------------------------'
+        print 'FITEXY n>2'
+        A,perr_A,merr_A,B,perr_B,merr_B = fitexy.bisect_modfitexy(mag_sph[n>2]-np.average(mag_sph[n>2]),
+        	0.5*(perr_mag_sph[n>2] + merr_mag_sph[n>2]),
+        	log_mbh[n>2],0.5*(merr_log_mbh[n>2] + perr_log_mbh[n>2]))
+        print '-----------------------------'
+        print '-----------------------------'
+       
        #### produce .dat file
        #datfileName = '/Users/gsavorgnan/galaxy_vivisection/data/marconi_fit/mbh_vs_mag_sph_classbul.dat'
        #datfile = open(datfileName, 'w')
@@ -1070,8 +941,8 @@ def mbh_vs_mag_sph_psb():
         ax.set_xlabel(r'$MAG_{\rm sph}\rm~[mag]$', labelpad=12)
         ax.set_ylabel(r'$M_{\rm BH} \rm ~[M_\odot]$', labelpad=12)
 	plt.subplots_adjust(left=0.15,bottom=0.15,right=0.99,top=0.9)
-        #plt.show()
-	plt.savefig(path_paper_figures + 'mbh_vs_mag_sph_psb.pdf', format='pdf', dpi=1000)
+        plt.show()
+	#plt.savefig(path_paper_figures + 'mbh_vs_mag_sph_psb.pdf', format='pdf', dpi=1000)
 	
 def inset_psb():
 	
@@ -1131,10 +1002,10 @@ def inset_psb():
         print 'y = A*(x-<x>) + B '
         print '<x> =', np.average(mag_sph[n>2])
         print
-        print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0]), 'Delta =', "{0:.4f}".format(absscat_0)
-	print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1]), 'Delta =', "{0:.4f}".format(absscat_1)
-        print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2]), 'Delta =', "{0:.4f}".format(absscat_2)
-        #print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3]), 'Delta =', "{0:.4f}".format(absscat_3)
+        print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '   B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0]), 'Delta =', "{0:.2f}".format(absscat_0)
+	print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '   B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1]), 'Delta =', "{0:.2f}".format(absscat_1)
+        print 'bisector    A =', "{0:.2f}".format(A[2]), '\pm', "{0:.2f}".format(Aerr[2]), '   B = ', "{0:.2f}".format(B[2]), '\pm', "{0:.2f}".format(Berr[2]), 'Delta =', "{0:.2f}".format(absscat_2)
+        #print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '   B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3]), 'Delta =', "{0:.2f}".format(absscat_3)
         print '---------------------------------'
         
 	slope_n_grt_2 = A[2]
@@ -1208,7 +1079,7 @@ def mbh_vs_mag_tot():
 	color = data[11].astype(np.float)
 	
 	## constant error on galaxy magnitude
-	err_mag_tot = mag_tot*[0.0] + 0.7
+	err_mag_tot = mag_tot*[0.0] + 0.25
 	
 	## error from 0 to 0.3 mag according to Delta_RMS of profile fit
 	## has mean error = 0.08
@@ -1260,71 +1131,71 @@ def mbh_vs_mag_tot():
 	error_kwargs = {"lw":.5, "zorder":0}
 
         	
-       #print 'BCES all'
-       #print 'n', len(mag_tot[all==1])
-       #A,B,Aerr,Berr,covAB=bces.bces(mag_tot[all==1]-np.average(mag_tot[all==1]),
-       #	err_mag_tot[all==1],
-       #	log_mbh[all==1],0.5*(merr_log_mbh[all==1] + perr_log_mbh[all==1]),mag_tot[all==1]*[0.0])
-       #absscat_0 = absolutescatter.get_absscatter(mag_tot[all==1]-np.average(mag_tot[all==1]), log_mbh[all==1], B[0], A[0])
-       #absscat_1 = absolutescatter.get_absscatter(mag_tot[all==1]-np.average(mag_tot[all==1]), log_mbh[all==1], B[1], A[1])
-       #absscat_2 = absolutescatter.get_absscatter(mag_tot[all==1]-np.average(mag_tot[all==1]), log_mbh[all==1], B[2], A[2])
-       #absscat_3 = absolutescatter.get_absscatter(mag_tot[all==1]-np.average(mag_tot[all==1]), log_mbh[all==1], B[3], A[3])
-       #print '---------------------------------'
-       #print 'y = A*(x-<x>) + B '
-       #print '<x> =', np.average(mag_tot[all==1])
-       #print
-       #print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0]), 'Delta =', "{0:.4f}".format(absscat_0)
-       #print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1]), 'Delta =', "{0:.4f}".format(absscat_1)
-       #print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2]), 'Delta =', "{0:.4f}".format(absscat_2)
-       ##print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3]), 'Delta =', "{0:.4f}".format(absscat_3)
-       #print '---------------------------------'
-       #
-       #logxx = np.arange(-10,20,0.1)
-       #yy = (A[2]*(logxx) + B[2])
-       #ax.plot((logxx+np.average(mag_tot[all==1])),10**yy, color='k', ls='-', linewidth=2.)
-       ##colorline.colorline(10**(logxx+np.average(mag_tot[all==1])), 10**yy, cmap=green_red)
-       #
-       ###### calculates 1sigma uncertainty band
-       #yy_1 = ((A[2]+Aerr[2])*(logxx) + (B[2]+Berr[2]))
-       #yy_2 = ((A[2]-Aerr[2])*(logxx) + (B[2]+Berr[2]))
-       #yy_3 = ((A[2]+Aerr[2])*(logxx) + (B[2]-Berr[2]))
-       #yy_4 = ((A[2]-Aerr[2])*(logxx) + (B[2]-Berr[2]))
-       #yy_up = yy_1*[0.0]
-       #for i in range(len(yy_1)):
-       #	if yy_1[i] > yy_2[i]:
-       #		yy_up[i] = yy_1[i]
-       #	elif yy_1[i] <= yy_2[i]:
-       #		yy_up[i] = yy_2[i]	
-       #yy_up = np.asarray(yy_up)
-       #yy_lo = yy_1*[0.0]
-       #for i in range(len(yy_3)):
-       #	if yy_3[i] < yy_4[i]:
-       #		yy_lo[i] = yy_3[i]
-       #	elif yy_3[i] >= yy_4[i]:
-       #		yy_lo[i] = yy_4[i]	
-       #yy_lo = np.asarray(yy_lo)
-       #			
-       #ax.fill_between((logxx+np.average(mag_tot[all==1])), 10**yy_lo, 10**yy_up, alpha=0.1, facecolor='k')
-       #
-       #
-       #### fit using FITEXY ###
-       #print 'FITEXY all'
-       #A,perr_A,merr_A,B,perr_B,merr_B = fitexy.bisect_modfitexy(mag_tot[all==1]-np.average(mag_tot[all==1]),
-       #       err_mag_tot[all==1],
-       #       log_mbh[all==1],0.5*(merr_log_mbh[all==1] + perr_log_mbh[all==1]))
-       #
-       #print '----------------------------'
-       #print '----------------------------'
-       #
-       #### produce .dat file
-       #datfileName = '/Users/gsavorgnan/galaxy_vivisection/data/marconi_fit/mbh_vs_mag_gal_all.dat'
-       #datfile = open(datfileName, 'w')
-       #datfile.write('# MAGGal err_MAGGal logMassBH err_logMassBH \n')
-       #for MAGGal, err_MAGGal, logMassBH, err_logMassBH in zip(mag_tot[all==1]-np.average(mag_tot[all==1]),
-       #	err_mag_tot[all==1],
-       #	log_mbh[all==1],0.5*(merr_log_mbh[all==1] + perr_log_mbh[all==1])):
-       #	datfile.write(str(MAGGal) + ' ' + str(err_MAGGal) + ' ' + str(logMassBH) + ' ' + str(err_logMassBH) + ' ' + '\n')
-       #datfile.close()
+        print 'BCES all'
+        print 'n', len(mag_tot[all==1])
+        A,B,Aerr,Berr,covAB=bces.bces(mag_tot[all==1]-np.average(mag_tot[all==1]),
+        	err_mag_tot[all==1],
+        	log_mbh[all==1],0.5*(merr_log_mbh[all==1] + perr_log_mbh[all==1]),mag_tot[all==1]*[0.0])
+        absscat_0 = absolutescatter.get_absscatter(mag_tot[all==1]-np.average(mag_tot[all==1]), log_mbh[all==1], B[0], A[0])
+        absscat_1 = absolutescatter.get_absscatter(mag_tot[all==1]-np.average(mag_tot[all==1]), log_mbh[all==1], B[1], A[1])
+        absscat_2 = absolutescatter.get_absscatter(mag_tot[all==1]-np.average(mag_tot[all==1]), log_mbh[all==1], B[2], A[2])
+        absscat_3 = absolutescatter.get_absscatter(mag_tot[all==1]-np.average(mag_tot[all==1]), log_mbh[all==1], B[3], A[3])
+        print '---------------------------------'
+        print 'y = A*(x-<x>) + B '
+        print '<x> =', np.average(mag_tot[all==1])
+        print
+        print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '   B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0]), 'Delta =', "{0:.2f}".format(absscat_0)
+        print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '   B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1]), 'Delta =', "{0:.2f}".format(absscat_1)
+        print 'bisector    A =', "{0:.2f}".format(A[2]), '\pm', "{0:.2f}".format(Aerr[2]), '   B = ', "{0:.2f}".format(B[2]), '\pm', "{0:.2f}".format(Berr[2]), 'Delta =', "{0:.2f}".format(absscat_2)
+        #print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '	B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3]), 'Delta =', "{0:.2f}".format(absscat_3)
+        print '---------------------------------'
+       
+        logxx = np.arange(-10,20,0.1)
+        yy = (A[2]*(logxx) + B[2])
+        ax.plot((logxx+np.average(mag_tot[all==1])),10**yy, color='k', ls='-', linewidth=2.)
+        #colorline.colorline(10**(logxx+np.average(mag_tot[all==1])), 10**yy, cmap=green_red)
+       
+        ##### calculates 1sigma uncertainty band
+        yy_1 = ((A[2]+Aerr[2])*(logxx) + (B[2]+Berr[2]))
+        yy_2 = ((A[2]-Aerr[2])*(logxx) + (B[2]+Berr[2]))
+        yy_3 = ((A[2]+Aerr[2])*(logxx) + (B[2]-Berr[2]))
+        yy_4 = ((A[2]-Aerr[2])*(logxx) + (B[2]-Berr[2]))
+        yy_up = yy_1*[0.0]
+        for i in range(len(yy_1)):
+        	if yy_1[i] > yy_2[i]:
+        		yy_up[i] = yy_1[i]
+        	elif yy_1[i] <= yy_2[i]:
+        		yy_up[i] = yy_2[i]	
+        yy_up = np.asarray(yy_up)
+        yy_lo = yy_1*[0.0]
+        for i in range(len(yy_3)):
+        	if yy_3[i] < yy_4[i]:
+        		yy_lo[i] = yy_3[i]
+        	elif yy_3[i] >= yy_4[i]:
+        		yy_lo[i] = yy_4[i]	
+        yy_lo = np.asarray(yy_lo)
+        			
+        ax.fill_between((logxx+np.average(mag_tot[all==1])), 10**yy_lo, 10**yy_up, alpha=0.1, facecolor='k')
+       
+       
+        ### fit using FITEXY ###
+        print 'FITEXY all'
+        A,perr_A,merr_A,B,perr_B,merr_B = fitexy.bisect_modfitexy(mag_tot[all==1]-np.average(mag_tot[all==1]),
+               err_mag_tot[all==1],
+               log_mbh[all==1],0.5*(merr_log_mbh[all==1] + perr_log_mbh[all==1]))
+       
+        print '----------------------------'
+        print '----------------------------'
+       
+        ### produce .dat file
+        datfileName = '/Users/gsavorgnan/galaxy_vivisection/data/marconi_fit/mbh_vs_mag_gal_all.dat'
+        datfile = open(datfileName, 'w')
+        datfile.write('# MAGGal err_MAGGal logMassBH err_logMassBH \n')
+        for MAGGal, err_MAGGal, logMassBH, err_logMassBH in zip(mag_tot[all==1]-np.average(mag_tot[all==1]),
+        	err_mag_tot[all==1],
+        	log_mbh[all==1],0.5*(merr_log_mbh[all==1] + perr_log_mbh[all==1])):
+        	datfile.write(str(MAGGal) + ' ' + str(err_MAGGal) + ' ' + str(logMassBH) + ' ' + str(err_logMassBH) + ' ' + '\n')
+        datfile.close()
 
 	###########################
         
@@ -1341,10 +1212,10 @@ def mbh_vs_mag_tot():
         print 'y = A*(x-<x>) + B '
         print '<x> =', np.average(mag_tot[earlytype==1])
         print
-        print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0]), 'Delta =', "{0:.4f}".format(absscat_0)
-        print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1]), 'Delta =', "{0:.4f}".format(absscat_1)
-        print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2]), 'Delta =', "{0:.4f}".format(absscat_2)
-        #print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3]), 'Delta =', "{0:.4f}".format(absscat_3)
+        print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '   B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0]), 'Delta =', "{0:.2f}".format(absscat_0)
+        print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '   B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1]), 'Delta =', "{0:.2f}".format(absscat_1)
+        print 'bisector    A =', "{0:.2f}".format(A[2]), '\pm', "{0:.2f}".format(Aerr[2]), '   B = ', "{0:.2f}".format(B[2]), '\pm', "{0:.2f}".format(Berr[2]), 'Delta =', "{0:.2f}".format(absscat_2)
+        #print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '   B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3]), 'Delta =', "{0:.2f}".format(absscat_3)
         print '---------------------------------'
        
         logxx = np.arange(-10,20,0.1)
@@ -1383,73 +1254,73 @@ def mbh_vs_mag_tot():
         print '----------------------------'
         print '----------------------------'
        
-       #### produce .dat file
-       #datfileName = '/Users/gsavorgnan/galaxy_vivisection/data/marconi_fit/mbh_vs_mag_gal_early.dat'
-       #datfile = open(datfileName, 'w')
-       #datfile.write('# MAGGal err_MAGGal logMassBH err_logMassBH \n')
-       #for MAGGal, err_MAGGal, logMassBH, err_logMassBH in zip(mag_tot[earlytype==1]-np.average(mag_tot[earlytype==1]),
-       #	err_mag_tot[earlytype==1],
-       #	log_mbh[earlytype==1],0.5*(merr_log_mbh[earlytype==1] + perr_log_mbh[earlytype==1])):
-       #	datfile.write(str(MAGGal) + ' ' + str(err_MAGGal) + ' ' + str(logMassBH) + ' ' + str(err_logMassBH) + ' ' + '\n')
-       #datfile.close()
-       #
-       #######################################
-       #
-       ##print 'sersic spirals'
-       ##print 'n', len(mag_tot[morph_core=='Sp_0'])
-       ##print stats.spearmanr(mag_tot[morph_core=='Sp_0'], log_mbh[morph_core=='Sp_0'])
-       ##A,B,Aerr,Berr,covAB=bces.bces(mag_tot[morph_core=='Sp_0']-np.average(mag_tot[morph_core=='Sp_0']),
-       ##	 err_mag_tot[morph_core=='Sp_0'],
-       ##	 log_mbh[morph_core=='Sp_0'],0.5*(merr_log_mbh[morph_core=='Sp_0'] + perr_log_mbh[morph_core=='Sp_0']),mag_tot[morph_core=='Sp_0']*[0.0])
-       ##absscat_0 = absolutescatter.get_absscatter(mag_tot[morph_core=='Sp_0']-np.average(mag_tot[morph_core=='Sp_0']), log_mbh[morph_core=='Sp_0'], B[0], A[0])
-       ##absscat_1 = absolutescatter.get_absscatter(mag_tot[morph_core=='Sp_0']-np.average(mag_tot[morph_core=='Sp_0']), log_mbh[morph_core=='Sp_0'], B[1], A[1])
-       ##absscat_2 = absolutescatter.get_absscatter(mag_tot[morph_core=='Sp_0']-np.average(mag_tot[morph_core=='Sp_0']), log_mbh[morph_core=='Sp_0'], B[2], A[2])
-       ##absscat_3 = absolutescatter.get_absscatter(mag_tot[morph_core=='Sp_0']-np.average(mag_tot[morph_core=='Sp_0']), log_mbh[morph_core=='Sp_0'], B[3], A[3])
-       ##print '---------------------------------'
-       ###print 'y = A*(x-<x>) + B '
-       ###print '<x> =', np.average(mag_tot[morph_core=='Sp_0'])
-       #print
-       #print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0]), 'Delta =', "{0:.4f}".format(absscat_0)
-       #print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1]), 'Delta =', "{0:.4f}".format(absscat_1)
-       #print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2]), 'Delta =', "{0:.4f}".format(absscat_2)
-       ##print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3]), 'Delta =', "{0:.4f}".format(absscat_3)
-       #print '---------------------------------'
-       #
-       #logxx = np.arange(-50,20,1)
-       #yy = (A[2]*(logxx) + B[2])
-       #ax.plot((logxx+np.average(mag_tot[morph_core=='Sp_0'])),10**yy, color='r', ls='--', linewidth=2.)
-       ##colorline.colorline(10**(logxx+np.average(mag_tot[morph_core=='Sp_0'])), 10**yy, cmap=green_red)
-       #
-       ###### calculates 1sigma uncertainty band
-       #yy_1 = ((A[2]+Aerr[2])*(logxx) + (B[2]+Berr[2]))
-       #yy_2 = ((A[2]-Aerr[2])*(logxx) + (B[2]+Berr[2]))
-       #yy_3 = ((A[2]+Aerr[2])*(logxx) + (B[2]-Berr[2]))
-       #yy_4 = ((A[2]-Aerr[2])*(logxx) + (B[2]-Berr[2]))
-       #yy_up = yy_1*[0.0]
-       #for i in range(len(yy_1)):
-       #	if yy_1[i] > yy_2[i]:
-       #		yy_up[i] = yy_1[i]
-       #	elif yy_1[i] <= yy_2[i]:
-       #		yy_up[i] = yy_2[i]	
-       #yy_up = np.asarray(yy_up)
-       #yy_lo = yy_1*[0.0]
-       #for i in range(len(yy_3)):
-       #	if yy_3[i] < yy_4[i]:
-       #		yy_lo[i] = yy_3[i]
-       #	elif yy_3[i] >= yy_4[i]:
-       #		yy_lo[i] = yy_4[i]	
-       #yy_lo = np.asarray(yy_lo)
-       #			
-       #ax.fill_between((logxx+np.average(mag_tot[morph_core=='Sp_0'])), 10**yy_lo, 10**yy_up, alpha=0.1, facecolor='b')
-       #
-       #### fit using FITEXY ###
-       #print 'FITEXY sersic spirals'
-       #A,perr_A,merr_A,B,perr_B,merr_B = fitexy.bisect_modfitexy(mag_tot[morph_core=='Sp_0']-np.average(mag_tot[morph_core=='Sp_0']),
-       #	err_mag_tot[morph_core=='Sp_0'],
-       #	log_mbh[morph_core=='Sp_0'],0.5*(merr_log_mbh[morph_core=='Sp_0'] + perr_log_mbh[morph_core=='Sp_0']))
-       #
-       #print '----------------------------'
-       #print '----------------------------'
+        ### produce .dat file
+        datfileName = '/Users/gsavorgnan/galaxy_vivisection/data/marconi_fit/mbh_vs_mag_gal_early.dat'
+        datfile = open(datfileName, 'w')
+        datfile.write('# MAGGal err_MAGGal logMassBH err_logMassBH \n')
+        for MAGGal, err_MAGGal, logMassBH, err_logMassBH in zip(mag_tot[earlytype==1]-np.average(mag_tot[earlytype==1]),
+        	err_mag_tot[earlytype==1],
+        	log_mbh[earlytype==1],0.5*(merr_log_mbh[earlytype==1] + perr_log_mbh[earlytype==1])):
+        	datfile.write(str(MAGGal) + ' ' + str(err_MAGGal) + ' ' + str(logMassBH) + ' ' + str(err_logMassBH) + ' ' + '\n')
+        datfile.close()
+       
+        ######################################
+        
+        print 'sersic spirals'
+        print 'n', len(mag_tot[morph_core=='Sp_0'])
+        #print stats.spearmanr(mag_tot[morph_core=='Sp_0'], log_mbh[morph_core=='Sp_0'])
+        A,B,Aerr,Berr,covAB=bces.bces(mag_tot[morph_core=='Sp_0']-np.average(mag_tot[morph_core=='Sp_0']),
+        	 err_mag_tot[morph_core=='Sp_0'],
+        	 log_mbh[morph_core=='Sp_0'],0.5*(merr_log_mbh[morph_core=='Sp_0'] + perr_log_mbh[morph_core=='Sp_0']),mag_tot[morph_core=='Sp_0']*[0.0])
+        absscat_0 = absolutescatter.get_absscatter(mag_tot[morph_core=='Sp_0']-np.average(mag_tot[morph_core=='Sp_0']), log_mbh[morph_core=='Sp_0'], B[0], A[0])
+        absscat_1 = absolutescatter.get_absscatter(mag_tot[morph_core=='Sp_0']-np.average(mag_tot[morph_core=='Sp_0']), log_mbh[morph_core=='Sp_0'], B[1], A[1])
+        absscat_2 = absolutescatter.get_absscatter(mag_tot[morph_core=='Sp_0']-np.average(mag_tot[morph_core=='Sp_0']), log_mbh[morph_core=='Sp_0'], B[2], A[2])
+        absscat_3 = absolutescatter.get_absscatter(mag_tot[morph_core=='Sp_0']-np.average(mag_tot[morph_core=='Sp_0']), log_mbh[morph_core=='Sp_0'], B[3], A[3])
+        print '---------------------------------'
+        print 'y = A*(x-<x>) + B '
+        print '<x> =', np.average(mag_tot[morph_core=='Sp_0'])
+        print
+        print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '   B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0]), 'Delta =', "{0:.2f}".format(absscat_0)
+        print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '   B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1]), 'Delta =', "{0:.2f}".format(absscat_1)
+        print 'bisector    A =', "{0:.2f}".format(A[2]), '\pm', "{0:.2f}".format(Aerr[2]), '   B = ', "{0:.2f}".format(B[2]), '\pm', "{0:.2f}".format(Berr[2]), 'Delta =', "{0:.2f}".format(absscat_2)
+        #print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '	B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3]), 'Delta =', "{0:.2f}".format(absscat_3)
+        print '---------------------------------'
+       
+        logxx = np.arange(-50,20,1)
+        yy = (A[2]*(logxx) + B[2])
+        ax.plot((logxx+np.average(mag_tot[morph_core=='Sp_0'])),10**yy, color='r', ls='--', linewidth=2.)
+        #colorline.colorline(10**(logxx+np.average(mag_tot[morph_core=='Sp_0'])), 10**yy, cmap=green_red)
+       
+        ##### calculates 1sigma uncertainty band
+        yy_1 = ((A[2]+Aerr[2])*(logxx) + (B[2]+Berr[2]))
+        yy_2 = ((A[2]-Aerr[2])*(logxx) + (B[2]+Berr[2]))
+        yy_3 = ((A[2]+Aerr[2])*(logxx) + (B[2]-Berr[2]))
+        yy_4 = ((A[2]-Aerr[2])*(logxx) + (B[2]-Berr[2]))
+        yy_up = yy_1*[0.0]
+        for i in range(len(yy_1)):
+        	if yy_1[i] > yy_2[i]:
+        		yy_up[i] = yy_1[i]
+        	elif yy_1[i] <= yy_2[i]:
+        		yy_up[i] = yy_2[i]	
+        yy_up = np.asarray(yy_up)
+        yy_lo = yy_1*[0.0]
+        for i in range(len(yy_3)):
+        	if yy_3[i] < yy_4[i]:
+        		yy_lo[i] = yy_3[i]
+        	elif yy_3[i] >= yy_4[i]:
+        		yy_lo[i] = yy_4[i]	
+        yy_lo = np.asarray(yy_lo)
+        			
+        ax.fill_between((logxx+np.average(mag_tot[morph_core=='Sp_0'])), 10**yy_lo, 10**yy_up, alpha=0.1, facecolor='b')
+       
+        ### fit using FITEXY ###
+        print 'FITEXY sersic spirals'
+        A,perr_A,merr_A,B,perr_B,merr_B = fitexy.bisect_modfitexy(mag_tot[morph_core=='Sp_0']-np.average(mag_tot[morph_core=='Sp_0']),
+        	err_mag_tot[morph_core=='Sp_0'],
+        	log_mbh[morph_core=='Sp_0'],0.5*(merr_log_mbh[morph_core=='Sp_0'] + perr_log_mbh[morph_core=='Sp_0']))
+       
+        print '----------------------------'
+        print '----------------------------'
 	
 	######################################
 	
@@ -1518,8 +1389,8 @@ def mbh_vs_mag_tot():
 		
 	ax.set_yscale('log')
         plt.axis([-21.5,-27.99,10**5.1,10**11.2])
-        plt.xlabel(r'$MAG_{\rm gal}\rm~[mag]$', labelpad=15)
-        plt.ylabel(r'$M_{\rm BH} \rm ~[M_\odot]$', labelpad=15)
+        plt.xlabel(r'$MAG_{\rm gal}\rm~[mag]$', labelpad=13)
+        plt.ylabel(r'$M_{\rm BH} \rm ~[M_\odot]$', labelpad=13)
 	plt.subplots_adjust(left=0.15,bottom=0.15,right=0.97,top=0.9)
         plt.show()
 	#plt.savefig(path_paper_figures + 'mbh_vs_mag_tot.pdf', format='pdf', dpi=1000)
@@ -1613,10 +1484,10 @@ def mbh_vs_mag_sph():
         print 'y = A*(x-<x>) + B '
         print '<x> =', np.average(mag_sph)
         print
-        print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0]), 'Delta =', "{0:.4f}".format(absscat_0)
-        print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1]), 'Delta =', "{0:.4f}".format(absscat_1)
-        print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2]), 'Delta =', "{0:.4f}".format(absscat_2)
-        #print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3]), 'Delta =', "{0:.4f}".format(absscat_3)
+        print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '   B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0]), 'Delta =', "{0:.2f}".format(absscat_0)
+        print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '   B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1]), 'Delta =', "{0:.2f}".format(absscat_1)
+        print 'bisector    A =', "{0:.2f}".format(A[2]), '\pm', "{0:.2f}".format(Aerr[2]), '   B = ', "{0:.2f}".format(B[2]), '\pm', "{0:.2f}".format(Berr[2]), 'Delta =', "{0:.2f}".format(absscat_2)
+        #print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '   B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3]), 'Delta =', "{0:.2f}".format(absscat_3)
         print '---------------------------------'
        
         logxx = np.arange(-10,20,0.1)
@@ -1655,17 +1526,17 @@ def mbh_vs_mag_sph():
         print '-----------------------------'
         print '-----------------------------'
        
-       #### produce .dat file
-       #datfileName = '/Users/gsavorgnan/galaxy_vivisection/data/marconi_fit/mbh_vs_mag_sph_all.dat'
-       #datfile = open(datfileName, 'w')
-       #datfile.write('# MAGSph err_MAGSph logMassBH err_logMassBH \n')
-       #for MAGSph, err_MAGSph, logMassBH, err_logMassBH in zip(mag_sph-np.average(mag_sph),
-       #	0.5*(perr_mag_sph + merr_mag_sph),
-       #	log_mbh,0.5*(merr_log_mbh + perr_log_mbh)):
-       #	datfile.write(str(MAGSph) + ' ' + str(err_MAGSph) + ' ' + str(logMassBH) + ' ' + str(err_logMassBH) + ' ' + '\n')
-       #datfile.close()
-       #
-       ############################
+        ### produce .dat file
+        datfileName = '/Users/gsavorgnan/galaxy_vivisection/data/marconi_fit/mbh_vs_mag_sph_all.dat'
+        datfile = open(datfileName, 'w')
+        datfile.write('# MAGSph err_MAGSph logMassBH err_logMassBH \n')
+        for MAGSph, err_MAGSph, logMassBH, err_logMassBH in zip(mag_sph-np.average(mag_sph),
+        	0.5*(perr_mag_sph + merr_mag_sph),
+        	log_mbh,0.5*(merr_log_mbh + perr_log_mbh)):
+        	datfile.write(str(MAGSph) + ' ' + str(err_MAGSph) + ' ' + str(logMassBH) + ' ' + str(err_logMassBH) + ' ' + '\n')
+        datfile.close()
+       
+        ###########################
         
         print 'BCES early'
         print 'n', len(mag_sph[earlytype==1])
@@ -1680,10 +1551,10 @@ def mbh_vs_mag_sph():
         print 'y = A*(x-<x>) + B '
         print '<x> =', np.average(mag_sph[earlytype==1])
         print
-        print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0]), 'Delta =', "{0:.4f}".format(absscat_0)
-        print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1]), 'Delta =', "{0:.4f}".format(absscat_1)
-        print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2]), 'Delta =', "{0:.4f}".format(absscat_2)
-        #print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3]), 'Delta =', "{0:.4f}".format(absscat_3)
+        print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '   B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0]), 'Delta =', "{0:.2f}".format(absscat_0)
+        print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '   B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1]), 'Delta =', "{0:.2f}".format(absscat_1)
+        print 'bisector    A =', "{0:.2f}".format(A[2]), '\pm', "{0:.2f}".format(Aerr[2]), '   B = ', "{0:.2f}".format(B[2]), '\pm', "{0:.2f}".format(Berr[2]), 'Delta =', "{0:.2f}".format(absscat_2)
+        #print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '   B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3]), 'Delta =', "{0:.2f}".format(absscat_3)
         print '---------------------------------'
        
         logxx = np.arange(-10,20,0.1)
@@ -1722,81 +1593,81 @@ def mbh_vs_mag_sph():
         print '-----------------------------'
         print '-----------------------------'
        
-       #### produce .dat file
-       #datfileName = '/Users/gsavorgnan/galaxy_vivisection/data/marconi_fit/mbh_vs_mag_sph_early.dat'
-       #datfile = open(datfileName, 'w')
-       #datfile.write('# MAGSph err_MAGSph logMassBH err_logMassBH \n')
-       #for MAGSph, err_MAGSph, logMassBH, err_logMassBH in zip(mag_sph[earlytype==1]-np.average(mag_sph[earlytype==1]),
-       #	0.5*(perr_mag_sph[earlytype==1] + merr_mag_sph[earlytype==1]),
-       #	log_mbh[earlytype==1],0.5*(merr_log_mbh[earlytype==1] + perr_log_mbh[earlytype==1])):
-       #	datfile.write(str(MAGSph) + ' ' + str(err_MAGSph) + ' ' + str(logMassBH) + ' ' + str(err_logMassBH) + ' ' + '\n')
-       #datfile.close()
+        ### produce .dat file
+        datfileName = '/Users/gsavorgnan/galaxy_vivisection/data/marconi_fit/mbh_vs_mag_sph_early.dat'
+        datfile = open(datfileName, 'w')
+        datfile.write('# MAGSph err_MAGSph logMassBH err_logMassBH \n')
+        for MAGSph, err_MAGSph, logMassBH, err_logMassBH in zip(mag_sph[earlytype==1]-np.average(mag_sph[earlytype==1]),
+        	0.5*(perr_mag_sph[earlytype==1] + merr_mag_sph[earlytype==1]),
+        	log_mbh[earlytype==1],0.5*(merr_log_mbh[earlytype==1] + perr_log_mbh[earlytype==1])):
+        	datfile.write(str(MAGSph) + ' ' + str(err_MAGSph) + ' ' + str(logMassBH) + ' ' + str(err_logMassBH) + ' ' + '\n')
+        datfile.close()
 
         ############################
        
-       #print 'sersic bul of spi'
-       #print 'n', len(mag_sph[morph_core=='Sp_0'])
-       #A,B,Aerr,Berr,covAB=bces.bces(mag_sph[morph_core=='Sp_0']-np.average(mag_sph[morph_core=='Sp_0']),
-       #	0.5*(perr_mag_sph[morph_core=='Sp_0'] + merr_mag_sph[morph_core=='Sp_0']),
-       #	log_mbh[morph_core=='Sp_0'],0.5*(merr_log_mbh[morph_core=='Sp_0'] + perr_log_mbh[morph_core=='Sp_0']),mag_sph[morph_core=='Sp_0']*[0.0])
-       #absscat_0 = absolutescatter.get_absscatter(mag_sph[morph_core=='Sp_0']-np.average(mag_sph[morph_core=='Sp_0']), log_mbh[morph_core=='Sp_0'], B[0], A[0])
-       #absscat_1 = absolutescatter.get_absscatter(mag_sph[morph_core=='Sp_0']-np.average(mag_sph[morph_core=='Sp_0']), log_mbh[morph_core=='Sp_0'], B[1], A[1])
-       #absscat_2 = absolutescatter.get_absscatter(mag_sph[morph_core=='Sp_0']-np.average(mag_sph[morph_core=='Sp_0']), log_mbh[morph_core=='Sp_0'], B[2], A[2])
-       #absscat_3 = absolutescatter.get_absscatter(mag_sph[morph_core=='Sp_0']-np.average(mag_sph[morph_core=='Sp_0']), log_mbh[morph_core=='Sp_0'], B[3], A[3])
-       #print '---------------------------------'
-       #print 'y = A*(x-<x>) + B '
-       #print '<x> =', np.average(mag_sph[morph_core=='Sp_0'])
-       #print
-       #print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0]), 'Delta =', "{0:.4f}".format(absscat_0)
-       #print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1]), 'Delta =', "{0:.4f}".format(absscat_1)
-       #print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2]), 'Delta =', "{0:.4f}".format(absscat_2)
-       ##print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3]), 'Delta =', "{0:.4f}".format(absscat_3)
-       #print '---------------------------------'
-       #
-       #logxx = np.arange(-10,20,0.1)
-       #yy = (A[2]*(logxx) + B[2])
-       #ax.plot((logxx+np.average(mag_sph[morph_core=='Sp_0'])),10**yy, color='b', ls='-', linewidth=2.)
-       #
-       ###### calculates 1sigma uncertainty band
-       #yy_1 = ((A[2]+Aerr[2])*(logxx) + (B[2]+Berr[2]))
-       #yy_2 = ((A[2]-Aerr[2])*(logxx) + (B[2]+Berr[2]))
-       #yy_3 = ((A[2]+Aerr[2])*(logxx) + (B[2]-Berr[2]))
-       #yy_4 = ((A[2]-Aerr[2])*(logxx) + (B[2]-Berr[2]))
-       #yy_up = yy_1*[0.0]
-       #for i in range(len(yy_1)):
-       #	if yy_1[i] > yy_2[i]:
-       #		yy_up[i] = yy_1[i]
-       #	elif yy_1[i] <= yy_2[i]:
-       #		yy_up[i] = yy_2[i]	
-       #yy_up = np.asarray(yy_up)
-       #yy_lo = yy_1*[0.0]
-       #for i in range(len(yy_3)):
-       #	if yy_3[i] < yy_4[i]:
-       #		yy_lo[i] = yy_3[i]
-       #	elif yy_3[i] >= yy_4[i]:
-       #		yy_lo[i] = yy_4[i]	
-       #yy_lo = np.asarray(yy_lo)
-       #			
-       #ax.fill_between((logxx+np.average(mag_sph[morph_core=='Sp_0'])), 10**yy_lo, 10**yy_up, alpha=0.1, facecolor='b')
-       #
-       #### fit using FITEXY ###
-       #print '-----------------------------'
-       #print 'FITEXY sersic bul of spi'
-       #A,perr_A,merr_A,B,perr_B,merr_B = fitexy.bisect_modfitexy(mag_sph[morph_core=='Sp_0']-np.average(mag_sph[morph_core=='Sp_0']),
-       #	0.5*(perr_mag_sph[morph_core=='Sp_0'] + merr_mag_sph[morph_core=='Sp_0']),
-       #	log_mbh[morph_core=='Sp_0'],0.5*(merr_log_mbh[morph_core=='Sp_0'] + perr_log_mbh[morph_core=='Sp_0']))
-       #print '-----------------------------'
-       #print '-----------------------------'
-       #
-       #### produce .dat file
-       #datfileName = '/Users/gsavorgnan/galaxy_vivisection/data/marconi_fit/mbh_vs_mag_sph_late.dat'
-       #datfile = open(datfileName, 'w')
-       #datfile.write('# MAGSph err_MAGSph logMassBH err_logMassBH \n')
-       #for MAGSph, err_MAGSph, logMassBH, err_logMassBH in zip(mag_sph[morph_core=='Sp_0']-np.average(mag_sph[morph_core=='Sp_0']),
-       #	0.5*(perr_mag_sph[morph_core=='Sp_0'] + merr_mag_sph[morph_core=='Sp_0']),
-       #	log_mbh[morph_core=='Sp_0'],0.5*(merr_log_mbh[morph_core=='Sp_0'] + perr_log_mbh[morph_core=='Sp_0'])):
-       #	datfile.write(str(MAGSph) + ' ' + str(err_MAGSph) + ' ' + str(logMassBH) + ' ' + str(err_logMassBH) + ' ' + '\n')
-       #datfile.close()
+        print 'sersic bul of spi'
+        print 'n', len(mag_sph[morph_core=='Sp_0'])
+        A,B,Aerr,Berr,covAB=bces.bces(mag_sph[morph_core=='Sp_0']-np.average(mag_sph[morph_core=='Sp_0']),
+        	0.5*(perr_mag_sph[morph_core=='Sp_0'] + merr_mag_sph[morph_core=='Sp_0']),
+        	log_mbh[morph_core=='Sp_0'],0.5*(merr_log_mbh[morph_core=='Sp_0'] + perr_log_mbh[morph_core=='Sp_0']),mag_sph[morph_core=='Sp_0']*[0.0])
+        absscat_0 = absolutescatter.get_absscatter(mag_sph[morph_core=='Sp_0']-np.average(mag_sph[morph_core=='Sp_0']), log_mbh[morph_core=='Sp_0'], B[0], A[0])
+        absscat_1 = absolutescatter.get_absscatter(mag_sph[morph_core=='Sp_0']-np.average(mag_sph[morph_core=='Sp_0']), log_mbh[morph_core=='Sp_0'], B[1], A[1])
+        absscat_2 = absolutescatter.get_absscatter(mag_sph[morph_core=='Sp_0']-np.average(mag_sph[morph_core=='Sp_0']), log_mbh[morph_core=='Sp_0'], B[2], A[2])
+        absscat_3 = absolutescatter.get_absscatter(mag_sph[morph_core=='Sp_0']-np.average(mag_sph[morph_core=='Sp_0']), log_mbh[morph_core=='Sp_0'], B[3], A[3])
+        print '---------------------------------'
+        print 'y = A*(x-<x>) + B '
+        print '<x> =', np.average(mag_sph[morph_core=='Sp_0'])
+        print
+        print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '   B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0]), 'Delta =', "{0:.2f}".format(absscat_0)
+        print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '   B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1]), 'Delta =', "{0:.2f}".format(absscat_1)
+        print 'bisector    A =', "{0:.2f}".format(A[2]), '\pm', "{0:.2f}".format(Aerr[2]), '   B = ', "{0:.2f}".format(B[2]), '\pm', "{0:.2f}".format(Berr[2]), 'Delta =', "{0:.2f}".format(absscat_2)
+        #print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '   B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3]), 'Delta =', "{0:.2f}".format(absscat_3)
+        print '---------------------------------'
+       
+        logxx = np.arange(-10,20,0.1)
+        yy = (A[2]*(logxx) + B[2])
+        ax.plot((logxx+np.average(mag_sph[morph_core=='Sp_0'])),10**yy, color='b', ls='-', linewidth=2.)
+       
+        ##### calculates 1sigma uncertainty band
+        yy_1 = ((A[2]+Aerr[2])*(logxx) + (B[2]+Berr[2]))
+        yy_2 = ((A[2]-Aerr[2])*(logxx) + (B[2]+Berr[2]))
+        yy_3 = ((A[2]+Aerr[2])*(logxx) + (B[2]-Berr[2]))
+        yy_4 = ((A[2]-Aerr[2])*(logxx) + (B[2]-Berr[2]))
+        yy_up = yy_1*[0.0]
+        for i in range(len(yy_1)):
+        	if yy_1[i] > yy_2[i]:
+        		yy_up[i] = yy_1[i]
+        	elif yy_1[i] <= yy_2[i]:
+        		yy_up[i] = yy_2[i]	
+        yy_up = np.asarray(yy_up)
+        yy_lo = yy_1*[0.0]
+        for i in range(len(yy_3)):
+        	if yy_3[i] < yy_4[i]:
+        		yy_lo[i] = yy_3[i]
+        	elif yy_3[i] >= yy_4[i]:
+        		yy_lo[i] = yy_4[i]	
+        yy_lo = np.asarray(yy_lo)
+        			
+        ax.fill_between((logxx+np.average(mag_sph[morph_core=='Sp_0'])), 10**yy_lo, 10**yy_up, alpha=0.1, facecolor='b')
+       
+        ### fit using FITEXY ###
+        print '-----------------------------'
+        print 'FITEXY sersic bul of spi'
+        A,perr_A,merr_A,B,perr_B,merr_B = fitexy.bisect_modfitexy(mag_sph[morph_core=='Sp_0']-np.average(mag_sph[morph_core=='Sp_0']),
+        	0.5*(perr_mag_sph[morph_core=='Sp_0'] + merr_mag_sph[morph_core=='Sp_0']),
+        	log_mbh[morph_core=='Sp_0'],0.5*(merr_log_mbh[morph_core=='Sp_0'] + perr_log_mbh[morph_core=='Sp_0']))
+        print '-----------------------------'
+        print '-----------------------------'
+       
+        ### produce .dat file
+        datfileName = '/Users/gsavorgnan/galaxy_vivisection/data/marconi_fit/mbh_vs_mag_sph_late.dat'
+        datfile = open(datfileName, 'w')
+        datfile.write('# MAGSph err_MAGSph logMassBH err_logMassBH \n')
+        for MAGSph, err_MAGSph, logMassBH, err_logMassBH in zip(mag_sph[morph_core=='Sp_0']-np.average(mag_sph[morph_core=='Sp_0']),
+        	0.5*(perr_mag_sph[morph_core=='Sp_0'] + merr_mag_sph[morph_core=='Sp_0']),
+        	log_mbh[morph_core=='Sp_0'],0.5*(merr_log_mbh[morph_core=='Sp_0'] + perr_log_mbh[morph_core=='Sp_0'])):
+        	datfile.write(str(MAGSph) + ' ' + str(err_MAGSph) + ' ' + str(logMassBH) + ' ' + str(err_logMassBH) + ' ' + '\n')
+        datfile.close()
 
        
        ###########################
@@ -1817,10 +1688,10 @@ def mbh_vs_mag_sph():
        #print 'y = A*(x-<x>) + B '
        #print '<x> =', np.average(mag_sph[simplemorphtype=='E'])
        #print
-       #print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0]), 'Delta =', "{0:.4f}".format(absscat_0)
-       #print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1]), 'Delta =', "{0:.4f}".format(absscat_1)
-       #print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2]), 'Delta =', "{0:.4f}".format(absscat_2)
-       ##print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3]), 'Delta =', "{0:.4f}".format(absscat_3)
+       #print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '   B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0]), 'Delta =', "{0:.2f}".format(absscat_0)
+       #print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '   B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1]), 'Delta =', "{0:.2f}".format(absscat_1)
+       #print 'bisector    A =', "{0:.2f}".format(A[2]), '\pm', "{0:.2f}".format(Aerr[2]), '   B = ', "{0:.2f}".format(B[2]), '\pm', "{0:.2f}".format(Berr[2]), 'Delta =', "{0:.2f}".format(absscat_2)
+       ##print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '   B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3]), 'Delta =', "{0:.2f}".format(absscat_3)
        #print '---------------------------------'
        #
        #
@@ -1849,10 +1720,10 @@ def mbh_vs_mag_sph():
        #print 'y = A*(x-<x>) + B '
        #print '<x> =', np.average(mag_sph[simplemorphtype=='S0'])
        #print
-       #print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0]), 'Delta =', "{0:.4f}".format(absscat_0)
-       #print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1]), 'Delta =', "{0:.4f}".format(absscat_1)
-       #print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2]), 'Delta =', "{0:.4f}".format(absscat_2)
-       ##print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3]), 'Delta =', "{0:.4f}".format(absscat_3)
+       #print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '   B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0]), 'Delta =', "{0:.2f}".format(absscat_0)
+       #print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '   B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1]), 'Delta =', "{0:.2f}".format(absscat_1)
+       #print 'bisector    A =', "{0:.2f}".format(A[2]), '\pm', "{0:.2f}".format(Aerr[2]), '   B = ', "{0:.2f}".format(B[2]), '\pm', "{0:.2f}".format(Berr[2]), 'Delta =', "{0:.2f}".format(absscat_2)
+       ##print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '   B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3]), 'Delta =', "{0:.2f}".format(absscat_3)
        #print '---------------------------------'
        #
        #### fit using FITEXY ###
@@ -1880,10 +1751,10 @@ def mbh_vs_mag_sph():
         print 'y = A*(x-<x>) + B '
         print '<x> =', np.average(mag_sph[core==1])
         print
-        print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0]), 'Delta =', "{0:.4f}".format(absscat_0)
-        print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1]), 'Delta =', "{0:.4f}".format(absscat_1)
-        print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2]), 'Delta =', "{0:.4f}".format(absscat_2)
-        #print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3]), 'Delta =', "{0:.4f}".format(absscat_3)
+        print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '   B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0]), 'Delta =', "{0:.2f}".format(absscat_0)
+        print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '   B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1]), 'Delta =', "{0:.2f}".format(absscat_1)
+        print 'bisector    A =', "{0:.2f}".format(A[2]), '\pm', "{0:.2f}".format(Aerr[2]), '   B = ', "{0:.2f}".format(B[2]), '\pm', "{0:.2f}".format(Berr[2]), 'Delta =', "{0:.2f}".format(absscat_2)
+        #print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '   B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3]), 'Delta =', "{0:.2f}".format(absscat_3)
         print '---------------------------------'
        
         logxx = np.arange(-10,20,0.1)
@@ -1899,17 +1770,17 @@ def mbh_vs_mag_sph():
         print '-----------------------------'
         print '-----------------------------'
        
-       #### produce .dat file
-       #datfileName = '/Users/gsavorgnan/galaxy_vivisection/data/marconi_fit/mbh_vs_mag_sph_core.dat'
-       #datfile = open(datfileName, 'w')
-       #datfile.write('# MAGSph err_MAGSph logMassBH err_logMassBH \n')
-       #for MAGSph, err_MAGSph, logMassBH, err_logMassBH in zip(mag_sph[core==1]-np.average(mag_sph[core==1]),
-       #	0.5*(perr_mag_sph[core==1] + merr_mag_sph[core==1]),
-       #	log_mbh[core==1],0.5*(merr_log_mbh[core==1] + perr_log_mbh[core==1])):
-       #	datfile.write(str(MAGSph) + ' ' + str(err_MAGSph) + ' ' + str(logMassBH) + ' ' + str(err_logMassBH) + ' ' + '\n')
-       #datfile.close()
-       #
-       #############################
+        ### produce .dat file
+        datfileName = '/Users/gsavorgnan/galaxy_vivisection/data/marconi_fit/mbh_vs_mag_sph_core.dat'
+        datfile = open(datfileName, 'w')
+        datfile.write('# MAGSph err_MAGSph logMassBH err_logMassBH \n')
+        for MAGSph, err_MAGSph, logMassBH, err_logMassBH in zip(mag_sph[core==1]-np.average(mag_sph[core==1]),
+        	0.5*(perr_mag_sph[core==1] + merr_mag_sph[core==1]),
+        	log_mbh[core==1],0.5*(merr_log_mbh[core==1] + perr_log_mbh[core==1])):
+        	datfile.write(str(MAGSph) + ' ' + str(err_MAGSph) + ' ' + str(logMassBH) + ' ' + str(err_logMassBH) + ' ' + '\n')
+        datfile.close()
+       
+        ############################
         
         print 'sersic'
         print 'n', len(mag_sph[core==0])
@@ -1924,10 +1795,10 @@ def mbh_vs_mag_sph():
         print 'y = A*(x-<x>) + B '
         print '<x> =', np.average(mag_sph[core==0])
         print
-        print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0]), 'Delta =', "{0:.4f}".format(absscat_0)
-        print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1]), 'Delta =', "{0:.4f}".format(absscat_1)
-        print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2]), 'Delta =', "{0:.4f}".format(absscat_2)
-        #print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3]), 'Delta =', "{0:.4f}".format(absscat_3)
+        print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '   B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0]), 'Delta =', "{0:.2f}".format(absscat_0)
+        print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '   B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1]), 'Delta =', "{0:.2f}".format(absscat_1)
+        print 'bisector    A =', "{0:.2f}".format(A[2]), '\pm', "{0:.2f}".format(Aerr[2]), '   B = ', "{0:.2f}".format(B[2]), '\pm', "{0:.2f}".format(Berr[2]), 'Delta =', "{0:.2f}".format(absscat_2)
+        #print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '   B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3]), 'Delta =', "{0:.2f}".format(absscat_3)
         print '---------------------------------'
        
         logxx = np.arange(-10,20,0.1)
@@ -1943,15 +1814,15 @@ def mbh_vs_mag_sph():
         print '-----------------------------'
         print '-----------------------------'
        
-       #### produce .dat file
-       #datfileName = '/Users/gsavorgnan/galaxy_vivisection/data/marconi_fit/mbh_vs_mag_sph_sersic.dat'
-       #datfile = open(datfileName, 'w')
-       #datfile.write('# MAGSph err_MAGSph logMassBH err_logMassBH \n')
-       #for MAGSph, err_MAGSph, logMassBH, err_logMassBH in zip(mag_sph[core==0]-np.average(mag_sph[core==0]),
-       #	0.5*(perr_mag_sph[core==0] + merr_mag_sph[core==0]),
-       #	log_mbh[core==0],0.5*(merr_log_mbh[core==0] + perr_log_mbh[core==0])):
-       #	datfile.write(str(MAGSph) + ' ' + str(err_MAGSph) + ' ' + str(logMassBH) + ' ' + str(err_logMassBH) + ' ' + '\n')
-       #datfile.close()
+        ### produce .dat file
+        datfileName = '/Users/gsavorgnan/galaxy_vivisection/data/marconi_fit/mbh_vs_mag_sph_sersic.dat'
+        datfile = open(datfileName, 'w')
+        datfile.write('# MAGSph err_MAGSph logMassBH err_logMassBH \n')
+        for MAGSph, err_MAGSph, logMassBH, err_logMassBH in zip(mag_sph[core==0]-np.average(mag_sph[core==0]),
+        	0.5*(perr_mag_sph[core==0] + merr_mag_sph[core==0]),
+        	log_mbh[core==0],0.5*(merr_log_mbh[core==0] + perr_log_mbh[core==0])):
+        	datfile.write(str(MAGSph) + ' ' + str(err_MAGSph) + ' ' + str(logMassBH) + ' ' + str(err_logMassBH) + ' ' + '\n')
+        datfile.close()
 
 	############################
 
@@ -2027,8 +1898,8 @@ def mbh_vs_mag_sph():
 	
 	ax.set_yscale('log')
         plt.axis([-19.01,-27.99,10**5.1,10**11.2])
-        plt.xlabel(r'$MAG_{\rm sph}\rm~[mag]$', labelpad=15)
-        plt.ylabel(r'$M_{\rm BH} \rm ~[M_\odot]$', labelpad=15)
+        plt.xlabel(r'$MAG_{\rm sph}\rm~[mag]$', labelpad=13)
+        plt.ylabel(r'$M_{\rm BH} \rm ~[M_\odot]$', labelpad=13)
 	plt.subplots_adjust(left=0.15,bottom=0.15,right=0.97,top=0.9)
         plt.show()
 	#plt.savefig(path_paper_figures + 'mbh_vs_mag_sph.pdf', format='pdf', dpi=1000)
@@ -2182,10 +2053,10 @@ def mbh_vs_mass_sph_galsymb_agn():
         print 'y = A*(x-<x>) + B '
         print '<x> =', np.average(log_mass_sph[earlytype==1])
         print
-        #print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0])
-        #print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1])
-        print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2])
-        #print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3])
+        #print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '   B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0])
+        #print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '   B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1])
+        print 'bisector    A =', "{0:.2f}".format(A[2]), '\pm', "{0:.2f}".format(Aerr[2]), '   B = ', "{0:.2f}".format(B[2]), '\pm', "{0:.2f}".format(Berr[2])
+        #print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '   B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3])
         print '---------------------------------'
        
         logxx = np.arange(-10,20,0.1)
@@ -2233,10 +2104,10 @@ def mbh_vs_mass_sph_galsymb_agn():
        #print 'y = A*(x-<x>) + B '
        #print '<x> =', np.average(log_mass_sph[BUL_sersic==1])
        #print
-       ##print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0])
-       ##print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1])
-       #print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2])
-       ##print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3])
+       ##print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '   B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0])
+       ##print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '   B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1])
+       #print 'bisector    A =', "{0:.2f}".format(A[2]), '\pm', "{0:.2f}".format(Aerr[2]), '   B = ', "{0:.2f}".format(B[2]), '\pm', "{0:.2f}".format(Berr[2])
+       ##print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '   B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3])
        #print '---------------------------------'
        #
        #logxx = np.arange(-10,20,0.1)
@@ -2261,10 +2132,10 @@ def mbh_vs_mass_sph_galsymb_agn():
         print 'y = A*(x-<x>) + B '
         print '<x> =', np.average(log_mass_sph[morph_core=='Sp_0'])
         print
-        #print 'OLS(Y|X)    A =', "{0:.4f}".format(A[0]), '+-', "{0:.4f}".format(Aerr[0]), '   B = ', "{0:.4f}".format(B[0]), '+-', "{0:.4f}".format(Berr[0])
-        #print 'OLS(X|Y)    A =', "{0:.4f}".format(A[1]), '+-', "{0:.4f}".format(Aerr[1]), '   B = ', "{0:.4f}".format(B[1]), '+-', "{0:.4f}".format(Berr[1])
-        print 'bisector    A =', "{0:.4f}".format(A[2]), '+-', "{0:.4f}".format(Aerr[2]), '   B = ', "{0:.4f}".format(B[2]), '+-', "{0:.4f}".format(Berr[2])
-        #print 'orthogonal  A =', "{0:.4f}".format(A[3]), '+-', "{0:.4f}".format(Aerr[3]), '   B = ', "{0:.4f}".format(B[3]), '+-', "{0:.4f}".format(Berr[3])
+        #print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '   B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0])
+        #print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '   B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1])
+        print 'bisector    A =', "{0:.2f}".format(A[2]), '\pm', "{0:.2f}".format(Aerr[2]), '   B = ', "{0:.2f}".format(B[2]), '\pm', "{0:.2f}".format(Berr[2])
+        #print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '   B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3])
         print '---------------------------------'
        
         logxx = np.arange(-10,20,0.1)
@@ -2318,21 +2189,21 @@ def mbh_vs_mass_sph_galsymb_agn():
 	ax.set_xscale('log')
 	ax.set_yscale('log')
         plt.axis([10**7.9,10**12.3,10**4.1,10**11.2])
-        plt.xlabel(r'$M_{\rm *,sph}\rm~[M_\odot]$', labelpad=15)
-        plt.ylabel(r'$M_{\rm BH} \rm ~[M_\odot]$', labelpad=15)
+        plt.xlabel(r'$M_{\rm *,sph}\rm~[M_\odot]$', labelpad=13)
+        plt.ylabel(r'$M_{\rm BH} \rm ~[M_\odot]$', labelpad=13)
 	plt.subplots_adjust(left=0.15,bottom=0.15,right=0.97,top=0.9)
-        #plt.show()
-	plt.savefig(path_paper_figures + 'mbh_vs_mass_sph_galsymb_agn.pdf', format='pdf', dpi=1000)
+        plt.show()
+	#plt.savefig(path_paper_figures + 'mbh_vs_mass_sph_galsymb_agn.pdf', format='pdf', dpi=1000)
 
 	
 		
 		
 def main():
 	#mag_lit_vs_mag_my()
-	#mbh_vs_mass_sph_agn()
+	mbh_vs_mass_sph_agn()
 	#mbh_vs_mass_sph()
 	#mbh_vs_mag_sph_psb()
-	inset_psb()
+	#inset_psb()
 	#mbh_vs_mag_tot()
 	#mbh_vs_mag_sph()
 	#mbh_vs_mass_sph_galsymb_agn()

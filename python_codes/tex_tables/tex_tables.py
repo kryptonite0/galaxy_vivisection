@@ -43,7 +43,7 @@ def header_datapaper_sampletable(caption):
 		print '\\emph{Column (9):} Completion of 1D fit. '
 		print '\\emph{Column (10):} Completion of 2D fit. }                                 '
         print '\\begin{tabular}{llllllllll}                           '
-        print '\\hline                                                '
+        print '\\tableline                                                '
         print '\\multicolumn{1}{l}{{\\bf Galaxy}} &                   '
         print '\\multicolumn{1}{l}{{\\bf Distance}} &                 '
         print '\\multicolumn{1}{l}{{\\bf $\\bm{M_{\\rm BH}}$}} &  '
@@ -74,11 +74,11 @@ def header_datapaper_sampletable(caption):
         print '\\multicolumn{1}{l}{(8)} &                             '
         print '\\multicolumn{1}{l}{(9)} &                             '
         print '\\multicolumn{1}{l}{(10)} \\\\                         '
-        print '\\hline                                                '
+        print '\\tableline                                                '
 
 def footer_datapaper_sampletable(label):
 
-        print '\\hline         '
+        print '\\tableline         '
         print '\\end{tabular}   '
         if label:
 		print '\\label{tab:sample} '
@@ -91,20 +91,9 @@ def header_mmpaper_sampletable(caption):
         print '\\small                                                '
         print '\\begin{center}                                        '
 	if caption:
-        	print '\\caption{{\\bf Galaxy sample.}                        '
-        	print '\\emph{Column (1):} Galaxy name.                       '
-		print '\\emph{Column (2):} Morphological type (E=elliptical, S0(B)=(barred) lenticular, Sp(B)=(barred) spiral, merger=merger).                       '
-        	print '\\emph{Column (3):} Presence of a partially depleted core. \
-			The question mark is used when the classification has come from the velocity dispersion criteria mentioned in Section \\ref{sec:data}.   '
-        	print '\\emph{Column (4):} Distance.                                   '
-        	print '\\emph{Column (5):} Black hole mass.                                   '
-		print '\\emph{Column (6):} Absolute $3.6\\rm~\mu m$ bulge magnitude.                                   '
-		print '\\emph{Column (7):} Absolute $3.6\\rm~\mu m$ galaxy magnitude. \
-			The four galaxy magnitudes marked with a * are upper limits.                                   '
-		print '\\emph{Column (8):} $[3.6]-[4.5]$ colour.                                   '
-		print '\\emph{Column (9):} Bulge stellar mass. }                      '
-        print '\\begin{tabular}{lllllllll}                           '
-        print '\\hline                                                '
+        	print '\\caption{Galaxy sample.} '
+        print '\\begin{tabular}{llllllrll}                           '
+        print '\\tableline                                                '
         print '\\multicolumn{1}{l}{{\\bf Galaxy}} &                   '
         print '\\multicolumn{1}{l}{{\\bf Type}} &                     '
         print '\\multicolumn{1}{l}{{\\bf Core}} &                     '
@@ -132,14 +121,28 @@ def header_mmpaper_sampletable(caption):
         print '\\multicolumn{1}{l}{(7)} &                             '
         print '\\multicolumn{1}{l}{(8)} &                             '
         print '\\multicolumn{1}{l}{(9)} \\\\                         '
-        print '\\hline                                                '
+        print '\\tableline                                                '
 
 def footer_mmpaper_sampletable(label):
 
-        print '\\hline         '
+        print '\\tableline         '
         print '\\end{tabular}   '
         if label:
 		print '\\label{tab:sample} '
+	if not label:
+		print '\\tablecomments{\\emph{Column (1)}: Galaxy name. '
+		print '\\emph{Column (2)}: Morphological type (E=elliptical, S0=lenticular, Sp=spiral, merger). \
+		       The morphological classification of four galaxies is uncertain (E/S0 or S0/Sp). \
+		       The presence of a bar is indicated.'
+        	print '\\emph{Column (3)}: Presence of a partially depleted core. \
+			The question mark is used when the classification has come from the velocity dispersion criteria mentioned in Section \\ref{sec:data}. '
+        	print '\\emph{Column (4)}: Distance. '
+        	print '\\emph{Column (5)}: Black hole mass. '
+		print '\\emph{Column (6)}: Absolute $3.6\\rm~\mu m$ bulge magnitude. '
+		print '\\emph{Column (7)}: Absolute $3.6\\rm~\mu m$ galaxy magnitude. \
+			The four galaxy magnitudes marked with a $\leq$ are upper limits. '
+		print '\\emph{Column (8)}: $[3.6]-[4.5]$ colour. '
+		print '\\emph{Column (9)}: Bulge stellar mass. } '	
         print '\\end{center}    '
         print '\\end{table*}    '
 
@@ -304,7 +307,7 @@ def header_datapaper_fitresultstable(caption):
 		print 'S\\\'ersic index, ', 
 		print 'and spheroid apparent magnitude (in units of $[\\rm mag]$) for 2D fits. } '
         print '\\begin{tabular}{lllllllllllll}                           '
-        print '\\hline                                                '
+        print '\\tableline                                                '
 	print ' & '
 	print '\\multicolumn{3}{l}{{\\bf 1D Major-axis}} &                   '
 	print '\\multicolumn{5}{l}{{\\bf 1D Equivalent-axis }} &                   '
@@ -348,11 +351,11 @@ def header_datapaper_fitresultstable(caption):
         print '\\multicolumn{1}{l}{(11)} &                             '
         print '\\multicolumn{1}{l}{(12)} &                             '
         print '\\multicolumn{1}{l}{(13)} \\\\                         '
-        print '\\hline                                                '
+        print '\\tableline                                                '
 
 def footer_datapaper_fitresultstable(label):
 
-        print '\\hline         '
+        print '\\tableline         '
         print '\\end{tabular}   '
         if label:
 		print '\\label{tab:fitres} '
@@ -548,7 +551,7 @@ def mmpaper_sampletable():
         
         header_mmpaper_sampletable(True)
         for i in range(rows):
-		if gal_name[i] == 'n4473':
+		if gal_name[i] == 'n4697':
 			footer_mmpaper_sampletable(True)
 			print
 			header_mmpaper_sampletable(False)
@@ -568,14 +571,15 @@ def mmpaper_sampletable():
 		if bar[i] == 0 or morphtype[i] == 'merger':
 			print morphtype[i], ' & ', 
 		elif bar[i] == 1:
-			print morphtype[i] + 'B', ' & ', 	
+			print morphtype[i] + ' (bar)', ' & ', 	
                 print str(core[i])+str(core_inferred_from_sigma[i]), ' & ',  
                 print '$'+str("{0:.1f}".format(distance[i]))+'$', ' & ', 
                 print_bhmass(mass_BH[i],merr_mass_BH[i],perr_mass_BH[i])
 		print '$' + str("{0:.2f}".format(mag_sph[i])) + '_{-' + str("{0:.2f}".format(merr_mag_sph[i])) + '}^{+' + str("{0:.2f}".format(perr_mag_sph[i])) + '}$ ', ' & ',
-		print '$' + str("{0:.2f}".format(mag_tot[i])) + ' \pm ' + str("{0:.2f}".format(err_mag_tot[i])) + '$ ', 
 		if gal_name[i] in ['M94', 'NGC 3079', 'NGC 4388', 'NGC 4945']:
-			print '*',
+			print '$\leq' + str("{0:.2f}".format(mag_tot[i])) + '$ ', 
+		else:	
+			print '$' + str("{0:.2f}".format(mag_tot[i])) + ' \pm ' + str("{0:.2f}".format(err_mag_tot[i])) + '$ ', 
 		print ' & ',
 		print '$' + str("{0:.2f}".format(color[i])) +'$', ' & ', 
 		#print '$' + str("{0:.2f}".format(mass_sph[i])) + '_{' + str("{0:.2f}".format(merr_mass_sph[i])) + '}^{+' + str("{0:.2f}".format(perr_mass_sph[i])) + '}$ ', 

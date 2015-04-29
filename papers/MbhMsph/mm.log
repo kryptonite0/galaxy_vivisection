@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  28 APR 2015 17:57
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  29 APR 2015 17:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -328,9 +328,6 @@ LaTeX Warning: Unused global option(s):
 
 (./mm.aux
 
-LaTeX Warning: Label `tab:lreg' multiply defined.
-
-
 LaTeX Warning: Label `fig:pseudob' multiply defined.
 
 )
@@ -431,113 +428,113 @@ LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <5> not available
 (Font)              Font shape `U/lasy/m/n' tried instead on input line 70.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 105.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 108.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 105.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 108.
  [1{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
 Package natbib Warning: Citation `savorgnangraham2014' on page 2 undefined on i
-nput line 245.
+nput line 249.
 
 [2] (./table_sample.tex
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <9> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 14.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 5.
 )
-<images/mbh_vs_mag_sph.pdf, id=25, 578.16pt x 433.62pt>
-File: images/mbh_vs_mag_sph.pdf Graphic file (type pdf)
-
-<use images/mbh_vs_mag_sph.pdf>
-Package pdftex.def Info: images/mbh_vs_mag_sph.pdf used on input line 264.
-(pdftex.def)             Requested size: 245.26653pt x 183.94531pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images/mbh_vs_mag_sph_psb.pdf, id=26, 578.16pt x 433.62pt>
-File: images/mbh_vs_mag_sph_psb.pdf Graphic file (type pdf)
-
-<use images/mbh_vs_mag_sph_psb.pdf>
-Package pdftex.def Info: images/mbh_vs_mag_sph_psb.pdf used on input line 280.
-(pdftex.def)             Requested size: 245.26653pt x 183.94531pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images/inset_psb.pdf, id=27, 578.16pt x 433.62pt>
-File: images/inset_psb.pdf Graphic file (type pdf)
- <use images/inset_psb.pdf>
-Package pdftex.def Info: images/inset_psb.pdf used on input line 291.
-(pdftex.def)             Requested size: 245.26653pt x 183.94531pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images/mbh_vs_mag_tot.pdf, id=28, 578.16pt x 433.62pt>
+<images/mbh_vs_mag_tot.pdf, id=26, 578.16pt x 433.62pt>
 File: images/mbh_vs_mag_tot.pdf Graphic file (type pdf)
 
 <use images/mbh_vs_mag_tot.pdf>
-Package pdftex.def Info: images/mbh_vs_mag_tot.pdf used on input line 303.
+Package pdftex.def Info: images/mbh_vs_mag_tot.pdf used on input line 267.
+(pdftex.def)             Requested size: 245.26653pt x 183.94531pt.
+
+<images/mbh_vs_mag_sph.pdf, id=27, 578.16pt x 433.62pt>
+File: images/mbh_vs_mag_sph.pdf Graphic file (type pdf)
+
+<use images/mbh_vs_mag_sph.pdf>
+Package pdftex.def Info: images/mbh_vs_mag_sph.pdf used on input line 283.
+(pdftex.def)             Requested size: 245.26653pt x 183.94531pt.
+
+<images/mbh_vs_mag_sph_psb.pdf, id=28, 578.16pt x 433.62pt>
+File: images/mbh_vs_mag_sph_psb.pdf Graphic file (type pdf)
+
+<use images/mbh_vs_mag_sph_psb.pdf>
+Package pdftex.def Info: images/mbh_vs_mag_sph_psb.pdf used on input line 299.
 (pdftex.def)             Requested size: 245.26653pt x 183.94531pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/mbh_vs_mass_sph.pdf, id=29, 578.16pt x 433.62pt>
+<images/inset_psb.pdf, id=29, 578.16pt x 433.62pt>
+File: images/inset_psb.pdf Graphic file (type pdf)
+ <use images/inset_psb.pdf>
+Package pdftex.def Info: images/inset_psb.pdf used on input line 310.
+(pdftex.def)             Requested size: 245.26653pt x 183.94531pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/mbh_vs_mass_sph.pdf, id=30, 578.16pt x 433.62pt>
 File: images/mbh_vs_mass_sph.pdf Graphic file (type pdf)
 
 <use images/mbh_vs_mass_sph.pdf>
-Package pdftex.def Info: images/mbh_vs_mass_sph.pdf used on input line 316.
+Package pdftex.def Info: images/mbh_vs_mass_sph.pdf used on input line 323.
 (pdftex.def)             Requested size: 245.26653pt x 183.94531pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[3 <./images/mbh_vs_mag_sph.pdf> <./images/mbh_vs_mag_sph_psb.pdf
+[3 <./images/mbh_vs_mag_tot.pdf> <./images/mbh_vs_mag_sph.pdf
 
-pdfTeX warning: pdflatex (file ./images/mbh_vs_mag_sph_psb.pdf): PDF inclusion:
- multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ./images/mbh_vs_mag_sph.pdf): PDF inclusion: mul
+tiple pdfs with page group included in a single page
 >] [4]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 559.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 538.
 
 [5]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 559.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 538.
 
 
 Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
 
 [6]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 559.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 538.
 
 [7]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 559.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 538.
 
 
 Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
 
-[8 <./images/inset_psb.pdf> <./images/mbh_vs_mag_tot.pdf
+[8 <./images/mbh_vs_mag_sph_psb.pdf> <./images/inset_psb.pdf
 
-pdfTeX warning: pdflatex (file ./images/mbh_vs_mag_tot.pdf): PDF inclusion: mul
-tiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ./images/inset_psb.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
 > <./images/mbh_vs_mass_sph.pdf
 
 pdfTeX warning: pdflatex (file ./images/mbh_vs_mass_sph.pdf): PDF inclusion: mu
 ltiple pdfs with page group included in a single page
 >]
-Underfull \hbox (badness 3942) in paragraph at lines 561--594
+Underfull \hbox (badness 1960) in paragraph at lines 651--651
+[][]| [] []\OT1/cmr/m/n/8 The spheroid S^^Sersic in-dices are taken from our on
+e-
+ []
+
+
+Underfull \hbox (badness 3942) in paragraph at lines 626--659
 \OT1/cmr/m/n/10 which are con-sid-ered to be spheroidal, pressure-
  []
 
 
-Underfull \hbox (badness 2443) in paragraph at lines 561--594
+Underfull \hbox (badness 2443) in paragraph at lines 626--659
 \OT1/cmr/m/n/10 such as hi-er-ar-chi-cal clus-ter-ing via mi-nor merg-ers,
  []
 
 [9]
-Underfull \hbox (badness 2744) in paragraph at lines 666--679
+Underfull \hbox (badness 2744) in paragraph at lines 694--707
 \OT1/cmr/m/n/10 Coun-cil fund-ing through grants DP110103509 and
  []
 
@@ -551,13 +548,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5184 strings out of 493488
- 67636 string characters out of 3141326
- 261564 words of memory out of 3000000
- 8375 multiletter control sequences out of 15000+200000
+ 5186 strings out of 493488
+ 67666 string characters out of 3141326
+ 259371 words of memory out of 3000000
+ 8377 multiletter control sequences out of 15000+200000
  18234 words of font info for 72 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 44i,14n,31p,1009b,427s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,14n,31p,1009b,405s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy
 6.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cmextra/c
 mbsy8.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cmext
@@ -576,28 +573,28 @@ sr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib6.pfb
 ></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8
 .pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cmextra/cm
 mib9.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12
-.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.p
-fb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb>
-</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></u
-sr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/
-local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loc
-al/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/
-texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/local/t
-exlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
-xlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texl
-ive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texliv
-e/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/
-2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/20
-12/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/201
-2/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2012/
+10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17
+.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pf
+b></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><
+/usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></us
+r/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/l
+ocal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/loca
+l/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/local
+/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
+texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/te
+xlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texl
+ive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texliv
+e/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/
+2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2
+012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/201
+2/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2012/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2012/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2012/tex
 mf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on mm.pdf (11 pages, 1622267 bytes).
+Output written on mm.pdf (11 pages, 1828799 bytes).
 PDF statistics:
- 1122 PDF objects out of 1200 (max. 8388607)
- 195 compressed objects within 2 object streams
+ 1127 PDF objects out of 1200 (max. 8388607)
+ 187 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

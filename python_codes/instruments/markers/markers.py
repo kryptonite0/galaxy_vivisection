@@ -3,6 +3,8 @@ import matplotlib
 import matplotlib.pyplot as plt
 
 scatter_kwargs = {"zorder":100}
+scatter_kwargs2 = {"zorder":200}
+
 
 def spiral(ax, color, x0, y0, size):
 	t1 = np.arange(1,4,0.01)
@@ -16,10 +18,10 @@ def spiral(ax, color, x0, y0, size):
 	x = size*1.1*np.cos(t)
 	y = size*1*np.sin(t)
 	
-	ax.plot(10**(x0+x1),10**(y0+y1), color=color, lw=2, **scatter_kwargs)
-	ax.plot(10**(x0+x2),10**(y0+y2), color=color, lw=2, **scatter_kwargs)
-	ax.plot(10**(x0+x),10**(y0+y), color=color, lw=2, **scatter_kwargs)
-	ax.fill_between(10**(x0+x), 10**(y0+0), 10**(y0+y), edgecolor='', facecolor=color, **scatter_kwargs)
+	ax.plot(10**(x0+x1),10**(y0+y1), color=color, lw=2, **scatter_kwargs2)
+	ax.plot(10**(x0+x2),10**(y0+y2), color=color, lw=2, **scatter_kwargs2)
+	ax.plot(10**(x0+x),10**(y0+y), color=color, lw=2, **scatter_kwargs2)
+	ax.fill_between(10**(x0+x), 10**(y0+0), 10**(y0+y), edgecolor='', facecolor=color, **scatter_kwargs2)
 	
 	
 def lenticular(ax, color, x0, y0, size):

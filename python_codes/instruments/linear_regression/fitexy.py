@@ -29,13 +29,13 @@ def modfitexy(x,sigx,y,sigy,mode):
 	bprecision = binit_err/2
 	paramsprecision = min(aprecision,bprecision)
 	print '--------------------------'
-	print 'y = a + bx'
-	print 'Inital guess' 
-	print 'a =', ainit, '+-', ainit_err
-	print 'b =', binit, '+-', binit_err
-	print 'precision = ', paramsprecision
-	print '--------------------------'
-	print
+       #print 'y = a + bx'
+       #print 'Inital guess' 
+       #print 'a =', ainit, '+-', ainit_err
+       #print 'b =', binit, '+-', binit_err
+       #print 'precision = ', paramsprecision
+       #print '--------------------------'
+       #print
 	
 	
 	a, b, epsilon, chisqmin = get_ab(x,sigx,y,sigy,ainit,binit,paramsprecision,N,mode)
@@ -67,10 +67,10 @@ def modfitexy(x,sigx,y,sigy,mode):
 	
 	print 'y = a + bx'
 	print 'Mode fit:', mode
-	print 'a =', afit, '+', perr_afit, '-', merr_afit
-	print 'b =', bfit, '+', perr_bfit, '-', merr_bfit 
-	print 'epsilon =', epsilonfit, '+', perr_epsilonfit, '-', merr_epsilonfit 
-	print 'absolute scatter Delta =', absscat
+	print 'a =', "{0:.2f}".format(afit), '^{+', "{0:.2f}".format(perr_afit), '}_{-', "{0:.2f}".format(merr_afit), '}'
+	print 'b =', "{0:.2f}".format(bfit), '^{+', "{0:.2f}".format(perr_bfit), '}_{-', "{0:.2f}".format(merr_bfit), '}' 
+	print 'epsilon =', "{0:.2f}".format(epsilonfit), '^{+', "{0:.2f}".format(perr_epsilonfit), '}_{-', "{0:.2f}".format(merr_epsilonfit), '}' 
+	print 'absolute scatter Delta =', "{0:.2f}".format(absscat)
 	
 	return afit,merr_afit,perr_afit, bfit,merr_bfit,perr_bfit, epsilonfit,merr_epsilonfit,perr_epsilonfit, absscat					
 
@@ -198,9 +198,9 @@ def bisect_modfitexy(x,sigx,y,sigy):
 	print '--------------------------'
 	print 'Bisector FITEXY'
 	print 'y = a + bx'
-	print 'a =', a_bisec, '+', perr_a_bisec, '-', merr_a_bisec
-	print 'b =', b_bisec, '+', perr_b_bisec, '-', merr_b_bisec
-	print 'absolute scatter Delta =', absscat_bisec
+	print 'a =', "{0:.2f}".format(a_bisec), '^{+', "{0:.2f}".format(perr_a_bisec), '}_{-', "{0:.2f}".format(merr_a_bisec), '}' 
+	print 'b =', "{0:.2f}".format(b_bisec), '^{+', "{0:.2f}".format(perr_b_bisec), '}_{-', "{0:.2f}".format(merr_b_bisec), '}' 
+	print 'absolute scatter Delta =', "{0:.2f}".format(absscat_bisec)
 	
 	logfile.write('\n\nBisector FITEXY \n')
 	logfile.write('a =' + str(a_bisec) + '+' + str(perr_a_bisec) + '-' + str(merr_a_bisec) + '\n')
