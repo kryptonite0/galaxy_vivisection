@@ -245,89 +245,99 @@ and thus the range in $\Gamma_{3.6}$ is also small ($0.04$).
 After checking that using a single $\Gamma_{3.6} = 0.6$, independent of $[3.6] - [4.5]$ color, 
 does not significantly affect the results of our analysis, 
 we decided to use individual, color-dependent mass-to-light ratios. \\
-The S\'ersic/core-S\'ersic classification presented in this work 
-comes from the compilation of \citet{savorgnangraham2014},
-who identified partially depleted cores according to the same criteria used by GS13.
-When no high-resolution image analysis was available from the literature, 
-they inferred the presence of a partially depleted core based on the stellar velocity dispersion:
-a galaxy is classified as core-S\'ersic if $\sigma > 270\rm~km~s^{-1}$,
-or as S\'ersic if $\sigma < 166\rm~km~s^{-1}$. \\
 For each galaxy, the total luminosity (or galaxy luminosity, $L_{\rm gal}$) is the sum of the luminosities of all its sub-components. 
 Due to the complexity of their modelling, 
 four galaxies (see Table \ref{tab:sample}, column 7) had their galaxy luminosities 
 underestimated\footnote{These four cases will be discussed in \emph{Paper I}.}, 
 which are given here as lower limits. 
-Following GS13, we assumed a fixed uncertainty ($0.25\rm~mag$) for $MAG_{\rm gal}$.
+Following GS13, we assumed a fixed uncertainty ($0.25\rm~mag$) for $MAG_{\rm gal}$. \\
+The morphological classification (E = elliptical; E/S0 = elliptical/lenticular; S0 = lenticular; S0/Sp = lenticular/spiral; Sp = spiral; merger) 
+follows from the galaxy models presented in \emph{Paper I}. 
+Throughout the paper, we will refer to early-type galaxies (E+S0) and late-type galaxies (Sp). 
+Galaxies classified as E/S0 are obviously included in the early-type bin, 
+whereas galaxies classified as S0/Sp or as mergers are included in neither the early- nor the late-type bin.\\
+The S\'ersic/core-S\'ersic classification presented in this work 
+comes from the compilation of \citet{savorgnangraham2015},
+who identified partially depleted cores according to the same criteria used by GS13.
+When no high-resolution image analysis was available from the literature, 
+they inferred the presence of a partially depleted core based on the stellar velocity dispersion:
+a galaxy is classified as core-S\'ersic if $\sigma > 270\rm~km~s^{-1}$,
+or as S\'ersic if $\sigma < 166\rm~km~s^{-1}$. \\
 
 \input{table_sample.tex}
+
+
+\section{Analysis}
+\label{sec:anal}
+We performed a linear regression analysis of the $M_{\rm BH} - L_{\rm gal}$ (see Table \ref{tab:lreggal}), 
+$M_{\rm BH} - L_{\rm sph}$ (see Table \ref{tab:lregsph}) and $M_{\rm BH} - M_{\rm *,sph}$ (see Table \ref{tab:lregmass}),
+using the BCES code from \cite{akritasbershady1996}. 
+We also repeated the analysis with the FITEXY routine \citep{press1992}, as modified by \cite{tremaine2002}, 
+and the Bayesian estimator {\tt linmix\_err} \citep{linmixerr}. 
+All these three linear regression routines account for the intrinsic scatter, 
+but only the last two allow to quantify it.
+%Because the BCES routine {\bf AL: did you wanna write (correctly) this sentence for me please? 
+%can give biased results (wrong slope) when the scatter is comparable to the range of the data},
+%we checked that the best-fit parameters obtained with the BCES code were consistent with those output by the modified FITEXY code.
+We report linear regressions, both symmetrical and non-symmetrical, 
+for S\'ersic/core-S\'ersic galaxies and for different galaxy morphological types (elliptical/lenticular, spiral).
+Symmetrical regressions are meant to be compared with theoretical expectations, 
+whereas non-symmetrical $(Y|X)$ regressions -- 
+since they minimize the scatter in the vertical direction -- 
+can be used to predict black hole masses.
+
+\section{Results and discussion}
+\label{sec:res}
+
+\subsection{Black hole mass -- galaxy luminosity}
+Figure \ref{fig:mbhmaggal} illustrates the $M_{\rm BH} - L_{\rm gal}$ diagram.
+Four spiral galaxies had their total luminosities underestimated (see Section \ref{sec:data}) 
+and thus are not included in the linear regression analysis (see Table \ref{tab:lreggal}). \\
+Upon analyzing a sample of 35 galaxies, among which only four were classified as spiral galaxies, 
+\cite{lasker2014anal} claimed that the $M_{\rm BH} - L_{\rm sph}$ and $M_{\rm BH} - L_{\rm gal}$ relations, 
+which they fit with a single power-law, have consistent intrinsic scatter.
+Here, instead, thanks to our double-sized galaxy sample that includes 17 spiral galaxies, 
+we show that the claim made by \cite{lasker2014anal} is valid only for early-type galaxies. 
+The $M_{\rm BH} - L_{\rm sph}$ correlation for all galaxies, irrespective of their morphological type, 
+has intrinsic scatter $\epsilon_{(Y|X)} = 0.51 \pm 0.06\rm~dex$ (direct linear regression) 
+and $\epsilon_{(X|Y)} = 0.60 \pm 0.09\rm~dex$ (inverse linear regression), 
+whereas the $M_{\rm BH} - L_{\rm gal}$ correlation for all galaxies has $\epsilon_{(Y|X)} = 0.63 \pm 0.07\rm~dex$ 
+and $\epsilon_{(X|Y)} = 0.91 \pm 0.17\rm~dex$.
+However, when considering only early-type galaxies, 
+we find that the $M_{\rm BH} - L_{\rm sph}$ and $M_{\rm BH} - L_{\rm gal}$ relations have the same level of intrinsic scatter. 
+%($\epsilon_{(Y|X)} = 0.41 \pm 0.06\rm~dex$ and $\epsilon_{(X|Y)} = 0.51 \pm 0.10\rm~dex$ 
+%against $\epsilon_{(Y|X)} = 0.43 \pm 0.06\rm~dex$ and $\epsilon_{(X|Y)} = 0.53 \pm 0.10\rm~dex$).
+Because the value of the intrinsic scatter depends on the uncertainties associated to the luminosities\footnote{The 
+smaller (larger) the uncertainties, the larger (smaller) the intrinsic scatter.}, 
+we tested the robustness of our last conclusion by increasing/decreasing the errors associated to $L_{\rm gal}$ 
+(that we originally assumed to be $0.25\rm~mag$) and repeating the linear regression analysis. 
+We decided to vary only the errors associated to $L_{\rm gal}$ 
+because we consider the uncertainties associated to $L_{\rm sph}$ trustworthy, since they have been estimated with an advanced method 
+that takes into account the systematic errors related to the galaxy decomposition process. 
+We found that the $M_{\rm BH} - L_{\rm sph}$ and $M_{\rm BH} - L_{\rm gal}$ relations for early-type galaxies 
+have inconsistent intrinsic scatter when assuming an error $\geq 0.7\rm~mag$ on $L_{\rm gal}$. 
+Because such error is larger than the typical error on $L_{\rm sph}$ estimated by us 
+and, in general, is significantly larger than the uncertainties on $L_{\rm gal}$ that are typically assumed in the literature, 
+we conclude that our determination of the intrinsic scatter is reliable, 
+and that $M_{\rm BH}$ correlates equally well with $L_{\rm sph}$ and $L_{\rm gal}$ only for early-type galaxies, but not for all (early+late) galaxies.
+As \cite{lasker2014anal} pointed out, from the observer's perspective, measuring galaxy luminosities is obviously easier and faster 
+than performing accurate galaxy decompositions to obtain bulge luminosities. 
+This, combined with our last conclusion, suggests that one should prefer the galaxy luminosity over the bulge luminosity 
+to predict black hole masses when dealing with samples of elliptical and lenticular galaxies only.
 
 
 \begin{figure}[h]
 \begin{center}
 \includegraphics[width=\columnwidth]{images/mbh_vs_mag_tot.pdf}
-\caption{Black hole mass against $3.6\rm~\mu m$ galaxy absolute magnitude. 
-Symbols are coded according to the galaxy morphological type: red circle = elliptical, red star = elliptical/lenticular, 
-red upward triangle = lenticular, blue downward triangle = lenticular/spiral, blue square = spiral, black diamond = merger. 
+\caption{Black hole mass plotted against $3.6\rm~\mu m$ galaxy absolute magnitude. 
+Symbols are coded according to the galaxy morphological type: red circle = E, red star = E/S0, 
+red upward triangle = S0, blue downward triangle = S0/Sp, blue square = Sp, black diamond = merger. 
 Empty symbols represent core-S\'ersic spheroids, whereas filled symbols are used for S\'ersic spheroids. 
-The red dashed line indicates the BCES bisector linear regression for early-type galaxies (ellipticals+lenticulars), 
+Four spiral galaxies had their magnitudes overestimated and are shown as upper limits. 
+The red dashed line indicates the BCES bisector linear regression for 45 early-type galaxies (E+S0), 
 with the red shaded area denoting its $1\sigma$ uncertainty. 
-Four spiral galaxies had their magnitudes overestimated and are shown as upper limits. }
+We were not able to obtain any meaningful linear regression for the late-type (Sp) galaxies. }
 \label{fig:mbhmaggal}
-\end{center}
-\end{figure}
-
-
-
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=\columnwidth]{images/mbh_vs_mag_sph.pdf}
-\caption{Black hole mass against $3.6\rm~\mu m$ spheroid absolute magnitude. 
-Symbols are coded according to the galaxy morphological type: red circle = elliptical, red star = elliptical/lenticular, 
-red upward triangle = lenticular, blue downward triangle = lenticular/spiral, blue square = spiral, black diamond = merger. 
-Empty symbols represent core-S\'ersic spheroids, whereas filled symbols are used for S\'ersic spheroids. 
-The red dashed line indicates the BCES bisector linear regression for early-type galaxies (ellipticals+lenticulars), 
-with the red shaded area denoting its $1\sigma$ uncertainty. 
-The blue solid line shows the BCES bisector linear regression for spiral galaxies, 
-with the blue shaded area denoting its $1\sigma$ uncertainty. 
-The black dashed-dotted and dotted lines represent the BCES bisector linear regressions for core-S\'ersic and S\'ersic spheroids, respectively.}
-\label{fig:mbhmagsph}
-\end{center}
-\end{figure}
-
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=\columnwidth]{images/mbh_vs_mag_sph_psb.pdf}
-\caption{Black hole mass versus $3.6\rm~\mu m$ spheroid absolute magnitude. 
-Symbols are color coded according to the spheroid S\'ersic index $n_{\rm sph}$. 
-Bulges with $n_{\rm sph}<2$, claimed by some to be pseudobulges, are marked with an empty square. 
-The black solid line shows the BCES bisector linear regression for spheroids with $n_{\rm sph} \geq 2$. }
-\label{fig:pseudob}
-\end{center}
-\end{figure}
-
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=\columnwidth]{images/inset_psb.pdf}
-\caption{Vertical offset from the $M_{\rm BH} - L_{\rm sph}$ correlation defined by spheroids with $n_{\rm sph} \geq 2$. 
-The vertical dashed line corresponds to $n_{\rm sph} = 2$.
-The horizontal solid line is equivalent to a zero vertical offset.
-Bulges with $n_{\rm sph}<2$ are not randomly offset to lower black hole masses 
-from the correlation traced by bulges with $n_{\rm sph} \geq 2$.}
-\label{fig:pseudob}
-\end{center}
-\end{figure}
-
-
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=\columnwidth]{images/mbh_vs_mass_sph.pdf}
-\caption{Black hole mass against spheroid stellar mass. 
-Symbols are coded according to the galaxy morphological type (red = E, orange = E/S0 and S0, blue = S0/Sp and Sp, black = merger).
-The red dashed line indicates the BCES bisector linear regression for early-type galaxies (ellipticals+lenticulars), 
-with the red shaded area denoting its $1\sigma$ uncertainty. 
-The blue solid line shows the BCES bisector linear regression for spiral galaxies, 
-with the blue shaded area denoting its $1\sigma$ uncertainty. }
-\label{fig:mbhmasssph}
 \end{center}
 \end{figure}
 
@@ -360,15 +370,15 @@ with the blue shaded area denoting its $1\sigma$ uncertainty. }
                         & {\tt linmix\_err} $(X|Y)$  & $8.56 \pm 0.09$ & $-0.65 \pm 0.08$ & $-24.88$ & $0.53 \pm 0.10$ & $0.54$ \\
                         & {\tt linmix\_err} Bisector & $8.56 \pm 0.08$ & $-0.53 \pm 0.10$ & $-24.88$ & $-$    & $0.47$ \\
 
- Late-type (Sp) (17) & BCES $(Y|X)$      & $7.37 \pm 0.17$ & $-0.33 \pm 0.87$   & $-24.39$ & $-$ & $0.65$ \\
-                     & BCES $(X|Y)$      & $7.37 \pm 1.97$ & $-21.66 \pm 53.74$ & $-24.39$ & $-$ & $7.73$ \\                        
-                     & BCES Bisector     & $7.37 \pm 0.20$ & $-1.32 \pm 0.94$   & $-24.39$ & $-$ & $0.77$ \\                     
-                     & FITEXY $(Y|X)$    & $7.38^{+0.17}_{-0.18}$ & $-0.34^{+0.74}_{-0.80}$ & $-24.39$ & $0.63^{+0.19}_{-0.11}$ & $0.65$ \\                         
-                     & FITEXY $(X|Y)$    & $$ & $$ & $-24.39$ & $$ & $$ \\                         
-                     & FITEXY Bisector   & $$ & $$ & $-24.39$ & $-$    & $$ \\                  
-                     & {\tt linmix\_err} $(Y|X)$     & $$ & $$ & $-24.39$ & $$ & $$ \\             
-                     & {\tt linmix\_err} $(X|Y)$     & $$ & $$ & $-24.39$ & $$ & $$ \\             
-                     & {\tt linmix\_err} Bisector    & $$ & $$ & $-24.39$ & $-$    & $$ \\      
+%Late-type (Sp) (13) & BCES $(Y|X)$      & $7.37 \pm 0.17$ & $-0.33 \pm 0.87$   & $-24.39$ & $-$ & $0.65$ \\
+%                    & BCES $(X|Y)$      & $7.37 \pm 1.97$ & $-21.66 \pm 53.74$ & $-24.39$ & $-$ & $7.73$ \\
+%                    & BCES Bisector     & $7.37 \pm 0.20$ & $-1.32 \pm 0.94$   & $-24.39$ & $-$ & $0.77$ \\
+%                    & FITEXY $(Y|X)$    & $7.38^{+0.17}_{-0.18}$ & $-0.34^{+0.74}_{-0.80}$ & $-24.39$ & $0.63^{+0.19}_{-0.11}$ & $0.65$ \\
+%                    & FITEXY $(X|Y)$    & $$ & $$ & $-24.39$ & $$ & $$ \\
+%                    & FITEXY Bisector   & $$ & $$ & $-24.39$ & $-$    & $$ \\
+%                    & {\tt linmix\_err} $(Y|X)$     & $$ & $$ & $-24.39$ & $$ & $$ \\
+%                    & {\tt linmix\_err} $(X|Y)$     & $$ & $$ & $-24.39$ & $$ & $$ \\
+%                    & {\tt linmix\_err} Bisector    & $$ & $$ & $-24.39$ & $-$    & $$ \\
 
 %All (62)               & BCES $(Y|X)$   & $$ & $$ & $$ & $-$ & $$ \\
 %                       & BCES $(X|Y)$   & $$ & $$ & $$ & $-$ & $$ \\
@@ -384,8 +394,140 @@ with the blue shaded area denoting its $1\sigma$ uncertainty. }
 \tableline
 \end{tabular}
 \label{tab:lreggal} 
+\tablecomments{For each subsample, we indicate $\langle MAG_{\rm gal} \rangle$, its average value of galaxy magnitudes. 
+In the last two columns, we report $\epsilon$, the intrinsic scatter, and $\Delta$, the total rms scatter in the $\log(M_{\rm BH})$ direction. 
+Four spiral galaxies had their luminosities underestimated and thus are not included in the linear regression analysis 
+(the sample of all galaxies contains 66-4=62 objects). 
+When considering all galaxies, irrespective of their morphological type, 
+the $M_{\rm BH} - L_{\rm gal}$ correlation is weaker than the $M_{\rm BH} - L_{\rm sph}$ correlation, in terms of intrinsic scatter. 
+However, when considering only early-type galaxies, the $M_{\rm BH} - L_{\rm gal}$ and $M_{\rm BH} - L_{\rm sph}$ correlations 
+have consistent intrinsic scatter. }
 \end{table*}
 
+\subsection{Black hole mass -- spheroid luminosity}
+We now come to the $M_{\rm BH} - L_{\rm sph}$ diagram, which is shown in Figure \ref{fig:mbhmagsph}, 
+and whose linear regression analysis is presented in Table \ref{tab:lregsph}. \\
+S\'ersic and core-S\'ersic spheroids have slopes consistent with each other (within their $1\sigma$ uncertainties), 
+in disagreement with the findings of GS13. 
+The slope that we obtained for core-S\'ersic spheroids ($M_{\rm BH} \propto L_{\rm sph}^{1.18 \pm 0.20}$) 
+is consistent with the slope reported by GS13 in the $K_s$-band ($M_{\rm BH} \propto L_{\rm sph}^{1.10 \pm 0.20}$). 
+Instead, the slope that we determined for S\'ersic spheroids ($M_{\rm BH} \propto L_{\rm sph}^{1.53 \pm 0.20}$) 
+is shallower than that found by GS13 ($M_{\rm BH} \propto L_{\rm sph}^{2.73 \pm 0.55}$). 
+Although the S\'ersic/core-S\'ersic classification used by GS13 slightly differs\footnote{which galaxies?} from the classification used here, 
+the main cause of such inconsistency is that the bulge-to-total ratios obtained from our galaxy decompositions 
+are different from those assumed by GS13 to convert galaxy luminosities into bulge luminosities.
+Our bulge-to-total ratios for low-luminosity S\'ersic spheroids ($MAG_{\rm sph} \gtrsim -22 \rm~mag$) 
+are smaller than those used by GS13. 
+The host galaxies of such bulges are late-type, spiral galaxies, 
+which typically present a complex morphology (bars, double bars, embedded disks, nuclear components, etc).
+Our sophisticated galaxy models account for the extra components, 
+while the bulge-to-total ratios of GS13 were derived from simple literature bulge/disk decompositions 
+which overestimated the bulge luminosity.
+This results in our bulge magnitudes being on average $\sim$$1\rm~mag$ fainter than in GS13, after accounting for the different wavelength of the data.
+On the other side, our bulge-to-total ratios for high-luminosity S\'ersic spheroids ($MAG_{\rm sph} \lesssim -24 \rm~mag$) 
+are on average larger than those adopted by GS13.
+In this case, the host systems are early-type galaxies that feature intermediate-scale disks\footnote{explain}.
+Past bulge/disk decompositions failed to correctly identify the extent of such disks and treated them as large-scale disks, 
+thus underestimating the bulge luminosity.
+The magnitudes that we obtained for such spheroids are on average $\sim$$1\rm~mag$ brighter than in GS13. 
+These two effects explain the shallower slope that we obtained for the S\'ersic spheroids. \\
+We have seen that the change in slope of the $M_{\rm BH} - L_{\rm sph}$ correlation -- 
+which is expected for consistency with other scaling relations 
+(a single power-law $M_{\rm BH} - \sigma$ correlation and a double power-law $L_{\rm sph} - \sigma$ correlation) -- 
+cannot be attributed to the division between the two populations of S\'ersic and core-S\'ersic spheroids.
+We now test a new hypothesis, that is to say the change in slope is to be ascribed to the different formation mechanisms of early- and late-type galaxies. 
+If this hypothesis is correct, 
+the spheroids of early-type galaxies will follow $M_{\rm BH} \propto L_{\rm sph}^{\sim 1}$, 
+whereas the spheroids of late-type galaxies will have $M_{\rm BH} \propto L_{\rm sph}^{\sim 2.5}$.
+First, we checked that elliptical and lenticular galaxies, taken separately, have slopes consistent with each other, 
+and thus, taken together, they define a single \emph{red sequence} in the $M_{\rm BH} - L_{\rm sph}$ diagram. 
+We then fit the bulges of early- and late-type galaxies with two separate log-linear regressions, 
+and obtained $M_{\rm BH} \propto L_{\rm sph}^{1.00 \pm 0.10}$ and $M_{\rm BH} \propto L_{\rm sph}^{2.75 \pm 0.75}$ respectively, 
+in excellent agreement with the theoretical expectations of our hypothesis. \\
+%{\bf vertical scatter along the early type sequence is constant? if 2 overmassive bhs removed, what happens?}
+We remark on the unsuitability of the Pearson's and Spearman's correlation coefficients because 
+they do not take into account the error bars on our data.
+Similarly, a visual inspection of the plotted data requires us to take into account the error bars 
+when judging-by-eye the strength of a correlation. 
+We have therefore relied on the quantitative regression analysis rather than subjective approaches.
+
+\subsection{Pseudo- versus classical bulges}
+korm. review \\
+Current views distinguish between classical bulges, which are considered to be spheroidal, pressure-supported systems, 
+formed through violent processes, such as hierarchical clustering via minor mergers, 
+and pseudo-bulges, thought to be disk-like, rotation-supported systems, 
+built from secular evolution processes, such as instabilities of their surrounding disk or bar. 
+Pseudo-bulges are notoriously hard to identify \citep{graham2013review,graham2014review,graham2015pseudo,graham2015review}.
+For example, mergers can create bulges that rotate (e.g.~\citealt{bekki2010,keselmannusser2012}), 
+and bars can spin-up classical bulges (e.g.~\citealt{saha2012}), 
+thus rotation is not a definitive signature of a pseudobulge. 
+Furthermore, many galaxies host both a pseudo- and a classical bulge (e.g.~\citealt{erwin2003,erwin2015,athanassoula2005,Gadotti2009,
+macarthur2009,dosanjosdasilva2013,seidel2015}). 
+In the recent literature, pseudo- and classical bulges have been frequently told apart by means of a divide at a 
+S\'ersic index of $n_{\rm sph}=2$ (e.g.~\citealt{fisherdrory2010}), 
+although, from a selection of hundreds of disc galaxies imaged in the $K$-band, 
+\cite{grahamworley2008} observed no such bimodality in the bulge S\'ersic indices. 
+While pseudo-bulges are expected to have exponential-like surface brightness profiles ($n_{\rm sph} \simeq 1$), 
+being disky components that formed from their surrounding exponential disks 
+(e.g.~\citealt{bardeen1975,hohl1975,combessanders1981,combes1990,pfennigerfriedli1991}), 
+it has been shown that mergers can create bulges with $n_{\rm sph}<2$
+(e.g.~\citealt{elichemoral2011,scannapieco2011,querejeta2015}), 
+just as low-luminosity elliptical galaxies (not built from the secular evolution of a disk)
+are well known to have $n_{\rm sph}<2$ and even $n_{\rm sph}<1$ (e.g.~\citealt{davies1988,youngcurrie1994}). \\
+\cite{sani2011} reported that pseudo-bulges -- which they labelled as such according to the $n_{\rm sph}<2$ criterion -- 
+with low black hole masses ($M_{\rm BH} < 10^7\rm~M_\odot$) are significantly displaced from the correlation 
+traced by classical bulges. 
+In Figure \ref{fig:pseudob}, we show the distribution of spheroid S\'ersic indices\footnote{The spheroid S\'ersic indices 
+are taken from our one-dimensional fits of the galaxy major-axis surface brightness profiles (\emph{Paper I}).} 
+in the $M_{\rm BH} - L_{\rm sph}$ diagram.
+Our aim is to check whether $n_{\rm sph}<2$ bulges 
+are offset to lower black hole masses from the correlation defined by $n_{\rm sph}>2$ bulges. 
+To do this, we fit a symmetrical linear regression to the bulges that have $n_{\rm sph}>2$ 
+and we compute the vertical offset of all bulges from the regression. 
+In the inset of Figure \ref{fig:pseudob}, we plot the vertical offset against $n_{\rm sph}$. 
+From a visual inspection, bulges with $n_{\rm sph}<2$ do not appear to be offset from the correlation traced by bulges with $n_{\rm sph}>2$.
+
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=\columnwidth]{images/mbh_vs_mag_sph.pdf}
+\caption{Black hole mass plotted against $3.6\rm~\mu m$ spheroid absolute magnitude. 
+Symbols are coded according to the galaxy morphological type: red circle = E, red star = E/S0, 
+red upward triangle = S0, blue downward triangle = S0/Sp, blue square = Sp, black diamond = merger. 
+Empty symbols represent core-S\'ersic spheroids, whereas filled symbols are used for S\'ersic spheroids. 
+The red dashed line indicates the BCES bisector linear regression for the bulges of 45 early-type (E+S0) galaxies, 
+with the red shaded area denoting its $1\sigma$ uncertainty. 
+The blue solid line shows the BCES bisector linear regression for the bulges of 17 late-type (Sp) galaxies, 
+with the blue shaded area denoting its $1\sigma$ uncertainty. 
+The black dashed-dotted and dotted lines represent the BCES bisector linear regressions for core-S\'ersic and S\'ersic spheroids, respectively.}
+\label{fig:mbhmagsph}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=\columnwidth]{images/mbh_vs_mag_sph_psb.pdf}
+\caption{Black hole mass plotted against $3.6\rm~\mu m$ spheroid absolute magnitude. 
+Symbols are color coded according to the spheroid S\'ersic index $n_{\rm sph}$. 
+Bulges with $n_{\rm sph}<2$, claimed by some to be pseudobulges, are marked with an empty square. 
+The black solid line shows the BCES bisector linear regression for spheroids with $n_{\rm sph} \geq 2$. }
+\label{fig:pseudob}
+\end{center}
+\end{figure}
+
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=\columnwidth]{images/inset_psb.pdf}
+\caption{Vertical offset from the $M_{\rm BH} - L_{\rm sph}$ correlation defined by spheroids with $n_{\rm sph} \geq 2$, 
+plotted against $n_{\rm sph}$. 
+The vertical dashed line corresponds to $n_{\rm sph} = 2$.
+The horizontal solid line is equivalent to a zero vertical offset.
+Bulges with $n_{\rm sph}<2$ are not randomly offset to lower black hole masses 
+from the correlation traced by bulges with $n_{\rm sph} \geq 2$.}
+\label{fig:pseudob}
+\end{center}
+\end{figure}
 
 
 \begin{table*}
@@ -477,7 +619,51 @@ S\'ersic (44) & BCES $(Y|X)$   & $7.71 \pm 0.09$ & $-0.41 \pm 0.08$ & $-22.92$ &
 \tableline
 \end{tabular}
 \label{tab:lregsph} 
+\tablecomments{For each subsample, we indicate $\langle MAG_{\rm sph} \rangle$, its average value of spheroid magnitudes. 
+In the last two columns, we report $\epsilon$, the intrinsic scatter, and $\Delta$, the total rms scatter in the $\log(M_{\rm BH})$ direction. 
+Both the early- and late-type subsamples do not contain the two galaxies classified as S0/Sp and the two galaxies classified as mergers (45+17=66-2-2). }
 \end{table*}
+
+
+\subsection{Black hole mass -- spheroid stellar mass}
+Finally, we present the $M_{\rm BH} - M_{\rm *,sph}$ diagram in Figure \ref{fig:mbhmasssph}. 
+The bulges of early-type galaxies follow $M_{\rm BH} \propto M_{\rm *,sph}^{1.0 \pm 0.1}$,
+as expected from a dry-merging formation scenario,
+and define a tight \emph{red sequence} with intrinsic scatter $\epsilon_{(Y|X)} = 0.43 \pm 0.06\rm~dex$. 
+On the other hand, the bulges of spiral galaxies trace a steeper \emph{blue sequence}, 
+whose slope is less well constrained due to the small size of the subsample and, more importantly, 
+to the small range in $M_{\rm *,sph}$ that the subsample spans.
+For the bulges of spiral galaxies, the BCES code returns a bisector linear regression $M_{\rm BH} \propto M_{\rm *,sph}^{3.0 \pm 1.3}$, 
+while the modified FITEXY routine finds a shallower (but still consistent within the $1\sigma$ uncertainty) slope of $2.3^{+1.7}_{-1.0}$.
+The Bayesian estimator of \cite{linmixerr} fails in performing an inverse $(X|Y)$ linear regression for the subsample of spiral galaxies. 
+{\bf which code do we trust more in this case? BCES or FITEXY? is it a quadratic or a cubic growth? } 
+
+\cite{grahamscott2015} collected a sample of $\sim$170 low-redshift ($z \leq 0.35$, with a median redshift $\langle z \rangle = 0.085$) 
+bulges hosting Active Galactic Nuclei (AGNs) with 
+black hole masses $10^5 \lesssim M_{\rm BH}/{\rm M_\odot} \lesssim 0.5 \times 10^8$, 
+and showed that they roughly follow the quadratic $M_{\rm BH} - M_{\rm *,sph}$ relation defined by predominantly inactive S\'ersic bulges. 
+%Although we demonstrated that, using our dataset, the S\'ersic bulges do not define a quadratic relation, 
+We anticipate here that the correlation traced by our bulges of spiral galaxies 
+may track the location of the AGNs in the $M_{\rm BH} - M_{\rm *,sph}$ diagram.
+That is, the AGNs appear to be the low-mass continuation of the \emph{blue sequence} shown in Figure \ref{fig:mbhmasssph}. 
+We additionally note that the majority of our spiral galaxies host an AGN\footnote{According to the nuclear classification reported on NED 
+(Nasa Extragalactic Database), among our 17 spiral galaxies, at least 12 host a Seyfert AGN and one hosts a LINER AGN.}.\\
+{\bf cite Anne's paper}\\
+{\bf AL: however we analyze the agns in another paper, blah blah}
+ 
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=\columnwidth]{images/mbh_vs_mass_sph.pdf}
+\caption{Black hole mass plotted against spheroid stellar mass. 
+Symbols are coded according to the galaxy morphological type.
+The red dashed line indicates the BCES bisector linear regression for early-type galaxies (E+S0), 
+with the red shaded area denoting its $1\sigma$ uncertainty. 
+The blue solid line shows the BCES bisector linear regression for late-type (Sp) galaxies, 
+with the blue shaded area denoting its $1\sigma$ uncertainty. {\bf key result}}
+\label{fig:mbhmasssph}
+\end{center}
+\end{figure}
 
 \begin{table*}
 \centering
@@ -513,176 +699,10 @@ S\'ersic (44) & BCES $(Y|X)$   & $7.71 \pm 0.09$ & $-0.41 \pm 0.08$ & $-22.92$ &
 \tableline
 \end{tabular}
 \label{tab:lregmass} 
-\tablecomments{cia}
+\tablecomments{For each subsample, we indicate $\langle M_{\rm *,sph} \rangle$, its average value of spheroid stellar masses. 
+In the last two columns, we report $\epsilon$, the intrinsic scatter, and $\Delta$, the total rms scatter in the $\log(M_{\rm BH})$ direction. }
 \end{table*}
 
-
-\section{Analysis}
-\label{sec:anal}
-We performed a linear regression analysis of the $M_{\rm BH} - L_{\rm gal}$ (see Table \ref{tab:lreggal}), 
-$M_{\rm BH} - L_{\rm sph}$ (see Table \ref{tab:lregsph}) and $M_{\rm BH} - M_{\rm *,sph}$ (see Table \ref{tab:lregmass}),
-using the BCES code from \cite{akritasbershady1996}. 
-We also repeated the analysis with the FITEXY routine \citep{press1992}, as modified by \cite{tremaine2002}, 
-and the Bayesian estimator {\tt linmix\_err} \citep{linmixerr}. 
-All these three linear regression routines account for the intrinsic scatter, 
-but only the last two allow to quantify it.
-%Because the BCES routine {\bf AL: did you wanna write (correctly) this sentence for me please? 
-%can give biased results (wrong slope) when the scatter is comparable to the range of the data},
-%we checked that the best-fit parameters obtained with the BCES code were consistent with those output by the modified FITEXY code.
-We report linear regressions, both symmetrical and non-symmetrical, 
-for S\'ersic/core-S\'ersic galaxies and for different galaxy morphological types (elliptical/lenticular, spiral).
-Symmetrical regressions are meant to be compared with theoretical expectations, 
-whereas non-symmetrical $(Y|X)$ regressions -- 
-since they minimize the scatter in the vertical direction -- 
-can be used to predict black hole masses.
-
-\section{Results and discussion}
-\label{sec:res}
-
-\subsection{Black hole mass -- galaxy luminosity}
-Figure \ref{fig:mbhmaggal} illustrates the $M_{\rm BH} - L_{\rm gal}$ diagram.
-Four spiral galaxies had their total luminosities underestimated (see Section \ref{sec:data}) 
-and thus are not included in the linear regression analysis. \\
-Upon analyzing a sample of 35 galaxies, among which only four were classified as spiral galaxies, 
-\cite{lasker2014anal} claimed that the $M_{\rm BH} - L_{\rm sph}$ and $M_{\rm BH} - L_{\rm gal}$ relations, 
-which they fit with a single power-law, have consistent intrinsic scatter.
-Here, instead, thanks to our double-sized galaxy sample that includes 17 spiral galaxies, 
-we show that the claim made by \cite{lasker2014anal} is valid only for early-type galaxies. 
-The $M_{\rm BH} - L_{\rm sph}$ correlation for all galaxies, irrespective of their morphological type, 
-has intrinsic scatter $\epsilon_{(Y|X)} = 0.51 \pm 0.06\rm~dex$ (direct linear regression) 
-and $\epsilon_{(X|Y)} = 0.60 \pm 0.09\rm~dex$ (inverse linear regression), 
-whereas the $M_{\rm BH} - L_{\rm gal}$ correlation for all galaxies has $\epsilon_{(Y|X)} = 0.63 \pm 0.07\rm~dex$ 
-and $\epsilon_{(X|Y)} = 0.91 \pm 0.17\rm~dex$.
-However, when considering only early-type galaxies, 
-we find that the $M_{\rm BH} - L_{\rm sph}$ and $M_{\rm BH} - L_{\rm gal}$ relations have the same level of intrinsic scatter. 
-%($\epsilon_{(Y|X)} = 0.41 \pm 0.06\rm~dex$ and $\epsilon_{(X|Y)} = 0.51 \pm 0.10\rm~dex$ 
-%against $\epsilon_{(Y|X)} = 0.43 \pm 0.06\rm~dex$ and $\epsilon_{(X|Y)} = 0.53 \pm 0.10\rm~dex$).
-Because the value of the intrinsic scatter depends on the uncertainties associated to the luminosities\footnote{The 
-smaller (larger) the uncertainties, the larger (smaller) the intrinsic scatter.}, 
-we tested the robustness of our last conclusion by increasing/decreasing the errors associated to $L_{\rm gal}$ 
-(that we originally assumed to be $0.25\rm~mag$) and repeating the linear regression analysis. 
-On the other hand, the uncertainties associated to $L_{\rm sph}$ have been estimated 
-with an advanced method that takes into account the systematic errors related to the galaxy decomposition process. 
-We consider these uncertainties trustworthy and, therefore, we decided to vary only the errors associated to $L_{\rm gal}$.
-We found that the $M_{\rm BH} - L_{\rm sph}$ and $M_{\rm BH} - L_{\rm gal}$ relations for early-type galaxies 
-have inconsistent intrinsic scatter when assuming an error $\geq 0.7\rm~mag$ on $L_{\rm gal}$. 
-Because such error is larger than the typical error on $L_{\rm sph}$ used here
--- and, in general, is significantly larger than the uncertainties on $L_{\rm gal}$ that are typically used in the literature --, 
-we come to the conclusion that our determination of the intrinsic scatter is reliable, 
-and that, for early-type galaxies, $M_{\rm BH}$ correlates equally well with $L_{\rm sph}$ and $L_{\rm gal}$.
-As \cite{lasker2014anal} pointed out, from the observer's perspective, measuring galaxy luminosities is obviously easier and faster 
-than performing accurate %galaxy decompositions to obtain bulge luminosities. 
-This, combined with our last conclusion, suggests that one should prefer the galaxy luminosity over the bulge luminosity 
-to predict black hole masses when dealing with samples of elliptical and lenticular galaxies only.
-
-\subsection{Black hole mass -- spheroid luminosity}
-We show the $M_{\rm BH} - L_{\rm sph}$ diagram in Figure \ref{fig:mbhmagsph}. \\
-S\'ersic and core-S\'ersic spheroids have slopes consistent with each other (within their $1\sigma$ uncertainties), 
-in disagreement with the findings of GS13. 
-The slope that we obtained for core-S\'ersic spheroids ($M_{\rm BH} \propto L_{\rm sph}^{1.2 \pm 0.2}$) 
-is consistent with the slope reported by GS13 in the $K_s$-band ($M_{\rm BH} \propto L_{\rm sph}^{1.1 \pm 0.2}$). 
-Instead, the slope that we determined for S\'ersic spheroids ($M_{\rm BH} \propto L_{\rm sph}^{1.5 \pm 0.2}$) 
-is significantly shallower than that found by GS13 ($M_{\rm BH} \propto L_{\rm sph}^{2.7 \pm 0.5}$). 
-Although the S\'ersic/core-S\'ersic classification used by GS13 slightly differs\footnote{which galaxies?} from the classification used here, 
-the main cause of such inconsistency is that the bulge-to-total ratios obtained from our galaxy decompositions 
-are different from those assumed by GS13 to convert galaxy luminosities into bulge luminosities.
-Our bulge-to-total ratios for low-luminosity S\'ersic spheroids ($MAG_{\rm sph} \gtrsim -22 \rm~mag$) 
-are smaller than those used by GS13. 
-The host galaxies of such bulges are late-type, spiral galaxies, 
-which typically present a complex morphology (bars, double bars, embedded disks, nuclear components, etc).
-Our sophisticated galaxy models account for the extra components, 
-while the bulge-to-total ratios of GS13 were derived from simple bulge/disk decompositions 
-which overestimated the bulge luminosity.
-This results in our bulge magnitudes being on average $\sim$$1\rm~mag$ fainter.
-On the other side, our bulge-to-total ratios for high-luminosity S\'ersic spheroids ($MAG_{\rm sph} \lesssim -24 \rm~mag$) 
-are on average larger than those adopted by GS13.
-In this case, the host systems are early-type elliptical/lenticular galaxies that feature intermediate-scale disks\footnote{explain}.
-Past bulge/disk decompositions failed to correctly identify the extent of such disks and treated them as large-scale disks, 
-thus underestimating the bulge luminosity.
-The magnitudes that we obtained for such spheroids are on average $\sim$$1\rm~mag$ brighter. \\
-We have seen that the change in slope of the $M_{\rm BH} - L_{\rm sph}$ correlation -- 
-which is expected for consistency with other scaling relations 
-(a single power-law $M_{\rm BH} - \sigma$ correlation and a double power-law $L_{\rm sph} - \sigma$ correlation) -- 
-cannot be attributed to the division between the two populations of S\'ersic and core-S\'ersic spheroids.
-We now test a new hypothesis, that is to say the change in slope is to be ascribed to the different formation mechanisms of early- and late-type galaxies. 
-If this hypothesis is correct, 
-the spheroids of early-type (elliptical and lenticular) galaxies will follow $M_{\rm BH} \propto L_{\rm sph}^{\sim 1}$, 
-whereas the spheroids of late-type (spiral) galaxies will have $M_{\rm BH} \propto L_{\rm sph}^{\sim 2.5}$.
-First, we checked that elliptical and lenticular galaxies, taken separately, have slopes consistent with each other, 
-and thus, taken together, they define a single \emph{red sequence} in the $M_{\rm BH} - L_{\rm sph}$ diagram. 
-We then fit the bulges of early- and late-type galaxies with two separate log-linear regressions, 
-and obtained $M_{\rm BH} \propto L_{\rm sph}^{1 \pm 0.1}$ and $M_{\rm BH} \propto L_{\rm sph}^{2.75 \pm 0.75}$ respectively, 
-in excellent agreement with the theoretical expectations of our hypothesis.
-%{\bf vertical scatter along the early type sequence is constant? if 2 overmassive bhs removed, what happens?}
-{\bf AL, can you pls write this: 
-Remember also Ewan's remark about the unsuitability of the Pearson and Spearman correlation coefficients because 
-they do not take into account the error bars on our data - 
-so don't include those simple coefficients.  
-Actually, it would be worth pointing out to readers that a visual inspection of the plotted data requires 
-the viewer to take into account the error bars when judging-by-eye the strength of a correlation. 
-Maybe then mention in the following sentence that this is why the correlation coefficients are not applicable here. }
-
-\subsection{Pseudo- versus classical bulges}
-Current views distinguish between classical bulges, which are considered to be spheroidal, pressure-supported systems, 
-formed through violent processes, such as hierarchical clustering via minor mergers, 
-and pseudo-bulges, thought to be disk-like, rotation-supported systems, 
-built from secular evolution processes, such as instabilities of their surrounding disk or bar. 
-Pseudo-bulges are notoriously hard to identify \citep{graham2013review,graham2014review,graham2015pseudo,graham2015review}.
-For example, mergers can create bulges that rotate (e.g.~\citealt{bekki2010,keselmannusser2012}), 
-and bars can spin-up classical bulges (e.g.~\citealt{saha2012}), 
-thus rotation is not a definitive signature of a pseudobulge. 
-Furthermore, many galaxies host both a pseudo- and a classical bulge (e.g.~\citealt{erwin2003,erwin2015,athanassoula2005,Gadotti2009,
-macarthur2009,dosanjosdasilva2013,seidel2015}). 
-In the recent literature, pseudo- and classical bulges have been frequently told apart by means of a divide at a 
-S\'ersic index of $n_{\rm sph}=2$ (e.g.~\citealt{fisherdrory2010}), 
-although, from a selection of hundreds of disc galaxies imaged in the $K$-band, 
-\cite{grahamworley2008} observed no such bimodality in the bulge S\'ersic indices. 
-While pseudo-bulges are expected to have exponential-like surface brightness profiles ($n_{\rm sph} \simeq 1$), 
-being disky components that formed from their surrounding exponential disks 
-(e.g.~\citealt{bardeen1975,hohl1975,combessanders1981,combes1990,pfennigerfriedli1991}), 
-it has been shown that mergers can create bulges with $n_{\rm sph}<2$
-(e.g.~\citealt{elichemoral2011,scannapieco2011,querejeta2015}), 
-just as low-luminosity elliptical galaxies (not built from the secular evolution of a disk)
-are well known to have $n_{\rm sph}<2$ and even $n_{\rm sph}<1$ (e.g.~\citealt{davies1988,youngcurrie1994}). \\
-\cite{sani2011} reported that pseudo-bulges -- which they labelled as such according to the $n_{\rm sph}<2$ criterion -- 
-with low black hole masses ($M_{\rm BH} < 10^7\rm~M_\odot$) are significantly displaced from the correlation 
-traced by classical bulges. 
-In Figure \ref{fig:pseudob}, we show the distribution of spheroid S\'ersic indices\footnote{The spheroid S\'ersic indices 
-are taken from our one-dimensional fits of the galaxy major-axis surface brightness profiles (\emph{Paper I}).} 
-in the $M_{\rm BH} - L_{\rm sph}$ diagram.
-Our aim is to check whether $n_{\rm sph}<2$ bulges 
-are offset to lower black hole masses from the correlation defined by $n_{\rm sph}>2$ bulges. 
-To do this, we fit a symmetrical linear regression to the bulges that have $n_{\rm sph}>2$ 
-and we compute the vertical offset of all bulges from the regression. 
-In the inset of Figure \ref{fig:pseudob}, we plot the vertical offset against $n_{\rm sph}$. 
-From a visual inspection, bulges with $n_{\rm sph}<2$ do not appear to be offset from the correlation traced by bulges with $n_{\rm sph}>2$.
-
-
-\subsection{Black hole mass -- spheroid stellar mass}
-Finally, we present the $M_{\rm BH} - M_{\rm *,sph}$ diagram in Figure \ref{fig:mbhmasssph}. 
-The bulges of early-type galaxies follow $M_{\rm BH} \propto M_{\rm *,sph}^{1.0 \pm 0.1}$,
-as expected from a dry-merging formation scenario,
-and define a tight \emph{red sequence} with intrinsic scatter $\epsilon_{(Y|X)} = 0.43 \pm 0.06\rm~dex$. 
-On the other hand, the bulges of spiral galaxies trace a steeper \emph{blue sequence}, 
-whose slope is not well constrained due to the small size of the subsample and, more importantly, 
-to the small range in $M_{\rm *,sph}$ that the subsample spans.
-For the bulges of spiral galaxies, the BCES code returns a bisector linear regression $M_{\rm BH} \propto M_{\rm *,sph}^{3.0 \pm 1.3}$, 
-while the modified FITEXY routine finds a shallower (but still consistent within the $1\sigma$ uncertainty) slope of $2.3^{+1.7}_{-1.0}$.
-The Bayesian estimator of \cite{linmixerr} fails in performing an inverse $(X|Y)$ linear regression for the subsample of spiral galaxies. 
-{\bf which code do we trust more in this case? BCES or FITEXY? is it a quadratic or a cubic growth? } 
-
-\cite{grahamscott2015} collected a sample of $\sim$170 low-redshift ($z \lesssim 0.1$) bulges hosting Active Galactic Nuclei (AGNs) with 
-black hole masses $10^5 \lesssim M_{\rm BH}/{\rm M_\odot} \lesssim 0.5 \times 10^8$, 
-and showed that they roughly follow the quadratic $M_{\rm BH} - M_{\rm *,sph}$ relation defined by predominantly inactive S\'ersic bulges. 
-Although we demonstrated that, using our dataset, the S\'ersic bulges do not define a quadratic relation, 
-we anticipate here that the correlation traced by our bulges of spiral galaxies 
-tracks the location of the AGNs in the $M_{\rm BH} - M_{\rm *,sph}$ diagram, 
-i.e. the AGNs appears to be the low-mass continuation of the \emph{blue sequence} shown in Figure \ref{fig:mbhmasssph}. 
-We also note that the majority of our spiral galaxies hosts an AGN\footnote{According to the nuclear classification reported on NED 
-(Nasa Extragalactic Database), among our 17 spiral galaxies, at least 12 host a Seyfert AGN and one hosts a LINER AGN.}.\\
-{\bf cite Anne's paper}\\
-{\bf AL: however we analyze the agns in another paper, blah blah}
- 
  
 
 \section{Conclusions}

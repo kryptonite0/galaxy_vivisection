@@ -133,14 +133,18 @@ def footer_mmpaper_sampletable(label):
 		print '\\tablecomments{\\emph{Column (1)}: Galaxy name. '
 		print '\\emph{Column (2)}: Morphological type (E=elliptical, S0=lenticular, Sp=spiral, merger). \
 		       The morphological classification of four galaxies is uncertain (E/S0 or S0/Sp). \
-		       The presence of a bar is indicated.'
+		       The presence of a bar is indicated. '
         	print '\\emph{Column (3)}: Presence of a partially depleted core. \
 			The question mark is used when the classification has come from the velocity dispersion criteria mentioned in Section \\ref{sec:data}. '
         	print '\\emph{Column (4)}: Distance. '
         	print '\\emph{Column (5)}: Black hole mass. '
-		print '\\emph{Column (6)}: Absolute $3.6\\rm~\mu m$ bulge magnitude. '
+		print '\\emph{Column (6)}: Absolute $3.6\\rm~\mu m$ bulge magnitude. \
+		       Bulge magnitudes come from our state-of-the-art multicomponent galaxy decompositions (\\emph{Paper I}), \
+		       which include bulges, disks, bars, spiral arms, rings, haloes, extended or unresolved nuclear sources and partially depleted cores, \
+                       and that -- for the first time -- were checked to be consistent with the galaxy kinematics. \
+		       The uncertainties were estimated with a method that takes into account systematic errors, which are typically not considered by popular 2D fitting codes. '
 		print '\\emph{Column (7)}: Absolute $3.6\\rm~\mu m$ galaxy magnitude. \
-			The four galaxy magnitudes marked with a $\leq$ are upper limits. '
+			Four galaxies had their magnitudes overestimated, which are give here as upper limits. '
 		print '\\emph{Column (8)}: $[3.6]-[4.5]$ colour. '
 		print '\\emph{Column (9)}: Bulge stellar mass. } '	
         print '\\end{center}    '
@@ -579,7 +583,7 @@ def mmpaper_sampletable():
 		if gal_name[i] in ['M94', 'NGC 3079', 'NGC 4388', 'NGC 4945']:
 			print '$\leq' + str("{0:.2f}".format(mag_tot[i])) + '$ ', 
 		else:	
-			print '$' + str("{0:.2f}".format(mag_tot[i])) + ' \pm ' + str("{0:.2f}".format(err_mag_tot[i])) + '$ ', 
+			print '$' + str("{0:.2f}".format(mag_tot[i])) + ' \pm 0.25$ ' ##+ str("{0:.2f}".format(err_mag_tot[i])) + '$ ', 
 		print ' & ',
 		print '$' + str("{0:.2f}".format(color[i])) +'$', ' & ', 
 		#print '$' + str("{0:.2f}".format(mass_sph[i])) + '_{' + str("{0:.2f}".format(merr_mass_sph[i])) + '}^{+' + str("{0:.2f}".format(perr_mass_sph[i])) + '}$ ', 
