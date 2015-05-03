@@ -144,7 +144,7 @@ def footer_mmpaper_sampletable(label):
                        and that -- for the first time -- were checked to be consistent with the galaxy kinematics. \
 		       The uncertainties were estimated with a method that takes into account systematic errors, which are typically not considered by popular 2D fitting codes. '
 		print '\\emph{Column (7)}: Absolute $3.6\\rm~\mu m$ galaxy magnitude. \
-			Four galaxies had their magnitudes overestimated, which are give here as upper limits. '
+			Four galaxies had their magnitudes overestimated, which are given here as upper limits. '
 		print '\\emph{Column (8)}: $[3.6]-[4.5]$ colour. '
 		print '\\emph{Column (9)}: Bulge stellar mass. } '	
         print '\\end{center}    '

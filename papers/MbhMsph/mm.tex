@@ -78,7 +78,7 @@ Our sample, the largest ever used, counts 66 local galaxies with a dynamical mea
 %that take into account bulges, disks, bars, spiral arms, rings, haloes, extended or unresolved nuclear sources and partially depleted cores, 
 %and that -- for the first time -- were checked to be consistent with the galaxy kinematics. 
 Spheroid luminosities come from high signal-to-noise $3.6\rm~\mu m$ \emph{Spitzer} satellite imagery, 
-and were derived from our state-of-the-art multicomponent galaxy decompositions 
+and were derived from our state-of-the-art {\bf many-component} galaxy decompositions 
 that, for the first time, were checked to be consistent with the galaxy kinematics. 
 {\bf limit of 250 words, no room for mentioning the gaalxy components, more appropriate for data paper}
 Previous studies have used galaxy samples that were overwhelmingly dominated by high-mass, early-type objects.
@@ -120,7 +120,7 @@ Subsequent studies of the $M_{\rm BH} - L_{\rm sph}$ and $M_{\rm BH} - M_{\rm sp
 (\citealt{ferrareseford2005,lauer2007,graham2007,graham2008bar,gultelkin2009,sani2011,beifiori2012,erwingadotti2012,
 vika2012,vandenbosch2012,mcconnellma2013,kormendyho2013,rusli2013}; 
 see \citealt{graham2015bulges} for an extensive review about the early discovery and successive improvements of these correlations)
-used similar galaxy samples, which remained dominated by high-mass, early-type objects having $M_{\rm BH} \gtrsim 0.5 \times 10^8~\rm M_\odot$, 
+used similar galaxy samples, which remained dominated by high-mass, early-type systems having $M_{\rm BH} \gtrsim 0.5 \times 10^8~\rm M_\odot$, 
 and recovered a near-linear relation. 
 However, the consensus about a linear $M_{\rm BH} - M_{\rm sph}$ correlation was not unanimous. 
 Some studies reported a slope steeper than one,  
@@ -128,13 +128,14 @@ or noticed that low-mass spheroids were downwards offset from the relation trace
 \citep{laor1998,wandel1999,laor2001,ryan2007}.
 Recently, \cite{lasker2014data,lasker2014anal} derived $2.2~\rm \mu m$ bulge luminosities for 35 galaxies 
 (among which only 4 were classified as spiral galaxies), 
-and reported a slope below unity for their $M_{\rm BH} - M_{\rm sph}$ relation. 
+and reported a slope below unity for their $M_{\rm BH} - L_{\rm sph}$ relation. 
 They also claimed that the black hole mass correlates equally well with the total galaxy luminosity 
 as it does with the bulge luminosity. \\
-The $M_{\rm BH} - L_{\rm sph}$ relation can be predicted from other two correlations involving the bulge velocity dispersion, $\sigma$.
+The $M_{\rm BH} - L_{\rm sph}$ relation can be predicted from other two correlations that involve 
+the bulge stellar velocity dispersion, $\sigma$.
 The first of these two is the $M_{\rm BH} - \sigma$ relation \citep{ferraresemerritt2000,gebhardt2000},
-which can be described by a single power-law ($M_{\rm BH} \propto \sigma^5$) 
-over the range in velocity dispersion $70-350~\rm km~s^{-1}$ (e.g.~\citealt{graham2011,mcconnell2011,grahamscott2013}).
+which can be described with a single power-law ($M_{\rm BH} \propto \sigma^5$) 
+over a wide range in velocity dispersion ($70-350~\rm km~s^{-1}$, e.g.~\citealt{graham2011,mcconnell2011,grahamscott2013}).
 The second is the $L_{\rm sph} - \sigma$ relation, 
 which has long been known to be a ``double power-law'', 
 being $L_{\rm sph} \propto \sigma^5$ at the luminous end \citep{schechter1980,malumuthkrishner1981,vonderlinden2007,liu2008}, 
@@ -159,28 +160,27 @@ it should be noted that $\sim$20\% of ``core galaxies'' are not core-S\'ersic sp
 (\citealt{dullograham2014cores}, their Appendix A.2), i.e. do not have depleted cores.
 The change in slope of the $L_{\rm sph} - \sigma$ relation corresponds to the division between 
 core-S\'ersic and S\'ersic spheroids (e.g. \citealt{grahamguzman2003}).},
-and attributed the change in slope (from log-quadratic to log-linear) to their different formation mechanisms. 
+and attributed the change in slope (from quadratic to linear) to their different formation mechanisms. 
 In this scenario, core-S\'ersic spheroids are built in additive dry merger events, 
 where the black hole and the bulge grow at the same pace, increasing their mass in lock steps ($M_{\rm BH} \propto L_{\rm sph}^1$), 
 whereas S\'ersic spheroids originate from gas-rich processes, 
 in which the mass of the black hole increases more rapidly than the mass of its host spheroid ($M_{\rm BH} \propto L_{\rm sph}^{2.5}$). 
-\citeauthor{grahamscott2013} (\citeyear{grahamscott2013}, hereafter GS13) and \citeauthor{scott2013} (\citeyear{scott2013}, hereafter S+13) 
+\citeauthor{grahamscott2013} (\citeyear{grahamscott2013}, hereafter GS13) and \citeauthor{scott2013} (\citeyear{scott2013}) 
 presented double power-law linear regressions 
-for S\'ersic/core-S\'ersic spheroids in the $M_{\rm BH} - L_{\rm sph}$ and $M_{\rm BH} - M_{\rm *,sph}$ 
-(spheroid stellar mass) diagrams, respectively, probing down to $M_{\rm BH} \approx 10^6\rm~M_\odot$. 
+for S\'ersic and core-S\'ersic spheroids in the $M_{\rm BH} - L_{\rm sph}$ and $M_{\rm BH} - M_{\rm *,sph}$ 
+(spheroid stellar mass) diagrams, probing down to $M_{\rm BH} \approx 10^6\rm~M_\odot$. 
 To obtain their dust-corrected \emph{bulge} magnitudes, they did not perform bulge/disc decompositions, 
 but instead they converted $B-$band and $K_S-$band observed, total \emph{galaxy} magnitudes 
 using a mean statistical correction based on each object's morphological type and disc 
 inclination\footnote{While this resulted in individual bulge magnitudes not being exactly correct, 
 their large sample size allowed them to obtain a reasonably ensemble average correction.}. 
-However, this mean statistical correction was obtained from the results of non-modern bulge/disk decompositions, 
-which did not include extra components. 
+However, this mean statistical correction was obtained from the results of non-modern bulge/disk decompositions. 
 It should also be noted that $\sim$80\% of their core-S\'ersic spheroids were morphologically classified as elliptical galaxies, 
 and $\sim$80\% of their S\'ersic spheroids were morphologically classified as bulges of disk galaxies (lenticulars and spirals). \\
 Several recent papers \citep{jiang2011a,jiang2013,mathur2012,reines2013} claimed an offset at the low-mass end of the $M_{\rm BH} - M_{\rm *,sph}$ diagram,
 such that the black hole mass is lower than expected from the near-linear correlation traced by the high-mass, early-type spheroids. 
 However, \cite{grahamscott2013} showed that the low-mass spheroids ($10^{8.5} \lesssim M_{\rm *,sph}/{\rm M_\odot} \lesssim 10^{10.5}$) 
-are not randomly offset from the high-mass, near-linear correlation, 
+are not randomly offset from such near-linear correlation, 
 but follow the two times steeper relation traced by the S\'ersic spheroids. 
 Using data from \cite{jiang2011a}, \cite{grahamscott2015} showed that this appears to extend to spheroids with even lower black hole masses 
 ($10^{5} \lesssim M_{\rm *,sph}/{\rm M_\odot} \lesssim 2 \times 10^{6}$), 
@@ -216,8 +216,8 @@ or large-scale disks, that encase the bulge and dominate the light at large radi
 \emph{Paper I} will present the dataset used here, 
 %to investigate the $M_{\rm BH} - L_{\rm gal}$, $M_{\rm BH} - L_{\rm sph}$ and $M_{\rm BH} - M_{\rm *,sph}$ diagrams, 
 give details about the data reduction process and the sophisticated galaxy modelling technique that we developed, 
-discuss how we estimated the uncertainties\footnote{By comparing, for our galaxies, the measurements of the bulge magnitude 
-obtained by different authors with those obtained by us, we estimated the uncertainties on the bulge magnitudes 
+discuss how we estimated the uncertainties\footnote{By comparing, for each of our galaxies, the measurements of the bulge magnitude 
+obtained by different authors with that obtained by us, we estimated the uncertainties on the bulge magnitudes 
 with a method that takes into account systematic errors. 
 Systematic errors include incorrect sky subtraction, inaccurate masking of contaminating sources, imprecise description of the PSF, 
 erroneous choice of model components (for example, when failing to identify a galaxy subcomponent and thus omitting it in the model, 
@@ -280,10 +280,10 @@ but only the last two allow to quantify it.
 %can give biased results (wrong slope) when the scatter is comparable to the range of the data},
 %we checked that the best-fit parameters obtained with the BCES code were consistent with those output by the modified FITEXY code.
 We report linear regressions, both symmetrical and non-symmetrical, 
-for S\'ersic/core-S\'ersic galaxies and for different galaxy morphological types (elliptical/lenticular, spiral).
+for S\'ersic/core-S\'ersic and for early/late-type galaxies.
 Symmetrical regressions are meant to be compared with theoretical expectations, 
 whereas non-symmetrical $(Y|X)$ regressions -- 
-since they minimize the scatter in the vertical direction -- 
+since they minimize the scatter in the $\log M_{\rm BH}$ direction -- 
 can be used to predict black hole masses.
 
 \section{Results and discussion}
@@ -298,23 +298,23 @@ Upon analyzing a sample of 35 galaxies, among which only four were classified as
 which they fit with a single power-law, have consistent intrinsic scatter.
 Here, instead, thanks to our double-sized galaxy sample that includes 17 spiral galaxies, 
 we show that the claim made by \cite{lasker2014anal} is valid only for early-type galaxies. 
-The $M_{\rm BH} - L_{\rm sph}$ log-correlation for all galaxies, irrespective of their morphological type, 
-has intrinsic scatter $\epsilon_{(Y|X)} = 0.51 \pm 0.06\rm~dex$ (direct linear regression) 
+The $M_{\rm BH} - L_{\rm sph}$ correlation for all galaxies, irrespective of their morphological type, 
+has intrinsic scatter $\epsilon_{(Y|X)} = 0.51 \pm 0.06\rm~dex$ (forward linear regression) 
 and $\epsilon_{(X|Y)} = 0.60 \pm 0.09\rm~dex$ (inverse linear regression), 
-whereas the $M_{\rm BH} - L_{\rm gal}$ log-correlation for all galaxies has $\epsilon_{(Y|X)} = 0.63 \pm 0.07\rm~dex$ 
+whereas the $M_{\rm BH} - L_{\rm gal}$ correlation for all galaxies has $\epsilon_{(Y|X)} = 0.63 \pm 0.07\rm~dex$ 
 and $\epsilon_{(X|Y)} = 0.91 \pm 0.17\rm~dex$.
 However, when considering only early-type galaxies, 
-we find that the $M_{\rm BH} - L_{\rm sph}$ and $M_{\rm BH} - L_{\rm gal}$ log-relations have the same level of intrinsic scatter. 
+we find that the $M_{\rm BH} - L_{\rm sph}$ and $M_{\rm BH} - L_{\rm gal}$ relations have the same level of intrinsic scatter. 
 %($\epsilon_{(Y|X)} = 0.41 \pm 0.06\rm~dex$ and $\epsilon_{(X|Y)} = 0.51 \pm 0.10\rm~dex$ 
 %against $\epsilon_{(Y|X)} = 0.43 \pm 0.06\rm~dex$ and $\epsilon_{(X|Y)} = 0.53 \pm 0.10\rm~dex$).
-Because the value of the intrinsic scatter depends on the uncertainties associated to the luminosities\footnote{The 
+Because the value of the intrinsic scatter depends on the amplitude of the uncertainties associated to the luminosities\footnote{The 
 smaller (larger) the uncertainties, the larger (smaller) the intrinsic scatter.}, 
 we tested the robustness of our last conclusion by increasing/decreasing the errors associated to $L_{\rm gal}$ 
 (that we originally assumed to be $0.25\rm~mag$) and repeating the linear regression analysis. 
 We decided to vary only the errors associated to $L_{\rm gal}$ 
 because we consider the uncertainties associated to $L_{\rm sph}$ trustworthy, since they have been estimated with an advanced method 
 that takes into account the systematic errors related to the galaxy decomposition process. 
-We found that the $M_{\rm BH} - L_{\rm sph}$ and $M_{\rm BH} - L_{\rm gal}$ log-relations for early-type galaxies 
+We found that the $M_{\rm BH} - L_{\rm sph}$ and $M_{\rm BH} - L_{\rm gal}$ relations for early-type galaxies 
 have inconsistent intrinsic scatter when assuming an error $\geq 0.7\rm~mag$ on $L_{\rm gal}$. 
 Because such error is larger than the typical error on $L_{\rm sph}$ estimated by us 
 and, in general, is significantly larger than the uncertainties on $L_{\rm gal}$ that are typically assumed in the literature, 
@@ -410,7 +410,7 @@ and whose linear regression analysis is presented in Table \ref{tab:lregsph}. \\
 S\'ersic and core-S\'ersic spheroids have slopes consistent with each other (within their $1\sigma$ uncertainties), 
 in disagreement with the findings of GS13. 
 The slope that we obtained for core-S\'ersic spheroids ($M_{\rm BH} \propto L_{\rm sph}^{1.18 \pm 0.20}$) 
-is consistent with the slope reported by GS13 in the $K_s$-band ($M_{\rm BH} \propto L_{\rm sph}^{1.10 \pm 0.20}$). 
+is consistent with the slope reported by GS13 in the $K_s$-band for the same population ($M_{\rm BH} \propto L_{\rm sph}^{1.10 \pm 0.20}$). 
 Instead, the slope that we determined for S\'ersic spheroids ($M_{\rm BH} \propto L_{\rm sph}^{1.53 \pm 0.20}$) 
 is shallower than that found by GS13 ($M_{\rm BH} \propto L_{\rm sph}^{2.73 \pm 0.55}$). 
 Although the S\'ersic/core-S\'ersic classification used by GS13 slightly differs\footnote{The classification has changed for the galaxies 
@@ -437,7 +437,7 @@ Past bulge/disk decompositions failed to correctly identify the extent of such d
 thus underestimating the bulge luminosity.
 The magnitudes that we obtained for such spheroids are on average $\sim$$1\rm~mag$ brighter than in GS13. 
 These two effects explain the shallower slope that we obtained for the S\'ersic spheroids. \\
-We have seen that the change in slope of the $M_{\rm BH} - L_{\rm sph}$ log-correlation -- 
+We have seen that the change in slope of the $M_{\rm BH} - L_{\rm sph}$ correlation -- 
 which is expected for consistency with other scaling relations 
 (a single power-law $M_{\rm BH} - \sigma$ correlation and a double power-law $L_{\rm sph} - \sigma$ correlation) -- 
 cannot be attributed to the division between the two populations of S\'ersic and core-S\'ersic spheroids.
@@ -482,8 +482,8 @@ are well known to have $n_{\rm sph}<2$ and even $n_{\rm sph}<1$ (e.g.~\citealt{d
 \cite{sani2011} reported that pseudo-bulges -- which they labelled as such according to the $n_{\rm sph}<2$ criterion -- 
 with low black hole masses ($M_{\rm BH} < 10^7\rm~M_\odot$) are significantly displaced from the correlation 
 traced by classical bulges. 
-In Figure \ref{fig:pseudob}, we show the distribution of spheroid S\'ersic indices\footnote{The spheroid S\'ersic indices 
-are taken from our one-dimensional fits of the galaxy major-axis surface brightness profiles (\emph{Paper I}).} 
+In Figure \ref{fig:pseudob}, we show the distribution of spheroid S\'ersic indices\footnote{The spheroid S\'ersic index 
+is taken from our one-dimensional fit of the galaxy's major-axis surface brightness profile (\emph{Paper I}).} 
 in the $M_{\rm BH} - L_{\rm sph}$ diagram.
 Our aim is to check whether $n_{\rm sph}<2$ bulges 
 are offset to lower black hole masses from the correlation defined by $n_{\rm sph}>2$ bulges. 
@@ -493,11 +493,12 @@ In the inset of Figure \ref{fig:pseudob}, we plot the vertical offset against $n
 Among the 23 bulges with $n_{\rm sph}<2$, 12 have positive vertical offset and 11 have negative vertical offset. 
 \cite{kormendy2015review} provides a list of many pseudo-bulges classification criteria, including the divide at $n_{\rm sph}=2$, 
 and cautions that each individual criterion has a failure rate of 0-25\% \citep{fisherdrory2015}. 
-If this is true, we should have that no less than 75\% of $n_{\rm sph}<2$ bulges have negative vertical offset. 
+If this is true, we should have that no less than 75\% of $n_{\rm sph}<2$ bulges display negative vertical offset. 
 What we observe, instead, is that there are the same number of $n_{\rm sph}<2$ bulges lying above and below 
 the correlation defined by $n_{\rm sph}>2$ bulges\footnote{One 
 reaches the same conclusion when using the vertical offset from the correlation defined by bulges with $n_{\rm sph}>3$. 
-In this case, there are 13 and 10 bulges with $n_{\rm sph}<2$ that lie above and below, respectively, the correlation of $n_{\rm sph}>3$ bulges.}, 
+In this case, there are 13 and 10 bulges with $n_{\rm sph}<2$ that lie above and below, respectively, the correlation  
+traced by $n_{\rm sph}>3$ bulges.}, 
 and that the amplitude of their offset is the same ($\lesssim 1.5\rm~dex$).
 That is, bulges with $n_{\rm sph}<2$ do not appear to be offset from the correlation traced by bulges with $n_{\rm sph}>2$. 
 
@@ -650,15 +651,15 @@ On the other hand, the bulges of spiral galaxies trace a steeper \emph{blue sequ
 whose slope is less well constrained due to the small size of the subsample and, more importantly, 
 to the small range in $M_{\rm *,sph}$ that the subsample spans. 
 More data would be welcome to better constrain the slope of this \emph{blue sequence}.
-For the bulges of spiral galaxies, the BCES code returns a log-linear relation with slope $3.00 \pm 1.30$, 
+For the bulges of spiral galaxies, the BCES code returns a log-linear relation with slope $= 3.00 \pm 1.30$, 
 while the modified FITEXY routine finds a shallower (but still consistent within the $1\sigma$ uncertainty) 
-slope $2.28^{+1.67}_{-1.01}$.
+slope $= 2.28^{+1.67}_{-1.01}$.
 The Bayesian estimator of \cite{linmixerr} fails in performing an inverse $(X|Y)$ linear regression for the subsample of spiral galaxies. 
 
 \cite{grahamscott2015} collected a sample of $\sim$170 low-redshift ($z \leq 0.35$, with a median redshift $\langle z \rangle = 0.085$) 
 bulges hosting Active Galactic Nuclei (AGNs) with 
 black hole masses $10^5 \lesssim M_{\rm BH}/{\rm M_\odot} \lesssim 0.5 \times 10^8$, 
-and showed that they roughly follow the quadratic $M_{\rm BH} - M_{\rm *,sph}$ relation defined by their S\'ersic bulges. 
+and showed that they roughly follow the quadratic $M_{\rm BH} - M_{\rm *,sph}$ relation defined by S\'ersic bulges. 
 %Although we demonstrated that, using our dataset, the S\'ersic bulges do not define a quadratic relation, 
 We anticipate here that the correlation traced by our bulges of spiral galaxies 
 may track the location of the AGNs in the $M_{\rm BH} - M_{\rm *,sph}$ diagram.
