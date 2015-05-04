@@ -4,11 +4,10 @@ The top-level auxiliary file: mm.aux
 The style file: apj.bst
 Database file #1: mmNotes.bib
 Database file #2: /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
-Repeated entry---line 6745 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+Repeated entry---line 6775 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  : @article{haringrix2004
  :                       ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "fisherdrory2015"
 Name 1 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
 while executing---line 1587 of file apj.bst
 Name 1 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
@@ -29,7 +28,7 @@ Warning--empty publisher in graham2013review
 Warning--empty publisher in press1992
 You've used 98 entries,
             3085 wiz_defined-function locations,
-            1303 strings with 27631 characters,
+            1302 strings with 27616 characters,
 and the built_in function-call counts, 47954 in all, are:
 = -- 3924
 > -- 3559
