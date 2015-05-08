@@ -4,7 +4,7 @@ The top-level auxiliary file: mm.aux
 The style file: apj.bst
 Database file #1: mmNotes.bib
 Database file #2: /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
-Repeated entry---line 6775 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+Repeated entry---line 6789 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  : @article{haringrix2004
  :                       ,
 I'm skipping whatever remains of this entry
@@ -28,34 +28,34 @@ Warning--empty publisher in graham2013review
 Warning--empty publisher in press1992
 You've used 98 entries,
             3085 wiz_defined-function locations,
-            1302 strings with 27616 characters,
-and the built_in function-call counts, 47954 in all, are:
-= -- 3924
-> -- 3559
-< -- 50
-+ -- 1194
-- -- 1280
-* -- 4120
-:= -- 9038
+            1302 strings with 27640 characters,
+and the built_in function-call counts, 48068 in all, are:
+= -- 3934
+> -- 3577
+< -- 49
++ -- 1200
+- -- 1288
+* -- 4136
+:= -- 9057
 add.period$ -- 98
 call.type$ -- 98
-change.case$ -- 657
+change.case$ -- 659
 chr.to.int$ -- 93
 cite$ -- 101
-duplicate$ -- 1896
+duplicate$ -- 1898
 empty$ -- 2828
-format.name$ -- 1407
-if$ -- 9497
+format.name$ -- 1415
+if$ -- 9518
 int.to.chr$ -- 6
 int.to.str$ -- 0
 missing$ -- 91
 newline$ -- 298
 num.names$ -- 400
-pop$ -- 726
+pop$ -- 730
 preamble$ -- 1
-purify$ -- 657
+purify$ -- 659
 quote$ -- 0
-skip$ -- 1589
+skip$ -- 1588
 stack$ -- 0
 substring$ -- 2024
 swap$ -- 72

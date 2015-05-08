@@ -140,9 +140,6 @@
 \bibitem[{{Graham}(2007)}]{graham2007}
 {Graham}, A.~W. 2007, \mnras, 379, 711
 
-\bibitem[{{Graham}(2008)}]{graham2008bar}
----. 2008, \pasa, 25, 167
-
 \bibitem[{{Graham}(2012)}]{graham2012bent}
 ---. 2012, \apj, 746, 113
 
@@ -202,6 +199,10 @@
 \bibitem[{{Hohl}(1975)}]{hohl1975}
 {Hohl}, F. 1975, in IAU Symposium, Vol.~69, Dynamics of the Solar Systems, ed.
   A.~{Hayli}, 349
+
+\bibitem[{{Jerjen} {et~al.}(2000){Jerjen}, {Binggeli}, \&
+  {Freeman}}]{jerjen2000}
+{Jerjen}, H., {Binggeli}, B., \& {Freeman}, K.~C. 2000, \aj, 119, 593
 
 \bibitem[{{Jiang} {et~al.}(2013){Jiang}, {Ho}, {Dong}, {Yang}, \&
   {Wang}}]{jiang2013}

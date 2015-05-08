@@ -762,7 +762,7 @@ def mbh_vs_mass_sph():
 			yy_lo[i] = yy_4[i]	
 	yy_lo = np.asarray(yy_lo)
 				
-	ax.fill_between(10**(logxx+np.average(log_mass_sph[earlytype==1])), 10**yy_lo, 10**yy_up, alpha=0.1, facecolor='r')
+	ax.fill_between(10**(logxx+np.average(log_mass_sph[earlytype==1])), 10**yy_lo, 10**yy_up, alpha=0.3, facecolor='r')
 	
         print 'sersic bul of spi'
         print 'n', len(log_mass_sph[morph_core=='Sp_0'])
@@ -803,7 +803,7 @@ def mbh_vs_mass_sph():
 			yy_lo[i] = yy_4[i]	
 	yy_lo = np.asarray(yy_lo)
 				
-	ax.fill_between(10**(logxx+np.average(log_mass_sph[morph_core=='Sp_0'])), 10**yy_lo, 10**yy_up, alpha=0.1, facecolor='b')
+	ax.fill_between(10**(logxx+np.average(log_mass_sph[morph_core=='Sp_0'])), 10**yy_lo, 10**yy_up, alpha=0.2, facecolor='b')
 	
 	# legend
 	markers.elliptical(ax, 'red', 8.85, 10.9, 0.08)
@@ -981,15 +981,15 @@ def mbh_vs_mag_sph_psb():
         yy = (A[2]*(logxx) + B[2])
         ax.plot((logxx+np.average(mag_sph[n>2])),10**yy, color='k', ls='-', linewidth=2.)
 	
-        ### fit using FITEXY ###
-        print '-----------------------------'
-        print 'FITEXY n>2'
-        A,perr_A,merr_A,B,perr_B,merr_B = fitexy.bisect_modfitexy(mag_sph[n>2]-np.average(mag_sph[n>2]),
-        	0.5*(perr_mag_sph[n>2] + merr_mag_sph[n>2]),
-        	log_mbh[n>2],0.5*(merr_log_mbh[n>2] + perr_log_mbh[n>2]))
-        print '-----------------------------'
-        print '-----------------------------'
-       
+       #### fit using FITEXY ###
+       #print '-----------------------------'
+       #print 'FITEXY n>2'
+       #A,perr_A,merr_A,B,perr_B,merr_B = fitexy.bisect_modfitexy(mag_sph[n>2]-np.average(mag_sph[n>2]),
+       #	0.5*(perr_mag_sph[n>2] + merr_mag_sph[n>2]),
+       #	log_mbh[n>2],0.5*(merr_log_mbh[n>2] + perr_log_mbh[n>2]))
+       #print '-----------------------------'
+       #print '-----------------------------'
+       #
        #### produce .dat file
        #datfileName = '/Users/gsavorgnan/galaxy_vivisection/data/marconi_fit/mbh_vs_mag_sph_classbul.dat'
        #datfile = open(datfileName, 'w')
@@ -1091,21 +1091,21 @@ def inset_psb():
         
 	slope_n_grt_2 = A[2]
 	intercept_n_grt_2 = B[2]
-		
+       #	
        ############################
        #
-       #print 'BCES n>3'
-       #print 'n', len(mag_sph[n>3])
-       #A,B,Aerr,Berr,covAB=bces.bces(mag_sph[n>3]-np.average(mag_sph[n>3]),
-       #	0.5*(perr_mag_sph[n>3] + merr_mag_sph[n>3]),
-       #	log_mbh[n>3],0.5*(merr_log_mbh[n>3] + perr_log_mbh[n>3]),mag_sph[n>3]*[0.0])
-       #absscat_0 = absolutescatter.get_absscatter(mag_sph[n>3]-np.average(mag_sph[n>3]), log_mbh[n>3], B[0], A[0])
-       #absscat_1 = absolutescatter.get_absscatter(mag_sph[n>3]-np.average(mag_sph[n>3]), log_mbh[n>3], B[1], A[1])
-       #absscat_2 = absolutescatter.get_absscatter(mag_sph[n>3]-np.average(mag_sph[n>3]), log_mbh[n>3], B[2], A[2])
-       #absscat_3 = absolutescatter.get_absscatter(mag_sph[n>3]-np.average(mag_sph[n>3]), log_mbh[n>3], B[3], A[3])
+       #print 'BCES n>4'
+       #print 'n', len(mag_sph[n>4])
+       #A,B,Aerr,Berr,covAB=bces.bces(mag_sph[n>4]-np.average(mag_sph[n>4]),
+       #	0.5*(perr_mag_sph[n>4] + merr_mag_sph[n>4]),
+       #	log_mbh[n>4],0.5*(merr_log_mbh[n>4] + perr_log_mbh[n>4]),mag_sph[n>4]*[0.0])
+       #absscat_0 = absolutescatter.get_absscatter(mag_sph[n>4]-np.average(mag_sph[n>4]), log_mbh[n>4], B[0], A[0])
+       #absscat_1 = absolutescatter.get_absscatter(mag_sph[n>4]-np.average(mag_sph[n>4]), log_mbh[n>4], B[1], A[1])
+       #absscat_2 = absolutescatter.get_absscatter(mag_sph[n>4]-np.average(mag_sph[n>4]), log_mbh[n>4], B[2], A[2])
+       #absscat_3 = absolutescatter.get_absscatter(mag_sph[n>4]-np.average(mag_sph[n>4]), log_mbh[n>4], B[3], A[3])
        #print '---------------------------------'
        #print 'y = A*(x-<x>) + B '
-       #print '<x> =', np.average(mag_sph[n>3])
+       #print '<x> =', np.average(mag_sph[n>4])
        #print
        #print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '   B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0]), 'Delta =', "{0:.2f}".format(absscat_0)
        #print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '   B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1]), 'Delta =', "{0:.2f}".format(absscat_1)
@@ -1113,8 +1113,8 @@ def inset_psb():
        ##print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '	B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3]), 'Delta =', "{0:.2f}".format(absscat_3)
        #print '---------------------------------'
        #
-       #slope_n_grt_3 = A[2]
-       #intercept_n_grt_3 = B[2]
+       #slope_n_grt_4 = A[2]
+       #intercept_n_grt_4 = B[2]
        #	
        ############################
 
@@ -1131,11 +1131,11 @@ def inset_psb():
 	ax.set_xlabel(r'$n_{\rm sph}$', labelpad=13, fontsize=30)
 	ax.set_ylabel(r'offset [dex]', labelpad=13, fontsize=30)
 	ax.plot([-1,15], [0,0], ls='-', c='k', linewidth=1.5)
-	ax.plot([np.log10(2),np.log10(2)], [-3,3], ls='--', c='k', linewidth=2.)
-	#ax.plot([np.log10(3),np.log10(3)], [-3,3], ls='--', c='k', linewidth=2.)
 	
+	ax.plot([np.log10(2),np.log10(2)], [-3,3], ls='--', c='k', linewidth=2.)
 	offset = log_mbh - (slope_n_grt_2*(mag_sph-np.average(mag_sph[n>2])) + intercept_n_grt_2)
-	#offset = log_mbh - (slope_n_grt_3*(mag_sph-np.average(mag_sph[n>3])) + intercept_n_grt_3)
+	
+	#offset = log_mbh - (slope_n_grt_4*(mag_sph-np.average(mag_sph[n>4])) + intercept_n_grt_4)
 	
 	ax.errorbar(log_n, offset, xerr=[merr_log_n,perr_log_n], yerr=[merr_log_mbh,perr_log_mbh], 
 		ecolor='gray', marker='o', mfc='gray', mec='k', mew=1.5, markersize=10, ls=' ', elinewidth=1.2, capthick=1.2, barsabove=False)
@@ -1153,7 +1153,7 @@ def inset_psb():
 	
 	plt.subplots_adjust(left=0.15,bottom=0.15,right=0.97,top=0.9)
         plt.show()
-	#plt.savefig(path_paper_figures + 'inset_psb.pdf', format='pdf', dpi=1000)
+	#plt.savefig(path_paper_figures + 'inset_psb_4.pdf', format='pdf', dpi=1000)
 		
 
 def mbh_vs_mag_tot():
@@ -1362,7 +1362,7 @@ def mbh_vs_mag_tot():
         		yy_lo[i] = yy_4[i]	
         yy_lo = np.asarray(yy_lo)
         			
-        ax.fill_between((logxx+np.average(mag_tot[earlytype==1])), 10**yy_lo, 10**yy_up, alpha=0.1, facecolor='r')
+        ax.fill_between((logxx+np.average(mag_tot[earlytype==1])), 10**yy_lo, 10**yy_up, alpha=0.3, facecolor='r')
 	
        #### fit using FITEXY ###
        #print 'FITEXY early'
@@ -1701,7 +1701,7 @@ def mbh_vs_mag_sph():
         		yy_lo[i] = yy_4[i]	
         yy_lo = np.asarray(yy_lo)
         			
-        ax.fill_between((logxx+np.average(mag_sph[earlytype==1])), 10**yy_lo, 10**yy_up, alpha=0.1, facecolor='r')
+        ax.fill_between((logxx+np.average(mag_sph[earlytype==1])), 10**yy_lo, 10**yy_up, alpha=0.3, facecolor='r')
        
        #### fit using FITEXY ###
        #print '-----------------------------'
@@ -1767,7 +1767,7 @@ def mbh_vs_mag_sph():
         		yy_lo[i] = yy_4[i]	
         yy_lo = np.asarray(yy_lo)
         			
-        ax.fill_between((logxx+np.average(mag_sph[morph_core=='Sp_0'])), 10**yy_lo, 10**yy_up, alpha=0.1, facecolor='b')
+        ax.fill_between((logxx+np.average(mag_sph[morph_core=='Sp_0'])), 10**yy_lo, 10**yy_up, alpha=0.2, facecolor='b')
        
        #### fit using FITEXY ###
        #print '-----------------------------'
@@ -2319,8 +2319,8 @@ def mbh_vs_mass_sph_galsymb_agn():
 		
 def main():
 	#mag_lit_vs_mag_my()
-	mbh_vs_mass_sph_agn()
-	#mbh_vs_mass_sph()
+	#mbh_vs_mass_sph_agn()
+	mbh_vs_mass_sph()
 	#mbh_vs_mag_sph_psb()
 	#inset_psb()
 	#mbh_vs_mag_tot()
