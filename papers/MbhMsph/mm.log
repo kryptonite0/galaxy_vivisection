@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  7 MAY 2015 11:17
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  14 MAY 2015 16:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -428,35 +428,35 @@ LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
 (Font)              Font shape `U/lasy/m/n' tried instead on input line 96.
  [1{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 2096) in paragraph at lines 197--261
+Underfull \hbox (badness 2096) in paragraph at lines 200--264
 \OT1/cmr/m/n/10 spheroid pa-ram-e-ters from $3\OML/cmm/m/it/10 :\OT1/cmr/m/n/10
  6 []\OML/cmm/m/it/10 ^^V\OT1/cmr/m/n/10 m$ \OT1/cmr/m/it/10 Spitzer \OT1/cmr/m
 /n/10 satel-lite
  []
 
 
-Underfull \hbox (badness 1708) in paragraph at lines 197--261
+Underfull \hbox (badness 1708) in paragraph at lines 200--264
 \OT1/cmr/m/n/10 iden-tify their ex-tent (intermediate-scale disks, that
  []
 
 
-Underfull \hbox (badness 2302) in paragraph at lines 197--261
+Underfull \hbox (badness 2302) in paragraph at lines 200--264
 \OT1/cmr/m/n/10 Bulge lu-mi-nosi-ties[] (Ta-ble 1[]) from \OT1/cmr/m/it/10 Pa-p
 er I \OT1/cmr/m/n/10 were
  []
 
 
-Underfull \hbox (badness 1067) in paragraph at lines 197--261
+Underfull \hbox (badness 1067) in paragraph at lines 200--264
 \OT1/cmr/m/n/10 We ad-di-tion-ally ex-plored a more so-phis-ti-cated way
  []
 
 
-Underfull \hbox (badness 1406) in paragraph at lines 197--261
+Underfull \hbox (badness 1406) in paragraph at lines 200--264
 \OT1/cmr/m/n/10 work comes from the com-pi-la-tion of Sa-vorgnan &
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 197--261
+Underfull \hbox (badness 10000) in paragraph at lines 200--264
 
  []
 
@@ -465,21 +465,21 @@ LaTeX Font Info:    Font shape `U/lasy/b/n' in size <9> not available
 (Font)              Font shape `U/lasy/m/n' tried instead on input line 5.
 ) [3] [4]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 322.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 331.
 
 [5] <images/mbh_vs_mag_tot.pdf, id=47, 578.16pt x 433.62pt>
 File: images/mbh_vs_mag_tot.pdf Graphic file (type pdf)
 
 <use images/mbh_vs_mag_tot.pdf>
-Package pdftex.def Info: images/mbh_vs_mag_tot.pdf used on input line 326.
+Package pdftex.def Info: images/mbh_vs_mag_tot.pdf used on input line 335.
 (pdftex.def)             Requested size: 245.26653pt x 183.94531pt.
 
-Underfull \hbox (badness 3942) in paragraph at lines 458--502
+Underfull \hbox (badness 3942) in paragraph at lines 467--511
 \OT1/cmr/m/n/10 which are con-sid-ered to be spheroidal, pressure-
  []
 
 
-Underfull \hbox (badness 2443) in paragraph at lines 458--502
+Underfull \hbox (badness 2443) in paragraph at lines 467--511
 \OT1/cmr/m/n/10 such as hi-er-ar-chi-cal clus-ter-ing via mi-nor merg-ers,
  []
 
@@ -488,7 +488,7 @@ Underfull \hbox (badness 2443) in paragraph at lines 458--502
 File: images/mbh_vs_mag_sph.pdf Graphic file (type pdf)
 
 <use images/mbh_vs_mag_sph.pdf>
-Package pdftex.def Info: images/mbh_vs_mag_sph.pdf used on input line 506.
+Package pdftex.def Info: images/mbh_vs_mag_sph.pdf used on input line 515.
 (pdftex.def)             Requested size: 245.26653pt x 183.94531pt.
 
 
@@ -498,7 +498,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: images/mbh_vs_mag_sph_psb.pdf Graphic file (type pdf)
 
 <use images/mbh_vs_mag_sph_psb.pdf>
-Package pdftex.def Info: images/mbh_vs_mag_sph_psb.pdf used on input line 522.
+Package pdftex.def Info: images/mbh_vs_mag_sph_psb.pdf used on input line 531.
 (pdftex.def)             Requested size: 245.26653pt x 183.94531pt.
 
 
@@ -507,7 +507,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <images/inset_psb.pdf, id=210, 578.16pt x 433.62pt>
 File: images/inset_psb.pdf Graphic file (type pdf)
  <use images/inset_psb.pdf>
-Package pdftex.def Info: images/inset_psb.pdf used on input line 535.
+Package pdftex.def Info: images/inset_psb.pdf used on input line 544.
 (pdftex.def)             Requested size: 245.26653pt x 183.94531pt.
 
 
@@ -515,16 +515,16 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [7] [8]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 657.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 666.
 
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 657.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 666.
 
 
 Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 658--670
+Underfull \hbox (badness 10000) in paragraph at lines 667--679
 
  []
 
@@ -532,14 +532,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 658--670
 File: images/mbh_vs_mass_sph.pdf Graphic file (type pdf)
 
 <use images/mbh_vs_mass_sph.pdf>
-Package pdftex.def Info: images/mbh_vs_mass_sph.pdf used on input line 674.
+Package pdftex.def Info: images/mbh_vs_mass_sph.pdf used on input line 683.
 (pdftex.def)             Requested size: 245.26653pt x 183.94531pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 2744) in paragraph at lines 771--784
+Underfull \hbox (badness 2744) in paragraph at lines 780--793
 \OT1/cmr/m/n/10 Coun-cil fund-ing through grants DP110103509 and
  []
 
@@ -553,10 +553,10 @@ pdfTeX warning: pdflatex (file ./images/inset_psb.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
 >] (./mm.bbl [10]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 120.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 134.
 
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 120.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 134.
 
 
 Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
@@ -564,12 +564,12 @@ Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
 ) [11 <./images/mbh_vs_mass_sph.pdf>] (./mm.aux) ) 
 Here is how much of TeX's memory you used:
  5186 strings out of 493488
- 67670 string characters out of 3141326
- 222498 words of memory out of 3000000
+ 67669 string characters out of 3141326
+ 222494 words of memory out of 3000000
  8377 multiletter control sequences out of 15000+200000
  18234 words of font info for 72 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 44i,14n,31p,1183b,407s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,14n,31p,1183b,405s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2012/texm
 f-dist/fonts/type1/public/amsfonts/cmextra/cmbsy6.pfb></usr/local/texlive/2012/
 texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb></usr/local/texlive/2
@@ -607,7 +607,7 @@ ic/amsfonts/cm/cmti8.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public
 msfonts/cm/cmtt10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmtt8.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsf
 onts/symbols/msam10.pfb>
-Output written on mm.pdf (11 pages, 1903958 bytes).
+Output written on mm.pdf (11 pages, 1903556 bytes).
 PDF statistics:
  1145 PDF objects out of 1200 (max. 8388607)
  191 compressed objects within 2 object streams

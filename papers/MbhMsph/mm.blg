@@ -26,45 +26,45 @@ while executing---line 1671 of file apj.bst
 Warning--can't use both author and editor fields in graham2013review
 Warning--empty publisher in graham2013review
 Warning--empty publisher in press1992
-You've used 98 entries,
+You've used 97 entries,
             3085 wiz_defined-function locations,
-            1302 strings with 27640 characters,
-and the built_in function-call counts, 48068 in all, are:
-= -- 3934
-> -- 3577
+            1296 strings with 27417 characters,
+and the built_in function-call counts, 47463 in all, are:
+= -- 3884
+> -- 3524
 < -- 49
-+ -- 1200
-- -- 1288
-* -- 4136
-:= -- 9057
-add.period$ -- 98
-call.type$ -- 98
-change.case$ -- 659
++ -- 1180
+- -- 1267
+* -- 4077
+:= -- 8942
+add.period$ -- 97
+call.type$ -- 97
+change.case$ -- 648
 chr.to.int$ -- 93
-cite$ -- 101
-duplicate$ -- 1898
-empty$ -- 2828
-format.name$ -- 1415
-if$ -- 9518
-int.to.chr$ -- 6
+cite$ -- 100
+duplicate$ -- 1879
+empty$ -- 2800
+format.name$ -- 1394
+if$ -- 9403
+int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 91
-newline$ -- 298
-num.names$ -- 400
-pop$ -- 730
+missing$ -- 90
+newline$ -- 295
+num.names$ -- 396
+pop$ -- 719
 preamble$ -- 1
-purify$ -- 659
+purify$ -- 648
 quote$ -- 0
-skip$ -- 1588
+skip$ -- 1575
 stack$ -- 0
-substring$ -- 2024
-swap$ -- 72
+substring$ -- 2003
+swap$ -- 70
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 876
+type$ -- 867
 warning$ -- 3
-while$ -- 382
+while$ -- 378
 width$ -- 0
-write$ -- 982
+write$ -- 972
 (There were 8 error messages)
