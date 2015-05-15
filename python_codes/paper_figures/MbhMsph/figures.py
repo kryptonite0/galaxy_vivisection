@@ -1315,9 +1315,9 @@ def mbh_vs_mag_tot():
        #	log_mbh[all==1],0.5*(merr_log_mbh[all==1] + perr_log_mbh[all==1])):
        #	datfile.write(str(MAGGal) + ' ' + str(err_MAGGal) + ' ' + str(logMassBH) + ' ' + str(err_logMassBH) + ' ' + '\n')
        #datfile.close()
-
-	###########################
-        
+       #
+        ###########################
+       
         print 'BCES early'
         print 'n', len(mag_tot[earlytype==1])
         A,B,Aerr,Berr,covAB=bces.bces(mag_tot[earlytype==1]-np.average(mag_tot[earlytype==1]),
@@ -1334,7 +1334,7 @@ def mbh_vs_mag_tot():
         print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '   B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0]), 'Delta =', "{0:.2f}".format(absscat_0)
         print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '   B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1]), 'Delta =', "{0:.2f}".format(absscat_1)
         print 'bisector    A =', "{0:.2f}".format(A[2]), '\pm', "{0:.2f}".format(Aerr[2]), '   B = ', "{0:.2f}".format(B[2]), '\pm', "{0:.2f}".format(Berr[2]), 'Delta =', "{0:.2f}".format(absscat_2)
-        #print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '   B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3]), 'Delta =', "{0:.2f}".format(absscat_3)
+        #print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '	B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3]), 'Delta =', "{0:.2f}".format(absscat_3)
         print '---------------------------------'
        
         logxx = np.arange(-10,20,0.1)
@@ -1363,7 +1363,7 @@ def mbh_vs_mag_tot():
         yy_lo = np.asarray(yy_lo)
         			
         ax.fill_between((logxx+np.average(mag_tot[earlytype==1])), 10**yy_lo, 10**yy_up, alpha=0.3, facecolor='r')
-	
+       
        #### fit using FITEXY ###
        #print 'FITEXY early'
        #A,perr_A,merr_A,B,perr_B,merr_B = fitexy.bisect_modfitexy(mag_tot[earlytype==1]-np.average(mag_tot[earlytype==1]),
@@ -1441,6 +1441,17 @@ def mbh_vs_mag_tot():
        #print '----------------------------'
        #print '----------------------------'
 	
+	######################################
+       
+       #### fit using FITEXY ###
+       #print 'FITEXY S0s'
+       #A,perr_A,merr_A,B,perr_B,merr_B = fitexy.bisect_modfitexy(mag_tot[simplemorphtype=='S0']-np.average(mag_tot[simplemorphtype=='S0']),
+       #       err_mag_tot[simplemorphtype=='S0'],
+       #       log_mbh[simplemorphtype=='S0'],0.5*(merr_log_mbh[simplemorphtype=='S0'] + perr_log_mbh[simplemorphtype=='S0']))
+       #
+       #print '----------------------------'
+       #print '----------------------------'
+       
 	######################################
 	
 	
@@ -1657,52 +1668,52 @@ def mbh_vs_mag_sph():
        
         ###########################
         
-        print 'BCES early'
-        print 'n', len(mag_sph[earlytype==1])
-        A,B,Aerr,Berr,covAB=bces.bces(mag_sph[earlytype==1]-np.average(mag_sph[earlytype==1]),
-        	0.5*(perr_mag_sph[earlytype==1] + merr_mag_sph[earlytype==1]),
-        	log_mbh[earlytype==1],0.5*(merr_log_mbh[earlytype==1] + perr_log_mbh[earlytype==1]),mag_sph[earlytype==1]*[0.0])
-        absscat_0 = absolutescatter.get_absscatter(mag_sph[earlytype==1]-np.average(mag_sph[earlytype==1]), log_mbh[earlytype==1], B[0], A[0])
-        absscat_1 = absolutescatter.get_absscatter(mag_sph[earlytype==1]-np.average(mag_sph[earlytype==1]), log_mbh[earlytype==1], B[1], A[1])
-        absscat_2 = absolutescatter.get_absscatter(mag_sph[earlytype==1]-np.average(mag_sph[earlytype==1]), log_mbh[earlytype==1], B[2], A[2])
-        absscat_3 = absolutescatter.get_absscatter(mag_sph[earlytype==1]-np.average(mag_sph[earlytype==1]), log_mbh[earlytype==1], B[3], A[3])
-        print '---------------------------------'
-        print 'y = A*(x-<x>) + B '
-        print '<x> =', np.average(mag_sph[earlytype==1])
-        print
-        print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '   B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0]), 'Delta =', "{0:.2f}".format(absscat_0)
-        print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '   B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1]), 'Delta =', "{0:.2f}".format(absscat_1)
-        print 'bisector    A =', "{0:.2f}".format(A[2]), '\pm', "{0:.2f}".format(Aerr[2]), '   B = ', "{0:.2f}".format(B[2]), '\pm', "{0:.2f}".format(Berr[2]), 'Delta =', "{0:.2f}".format(absscat_2)
-        #print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '   B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3]), 'Delta =', "{0:.2f}".format(absscat_3)
-        print '---------------------------------'
-       
-        logxx = np.arange(-10,20,0.1)
-        yy = (A[2]*(logxx) + B[2])
-        ax.plot((logxx+np.average(mag_sph[earlytype==1])),10**yy, color='r', ls='--', linewidth=2.)
-        #colorline.colorline(10**(logxx+np.average(mag_sph[earlytype==1])), 10**yy, cmap=green_red)
-       
-        ##### calculates 1sigma uncertainty band
-        yy_1 = ((A[2]+Aerr[2])*(logxx) + (B[2]+Berr[2]))
-        yy_2 = ((A[2]-Aerr[2])*(logxx) + (B[2]+Berr[2]))
-        yy_3 = ((A[2]+Aerr[2])*(logxx) + (B[2]-Berr[2]))
-        yy_4 = ((A[2]-Aerr[2])*(logxx) + (B[2]-Berr[2]))
-        yy_up = yy_1*[0.0]
-        for i in range(len(yy_1)):
-        	if yy_1[i] > yy_2[i]:
-        		yy_up[i] = yy_1[i]
-        	elif yy_1[i] <= yy_2[i]:
-        		yy_up[i] = yy_2[i]	
-        yy_up = np.asarray(yy_up)
-        yy_lo = yy_1*[0.0]
-        for i in range(len(yy_3)):
-        	if yy_3[i] < yy_4[i]:
-        		yy_lo[i] = yy_3[i]
-        	elif yy_3[i] >= yy_4[i]:
-        		yy_lo[i] = yy_4[i]	
-        yy_lo = np.asarray(yy_lo)
-        			
-        ax.fill_between((logxx+np.average(mag_sph[earlytype==1])), 10**yy_lo, 10**yy_up, alpha=0.3, facecolor='r')
-       
+       #print 'BCES early'
+       #print 'n', len(mag_sph[earlytype==1])
+       #A,B,Aerr,Berr,covAB=bces.bces(mag_sph[earlytype==1]-np.average(mag_sph[earlytype==1]),
+       #	0.5*(perr_mag_sph[earlytype==1] + merr_mag_sph[earlytype==1]),
+       #	log_mbh[earlytype==1],0.5*(merr_log_mbh[earlytype==1] + perr_log_mbh[earlytype==1]),mag_sph[earlytype==1]*[0.0])
+       #absscat_0 = absolutescatter.get_absscatter(mag_sph[earlytype==1]-np.average(mag_sph[earlytype==1]), log_mbh[earlytype==1], B[0], A[0])
+       #absscat_1 = absolutescatter.get_absscatter(mag_sph[earlytype==1]-np.average(mag_sph[earlytype==1]), log_mbh[earlytype==1], B[1], A[1])
+       #absscat_2 = absolutescatter.get_absscatter(mag_sph[earlytype==1]-np.average(mag_sph[earlytype==1]), log_mbh[earlytype==1], B[2], A[2])
+       #absscat_3 = absolutescatter.get_absscatter(mag_sph[earlytype==1]-np.average(mag_sph[earlytype==1]), log_mbh[earlytype==1], B[3], A[3])
+       #print '---------------------------------'
+       #print 'y = A*(x-<x>) + B '
+       #print '<x> =', np.average(mag_sph[earlytype==1])
+       #print
+       #print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '   B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0]), 'Delta =', "{0:.2f}".format(absscat_0)
+       #print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '   B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1]), 'Delta =', "{0:.2f}".format(absscat_1)
+       #print 'bisector    A =', "{0:.2f}".format(A[2]), '\pm', "{0:.2f}".format(Aerr[2]), '   B = ', "{0:.2f}".format(B[2]), '\pm', "{0:.2f}".format(Berr[2]), 'Delta =', "{0:.2f}".format(absscat_2)
+       ##print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '	B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3]), 'Delta =', "{0:.2f}".format(absscat_3)
+       #print '---------------------------------'
+       #
+       #logxx = np.arange(-10,20,0.1)
+       #yy = (A[2]*(logxx) + B[2])
+       #ax.plot((logxx+np.average(mag_sph[earlytype==1])),10**yy, color='r', ls='--', linewidth=2.)
+       ##colorline.colorline(10**(logxx+np.average(mag_sph[earlytype==1])), 10**yy, cmap=green_red)
+       #
+       ###### calculates 1sigma uncertainty band
+       #yy_1 = ((A[2]+Aerr[2])*(logxx) + (B[2]+Berr[2]))
+       #yy_2 = ((A[2]-Aerr[2])*(logxx) + (B[2]+Berr[2]))
+       #yy_3 = ((A[2]+Aerr[2])*(logxx) + (B[2]-Berr[2]))
+       #yy_4 = ((A[2]-Aerr[2])*(logxx) + (B[2]-Berr[2]))
+       #yy_up = yy_1*[0.0]
+       #for i in range(len(yy_1)):
+       #	if yy_1[i] > yy_2[i]:
+       #		yy_up[i] = yy_1[i]
+       #	elif yy_1[i] <= yy_2[i]:
+       #		yy_up[i] = yy_2[i]	
+       #yy_up = np.asarray(yy_up)
+       #yy_lo = yy_1*[0.0]
+       #for i in range(len(yy_3)):
+       #	if yy_3[i] < yy_4[i]:
+       #		yy_lo[i] = yy_3[i]
+       #	elif yy_3[i] >= yy_4[i]:
+       #		yy_lo[i] = yy_4[i]	
+       #yy_lo = np.asarray(yy_lo)
+       #			
+       #ax.fill_between((logxx+np.average(mag_sph[earlytype==1])), 10**yy_lo, 10**yy_up, alpha=0.3, facecolor='r')
+       #
        #### fit using FITEXY ###
        #print '-----------------------------'
        #print 'FITEXY early'
@@ -1721,54 +1732,54 @@ def mbh_vs_mag_sph():
        #	log_mbh[earlytype==1],0.5*(merr_log_mbh[earlytype==1] + perr_log_mbh[earlytype==1])):
        #	datfile.write(str(MAGSph) + ' ' + str(err_MAGSph) + ' ' + str(logMassBH) + ' ' + str(err_logMassBH) + ' ' + '\n')
        #datfile.close()
-
-        ############################
-       
-        print 'sersic bul of spi'
-        print 'n', len(mag_sph[morph_core=='Sp_0'])
-        A,B,Aerr,Berr,covAB=bces.bces(mag_sph[morph_core=='Sp_0']-np.average(mag_sph[morph_core=='Sp_0']),
-        	0.5*(perr_mag_sph[morph_core=='Sp_0'] + merr_mag_sph[morph_core=='Sp_0']),
-        	log_mbh[morph_core=='Sp_0'],0.5*(merr_log_mbh[morph_core=='Sp_0'] + perr_log_mbh[morph_core=='Sp_0']),mag_sph[morph_core=='Sp_0']*[0.0])
-        absscat_0 = absolutescatter.get_absscatter(mag_sph[morph_core=='Sp_0']-np.average(mag_sph[morph_core=='Sp_0']), log_mbh[morph_core=='Sp_0'], B[0], A[0])
-        absscat_1 = absolutescatter.get_absscatter(mag_sph[morph_core=='Sp_0']-np.average(mag_sph[morph_core=='Sp_0']), log_mbh[morph_core=='Sp_0'], B[1], A[1])
-        absscat_2 = absolutescatter.get_absscatter(mag_sph[morph_core=='Sp_0']-np.average(mag_sph[morph_core=='Sp_0']), log_mbh[morph_core=='Sp_0'], B[2], A[2])
-        absscat_3 = absolutescatter.get_absscatter(mag_sph[morph_core=='Sp_0']-np.average(mag_sph[morph_core=='Sp_0']), log_mbh[morph_core=='Sp_0'], B[3], A[3])
-        print '---------------------------------'
-        print 'y = A*(x-<x>) + B '
-        print '<x> =', np.average(mag_sph[morph_core=='Sp_0'])
-        print
-        print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '   B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0]), 'Delta =', "{0:.2f}".format(absscat_0)
-        print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '   B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1]), 'Delta =', "{0:.2f}".format(absscat_1)
-        print 'bisector    A =', "{0:.2f}".format(A[2]), '\pm', "{0:.2f}".format(Aerr[2]), '   B = ', "{0:.2f}".format(B[2]), '\pm', "{0:.2f}".format(Berr[2]), 'Delta =', "{0:.2f}".format(absscat_2)
-        #print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '   B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3]), 'Delta =', "{0:.2f}".format(absscat_3)
-        print '---------------------------------'
-       
-        logxx = np.arange(-10,20,0.1)
-        yy = (A[2]*(logxx) + B[2])
-        ax.plot((logxx+np.average(mag_sph[morph_core=='Sp_0'])),10**yy, color='b', ls='-', linewidth=2.)
-       
-        ##### calculates 1sigma uncertainty band
-        yy_1 = ((A[2]+Aerr[2])*(logxx) + (B[2]+Berr[2]))
-        yy_2 = ((A[2]-Aerr[2])*(logxx) + (B[2]+Berr[2]))
-        yy_3 = ((A[2]+Aerr[2])*(logxx) + (B[2]-Berr[2]))
-        yy_4 = ((A[2]-Aerr[2])*(logxx) + (B[2]-Berr[2]))
-        yy_up = yy_1*[0.0]
-        for i in range(len(yy_1)):
-        	if yy_1[i] > yy_2[i]:
-        		yy_up[i] = yy_1[i]
-        	elif yy_1[i] <= yy_2[i]:
-        		yy_up[i] = yy_2[i]	
-        yy_up = np.asarray(yy_up)
-        yy_lo = yy_1*[0.0]
-        for i in range(len(yy_3)):
-        	if yy_3[i] < yy_4[i]:
-        		yy_lo[i] = yy_3[i]
-        	elif yy_3[i] >= yy_4[i]:
-        		yy_lo[i] = yy_4[i]	
-        yy_lo = np.asarray(yy_lo)
-        			
-        ax.fill_between((logxx+np.average(mag_sph[morph_core=='Sp_0'])), 10**yy_lo, 10**yy_up, alpha=0.2, facecolor='b')
-       
+       #
+       #############################
+       #
+       #print 'sersic bul of spi'
+       #print 'n', len(mag_sph[morph_core=='Sp_0'])
+       #A,B,Aerr,Berr,covAB=bces.bces(mag_sph[morph_core=='Sp_0']-np.average(mag_sph[morph_core=='Sp_0']),
+       #	0.5*(perr_mag_sph[morph_core=='Sp_0'] + merr_mag_sph[morph_core=='Sp_0']),
+       #	log_mbh[morph_core=='Sp_0'],0.5*(merr_log_mbh[morph_core=='Sp_0'] + perr_log_mbh[morph_core=='Sp_0']),mag_sph[morph_core=='Sp_0']*[0.0])
+       #absscat_0 = absolutescatter.get_absscatter(mag_sph[morph_core=='Sp_0']-np.average(mag_sph[morph_core=='Sp_0']), log_mbh[morph_core=='Sp_0'], B[0], A[0])
+       #absscat_1 = absolutescatter.get_absscatter(mag_sph[morph_core=='Sp_0']-np.average(mag_sph[morph_core=='Sp_0']), log_mbh[morph_core=='Sp_0'], B[1], A[1])
+       #absscat_2 = absolutescatter.get_absscatter(mag_sph[morph_core=='Sp_0']-np.average(mag_sph[morph_core=='Sp_0']), log_mbh[morph_core=='Sp_0'], B[2], A[2])
+       #absscat_3 = absolutescatter.get_absscatter(mag_sph[morph_core=='Sp_0']-np.average(mag_sph[morph_core=='Sp_0']), log_mbh[morph_core=='Sp_0'], B[3], A[3])
+       #print '---------------------------------'
+       #print 'y = A*(x-<x>) + B '
+       #print '<x> =', np.average(mag_sph[morph_core=='Sp_0'])
+       #print
+       #print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '   B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0]), 'Delta =', "{0:.2f}".format(absscat_0)
+       #print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '   B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1]), 'Delta =', "{0:.2f}".format(absscat_1)
+       #print 'bisector    A =', "{0:.2f}".format(A[2]), '\pm', "{0:.2f}".format(Aerr[2]), '   B = ', "{0:.2f}".format(B[2]), '\pm', "{0:.2f}".format(Berr[2]), 'Delta =', "{0:.2f}".format(absscat_2)
+       ##print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '   B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3]), 'Delta =', "{0:.2f}".format(absscat_3)
+       #print '---------------------------------'
+       #
+       #logxx = np.arange(-10,20,0.1)
+       #yy = (A[2]*(logxx) + B[2])
+       #ax.plot((logxx+np.average(mag_sph[morph_core=='Sp_0'])),10**yy, color='b', ls='-', linewidth=2.)
+       #
+       ###### calculates 1sigma uncertainty band
+       #yy_1 = ((A[2]+Aerr[2])*(logxx) + (B[2]+Berr[2]))
+       #yy_2 = ((A[2]-Aerr[2])*(logxx) + (B[2]+Berr[2]))
+       #yy_3 = ((A[2]+Aerr[2])*(logxx) + (B[2]-Berr[2]))
+       #yy_4 = ((A[2]-Aerr[2])*(logxx) + (B[2]-Berr[2]))
+       #yy_up = yy_1*[0.0]
+       #for i in range(len(yy_1)):
+       #	if yy_1[i] > yy_2[i]:
+       #		yy_up[i] = yy_1[i]
+       #	elif yy_1[i] <= yy_2[i]:
+       #		yy_up[i] = yy_2[i]
+       #yy_up = np.asarray(yy_up)
+       #yy_lo = yy_1*[0.0]
+       #for i in range(len(yy_3)):
+       #	if yy_3[i] < yy_4[i]:
+       #		yy_lo[i] = yy_3[i]
+       #	elif yy_3[i] >= yy_4[i]:
+       #		yy_lo[i] = yy_4[i]
+       #yy_lo = np.asarray(yy_lo)
+       #
+       #ax.fill_between((logxx+np.average(mag_sph[morph_core=='Sp_0'])), 10**yy_lo, 10**yy_up, alpha=0.2, facecolor='b')
+       #
        #### fit using FITEXY ###
        #print '-----------------------------'
        #print 'FITEXY sersic bul of spi'
@@ -1845,41 +1856,41 @@ def mbh_vs_mag_sph():
        ##print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '   B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3]), 'Delta =', "{0:.2f}".format(absscat_3)
        #print '---------------------------------'
        #
-       #### fit using FITEXY ###
-       #print '-----------------------------'
-       #print 'FITEXY S0s'
-       #A,perr_A,merr_A,B,perr_B,merr_B = fitexy.bisect_modfitexy(mag_sph[simplemorphtype=='S0']-np.average(mag_sph[simplemorphtype=='S0']),
-       #	0.5*(perr_mag_sph[simplemorphtype=='S0'] + merr_mag_sph[simplemorphtype=='S0']),
-       #	log_mbh[simplemorphtype=='S0'],0.5*(merr_log_mbh[simplemorphtype=='S0'] + perr_log_mbh[simplemorphtype=='S0']))
-       #print '-----------------------------'
-       #print '-----------------------------'
+        ### fit using FITEXY ###
+        print '-----------------------------'
+        print 'FITEXY S0s'
+        A,perr_A,merr_A,B,perr_B,merr_B = fitexy.bisect_modfitexy(mag_sph[simplemorphtype=='S0']-np.average(mag_sph[simplemorphtype=='S0']),
+        	0.5*(perr_mag_sph[simplemorphtype=='S0'] + merr_mag_sph[simplemorphtype=='S0']),
+        	log_mbh[simplemorphtype=='S0'],0.5*(merr_log_mbh[simplemorphtype=='S0'] + perr_log_mbh[simplemorphtype=='S0']))
+        print '-----------------------------'
+        print '-----------------------------'
+       
+       
+       ###########################
        #
+       #print 'core'
+       #print 'n', len(mag_sph[core==1])
+       #A,B,Aerr,Berr,covAB=bces.bces(mag_sph[core==1]-np.average(mag_sph[core==1]),
+       #	0.5*(perr_mag_sph[core==1] + merr_mag_sph[core==1]),
+       #	log_mbh[core==1],0.5*(merr_log_mbh[core==1] + perr_log_mbh[core==1]),mag_sph[core==1]*[0.0])
+       #absscat_0 = absolutescatter.get_absscatter(mag_sph[core==1]-np.average(mag_sph[core==1]), log_mbh[core==1], B[0], A[0])
+       #absscat_1 = absolutescatter.get_absscatter(mag_sph[core==1]-np.average(mag_sph[core==1]), log_mbh[core==1], B[1], A[1])
+       #absscat_2 = absolutescatter.get_absscatter(mag_sph[core==1]-np.average(mag_sph[core==1]), log_mbh[core==1], B[2], A[2])
+       #absscat_3 = absolutescatter.get_absscatter(mag_sph[core==1]-np.average(mag_sph[core==1]), log_mbh[core==1], B[3], A[3])
+       #print '---------------------------------'
+       #print 'y = A*(x-<x>) + B '
+       #print '<x> =', np.average(mag_sph[core==1])
+       #print
+       #print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '   B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0]), 'Delta =', "{0:.2f}".format(absscat_0)
+       #print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '   B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1]), 'Delta =', "{0:.2f}".format(absscat_1)
+       #print 'bisector    A =', "{0:.2f}".format(A[2]), '\pm', "{0:.2f}".format(Aerr[2]), '   B = ', "{0:.2f}".format(B[2]), '\pm', "{0:.2f}".format(Berr[2]), 'Delta =', "{0:.2f}".format(absscat_2)
+       ##print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '	B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3]), 'Delta =', "{0:.2f}".format(absscat_3)
+       #print '---------------------------------'
        #
-        ##########################
-       
-        print 'core'
-        print 'n', len(mag_sph[core==1])
-        A,B,Aerr,Berr,covAB=bces.bces(mag_sph[core==1]-np.average(mag_sph[core==1]),
-        	0.5*(perr_mag_sph[core==1] + merr_mag_sph[core==1]),
-        	log_mbh[core==1],0.5*(merr_log_mbh[core==1] + perr_log_mbh[core==1]),mag_sph[core==1]*[0.0])
-        absscat_0 = absolutescatter.get_absscatter(mag_sph[core==1]-np.average(mag_sph[core==1]), log_mbh[core==1], B[0], A[0])
-        absscat_1 = absolutescatter.get_absscatter(mag_sph[core==1]-np.average(mag_sph[core==1]), log_mbh[core==1], B[1], A[1])
-        absscat_2 = absolutescatter.get_absscatter(mag_sph[core==1]-np.average(mag_sph[core==1]), log_mbh[core==1], B[2], A[2])
-        absscat_3 = absolutescatter.get_absscatter(mag_sph[core==1]-np.average(mag_sph[core==1]), log_mbh[core==1], B[3], A[3])
-        print '---------------------------------'
-        print 'y = A*(x-<x>) + B '
-        print '<x> =', np.average(mag_sph[core==1])
-        print
-        print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '   B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0]), 'Delta =', "{0:.2f}".format(absscat_0)
-        print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '   B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1]), 'Delta =', "{0:.2f}".format(absscat_1)
-        print 'bisector    A =', "{0:.2f}".format(A[2]), '\pm', "{0:.2f}".format(Aerr[2]), '   B = ', "{0:.2f}".format(B[2]), '\pm', "{0:.2f}".format(Berr[2]), 'Delta =', "{0:.2f}".format(absscat_2)
-        #print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '   B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3]), 'Delta =', "{0:.2f}".format(absscat_3)
-        print '---------------------------------'
-       
-        logxx = np.arange(-10,20,0.1)
-        yy = (A[2]*(logxx) + B[2])
-        ax.plot((logxx+np.average(mag_sph[core==1])),10**yy, color='k', ls='-.', linewidth=2.)
-       
+       #logxx = np.arange(-10,20,0.1)
+       #yy = (A[2]*(logxx) + B[2])
+       #ax.plot((logxx+np.average(mag_sph[core==1])),10**yy, color='k', ls='-.', linewidth=2.)
+       #
        #### fit using FITEXY ###
        #print '-----------------------------'
        #print 'FITEXY core'
@@ -1900,30 +1911,30 @@ def mbh_vs_mag_sph():
        #datfile.close()
        #
        #############################
-        
-        print 'sersic'
-        print 'n', len(mag_sph[core==0])
-        A,B,Aerr,Berr,covAB=bces.bces(mag_sph[core==0]-np.average(mag_sph[core==0]),
-        	0.5*(perr_mag_sph[core==0] + merr_mag_sph[core==0]),
-        	log_mbh[core==0],0.5*(merr_log_mbh[core==0] + perr_log_mbh[core==0]),mag_sph[core==0]*[0.0])
-        absscat_0 = absolutescatter.get_absscatter(mag_sph[core==0]-np.average(mag_sph[core==0]), log_mbh[core==0], B[0], A[0])
-        absscat_1 = absolutescatter.get_absscatter(mag_sph[core==0]-np.average(mag_sph[core==0]), log_mbh[core==0], B[1], A[1])
-        absscat_2 = absolutescatter.get_absscatter(mag_sph[core==0]-np.average(mag_sph[core==0]), log_mbh[core==0], B[2], A[2])
-        absscat_3 = absolutescatter.get_absscatter(mag_sph[core==0]-np.average(mag_sph[core==0]), log_mbh[core==0], B[3], A[3])
-        print '---------------------------------'
-        print 'y = A*(x-<x>) + B '
-        print '<x> =', np.average(mag_sph[core==0])
-        print
-        print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '   B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0]), 'Delta =', "{0:.2f}".format(absscat_0)
-        print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '   B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1]), 'Delta =', "{0:.2f}".format(absscat_1)
-        print 'bisector    A =', "{0:.2f}".format(A[2]), '\pm', "{0:.2f}".format(Aerr[2]), '   B = ', "{0:.2f}".format(B[2]), '\pm', "{0:.2f}".format(Berr[2]), 'Delta =', "{0:.2f}".format(absscat_2)
-        #print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '   B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3]), 'Delta =', "{0:.2f}".format(absscat_3)
-        print '---------------------------------'
-       
-        logxx = np.arange(-10,20,0.1)
-        yy = (A[2]*(logxx) + B[2])
-        ax.plot((logxx+np.average(mag_sph[core==0])),10**yy, color='k', ls=':', linewidth=2.)
-       
+       #
+       #print 'sersic'
+       #print 'n', len(mag_sph[core==0])
+       #A,B,Aerr,Berr,covAB=bces.bces(mag_sph[core==0]-np.average(mag_sph[core==0]),
+       #	0.5*(perr_mag_sph[core==0] + merr_mag_sph[core==0]),
+       #	log_mbh[core==0],0.5*(merr_log_mbh[core==0] + perr_log_mbh[core==0]),mag_sph[core==0]*[0.0])
+       #absscat_0 = absolutescatter.get_absscatter(mag_sph[core==0]-np.average(mag_sph[core==0]), log_mbh[core==0], B[0], A[0])
+       #absscat_1 = absolutescatter.get_absscatter(mag_sph[core==0]-np.average(mag_sph[core==0]), log_mbh[core==0], B[1], A[1])
+       #absscat_2 = absolutescatter.get_absscatter(mag_sph[core==0]-np.average(mag_sph[core==0]), log_mbh[core==0], B[2], A[2])
+       #absscat_3 = absolutescatter.get_absscatter(mag_sph[core==0]-np.average(mag_sph[core==0]), log_mbh[core==0], B[3], A[3])
+       #print '---------------------------------'
+       #print 'y = A*(x-<x>) + B '
+       #print '<x> =', np.average(mag_sph[core==0])
+       #print
+       #print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '   B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0]), 'Delta =', "{0:.2f}".format(absscat_0)
+       #print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '   B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1]), 'Delta =', "{0:.2f}".format(absscat_1)
+       #print 'bisector    A =', "{0:.2f}".format(A[2]), '\pm', "{0:.2f}".format(Aerr[2]), '   B = ', "{0:.2f}".format(B[2]), '\pm', "{0:.2f}".format(Berr[2]), 'Delta =', "{0:.2f}".format(absscat_2)
+       ##print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '	B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3]), 'Delta =', "{0:.2f}".format(absscat_3)
+       #print '---------------------------------'
+       #
+       #logxx = np.arange(-10,20,0.1)
+       #yy = (A[2]*(logxx) + B[2])
+       #ax.plot((logxx+np.average(mag_sph[core==0])),10**yy, color='k', ls=':', linewidth=2.)
+       #
        #### fit using FITEXY ###
        #print '-----------------------------'
        #print 'FITEXY sersic'
@@ -2020,8 +2031,8 @@ def mbh_vs_mag_sph():
         plt.xlabel(r'$MAG_{\rm sph}\rm~[mag]$', labelpad=13)
         plt.ylabel(r'$M_{\rm BH} \rm ~[M_\odot]$', labelpad=13)
 	plt.subplots_adjust(left=0.15,bottom=0.15,right=0.97,top=0.9)
-        #plt.show()
-	plt.savefig(path_paper_figures + 'mbh_vs_mag_sph.pdf', format='pdf', dpi=1000)
+        plt.show()
+	#plt.savefig(path_paper_figures + 'mbh_vs_mag_sph.pdf', format='pdf', dpi=1000)
 
 def mbh_vs_mass_sph_galsymb_agn():
 	
@@ -2322,8 +2333,8 @@ def main():
 	#mbh_vs_mass_sph_agn()
 	#mbh_vs_mass_sph()
 	#mbh_vs_mag_sph_psb()
-	inset_psb()
-	#mbh_vs_mag_tot()
+	#inset_psb()
+	mbh_vs_mag_tot()
 	#mbh_vs_mag_sph()
 	#mbh_vs_mass_sph_galsymb_agn()
 

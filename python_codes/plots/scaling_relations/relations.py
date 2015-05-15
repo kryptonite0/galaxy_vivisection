@@ -251,8 +251,8 @@ def KMAG_sph_vs_mag_sph():
         plt.xlabel(r'$3.6{\rm~\mu m}~MAG_{\rm sph} \rm ~[mag]$', labelpad=20)
         plt.ylabel(r'$K-$band $MAG_{\rm sph} \rm ~[mag]$', labelpad=20)
         plt.subplots_adjust(left=0.15,bottom=0.15)
-	#plt.show()
-	plt.savefig(path_scalrel_plots + 'KMAG_sph_vs_mag_sph.pdf', format='pdf', dpi=1000)
+	plt.show()
+	#plt.savefig(path_scalrel_plots + 'KMAG_sph_vs_mag_sph.pdf', format='pdf', dpi=1000)
 
 def log_mbh_vs_KMAG_sph():
 	connection = sql3.connect(dbname)
@@ -2307,7 +2307,7 @@ def main():
 	#mbh_vs_logr_e()
 	#mag_sph_vs_n('maj')
 	#mag_sph_vs_n('eq')
-	#KMAG_sph_vs_mag_sph()
+	KMAG_sph_vs_mag_sph()
 	#log_mbh_vs_KMAG_sph()
 	#sani_vs_me()
 	#BTratios_GS13_vs_me()
@@ -2317,7 +2317,7 @@ def main():
 	#mu_0_vs_n('maj')
 	#mu_0_vs_n('eq')
 	#mbh_vs_mass_sph()
-	mbh_vs_mass_sph_core()
+	#mbh_vs_mass_sph_core()
 	#table_mbh_vs_mass_sph_core()
 	
 main()

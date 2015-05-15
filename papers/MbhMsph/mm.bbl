@@ -29,6 +29,24 @@
 \bibitem[{{Bekki}(2010)}]{bekki2010}
 {Bekki}, K. 2010, \mnras, 401, L58
 
+\bibitem[{{Bender}(1990)}]{bender1990}
+{Bender}, R. 1990, \aap, 229, 441
+
+\bibitem[{{Capaccioli}(1987)}]{capaccioli1987}
+{Capaccioli}, M. 1987, in IAU Symposium, Vol. 127, Structure and Dynamics of
+  Elliptical Galaxies, ed. P.~T. {de Zeeuw}, 47--60
+
+\bibitem[{{Cappellari} {et~al.}(2011){Cappellari}, {Emsellem}, {Krajnovi{\'c}},
+  {McDermid}, {Scott}, {Verdoes Kleijn}, {Young}, {Alatalo}, {Bacon}, {Blitz},
+  {Bois}, {Bournaud}, {Bureau}, {Davies}, {Davis}, {de Zeeuw}, {Duc},
+  {Khochfar}, {Kuntschner}, {Lablanche}, {Morganti}, {Naab}, {Oosterloo},
+  {Sarzi}, {Serra}, \& {Weijmans}}]{cappellari2011}
+{Cappellari}, M., {Emsellem}, E., {Krajnovi{\'c}}, D., {et~al.} 2011, \mnras,
+  413, 813
+
+\bibitem[{{Carter}(1987)}]{carter1987}
+{Carter}, D. 1987, \apj, 312, 514
+
 \bibitem[{{Chilingarian} {et~al.}(2008){Chilingarian}, {Cayatte}, {Durret},
   {Adami}, {Balkowski}, {Chemin}, {Lagan{\'a}}, \&
   {Prugniel}}]{chilingarian2008}
@@ -233,6 +251,14 @@
 {Kourkchi}, E., {Khosroshahi}, H.~G., {Carter}, D., {et~al.} 2012, \mnras, 420,
   2819
 
+\bibitem[{{Krajnovi{\'c}} {et~al.}(2013){Krajnovi{\'c}}, {Alatalo}, {Blitz},
+  {Bois}, {Bournaud}, {Bureau}, {Cappellari}, {Davies}, {Davis}, {de Zeeuw},
+  {Duc}, {Emsellem}, {Khochfar}, {Kuntschner}, {McDermid}, {Morganti}, {Naab},
+  {Oosterloo}, {Sarzi}, {Scott}, {Serra}, {Weijmans}, \&
+  {Young}}]{krajnovic2013}
+{Krajnovi{\'c}}, D., {Alatalo}, K., {Blitz}, L., {et~al.} 2013, \mnras, 432,
+  1768
+
 \bibitem[{{Laor}(1998)}]{laor1998}
 {Laor}, A. 1998, \apjl, 505, L83
 
@@ -309,6 +335,10 @@
 {Nemmen}, R.~S., {Georganopoulos}, M., {Guiriec}, S., {et~al.} 2012, Science,
   338, 1445
 
+\bibitem[{{Nieto} {et~al.}(1991){Nieto}, {Bender}, {Arnaud}, \&
+  {Surma}}]{nieto1991}
+{Nieto}, J.-L., {Bender}, R., {Arnaud}, J., \& {Surma}, P. 1991, \aap, 244, L25
+
 \bibitem[{{Peletier} {et~al.}(2012){Peletier}, {Kutdemir}, {van der Wolk},
   {Falc{\'o}n-Barroso}, {Bacon}, {Bureau}, {Cappellari}, {Davies}, {de Zeeuw},
   {Emsellem}, {Krajnovi{\'c}}, {Kuntschner}, {McDermid}, {Sarzi}, {Scott},
@@ -332,6 +362,12 @@
 
 \bibitem[{{Reines} {et~al.}(2013){Reines}, {Greene}, \& {Geha}}]{reines2013}
 {Reines}, A.~E., {Greene}, J.~E., \& {Geha}, M. 2013, \apj, 775, 116
+
+\bibitem[{{Rix} \& {White}(1990)}]{rixwhite1990}
+{Rix}, H.-W., \& {White}, S.~D.~M. 1990, \apj, 362, 52
+
+\bibitem[{{Rix} \& {White}(1992)}]{rixwhite1992}
+---. 1992, \mnras, 254, 389
 
 \bibitem[{{Rusli} {et~al.}(2013){Rusli}, {Thomas}, {Saglia}, {Fabricius},
   {Erwin}, {Bender}, {Nowak}, {Lee}, {Riffeser}, \&
@@ -362,6 +398,12 @@
 
 \bibitem[{{Schechter}(1980)}]{schechter1980}
 {Schechter}, P.~L. 1980, \aj, 85, 801
+
+\bibitem[{{Scorza} \& {Bender}(1990)}]{scorzabender1990}
+{Scorza}, C., \& {Bender}, R. 1990, \aap, 235, 49
+
+\bibitem[{{Scorza} \& {Bender}(1995)}]{scorzabender1995}
+---. 1995, \aap, 293, 20
 
 \bibitem[{{Scott} {et~al.}(2014){Scott}, {Davies}, {Houghton}, {Cappellari},
   {Graham}, \& {Pimbblet}}]{scott2014}

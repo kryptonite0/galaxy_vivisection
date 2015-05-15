@@ -4,6 +4,14 @@ The top-level auxiliary file: mm.aux
 The style file: apj.bst
 Database file #1: mmNotes.bib
 Database file #2: /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+Repeated entry---line 919 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+ : @article{rixwhite1992
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1798 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+ : @article{scorzabender1995
+ :                          ,
+I'm skipping whatever remains of this entry
 Repeated entry---line 6789 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  : @article{haringrix2004
  :                       ,
@@ -26,45 +34,45 @@ while executing---line 1671 of file apj.bst
 Warning--can't use both author and editor fields in graham2013review
 Warning--empty publisher in graham2013review
 Warning--empty publisher in press1992
-You've used 97 entries,
+You've used 107 entries,
             3085 wiz_defined-function locations,
-            1296 strings with 27417 characters,
-and the built_in function-call counts, 47463 in all, are:
-= -- 3884
-> -- 3524
-< -- 49
-+ -- 1180
-- -- 1267
-* -- 4077
-:= -- 8942
-add.period$ -- 97
-call.type$ -- 97
-change.case$ -- 648
-chr.to.int$ -- 93
-cite$ -- 100
-duplicate$ -- 1879
-empty$ -- 2800
-format.name$ -- 1394
-if$ -- 9403
+            1350 strings with 29647 characters,
+and the built_in function-call counts, 52205 in all, are:
+= -- 4261
+> -- 3870
+< -- 57
++ -- 1293
+- -- 1383
+* -- 4480
+:= -- 9841
+add.period$ -- 107
+call.type$ -- 107
+change.case$ -- 705
+chr.to.int$ -- 103
+cite$ -- 110
+duplicate$ -- 2072
+empty$ -- 3092
+format.name$ -- 1531
+if$ -- 10347
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 90
-newline$ -- 295
-num.names$ -- 396
-pop$ -- 719
+missing$ -- 99
+newline$ -- 325
+num.names$ -- 437
+pop$ -- 782
 preamble$ -- 1
-purify$ -- 648
+purify$ -- 705
 quote$ -- 0
-skip$ -- 1575
+skip$ -- 1739
 stack$ -- 0
-substring$ -- 2003
-swap$ -- 70
-text.length$ -- 7
+substring$ -- 2217
+swap$ -- 78
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 867
+type$ -- 957
 warning$ -- 3
-while$ -- 378
+while$ -- 418
 width$ -- 0
-write$ -- 972
-(There were 8 error messages)
+write$ -- 1072
+(There were 10 error messages)
