@@ -2152,23 +2152,23 @@ def mbh_vs_mass_sph_galsymb_agn():
 	error_kwargs = {"lw":.5, "zorder":0}
 
 	ax.scatter(mass_sph_Jiangagn, mbh_Jiangagn, marker='o', color='b', s=15, alpha=0.5)
-	ax.scatter(mass_sph_lowmassagn, mbh_lowmassagn, marker='o', facecolors='none', edgecolors='b', s=80, alpha=0.5)
-	ax.scatter(mass_sph_lowmassagn, mbh_lowmassagn, marker='+', color='b', s=80, alpha=0.5)
+	#ax.scatter(mass_sph_lowmassagn, mbh_lowmassagn, marker='o', facecolors='none', edgecolors='b', s=80, alpha=0.5)
+	#ax.scatter(mass_sph_lowmassagn, mbh_lowmassagn, marker='+', color='b', s=80, alpha=0.5)
 
 	
 	for x0,y0 in zip(mass_sph[simplemorphtype=='E'], mbh[simplemorphtype=='E']):
 		markers.elliptical(ax, 'red', np.log10(x0), np.log10(y0), 0.08)
 	
  	for x0,y0 in zip(mass_sph[simplemorphtype=='E/S0'], mbh[simplemorphtype=='E/S0']):
-		markers.lenticular(ax, 'darkorange', np.log10(x0), np.log10(y0), 0.08)
+		markers.lenticular(ax, 'red', np.log10(x0), np.log10(y0), 0.08)
        
 	for x0,y0 in zip(mass_sph[simplemorphtype=='S0'], mbh[simplemorphtype=='S0']):
 		markers.lenticular(ax, 'darkorange', np.log10(x0), np.log10(y0), 0.08)
 	
-        for x0,y0 in zip(mass_sph[simplemorphtype=='S0/S'], mbh[simplemorphtype=='S0/S']):
-		markers.spiral(ax, 'blue', np.log10(x0), np.log10(y0), 0.04)
+        for x0,y0 in zip(mass_sph[simplemorphtype=='S0/Sp'], mbh[simplemorphtype=='S0/Sp']):
+		markers.spiral(ax, 'darkorange', np.log10(x0), np.log10(y0), 0.04)
 			
-        for x0,y0 in zip(mass_sph[simplemorphtype=='S'], mbh[simplemorphtype=='S']):
+        for x0,y0 in zip(mass_sph[simplemorphtype=='Sp'], mbh[simplemorphtype=='Sp']):
 		markers.spiral(ax, 'blue', np.log10(x0), np.log10(y0), 0.04)
 		
 	ax.scatter(mass_sph[simplemorphtype=='merger'], mbh[simplemorphtype=='merger'], marker=r'$\star$', s=500, color='k', **scatter_kwargs)	
@@ -2214,7 +2214,7 @@ def mbh_vs_mass_sph_galsymb_agn():
 			yy_lo[i] = yy_4[i]	
 	yy_lo = np.asarray(yy_lo)
 				
-	ax.fill_between(10**(logxx+np.average(log_mass_sph[earlytype==1])), 10**yy_lo, 10**yy_up, alpha=0.1, facecolor='r')
+	ax.fill_between(10**(logxx+np.average(log_mass_sph[earlytype==1])), 10**yy_lo, 10**yy_up, alpha=0.2, facecolor='r')
 	
 	##### calculates the prediction bands for the given input arrays
         #lpb68,upb68,logxx = predband.predband(log_mass_sph[earlytype==1]-np.average(log_mass_sph[earlytype==1]),log_mbh[earlytype==1],A[2],B[2],conf=0.68,x=logxx)
@@ -2292,7 +2292,7 @@ def mbh_vs_mass_sph_galsymb_agn():
 			yy_lo[i] = yy_4[i]	
 	yy_lo = np.asarray(yy_lo)
 				
-	ax.fill_between(10**(logxx+np.average(log_mass_sph[morph_core=='Sp_0'])), 10**yy_lo, 10**yy_up, alpha=0.1, facecolor='b')
+	ax.fill_between(10**(logxx+np.average(log_mass_sph[morph_core=='Sp_0'])), 10**yy_lo, 10**yy_up, alpha=0.2, facecolor='b')
 	
 	#print gal_id[morph_core=='Sp_0'],log_mbh[morph_core=='Sp_0']
 	##### calculates the prediction bands for the given input arrays
@@ -2319,11 +2319,11 @@ def mbh_vs_mass_sph_galsymb_agn():
 	ax.set_xscale('log')
 	ax.set_yscale('log')
         plt.axis([10**7.9,10**12.3,10**4.1,10**11.2])
-        plt.xlabel(r'$M_{\rm *,sph}\rm~[M_\odot]$', labelpad=13)
-        plt.ylabel(r'$M_{\rm BH} \rm ~[M_\odot]$', labelpad=13)
-	plt.subplots_adjust(left=0.15,bottom=0.15,right=0.97,top=0.9)
-        plt.show()
-	#plt.savefig(path_paper_figures + 'mbh_vs_mass_sph_galsymb_agn.pdf', format='pdf', dpi=1000)
+        plt.xlabel(r'spheroid stellar mass $[\rm M_\odot]$', labelpad=13)
+        plt.ylabel(r'black hole mass $[\rm M_\odot]$', labelpad=13)
+	plt.subplots_adjust(left=0.15,bottom=0.17,right=0.97,top=0.9)
+        #plt.show()
+	plt.savefig(path_paper_figures + 'mbh_vs_mass_sph_galsymb_agn.pdf', format='pdf', dpi=1000)
 
 	
 		
@@ -2334,9 +2334,9 @@ def main():
 	#mbh_vs_mass_sph()
 	#mbh_vs_mag_sph_psb()
 	#inset_psb()
-	mbh_vs_mag_tot()
+	#mbh_vs_mag_tot()
 	#mbh_vs_mag_sph()
-	#mbh_vs_mass_sph_galsymb_agn()
+	mbh_vs_mass_sph_galsymb_agn()
 
 main()		
 		
