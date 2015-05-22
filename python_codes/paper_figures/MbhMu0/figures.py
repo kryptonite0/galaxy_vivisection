@@ -132,52 +132,52 @@ def mbh_vs_mu_0(axis):
 
 	ax.scatter(mu_0[simplemorphtype=='merger'], mbh[simplemorphtype=='merger'], marker=r'$\star$', s=500, color='k', **scatter_kwargs)	
 			
-	#######################################
-	
-        print 'all'
-        print 'n', len(mu_0)
-        A,B,Aerr,Berr,covAB=bces.bces(mu_0-np.average(mu_0),
-        	0.5*(perr_mu_0 + merr_mu_0),
-        	log_mbh,0.5*(merr_log_mbh + perr_log_mbh),mu_0*[0.0])
-        print '---------------------------------'
-        print 'y = A*(x-<x>) + B '
-        print '<x> =', np.average(mu_0)
-        print
-        #print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '	B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0])
-        #print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '	B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1])
-        print 'bisector    A =', "{0:.2f}".format(A[2]), '\pm', "{0:.2f}".format(Aerr[2]), '   B = ', "{0:.2f}".format(B[2]), '\pm', "{0:.2f}".format(Berr[2])
-        #print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '	B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3])
-        print '---------------------------------'
-       
-        logxx = np.arange(-30,20,0.1)
-        yy = (A[2]*(logxx) + B[2])
-        ax.plot((logxx+np.average(mu_0)),10**yy, color='k', ls='-', linewidth=2.)
-        #colorline.colorline(10**(logxx+np.average(mu_0)), 10**yy, cmap=green_red)
-       
-        ##### calculates 1sigma uncertainty band
-        yy_1 = ((A[2]+Aerr[2])*(logxx) + (B[2]+Berr[2]))
-        yy_2 = ((A[2]-Aerr[2])*(logxx) + (B[2]+Berr[2]))
-        yy_3 = ((A[2]+Aerr[2])*(logxx) + (B[2]-Berr[2]))
-        yy_4 = ((A[2]-Aerr[2])*(logxx) + (B[2]-Berr[2]))
-        yy_up = yy_1*[0.0]
-        for i in range(len(yy_1)):
-        	if yy_1[i] > yy_2[i]:
-        		yy_up[i] = yy_1[i]
-        	elif yy_1[i] <= yy_2[i]:
-        		yy_up[i] = yy_2[i]	
-        yy_up = np.asarray(yy_up)
-        yy_lo = yy_1*[0.0]
-        for i in range(len(yy_3)):
-        	if yy_3[i] < yy_4[i]:
-        		yy_lo[i] = yy_3[i]
-        	elif yy_3[i] >= yy_4[i]:
-        		yy_lo[i] = yy_4[i]	
-        yy_lo = np.asarray(yy_lo)
-        			
-        ax.fill_between((logxx+np.average(mu_0)), 10**yy_lo, 10**yy_up, alpha=0.2, facecolor='k')
-       
-	#######################################
-	
+       ########################################
+       #
+       #print 'all'
+       #print 'n', len(mu_0)
+       #A,B,Aerr,Berr,covAB=bces.bces(mu_0-np.average(mu_0),
+       #	0.5*(perr_mu_0 + merr_mu_0),
+       #	log_mbh,0.5*(merr_log_mbh + perr_log_mbh),mu_0*[0.0])
+       #print '---------------------------------'
+       #print 'y = A*(x-<x>) + B '
+       #print '<x> =', np.average(mu_0)
+       #print
+       ##print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '	B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0])
+       ##print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '	B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1])
+       #print 'bisector    A =', "{0:.2f}".format(A[2]), '\pm', "{0:.2f}".format(Aerr[2]), '   B = ', "{0:.2f}".format(B[2]), '\pm', "{0:.2f}".format(Berr[2])
+       ##print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '	B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3])
+       #print '---------------------------------'
+       #
+       #logxx = np.arange(-30,20,0.1)
+       #yy = (A[2]*(logxx) + B[2])
+       #ax.plot((logxx+np.average(mu_0)),10**yy, color='k', ls='-', linewidth=2.)
+       ##colorline.colorline(10**(logxx+np.average(mu_0)), 10**yy, cmap=green_red)
+       #
+       ###### calculates 1sigma uncertainty band
+       #yy_1 = ((A[2]+Aerr[2])*(logxx) + (B[2]+Berr[2]))
+       #yy_2 = ((A[2]-Aerr[2])*(logxx) + (B[2]+Berr[2]))
+       #yy_3 = ((A[2]+Aerr[2])*(logxx) + (B[2]-Berr[2]))
+       #yy_4 = ((A[2]-Aerr[2])*(logxx) + (B[2]-Berr[2]))
+       #yy_up = yy_1*[0.0]
+       #for i in range(len(yy_1)):
+       #	if yy_1[i] > yy_2[i]:
+       #		yy_up[i] = yy_1[i]
+       #	elif yy_1[i] <= yy_2[i]:
+       #		yy_up[i] = yy_2[i]	
+       #yy_up = np.asarray(yy_up)
+       #yy_lo = yy_1*[0.0]
+       #for i in range(len(yy_3)):
+       #	if yy_3[i] < yy_4[i]:
+       #		yy_lo[i] = yy_3[i]
+       #	elif yy_3[i] >= yy_4[i]:
+       #		yy_lo[i] = yy_4[i]	
+       #yy_lo = np.asarray(yy_lo)
+       #			
+       #ax.fill_between((logxx+np.average(mu_0)), 10**yy_lo, 10**yy_up, alpha=0.2, facecolor='k')
+       #
+       ########################################
+       #
        #print 'early'
        #print 'n', len(mu_0[earlytype==1])
        #A,B,Aerr,Berr,covAB=bces.bces(mu_0[earlytype==1]-np.average(mu_0[earlytype==1]),

@@ -919,7 +919,8 @@ def mbh_vs_mag_sph_psb():
 	#ax.text(10**9.05,10**10.1, r'$n_{\rm sph}<2$')
 	
 	cbar = fig.colorbar(cp)
-	cbar.ax.set_ylabel(r'$n_{\rm sph}$', rotation=90)
+	#cbar.ax.set_ylabel(r'$n_{\rm sph}$', rotation=90)
+	cbar.ax.set_ylabel(r'spheroid central radial concentration', rotation=90)
 	
        #print 'BCES all'
        #print 'n', len(mag_sph)
@@ -1019,11 +1020,14 @@ def mbh_vs_mag_sph_psb():
         ax.axis([-19.01,-27.99,10**5.1,10**11.2])
         xticks_labels = ['$-28$','','$-26$','','$-24$','','$-22$','','$-20$']
         ax.set_xticklabels(xticks_labels)
-        ax.set_xlabel(r'$MAG_{\rm sph}\rm~[mag]$', labelpad=12)
-        ax.set_ylabel(r'$M_{\rm BH} \rm ~[M_\odot]$', labelpad=12)
+        #ax.set_xlabel(r'$MAG_{\rm sph}\rm~[mag]$', labelpad=12)
+        #ax.set_ylabel(r'$M_{\rm BH} \rm ~[M_\odot]$', labelpad=12)
+        ax.set_xlabel(r'spheroid absolute magnitude $\rm [mag]$', labelpad=12)
+        ax.set_ylabel(r'black hole mass $\rm [M_\odot]$', labelpad=12)
 	plt.subplots_adjust(left=0.15,bottom=0.15,right=0.99,top=0.9)
-        plt.show()
+        #plt.show()
 	#plt.savefig(path_paper_figures + 'mbh_vs_mag_sph_psb.pdf', format='pdf', dpi=1000)
+	plt.savefig('mbh_vs_mag_sph_psb.pdf', format='pdf', dpi=1000)
 	
 def inset_psb():
 	
@@ -2332,11 +2336,11 @@ def main():
 	#mag_lit_vs_mag_my()
 	#mbh_vs_mass_sph_agn()
 	#mbh_vs_mass_sph()
-	#mbh_vs_mag_sph_psb()
+	mbh_vs_mag_sph_psb()
 	#inset_psb()
 	#mbh_vs_mag_tot()
 	#mbh_vs_mag_sph()
-	mbh_vs_mass_sph_galsymb_agn()
+	#mbh_vs_mass_sph_galsymb_agn()
 
 main()		
 		
