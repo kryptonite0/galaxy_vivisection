@@ -229,6 +229,10 @@
 {Graham}, A.~W., {Driver}, S.~P., {Allen}, P.~D., \& {Liske}, J. 2007, \mnras,
   378, 198
 
+\bibitem[{{Graham} {et~al.}(2015){Graham}, {Dullo}, \& {Savorgnan}}]{GDS2015}
+{Graham}, A.~W., {Dullo}, B.~T., \& {Savorgnan}, G.~A.~D. 2015, ArXiv e-prints,
+  arXiv:1502.07024
+
 \bibitem[{{Graham} {et~al.}(2001){Graham}, {Erwin}, {Caon}, \&
   {Trujillo}}]{graham2001}
 {Graham}, A.~W., {Erwin}, P., {Caon}, N., \& {Trujillo}, I. 2001, \apjl, 563,
@@ -447,9 +451,6 @@
   {Risaliti}}]{sani2011}
 {Sani}, E., {Marconi}, A., {Hunt}, L.~K., \& {Risaliti}, G. 2011, \mnras, 413,
   1479
-
-\bibitem[{{Savorgnan} \& {Graham}(2014)}]{savorgnangraham2014}
-{Savorgnan}, G.~A.~D., \& {Graham}, A.~W. 2014, ArXiv e-prints, arXiv:1410.7405
 
 \bibitem[{{Schaye} {et~al.}(2015){Schaye}, {Crain}, {Bower}, {Furlong},
   {Schaller}, {Theuns}, {Dalla Vecchia}, {Frenk}, {McCarthy}, {Helly},
