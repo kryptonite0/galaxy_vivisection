@@ -35,45 +35,45 @@ while executing---line 1671 of file apj.bst
 Name 2 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
 while executing---line 1671 of file apj.bst
 Warning--empty publisher in sersic1968
-You've used 120 entries,
+You've used 119 entries,
             3085 wiz_defined-function locations,
-            1438 strings with 33066 characters,
-and the built_in function-call counts, 59198 in all, are:
-= -- 4887
-> -- 4475
+            1431 strings with 32813 characters,
+and the built_in function-call counts, 58597 in all, are:
+= -- 4837
+> -- 4422
 < -- 48
-+ -- 1506
-- -- 1630
-* -- 5123
-:= -- 11182
-add.period$ -- 120
-call.type$ -- 120
-change.case$ -- 840
-chr.to.int$ -- 116
-cite$ -- 122
-duplicate$ -- 2280
-empty$ -- 3408
-format.name$ -- 1785
-if$ -- 11685
++ -- 1487
+- -- 1609
+* -- 5068
+:= -- 11067
+add.period$ -- 119
+call.type$ -- 119
+change.case$ -- 829
+chr.to.int$ -- 115
+cite$ -- 121
+duplicate$ -- 2261
+empty$ -- 3380
+format.name$ -- 1764
+if$ -- 11570
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 117
-newline$ -- 364
-num.names$ -- 483
-pop$ -- 918
+missing$ -- 116
+newline$ -- 361
+num.names$ -- 479
+pop$ -- 907
 preamble$ -- 1
-purify$ -- 840
+purify$ -- 829
 quote$ -- 0
-skip$ -- 1886
+skip$ -- 1870
 stack$ -- 0
-substring$ -- 2483
+substring$ -- 2462
 swap$ -- 32
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1074
+type$ -- 1065
 warning$ -- 2
-while$ -- 462
+while$ -- 458
 width$ -- 0
-write$ -- 1201
+write$ -- 1191
 (There were 10 error messages)
