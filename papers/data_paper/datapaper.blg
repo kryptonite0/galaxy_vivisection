@@ -17,7 +17,6 @@ Repeated entry---line 6789 of file /Users/gsavorgnan/galaxy_vivisection/papers/S
  :                       ,
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "savorgnangraham2014"
-Warning--I didn't find a database entry for "scorzabender1998"
 Name 1 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
 while executing---line 1587 of file apj.bst
 Name 1 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
@@ -35,45 +34,45 @@ while executing---line 1671 of file apj.bst
 Name 2 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
 while executing---line 1671 of file apj.bst
 Warning--empty publisher in sersic1968
-You've used 119 entries,
+You've used 116 entries,
             3085 wiz_defined-function locations,
-            1431 strings with 32813 characters,
-and the built_in function-call counts, 58597 in all, are:
-= -- 4837
-> -- 4422
-< -- 48
-+ -- 1487
-- -- 1609
-* -- 5068
-:= -- 11067
-add.period$ -- 119
-call.type$ -- 119
-change.case$ -- 829
-chr.to.int$ -- 115
-cite$ -- 121
-duplicate$ -- 2261
-empty$ -- 3380
-format.name$ -- 1764
-if$ -- 11570
+            1410 strings with 32282 characters,
+and the built_in function-call counts, 57339 in all, are:
+= -- 4724
+> -- 4350
+< -- 46
++ -- 1463
+- -- 1584
+* -- 4972
+:= -- 10832
+add.period$ -- 116
+call.type$ -- 116
+change.case$ -- 810
+chr.to.int$ -- 112
+cite$ -- 118
+duplicate$ -- 2206
+empty$ -- 3297
+format.name$ -- 1734
+if$ -- 11316
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 116
-newline$ -- 361
-num.names$ -- 479
-pop$ -- 907
+missing$ -- 113
+newline$ -- 352
+num.names$ -- 467
+pop$ -- 887
 preamble$ -- 1
-purify$ -- 829
+purify$ -- 810
 quote$ -- 0
-skip$ -- 1870
+skip$ -- 1824
 stack$ -- 0
-substring$ -- 2462
+substring$ -- 2402
 swap$ -- 32
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1065
+type$ -- 1038
 warning$ -- 2
-while$ -- 458
+while$ -- 446
 width$ -- 0
-write$ -- 1191
+write$ -- 1161
 (There were 10 error messages)

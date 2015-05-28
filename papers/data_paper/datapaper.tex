@@ -403,7 +403,7 @@ i.e.~a central deficit of light relative to the inward extrapolation of their ou
 Such deficits were first noted and researched by \cite{kingminkowski1966}.
 S\'ersic galaxies, instead, do not exhibit such central stellar deficits.
 Partially depleted cores, as measured from high-resolution observations, have typical sizes of a few tens of parsecs
-\citep{dullograham2013cores,rusli2013}.
+\citep{dullograham2014cores,rusli2013}.
 The majority are thus unresolved in our image mosaics. 
 We masked these unresolved cores (identified in high-resolution images, see Table \ref{tab:sample}) by excluding the surface brightness profile 
 within 3 PSF's $FWHM$ from the galaxy center.
@@ -1653,15 +1653,15 @@ and bulge magnitudes are 0.36 mag fainter when additional components (other than
   m89 instead has a plateau in the ell prof, bcz the halo is predominant
   we need to fit the halo
 
-  BTW, if we wanna test the two phase formation scenario, we should care more about the halos...
-  at which effective radius does the halo begin?
-  what is the ratio of the mass in the galaxy or in the halo?
-
 
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/m89_1Dfit.eps}
-  \caption{Best-fit model and isophotal parameters for M89.}
+  \caption{Best-fit model and isophotal parameters for M89.
+  M89 is an elliptical galaxy with an unresolved partially depleted core \citep{rusli2013}. 
+  The galaxy halo dominates the light at large radii, where the isophotes are significantly more elliptical than in the inner part of the galaxy. 
+  The halo is modeled with an exponential function. 
+  }
   \end{center}
   \end{figure}
 
@@ -1678,15 +1678,15 @@ and bulge magnitudes are 0.36 mag fainter when additional components (other than
   T.W. 1D eq.  & S-bul + e-halo  & $28.2$  &  $5.1$ \\
   %T.W. 2D	&   & $$  & $$  &  $$ \\
   \hline
-  &   & $$  &  $$ \\
+  S+11         & S-bul + e-d     & $24.3$  &  $4.0$ \\
+  V+12         & S-bul           & $16.7$  &  $3.6$ \\
+  B+12         & S-bul           & $45.2$  &  $4.3$ \\
+  R+13         & S-bul + S-halo  & $19.8$  &  $3.8$ \\
   \hline
   \end{tabular}
   \end{center}
   \label{tab:m89}
   \end{table}
-
-
-
 
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2845,14 +2845,37 @@ and bulge magnitudes are 0.36 mag fainter when additional components (other than
 
   {\bf NGC 3585 \\}
 
-  ok
-
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n3585_1Dfit.eps}
-  \caption{Best-fit model and isophotal parameters for NGC 3585.}
+  \caption{Best-fit model and isophotal parameters for NGC 3585. 
+  NGC 3585 is an elliptical galaxy with an embedded disk \cite{scorzabender1995}. 
+  The embedded disk is visible in the unsharp mask and modeled with an exponential function. }
   \end{center}
   \end{figure}
+
+  \begin{table}[h]
+  \small
+  \caption{Best-fit parameters for the spheroidal component of NGC 3585.}
+  \begin{center}
+  \begin{tabular}{llcc}
+  \hline
+  {\bf Work} & {\bf Model}   & $\bm R_{\rm e,sph}$    & $\bm n_{\rm sph}$ \\
+    &  &  $[\rm arcsec]$ & \\
+  \hline
+  T.W. 1D maj. & S-bul + e-id & $105.0$  &  $5.2$ \\
+  T.W. 1D eq.  & S-bul + e-id & $86.3$  &  $6.3$ \\
+  \hline
+  S+11         & S-bul + e-d      & $15.5$   &  $2.5$ \\
+  \hline
+  \end{tabular}
+  \end{center}
+  \label{tab:n3585}
+  \tablecomments{
+  S+11 obtained smaller estimates of the effective radius and S\'ersic index because
+  they oversubtracted a large-scale disk.
+  }
+  \end{table}
 
 
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2861,14 +2884,40 @@ and bulge magnitudes are 0.36 mag fainter when additional components (other than
 
   {\bf NGC 3607 \\}
 
-  ok
-
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n3607_1Dfit.eps}
-  \caption{Best-fit model and isophotal parameters for NGC 3607.}
+  \caption{Best-fit model and isophotal parameters for NGC 3607. 
+  NGC 3607 is an elliptical galaxy with an embedded disk. 
+  The velocity map shows rotation only within $R_{\rm maj} \lesssim 20''$. 
+   }
   \end{center}
   \end{figure}
+  
+  \begin{table}[h]
+  \small
+  \caption{Best-fit parameters for the spheroidal component of NGC 3607.}
+  \begin{center}
+  \begin{tabular}{llcc}
+  \hline
+  {\bf Work} & {\bf Model}   & $\bm R_{\rm e,sph}$    & $\bm n_{\rm sph}$ \\
+    &  &  $[\rm arcsec]$ & \\
+  \hline
+  T.W. 1D maj. & S-bul + e-id & $69.3$  &  $5.5$ \\
+  T.W. 1D eq.  & S-bul + e-id & $65.5$  &  $5.6$ \\
+  T.W. 2D      & S-bul + e-id & $60.0$  &  $5.3$ \\
+  \hline
+  L+10	   & S-bul + e-d      & $6.5$   &  $1.5$ \\
+  S+11	   & S-bul + G-n      & $44.6$  &  $5.0$ \\
+  B+12	   & S-bul	      & $56.3$  &  $4.7$ \\
+  \hline
+  \end{tabular}
+  \end{center}
+  \label{tab:n3607}
+  \tablecomments{L+10 obtained the smallest estimates of the effective radius and S\'ersic index because
+  they oversubtracted a large-scale disk.
+  }
+  \end{table}
 
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2876,14 +2925,42 @@ and bulge magnitudes are 0.36 mag fainter when additional components (other than
 
   {\bf NGC 3608 \\}
 
-  ok
-
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n3608_1Dfit.eps}
-  \caption{Best-fit model and isophotal parameters for NGC 3608.}
+  \caption{Best-fit model and isophotal parameters for NGC 3608.
+  NGC 3608 is an elliptical galaxy with an unresolved partially depleted core \citep{rusli2013} 
+  and a kinematically decoupled core. 
+  We find unnnecessary masking the nuclear region of this galaxy and we fit the light profile with a single S\'ersic model.
+  }
   \end{center}
   \end{figure}
+  
+  \begin{table}[h]
+  \small
+  \caption{Best-fit parameters for the spheroidal component of NGC 3608.}
+  \begin{center}
+  \begin{tabular}{llcc}
+  \hline
+  {\bf Work} & {\bf Model}   & $\bm R_{\rm e,sph}$    & $\bm n_{\rm sph}$ \\
+    &  &  $[\rm arcsec]$ & \\
+  \hline
+  T.W. 1D maj. & S-bul & $47.5$  &  $5.2$ \\
+  T.W. 1D eq.  & S-bul & $43.4$  &  $5.7$ \\
+  T.W. 2D      & S-bul & $62.0$  &  $7.0$ \\
+  \hline
+  S+11         & S-bul            & $56.4$  &  $6.0$ \\
+  B+12         & S-bul            & $182.2$  &  $9.0$ \\
+  R+13         & core-S\'ersic    & $56.9$  &  $6.3$ \\
+  L+14         & S-bul            & $48.9$  &  $6.6$ \\
+  \hline
+  \end{tabular}
+  \end{center}
+  \label{tab:n3608}
+  \tablecomments{B+12 obtained the largest estimates of the effective radius and S\'ersic index, 
+  but the reasons for this are not clear. }
+  \end{table}
+
 
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -3021,24 +3098,38 @@ and bulge magnitudes are 0.36 mag fainter when additional components (other than
   \clearpage\newpage\noindent
   {\bf NGC 4151 \\}
 
-  NGC 4151 is a face-on barred spiral galaxy that hosts a Seyfert AGN \citep{veroncettyveron2006} 
-  and circumnuclear dust \citep{pott2010}.
-
-  \cite{sani2011} fit this galaxy with a S\'ersic-bulge + exponential-disk + Gaussian-AGN model
-  ($R_{\rm e} = 5''.4$, $n = 3.5$).
-  \cite{gadotti2008} decomposed it into a S\'ersic-bulge + exponential-disk + S\'ersic-bar + PSF-AGN 
-  ($R_{\rm e} = 4''.7$, $n = 3.0$).
-
-  \emph{1D fit -- }
-  embedded disk in the bulge,
-
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n4151_1Dfit.eps}
-  \caption{Best-fit model and isophotal parameters for NGC 4151.}
+  \caption{Best-fit model and isophotal parameters for NGC 4151.
+  NGC 4151 is a face-on barred spiral galaxy that hosts a Seyfert AGN \citep{veroncettyveron2006} 
+  and circumnuclear dust \citep{pott2010}.
+  The nucleus of this galaxy is very bright and the IRAf task {\tt ellipse} fails at fitting the isophotes within $R_{\rm maj} < 4''$, 
+  thus our light profile starts at $R_{\rm maj} \sim 4''$. 
+  The bar is fit with a low-$n$ S\'ersic profile.  
+  }
   \end{center}
   \end{figure}
 
+  \begin{table}[h]
+  \small
+  \caption{Best-fit parameters for the spheroidal component of NGC 4261.}
+  \begin{center}
+  \begin{tabular}{llcc}
+  \hline
+  {\bf Work} & {\bf Model}   & $\bm R_{\rm e,sph}$    & $\bm n_{\rm sph}$ \\
+    &  &  $[\rm arcsec]$ & \\
+  \hline
+  T.W. 1D maj. & S-bul + e-d + S-bar [+ m-n] & $7.6$  &  $1.4$ \\
+  T.W. 1D eq.  & S-bul + e-d + S-bar [+ m-n] & $6.8$  &  $1.9$ \\
+  %T.W. 2D      & S-bul + e-d + S-bar + m-n & $$  &  $$ \\
+  \hline
+  S+11         & S-bul + e-d + G-n         & $5.4$  &  $3.5$ \\
+  \hline
+  \end{tabular}
+  \end{center}
+  \label{tab:n4151}
+  \end{table}
 
 
 
@@ -3226,59 +3317,59 @@ and bulge magnitudes are 0.36 mag fainter when additional components (other than
   \clearpage\newpage\noindent
   {\bf NGC 4473 \\}
 
-  NGC 4473 is an elliptical galaxy with an embedded disk \citep{scorzabender1998,ledo2010}.
-
-  \cite{grahamdriver2007} modeled this galaxy with a S\'ersic-bulge 
-  ($R_{\rm e} = 39''.6$, $n = 2.7$). 
-  \cite{sani2011} used a S\'ersic-bulge model
-  ($R_{\rm e} = 49''.3$, $n = 7.0$). 
-  \cite{vika2012} fit this galaxy with a S\'ersic-bulge + mask-core 
-  ($R_{\rm e} = 21''.3$, $n = 4.3$). 
-  \cite{beifiori2012} adopted a S\'ersic-bulge + exponential-disk model 
-  ($R_{\rm e} = 10''.6$, $n = 2.2$).  
-  \cite{lasker2014data} described this galaxy with a single S\'ersic-bulge 
-  ($R_{\rm e} = 27''.9$, $n = 5.1$).  
-
-
-  \emph{1D fit -- }
-  TBD!! explain ellipticity profile...
-
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n4473_1Dfit.eps}
-  \caption{Best-fit model and isophotal parameters for NGC 4473.}
+  \caption{Best-fit model and isophotal parameters for NGC 4473.
+  NGC 4473 is an elliptical galaxy with an embedded disk \citep{ledo2010}.
+  The disk is clearly visible in the velocity map. 
+  We account for a nuclear excess of light by adding a narrow Gaussian function to the model.
+  }
   \end{center}
   \end{figure}
+  
+  \begin{table}[h]
+  \small
+  \caption{Best-fit parameters for the spheroidal component of NGC 4473.}
+  \begin{center}
+  \begin{tabular}{llccc}
+  \hline
+  {\bf Work} & {\bf Model}   & $\bm R_{\rm e,sph}$    & $\bm n_{\rm sph}$ \\
+    &  &  $[\rm arcsec]$ & \\
+  \hline
+  T.W. 1D maj. & S-bul + e-id + G-n & $45.9$  &  $2.3$ \\
+  T.W. 1D eq.  & S-bul + e-id + G-n & $36.9$  &  $2.9$ \\
+  %T.W. 2D	&  & $$  &  $$ \\
+  \hline
+  GD07      & S-bul                 & $39.6$   &  $2.7$ \\
+  S+11      & S-bul                 & $49.3$   &  $7.0$ \\
+  V+12      & S-bul + m-c           & $21.3$   &  $4.3$ \\
+  B+12      & S-bul + e-d           & $10.6$   &  $2.2$ \\
+  L+14      & S-bul                 & $27.9$   &  $5.1$ \\
+  \hline
+  \end{tabular}
+  \end{center}
+  \label{tab:n4459}
+  \tablecomments{
+  B+12 obtained the smallest estimates of the effective radius and S\'ersic index because they oversubtracted a large-scale disk. 
+  }
+  \end{table}
+
 
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \clearpage\newpage\noindent
   {\bf NGC 4564 \\}
 
-  NGC 4564 is an edge-on lenticular galaxy.
-
-  %\cite{grahamdriver2007} decomposed this galaxy into a S\'ersic-bulge + exponential-disk 
-  %($R_{\rm e} = 4''.3$, $n = 3.2$). 
-  \cite{fisherdrory2008} fit this galaxy with a S\'ersic-bulge + exponential-disk 
-  ($R_{\rm e} = 8''.7$, $n = 3.7$). 
-  %\cite{sani2011} modeled this galaxy with a S\'ersic-bulge + exponential-disk 
-  %($R_{\rm e} = 25''.0$, $n = 7.0$).
-  %\cite{vika2012} used a S\'ersic-bulge + exponential-disk model 
-  %($R_{\rm e} = 3''.0$, $n = 3.7$). 
-
-  \emph{1D fit -- }
-  The isophotal parameters do not show any evidence for embedded components.
-  However, fitting NGC 4564 with a S\'ersic + exponential model results in bad residuals.
-  In the unsharp mask, one can hardly glimpse an oval structure extending out to $R \lesssim 15''$.
-  The addition of a Ferrer function to the model dramatically improves the fit and smoothes the residuals.
-  Although the lack of strong evidence for the presence of a (faint) third component, 
-  we prefer to model the lens with a Ferrer function 
-  because of the notable improvement in the goodness of the global fit.
-
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n4564_1Dfit.eps}
-  \caption{Best-fit model and isophotal parameters for NGC 4564.}
+  \caption{Best-fit model and isophotal parameters for NGC 4564.
+  NGC 4564 is an edge-on lenticular galaxy.
+  In the unsharp mask, one can glimpse an oval structure extending out to $R_{\rm maj} \lesssim 15''$ (see the peak in the B4 profile).
+  Fitting NGC 4564 with a S\'ersic + exponential model produces bad residuals.
+  The addition of a Ferrer function to the model dramatically improves the fit and smoothes the residuals.
+  }
   \end{center}
   \end{figure}
 
@@ -3302,6 +3393,7 @@ and bulge magnitudes are 0.36 mag fainter when additional components (other than
   \end{tabular}
   \end{center}
   \label{tab:n4564}
+  \tablecomments{The most dicrepant results are obtained by S+11, although they used the same model as GD07 and V+12. }
   \end{table}
 
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -3309,31 +3401,20 @@ and bulge magnitudes are 0.36 mag fainter when additional components (other than
   \clearpage\newpage\noindent
   {\bf NGC 4596 \\}
 
-  NGC 4596 is an edge-on barred lenticular galaxy.
-
-  %\cite{laurikainen2005} decomposed this galaxy into a S\'ersic-bulge + exponential-disk + Ferrer-bar + Ferrer-lens 
-  %($R_{\rm e} = 2''.8$, $n = 1.4$). 
-  %\cite{sani2011} modeled this galaxy with a S\'ersic-bulge + exponential-disk + Gaussian-bar 
-  %($R_{\rm e} = 28''.0$, $n = 3.0$). 
-  %\cite{vika2012} decomposed it into a S\'ersic-bulge + exponential-disk + S\'ersic-bar 
-  %($R_{\rm e} = 13''.2$, $n = 3.6$). 
-  %\cite{beifiori2012} adopted a S\'ersic-bulge + exponential-disk model
-  %($R_{\rm e} = 44''.9$, $n = 4.4$).
-
-  \emph{1D fit -- }
-  The morphology of this galaxy is quite complex. 
-  The bar extends out to $R \lesssim 50''$ and concludes in two evident ansae.
-  The large-scale disk features a wide ring that is responsible for the curvature in the light profile observed within 
-  $60'' \lesssim R \lesssim 130''$ (see also \citealt{comeron2014}).
-  An additional embedded disk-like component ($R \lesssim 15''$) can be recognized in the B4 profile and in the velocity map.
-  The bump in the light profile within $60'' \lesssim R \lesssim 70''$ corresponds to the ansae of the bar.
-  This data range has therefore been excluded from the fit.
-  The large scale bar is fit with a Ferrer function and the inner disk with a S\'ersic profile.
-
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n4596_1Dfit.eps}
-  \caption{Best-fit model and isophotal parameters for NGC 4596.}
+  \caption{Best-fit model and isophotal parameters for NGC 4596.
+  NGC 4596 is an edge-on barred lenticular galaxy.
+  The morphology of this galaxy is quite complex. 
+  The bar extends out to $R_{\rm maj} \lesssim 50''$ and concludes in two evident ansae.
+  The large-scale disk features a wide ring that is responsible for the curvature in the light profile observed within 
+  $60'' \lesssim R_{\rm maj} \lesssim 130''$ (see also \citealt{comeron2014}).
+  An additional embedded disky component ($R_{\rm maj} \lesssim 15''$) can be recognized in the B4 profile and in the velocity map.
+  The bump in the light profile within $60'' \lesssim R_{\rm maj} \lesssim 70''$ corresponds to the ansae of the bar.
+  This data range is excluded from the fit.
+  The large scale bar is fit with a Ferrer function and the inner disk with a low-$n$ S\'ersic profile.
+  }
   \end{center}
   \end{figure}
 
@@ -3358,6 +3439,10 @@ and bulge magnitudes are 0.36 mag fainter when additional components (other than
   \end{tabular}
   \end{center}
   \label{tab:n4596}
+  \tablecomments{
+  B+12 fit nor the bar neither the inner disk and obtained the largest estimates of the bulge effective radius and S\'ersic index.
+  The models of S+11 and V+12 account for the bar and thus result in lower estimates of the bulge effective radius and S\'ersic index.
+  }
   \end{table}
 
 
@@ -3367,37 +3452,22 @@ and bulge magnitudes are 0.36 mag fainter when additional components (other than
   \clearpage\newpage\noindent
   {\bf NGC 4697 \\}
 
-  NGC 4697 is an elliptical galaxy with an embedded disk \cite{scorzabender1995}.
-
-  %\cite{grahamdriver2007} modeled this galaxy with a S\'ersic-bulge model
-  %($n = 4.0$).
-  %\cite{sani2011} described it with a S\'ersic-bulge 
-  %($R_{\rm e} = 100'.5$, $n = 5.0$). 
-  %\cite{vika2012} proposed a single S\'ersic-bulge model 
-  %($R_{\rm e} = 39''.1$, $n = 3.8$) 
-  %or a S\'ersic-bulge + exponential-disk model 
-  %($R_{\rm e} = 10''.0$, $n = 2.9$).
-  %\cite{beifiori2012} chose a single S\'ersic-bulge 
-  %($R_{\rm e} = 128''.7$, $n = 5.0$).
-  %\cite{lasker2014data} decomposed NGC 4697 into a S\'ersic-bulge + exponential-disk + PSF-nucleus + S\'ersic-envelope 
-  %($R_{\rm e} = 6''.3$, $n = 2.1$).
-
-  \emph{1D fit -- }
-  The velocity map and the unsharp mask of NGC 4697 clearly show 
-  the presence of an intermediate-size disk embedded in the main spheroid.
-  However, the ellipticity profile presents two peaks. 
-  The peak at $R \sim 40''$ corresponds to the embedded disk already mentioned,
-  while the peak at $R \sim 10''$ unveils a second inner disk-like component.
-  After testing different decomposition models, 
-  in which we fit the embedded disks with a set of different functions (exponential, S\'ersic, Ferrer)
-  but we always described the main spheroidal component with a S\'ersic profile,
-  we noticed that the bulge parameters did not vary significantly among the various decompositions.
-  Our preferred model for NGC 4697 consists of a S\'ersic-bulge + 2 S\'ersic-inner disks.
-
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n4697_1Dfit.eps}
-  \caption{Best-fit model and isophotal parameters for NGC 4697.}
+  \caption{Best-fit model and isophotal parameters for NGC 4697.
+  NGC 4697 is an elliptical galaxy with an embedded disk \citep{scorzabender1995}.
+  The velocity map and the unsharp mask of NGC 4697 clearly show 
+  the presence of an intermediate-size disk embedded in the galaxy's spheroidal component.
+  However, the ellipticity profile presents two peaks. 
+  The peak at $R_{\rm maj} \sim 40''$ corresponds to the intermediate-size embedded disk just mentioned,
+  while the peak at $R_{\rm maj} \sim 10''$ unveils a smaller inner disk.
+  After testing different decomposition models, 
+  in which we fit the two embedded disks with different functions (exponential, S\'ersic, Ferrer),
+  while always describing the main spheroidal component with a S\'ersic profile,
+  we noticed that the spheroid parameters do not significantly vary among the various decompositions.
+  Our preferred model for NGC 4697 consists of a S\'ersic-bulge + 2 S\'ersic-inner disks.
+  }
   \end{center}
   \end{figure}
 
@@ -3423,6 +3493,10 @@ and bulge magnitudes are 0.36 mag fainter when additional components (other than
   \end{tabular}
   \end{center}
   \label{tab:n4697}
+  \tablecomments{
+  In both their models, V+12 underestimated the effective radius and the S\'ersic index because of the small radial range of their data. 
+  L+14 oversubtracted a large-scale disk and a halo, and thus underestimated the spheroid effective radius and the S\'ersic index. 
+  }
   \end{table}
 
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -3430,20 +3504,16 @@ and bulge magnitudes are 0.36 mag fainter when additional components (other than
   \clearpage\newpage\noindent
   {\bf NGC 4889 \\}
 
-  NGC 4889 is the brightest member of the Coma cluster. 
-  It is an elliptical galaxy with a partially depleted core ($R_{\rm break} = 1''.6$, \citealt{rusli2013}).
-
-  %\cite{rusli2013} modeled NGC 4889 with a core-S\'ersic model 
-  %($R_{\rm e} = 169''.2$, $n = 9.8$). 
-
-  \emph{1D fit -- }
-  We excluded from the fit the innermost $6''.1$ because affected by the partially depleted core and
-  we modeled the galaxy with a single S\'ersic profile.
 
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n4889_1Dfit.eps}
-  \caption{Best-fit model and isophotal parameters for NGC 4889.}
+  \caption{Best-fit model and isophotal parameters for NGC 4889.
+  NGC 4889 is the brightest member of the Coma cluster. 
+  It is an elliptical galaxy with an unresolved partially depleted core \citep{rusli2013}. % ($R_{\rm break} = 1''.6$, \citealt{rusli2013}).
+  We exclude from the fit the innermost $6''.1$ and
+  we successfully model the galaxy with a single S\'ersic profile.
+  }
   \end{center}
   \end{figure}
 
@@ -3472,30 +3542,15 @@ and bulge magnitudes are 0.36 mag fainter when additional components (other than
   \clearpage\newpage\noindent
   {\bf NGC 4945 \\}
 
-  TBD!!! \\
-  NGC 4945 is an edge-on, dusty spiral galaxy that hosts a Seyfert AGN \citep{lin2011}.
-
-  \cite{kormendy2010} found that the bulge of NGC 4945 is best modeled with a low-$n$ S\'ersic function
-  ($n = 1.3$).
-
-  \emph{1D fit -- }
-  Given the edge-on inclination of this object, the identification of a possible large-scale bar is complicated.
-  The light profile has an obvious bump that could be interpreted in two different ways.
-  The bump could be produced by a large-scale bar; 
-  in this case, either the disk must have a truncation happening at a radius smaller than the length of the bar,
-  or its light profile cannot be exponential (this condition can be caused by the high inclination of the galaxy).
-  Alternatively, the bump could be due by the galaxy spiral arms, the disk has an exponential profile with no truncation
-  and the galaxy has no bar.
-  After checking that both scenarios result in similar best-fit parameters for the bulge, 
-  we choose the second and simpler hypothesis.
-  We exclude form the fit the data between $R \sim 100''-400''$, where the spiral arm would contribute to the galaxy light,
-  and we also exclude the innermost $6''.4$ due to the presence of the AGN.
-  Our final model for NGC 4945 consists of a S\'ersic-bulge + exponential-disk.
-
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n4945_1Dfit.eps}
-  \caption{Best-fit model and isophotal parameters for NGC 4945.}
+  \caption{Best-fit model and isophotal parameters for NGC 4945.
+  NGC 4945 is an edge-on, dusty spiral galaxy that hosts a Seyfert AGN \citep{lin2011}.
+  The light profile has an obvious bump that can be ascribed to a bar.
+  This bumb cannot be easily modeled with a Ferrer function, thus we exclude form the fit the data in the range $100'' \lesssim R_{\rm maj} \sim 400''$.
+  We also exclude the data within the innermost $6''.4$ due to the contribution from the AGN.
+  }
   \end{center}
   \end{figure}
 
@@ -3523,14 +3578,12 @@ and bulge magnitudes are 0.36 mag fainter when additional components (other than
   \clearpage\newpage\noindent
   {\bf NGC 5077 \\}
 
-  ok
-
-  \emph{1D fit -- }
-
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n5077_1Dfit.eps}
-  \caption{Best-fit model and isophotal parameters for NGC 5077.}
+  \caption{Best-fit model and isophotal parameters for NGC 5077. 
+  NGC 5077 is an elliptical galaxy with an unresolved partially depleted core \citep{trujillo2004coresersicmodel}. 
+  We mask the data within the innermost $6''.1$ and fit the galaxy with a S\'ersic profile. }
   \end{center}
   \end{figure}
 
@@ -3561,12 +3614,11 @@ and bulge magnitudes are 0.36 mag fainter when additional components (other than
 
   {\bf NGC 5128 - Centaurus A \\}
 
-  ok
-
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n5128_1Dfit.eps}
-  \caption{}
+  \caption{Best-fit model and isophotal parameters for NGC 5128.
+  NGC 5128 is a merging system. }
   \end{center}
   \end{figure}
 
@@ -3579,15 +3631,16 @@ and bulge magnitudes are 0.36 mag fainter when additional components (other than
   {\bf Work} & {\bf Model}   & $\bm R_{\rm e,sph}$    & $\bm n_{\rm sph}$ \\
     &  &  $[\rm arcsec]$ & \\
   \hline
-  T.W. 1D maj. & TBD!! & $61.3$  &  $1.2$ \\
-  T.W. 1D eq.  &  & $60.8$  &  $2.2$ \\
+  T.W. 1D maj. & S-bul + e-halo + G-n & $61.3$  &  $1.2$ \\
+  T.W. 1D eq.  & S-bul + e-halo + G-n & $60.8$  &  $2.2$ \\
   %T.W. 2D	&  & $$  & $$  &  $$ \\
   \hline
-  S+11         & S-bul + e-d + G-n & $103.6$  &  $3.5$ \\
+  S+11         & S-bul + e-d + G-n    & $103.6$  &  $3.5$ \\
   \hline
   \end{tabular}
   \end{center}
   \label{tab:n5128}
+  \tablecomments{}
   \end{table}
 
 
@@ -3598,60 +3651,63 @@ and bulge magnitudes are 0.36 mag fainter when additional components (other than
 
   {\bf NGC 5576 \\}
 
-  ok
-
   \begin{figure}[h]
   \begin{center}
-  \includegraphics[width=\fitfigurewidth]{images/n4889_1Dfit.eps}
-  \caption{}
+  \includegraphics[width=\fitfigurewidth]{images/n5576_1Dfit.eps}
+  \caption{Best-fit model and isophotal parameters for NGC 5576.
+  NGC 5576 is an elliptical galaxy with a disturbed morphology. 
+  The isophotal parameters suggest the presence of an embedded disk ($R_{\rm maj} \lesssim 20''$), 
+  but any attempt to account for such component was unsuccessful. 
+  The data within $R_{\rm maj} \lesssim 36''$ are excluded from the fit 
+  and the galaxy is modeled with a S\'ersic profile.
+  } 
   \end{center}
   \end{figure}
+  
+  \begin{table}[h]
+  \small
+  \caption{Best-fit parameters for the spheroidal component of NGC 5576.}
+  \begin{center}
+  \begin{tabular}{llcc}
+  \hline
+  {\bf Work} & {\bf Model}   & $\bm R_{\rm e,sph}$    & $\bm n_{\rm sph}$ \\
+    &  &  $[\rm arcsec]$ & \\
+  \hline
+  T.W. 1D maj. & S-bul  & $61.5$  &  $3.3$ \\
+  T.W. 1D eq.  & S-bul  & $49.3$  &  $3.7$ \\
+  T.W. 2D      & S-bul  & $45.9$  &  $8.3$ \\
+  \hline
+  S+11      & S-bul & $34.3$  &  $7.0$ \\
+  V+12      & S-bul & $16.9$  &  $5.1$ \\
+  B+12      & S-bul & $77.6$  &  $8.7$ \\
+  \hline
+  \end{tabular}
+  \end{center}
+  \label{tab:n5845}
+  \tablecomments{The results obtained by S+11 and B+12 best agree with the results from our 2D model, 
+  in which we did not mask the inner region of the galaxy. 
+  The small radial extent of the data used by V+12 led them to underestimate the effective radius.}
+  \end{table}
 
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \clearpage\newpage\noindent
   {\bf NGC 5845 \\}
 
-  NGC 5845 is an elliptical/lenticular galaxy. 
-
-  %\cite{grahamdriver2007} modeled this galaxy with a S\'ersic-bulge 
-  %($R_{\rm e} = 4''.1$,$n = 3.2$).
-  %\cite{sani2011} fit it with a S\'ersic-bulge 
-  %($R_{\rm e} = 3''.7$, $n = 3.0$). 
-  %\cite{vika2012} used a S\'ersic-bulge model 
-  %($R_{\rm e} = 3''.5$, $n = 2.6$).
-  %\cite{beifiori2012} chose a single S\'ersic-bulge 
-  %($R_{\rm e} = 4''.1$, $n = 3.5$).
-  %\cite{lasker2014data} described this galaxy with a S\'ersic-bulge 
-  %($R_{\rm e} = 3''.5$, $n = 2.8$).
-
-  \emph{1D fit -- }
-  The small apparent size of NGC 5845 (compared to the PSF FWHM) implies low resolution for the data 
-  and complications for the modeling of this galaxy.
-  Here, looking at the unsharp mask and the velocity field, we identify 
-  a disk component, either large-scale or embedded.
-  To rule out one of the two cases, a good test would be to check whether
-  the light profile of NGC 5845 presents an exponential decline in its outer part.
-  Unfortunately, the IRAC image is not deep enough and beyond $R \gtrsim 23''$ the galaxy light 
-  is fainter than $3 RMS_{\rm SKY}$.
-  %Since the too small radial range prevents us from disentangling between an embedded and a large-scale disk,
-  %we choose the most statistically significant solution (lowest $\chi^2$), 
-  %but we caution that the best fit parameters might be biased by a non adequate choice
-  %of the model components. 
-  %However, our results are in agreement with those from \cite{jia2012}, 
-  %who study the structure and kinematics of NGC5845 with HST/WFPC2 data 
-  %and previously published spatially resolved kinematics, and unambiguously identify a 
-  %large scale disk in both the photometry and the kinematics. \\
-  The ellipticity profile has a peak at $R \sim 13''$ and therefore suggests that the disk is indeed embedded.
-  However, when fitting NGC 5845 with a S\'ersic + exponential model, 
-  the lowest-$\chi^2$ solution does not reproduce an inner disk, but rather a large-scale one.
-  This is because the S\'ersic and the exponential function are degenerate in this decomposition, 
-  due to the small number of data points sampling the galaxy light profile.
-
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n5845_1Dfit.eps}
-  \caption{Best-fit model and isophotal parameters for NGC 5845.}
+  \caption{Best-fit model and isophotal parameters for NGC 5845.
+  NGC 5845 is an elliptical/lenticular galaxy. 
+  The small apparent size of NGC 5845 (compared to the PSF FWHM) implies low resolution for the data 
+  and complications for the modeling of this galaxy.
+  Here, looking at the unsharp mask and the velocity field, we identify a disk, but it is not clear whether the disk is large-scale or embedded.
+  The ellipticity profile has a peak at $R_{\rm maj} \sim 13''$ which suggests that the disk is indeed embedded.
+  However, when fitting NGC 5845 with a S\'ersic + exponential model, 
+  the lowest-$\chi^2$ solution does not reproduce an embedded disk.
+  This is because the S\'ersic and the exponential functions are degenerate in this decomposition, 
+  due to the small number of data points in the galaxy light profile.
+  }
   \end{center}
   \end{figure}
 
@@ -3686,26 +3742,17 @@ and bulge magnitudes are 0.36 mag fainter when additional components (other than
   \clearpage\newpage\noindent
   {\bf NGC 5846 \\}
 
-  NGC 5846 is an elliptical galaxy with a partially depleted core ($R_{\rm break} = 1''.2$, \citealt{rusli2013}).
-  This galaxy has a LINER nucleus \citep{carrillo1999} and filamentary nuclear dust \citep{tran2001}.
-
-  %\cite{sani2011} modeled this galaxy with a S\'ersic-bulge
-  %($R_{\rm e} = 36''.4$, $n = 3.0$). 
-  %\cite{vika2012} used a S\'ersic-bulge + mask-core model 
-  %($R_{\rm e} = 46''.3$, $n = 3.7$). 
-  %\cite{rusli2013} fit this galaxy with a core-S\'ersic profile 
-  %($R_{\rm e} = 113''.2$, $n = 5.3$). 
-
-  \emph{1D fit -- }
-  This galaxy has a strong isophotal twist between its center and $R \sim 70''$, and
-  its light profile presents a slight bump at $R \sim 20''$.
-  However, the isophotal parameters, the unsharp mask and the velocity map lack of clear evidence for an embedded component.
-  We thus model NGC 5846 with a single S\'ersic profile, after masking the innermost $6''.1$.
-
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n5846_1Dfit.eps}
-  \caption{Best-fit model and isophotal parameters for NGC 5846.}
+  \caption{Best-fit model and isophotal parameters for NGC 5846.
+  NGC 5846 is an elliptical galaxy with an unresolved partially depleted core \citep{rusli2013}. %%($R_{\rm break} = 1''.2$, \citealt{rusli2013}).
+  This galaxy has a LINER nucleus \citep{carrillo1999} and filamentary nuclear dust \citep{tran2001}.
+  It also displays a strong isophotal twist between its center and $R_{\rm maj} \sim 70''$.
+  The light profile presents a slight bump at $R_{\rm maj} \sim 20''$.
+  However, the isophotal parameters, the unsharp mask and the velocity map lack of clear evidence for an embedded component.
+  We thus model NGC 5846 with a single S\'ersic profile, after masking the data within innermost $6''.1$.
+  }
   \end{center}
   \end{figure}
 
@@ -3729,6 +3776,7 @@ and bulge magnitudes are 0.36 mag fainter when additional components (other than
   \end{tabular}
   \end{center}
   \label{tab:n5846}
+  \tablecomments{S+11 did not mask the core and thus underestimated the effective radius and S\'ersic index. }
   \end{table}
 
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -3736,26 +3784,15 @@ and bulge magnitudes are 0.36 mag fainter when additional components (other than
   \clearpage\newpage\noindent
   {\bf NGC 6251 \\}
 
-  NGC 6251 is an elliptical galaxy with a large stellar velocity dispersion ($\sigma \sim 310~\rm km~s^{-1}$),
-  which is a clue for the presence of a partially depleted core.
-  The galaxy features a nuclear disk of dust \citep{ferrareseford1999n6251} and a Seyfert AGN \citep{panessabassani2002}.
-
-  %\cite{grahamdriver2007} fit this galaxy with a S\'ersic-bulge 
-  %($R_{\rm e} = 173''.92$, $n = 11.8$). 
-  %\cite{sani2011} adopted a S\'ersic-bulge + Gaussian-AGN model 
-  %($R_{\rm e} = 42''.4$, $n = 7.0$). 
-  %\cite{lasker2014data} modeled this galaxy with a S\'ersic-bulge 
-  %($R_{\rm e} = 20''.6$, $n = 5.0$). 
-
-  \emph{1D fit -- }
-  We masked the innermost $6''.1$ because possibly affected by the combined contribution of the AGN 
-  and the partially depleted core. 
-  A single S\'ersic profile provides a good description of NGC 6251.
-
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n6251_1Dfit.eps}
-  \caption{Best-fit model and isophotal parameters for NGC 6251.}
+  \caption{Best-fit model and isophotal parameters for NGC 6251.
+  NGC 6251 is an elliptical galaxy. Its large stellar velocity dispersion suggests the presence of a partially depleted core.
+  The galaxy features a nuclear disk of dust \citep{ferrareseford1999n6251} and a Seyfert AGN \citep{panessabassani2002}.
+  We mask the data within the innermost $6''.1$. 
+  A single S\'ersic profile provides a good description of this galaxy.
+  }
   \end{center}
   \end{figure}
 
@@ -3779,6 +3816,7 @@ and bulge magnitudes are 0.36 mag fainter when additional components (other than
   \end{tabular}
   \end{center}
   \label{tab:n6251}
+  \tablecomments{It is not clear why GD07 obtained the largest estimates of the effective radius and S\'ersic index.}
   \end{table}
 
 
@@ -3787,34 +3825,13 @@ and bulge magnitudes are 0.36 mag fainter when additional components (other than
   \clearpage\newpage\noindent
   {\bf NGC 7052 \\}
 
-  NGC 7052 is an elliptical galaxy reported to have a partially depleted core 
-  ($R_{\rm break} = 0''.8$, \citealt{quillen2000}). 
-
-  %\cite{grahamdriver2007} modeled this galaxy with a S\'ersic-bulge 
-  %($R_{\rm e} = 70''.4$, $n = 4.6$). 
-  %\cite{sani2011} used a S\'ersic-bulge model 
-  %($R_{\rm e} = 39''.3$, $n = 5.0$). 
-  %\cite{vika2012} fit this galaxy with a S\'ersic-bulge + exponential-disk
-  %($R_{\rm e} = 4''.3$, $n = 1.8$).
-  %\cite{lasker2014data} adopted a S\'ersic-bulge model 
-  %($R_{\rm e} = 26''.6$, $n = 4.2$). 
-
-  \emph{1D fit -- }
-  A single S\'ersic function provides a fairly good description of the surface brightness profile of NGC 7052.
-  However, the residuals of such fit display a curious behaviour, having a nuclear light excess along the major-axis 
-  and a nuclear light deficit along the equivalent-axis. 
-  This pattern is still present when the innermost $6''.1$ are excluded and the fit is repeated with a S\'ersic profile.
-  The reasons for this are unclear. 
-  The best-fit parameters obtained from a single S\'ersic fit, without excluding the innermost data points,
-  are not significantly different from those obtained when excluding the core region (see Table \ref{tab:n7052}).
-  Given the uncertainty connected to the nuclear region of this galaxy,
-  we preferred the model that incorporates the exclusion of the innermost $6''.1$, 
-  with the caveat about the ambiguous presence of a partially depleted core.
-
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n7052_1Dfit.eps}
-  \caption{Best-fit model and isophotal parameters for NGC 7052.}
+  \caption{Best-fit model and isophotal parameters for NGC 7052.
+  NGC 7052 is an elliptical galaxy with an unresolved partially depleted core \citep{quillen2000}. %% ($R_{\rm break} = 0''.8$, \citealt{quillen2000}). 
+  We mask the data within the innermost $6''.1$ and model the galaxy with a single S\'ersic profile.
+  }
   \end{center}
   \end{figure}
 
@@ -3827,16 +3844,16 @@ and bulge magnitudes are 0.36 mag fainter when additional components (other than
   {\bf Work} & {\bf Model}   & $\bm R_{\rm e,sph}$    & $\bm n_{\rm sph}$ \\
     &  &  $[\rm arcsec]$ & \\
   \hline
-  \multicolumn{4}{c}{\emph{excluding innermost $6''.1$}} \\
+  %\multicolumn{4}{c}{\emph{excluding innermost $6''.1$}} \\
   T.W. 1D maj. & S-bul + m-c & $59.4$  &  $4.2$ \\
   T.W. 1D eq.  & S-bul + m-c & $37.0$  &  $5.6$ \\
   T.W. 2D      & S-bul + m-c & $36.2$  &  $4.0$ \\
   \hline
-  \multicolumn{4}{c}{\emph{including innermost $6''.1$}} \\
-  T.W. 1D maj. & S-bul & $66.1$  &  $4.8$ \\
-  T.W. 1D eq.  & S-bul & $35.0$  &  $5.0$ \\
-  %T.W. 2D	&  & $$  & $$  &  $$ \\
-  \hline
+  %\multicolumn{4}{c}{\emph{including innermost $6''.1$}} \\
+  %T.W. 1D maj. & S-bul & $66.1$  &  $4.8$ \\
+  %T.W. 1D eq.  & S-bul & $35.0$  &  $5.0$ \\
+  %%T.W. 2D	&  & $$  & $$  &  $$ \\
+  %\hline
   GD07      & S-bul & $70.4$  &  $4.6$ \\
   S+11      & S-bul & $39.3$  &  $5.0$ \\
   V+12      & S-bul + e-d & $4.3$  &  $1.8$ \\
@@ -3845,6 +3862,7 @@ and bulge magnitudes are 0.36 mag fainter when additional components (other than
   \end{tabular}
   \end{center}
   \label{tab:n7052}
+  \tablecomments{The model of V+12 subtracts a large-scale disk and thus results in the lowest estimates of the effective radius and S\'ersic index.}
   \end{table}
 
 
@@ -3853,22 +3871,16 @@ and bulge magnitudes are 0.36 mag fainter when additional components (other than
   \clearpage\newpage\noindent
   {\bf NGC 7619 \\}
 
-  NGC 7619 is an elliptical galaxy reported to have a partially depleted core ($R_{\rm break} = 0''.5$, \citealt{rusli2013}).
-
-  %\cite{rusli2013} fit this galaxy with a core-S\'ersic profile 
-  %($R_{\rm e} = 100''.1$, $n = 9.3$). 
-
-  \emph{1D fit -- }
-  We identified an embedded disk signaled by the peak at $R \sim 10''$ in the ellipticity profile.
-  The velocity map of this galaxy confirms the presence of a fast rotating component (Falcon-Barroso private comm.).
-  We modeled NGC 7619 with a S\'ersic + inner-exponential model.
-  We note that the residuals obtained from our best-fit model do not suggest the presence of a partially depleted core,
-  whereas they display a nuclear lack of light when the galaxy is modeled with a single S\'ersic-bulge. 
-
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n7619_1Dfit.eps}
-  \caption{Best-fit model and isophotal parameters for NGC 7619.}
+  \caption{Best-fit model and isophotal parameters for NGC 7619.
+  NGC 7619 is an elliptical galaxy with an unresolved partially depleted core \citep{rusli2013}. %% ($R_{\rm break} = 0''.5$, \citealt{rusli2013}).
+  We identified an embedded disk signaled by the peak at $R_{\rm maj} \sim 10''$ in the ellipticity profile.
+  The velocity map of this galaxy confirms the presence of a fast rotating component (Falcon-Barroso, private comm.).
+  We note that the residuals obtained from our best-fit model do not suggest the presence of a partially depleted core,
+  whereas they display a nuclear lack of light when the galaxy is modeled with a single S\'ersic-bulge. 
+  }
   \end{center}
   \end{figure}
 
@@ -3896,22 +3908,16 @@ and bulge magnitudes are 0.36 mag fainter when additional components (other than
   \clearpage\newpage\noindent
   {\bf NGC 7768 \\}
 
-  NGC 7768 is an elliptical galaxy with a partially depleted core ($R_{\rm break} = 0''.3$, \citealt{rusli2013}).
-
-  %\cite{rusli2013} modeled this galaxy with a core-S\'ersic profile 
-  %($R_{\rm e} = 46''.1$, $n = 6.2$). 
-
-  \emph{1D fit -- }
-  The image of NGC 7768 is corrupted by a saturated star, which lies close to the galaxy.
-  The sky background is not constant across the image.
-  To be safe, we fit only the innermost $R \lesssim 30''$, where the contribution from the background is negligible.
-  The data within $R < 6''.1$ are excluded from the fit due to the presence of a partially depleted core.
-  Our best-fit model consists of a single S\'ersic profile.
-
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n7768_1Dfit.eps}
-  \caption{Best-fit model and isophotal parameters for NGC 7768.}
+  \caption{Best-fit model and isophotal parameters for NGC 7768.
+  NGC 7768 is an elliptical galaxy with an unresolved partially depleted core \citep{rusli2013}. %%($R_{\rm break} = 0''.3$, \citealt{rusli2013}).
+  The image of NGC 7768 is corrupted by a saturated star, which lies close to the galaxy.
+  The sky background is not constant across the image.
+  To be safe, we fit only the data within the innermost $R_{\rm maj} \lesssim 30''$, where the contribution from the background is negligible.
+  The data within $R_{\rm maj} < 6''.1$ are excluded from the fit.
+  }
   \end{center}
   \end{figure}
 
@@ -3939,17 +3945,15 @@ and bulge magnitudes are 0.36 mag fainter when additional components (other than
   \clearpage\newpage\noindent
   {\bf UGC 03789 \\}
 
-  UGC 03789 is a face-on spiral galaxy.
-
-  \emph{1D fit -- }
-  This galaxy features a ring ($R \sim 20''$) and a nuclear bar ($R \lesssim 4''$),
-  which can be seen in the unsharp mask and produces corresponding peaks in the ellipticity and PA profiles.
-  The bar is fit with a Ferrer function.
-
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/ugc03789_1Dfit.eps}
-  \caption{Best-fit model and isophotal parameters for UGC 03789.}
+  \caption{Best-fit model and isophotal parameters for UGC 03789.
+  UGC 03789 is a face-on spiral galaxy.
+  This galaxy features a ring ($R_{\rm maj} \sim 20''$) and a nuclear bar ($R_{\rm maj} \lesssim 4''$),
+  which can be seen in the unsharp mask and produces corresponding peaks in the ellipticity and PA profiles.
+  The bar is fit with a Ferrer function.
+  }
   \end{center}
   \end{figure}
 
