@@ -70,8 +70,8 @@
 In our first paper, we performed a detailed (i.e.~bulge, disks, bars, spiral arms, rings, halo, nucleus, depleted core, etc.) 
 decomposition of 66 galaxies, with directly measured black hole masses, 
 that had been imaged at $3.6\rm~\mu m$ with \emph{Spitzer}.
-Our sample is the largest to date and, for the first time, the decompositions were checked to be consistent with the galaxy kinematics.
-Here we present correlations between the black hole mass, $M_{\rm BH}$, 
+Our sample is the largest to date and, for the first time, the decompositions were checked for consistency with the galaxy kinematics. 
+We present correlations between the black hole mass, $M_{\rm BH}$, 
 and the host spheroid (and galaxy) luminosity, $L_{\rm sph}$ (and $L_{\rm gal}$), 
 and also stellar mass, $M_{\rm *,sph}$.
 Most previous studies have used galaxy samples that were overwhelmingly dominated by high-mass, early-type galaxies.
@@ -130,7 +130,10 @@ which can be described with a single power-law ($M_{\rm BH} \propto \sigma^{5-6}
 over a wide range in velocity dispersion ($70-350~\rm km~s^{-1}$, e.g.~\citealt{graham2011,mcconnell2011,grahamscott2013}).
 The other is the $L_{\rm sph} - \sigma$ relation, 
 which has long been known to be a ``double power-law'', 
-with $L_{\rm sph} \propto \sigma^{5-6}$ at the luminous end \citep{schechter1980,malumuthkrishner1981,vonderlinden2007,lauer2007lumell,liu2008}, 
+with $L_{\rm sph} \propto \sigma^{5-6}$ at the luminous end\footnote{Recent 
+work has the $M_{\rm BH} - \sigma$ correlation as steep as $M_{\rm BH} \propto \sigma^{6.5}$ \citep{savorgnangraham2015},
+and the high-luminosity end of the $L_{\rm sph} - \sigma$ correlation as steep as $L_{\rm sph} \propto \sigma^{8}$ \citep{monterodorta2015}.} 
+\citep{schechter1980,malumuthkrishner1981,vonderlinden2007,lauer2007lumell,liu2008}
 and $L_{\rm sph} \propto \sigma^2$ at intermediate and faint luminosities 
 \citep{davies1983,held1992,matkovicguzman2005,derijcke2005,balcells2007screl,chilingarian2008,forbes2008,cody2009,tortora2009,kourkchi2012}. 
 The change in slope of the $L_{\rm sph} - \sigma$ relation occurs at $M_B \approx -20.5\rm~mag$, 
@@ -663,7 +666,15 @@ and its linear regression analysis in Table \ref{tab:lregmass}.
 The bulges of the early-type galaxies follow $M_{\rm BH} \propto M_{\rm *,sph}^{1.04 \pm 0.10}$,
 consistent with a dry-merging formation scenario,
 and define a tight \emph{early-type sequence} with intrinsic scatter $\epsilon_{(Y|X)} = 0.43 \pm 0.06\rm~dex$. 
-On the other hand, the bulges of the spiral galaxies trace a steeper \emph{late-type sequence}, 
+\cite{graham2012bent} reported that the $M_{\rm BH}/M_{\rm dyn,sph}$ ratio for core-S\'ersic galaxies was 0.36\% 
+($M_{\rm dyn,sph}$ is the spheroid dynamical mass), 
+and discussed the many implications of this.  
+Using a larger data sample, \cite{grahamscott2013} reported that the $M_{\rm BH}/M_{\rm *,sph}$ ratio was 0.49\% for core-S\'ersic galaxies.   
+Here we find a median $M_{\rm BH}/M_{\rm *,sph}$ ratio of $0.50 \pm 0.04\%$ for the 22 core-S\'ersic galaxies 
+and $0.68 \pm 0.04\%$ for the 45 early-type galaxies.  
+Among other things, this higher value (previously reported to be $0.1 - 0.2\%$ for all galaxy types, e.g.~\citealt{marconihunt2003}), 
+boosts estimates of the black hole mass function and mass density based on galaxy/spheroid luminosity functions. \\
+The bulges of the spiral galaxies trace a steeper \emph{late-type sequence}, 
 whose slope is less well constrained due to the smaller size of the subsample and, more importantly, 
 to the smaller range in $M_{\rm *,sph}$ that the subsample spans. 
 For the bulges of spiral galaxies, the BCES code returns a log-linear relation with a slope $= 3.00 \pm 1.30$, 
@@ -705,12 +716,12 @@ We note that AGNs with $10^5 \lesssim M_{\rm BH}/{\rm M_\odot} \lesssim 2 \times
 \end{figure}
 
 \section{Conclusions}
-Using $3.6\rm~\mu m$ \emph{Spitzer} imagery, 
+Using $3.6\rm~\mu m$ \emph{Spitzer} images, 
 we have performed accurate multicomponent decompositions (i.e.~bulge, disks, bars, spiral arms, rings, halo, nucleus, depleted core, etc.), 
 which were checked to be consistent with the two-dimensional galaxy kinematics, 
-and we have derived galaxy luminosities, spheroid luminosities and spheroid stellar masses for 66 nearby galaxies 
-with a dynamical measurement of their black hole mass. 
-Our galaxy sample, besides being the largest ever used to investigate black hole mass scaling relations, 
+for 66 nearby galaxies with a dynamical measurement of their black hole mass.
+We have derived galaxy luminosities, spheroid luminosities and spheroid stellar masses. 
+Our galaxy sample, besides being to date the largest sample with reliable bulge masses used to investigate black hole mass scaling relations, 
 contains 17 spiral galaxies, half of which have $M_{\rm BH} < 10^7 \rm~M_{\odot}$. 
 This constitutes a significant improvement over past studies whose samples were biased towards high-mass, early-type galaxies. \\
 Using our state-of-the-art dataset, we have investigated substructure in the $M_{\rm BH} - L_{\rm gal}$, $M_{\rm BH} - L_{\rm sph}$ 
@@ -721,8 +732,9 @@ Our principal conclusions are: \\
 \item The $M_{\rm BH} - M_{\rm *,sph}$ log-relation for the spheroidal components of early-type (elliptical + lenticular) galaxies 
       has a slope of $1.04 \pm 0.10$ and intrinsic scatter $\epsilon_{(Y|X)} = 0.43 \pm 0.06\rm~dex$. 
       We call this tight correlation an \emph{early-type sequence}. 
-      The $M_{\rm BH} - M_{\rm *,sph}$ log-relation for the bulges of late-type (spiral) galaxies has a more uncertain slope ($2-3$) 
-      due to the smaller size of the subsample and, more importantly, to the smaller range in stellar mass 
+      The $M_{\rm BH} - M_{\rm *,sph}$ log-relation for the bulges of late-type (spiral) galaxies has a slope of $2-3$,
+      which is less well constrained due to
+      the smaller size of the subsample and, more importantly, the smaller range in spheroid stellar mass 
       ($3 \times 10^9 \lesssim M_{\rm *,sph}/{\rm M_\odot} \lesssim 3 \times 10^{10}$) that the subsample spans. 
       We refer to this correlation as a ``tentative'' \emph{late-type sequence}. 
       In (gas-poor) early-type galaxies, the black hole and the stellar content of the spheroidal component grow at the same pace, 
@@ -730,18 +742,32 @@ Our principal conclusions are: \\
       In (gas-rich) spiral galaxies, the black hole grows faster than its host bulge, 
       following a quadratic/cubic $M_{\rm BH} - M_{\rm *,sph}$ relation. 
       For analogy with the color-magnitude diagram, 
-      it would be tempting to refer to our \emph{early-type sequence} as a \emph{red sequence}, 
-      although no bimodality in color has been observed in the $M_{\rm BH} - M_{\rm *,sph}$ diagram.
+      it may be tempting to refer to our \emph{early-type sequence} as a \emph{red sequence} 
+      and to our \emph{late-type sequence} as a \emph{blue sequence}.
+      Future work will explore the color of spheroids and galaxies in the $M_{\rm BH} - M_{\rm *,sph}$ diagram.  
+\item The $M_{\rm BH}/M_{\rm *,sph}$ ratio for the early-type galaxies is $0.68 \pm 0.04\%$. 
+      
+
+
+was 0.49\% for core-S\'ersic galaxies.   
+Here we find a median $M_{\rm BH}/M_{\rm *,sph}$ ratio of $0.50 \pm 0.04\%$ for the 22 core-S\'ersic galaxies 
+and $0.68 \pm 0.04\%$ for the 45 early-type galaxies.  
+Among other things, this higher value (previously reported to be $0.1 - 0.2\%$ for all galaxy types, e.g.~\citealt{marconihunt2003}),  
+
+
+
+     
 \item The $M_{\rm BH} - M_{\rm *,sph}$ log-relations for core-S\'ersic and S\'ersic spheroids have slopes consistent with each other 
       ($1.19 \pm 0.23$ and $1.48 \pm 0.20$, respectively), 
-      thus these two populations do not define two distinct sequences. 
+      thus these two populations do not appear to define two distinct sequences. 
 \item In the $M_{\rm BH} - L_{\rm sph}$ (or $M_{\rm BH} - M_{\rm *,sph}$) diagram, for early-type galaxies, 
-      we did not observe the change in slope required for consistency with the $M_{\rm BH} - \sigma$ and bent $L_{\rm sph} - \sigma$ correlations.
+      we did not observe the change in slope required for consistency with the log-linear $M_{\rm BH} - \sigma$ and bent $L_{\rm sph} - \sigma$ correlations.
       This issue of inconsistency remains therefore an open question. 
-      It might be that we are still not probing enough low black hole masses ($M_{\rm BH} < 10^7\rm~M_\odot$) 
+      It might be that we are still not probing enough low-mass black holes ($M_{\rm BH} < 10^7\rm~M_\odot$) 
       for the subsample of early-type galaxies, 
-      or that the transition from  $L_{\rm sph} \propto \sigma^2$ at low luminosities to $L_{\rm sph} \propto \sigma^5$ at high luminosities 
+      or that the transition from  $L_{\rm sph} \propto \sigma^2$ at low luminosities to $L_{\rm sph} \propto \sigma^{(5-6)}$ at high luminosities 
       is less sharp than previously thought.
+      We intend to investigate this point in our future work. 
 \item Spheroids with S\'ersic index $n_{\rm sph}<2$, argued by some to be pseudo-bulges, 
       are not offset to lower $M_{\rm BH}$ from the $M_{\rm BH} - L_{\rm sph}$ correlation defined by spheroids with $n_{\rm sph}>2$. 
 \item The $M_{\rm BH} - L_{\rm gal}$ and $M_{\rm BH} - L_{\rm sph}$ correlations have the same level of intrinsic scatter 
@@ -810,7 +836,7 @@ In the last two columns, we report $\epsilon$, the intrinsic scatter, and $\Delt
 
 
 \acknowledgments
-GS warmly thanks Luca Cortese, Elisabete Lima Da Cunha, Duncan Forbes, Gonzalo Diaz and Pablo Rosado for useful discussion. \\
+GS warmly thanks Luca Cortese, Elisabete Lima Da Cunha, Duncan Forbes and Gonzalo Diaz for useful discussion. \\
 % referee thank you!!
 This research was supported by Australian Research Council funding through grants
 DP110103509 and FT110100263.

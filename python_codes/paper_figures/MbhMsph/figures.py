@@ -306,8 +306,9 @@ def mbh_vs_mass_sph_agn():
        #
         ###########################
        
-       #print 'BCES early'
-       #print 'n', len(log_mass_sph[earlytype==1])
+        print 'BCES early'
+        print 'n', len(log_mass_sph[earlytype==1])
+	print 'M_BH/M_*,sph =', np.median(10**log_mbh[earlytype==1]/10**log_mass_sph[earlytype==1]), '+-', (np.std(10**log_mbh[earlytype==1]/10**log_mass_sph[earlytype==1]))/(len(log_mass_sph[earlytype==1])-1)
        #A,B,Aerr,Berr,covAB=bces.bces(log_mass_sph[earlytype==1]-np.average(log_mass_sph[earlytype==1]),
        #	0.5*(perr_log_mass_sph[earlytype==1] + merr_log_mass_sph[earlytype==1]),
        #	log_mbh[earlytype==1],0.5*(merr_log_mbh[earlytype==1] + perr_log_mbh[earlytype==1]),log_mass_sph[earlytype==1]*[0.0])
@@ -455,81 +456,82 @@ def mbh_vs_mass_sph_agn():
        
         print 'BCES core'
         print 'n', len(log_mass_sph[core==1])
-        A,B,Aerr,Berr,covAB=bces.bces(log_mass_sph[core==1]-np.average(log_mass_sph[core==1]),
-        	0.5*(perr_log_mass_sph[core==1] + merr_log_mass_sph[core==1]),
-        	log_mbh[core==1],0.5*(merr_log_mbh[core==1] + perr_log_mbh[core==1]),log_mass_sph[core==1]*[0.0])
-        absscat_0 = absolutescatter.get_absscatter(log_mass_sph[core==1]-np.average(log_mass_sph[core==1]), log_mbh[core==1], B[0], A[0])
-        absscat_1 = absolutescatter.get_absscatter(log_mass_sph[core==1]-np.average(log_mass_sph[core==1]), log_mbh[core==1], B[1], A[1])
-        absscat_2 = absolutescatter.get_absscatter(log_mass_sph[core==1]-np.average(log_mass_sph[core==1]), log_mbh[core==1], B[2], A[2])
-        absscat_3 = absolutescatter.get_absscatter(log_mass_sph[core==1]-np.average(log_mass_sph[core==1]), log_mbh[core==1], B[3], A[3])
-        print '---------------------------------'
-        print 'y = A*(x-<x>) + B '
-        print '<x> =', np.average(log_mass_sph[core==1])
-        print
-        print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '   B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0]), 'Delta =', "{0:.2f}".format(absscat_0)
-        print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '   B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1]), 'Delta =', "{0:.2f}".format(absscat_1)
-        print 'bisector    A =', "{0:.2f}".format(A[2]), '\pm', "{0:.2f}".format(Aerr[2]), '   B = ', "{0:.2f}".format(B[2]), '\pm', "{0:.2f}".format(Berr[2]), 'Delta =', "{0:.2f}".format(absscat_2)
-        #print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '	B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3]), 'Delta =', "{0:.2f}".format(absscat_3)
-        print '---------------------------------'
-       
-        ### fit using FITEXY ###
-        print '-----------------------------'
-        print 'FITEXY core'
-        A,perr_A,merr_A,B,perr_B,merr_B = fitexy.bisect_modfitexy(log_mass_sph[core==1]-np.average(log_mass_sph[core==1]),
-        	0.5*(perr_log_mass_sph[core==1] + merr_log_mass_sph[core==1]),
-        	log_mbh[core==1],0.5*(merr_log_mbh[core==1] + perr_log_mbh[core==1]))
-        print '-----------------------------'
-        print '-----------------------------'
-       
-        ### produce .dat file
-        datfileName = '/Users/gsavorgnan/galaxy_vivisection/data/marconi_fit/mbh_vs_mass_sph_core.dat'
-        datfile = open(datfileName, 'w')
-        datfile.write('# logMassSph err_logMassSph logMassBH err_logMassBH \n')
-        for logMassSph, err_logMassSph, logMassBH, err_logMassBH in zip(log_mass_sph[core==1]-np.average(log_mass_sph[core==1]),
-        	0.5*(perr_log_mass_sph[core==1] + merr_log_mass_sph[core==1]),
-        	log_mbh[core==1],0.5*(merr_log_mbh[core==1] + perr_log_mbh[core==1])):
-        	datfile.write(str(logMassSph) + ' ' + str(err_logMassSph) + ' ' + str(logMassBH) + ' ' + str(err_logMassBH) + ' ' + '\n')
-        datfile.close()
-       
-        ############################
-       
-        print 'BCES Sersic'
-        print 'n', len(log_mass_sph[core==0])
-        A,B,Aerr,Berr,covAB=bces.bces(log_mass_sph[core==0]-np.average(log_mass_sph[core==0]),
-        	0.5*(perr_log_mass_sph[core==0] + merr_log_mass_sph[core==0]),
-        	log_mbh[core==0],0.5*(merr_log_mbh[core==0] + perr_log_mbh[core==0]),log_mass_sph[core==0]*[0.0])
-        absscat_0 = absolutescatter.get_absscatter(log_mass_sph[core==0]-np.average(log_mass_sph[core==0]), log_mbh[core==0], B[0], A[0])
-        absscat_1 = absolutescatter.get_absscatter(log_mass_sph[core==0]-np.average(log_mass_sph[core==0]), log_mbh[core==0], B[1], A[1])
-        absscat_2 = absolutescatter.get_absscatter(log_mass_sph[core==0]-np.average(log_mass_sph[core==0]), log_mbh[core==0], B[2], A[2])
-        absscat_3 = absolutescatter.get_absscatter(log_mass_sph[core==0]-np.average(log_mass_sph[core==0]), log_mbh[core==0], B[3], A[3])
-        print '---------------------------------'
-        print 'y = A*(x-<x>) + B '
-        print '<x> =', np.average(log_mass_sph[core==0])
-        print
-        print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '   B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0]), 'Delta =', "{0:.2f}".format(absscat_0)
-        print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '   B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1]), 'Delta =', "{0:.2f}".format(absscat_1)
-        print 'bisector    A =', "{0:.2f}".format(A[2]), '\pm', "{0:.2f}".format(Aerr[2]), '   B = ', "{0:.2f}".format(B[2]), '\pm', "{0:.2f}".format(Berr[2]), 'Delta =', "{0:.2f}".format(absscat_2)
-        #print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '	B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3]), 'Delta =', "{0:.2f}".format(absscat_3)
-        print '---------------------------------'
-       
-        ### fit using FITEXY ###
-        print '-----------------------------'
-        print 'FITEXY Sersic'
-        A,perr_A,merr_A,B,perr_B,merr_B = fitexy.bisect_modfitexy(log_mass_sph[core==0]-np.average(log_mass_sph[core==0]),
-        	0.5*(perr_log_mass_sph[core==0] + merr_log_mass_sph[core==0]),
-        	log_mbh[core==0],0.5*(merr_log_mbh[core==0] + perr_log_mbh[core==0]))
-        print '-----------------------------'
-        print '-----------------------------'
-       
-        ### produce .dat file
-        datfileName = '/Users/gsavorgnan/galaxy_vivisection/data/marconi_fit/mbh_vs_mass_sph_sersic.dat'
-        datfile = open(datfileName, 'w')
-        datfile.write('# logMassSph err_logMassSph logMassBH err_logMassBH \n')
-        for logMassSph, err_logMassSph, logMassBH, err_logMassBH in zip(log_mass_sph[core==0]-np.average(log_mass_sph[core==0]),
-        	0.5*(perr_log_mass_sph[core==0] + merr_log_mass_sph[core==0]),
-        	log_mbh[core==0],0.5*(merr_log_mbh[core==0] + perr_log_mbh[core==0])):
-        	datfile.write(str(logMassSph) + ' ' + str(err_logMassSph) + ' ' + str(logMassBH) + ' ' + str(err_logMassBH) + ' ' + '\n')
-        datfile.close()
+	print 'M_BH/M_*,sph =', np.median(10**log_mbh[core==1]/10**log_mass_sph[core==1]), '+-', (np.std(10**log_mbh[core==1]/10**log_mass_sph[core==1]))/(len(log_mass_sph[core==1])-1)
+       #A,B,Aerr,Berr,covAB=bces.bces(log_mass_sph[core==1]-np.average(log_mass_sph[core==1]),
+       #	0.5*(perr_log_mass_sph[core==1] + merr_log_mass_sph[core==1]),
+       #	log_mbh[core==1],0.5*(merr_log_mbh[core==1] + perr_log_mbh[core==1]),log_mass_sph[core==1]*[0.0])
+       #absscat_0 = absolutescatter.get_absscatter(log_mass_sph[core==1]-np.average(log_mass_sph[core==1]), log_mbh[core==1], B[0], A[0])
+       #absscat_1 = absolutescatter.get_absscatter(log_mass_sph[core==1]-np.average(log_mass_sph[core==1]), log_mbh[core==1], B[1], A[1])
+       #absscat_2 = absolutescatter.get_absscatter(log_mass_sph[core==1]-np.average(log_mass_sph[core==1]), log_mbh[core==1], B[2], A[2])
+       #absscat_3 = absolutescatter.get_absscatter(log_mass_sph[core==1]-np.average(log_mass_sph[core==1]), log_mbh[core==1], B[3], A[3])
+       #print '---------------------------------'
+       #print 'y = A*(x-<x>) + B '
+       #print '<x> =', np.average(log_mass_sph[core==1])
+       #print
+       #print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '   B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0]), 'Delta =', "{0:.2f}".format(absscat_0)
+       #print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '   B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1]), 'Delta =', "{0:.2f}".format(absscat_1)
+       #print 'bisector    A =', "{0:.2f}".format(A[2]), '\pm', "{0:.2f}".format(Aerr[2]), '   B = ', "{0:.2f}".format(B[2]), '\pm', "{0:.2f}".format(Berr[2]), 'Delta =', "{0:.2f}".format(absscat_2)
+       ##print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '	B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3]), 'Delta =', "{0:.2f}".format(absscat_3)
+       #print '---------------------------------'
+       #
+       #### fit using FITEXY ###
+       #print '-----------------------------'
+       #print 'FITEXY core'
+       #A,perr_A,merr_A,B,perr_B,merr_B = fitexy.bisect_modfitexy(log_mass_sph[core==1]-np.average(log_mass_sph[core==1]),
+       #	0.5*(perr_log_mass_sph[core==1] + merr_log_mass_sph[core==1]),
+       #	log_mbh[core==1],0.5*(merr_log_mbh[core==1] + perr_log_mbh[core==1]))
+       #print '-----------------------------'
+       #print '-----------------------------'
+       #
+       #### produce .dat file
+       #datfileName = '/Users/gsavorgnan/galaxy_vivisection/data/marconi_fit/mbh_vs_mass_sph_core.dat'
+       #datfile = open(datfileName, 'w')
+       #datfile.write('# logMassSph err_logMassSph logMassBH err_logMassBH \n')
+       #for logMassSph, err_logMassSph, logMassBH, err_logMassBH in zip(log_mass_sph[core==1]-np.average(log_mass_sph[core==1]),
+       #	0.5*(perr_log_mass_sph[core==1] + merr_log_mass_sph[core==1]),
+       #	log_mbh[core==1],0.5*(merr_log_mbh[core==1] + perr_log_mbh[core==1])):
+       #	datfile.write(str(logMassSph) + ' ' + str(err_logMassSph) + ' ' + str(logMassBH) + ' ' + str(err_logMassBH) + ' ' + '\n')
+       #datfile.close()
+       #
+       #############################
+       #
+       #print 'BCES Sersic'
+       #print 'n', len(log_mass_sph[core==0])
+       #A,B,Aerr,Berr,covAB=bces.bces(log_mass_sph[core==0]-np.average(log_mass_sph[core==0]),
+       #	0.5*(perr_log_mass_sph[core==0] + merr_log_mass_sph[core==0]),
+       #	log_mbh[core==0],0.5*(merr_log_mbh[core==0] + perr_log_mbh[core==0]),log_mass_sph[core==0]*[0.0])
+       #absscat_0 = absolutescatter.get_absscatter(log_mass_sph[core==0]-np.average(log_mass_sph[core==0]), log_mbh[core==0], B[0], A[0])
+       #absscat_1 = absolutescatter.get_absscatter(log_mass_sph[core==0]-np.average(log_mass_sph[core==0]), log_mbh[core==0], B[1], A[1])
+       #absscat_2 = absolutescatter.get_absscatter(log_mass_sph[core==0]-np.average(log_mass_sph[core==0]), log_mbh[core==0], B[2], A[2])
+       #absscat_3 = absolutescatter.get_absscatter(log_mass_sph[core==0]-np.average(log_mass_sph[core==0]), log_mbh[core==0], B[3], A[3])
+       #print '---------------------------------'
+       #print 'y = A*(x-<x>) + B '
+       #print '<x> =', np.average(log_mass_sph[core==0])
+       #print
+       #print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '   B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0]), 'Delta =', "{0:.2f}".format(absscat_0)
+       #print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '   B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1]), 'Delta =', "{0:.2f}".format(absscat_1)
+       #print 'bisector    A =', "{0:.2f}".format(A[2]), '\pm', "{0:.2f}".format(Aerr[2]), '   B = ', "{0:.2f}".format(B[2]), '\pm', "{0:.2f}".format(Berr[2]), 'Delta =', "{0:.2f}".format(absscat_2)
+       ##print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '	B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3]), 'Delta =', "{0:.2f}".format(absscat_3)
+       #print '---------------------------------'
+       #
+       #### fit using FITEXY ###
+       #print '-----------------------------'
+       #print 'FITEXY Sersic'
+       #A,perr_A,merr_A,B,perr_B,merr_B = fitexy.bisect_modfitexy(log_mass_sph[core==0]-np.average(log_mass_sph[core==0]),
+       #	0.5*(perr_log_mass_sph[core==0] + merr_log_mass_sph[core==0]),
+       #	log_mbh[core==0],0.5*(merr_log_mbh[core==0] + perr_log_mbh[core==0]))
+       #print '-----------------------------'
+       #print '-----------------------------'
+       #
+       #### produce .dat file
+       #datfileName = '/Users/gsavorgnan/galaxy_vivisection/data/marconi_fit/mbh_vs_mass_sph_sersic.dat'
+       #datfile = open(datfileName, 'w')
+       #datfile.write('# logMassSph err_logMassSph logMassBH err_logMassBH \n')
+       #for logMassSph, err_logMassSph, logMassBH, err_logMassBH in zip(log_mass_sph[core==0]-np.average(log_mass_sph[core==0]),
+       #	0.5*(perr_log_mass_sph[core==0] + merr_log_mass_sph[core==0]),
+       #	log_mbh[core==0],0.5*(merr_log_mbh[core==0] + perr_log_mbh[core==0])):
+       #	datfile.write(str(logMassSph) + ' ' + str(err_logMassSph) + ' ' + str(logMassBH) + ' ' + str(err_logMassBH) + ' ' + '\n')
+       #datfile.close()
        
         ############################
        
@@ -825,8 +827,8 @@ def mbh_vs_mass_sph():
         plt.xlabel(r'$M_{\rm *,sph}\rm~[M_\odot]$', labelpad=13)
         plt.ylabel(r'$M_{\rm BH} \rm ~[M_\odot]$', labelpad=13)
 	plt.subplots_adjust(left=0.15,bottom=0.15,right=0.97,top=0.9)
-        #plt.show()
-	plt.savefig(path_paper_figures + 'mbh_vs_mass_sph.pdf', format='pdf', dpi=1000)
+        plt.show()
+	#plt.savefig(path_paper_figures + 'mbh_vs_mass_sph.pdf', format='pdf', dpi=1000)
 
 
 def mbh_vs_mag_sph_psb():
@@ -2326,17 +2328,17 @@ def mbh_vs_mass_sph_galsymb_agn():
         plt.xlabel(r'spheroid stellar mass $[\rm M_\odot]$', labelpad=13)
         plt.ylabel(r'black hole mass $[\rm M_\odot]$', labelpad=13)
 	plt.subplots_adjust(left=0.15,bottom=0.17,right=0.97,top=0.9)
-        #plt.show()
-	plt.savefig(path_paper_figures + 'mbh_vs_mass_sph_galsymb_agn.pdf', format='pdf', dpi=1000)
+        plt.show()
+	#plt.savefig(path_paper_figures + 'mbh_vs_mass_sph_galsymb_agn.pdf', format='pdf', dpi=1000)
 
 	
 		
 		
 def main():
 	#mag_lit_vs_mag_my()
-	#mbh_vs_mass_sph_agn()
+	mbh_vs_mass_sph_agn()
 	#mbh_vs_mass_sph()
-	mbh_vs_mag_sph_psb()
+	#mbh_vs_mag_sph_psb()
 	#inset_psb()
 	#mbh_vs_mag_tot()
 	#mbh_vs_mag_sph()
