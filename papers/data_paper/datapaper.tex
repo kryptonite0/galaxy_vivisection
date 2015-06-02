@@ -2125,7 +2125,33 @@ and bulge magnitudes are 0.36 mag fainter when additional components (other than
   \clearpage\newpage\noindent
   {\bf NGC 1374 \\}
 
-  ok
+  \begin{figure}[h]
+  \begin{center}
+  \includegraphics[width=\fitfigurewidth]{images/n1374_1Dfit.eps}
+  \caption{Best-fit model and isophotal parameters for NGC 1374.
+  NGC 1374 is an elliptical galaxy. 
+  A Gaussian function in our model accounts for a relatively faint nuclear component. 
+  }
+  \end{center}
+  \end{figure}
+
+  \begin{table}[h]
+  \small
+  \caption{Best-fit parameters for the spheroidal component of NGC 1374.}
+  \begin{center}
+  \begin{tabular}{llcc}
+  \hline
+  {\bf Work} & {\bf Model}   & $\bm R_{\rm e,sph}$    & $\bm n_{\rm sph}$ \\
+    &  &  $[\rm arcsec]$ & \\
+  \hline
+  T.W. 1D maj. & S-bul + G-n & $25.6$  &  $3.7$ \\
+  T.W. 1D eq.  & S-bul + G-n & $24.8$  &  $4.1$ \\
+  T.W. 2D      & S-bul + m-n & $25.2$  &  $3.7$ \\
+  \hline
+  \end{tabular}
+  \end{center}
+  \label{tab:n1374}
+  \end{table}
 
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2441,14 +2467,42 @@ and bulge magnitudes are 0.36 mag fainter when additional components (other than
     
   {\bf NGC 3079 \\}
 
-  inner component?? ok fuck it
-
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n3079_1Dfit.eps}
-  \caption{Best-fit model and isophotal parameters for NGC 3079.}
+  \caption{Best-fit model and isophotal parameters for NGC 3079.
+  NGC3079 is an edge-on, late-type barred spiral galaxy 
+  with a Seyfert AGN \citep{veroncettyveron2006} and circumnuclear dust \citep{martini2003}. 
+  The bar extends out to $R_{\rm maj} \lesssim 70''$. 
+  We truncate the light profile at $R_{\rm maj} \sim 65''$, before the ``edge'' of the bar, 
+  and we model the combination of the disk and the bar with a Ferrer function. 
+  A Gaussian function accounts for the AGN emission. 
+  }
   \end{center}
   \end{figure}
+  
+  \begin{table}[h]
+  \small
+  \caption{Best-fit parameters for the spheroidal component of NGC 2974.}
+  \begin{center}
+  \begin{tabular}{llcc}
+  \hline
+  {\bf Work} & {\bf Model}   & $\bm R_{\rm e,sph}$    & $\bm n_{\rm sph}$ \\
+    &  &  $[\rm arcsec]$ & \\
+  \hline
+  T.W. 1D maj. & S-bul + F-(bar+d) + G-n  & $6.8$  &  $1.3$ \\
+  T.W. 1D eq.  & S-bul + F-(bar+d) + G-n  & $4.3$  &  $1.1$ \\
+  \hline
+  S+11         & S-bul + e-d + G-bar + G-n & $74.1$  &  $2.0$ \\
+  \hline
+  \end{tabular}
+  \end{center}
+  \label{tab:n2974}
+  \tablecomments{
+  It is not clear why S+11 obtained a dramatically larger bulge effective radius. 
+  }
+  \end{table}
+
 
 
 
@@ -2661,10 +2715,48 @@ and bulge magnitudes are 0.36 mag fainter when additional components (other than
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n3377_1Dfit.eps}
-  \caption{Best-fit model and isophotal parameters for NGC 3377.}
+  \caption{Best-fit model and isophotal parameters for NGC 3377.
+  NGC 3377 is an elliptical/lenticular galaxy with an intermediate-scale disk and a nuclear stellar disk. 
+  }
   \end{center}
   \end{figure}
-
+  
+  \begin{table}[h]
+  \small
+  \caption{Best-fit parameters for the spheroidal component of NGC 3384.}
+  \begin{center}
+  \begin{tabular}{llcc}
+  \hline
+  {\bf Work} & {\bf Model}   & $\bm R_{\rm e,sph}$    & $\bm n_{\rm sph}$ \\
+    &  &  $[\rm arcsec]$ & \\
+  \hline
+  T.W. 1D maj. & S-bul + 2 e-id     & $61.8$  &  $7.7$ \\
+  T.W. 1D eq.  & S-bul + 2 e-id     & $91.7$  &  $9.2$ \\
+  T.W. 2D      & S-bul + e-id + m-n & $71.8$  &  $3.7$ \\
+  \hline
+  GD07         & S-bul     		     & $44.1$  &  $3.0$ \\
+  S+11         & S-bul     		     & $55.2$  &  $6.0$ \\
+  B+12         & S-bul     		     & $43.5$  &  $3.5$ \\
+  L+14         & S-bul + e-id + e-d + S-halo & $10.1$  &  $6.0$ \\
+  \hline
+  \end{tabular}
+  \end{center}
+  \label{tab:n3384}
+  \end{table}
+  
+  The morphology of NGC3377 is similar to NGC0821. 
+  The unsharp mask reveals an embedded disc and the extended velocity field confirms that 
+  it is not a large-scale disc. 
+  The residual image from a 2D single S\'ersic fit diplays the unsubtracted embedded disc
+  and an additional nuclear ($\lesssim 10''$) component.
+  The embedded disc is very close to edge-on.
+  In the 2D fit we adopt a S\'ersic + edge-on disc model, after masking the third nuclear component. 
+  In the 1D fit we are not able to model the embedded disc with an exponential function, 
+  probably because of the orientation of the disc. 
+  The best results are obtained when a Ferrer function is employed. 
+  We tried to model the nuclear cusp with a PSF or a gaussian function. The gaussian function parameters
+  resulted highly degenerate with the Ferrer function parameters, leading us to prefer a PSF profile. \\
+ 
 
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
