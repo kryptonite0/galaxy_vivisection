@@ -1948,14 +1948,45 @@ and bulge magnitudes are 0.36 mag fainter when additional components (other than
 
   {\bf NGC 0821 \\}
 
-  ok
-
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n0821_1Dfit.eps}
-  \caption{Best-fit model and isophotal parameters for NGC 0821.}
+  \caption{Best-fit model and isophotal parameters for NGC 0821.
+  NGC 0821 is an edge-on elliptical/lenticular galaxy. 
+  The ellipticity profile and the velocity map show the presence of a faint intermediate-scale disk. 
+  Given its edge-on inclination, the disk is modeled with a low-$n$ S\'ersic function.   
+  }
   \end{center}
   \end{figure}
+  
+  \begin{table}[h]
+  \small
+  \caption{Best-fit parameters for the spheroidal component of NGC 0821.}
+  \begin{center}
+  \begin{tabular}{llcc}
+  \hline
+  {\bf Work} & {\bf Model}   & $\bm R_{\rm e,sph}$    & $\bm n_{\rm sph}$ \\
+    &  &  $[\rm arcsec]$ & \\
+  \hline
+  T.W. 1D maj. & S-bul + e-id + PSF-n & $36.8$  &  $5.4$ \\
+  T.W. 1D eq.  & S-bul + e-id + PSF-n & $20.7$  &  $6.0$ \\
+  T.W. 2D      & S-bul + e-id + m-n   & $33.8$  &  $2.5$ \\
+  \hline
+  GD07    & S-bul 		 & $44.1$   &  $4.0$ \\           
+  S+11    & S-bul 		 & $63.6$   &  $7.0$ \\           
+  B+12    & S-bul 		 & $111.3$  &  $7.7$ \\           
+  L+14    & S-bul + e-d + S-halo & $3.8$    &  $3.1$ \\
+  \hline
+  \end{tabular}
+  \end{center}
+  \label{tab:n0821}
+  \tablecomments{
+  L+14 obtained the smallest estimates of the spheroid effective radius and S\'ersic index because they failed to identify the extent 
+  of the intermediate-scale disk. 
+  Inaccurate sky subtraction could be the reason why B+12 obtained a large estimate of the effective radius.
+  }
+  \end{table}
+
 
 
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2093,12 +2124,31 @@ and bulge magnitudes are 0.36 mag fainter when additional components (other than
   \clearpage\newpage\noindent
   {\bf NGC 1332 \\}
 
-  ok
+  Our equivalent-axis decomposition returns a spheroidal component accounting for 95\% of the total light,
+  and an embedded disk accounting for the remaining 5\%.
+  In passing, we note that the bulge-disk decomposition performed by \citet{rusli2011} on NGC 1332 
+  is significantly different from our best-fit model.
+  \citet{rusli2011} did not identify an intermediate-scale embedded disk, 
+  but instead proposed a model featuring a S\'ersic bulge ($n_{\rm sph} \sim 2.3$, $R_{\rm e,sph} \sim 8''$), accounting for 43\% of the total light, 
+  and a large-scale exponential disk. 
+  This result led them to the conclusion that NGC 1332 is a disk dominated lenticular galaxy 
+  and is displaced from the $M_{\rm BH} - L_{\rm K,sph}$ (black hole mass vs. $K$-band spheroid luminosity) relation of \citet{marconihunt2003} 
+  by an order of magnitude along the $M_{\rm BH}$ direction.
+  Assuming instead that, as follows from our model, 
+  the galaxy spheroid is a factor of two more luminous than what claimed by \citet{rusli2011}, 
+  NGC 1332 would no longer be an outlier in our $M_{\rm BH} - L_{\rm sph}$ diagram. \\
+
 
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n1332_1Dfit.eps}
-  \caption{Best-fit model and isophotal parameters for NGC 1332.}
+  \caption{Best-fit model and isophotal parameters for NGC 1332.
+  NGC 1332 is an edge-on elliptical/lenticular galaxy. 
+  Given its large stellar velocity dispersion, this galaxy is expected to host a partially depleted core. 
+  The ellipticity profile proves the presence of an intermediate-scale disk. 
+  Given the edge-on inclination of such disk, we model it with a low-$n$ S\'ersic profile. 
+  The data within the innermost $6''.1$ are excluded from the fit.
+  }
   \end{center}
   \end{figure}
 
