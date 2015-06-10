@@ -774,57 +774,57 @@ def mbh_vs_mass_sph_galsymb_agn():
 	ax.scatter(mass_sph[simplemorphtype=='merger'], mbh[simplemorphtype=='merger'], marker=r'$\star$', s=500, color='k', **scatter_kwargs)	
 		
 	
-	print 'early'
-	print 'n', len(log_mass_sph[earlytype==1])
-        A,B,Aerr,Berr,covAB=bces.bces(log_mass_sph[earlytype==1]-np.average(log_mass_sph[earlytype==1]),
-		0.5*(perr_log_mass_sph[earlytype==1] + merr_log_mass_sph[earlytype==1]),
-        	log_mbh[earlytype==1],0.5*(merr_log_mbh[earlytype==1] + perr_log_mbh[earlytype==1]),log_mass_sph[earlytype==1]*[0.0])
-        print '---------------------------------'
-        print 'y = A*(x-<x>) + B '
-        print '<x> =', np.average(log_mass_sph[earlytype==1])
-        print
-        #print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '   B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0])
-        #print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '   B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1])
-        print 'bisector    A =', "{0:.2f}".format(A[2]), '\pm', "{0:.2f}".format(Aerr[2]), '   B = ', "{0:.2f}".format(B[2]), '\pm', "{0:.2f}".format(Berr[2])
-        #print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '   B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3])
-        print '---------------------------------'
-       
-        logxx = np.arange(-10,20,0.1)
-        yy = (A[2]*(logxx) + B[2])
-        ax.plot(10**(logxx+np.average(log_mass_sph[earlytype==1])),10**yy, color='r', ls='--', linewidth=2.)
-	#colorline.colorline(10**(logxx+np.average(log_mass_sph[earlytype==1])), 10**yy, cmap=green_red)
-	
-	##### calculates 1sigma uncertainty band
-	yy_1 = ((A[2]+Aerr[2])*(logxx) + (B[2]+Berr[2]))
-	yy_2 = ((A[2]-Aerr[2])*(logxx) + (B[2]+Berr[2]))
-	yy_3 = ((A[2]+Aerr[2])*(logxx) + (B[2]-Berr[2]))
-	yy_4 = ((A[2]-Aerr[2])*(logxx) + (B[2]-Berr[2]))
-	yy_up = yy_1*[0.0]
-	for i in range(len(yy_1)):
-		if yy_1[i] > yy_2[i]:
-			yy_up[i] = yy_1[i]
-		elif yy_1[i] <= yy_2[i]:
-			yy_up[i] = yy_2[i]	
-	yy_up = np.asarray(yy_up)
-	yy_lo = yy_1*[0.0]
-	for i in range(len(yy_3)):
-		if yy_3[i] < yy_4[i]:
-			yy_lo[i] = yy_3[i]
-		elif yy_3[i] >= yy_4[i]:
-			yy_lo[i] = yy_4[i]	
-	yy_lo = np.asarray(yy_lo)
-				
-	ax.fill_between(10**(logxx+np.average(log_mass_sph[earlytype==1])), 10**yy_lo, 10**yy_up, alpha=0.3, facecolor='r')
-	
-	##### calculates the prediction bands for the given input arrays
-        #lpb68,upb68,logxx = predband.predband(log_mass_sph[earlytype==1]-np.average(log_mass_sph[earlytype==1]),log_mbh[earlytype==1],A[2],B[2],conf=0.68,x=logxx)
-        #lpb95,upb95,logxx = predband.predband(log_mass_sph[earlytype==1]-np.average(log_mass_sph[earlytype==1]),log_mbh[earlytype==1],A[2],B[2],conf=0.95,x=logxx)
-        #lpb99,upb99,logxx = predband.predband(log_mass_sph[earlytype==1]-np.average(log_mass_sph[earlytype==1]),log_mbh[earlytype==1],A[2],B[2],conf=0.99,x=logxx)
-        #### plots a shaded area containing the prediction band  
-        #ax.fill_between(10**(logxx+np.average(log_mass_sph[earlytype==1])), 10**lpb68, 10**upb68, alpha=0.1, facecolor='r')
-        #ax.fill_between(10**(logxx+np.average(log_mass_sph[earlytype==1])), 10**lpb95, 10**upb95, alpha=0.07, facecolor='r')
-        #ax.fill_between(10**(logxx+np.average(log_mass_sph[earlytype==1])), 10**lpb99, 10**upb99, alpha=0.04, facecolor='r')
-	
+       #print 'early'
+       #print 'n', len(log_mass_sph[earlytype==1])
+       #A,B,Aerr,Berr,covAB=bces.bces(log_mass_sph[earlytype==1]-np.average(log_mass_sph[earlytype==1]),
+       #	0.5*(perr_log_mass_sph[earlytype==1] + merr_log_mass_sph[earlytype==1]),
+       #	log_mbh[earlytype==1],0.5*(merr_log_mbh[earlytype==1] + perr_log_mbh[earlytype==1]),log_mass_sph[earlytype==1]*[0.0])
+       #print '---------------------------------'
+       #print 'y = A*(x-<x>) + B '
+       #print '<x> =', np.average(log_mass_sph[earlytype==1])
+       #print
+       ##print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '	B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0])
+       ##print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '	B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1])
+       #print 'bisector    A =', "{0:.2f}".format(A[2]), '\pm', "{0:.2f}".format(Aerr[2]), '   B = ', "{0:.2f}".format(B[2]), '\pm', "{0:.2f}".format(Berr[2])
+       ##print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '	B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3])
+       #print '---------------------------------'
+       #
+       #logxx = np.arange(-10,20,0.1)
+       #yy = (A[2]*(logxx) + B[2])
+       #ax.plot(10**(logxx+np.average(log_mass_sph[earlytype==1])),10**yy, color='r', ls='--', linewidth=2.)
+       ##colorline.colorline(10**(logxx+np.average(log_mass_sph[earlytype==1])), 10**yy, cmap=green_red)
+       #
+       ###### calculates 1sigma uncertainty band
+       #yy_1 = ((A[2]+Aerr[2])*(logxx) + (B[2]+Berr[2]))
+       #yy_2 = ((A[2]-Aerr[2])*(logxx) + (B[2]+Berr[2]))
+       #yy_3 = ((A[2]+Aerr[2])*(logxx) + (B[2]-Berr[2]))
+       #yy_4 = ((A[2]-Aerr[2])*(logxx) + (B[2]-Berr[2]))
+       #yy_up = yy_1*[0.0]
+       #for i in range(len(yy_1)):
+       #	if yy_1[i] > yy_2[i]:
+       #		yy_up[i] = yy_1[i]
+       #	elif yy_1[i] <= yy_2[i]:
+       #		yy_up[i] = yy_2[i]	
+       #yy_up = np.asarray(yy_up)
+       #yy_lo = yy_1*[0.0]
+       #for i in range(len(yy_3)):
+       #	if yy_3[i] < yy_4[i]:
+       #		yy_lo[i] = yy_3[i]
+       #	elif yy_3[i] >= yy_4[i]:
+       #		yy_lo[i] = yy_4[i]	
+       #yy_lo = np.asarray(yy_lo)
+       #			
+       #ax.fill_between(10**(logxx+np.average(log_mass_sph[earlytype==1])), 10**yy_lo, 10**yy_up, alpha=0.3, facecolor='r')
+       #
+       ###### calculates the prediction bands for the given input arrays
+       ##lpb68,upb68,logxx = predband.predband(log_mass_sph[earlytype==1]-np.average(log_mass_sph[earlytype==1]),log_mbh[earlytype==1],A[2],B[2],conf=0.68,x=logxx)
+       ##lpb95,upb95,logxx = predband.predband(log_mass_sph[earlytype==1]-np.average(log_mass_sph[earlytype==1]),log_mbh[earlytype==1],A[2],B[2],conf=0.95,x=logxx)
+       ##lpb99,upb99,logxx = predband.predband(log_mass_sph[earlytype==1]-np.average(log_mass_sph[earlytype==1]),log_mbh[earlytype==1],A[2],B[2],conf=0.99,x=logxx)
+       ##### plots a shaded area containing the prediction band  
+       ##ax.fill_between(10**(logxx+np.average(log_mass_sph[earlytype==1])), 10**lpb68, 10**upb68, alpha=0.1, facecolor='r')
+       ##ax.fill_between(10**(logxx+np.average(log_mass_sph[earlytype==1])), 10**lpb95, 10**upb95, alpha=0.07, facecolor='r')
+       ##ax.fill_between(10**(logxx+np.average(log_mass_sph[earlytype==1])), 10**lpb99, 10**upb99, alpha=0.04, facecolor='r')
+       #
        #print 'sersic bul'
        #print 'n', len(log_mass_sph[BUL_sersic==1])
        #A,B,Aerr,Berr,covAB=bces.bces(log_mass_sph[BUL_sersic==1]-np.average(log_mass_sph[BUL_sersic==1]),
@@ -834,10 +834,10 @@ def mbh_vs_mass_sph_galsymb_agn():
        #print 'y = A*(x-<x>) + B '
        #print '<x> =', np.average(log_mass_sph[BUL_sersic==1])
        #print
-       ##print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '   B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0])
-       ##print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '   B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1])
+       ##print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '	B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0])
+       ##print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '	B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1])
        #print 'bisector    A =', "{0:.2f}".format(A[2]), '\pm', "{0:.2f}".format(Aerr[2]), '   B = ', "{0:.2f}".format(B[2]), '\pm', "{0:.2f}".format(Berr[2])
-       ##print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '   B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3])
+       ##print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '	B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3])
        #print '---------------------------------'
        #
        #logxx = np.arange(-10,20,0.1)
@@ -852,47 +852,47 @@ def mbh_vs_mass_sph_galsymb_agn():
        #ax.fill_between(10**(logxx+np.average(log_mass_sph[BUL_sersic==1])), 10**lpb68, 10**upb68, alpha=0.1, facecolor='b')
        ##ax.fill_between(10**(logxx+np.average(log_mass_sph[morph_core=='E_1'])), 10**lpb95, 10**upb95, alpha=0.07, facecolor='r')
        ##ax.fill_between(10**(logxx+np.average(log_mass_sph[morph_core=='E_1'])), 10**lpb99, 10**upb99, alpha=0.04, facecolor='r')
-        
-        print 'sersic bul of spi'
-        print 'n', len(log_mass_sph[morph_core=='Sp_0'])
-        A,B,Aerr,Berr,covAB=bces.bces(log_mass_sph[morph_core=='Sp_0']-np.average(log_mass_sph[morph_core=='Sp_0']),
-		0.5*(perr_log_mass_sph[morph_core=='Sp_0'] + merr_log_mass_sph[morph_core=='Sp_0']),
-        	log_mbh[morph_core=='Sp_0'],0.5*(merr_log_mbh[morph_core=='Sp_0'] + perr_log_mbh[morph_core=='Sp_0']),log_mass_sph[morph_core=='Sp_0']*[0.0])
-        print '---------------------------------'
-        print 'y = A*(x-<x>) + B '
-        print '<x> =', np.average(log_mass_sph[morph_core=='Sp_0'])
-        print
-        #print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '   B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0])
-        #print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '   B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1])
-        print 'bisector    A =', "{0:.2f}".format(A[2]), '\pm', "{0:.2f}".format(Aerr[2]), '   B = ', "{0:.2f}".format(B[2]), '\pm', "{0:.2f}".format(Berr[2])
-        #print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '   B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3])
-        print '---------------------------------'
-       
-        logxx = np.arange(-10,20,0.1)
-        yy = (A[2]*(logxx) + B[2])
-        ax.plot(10**(logxx+np.average(log_mass_sph[morph_core=='Sp_0'])),10**yy, color='b', ls='-', linewidth=2.)
-	
-	##### calculates 1sigma uncertainty band
-	yy_1 = ((A[2]+Aerr[2])*(logxx) + (B[2]+Berr[2]))
-	yy_2 = ((A[2]-Aerr[2])*(logxx) + (B[2]+Berr[2]))
-	yy_3 = ((A[2]+Aerr[2])*(logxx) + (B[2]-Berr[2]))
-	yy_4 = ((A[2]-Aerr[2])*(logxx) + (B[2]-Berr[2]))
-	yy_up = yy_1*[0.0]
-	for i in range(len(yy_1)):
-		if yy_1[i] > yy_2[i]:
-			yy_up[i] = yy_1[i]
-		elif yy_1[i] <= yy_2[i]:
-			yy_up[i] = yy_2[i]	
-	yy_up = np.asarray(yy_up)
-	yy_lo = yy_1*[0.0]
-	for i in range(len(yy_3)):
-		if yy_3[i] < yy_4[i]:
-			yy_lo[i] = yy_3[i]
-		elif yy_3[i] >= yy_4[i]:
-			yy_lo[i] = yy_4[i]	
-	yy_lo = np.asarray(yy_lo)
-				
-	ax.fill_between(10**(logxx+np.average(log_mass_sph[morph_core=='Sp_0'])), 10**yy_lo, 10**yy_up, alpha=0.2, facecolor='b')
+       #
+       #print 'sersic bul of spi'
+       #print 'n', len(log_mass_sph[morph_core=='Sp_0'])
+       #A,B,Aerr,Berr,covAB=bces.bces(log_mass_sph[morph_core=='Sp_0']-np.average(log_mass_sph[morph_core=='Sp_0']),
+       #	0.5*(perr_log_mass_sph[morph_core=='Sp_0'] + merr_log_mass_sph[morph_core=='Sp_0']),
+       #	log_mbh[morph_core=='Sp_0'],0.5*(merr_log_mbh[morph_core=='Sp_0'] + perr_log_mbh[morph_core=='Sp_0']),log_mass_sph[morph_core=='Sp_0']*[0.0])
+       #print '---------------------------------'
+       #print 'y = A*(x-<x>) + B '
+       #print '<x> =', np.average(log_mass_sph[morph_core=='Sp_0'])
+       #print
+       ##print 'OLS(Y|X)    A =', "{0:.2f}".format(A[0]), '\pm', "{0:.2f}".format(Aerr[0]), '	B = ', "{0:.2f}".format(B[0]), '\pm', "{0:.2f}".format(Berr[0])
+       ##print 'OLS(X|Y)    A =', "{0:.2f}".format(A[1]), '\pm', "{0:.2f}".format(Aerr[1]), '	B = ', "{0:.2f}".format(B[1]), '\pm', "{0:.2f}".format(Berr[1])
+       #print 'bisector    A =', "{0:.2f}".format(A[2]), '\pm', "{0:.2f}".format(Aerr[2]), '   B = ', "{0:.2f}".format(B[2]), '\pm', "{0:.2f}".format(Berr[2])
+       ##print 'orthogonal  A =', "{0:.2f}".format(A[3]), '\pm', "{0:.2f}".format(Aerr[3]), '	B = ', "{0:.2f}".format(B[3]), '\pm', "{0:.2f}".format(Berr[3])
+       #print '---------------------------------'
+       #
+       #logxx = np.arange(-10,20,0.1)
+       #yy = (A[2]*(logxx) + B[2])
+       #ax.plot(10**(logxx+np.average(log_mass_sph[morph_core=='Sp_0'])),10**yy, color='b', ls='-', linewidth=2.)
+       #
+       ###### calculates 1sigma uncertainty band
+       #yy_1 = ((A[2]+Aerr[2])*(logxx) + (B[2]+Berr[2]))
+       #yy_2 = ((A[2]-Aerr[2])*(logxx) + (B[2]+Berr[2]))
+       #yy_3 = ((A[2]+Aerr[2])*(logxx) + (B[2]-Berr[2]))
+       #yy_4 = ((A[2]-Aerr[2])*(logxx) + (B[2]-Berr[2]))
+       #yy_up = yy_1*[0.0]
+       #for i in range(len(yy_1)):
+       #	if yy_1[i] > yy_2[i]:
+       #		yy_up[i] = yy_1[i]
+       #	elif yy_1[i] <= yy_2[i]:
+       #		yy_up[i] = yy_2[i]	
+       #yy_up = np.asarray(yy_up)
+       #yy_lo = yy_1*[0.0]
+       #for i in range(len(yy_3)):
+       #	if yy_3[i] < yy_4[i]:
+       #		yy_lo[i] = yy_3[i]
+       #	elif yy_3[i] >= yy_4[i]:
+       #		yy_lo[i] = yy_4[i]	
+       #yy_lo = np.asarray(yy_lo)
+       #			
+       #ax.fill_between(10**(logxx+np.average(log_mass_sph[morph_core=='Sp_0'])), 10**yy_lo, 10**yy_up, alpha=0.2, facecolor='b')
 	
 	#print gal_id[morph_core=='Sp_0'],log_mbh[morph_core=='Sp_0']
 	##### calculates the prediction bands for the given input arrays
@@ -923,8 +923,10 @@ def mbh_vs_mass_sph_galsymb_agn():
         plt.ylabel(r'$M_{\rm BH} \rm ~[M_\odot]$', labelpad=13)
 	plt.subplots_adjust(left=0.15,bottom=0.15,right=0.97,top=0.9)
         #plt.show()
-	plt.savefig(path_presentation_figures + 'mbh_vs_mass_sph_agn.pdf', format='pdf', dpi=1000)
-
+	#plt.savefig(path_presentation_figures + 'mbh_vs_mass_sph_agn.pdf', format='pdf', dpi=1000)
+	plt.savefig('mbh_vs_mass_sph_agn.jpg', format='jpg', dpi=1000)
+	
+	
 	
 
 

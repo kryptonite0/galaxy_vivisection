@@ -4,15 +4,15 @@ The top-level auxiliary file: mm.aux
 The style file: apj.bst
 Database file #1: mmNotes.bib
 Database file #2: /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
-Repeated entry---line 932 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+Repeated entry---line 948 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  : @article{rixwhite1992
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1811 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+Repeated entry---line 1827 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  : @article{scorzabender1995
  :                          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 6802 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+Repeated entry---line 6818 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  : @article{haringrix2004
  :                       ,
 I'm skipping whatever remains of this entry
@@ -34,45 +34,45 @@ while executing---line 1671 of file apj.bst
 Warning--can't use both author and editor fields in graham2013review
 Warning--empty publisher in graham2013review
 Warning--empty publisher in press1992
-You've used 102 entries,
+You've used 103 entries,
             3085 wiz_defined-function locations,
-            1316 strings with 28247 characters,
-and the built_in function-call counts, 49667 in all, are:
-= -- 4055
-> -- 3672
+            1322 strings with 28436 characters,
+and the built_in function-call counts, 50220 in all, are:
+= -- 4102
+> -- 3718
 < -- 55
-+ -- 1228
-- -- 1313
-* -- 4255
-:= -- 9363
-add.period$ -- 102
-call.type$ -- 102
-change.case$ -- 673
-chr.to.int$ -- 98
-cite$ -- 105
-duplicate$ -- 1978
-empty$ -- 2950
-format.name$ -- 1451
-if$ -- 9843
++ -- 1244
+- -- 1332
+* -- 4305
+:= -- 9466
+add.period$ -- 103
+call.type$ -- 103
+change.case$ -- 682
+chr.to.int$ -- 99
+cite$ -- 106
+duplicate$ -- 1997
+empty$ -- 2978
+format.name$ -- 1469
+if$ -- 9951
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 94
-newline$ -- 310
-num.names$ -- 417
-pop$ -- 749
+missing$ -- 95
+newline$ -- 313
+num.names$ -- 421
+pop$ -- 758
 preamble$ -- 1
-purify$ -- 673
+purify$ -- 682
 quote$ -- 0
-skip$ -- 1655
+skip$ -- 1671
 stack$ -- 0
-substring$ -- 2099
+substring$ -- 2120
 swap$ -- 78
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 912
+type$ -- 921
 warning$ -- 3
-while$ -- 398
+while$ -- 402
 width$ -- 0
-write$ -- 1022
+write$ -- 1032
 (There were 10 error messages)

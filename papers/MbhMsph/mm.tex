@@ -10,6 +10,7 @@
 \usepackage{tabularx}
 \usepackage{bm}
 \usepackage{color}
+\usepackage{hyperref}
 
 %% Sometimes a paper's abstract is too long to fit on the
 %% title page in preprint2 mode. When that is the case,
@@ -22,12 +23,15 @@
 \newcommand{\fitfigurewidth}{0.8\textwidth}
 
 
-\shorttitle{Early and late $M_{\rm BH} - M_{\rm *,sph}$ sequence}
+%\shorttitle{Early and late $M_{\rm BH} - M_{\rm *,sph}$ sequence}
+\shorttitle{Red and blue $M_{\rm BH} - M_{\rm *,sph}$ sequence}
+
 \shortauthors{Savorgnan et al.}
 
 \begin{document}
 
-\title{Supermassive black hole and host bulge affairs \\ II. The early and late sequence in the $M_{\rm BH} - M_{\rm *,sph}$ diagram}
+%\title{Supermassive black hole and host bulge affairs \\ II. The early and late sequence in the $M_{\rm BH} - M_{\rm *,sph}$ diagram}
+\title{Supermassive black hole and host bulge affairs \\ II. The red and blue sequence in the $M_{\rm BH} - M_{\rm *,sph}$ diagram}
 
 %\author{G. A. D. Savorgnan\altaffilmark{1} and A. W. Graham\altaffilmark{1} and A. Marconi and E. Sani\altaffilmark{3} and L.K. Hunt}
 %\affil{Centre for Astrophysics and Supercomputing, Swinburne University of Technology, Hawthorn, Victoria 3122, Australia.}
@@ -79,15 +83,18 @@ Instead, our sample includes 17 spiral galaxies, half of which have $M_{\rm BH} 
 and allows us to better investigate the poorly studied low-mass end of the $M_{\rm BH} - M_{\rm *,sph}$ correlation.
 The bulges of early-type (E + S0) galaxies follow $M_{\rm BH} \propto M_{\rm *,sph}^{1.04 \pm 0.10}$, 
 consistent with a dry-merging formation scenario,
-and define a tight \emph{early-type sequence} with intrinsic scatter $\epsilon_{(Y|X)} = 0.43 \pm 0.06\rm~dex$ 
+and define a tight %\emph{early-type sequence} 
+\emph{red sequence} with intrinsic scatter $\epsilon_{(Y|X)} = 0.43 \pm 0.06\rm~dex$ 
 and a median $M_{\rm BH}/M_{\rm *,sph}$ ratio of $0.68 \pm 0.04\%$.
-At the low-mass end, the bulges of late-type (Sp) galaxies define a much steeper \emph{late-type sequence}, 
+At the low-mass end, the bulges of late-type (Sp) galaxies define a much steeper %\emph{late-type sequence}, 
+\emph{blue sequence}, 
 with $M_{\rm BH} \propto M_{\rm *,sph}^{2-3}$, 
 indicating that gas-rich processes feed the black hole more efficiently than the host bulge as they coevolve. 
 We additionally report that: i) S\'ersic galaxies follow $M_{\rm BH} \propto M_{\rm *,sph}^{1.48 \pm 0.20}$, a less steep sequence than previously reported; 
 ii) bulges with S\'ersic index $n_{\rm sph}<2$, argued by some to be pseudo-bulges, 
 are not offset to lower $M_{\rm BH}$ from the correlation defined by bulges with $n_{\rm sph}>2$; 
-and iii) $L_{\rm sph}$ and $L_{\rm gal}$ correlate equally well with $M_{\rm BH}$, in terms of intrinsic scatter, only for early-type galaxies; 
+and iii) $L_{\rm sph}$ and $L_{\rm gal}$ correlate equally well with $M_{\rm BH}$, in terms of intrinsic scatter, only for early-type galaxies 
+(most elliptical galaxies contain disks, i.e.~$L_{\rm sph} \neq L_{\rm gal}$) --
 once reasonable numbers of spiral galaxies are included, the correlation with $L_{\rm sph}$ is better than that with $L_{\rm gal}$. 
 
 \end{abstract}
@@ -178,7 +185,8 @@ These mean statistical bulge-to-total ratios were obtained from the results of t
 %and showed that the steeper $M_{\rm BH} - M_{\rm *,sph}$ extends to these spheroids with even lower black hole masses 
 %($10^{5} \lesssim M_{\rm *,sph}/{\rm M_\odot} \lesssim 2 \times 10^{6}$), 
 %and a more detailed analysis will be presented in Graham et al. (2015, \emph{in preparation}).  \\
-Here we investigate substructure in the $M_{\rm BH} - L_{\rm sph}$ and $M_{\rm BH} - M_{\rm *,sph}$ diagrams 
+Here we investigate in more detail %substructure in 
+the $M_{\rm BH} - L_{\rm sph}$ and $M_{\rm BH} - M_{\rm *,sph}$ diagrams 
 using state-of-the-art galaxy decompositions (Savorgnan \& Graham 2015, hereafter \emph{Paper I}) 
 for galaxies with directly measured black hole masses.
 Our galaxies are large and nearby, which allows us to perform accurate multicomponent decompositions 
@@ -200,12 +208,14 @@ consists of 66 objects for which a dynamical measurement of the black hole mass 
 (by GS13 or \citealt{rusli2013bhmassesDM}) at the time that we started this project, 
 and for which we were able to obtain useful spheroid parameters from $3.6\rm~\mu m$ \emph{Spitzer} satellite imagery. \\
 Spheroid magnitudes were derived from our state-of-the-art galaxy decompositions, which take into account 
-bulge, disks, spiral arms, bars, rings, halo, extended or unresolved nuclear source and partially depleted core.
+bulge, disks, spiral arms, bars, rings, halo, extended or unresolved nuclear source and partially depleted core. 
 Kinematical information \citep{atlas3dIII-MNRAS,scott2014,arnold2014} was used 
 to confirm the presence of rotationally supported disk components in most early-type (elliptical + lenticular) galaxies, 
 and to identify their extent 
 (intermediate-scale disks that are fully embedded in the bulge, 
 or large-scale disks that encase the bulge and dominate the light at large radii). 
+It is worth stressing that, contrary to common knowledge, the majority of ``elliptical'' galaxies contain disks,
+i.e.~they are not single-component spheroidal systems.
 \emph{Paper I} presents the dataset used here, 
 %to investigate the $M_{\rm BH} - L_{\rm gal}$, $M_{\rm BH} - L_{\rm sph}$ and $M_{\rm BH} - M_{\rm *,sph}$ diagrams, 
 including details about the data reduction process and the galaxy modelling technique that we developed. 
@@ -216,7 +226,7 @@ Systematic errors include incorrect sky subtraction, inaccurate masking of conta
 erroneous choice of model components (for example, when failing to identify a galaxy subcomponent and thus omitting it in the model, 
 or when describing a galaxy sub-component with an inadequate function), 
 the radial extent of the surface brightness profile and one's sampling of this. 
-Most of these factors are not included in popular 2D fitting codes which report only the random errors associated with their fitted parameters. 
+Most of these factors are not included in popular 2D fitting codes which report only the {\bf statistical} errors associated with their fitted parameters. 
 In fact, when performing multi-component decomposition of high signal-to-noise images of nearby -- therefore well spatially resolved -- galaxies, 
 errors are dominated by systematics rather than Poisson noise.} 
 on the bulge magnitudes, and presents the individual 66 galaxy decompositions, 
@@ -304,14 +314,23 @@ and $\epsilon_{(X|Y)} = 0.91 \pm 0.17\rm~dex$.
 %against $\epsilon_{(Y|X)} = 0.43 \pm 0.06\rm~dex$ and $\epsilon_{(X|Y)} = 0.53 \pm 0.10\rm~dex$).
 Because the value of the intrinsic scatter depends on the size of the uncertainties associated with the absolute magnitudes\footnote{The 
 smaller (larger) the uncertainties, the larger (smaller) the intrinsic scatter.}, 
-we tested the robustness of our conclusion by increasing the uncertainties associated with the galaxy absolute magnitudes 
+we tested the robustness of our conclusion by increasing the uncertainties associated with the galaxy absolute magnitudes\footnote{The 
+value of the intrinsic scatter obviously depends also on the size of the uncertainties associated with the black hole masses. 
+However, black hole masses and their uncertainties have been estimated by various authors using different methods, 
+thus we have limited to no control on their values.}  
 (we originally assumed $0.25\rm~mag$).
 The intrinsic scatter of the $M_{\rm BH} - L_{\rm gal}$ relation only becomes smaller than that of the $M_{\rm BH} - L_{\rm sph}$ relation 
 when assuming an uncertainty larger than $0.7\rm~mag$ for $L_{\rm gal}$, 
 which would be significantly larger than the typical value commonly recognized in the literature, 
 and would also oddly exceed the typical uncertainty that we estimated for $L_{\rm sph}$. 
 Hence, we conclude that our determination of the relative intrinsic scatter is reliable, 
-and that $M_{\rm BH}$ correlates equally well with $L_{\rm sph}$ and $L_{\rm gal}$ only for early-type galaxies, but not for all (early+late-type) galaxies.
+and that $M_{\rm BH}$ correlates equally well with $L_{\rm sph}$ and $L_{\rm gal}$ only for early-type galaxies\footnote{The majority 
+of our early-type galaxies are elliptical galaxies, some of which have a bulge-to-total ratio close to 1 ($L_{\rm gal} \simeq L_{\rm sph}$).
+One might wonder whether this constitutes a bias in our analysis.
+However, we checked that $M_{\rm BH}$ correlates equally well with $L_{\rm sph}$ and $L_{\rm gal}$ 
+not only for early-type (elliptical + lenticular) galaxies, 
+but also for lenticular galaxies only. }, 
+but not for all (early+late-type) galaxies.
 %We decided to vary only the errors associated to $L_{\rm gal}$ 
 %because we consider the uncertainties associated to $L_{\rm sph}$ trustworthy, since they have been estimated with an advanced method 
 %that takes into account the systematic errors related to the galaxy decomposition process. 
@@ -343,6 +362,20 @@ but not for all (early+late-type) galaxies. }
 \end{center}
 \end{figure}
 
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=\columnwidth]{images/mbh_vs_mag_sph.pdf}
+\caption{Black hole mass plotted against $3.6\rm~\mu m$ spheroid absolute magnitude. 
+Symbols have the same meaning as in Figure \ref{fig:mbhmaggal}.
+The red dashed line indicates the BCES bisector linear regression for the spheroidal component of the 45 early-type (E+S0) galaxies, 
+with the red shaded area denoting its $1\sigma$ uncertainty. 
+The blue solid line shows the BCES bisector linear regression for the bulges of the 17 late-type (Sp) galaxies, 
+with the blue shaded area denoting its $1\sigma$ uncertainty. 
+The black dashed-dotted and dotted lines represent the BCES bisector linear regressions for the core-S\'ersic and S\'ersic spheroids, respectively.}
+\label{fig:mbhmagsph}
+\end{center}
+\end{figure}
+
 \begin{table*}
 \centering
 \caption{Linear regression analysis of the $M_{\rm BH} - L_{\rm gal}$ diagram.}
@@ -353,24 +386,24 @@ but not for all (early+late-type) galaxies. }
 \\
   & \multicolumn{6}{l}{$\log[M_{\rm BH}/{\rm M_\odot}] = \alpha + \beta[(MAG_{\rm gal} - \langle MAG_{\rm gal} \rangle)/{\rm mag}]$} \\ [0.5em]
  All (62)               & BCES $(Y|X)$   & $8.26 \pm 0.08$ & $-0.49 \pm 0.06$ & $-24.78$ & $-$ & $0.64$ \\
-                        & BCES $(X|Y)$   & $8.26 \pm 0.12$ & $-1.01 \pm 0.15$ & $-24.78$ & $-$ & $0.92$ \\
-                        & BCES Bisector  & $8.26 \pm 0.09$ & $-0.72 \pm 0.07$ & $-24.78$ & $-$ & $0.71$ \\
                         & mFITEXY $(Y|X)$  & $8.26^{+0.08}_{-0.08}$ & $-0.49^{+0.06}_{-0.07}$ & $-24.78$ & $0.61^{+0.07}_{-0.06}$ & $0.64$ \\
+                        & {\tt linmix\_err} $(Y|X)$  & $8.26 \pm 0.09$ & $-0.49 \pm 0.07$ & $-24.78$ & $0.63 \pm 0.07$ & $0.64$ \\ [0.5em]
+                        & BCES $(X|Y)$   & $8.26 \pm 0.12$ & $-1.01 \pm 0.15$ & $-24.78$ & $-$ & $0.92$ \\
                         & mFITEXY $(X|Y)$  & $8.26^{+0.11}_{-0.12}$ & $-1.03^{+0.13}_{-0.16}$ & $-24.78$ & $0.88^{+0.10}_{-0.08}$ & $0.93$ \\
+                        & {\tt linmix\_err} $(X|Y)$  & $8.26 \pm 0.12$ & $-1.02 \pm 0.15$ & $-24.78$ & $0.91 \pm 0.17$ & $0.93$ \\ [0.5em]
+                        & BCES Bisector  & $8.26 \pm 0.09$ & $-0.72 \pm 0.07$ & $-24.78$ & $-$ & $0.71$ \\
                         & mFITEXY Bisector & $8.26^{+0.10}_{-0.10}$ & $-0.73^{+0.09}_{-0.10}$ & $-24.78$ & $-$    & $0.71$ \\
-                        & {\tt linmix\_err} $(Y|X)$  & $8.26 \pm 0.09$ & $-0.49 \pm 0.07$ & $-24.78$ & $0.63 \pm 0.07$ & $0.64$ \\
-                        & {\tt linmix\_err} $(X|Y)$  & $8.26 \pm 0.12$ & $-1.02 \pm 0.15$ & $-24.78$ & $0.91 \pm 0.17$ & $0.93$ \\
                         & {\tt linmix\_err} Bisector & $8.26 \pm 0.10$ & $-0.72 \pm 0.15$ & $-24.78$ & $-$    & $0.71$ \\ [0.5em]
 
  Early-type (E+S0) (45) & BCES $(Y|X)$   & $8.56 \pm 0.07$ & $-0.44 \pm 0.05$ & $-24.88$ & $-$ & $0.45$ \\
-                        & BCES $(X|Y)$   & $8.56 \pm 0.08$ & $-0.64 \pm 0.05$ & $-24.88$ & $-$ & $0.53$ \\
-                        & BCES Bisector  & $8.56 \pm 0.07$ & $-0.53 \pm 0.04$ & $-24.88$ & $-$ & $0.47$ \\
                         & mFITEXY $(Y|X)$  & $8.56^{+0.06}_{-0.06}$ & $-0.42^{+0.05}_{-0.05}$ & $-24.88$ & $0.41^{+0.06}_{-0.05}$ & $0.45$ \\
+                        & {\tt linmix\_err} $(Y|X)$  & $8.56 \pm 0.07$ & $-0.42 \pm 0.06$ & $-24.88$ & $0.43 \pm 0.06$ & $0.45$ \\ [0.5em]
+                        & BCES $(X|Y)$   & $8.56 \pm 0.08$ & $-0.64 \pm 0.05$ & $-24.88$ & $-$ & $0.53$ \\
                         & mFITEXY $(X|Y)$  & $8.56^{+0.08}_{-0.08}$ & $-0.66^{+0.07}_{-0.08}$ & $-24.88$ & $0.51^{+0.07}_{-0.06}$ & $0.55$ \\
+                        & {\tt linmix\_err} $(X|Y)$  & $8.56 \pm 0.09$ & $-0.65 \pm 0.08$ & $-24.88$ & $0.53 \pm 0.10$ & $0.54$ \\ [0.5em]
+                        & BCES Bisector  & $8.56 \pm 0.07$ & $-0.53 \pm 0.04$ & $-24.88$ & $-$ & $0.47$ \\
                         & mFITEXY Bisector & $8.56^{+0.07}_{-0.07}$ & $-0.54^{+0.06}_{-0.06}$ & $-24.88$ & $-$    & $0.47$ \\
-                        & {\tt linmix\_err} $(Y|X)$  & $8.56 \pm 0.07$ & $-0.42 \pm 0.06$ & $-24.88$ & $0.43 \pm 0.06$ & $0.45$ \\
-                        & {\tt linmix\_err} $(X|Y)$  & $8.56 \pm 0.09$ & $-0.65 \pm 0.08$ & $-24.88$ & $0.53 \pm 0.10$ & $0.54$ \\
-                        & {\tt linmix\_err} Bisector & $8.56 \pm 0.08$ & $-0.53 \pm 0.10$ & $-24.88$ & $-$    & $0.47$ \\
+                        & {\tt linmix\_err} Bisector & $8.56 \pm 0.08$ & $-0.53 \pm 0.10$ & $-24.88$ & $-$    & $0.47$ \\ [0.5em]
 
 %Late-type (Sp) (13) & BCES $(Y|X)$      & $7.37 \pm 0.17$ & $-0.33 \pm 0.87$   & $-24.39$ & $-$ & $0.65$ \\
 %                    & BCES $(X|Y)$      & $7.37 \pm 1.97$ & $-21.66 \pm 53.74$ & $-24.39$ & $-$ & $7.73$ \\
@@ -526,22 +559,8 @@ That is, bulges with $n_{\rm sph}<2$ do not appear to be offset from the correla
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[width=\columnwidth]{images/mbh_vs_mag_sph.pdf}
-\caption{Black hole mass plotted against $3.6\rm~\mu m$ spheroid absolute magnitude. 
-Symbols have the same meaning as in Figure \ref{fig:mbhmaggal}.
-The red dashed line indicates the BCES bisector linear regression for the spheroidal component of the 45 early-type (E+S0) galaxies, 
-with the red shaded area denoting its $1\sigma$ uncertainty. 
-The blue solid line shows the BCES bisector linear regression for the bulges of the 17 late-type (Sp) galaxies, 
-with the blue shaded area denoting its $1\sigma$ uncertainty. 
-The black dashed-dotted and dotted lines represent the BCES bisector linear regressions for the core-S\'ersic and S\'ersic spheroids, respectively.}
-\label{fig:mbhmagsph}
-\end{center}
-\end{figure}
-
-\begin{figure}[h]
-\begin{center}
 \includegraphics[width=\columnwidth]{images/mbh_vs_mag_sph_psb.pdf}
-\caption{Black hole mass plotted against $3.6\rm~\mu m$ spheroid absolute magnitude. 
+\caption{Black hole mass plotted against $3.6\rm~\mu m$ spheroid absolute magnitude (as in Figure \ref{fig:mbhmagsph}). 
 Symbols are color coded according to the spheroid S\'ersic index $n_{\rm sph}$. 
 Bulges with $n_{\rm sph}<2$, claimed by some to be pseudo-bulges, are enclosed with a square. 
 The black solid line shows the BCES bisector linear regression for the spheroids that have $n_{\rm sph} \geq 2$, 
@@ -577,43 +596,43 @@ from the correlation traced by bulges with $n_{\rm sph} \geq 2$.}
 \\
  & \multicolumn{6}{l}{$\log[M_{\rm BH}/{\rm M_\odot}] = \alpha + \beta[(MAG_{\rm sph} - \langle MAG_{\rm sph} \rangle)/{\rm mag}]$} \\ [0.5em]
 All (66)               & BCES $(Y|X)$   & $8.16 \pm 0.07$ & $-0.44 \pm 0.04$ & $-23.86$ & $-$ & $0.56$ \\
-                       & BCES $(X|Y)$   & $8.16 \pm 0.08$ & $-0.61 \pm 0.05$ & $-23.86$ & $-$ & $0.68$ \\
-                       & BCES Bisector  & $8.16 \pm 0.07$ & $-0.52 \pm 0.04$ & $-23.86$ & $-$ & $0.60$ \\
                        & mFITEXY $(Y|X)$    & $8.17^{+0.06}_{-0.07}$ & $-0.43^{+0.03}_{-0.04}$ & $-23.86$ & $0.49^{+0.06}_{-0.05}$ & $0.56$ \\
+                       & {\tt linmix\_err} $(Y|X)$     & $8.16 \pm 0.07$ & $-0.42 \pm 0.04$ & $-23.86$ & $0.51 \pm 0.06$ & $0.56$ \\ [0.5em]
+                       & BCES $(X|Y)$   & $8.16 \pm 0.08$ & $-0.61 \pm 0.05$ & $-23.86$ & $-$ & $0.68$ \\
                        & mFITEXY $(X|Y)$    & $8.15^{+0.07}_{-0.08}$ & $-0.61^{+0.05}_{-0.05}$ & $-23.86$ & $0.58^{+0.07}_{-0.06}$ & $0.68$ \\
+                       & {\tt linmix\_err} $(X|Y)$     & $8.16 \pm 0.09$ & $-0.60 \pm 0.06$ & $-23.86$ & $0.60 \pm 0.09$ & $0.67$ \\ [0.5em]
+                       & BCES Bisector  & $8.16 \pm 0.07$ & $-0.52 \pm 0.04$ & $-23.86$ & $-$ & $0.60$ \\
                        & mFITEXY Bisector   & $8.16^{+0.07}_{-0.07}$ & $-0.51^{+0.04}_{-0.04}$ & $-23.86$ & $-$    & $0.60$ \\
-                       & {\tt linmix\_err} $(Y|X)$     & $8.16 \pm 0.07$ & $-0.42 \pm 0.04$ & $-23.86$ & $0.51 \pm 0.06$ & $0.56$ \\
-                       & {\tt linmix\_err} $(X|Y)$     & $8.16 \pm 0.09$ & $-0.60 \pm 0.06$ & $-23.86$ & $0.60 \pm 0.09$ & $0.67$ \\
                        & {\tt linmix\_err} Bisector    & $8.16 \pm 0.08$ & $-0.51 \pm 0.09$ & $-23.86$ & $-$    & $0.59$ \\ [0.5em]
 
 $n>2$ (43)             & BCES $(Y|X)$      & $8.58 \pm 0.07$ & $-0.42 \pm 0.06$ & $-24.77$ & $-$ & $0.46$ \\
-                       & BCES $(X|Y)$      & $8.58 \pm 0.08$ & $-0.58 \pm 0.06$ & $-24.77$ & $-$ & $0.56$ \\
-                       & BCES Bisector     & $8.58 \pm 0.07$ & $-0.50 \pm 0.05$ & $-24.77$ & $-$ & $0.49$ \\
                        & mFITEXY $(Y|X)$    & $8.57^{+0.07}_{-0.06}$ & $-0.41^{+0.04}_{-0.04}$ & $-24.77$ & $0.38^{+0.06}_{-0.06}$ & $0.46$ \\
+                       & {\tt linmix\_err} $(Y|X)$     & $8.56 \pm 0.07$ & $-0.39 \pm 0.05$ & $-24.77$ & $0.40 \pm 0.06$ & $0.46$ \\ [0.5em]
+                       & BCES $(X|Y)$      & $8.58 \pm 0.08$ & $-0.58 \pm 0.06$ & $-24.77$ & $-$ & $0.56$ \\
                        & mFITEXY $(X|Y)$    & $8.56^{+0.08}_{-0.08}$ & $-0.57^{+0.06}_{-0.07}$ & $-24.77$ & $0.44^{+0.08}_{-0.11}$ & $0.55$ \\
+                       & {\tt linmix\_err} $(X|Y)$     & $8.55 \pm 0.09$ & $-0.57 \pm 0.08$ & $-24.77$ & $0.49 \pm 0.10$ & $0.55$ \\ [0.5em]
+                       & BCES Bisector     & $8.58 \pm 0.07$ & $-0.50 \pm 0.05$ & $-24.77$ & $-$ & $0.49$ \\
                        & mFITEXY Bisector   & $8.57^{+0.07}_{-0.07}$ & $-0.49^{+0.05}_{-0.05}$ & $-24.77$ & $-$    & $0.49$ \\
-                       & {\tt linmix\_err} $(Y|X)$     & $8.56 \pm 0.07$ & $-0.39 \pm 0.05$ & $-24.77$ & $0.40 \pm 0.06$ & $0.46$ \\
-                       & {\tt linmix\_err} $(X|Y)$     & $8.55 \pm 0.09$ & $-0.57 \pm 0.08$ & $-24.77$ & $0.49 \pm 0.10$ & $0.55$ \\
                        & {\tt linmix\_err} Bisector    & $8.56 \pm 0.08$ & $-0.48 \pm 0.10$ & $-24.77$ & $-$    & $0.49$ \\  [0.5em]
                    
 Core-S\'ersic (22) & BCES $(Y|X)$   & $9.06 \pm 0.09$ & $-0.32 \pm 0.11$  & $-25.73$ & $-$    & $0.42$ \\
-                   & BCES $(X|Y)$   & $9.06 \pm 0.12$ & $-0.65 \pm 0.12$  & $-25.73$ & $-$    & $0.61$ \\
-                   & BCES Bisector  & $9.06 \pm 0.10$ & $-0.47 \pm 0.08$  & $-25.73$ & $-$    & $0.48$ \\
                    & mFITEXY $(Y|X)$   & $9.06^{+0.08}_{-0.09}$ & $-0.26^{+0.08}_{-0.07}$ & $-25.73$ & $0.36^{+0.09}_{-0.06}$ & $0.42$ \\
+                   & {\tt linmix\_err} $(Y|X)$  & $9.04 \pm 0.10$ & $-0.24 \pm 0.09$ & $-25.73$ & $0.40 \pm 0.08$ & $0.42$ \\ [0.5em]
+                   & BCES $(X|Y)$   & $9.06 \pm 0.12$ & $-0.65 \pm 0.12$  & $-25.73$ & $-$    & $0.61$ \\
                    & mFITEXY $(X|Y)$   & $9.03^{+0.15}_{-0.16}$ & $-0.72^{+0.17}_{-0.31}$ & $-25.73$ & $0.61^{+0.14}_{-0.09}$ & $0.68$ \\
+                   & {\tt linmix\_err} $(X|Y)$  & $9.03 \pm 0.17$ & $-0.69 \pm 0.27$ & $-25.73$ & $0.68 \pm 0.30$ & $0.64$ \\ [0.5em]
+                   & BCES Bisector  & $9.06 \pm 0.10$ & $-0.47 \pm 0.08$  & $-25.73$ & $-$    & $0.48$ \\
                    & mFITEXY Bisector  & $9.05^{+0.12}_{-0.13}$ & $-0.47^{+0.12}_{-0.17}$ & $-25.73$ & $-$    & $0.48$ \\
-                   & {\tt linmix\_err} $(Y|X)$  & $9.04 \pm 0.10$ & $-0.24 \pm 0.09$ & $-25.73$ & $0.40 \pm 0.08$ & $0.42$ \\
-                   & {\tt linmix\_err} $(X|Y)$  & $9.03 \pm 0.17$ & $-0.69 \pm 0.27$ & $-25.73$ & $0.68 \pm 0.30$ & $0.64$ \\
                    & {\tt linmix\_err} Bisector & $9.04 \pm 0.14$ & $-0.44 \pm 0.16$ & $-25.73$ & $-$    & $0.46$ \\ [0.5em]
 
 S\'ersic (44) & BCES $(Y|X)$   & $7.71 \pm 0.09$ & $-0.41 \pm 0.08$ & $-22.92$ & $-$    & $0.61$ \\
-              & BCES $(X|Y)$   & $7.71 \pm 0.14$ & $-0.86 \pm 0.16$ & $-22.92$ & $-$    & $0.93$ \\
-              & BCES Bisector  & $7.71 \pm 0.10$  & $-0.61 \pm 0.08$ & $-22.92$ & $-$    & $0.71$ \\
               & mFITEXY $(Y|X)$   & $7.72^{+0.08}_{-0.09}$ & $-0.41^{+0.07}_{-0.08}$ & $-22.92$ & $0.54^{+0.08}_{-0.07}$ & $0.61$ \\
+              & {\tt linmix\_err} $(Y|X)$  & $7.73 \pm 0.09$ & $-0.41 \pm 0.08$ & $-22.92$ & $0.55 \pm 0.08$ & $0.61$ \\ [0.5em]
+              & BCES $(X|Y)$   & $7.71 \pm 0.14$ & $-0.86 \pm 0.16$ & $-22.92$ & $-$    & $0.93$ \\
               & mFITEXY $(X|Y)$   & $7.72^{+0.14}_{-0.13}$ & $-0.86^{+0.13}_{-0.19}$ & $-22.92$ & $0.77^{+0.13}_{-0.10}$ & $0.93$ \\
+              & {\tt linmix\_err} $(X|Y)$  & $7.73 \pm 0.14$ & $-0.86 \pm 0.17$ & $-22.92$ & $0.79 \pm  0.20$ & $0.93$ \\ [0.5em]
+              & BCES Bisector  & $7.71 \pm 0.10$  & $-0.61 \pm 0.08$ & $-22.92$ & $-$    & $0.71$ \\
               & mFITEXY Bisector  & $7.72^{+0.11}_{-0.11}$ & $-0.61^{+0.10}_{-0.12}$ & $-22.92$ & $-$                    & $0.71$ \\
-              & {\tt linmix\_err} $(Y|X)$  & $7.73 \pm 0.09$ & $-0.41 \pm 0.08$ & $-22.92$ & $0.55 \pm 0.08$ & $0.61$ \\
-              & {\tt linmix\_err} $(X|Y)$  & $7.73 \pm 0.14$ & $-0.86 \pm 0.17$ & $-22.92$ & $0.79 \pm  0.20$ & $0.93$ \\
               & {\tt linmix\_err} Bisector & $7.73 \pm 0.12$ & $-0.62 \pm 0.15$ & $-22.92$ & $-$    & $0.71$ \\ [0.5em]
 
 %Ellipticals (E) (30)   & BCES $(Y|X)$   & $8.80 \pm 0.07$ & $-0.53 \pm 0.09$ & $-25.45$ & $-$    & $0.42$ \\
@@ -632,24 +651,24 @@ S\'ersic (44) & BCES $(Y|X)$   & $7.71 \pm 0.09$ & $-0.41 \pm 0.08$ & $-22.92$ &
 %
 
 {\bf Early-type (E+S0)} (45) & BCES $(Y|X)$    & $8.56 \pm 0.07$ & $-0.33 \pm 0.04$ & $-24.47$ & $-$    & $0.46$ \\
-                             & BCES $(X|Y)$    & $8.56 \pm 0.08$ & $-0.48 \pm 0.05$ & $-24.47$ & $-$    & $0.55$ \\
-                             & {\bf BCES Bisector}& $\boldsymbol{8.56 \pm 0.07}$ & $\boldsymbol{-0.40 \pm 0.04}$ & $\boldsymbol{-24.47}$ & $-$    & $\boldsymbol{0.49}$ \\
                              & mFITEXY $(Y|X)$ & $8.56^{+0.06}_{-0.06}$ & $-0.32^{+0.03}_{-0.04}$ & $-24.47$ & $0.40^{+0.06}_{-0.05}$ & $0.46$ \\
+                             & {\tt linmix\_err} $(Y|X)$  & $8.55 \pm 0.07$ & $-0.32 \pm 0.04$ & $-24.47$ & $0.41 \pm 0.06$ & $0.46$ \\ [0.5em]
+                             & BCES $(X|Y)$    & $8.56 \pm 0.08$ & $-0.48 \pm 0.05$ & $-24.47$ & $-$    & $0.55$ \\
                              & mFITEXY $(X|Y)$ & $8.54^{+0.08}_{-0.08}$ & $-0.49^{+0.05}_{-0.06}$ & $-24.47$ & $0.49^{+0.08}_{-0.06}$ & $0.57$\\
+                             & {\tt linmix\_err} $(X|Y)$  & $8.55 \pm 0.09$ & $-0.48 \pm 0.06$ & $-24.47$ & $0.51 \pm 0.10$ & $0.56$ \\ [0.5em]
+                             & {\bf BCES Bisector}& $\boldsymbol{8.56 \pm 0.07}$ & $\boldsymbol{-0.40 \pm 0.04}$ & $\boldsymbol{-24.47}$ & $-$    & $\boldsymbol{0.49}$ \\
                              & mFITEXY Bisector   & $8.55^{+0.07}_{-0.07}$ & $-0.41^{+0.04}_{-0.05}$ & $-24.47$ & $-$    & $0.49$ \\
-                             & {\tt linmix\_err} $(Y|X)$  & $8.55 \pm 0.07$ & $-0.32 \pm 0.04$ & $-24.47$ & $0.41 \pm 0.06$ & $0.46$ \\
-                             & {\tt linmix\_err} $(X|Y)$  & $8.55 \pm 0.09$ & $-0.48 \pm 0.06$ & $-24.47$ & $0.51 \pm 0.10$ & $0.56$ \\
                              & {\tt linmix\_err} Bisector    & $8.55 \pm 0.08$ & $-0.40 \pm 0.09$ & $-24.47$ & $-$    & $0.49$ \\ [0.5em]
 
 {\bf Late-type (Sp)} (17) & BCES $(Y|X)$    & $7.18 \pm 0.16$ & $-0.79 \pm 0.43$ & $-22.33$ & $-$    & $0.70$ \\
-                          & BCES $(X|Y)$    & $7.18 \pm 0.29$ & $-1.71 \pm 0.71$ & $-22.33$ & $-$    & $1.26$ \\
-                          & {\bf BCES Bisector}& $\boldsymbol{7.18 \pm 0.20}$ & $\boldsymbol{-1.15 \pm 0.27}$ & $\boldsymbol{-22.33}$ & $-$    & $\boldsymbol{0.88}$ \\
                           & mFITEXY $(Y|X)$    & $7.20^{+0.15}_{-0.15}$ & $-0.53^{+0.22}_{-0.24}$ & $-22.33$ & $0.55^{+0.15}_{-0.10}$ & $0.63$ \\
+                          & {\tt linmix\_err} $(Y|X)$  & $7.24 \pm 0.19$ & $-0.46 \pm 0.32$ & $-22.33$ & $0.63 \pm 0.16$ & $0.62$ \\ [0.5em]
+                          & BCES $(X|Y)$    & $7.18 \pm 0.29$ & $-1.71 \pm 0.71$ & $-22.33$ & $-$    & $1.26$ \\
                           & mFITEXY $(X|Y)$    & $7.38^{+0.54}_{-0.36}$ & $-2.02^{+0.71}_{-2.13}$ & $-22.33$ & $1.09^{+0.41}_{-0.24}$ & $1.50$ \\
+                          & {\tt linmix\_err} $(X|Y)$  & $7.34 \pm 0.43$ & $-1.93 \pm 1.30$ & $-22.33$ & $1.31 \pm 0.97$ & $1.43$ \\ [0.5em]
+                          & {\bf BCES Bisector}& $\boldsymbol{7.18 \pm 0.20}$ & $\boldsymbol{-1.15 \pm 0.27}$ & $\boldsymbol{-22.33}$ & $-$    & $\boldsymbol{0.88}$ \\
                           & mFITEXY Bisector   & $7.26^{+0.40}_{-0.28}$ & $-1.03^{+0.33}_{-0.52}$ & $-22.33$ & $-$    & $0.82$ \\
-                          & {\tt linmix\_err} $(Y|X)$  & $7.24 \pm 0.19$ & $-0.46 \pm 0.32$ & $-22.33$ & $0.63 \pm 0.16$ & $0.62$ \\
-                          & {\tt linmix\_err} $(X|Y)$  & $7.34 \pm 0.43$ & $-1.93 \pm 1.30$ & $-22.33$ & $1.31 \pm 0.97$ & $1.43$ \\
-                          & {\tt linmix\_err} Bisector & $7.27 \pm 0.33$ & $-0.96 \pm 0.50$ & $-22.33$ & $-$    & $0.78$ \\
+                          & {\tt linmix\_err} Bisector & $7.27 \pm 0.33$ & $-0.96 \pm 0.50$ & $-22.33$ & $-$    & $0.78$ \\ [0.5em]
 
 \tableline 
 \tableline
@@ -681,7 +700,7 @@ to the smaller range in $M_{\rm *,sph}$ that the subsample spans.
 For the bulges of spiral galaxies, the BCES code returns a log-linear relation with a slope $= 3.00 \pm 1.30$, 
 while the modified FITEXY routine finds a shallower (but still consistent within the $1\sigma$ uncertainty) 
 slope $= 2.28^{+1.67}_{-1.01}$.
-The Bayesian estimator of \cite{linmixerr} fails in performing an inverse $(X|Y)$ linear regression for the subsample of spiral galaxies. 
+%The Bayesian estimator of \cite{linmixerr} fails in performing an inverse $(X|Y)$ linear regression for the subsample of spiral galaxies. 
 More data would be welcome to better constrain the slope of this \emph{late-type sequence}, 
 although we note that direct measurements of black hole masses below $10^6\rm~M_\odot$ are extremely challenging to obtain 
 with the current technological resources. 
@@ -742,10 +761,16 @@ Our principal conclusions are: \\
       following a linear $M_{\rm BH} - M_{\rm *,sph}$ relation. 
       In (gas-rich) spiral galaxies, the black hole grows faster than its host bulge, 
       following a quadratic/cubic $M_{\rm BH} - M_{\rm *,sph}$ relation. 
-      For analogy with the color-magnitude diagram, 
-      it may be tempting to refer to our \emph{early-type sequence} as a \emph{red sequence} 
-      and to our \emph{late-type sequence} as a \emph{blue sequence}.
-      Future work will explore the color of spheroids and galaxies in the $M_{\rm BH} - M_{\rm *,sph}$ diagram.  
+      Unsurprisingly, in a color-magnitude diagram\footnote{Total $B-V$ colors, 
+      corrected for inclination, Galactic extinction and K-correction, 
+      were taken from the HyperLEDA online database \citep{hyperleda}.}, 
+      our early- and late-type galaxies occupy the two distinct regions of the red sequence and the blue cloud, respectively. 
+      For analogy with this, we refer to our \emph{early-type sequence} as a \emph{red sequence} 
+      and to our \emph{late-type sequence} as a \emph{blue sequence}. 
+      %For analogy with the color-magnitude diagram, 
+      %it may be tempting to refer to our \emph{early-type sequence} as a \emph{red sequence} 
+      %and to our \emph{late-type sequence} as a \emph{blue sequence}.
+      %Future work will explore the color of spheroids and galaxies in the $M_{\rm BH} - M_{\rm *,sph}$ diagram.  
 \item The $M_{\rm BH}/M_{\rm *,sph}$ ratio for the early-type galaxies is $0.68 \pm 0.04\%$. 
       This value is dramatically larger than what previously reported ($0.1 - 0.2\%$ for all galaxy types, e.g.~\citealt{marconihunt2003}).
 \item The $M_{\rm BH} - M_{\rm *,sph}$ log-relations for core-S\'ersic and S\'ersic spheroids have slopes consistent with each other 
@@ -778,44 +803,44 @@ Our principal conclusions are: \\
 \\
   & \multicolumn{6}{l}{$\log[M_{\rm BH}/{\rm M_\odot}] = \alpha + \beta \log[(M_{\rm *,sph} - \langle M_{\rm *,sph} \rangle)/{\rm M_\odot}]$} \\ [0.5em]
  Core-S\'ersic (22)     & BCES $(Y|X)$      & $9.06 \pm 0.09$ & $0.86 \pm 0.28$ & $11.28$ & $-$ & $0.42$ \\
- 			& BCES $(X|Y)$      & $9.06 \pm 0.12$ & $1.70 \pm 0.32$ & $11.28$ & $-$ & $0.61$ \\
+ 			& mFITEXY $(Y|X)$   & $9.06^{+0.08}_{-0.08}$ & $0.68^{+0.21}_{-0.20}$ & $11.28$ & $0.36^{+0.09}_{-0.06}$ & $0.42$ \\
+  			& {\tt linmix\_err} $(Y|X)$     & $9.04 \pm 0.10$ & $0.64 \pm 0.25$ & $11.28$ & $0.40 \pm 0.09$ & $0.42$ \\ [0.5em]
+			& BCES $(X|Y)$      & $9.06 \pm 0.12$ & $1.70 \pm 0.32$ & $11.28$ & $-$ & $0.61$ \\
+ 			& mFITEXY $(X|Y)$   & $9.03^{+0.15}_{-0.16}$ & $1.90^{+0.85}_{-0.46}$ & $11.28$ & $0.62^{+0.13}_{-0.10}$ & $0.68$ \\
+ 			& {\tt linmix\_err} $(X|Y)$     & $9.03 \pm 0.17$ & $1.80 \pm 0.70$ & $11.28$ & $0.67 \pm 0.30$ & $0.65$ \\ [0.5em]
  			& BCES Bisector     & $9.06 \pm 0.10$ & $1.19 \pm 0.23$ & $11.28$ & $-$ & $0.47$ \\
- 			& FITEXY $(Y|X)$    & $9.06^{+0.08}_{-0.08}$ & $0.68^{+0.21}_{-0.20}$ & $11.28$ & $0.36^{+0.09}_{-0.06}$ & $0.42$ \\
- 			& FITEXY $(X|Y)$    & $9.03^{+0.15}_{-0.16}$ & $1.90^{+0.85}_{-0.46}$ & $11.28$ & $0.62^{+0.13}_{-0.10}$ & $0.68$ \\
- 			& FITEXY Bisector   & $9.05^{+0.12}_{-0.13}$ & $1.12^{+0.35}_{-0.27}$ & $11.28$ & $-$                    & $0.46$ \\
- 			& {\tt linmix\_err} $(Y|X)$     & $9.04 \pm 0.10$ & $0.64 \pm 0.25$ & $11.28$ & $0.40 \pm 0.09$ & $0.42$ \\
- 			& {\tt linmix\_err} $(X|Y)$     & $9.03 \pm 0.17$ & $1.80 \pm 0.70$ & $11.28$ & $0.67 \pm 0.30$ & $0.65$ \\
- 			& {\tt linmix\_err} Bisector	& $9.04 \pm 0.14$ & $1.06 \pm 0.35$ & $11.28$ & $-$	& $0.45$ \\
+ 			& mFITEXY Bisector  & $9.05^{+0.12}_{-0.13}$ & $1.12^{+0.35}_{-0.27}$ & $11.28$ & $-$                    & $0.46$ \\
+ 			& {\tt linmix\_err} Bisector	& $9.04 \pm 0.14$ & $1.06 \pm 0.35$ & $11.28$ & $-$	& $0.45$ \\ [0.5em]
 
  S\'ersic (44)		& BCES $(Y|X)$      & $7.71 \pm 0.09$ & $0.95 \pm 0.21$ & $10.25$ & $-$ & $0.64$ \\
+ 			& mFITEXY $(Y|X)$   & $7.72^{+0.10}_{-0.09}$ & $0.96^{+0.21}_{-0.21}$ & $10.25$ & $0.58^{+0.09}_{-0.07}$ & $0.64$ \\
+ 			& {\tt linmix\_err} $(Y|X)$     & $7.73 \pm 0.10$ & $0.98 \pm 0.24$ & $10.25$ & $0.59 \pm 0.08$ & $0.65$ \\ [0.5em]
  			& BCES $(X|Y)$      & $7.71 \pm 0.16$ & $2.52 \pm 0.54$ & $10.25$ & $-$ & $1.11$ \\
+ 			& mFITEXY $(X|Y)$   & $7.72^{+0.16}_{-0.16}$ & $2.49^{+0.69}_{-0.45}$ & $10.25$ & $0.93^{+0.15}_{-0.13}$ & $1.10$ \\
+ 			& {\tt linmix\_err} $(X|Y)$     & $7.73 \pm 0.17$ & $2.48 \pm 0.59$ & $10.25$ & $0.95 \pm 0.27$ & $1.10$ \\ [0.5em]
  			& BCES Bisector     & $7.71 \pm 0.11$ & $1.48 \pm 0.20$ & $10.25$ & $-$ & $0.74$ \\
- 			& FITEXY $(Y|X)$    & $7.72^{+0.10}_{-0.09}$ & $0.96^{+0.21}_{-0.21}$ & $10.25$ & $0.58^{+0.09}_{-0.07}$ & $0.64$ \\
- 			& FITEXY $(X|Y)$    & $7.72^{+0.16}_{-0.16}$ & $2.49^{+0.69}_{-0.45}$ & $10.25$ & $0.93^{+0.15}_{-0.13}$ & $1.10$ \\
- 			& FITEXY Bisector   & $7.72^{+0.13}_{-0.13}$ & $1.49^{+0.33}_{-0.28}$ & $10.25$ & $-$    & $0.74$ \\
- 			& {\tt linmix\_err} $(Y|X)$     & $7.73 \pm 0.10$ & $0.98 \pm 0.24$ & $10.25$ & $0.59 \pm 0.08$ & $0.65$ \\
- 			& {\tt linmix\_err} $(X|Y)$     & $7.73 \pm 0.17$ & $2.48 \pm 0.59$ & $10.25$ & $0.95 \pm 0.27$ & $1.10$ \\
- 			& {\tt linmix\_err} Bisector	& $7.73 \pm 0.14$ & $1.49 \pm 0.57$ & $10.25$ & $-$	& $0.74$ \\
+ 			& mFITEXY Bisector  & $7.72^{+0.13}_{-0.13}$ & $1.49^{+0.33}_{-0.28}$ & $10.25$ & $-$    & $0.74$ \\
+ 			& {\tt linmix\_err} Bisector	& $7.73 \pm 0.14$ & $1.49 \pm 0.57$ & $10.25$ & $-$	& $0.74$ \\ [0.5em]
 
 {\bf Early-type (E+S0)} (45)  & BCES $(Y|X)$       & $8.56 \pm 0.07$ & $0.85 \pm 0.12$ & $10.81$ & $-$ & $0.48$ \\
-                              & BCES $(X|Y)$       & $8.56 \pm 0.09$ & $1.27 \pm 0.13$ & $10.81$ & $-$ & $0.59$ \\
-                              & {\bf BCES Bisector}& $\boldsymbol{8.56 \pm 0.07}$ & $\boldsymbol{1.04 \pm 0.10}$ & $\boldsymbol{10.81}$ & $-$ & $\boldsymbol{0.51}$ \\
                               & mFITEXY $(Y|X)$     & $8.56^{+0.06}_{-0.07}$ & $0.83^{+0.11}_{-0.11}$ & $10.81$ & $0.42^{+0.07}_{-0.05}$ & $0.48$ \\
+                              & {\tt linmix\_err} $(Y|X)$     & $8.55 \pm 0.07$ & $0.82 \pm 0.12$ & $10.81$ & $0.43 \pm 0.06$ & $0.48$ \\ [0.5em]
+                              & BCES $(X|Y)$       & $8.56 \pm 0.09$ & $1.27 \pm 0.13$ & $10.81$ & $-$ & $0.59$ \\
                               & mFITEXY $(X|Y)$     & $8.54^{+0.08}_{-0.09}$ & $1.32^{+0.18}_{-0.15}$ & $10.81$ & $0.53^{+0.08}_{-0.07}$ & $0.61$ \\
+                              & {\tt linmix\_err} $(X|Y)$     & $8.55 \pm 0.09$ & $1.29 \pm 0.17$ & $10.81$ & $0.54 \pm 0.11$ & $0.59$ \\ [0.5em]
+                              & {\bf BCES Bisector}& $\boldsymbol{8.56 \pm 0.07}$ & $\boldsymbol{1.04 \pm 0.10}$ & $\boldsymbol{10.81}$ & $-$ & $\boldsymbol{0.51}$ \\
                               & mFITEXY Bisector    & $8.55^{+0.07}_{-0.08}$ & $1.05^{+0.14}_{-0.12}$ & $10.81$ & $-$                    & $0.51$ \\
-                              & {\tt linmix\_err} $(Y|X)$     & $8.55 \pm 0.07$ & $0.82 \pm 0.12$ & $10.81$ & $0.43 \pm 0.06$ & $0.48$ \\
-                              & {\tt linmix\_err} $(X|Y)$     & $8.55 \pm 0.09$ & $1.29 \pm 0.17$ & $10.81$ & $0.54 \pm 0.11$ & $0.59$ \\
                               & {\tt linmix\_err} Bisector    & $8.55 \pm 0.08$ & $1.03 \pm 0.19$ & $10.81$ & $-$    & $0.51$ \\ [0.5em]
 
 {\bf Late-type (Sp)} (17)    & BCES $(Y|X)$    & $7.18 \pm 0.17$ & $1.95 \pm 1.52$ & $10.05$ & $-$ & $0.74$ \\ 
-                             & BCES $(X|Y)$    & $7.18 \pm 0.39$ & $5.89 \pm 3.40$ & $10.05$ & $-$ & $1.70$ \\
-                             & {\bf BCES Bisector}& $\boldsymbol{7.18 \pm 0.21}$ & $\boldsymbol{3.00 \pm 1.30}$ & $\boldsymbol{10.05}$ & $-$ & $\boldsymbol{0.94}$ \\
                              & mFITEXY $(Y|X)$     & $7.20^{+0.15}_{-0.16}$ & $1.22^{+0.70}_{-0.62}$  & $10.05$ & $0.59^{+0.16}_{-0.11}$ & $0.66$ \\
+                             & {\tt linmix\_err} $(Y|X)$  & $7.23 \pm 0.19$ & $0.96 \pm 0.96$ & $10.05$ & $0.67 \pm 0.16$ & $0.65$ \\ [0.5em]
+                             & BCES $(X|Y)$    & $7.18 \pm 0.39$ & $5.89 \pm 3.40$ & $10.05$ & $-$ & $1.70$ \\
                              & mFITEXY $(X|Y)$     & $7.44^{+1.45}_{-0.52}$ & $7.14^{+26.31}_{-3.01}$ & $10.05$ & $1.49^{+0.56}_{-0.36}$ & $2.08$ \\
+                             & {\tt linmix\_err} $(X|Y)$  & $7.42 \pm 0.64$ & $6.96 \pm 6.73$ & $10.05$ & $1.83 \pm 1.86$ & $2.03$ \\ [0.5em]
+                             & {\bf BCES Bisector}& $\boldsymbol{7.18 \pm 0.21}$ & $\boldsymbol{3.00 \pm 1.30}$ & $\boldsymbol{10.05}$ & $-$ & $\boldsymbol{0.94}$ \\
                              & {\bf mFITEXY Bisector}    & $\boldsymbol{7.24^{+1.04}_{-0.39}}$ & $\boldsymbol{2.28^{+1.67}_{-1.01}}$  & $\boldsymbol{10.05}$ & $-$    & $\boldsymbol{0.79}$ \\
-                             & {\tt linmix\_err} $(Y|X)$  & $7.23 \pm 0.19$ & $0.96 \pm 0.96$ & $10.05$ & $0.67 \pm 0.16$ & $0.65$ \\
-                             & {\tt linmix\_err} $(X|Y)$  & $7.42 \pm 0.64$ & $6.96 \pm 6.73$ & $10.05$ & $1.83 \pm 1.86$ & $2.03$ \\
-                             & {\tt linmix\_err} Bisector & $7.26 \pm 0.47$ & $1.94 \pm 216.38$ & $10.05$ & $-$    & $0.74$ \\
+                             & {\tt linmix\_err} Bisector & $7.26 \pm 0.47$ & $1.94 \pm 216.38$ & $10.05$ & $-$    & $0.74$ \\ [0.5em]
                   
 \tableline 
 \tableline
@@ -838,8 +863,9 @@ California Institute of Technology under a contract with NASA.
 This research has made use of the GOLDMine database \citep{goldmine} and the NASA/IPAC Extragalactic Database (NED) 
 which is operated by the Jet Propulsion Laboratory, California Institute of Technology, 
 under contract with the National Aeronautics and Space Administration. 
+We acknowledge the usage of the HyperLeda database (\url{http://leda.univ-lyon1.fr}).
 The BCES routine \citep{akritasbershady1996} was run via the python module 
-written by Rodrigo Nemmen \citep{nemmen2012}, which is available at {\url https://github.com/rsnemmen/BCES}.
+written by Rodrigo Nemmen \citep{nemmen2012}, which is available at \url{https://github.com/rsnemmen/BCES}.
 
 \bibliography{/Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography}
 
