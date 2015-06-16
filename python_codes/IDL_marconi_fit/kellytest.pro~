@@ -1,0 +1,65 @@
+data = ['Graham-64-BH.dat']
+
+openw, 5, 'kellytest.out'
+
+FOR I = 0,(N_ELEMENTS(data)-1) DO BEGIN & $
+
+	filedata = data[I] & $
+	printf, 5, filedata & $
+	print, filedata & $
+	
+	printf, 5, 'y|x' & $
+	readcol, filedata, x10, y10, y10perr, y10merr & $
+        x = alog10(x10/200.) & $
+        y = alog10(y10) & $
+        xerr = x*0.0 + 0.043575 & $
+        yperr = alog10(1+y10perr/y10) & $
+        ymerr = -alog10(1-y10merr/y10) & $
+        yerr = (yperr+ymerr)/2. & $      
+	linmix_err, x, y, fit, xsig=xerr, ysig=yerr & $
+	alpha_yx = mean(fit.alpha) & $
+	err_alpha_yx = stddev(fit.alpha) & $
+	beta_yx = mean(fit.beta) & $
+	err_beta_yx = stddev(fit.beta) & $
+	printf, 5, 'alpha = ', alpha_yx, ' \pm', err_alpha_yx & $
+	printf, 5, 'beta = ', beta_yx, ' \pm', err_beta_yx & $
+	printf, 5, 'epsilon = ', mean(sqrt(fit.sigsqr)), ' \pm', stddev(sqrt(fit.sigsqr)) & $
+	ss = total((y - alpha_yx - beta_yx*x)^2) & $
+	Delta = sqrt(ss/(N_ELEMENTS(x)-2)) & $
+	printf, 5, 'Delta = ', Delta & $
+	
+	printf, 5, '----------------------------------------------' & $
+
+	printf, 5, 'x|y' & $
+	linmix_err, y, x, fit, xsig=yerr, ysig=xerr & $
+	alpha_xy = mean(-(fit.alpha)/(fit.beta)) & $
+	err_alpha_xy = stddev(-(fit.alpha)/(fit.beta)) & $
+	beta_xy = mean(1/fit.beta) & $
+	err_beta_xy = stddev(1/fit.beta) & $
+	printf, 5, 'alpha = ', alpha_xy, ' \pm', err_alpha_xy & $
+	printf, 5, 'beta = ', beta_xy, ' \pm', err_beta_xy & $
+	printf, 5, 'epsilon = ', mean(sqrt(fit.sigsqr)), ' \pm', stddev(sqrt(fit.sigsqr)) & $
+	ss = total((y - alpha_xy - beta_xy*x)^2) & $
+	Delta = sqrt(ss/(N_ELEMENTS(x)-2)) & $
+	printf, 5, 'Delta = ', Delta & $
+	
+	printf, 5, '----------------------------------------------' & $
+
+	printf, 5, 'bisector' & $
+	beta_bis = tan(0.5*(atan(beta_yx)+atan(beta_xy))) & $
+	alpha_bis = (alpha_xy-alpha_yx)*(beta_yx-beta_bis)/(beta_yx-beta_xy) + alpha_yx & $
+	err_alpha_bis = (err_alpha_yx^2+err_alpha_xy^2)^0.5/2^0.5 & $
+	err_beta_bis = tan(err_alpha_bis+atan(beta_bis)) - beta_bis & $
+	printf, 5, 'alpha = ', alpha_bis, ' \pm', err_alpha_bis & $
+	printf, 5, 'beta = ', beta_bis, ' \pm', err_beta_bis & $
+	ss = total((y - alpha_bis - beta_bis*x)^2) & $
+	Delta = sqrt(ss/(N_ELEMENTS(x)-2)) & $
+	printf, 5, 'Delta = ', Delta & $
+
+	printf, 5, '----------------------------------------------' & $
+
+
+ENDFOR
+
+
+close,5

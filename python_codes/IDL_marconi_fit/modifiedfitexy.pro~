@@ -1,0 +1,24 @@
+data = ['mbh_vs_mag_gal_all.dat', 'mbh_vs_mag_gal_early.dat', 'mbh_vs_mag_sph_all.dat', 'mbh_vs_mag_sph_core.dat', 'mbh_vs_mag_sph_sersic.dat', 'mbh_vs_mag_sph_early.dat', 'mbh_vs_mag_sph_late.dat', 'mbh_vs_mag_sph_classbul.dat', 'mbh_vs_mass_sph_early.dat', 'mbh_vs_mass_sph_late.dat']
+
+data = ['mbh_vs_mag_gal_all.dat']
+
+openw, 5, 'modifiedfitexy.out'
+
+FOR I = 0,(N_ELEMENTS(data)-1) DO BEGIN & $
+
+	filedata = data[I] & $
+	printf, 5, filedata & $
+	print, filedata & $
+	
+	printf, 5, 'y|x' & $
+	readcol, filedata, x, xerr, y, yerr & $
+	result = mpfitexy(x, y, xerr, yerr, x0 = 0,  e_int_guess = 0.4, errors = errors) & $
+	print, 'result', result, 'errors', errors, 'epsilon', e_int_reduce & $
+
+	printf, 5, '----------------------------------------------' & $
+
+
+ENDFOR
+
+
+close,5
