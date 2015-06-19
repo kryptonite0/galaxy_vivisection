@@ -23,11 +23,15 @@ class Settings:
     #smoothing = True
     
     observation = 'spitzer3.6um'
-    #observation = 'n1277' 
+    #observation = 'n1271' 
         
     if (observation == 'n1277'):
         pxlToArcsec = 0.05
         zeropoint = 24.851 # hst for n1277
+    
+    if (observation == 'n1271'):
+        pxlToArcsec = 0.12825
+        zeropoint = 24.851 # to be updated
     
     if (observation == 'spitzer3.6um'):
         pxlToArcsec = 1.2232836

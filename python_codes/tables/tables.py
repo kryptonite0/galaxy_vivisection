@@ -64,6 +64,156 @@ def make_alister_table1():
        
         ############################
 	
+
+def make_BHFP_data_table():
+
+	connection = sql3.connect(dbname)
+	cur = connection.cursor()
+
+	getdata_query = 'SELECT anc.gal_id, anc.simplemorphtype, anc.core, anc.bar, \
+		anc.mass_BH, anc.perr_mass_BH, anc.merr_mass_BH, anc.sigma, \
+		physres.mag_sph_eq_moffat_comb, physres.mag_tot_eq_moffat_comb, \
+		physres.log_n_maj_moffat_comb, physres.log_n_eq_moffat_comb, \
+		physres.mu_e_maj_moffat_comb, physres.mu_e_eq_moffat_comb, \
+		physres.log_r_e_maj_moffat_comb, physres.log_r_e_eq_moffat_comb, \
+		errV.perr_mag_sph, errV.merr_mag_sph, \
+		errV.perr_log_n, errV.merr_log_n, \
+		errV.perr_mu_e, errV.merr_mu_e, \
+	        errV.perr_log_r_e, errV.merr_log_r_e, \
+		errV.perr_mu_0, errV.merr_mu_0 \
+		FROM Ancillary AS anc \
+		JOIN OneDFitResultsPhysicalUnits AS physres ON anc.gal_id = physres.gal_id \
+		JOIN OneDFitResults AS res ON anc.gal_id = res.gal_id \
+		JOIN ErrorsVote as errV ON anc.gal_id = errV.gal_id \
+		WHERE anc.fit1D_done = 1;'
+
+	cur.execute(getdata_query)
+	datalist = cur.fetchall()
+	data= np.asarray(datalist).transpose()
+
+	gal_id = data[0]
+	simplemorphtype = data[1]
+	core = data[2].astype(np.int)
+	bar = data[3].astype(np.int)
+
+	earlytype = np.zeros(len(gal_id))
+	for i in range(len(gal_id)):
+	    if simplemorphtype[i]=='E' or simplemorphtype[i]=='E/S0' or simplemorphtype[i]=='S0':
+	        earlytype[i] = 1
+	latetype = np.zeros(len(gal_id))
+	for i in range(len(gal_id)):
+	    if simplemorphtype[i]=='Sp':
+	        latetype[i] = 1
+
+	mbh = data[4].astype(np.float)
+	log_mbh = np.log10(mbh)
+	perr_mbh = data[5].astype(np.float)
+	merr_mbh = data[6].astype(np.float)
+	perr_log_mbh = np.log10(1 + perr_mbh/mbh)
+	merr_log_mbh = -np.log10(1 - merr_mbh/mbh)
+
+	sigma = data[7].astype(np.float)
+	# assign value to n3079
+	sigma[gal_id=='n3079'] = 105
+	log_sigma = np.log10(sigma)
+	err_log_sigma = sigma*[0.0] + np.log10(1.05)
+
+	mag_sph = data[8].astype(np.float)
+	mag_tot = data[9].astype(np.float)
+	perr_mag_sph = data[16].astype(np.float)
+	merr_mag_sph = data[17].astype(np.float)
+	err_mag_tot = np.zeros(len(gal_id)) + 0.25
+
+	log_n_maj = data[10].astype(np.float)
+	n_maj = 10**log_n_maj
+	log_n_eq = data[11].astype(np.float)
+	n_eq = 10**log_n_eq
+	perr_log_n = data[18].astype(np.float)
+	merr_log_n = data[19].astype(np.float)
+
+	mu_e_maj = data[12].astype(np.float)
+	mu_e_eq = data[13].astype(np.float)
+	perr_mu_e = data[20].astype(np.float)
+	merr_mu_e = data[21].astype(np.float)
+
+	# compute mu_0
+	b_maj = np.zeros(len(gal_id))
+	for i in range(len(b_maj)):
+		b_maj[i] = b_n.computeb_n(n_maj[i])
+	b_eq = np.zeros(len(gal_id))
+	for i in range(len(b_eq)):
+		b_eq[i] = b_n.computeb_n(n_eq[i])
+
+	mu_0_maj = mu_e_maj - 2.5*b_maj/np.log(10)
+	mu_0_eq = mu_e_eq - 2.5*b_eq/np.log(10)
+	perr_mu_0 = data[24].astype(np.float)
+	merr_mu_0 = data[25].astype(np.float)
+
+	log_r_e_maj = data[14].astype(np.float)
+	#r_e_maj = 10**log_r_e_maj
+	log_r_e_eq = data[15].astype(np.float)
+	#r_e_eq = 10**log_r_e_eq
+	perr_log_r_e = data[22].astype(np.float)
+	merr_log_r_e = data[23].astype(np.float)
+
+		
+        fiName = '/Users/gsavorgnan/galaxy_vivisection/python_codes/BHFP/BHFP_all_data.dat'
+        fi = open(fiName, 'w')
+        fi.write('#    log(Mbh)  perr  merr  log(sigma)  err  mag_sph  perr  merr  mag_tot  err  \
+		log(n_maj)  log(n_eq)  perr  merr  log(Re_maj)  log(Re_eq)  perr  merr  mu_e_maj  mu_e_eq  perr  merr \
+		mu_0_maj  mu_0_eq  perr  merr \n')
+        for a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z in zip(log_mbh, perr_log_mbh, merr_log_mbh, 
+        	log_sigma, err_log_sigma, mag_sph, perr_mag_sph, merr_mag_sph, mag_tot, err_mag_tot, log_n_maj, log_n_eq, 
+        	perr_log_n, merr_log_n, log_r_e_maj, log_r_e_eq, perr_log_r_e, merr_log_r_e, mu_e_maj, mu_e_eq, 
+        	perr_mu_e, merr_mu_e, mu_0_maj, mu_0_eq, perr_mu_0, merr_mu_0):
+		        	
+        	fi.write(str(a) + '     ' + str(b) + '	  ' + str(c) + '     ' + str(d) + '	' + str(e) + '     ' + str(f) )
+        	fi.write('     ' + str(g) + '	 ' + str(h) + '     ' + str(i) + '     ' + str(j) + '	  ' + str(k) )
+        	fi.write('     ' + str(l) + '	 ' + str(m) + '     ' + str(n) + '     ' + str(o) + '	  ' + str(p) )
+        	fi.write('     ' + str(q) + '	 ' + str(r) + '     ' + str(s) + '     ' + str(t) + '	  ' + str(u) )
+        	fi.write('     ' + str(v) + '	 ' + str(w) + '     ' + str(x) + '     ' + str(y) + '	  ' + str(z) )
+        	fi.write('     ' + '\n')
+        fi.close()
+
+
+        fiName = '/Users/gsavorgnan/galaxy_vivisection/python_codes/BHFP/BHFP_early_data.dat'
+        fi = open(fiName, 'w')
+        fi.write('#    log(Mbh)  perr  merr  log(sigma)  err  mag_sph  perr  merr  mag_tot  err  \
+		log(n_maj)  log(n_eq)  perr  merr  log(Re_maj)  log(Re_eq)  perr  merr  mu_e_maj  mu_e_eq  perr  merr \
+		mu_0_maj  mu_0_eq  perr  merr \n')
+        for a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,early in zip(log_mbh, perr_log_mbh, merr_log_mbh, 
+        	log_sigma, err_log_sigma, mag_sph, perr_mag_sph, merr_mag_sph, mag_tot, err_mag_tot, log_n_maj, log_n_eq, 
+        	perr_log_n, merr_log_n, log_r_e_maj, log_r_e_eq, perr_log_r_e, merr_log_r_e, mu_e_maj, mu_e_eq, 
+        	perr_mu_e, merr_mu_e, mu_0_maj, mu_0_eq, perr_mu_0, merr_mu_0, earlytype):
+		
+		if early == 1:
+        		fi.write(str(a) + '     ' + str(b) + '	  ' + str(c) + '     ' + str(d) + '	' + str(e) + '     ' + str(f) )
+        		fi.write('     ' + str(g) + '	 ' + str(h) + '     ' + str(i) + '     ' + str(j) + '	  ' + str(k) )
+        		fi.write('     ' + str(l) + '	 ' + str(m) + '     ' + str(n) + '     ' + str(o) + '	  ' + str(p) )
+        		fi.write('     ' + str(q) + '	 ' + str(r) + '     ' + str(s) + '     ' + str(t) + '	  ' + str(u) )
+        		fi.write('     ' + str(v) + '	 ' + str(w) + '     ' + str(x) + '     ' + str(y) + '	  ' + str(z) )
+        		fi.write('     ' + '\n')
+        fi.close()
+
+        fiName = '/Users/gsavorgnan/galaxy_vivisection/python_codes/BHFP/BHFP_ELL_data.dat'
+        fi = open(fiName, 'w')
+        fi.write('#    log(Mbh)  perr  merr  log(sigma)  err  mag_sph  perr  merr  mag_tot  err  \
+		log(n_maj)  log(n_eq)  perr  merr  log(Re_maj)  log(Re_eq)  perr  merr  mu_e_maj  mu_e_eq  perr  merr \
+		mu_0_maj  mu_0_eq  perr  merr \n')
+        for a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,ty in zip(log_mbh, perr_log_mbh, merr_log_mbh, 
+        	log_sigma, err_log_sigma, mag_sph, perr_mag_sph, merr_mag_sph, mag_tot, err_mag_tot, log_n_maj, log_n_eq, 
+        	perr_log_n, merr_log_n, log_r_e_maj, log_r_e_eq, perr_log_r_e, merr_log_r_e, mu_e_maj, mu_e_eq, 
+        	perr_mu_e, merr_mu_e, mu_0_maj, mu_0_eq, perr_mu_0, merr_mu_0, simplemorphtype):
+		
+		if ty == 'E':
+        		fi.write(str(a) + '     ' + str(b) + '	  ' + str(c) + '     ' + str(d) + '	' + str(e) + '     ' + str(f) )
+        		fi.write('     ' + str(g) + '	 ' + str(h) + '     ' + str(i) + '     ' + str(j) + '	  ' + str(k) )
+        		fi.write('     ' + str(l) + '	 ' + str(m) + '     ' + str(n) + '     ' + str(o) + '	  ' + str(p) )
+        		fi.write('     ' + str(q) + '	 ' + str(r) + '     ' + str(s) + '     ' + str(t) + '	  ' + str(u) )
+        		fi.write('     ' + str(v) + '	 ' + str(w) + '     ' + str(x) + '     ' + str(y) + '	  ' + str(z) )
+        		fi.write('     ' + '\n')
+        fi.close()
+
 	
 make_alister_table1()	
-	
+make_BHFP_data_table()	

@@ -40,7 +40,7 @@ def process_single_1D(directory, dist_Mpc):
 					for line in lines:
 						if (line.split()[0] == '1') and (line.split()[1] == 'sersic'):
 							log_r_e = np.log10(convert.arcsecToKpc(float(line.split()[2]),dist_Mpc))
-							mu_e = convert.apparentToAbsoluteMagnitude(float(line.split()[3]),dist_Mpc)
+							mu_e = float(line.split()[3])
 							log_n = np.log10(float(line.split()[4]))
 							mag_sph = convert.apparentToAbsoluteMagnitude(float(line.split()[6]),dist_Mpc)
 						if (line.split()[0] == 'Total_galaxy_magnitude'):
