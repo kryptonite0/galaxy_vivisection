@@ -207,7 +207,7 @@ def performFitAndPlot(excludedRangeList, galaxy, axisFit, psfFunction, sampling,
 		print 'Input ellipse file: ', ellipseOutput
 		print 'Excluded data: ', excludedRangeList
 		print 'Axis Used: ', axisFit
-		print 'x-Axis units: pixel'
+		print 'x-Axis units: arcsec'
 		print 'pixels to arcsec scale: ', Settings.pxlToArcsec
 		print 'Smoothing: ', Settings.smoothing, 'sigma = ', (gaussianSmoothing.gaussianFWHM / (2.3548 * Settings.pxlToArcsec))
 		print 'Zeropoint: ', Settings.zeropoint 
@@ -225,7 +225,7 @@ def performFitAndPlot(excludedRangeList, galaxy, axisFit, psfFunction, sampling,
 		print 'Input ellipse file: ', ellipseOutput
 		print 'Excluded data: ', excludedRangeList
 		print 'Axis Used: ', axisFit
-		print 'x-Axis units: pixel'
+		print 'x-Axis units: arcsec'
 		print 'pixels to arcsec scale: ', Settings.pxlToArcsec
 		print 'Smoothing: ', Settings.smoothing, 'sigma = ', (gaussianSmoothing.gaussianFWHM / (2.3548 * Settings.pxlToArcsec))
 		print 'Zeropoint: ', Settings.zeropoint 
@@ -289,18 +289,18 @@ for sampling in samplingList:
 				
 			performFitAndPlot(excludedRangeList, galaxy, axisFit, psfFunction, sampling, bestfitFig, equivalentAxisFit)					
 	
-	bestfitFig.subplots_adjust(wspace=0, hspace=0)
-	bestfitFig.savefig(galaxy + 'bestfit_' + sampling + '.eps', format='eps', dpi=1000)
+	#bestfitFig.subplots_adjust(wspace=0, hspace=0)
+	#bestfitFig.savefig(galaxy + 'bestfit_' + sampling + '.eps', format='eps', dpi=1000)
 	
-ellipseOutput = prefixEllipseOutput + '_combscale.ell'
-datatab = readEllipseOutput(ellipseOutput) 
+#ellipseOutput = prefixEllipseOutput + '_combscale.ell'
+#datatab = readEllipseOutput(ellipseOutput) 
 
 #exclude R=0 point
-datatab = datatab[datatab['sma']>0]
+#datatab = datatab[datatab['sma']>0]
 #exclude data fainter than (3) sky RMS
-datatab = datatab[datatab['intens']>skyRMS]
+#datatab = datatab[datatab['intens']>skyRMS]
 
-isophAnalFig = plt.figure()
+#isophAnalFig = plt.figure()
 
 #isophAnalFig = addPanelsToIsophotalAnalysisFigure(isophAnalFig, datatab, Settings)
 #isophAnalFig.savefig(galaxy + 'isophotalAnalysis.eps', format='eps', dpi=1000)

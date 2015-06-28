@@ -14,17 +14,16 @@ def createPsf(Settings):
         moffatPsf.moffatAlpha = (1.61467/(2*np.sqrt(2**(1/4.39)-1)) ) * Settings.pxlToArcsec  # alpha = fwhm / (2 * sqrt(2**(1/beta) - 1) )
         moffatPsf.moffatBeta = 4.39  
         
-        psfList = [gaussianPsf, moffatPsf]
-#         psfList = [moffatPsf]
+#        psfList = [gaussianPsf, moffatPsf]
+        psfList = [moffatPsf]
 
-#     if (Settings.observation == 'n1277'):
-#     
-#         moffatPsf = PsfFunction()
-#         moffatPsf.name = 'moffat'
-#         moffatPsf.moffatAlpha = 2.6/(2*np.sqrt(2**(1/2.9)-1))  # alpha = fwhm / (2 * sqrt(2**(1/beta) - 1) )
-#         moffatPsf.moffatBeta = 2.9  
-#         
-#         psfList = [moffatPsf]
+    if (Settings.observation == 'n1271'):
+    
+        gaussianPsf = PsfFunction()
+        gaussianPsf.name = 'gaussian'
+        gaussianPsf.gaussianFWHM = 2.3 * Settings.pxlToArcsec 
+        
+        psfList = [gaussianPsf]
 
     gaussianSmoothing = PsfFunction()
     gaussianSmoothing.name = 'gaussian'

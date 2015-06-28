@@ -43,13 +43,23 @@ from instruments.plotting import *
 
 #################################################### 
 
-moffatPsf = PsfFunction()
-moffatPsf.name = 'moffat'
-moffatPsf.moffatAlpha = (1.61467/(2*np.sqrt(2**(1/4.39)-1)) ) * Settings.pxlToArcsec  # alpha = fwhm / (2 * sqrt(2**(1/beta) - 1) )
-moffatPsf.moffatBeta = 4.39  
-        
-psfList = [moffatPsf]
+if (Settings.observation == 'spitzer3.6um'): 
 
+	moffatPsf = PsfFunction()
+	moffatPsf.name = 'moffat'
+	moffatPsf.moffatAlpha = (1.61467/(2*np.sqrt(2**(1/4.39)-1)) ) * Settings.pxlToArcsec  # alpha = fwhm / (2 * sqrt(2**(1/beta) - 1) )
+	moffatPsf.moffatBeta = 4.39  
+	        
+	psfList = [moffatPsf]
+	
+if (Settings.observation == 'n1271'):
+	print 'n1271'
+        gaussianPsf = PsfFunction()
+        gaussianPsf.name = 'gaussian'
+        gaussianPsf.gaussianFWHM = 1.8 * Settings.pxlToArcsec 
+        
+        psfList = [gaussianPsf]
+	
 gaussianSmoothing = PsfFunction()
 gaussianSmoothing.name = 'gaussian'
 gaussianSmoothing.gaussianFWHM = 5 * 2.3548 * Settings.pxlToArcsec 
@@ -170,7 +180,7 @@ def readFitAndPlot(excludedRangeList, galaxy, axisFit, psfFunction, sampling, be
         rrr = rrr * np.sqrt(1. - ellip) 
     
     
-    bestFitParamsFileName = galaxy + '_' + axisFit + '_moffat_comb_par_SM.dat'
+    bestFitParamsFileName = galaxy + '_' + axisFit + '_' + gaussianPsf.name + '_comb_par_SM.dat'
     
     componentslist, finalparams = readBestFitModel(bestFitParamsFileName)
     

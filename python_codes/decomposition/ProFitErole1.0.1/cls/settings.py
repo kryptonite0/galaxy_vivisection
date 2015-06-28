@@ -22,8 +22,8 @@ class Settings:
     smoothing = False
     #smoothing = True
     
-    observation = 'spitzer3.6um'
-    #observation = 'n1271' 
+    #observation = 'spitzer3.6um'
+    observation = 'n1271' 
         
     if (observation == 'n1277'):
         pxlToArcsec = 0.05
@@ -31,7 +31,7 @@ class Settings:
     
     if (observation == 'n1271'):
         pxlToArcsec = 0.12825
-        zeropoint = 24.851 # to be updated
+        zeropoint = 24.6949 # Vega
     
     if (observation == 'spitzer3.6um'):
         pxlToArcsec = 1.2232836
