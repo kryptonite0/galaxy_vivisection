@@ -26,7 +26,7 @@
 
 \begin{document}
 
-\title{Supermassive black hole and host bulge affairs \\ I. True to life galaxy decomposition.}
+\title{Supermassive black hole and host bulge affairs \\ I. True to life, physically motivated galaxy decomposition.}
 
 \author{G. A. D. Savorgnan and A. W. Graham}
 \affil{Centre for Astrophysics and Supercomputing, Swinburne University of Technology, Hawthorn, Victoria 3122, Australia.}
@@ -174,7 +174,7 @@ this initial sample was ultimately reduced to 66 galaxies for which useful bulge
 %\clearpage
 \input{table_sample.tex}
 %\noindent
-\input{table_observations.tex}
+%\input{table_observations.tex}
 
 
 
@@ -182,8 +182,8 @@ this initial sample was ultimately reduced to 66 galaxies for which useful bulge
 \subsubsection{Data acquisition}
 For each of our 75 galaxies, we downloaded from the 
 Spitzer Heritage Archive\footnote{\url{http://irsa.ipac.caltech.edu/applications/Spitzer/SHA/}} 
-all the available $3.6~\rm \mu m$ IRAC Astronomical Observation Requests (AORs), 
-listed in Table \ref{tab:obs}.
+all the available $3.6~\rm \mu m$ IRAC Astronomical Observation Requests (AORs). 
+%listed in Table \ref{tab:obs}.
 Each AOR is an individual Spitzer observation sequence, and
 includes a number of data frames (the individual exposures) and the calibration data.
 The data frames were selected to be %``enhanced Level 1 products'', or
@@ -410,7 +410,7 @@ within 3 PSF's $FWHM$ from the galaxy center.
 In case of cores with sizes exceeding the PSF's $FWHM$, we excluded the data points within the size of the core 
 plus 3 PSF's $FWHM$.
 The S\'ersic/core-S\'ersic classification presented in this work (Table \ref{tab:sample}, column 5)
-comes from the compilation of \citet{savorgnangraham2014},
+comes from the compilation of \citet{savorgnangraham2015},
 who identified partially depleted cores according to the same criteria used by \citet{grahamscott2013}.
 When no high-resolution image analysis was available from the literature, 
 they inferred the presence of a partially depleted core based on the stellar velocity dispersion, $\sigma$:
@@ -776,8 +776,7 @@ is superior when tighter constraints are put on the galaxy outskirts.
 In other words, the better quality of the residuals led us to prefer the fits that use linearly sampled surface brightness profiles,
 although the results were ususally very similar,as might be expected. \\
 Among the initial sample of 75 galaxies, we did not attempt to model 3 galaxies: M32, NGC 4486A and the Circinus Galaxy. 
-The first two... {\bf AL: can you write a short sentence about these 2 galaxies, that have uncertain morphology,
-because they have been stripped, blah blah, maybe put one reference? please and thank you.}
+The first two have been stripped by their massive companions, and thus have uncertain morphology. 
 The Circinus Galaxy lies at only 4 degrees from the Galactic Plane, 
 therefore its image mosaic is contaminated by a large number of foreground stars.
 Of the remaining 72 galaxies, 
@@ -1140,7 +1139,8 @@ S+11 = \cite{sani2011}, V+12 \cite{vika2012}, B+12 = \cite{beifiori2012}, L+14 =
 
 \begin{itemize}
 \item One-dimensional and two-dimensional techniques of galaxy decomposition return the same results when applied to the same galaxy.
-However, in our practical experience, two-dimensional decompositions {\bf HOW DO YOU WRITE THIS IN ENGLISH?? fail twice as much as one-dimensional ones}, 
+However, in our practical experience, the failure rate of two-dimensional decompositions 
+is a factor of two higher than the failure rate of one-dimensional decompositions,  
 either because the fit does not converge or because the result is unphysical. 
 A strong limitation of two-dimensional codes is their inability to accommodate the radial gradients of ellipticity and position angle 
 often observed in galaxy bulges.
@@ -1158,9 +1158,9 @@ We will use the results from our one-dimensional galaxy decompositions to obtain
 We will also derive and explore some unpublished correlations. 
 These results will be presented in a series of forthcoming papers.
 
-{\bf Lasker's conclusions are: bulge+disk decompositions are not enough, we do better by adding bars, spiral arms and stuff (really?? what a surprising conclusion);
-we modelled the envelope of 5 galaxies; we observed central light deficits in 9 ellipticals; total magnitudes are independent from details of modelling (no, really?)
-and bulge magnitudes are 0.36 mag fainter when additional components (other than bulge and disk) are modelled.  }
+%{\bf Lasker's conclusions are: bulge+disk decompositions are not enough, we do better by adding bars, spiral arms and stuff (really?? what a surprising conclusion);
+%we modelled the envelope of 5 galaxies; we observed central light deficits in 9 ellipticals; total magnitudes are independent from details of modelling (no, really?)
+%and bulge magnitudes are 0.36 mag fainter when additional components (other than bulge and disk) are modelled.  }
 
 
 %\clearpage
@@ -1792,7 +1792,10 @@ and bulge magnitudes are 0.36 mag fainter when additional components (other than
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/m104_1Dfit.eps}
-  \caption{Best-fit model and isophotal parameters for M104.
+  \caption{Best-fit model and isophotal parameters for M104. 
+  M104 is a lenticular/spiral galaxy with a partially depleted core. 
+  The data within the innermost $6''.1$ are excluded from the fit, 
+  and the most obvious ring of the galaxy is modeled.
   }
   \end{center}
   \end{figure}
@@ -2111,12 +2114,13 @@ and bulge magnitudes are 0.36 mag fainter when additional components (other than
   \clearpage\newpage\noindent
   {\bf NGC 1316 \\}
 
-  ok
-
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n1316_1Dfit.eps}
-  \caption{Best-fit model and isophotal parameters for NGC 1316.}
+  \caption{Best-fit model and isophotal parameters for NGC 1316. 
+  NGC 1316 is a merger. 
+  The galaxy is composed of a bulge, an elongated structure that can be identified with a bar, 
+  two obvious rings, an outer exponential disk or halo, and a bright nuclear component. }
   \end{center}
   \end{figure}
 
@@ -2138,6 +2142,9 @@ and bulge magnitudes are 0.36 mag fainter when additional components (other than
   \end{tabular}
   \end{center}
   \label{tab:n1316}
+  \tablecomments{
+  S+11 overestimated the bulge effective radius and S\'ersic index because their model does not take into account the bar.
+  }
   \end{table}
 
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -3782,7 +3789,8 @@ and bulge magnitudes are 0.36 mag fainter when additional components (other than
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n5128_1Dfit.eps}
   \caption{Best-fit model and isophotal parameters for NGC 5128.
-  NGC 5128 is a merging system. }
+  NGC 5128 is a merging system. 
+  The data within $50'' \lesssim R_{\rm maj} \lesssim 200''$ is excluded from the fit.}
   \end{center}
   \end{figure}
 

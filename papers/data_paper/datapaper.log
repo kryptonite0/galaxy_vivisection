@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  11 JUN 2015 11:41
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  28 JUN 2015 18:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -434,10 +434,6 @@ able_sample.tex
 
 LaTeX Warning: Float too large for page by 14.14392pt on input line 106.
 
-) (./table_observations.tex
-
-LaTeX Warning: Float too large for page by 21.17499pt on input line 201.
-
 )
 Package epstopdf Info: Source file: <images/m49nooverlap.eps>
 (epstopdf)                    date: 2015-02-10 05:37:10
@@ -479,36 +475,6 @@ ine 235.
 LaTeX Warning: A float is stuck (cannot be placed) on input line 242.
 
 [4]
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 242.
-
-
-Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
-
-[5]
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 242.
-
-[6]
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 242.
-
-
-Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[7]
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 265.
-
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 265.
-
-
-Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
-
 Package epstopdf Info: Source file: <images/n4459brightstar.eps>
 (epstopdf)                    date: 2015-02-10 05:37:10
 (epstopdf)                    size: 1000751 bytes
@@ -520,7 +486,8 @@ f>
 -converted-to.pdf images/n4459brightstar.eps>
 (epstopdf)             \includegraphics on input line 276.
 Package epstopdf Info: Output file is already uptodate.
-<images/n4459brightstar-eps-converted-to.pdf, id=49, 698.61pt x 707.64375pt>
+
+<images/n4459brightstar-eps-converted-to.pdf, id=38, 698.61pt x 707.64375pt>
 File: images/n4459brightstar-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n4459brightstar-eps-converted-to.pdf>
@@ -539,7 +506,7 @@ ps-converted-to.pdf images/n4459nobrightstar.eps>
 (epstopdf)             \includegraphics on input line 277.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/n4459nobrightstar-eps-converted-to.pdf, id=50, 698.61pt x 707.64375pt>
+<images/n4459nobrightstar-eps-converted-to.pdf, id=39, 698.61pt x 707.64375pt>
 File: images/n4459nobrightstar-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n4459nobrightstar-eps-converted-to.pdf>
@@ -547,10 +514,17 @@ Package pdftex.def Info: images/n4459nobrightstar-eps-converted-to.pdf used on
 input line 277.
 (pdftex.def)             Requested size: 120.18193pt x 121.73395pt.
 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 Underfull \hbox (badness 3758) in paragraph at lines 301--316
 \OT1/cmr/m/n/10 Func-tion was char-ac-ter-ized us-ing the IRAF task
  []
 
+[5 <./images/m49nooverlap-eps-converted-to.pdf> <./images/m49overlap-eps-conver
+ted-to.pdf> <./images/n4459brightstar-eps-converted-to.pdf> <./images/n4459nobr
+ightstar-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/psf.eps>
 (epstopdf)                    date: 2015-03-26 22:55:43
 (epstopdf)                    size: 2352011 bytes
@@ -561,34 +535,16 @@ Package epstopdf Info: Source file: <images/psf.eps>
 o.pdf images/psf.eps>
 (epstopdf)             \includegraphics on input line 344.
 Package epstopdf Info: Output file is already uptodate.
-<images/psf-eps-converted-to.pdf, id=51, 578.16pt x 433.62pt>
+
+<images/psf-eps-converted-to.pdf, id=58, 578.16pt x 433.62pt>
 File: images/psf-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/psf-eps-converted-to.pdf>
 Package pdftex.def Info: images/psf-eps-converted-to.pdf used on input line 344
 .
 (pdftex.def)             Requested size: 245.26653pt x 319.02802pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[8 <./images/m49nooverlap-eps-converted-to.pdf> <./images/m49overlap-eps-conver
-ted-to.pdf> <./images/n4459brightstar-eps-converted-to.pdf> <./images/n4459nobr
-ightstar-eps-converted-to.pdf>]
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 385.
-
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 385.
-
-
-Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
-
-
-Package natbib Warning: Citation `savorgnangraham2014' on page 9 undefined on i
-nput line 413.
-
-[9 <./images/psf-eps-converted-to.pdf>] [10]
+ [6 <./images/psf-eps-converted-to.pdf>]
+[7]
 Package epstopdf Info: Source file: <images/n2974_1Dfit.eps>
 (epstopdf)                    date: 2015-03-26 22:55:43
 (epstopdf)                    size: 167434 bytes
@@ -599,8 +555,7 @@ Package epstopdf Info: Source file: <images/n2974_1Dfit.eps>
 verted-to.pdf images/n2974_1Dfit.eps>
 (epstopdf)             \includegraphics on input line 672.
 Package epstopdf Info: Output file is already uptodate.
-
-<images/n2974_1Dfit-eps-converted-to.pdf, id=97, 578.16pt x 433.62pt>
+ <images/n2974_1Dfit-eps-converted-to.pdf, id=88, 578.16pt x 433.62pt>
 File: images/n2974_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n2974_1Dfit-eps-converted-to.pdf>
@@ -611,28 +566,28 @@ line 672.
 
 Class revtex4-1 Warning: Float cannot be placed.
 
-<images/n2974_imgmsk.jpeg, id=98, 1094.0875pt x 662.475pt>
+[8] <images/n2974_imgmsk.jpeg, id=93, 1094.0875pt x 662.475pt>
 File: images/n2974_imgmsk.jpeg Graphic file (type jpg)
 
 <use images/n2974_imgmsk.jpeg>
 Package pdftex.def Info: images/n2974_imgmsk.jpeg used on input line 746.
 (pdftex.def)             Requested size: 245.26653pt x 148.50458pt.
 
-<images/n2974_unsharp.jpeg, id=99, 1094.0875pt x 662.475pt>
+<images/n2974_unsharp.jpeg, id=94, 1094.0875pt x 662.475pt>
 File: images/n2974_unsharp.jpeg Graphic file (type jpg)
 
 <use images/n2974_unsharp.jpeg>
 Package pdftex.def Info: images/n2974_unsharp.jpeg used on input line 747.
 (pdftex.def)             Requested size: 245.26653pt x 148.50458pt.
 
-<images/n2974_model.jpeg, id=100, 1094.0875pt x 662.475pt>
+<images/n2974_model.jpeg, id=95, 1094.0875pt x 662.475pt>
 File: images/n2974_model.jpeg Graphic file (type jpg)
 
 <use images/n2974_model.jpeg>
 Package pdftex.def Info: images/n2974_model.jpeg used on input line 748.
 (pdftex.def)             Requested size: 245.26653pt x 148.50458pt.
 
-<images/n2974_resid.jpeg, id=101, 1094.0875pt x 662.475pt>
+<images/n2974_resid.jpeg, id=96, 1094.0875pt x 662.475pt>
 File: images/n2974_resid.jpeg Graphic file (type jpg)
 
 <use images/n2974_resid.jpeg>
@@ -642,32 +597,26 @@ Package pdftex.def Info: images/n2974_resid.jpeg used on input line 749.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[11]
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 796.
-
-[12 <./images/n2974_1Dfit-eps-converted-to.pdf>]
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 796.
-
-
-Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
-
 (./table_fitresults.tex)
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 805.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 804.
 
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 805.
- [13 <./images/n2974_imgmsk.jpeg> <./images/n2974_unsharp.jpeg> <./images/n2974
-_model.jpeg> <./images/n2974_resid.jpeg>] [14]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 804.
+ [9] [10]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 811.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 838.
 
-[15]
+[11 <./images/n2974_1Dfit-eps-converted-to.pdf>]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 838.
+
+
+Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
+
 Package epstopdf Info: Source file: <images/comparison_r_e.eps>
 (epstopdf)                    date: 2015-03-26 22:55:43
 (epstopdf)                    size: 121264 bytes
@@ -677,14 +626,14 @@ Package epstopdf Info: Source file: <images/comparison_r_e.eps>
 (epstopdf)                    size: 12754 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/comparison_r_e-eps-
 converted-to.pdf images/comparison_r_e.eps>
-(epstopdf)             \includegraphics on input line 843.
+(epstopdf)             \includegraphics on input line 842.
 Package epstopdf Info: Output file is already uptodate.
- <images/comparison_r_e-eps-converted-to.pdf, id=175, 578.16pt x 433.62pt>
+<images/comparison_r_e-eps-converted-to.pdf, id=162, 578.16pt x 433.62pt>
 File: images/comparison_r_e-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/comparison_r_e-eps-converted-to.pdf>
 Package pdftex.def Info: images/comparison_r_e-eps-converted-to.pdf used on inp
-ut line 843.
+ut line 842.
 (pdftex.def)             Requested size: 245.26653pt x 183.94531pt.
 Package epstopdf Info: Source file: <images/comparison_n.eps>
 (epstopdf)                    date: 2015-03-26 22:55:43
@@ -694,20 +643,16 @@ Package epstopdf Info: Source file: <images/comparison_n.eps>
 (epstopdf)                    size: 11466 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/comparison_n-eps-co
 nverted-to.pdf images/comparison_n.eps>
-(epstopdf)             \includegraphics on input line 852.
+(epstopdf)             \includegraphics on input line 851.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/comparison_n-eps-converted-to.pdf, id=176, 578.16pt x 433.62pt>
+<images/comparison_n-eps-converted-to.pdf, id=163, 578.16pt x 433.62pt>
 File: images/comparison_n-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/comparison_n-eps-converted-to.pdf>
 Package pdftex.def Info: images/comparison_n-eps-converted-to.pdf used on input
- line 852.
+ line 851.
 (pdftex.def)             Requested size: 245.26653pt x 183.94531pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 Package epstopdf Info: Source file: <images/comparison_mag.eps>
 (epstopdf)                    date: 2015-03-26 22:55:43
 (epstopdf)                    size: 118920 bytes
@@ -717,164 +662,184 @@ Package epstopdf Info: Source file: <images/comparison_mag.eps>
 (epstopdf)                    size: 11864 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/comparison_mag-eps-
 converted-to.pdf images/comparison_mag.eps>
-(epstopdf)             \includegraphics on input line 861.
+(epstopdf)             \includegraphics on input line 860.
 Package epstopdf Info: Output file is already uptodate.
-<images/comparison_mag-eps-converted-to.pdf, id=177, 578.16pt x 433.62pt>
+
+<images/comparison_mag-eps-converted-to.pdf, id=164, 578.16pt x 433.62pt>
 File: images/comparison_mag-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/comparison_mag-eps-converted-to.pdf>
 Package pdftex.def Info: images/comparison_mag-eps-converted-to.pdf used on inp
-ut line 861.
+ut line 860.
 (pdftex.def)             Requested size: 245.26653pt x 183.94531pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[16 <./images/comparison_r_e-eps-converted-to.pdf> <./images/comparison_n-eps-c
-onverted-to.pdf> <./images/comparison_mag-eps-converted-to.pdf>]
-LaTeX Font Info:    Font shape `U/lasy/b/n' in size <9> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 940.
+[12 <./images/n2974_imgmsk.jpeg> <./images/n2974_unsharp.jpeg> <./images/n2974_
+model.jpeg> <./images/n2974_resid.jpeg> <./images/comparison_r_e-eps-converted-
+to.pdf> <./images/comparison_n-eps-converted-to.pdf>]
 
-Underfull \hbox (badness 1558) in paragraph at lines 942--957
+LaTeX Warning: A float is stuck (cannot be placed) on input line 885.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 885.
+
+
+Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
+
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <9> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 939.
+
+Underfull \hbox (badness 1558) in paragraph at lines 941--956
 \OMS/cmsy/m/n/10 h[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 n[]\OT1/cmr/m/n/10 )\OMS/
 cmsy/m/n/10 i$\OT1/cmr/m/n/10 . The mea-sure-ments are het-ero-ge-neous,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 942--957
+Underfull \hbox (badness 10000) in paragraph at lines 941--956
 
  []
 
-[17]
+[13 <./images/comparison_mag-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/comparison_all_n.eps>
-(epstopdf)                    date: 2015-03-26 22:55:43
+(epstopdf)                    date: 2015-06-18 23:34:39
 (epstopdf)                    size: 210948 bytes
 (epstopdf)             Output file: <images/comparison_all_n-eps-converted-to.p
 df>
-(epstopdf)                    date: 2015-03-26 22:55:43
+(epstopdf)                    date: 2015-06-28 18:04:05
 (epstopdf)                    size: 38415 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/comparison_all_n-ep
 s-converted-to.pdf images/comparison_all_n.eps>
-(epstopdf)             \includegraphics on input line 1011.
+(epstopdf)             \includegraphics on input line 1010.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/comparison_all_n-eps-converted-to.pdf, id=206, 578.16pt x 433.62pt>
+<images/comparison_all_n-eps-converted-to.pdf, id=194, 578.16pt x 433.62pt>
 File: images/comparison_all_n-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/comparison_all_n-eps-converted-to.pdf>
 Package pdftex.def Info: images/comparison_all_n-eps-converted-to.pdf used on i
-nput line 1011.
+nput line 1010.
 (pdftex.def)             Requested size: 269.79466pt x 202.3458pt.
 
-Overfull \hbox (24.52814pt too wide) in paragraph at lines 1011--1012
+Overfull \hbox (24.52814pt too wide) in paragraph at lines 1010--1011
  [] 
  []
 
 Package epstopdf Info: Source file: <images/comparison_all_r_e.eps>
-(epstopdf)                    date: 2015-03-26 22:55:43
+(epstopdf)                    date: 2015-06-18 23:34:32
 (epstopdf)                    size: 203061 bytes
 (epstopdf)             Output file: <images/comparison_all_r_e-eps-converted-to
 .pdf>
-(epstopdf)                    date: 2015-03-26 22:55:43
+(epstopdf)                    date: 2015-06-28 18:04:06
 (epstopdf)                    size: 36382 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/comparison_all_r_e-
 eps-converted-to.pdf images/comparison_all_r_e.eps>
-(epstopdf)             \includegraphics on input line 1041.
+(epstopdf)             \includegraphics on input line 1040.
 Package epstopdf Info: Output file is already uptodate.
-<images/comparison_all_r_e-eps-converted-to.pdf, id=207, 578.16pt x 433.62pt>
+<images/comparison_all_r_e-eps-converted-to.pdf, id=195, 578.16pt x 433.62pt>
 File: images/comparison_all_r_e-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/comparison_all_r_e-eps-converted-to.pdf>
 Package pdftex.def Info: images/comparison_all_r_e-eps-converted-to.pdf used on
- input line 1041.
+ input line 1040.
 (pdftex.def)             Requested size: 269.79466pt x 202.3458pt.
 
-Overfull \hbox (24.52814pt too wide) in paragraph at lines 1041--1042
+Overfull \hbox (24.52814pt too wide) in paragraph at lines 1040--1041
  [] 
  []
 
 Package epstopdf Info: Source file: <images/comparison_all_mag_sph.eps>
-(epstopdf)                    date: 2015-03-26 22:55:43
+(epstopdf)                    date: 2015-06-18 23:34:52
 (epstopdf)                    size: 181994 bytes
 (epstopdf)             Output file: <images/comparison_all_mag_sph-eps-converte
 d-to.pdf>
-(epstopdf)                    date: 2015-03-26 22:55:43
+(epstopdf)                    date: 2015-06-28 18:04:07
 (epstopdf)                    size: 30319 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/comparison_all_mag_
 sph-eps-converted-to.pdf images/comparison_all_mag_sph.eps>
-(epstopdf)             \includegraphics on input line 1054.
+(epstopdf)             \includegraphics on input line 1053.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/comparison_all_mag_sph-eps-converted-to.pdf, id=208, 578.16pt x 433.62p
+<images/comparison_all_mag_sph-eps-converted-to.pdf, id=196, 578.16pt x 433.62p
 t>
 File: images/comparison_all_mag_sph-eps-converted-to.pdf Graphic file (type pdf
 )
  <use images/comparison_all_mag_sph-eps-converted-to.pdf>
 Package pdftex.def Info: images/comparison_all_mag_sph-eps-converted-to.pdf use
-d on input line 1054.
+d on input line 1053.
 (pdftex.def)             Requested size: 269.79466pt x 202.3458pt.
 
-Overfull \hbox (24.52814pt too wide) in paragraph at lines 1054--1055
+Overfull \hbox (24.52814pt too wide) in paragraph at lines 1053--1054
  [] 
  []
 
 Package epstopdf Info: Source file: <images/comparison_all_mu_e.eps>
-(epstopdf)                    date: 2015-03-26 22:55:43
+(epstopdf)                    date: 2015-06-18 23:40:38
 (epstopdf)                    size: 184812 bytes
 (epstopdf)             Output file: <images/comparison_all_mu_e-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2015-03-26 22:55:43
+(epstopdf)                    date: 2015-06-28 18:04:08
 (epstopdf)                    size: 31191 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/comparison_all_mu_e
 -eps-converted-to.pdf images/comparison_all_mu_e.eps>
-(epstopdf)             \includegraphics on input line 1068.
+(epstopdf)             \includegraphics on input line 1067.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/comparison_all_mu_e-eps-converted-to.pdf, id=209, 578.16pt x 433.62pt>
+<images/comparison_all_mu_e-eps-converted-to.pdf, id=197, 578.16pt x 433.62pt>
 File: images/comparison_all_mu_e-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/comparison_all_mu_e-eps-converted-to.pdf>
 Package pdftex.def Info: images/comparison_all_mu_e-eps-converted-to.pdf used o
-n input line 1068.
+n input line 1067.
 (pdftex.def)             Requested size: 269.79466pt x 202.3458pt.
 
-Overfull \hbox (24.52814pt too wide) in paragraph at lines 1068--1069
+Overfull \hbox (24.52814pt too wide) in paragraph at lines 1067--1068
  [] 
  []
 
 Package epstopdf Info: Source file: <images/comparison_all_mu_0.eps>
-(epstopdf)                    date: 2015-03-26 22:55:43
+(epstopdf)                    date: 2015-06-18 23:42:32
 (epstopdf)                    size: 183726 bytes
 (epstopdf)             Output file: <images/comparison_all_mu_0-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2015-03-26 22:55:43
+(epstopdf)                    date: 2015-06-28 18:04:08
 (epstopdf)                    size: 31126 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/comparison_all_mu_0
 -eps-converted-to.pdf images/comparison_all_mu_0.eps>
-(epstopdf)             \includegraphics on input line 1082.
+(epstopdf)             \includegraphics on input line 1081.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/comparison_all_mu_0-eps-converted-to.pdf, id=210, 578.16pt x 433.62pt>
+<images/comparison_all_mu_0-eps-converted-to.pdf, id=198, 578.16pt x 433.62pt>
 File: images/comparison_all_mu_0-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/comparison_all_mu_0-eps-converted-to.pdf>
 Package pdftex.def Info: images/comparison_all_mu_0-eps-converted-to.pdf used o
-n input line 1082.
+n input line 1081.
 (pdftex.def)             Requested size: 269.79466pt x 202.3458pt.
 
-Overfull \hbox (24.52814pt too wide) in paragraph at lines 1082--1083
+Overfull \hbox (24.52814pt too wide) in paragraph at lines 1081--1082
  [] 
  []
 
+[14 <./images/comparison_all_n-eps-converted-to.pdf>]
 
+LaTeX Warning: A float is stuck (cannot be placed) on input line 1116.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 1116.
+
+
+Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
+
+[15 <./images/comparison_all_r_e-eps-converted-to.pdf> <./images/comparison_all
+_mag_sph-eps-converted-to.pdf> <./images/comparison_all_mu_e-eps-converted-to.p
+df> <./images/comparison_all_mu_0-eps-converted-to.pdf>]
 Underfull \hbox (badness 2189) in paragraph at lines 1149--1150
  []\OT1/cmr/m/n/10 A one-dimensional isopho-tal anal-y-sis was ex-
  []
 
-[18 <./images/comparison_all_n-eps-converted-to.pdf>] [19 <./images/comparison_
-all_r_e-eps-converted-to.pdf> <./images/comparison_all_mag_sph-eps-converted-to
-.pdf>] [20 <./images/comparison_all_mu_e-eps-converted-to.pdf> <./images/compar
-ison_all_mu_0-eps-converted-to.pdf>] [21]
+[16]
 Underfull \hbox (badness 10000) in paragraph at lines 1210--1212
 
  []
@@ -890,14 +855,14 @@ Package epstopdf Info: Source file: <images/ic1459_1Dfit.eps>
 nverted-to.pdf images/ic1459_1Dfit.eps>
 (epstopdf)             \includegraphics on input line 1215.
 Package epstopdf Info: Output file is already uptodate.
-<images/ic1459_1Dfit-eps-converted-to.pdf, id=278, 578.16pt x 433.62pt>
+<images/ic1459_1Dfit-eps-converted-to.pdf, id=262, 578.16pt x 433.62pt>
 File: images/ic1459_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/ic1459_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/ic1459_1Dfit-eps-converted-to.pdf used on input
  line 1215.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [22 <./images/ic1459_1Dfit-eps-converted-to.pdf>]
+ [17 <./images/ic1459_1Dfit-eps-converted-to.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 1254--1256
 
  []
@@ -912,14 +877,14 @@ Package epstopdf Info: Source file: <images/ic2560_1Dfit.eps>
 nverted-to.pdf images/ic2560_1Dfit.eps>
 (epstopdf)             \includegraphics on input line 1259.
 Package epstopdf Info: Output file is already uptodate.
-<images/ic2560_1Dfit-eps-converted-to.pdf, id=340, 578.16pt x 433.62pt>
+<images/ic2560_1Dfit-eps-converted-to.pdf, id=324, 578.16pt x 433.62pt>
 File: images/ic2560_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/ic2560_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/ic2560_1Dfit-eps-converted-to.pdf used on input
  line 1259.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [23 <./images/ic2560_1Dfit-eps-converted-to.pdf>]
+ [18 <./images/ic2560_1Dfit-eps-converted-to.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 1295--1297
 
  []
@@ -934,14 +899,14 @@ Package epstopdf Info: Source file: <images/ic4296_1Dfit.eps>
 nverted-to.pdf images/ic4296_1Dfit.eps>
 (epstopdf)             \includegraphics on input line 1300.
 Package epstopdf Info: Output file is already uptodate.
-<images/ic4296_1Dfit-eps-converted-to.pdf, id=400, 578.16pt x 433.62pt>
+<images/ic4296_1Dfit-eps-converted-to.pdf, id=384, 578.16pt x 433.62pt>
 File: images/ic4296_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/ic4296_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/ic4296_1Dfit-eps-converted-to.pdf used on input
  line 1300.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [24 <./images/ic4296_1Dfit-eps-converted-to.pdf>]
+ [19 <./images/ic4296_1Dfit-eps-converted-to.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 1339--1341
 
  []
@@ -956,14 +921,14 @@ Package epstopdf Info: Source file: <images/m31_1Dfit.eps>
 rted-to.pdf images/m31_1Dfit.eps>
 (epstopdf)             \includegraphics on input line 1344.
 Package epstopdf Info: Output file is already uptodate.
-<images/m31_1Dfit-eps-converted-to.pdf, id=460, 578.16pt x 433.62pt>
+<images/m31_1Dfit-eps-converted-to.pdf, id=445, 578.16pt x 433.62pt>
 File: images/m31_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/m31_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/m31_1Dfit-eps-converted-to.pdf used on input li
 ne 1344.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [25 <./images/m31_1Dfit-eps-converted-to.pdf>]
+ [20 <./images/m31_1Dfit-eps-converted-to.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 1379--1381
 
  []
@@ -978,14 +943,14 @@ Package epstopdf Info: Source file: <images/m49_1Dfit.eps>
 rted-to.pdf images/m49_1Dfit.eps>
 (epstopdf)             \includegraphics on input line 1384.
 Package epstopdf Info: Output file is already uptodate.
-<images/m49_1Dfit-eps-converted-to.pdf, id=521, 578.16pt x 433.62pt>
+<images/m49_1Dfit-eps-converted-to.pdf, id=505, 578.16pt x 433.62pt>
 File: images/m49_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/m49_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/m49_1Dfit-eps-converted-to.pdf used on input li
 ne 1384.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [26 <./images/m49_1Dfit-eps-converted-to.pdf>]
+ [21 <./images/m49_1Dfit-eps-converted-to.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 1421--1423
 
  []
@@ -1000,14 +965,14 @@ Package epstopdf Info: Source file: <images/m59_1Dfit.eps>
 rted-to.pdf images/m59_1Dfit.eps>
 (epstopdf)             \includegraphics on input line 1426.
 Package epstopdf Info: Output file is already uptodate.
-<images/m59_1Dfit-eps-converted-to.pdf, id=581, 578.16pt x 433.62pt>
+<images/m59_1Dfit-eps-converted-to.pdf, id=565, 578.16pt x 433.62pt>
 File: images/m59_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/m59_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/m59_1Dfit-eps-converted-to.pdf used on input li
 ne 1426.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [27 <./images/m59_1Dfit-eps-converted-to.pdf>]
+ [22 <./images/m59_1Dfit-eps-converted-to.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 1460--1462
 
  []
@@ -1022,14 +987,14 @@ Package epstopdf Info: Source file: <images/m64_1Dfit.eps>
 rted-to.pdf images/m64_1Dfit.eps>
 (epstopdf)             \includegraphics on input line 1465.
 Package epstopdf Info: Output file is already uptodate.
-<images/m64_1Dfit-eps-converted-to.pdf, id=641, 578.16pt x 433.62pt>
+<images/m64_1Dfit-eps-converted-to.pdf, id=625, 578.16pt x 433.62pt>
 File: images/m64_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/m64_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/m64_1Dfit-eps-converted-to.pdf used on input li
 ne 1465.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [28 <./images/m64_1Dfit-eps-converted-to.pdf>]
+ [23 <./images/m64_1Dfit-eps-converted-to.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 1502--1504
 
  []
@@ -1044,14 +1009,14 @@ Package epstopdf Info: Source file: <images/m81_1Dfit.eps>
 rted-to.pdf images/m81_1Dfit.eps>
 (epstopdf)             \includegraphics on input line 1507.
 Package epstopdf Info: Output file is already uptodate.
-<images/m81_1Dfit-eps-converted-to.pdf, id=700, 578.16pt x 433.62pt>
+<images/m81_1Dfit-eps-converted-to.pdf, id=684, 578.16pt x 433.62pt>
 File: images/m81_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/m81_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/m81_1Dfit-eps-converted-to.pdf used on input li
 ne 1507.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [29 <./images/m81_1Dfit-eps-converted-to.pdf>]
+ [24 <./images/m81_1Dfit-eps-converted-to.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 1550--1552
 
  []
@@ -1066,14 +1031,14 @@ Package epstopdf Info: Source file: <images/m84_1Dfit.eps>
 rted-to.pdf images/m84_1Dfit.eps>
 (epstopdf)             \includegraphics on input line 1555.
 Package epstopdf Info: Output file is already uptodate.
-<images/m84_1Dfit-eps-converted-to.pdf, id=760, 578.16pt x 433.62pt>
+<images/m84_1Dfit-eps-converted-to.pdf, id=744, 578.16pt x 433.62pt>
 File: images/m84_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/m84_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/m84_1Dfit-eps-converted-to.pdf used on input li
 ne 1555.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [30 <./images/m84_1Dfit-eps-converted-to.pdf>]
+ [25 <./images/m84_1Dfit-eps-converted-to.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 1596--1598
 
  []
@@ -1088,14 +1053,14 @@ Package epstopdf Info: Source file: <images/m87_1Dfit.eps>
 rted-to.pdf images/m87_1Dfit.eps>
 (epstopdf)             \includegraphics on input line 1601.
 Package epstopdf Info: Output file is already uptodate.
-<images/m87_1Dfit-eps-converted-to.pdf, id=820, 578.16pt x 433.62pt>
+<images/m87_1Dfit-eps-converted-to.pdf, id=805, 578.16pt x 433.62pt>
 File: images/m87_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/m87_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/m87_1Dfit-eps-converted-to.pdf used on input li
 ne 1601.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [31 <./images/m87_1Dfit-eps-converted-to.pdf>]
+ [26 <./images/m87_1Dfit-eps-converted-to.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 1650--1651
 
  []
@@ -1110,14 +1075,14 @@ Package epstopdf Info: Source file: <images/m89_1Dfit.eps>
 rted-to.pdf images/m89_1Dfit.eps>
 (epstopdf)             \includegraphics on input line 1659.
 Package epstopdf Info: Output file is already uptodate.
-<images/m89_1Dfit-eps-converted-to.pdf, id=882, 578.16pt x 433.62pt>
+<images/m89_1Dfit-eps-converted-to.pdf, id=866, 578.16pt x 433.62pt>
 File: images/m89_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/m89_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/m89_1Dfit-eps-converted-to.pdf used on input li
 ne 1659.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [32 <./images/m89_1Dfit-eps-converted-to.pdf>]
+ [27 <./images/m89_1Dfit-eps-converted-to.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 1693--1695
 
  []
@@ -1132,14 +1097,14 @@ Package epstopdf Info: Source file: <images/m94_1Dfit.eps>
 rted-to.pdf images/m94_1Dfit.eps>
 (epstopdf)             \includegraphics on input line 1698.
 Package epstopdf Info: Output file is already uptodate.
-<images/m94_1Dfit-eps-converted-to.pdf, id=942, 578.16pt x 433.62pt>
+<images/m94_1Dfit-eps-converted-to.pdf, id=926, 578.16pt x 433.62pt>
 File: images/m94_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/m94_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/m94_1Dfit-eps-converted-to.pdf used on input li
 ne 1698.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [33 <./images/m94_1Dfit-eps-converted-to.pdf>]
+ [28 <./images/m94_1Dfit-eps-converted-to.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 1735--1737
 
  []
@@ -1154,14 +1119,14 @@ Package epstopdf Info: Source file: <images/m96_1Dfit.eps>
 rted-to.pdf images/m96_1Dfit.eps>
 (epstopdf)             \includegraphics on input line 1740.
 Package epstopdf Info: Output file is already uptodate.
-<images/m96_1Dfit-eps-converted-to.pdf, id=1002, 578.16pt x 433.62pt>
+<images/m96_1Dfit-eps-converted-to.pdf, id=986, 578.16pt x 433.62pt>
 File: images/m96_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/m96_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/m96_1Dfit-eps-converted-to.pdf used on input li
 ne 1740.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [34 <./images/m96_1Dfit-eps-converted-to.pdf>]
+ [29 <./images/m96_1Dfit-eps-converted-to.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 1790--1791
 
  []
@@ -1176,15 +1141,15 @@ Package epstopdf Info: Source file: <images/m104_1Dfit.eps>
 erted-to.pdf images/m104_1Dfit.eps>
 (epstopdf)             \includegraphics on input line 1794.
 Package epstopdf Info: Output file is already uptodate.
-<images/m104_1Dfit-eps-converted-to.pdf, id=1061, 578.16pt x 433.62pt>
+<images/m104_1Dfit-eps-converted-to.pdf, id=1045, 578.16pt x 433.62pt>
 File: images/m104_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/m104_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/m104_1Dfit-eps-converted-to.pdf used on input l
 ine 1794.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [35 <./images/m104_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 1823--1825
+ [30 <./images/m104_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1827--1829
 
  []
 
@@ -1196,17 +1161,17 @@ Package epstopdf Info: Source file: <images/m105_1Dfit.eps>
 (epstopdf)                    size: 137248 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/m105_1Dfit-eps-conv
 erted-to.pdf images/m105_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 1828.
+(epstopdf)             \includegraphics on input line 1832.
 Package epstopdf Info: Output file is already uptodate.
-<images/m105_1Dfit-eps-converted-to.pdf, id=1121, 578.16pt x 433.62pt>
+<images/m105_1Dfit-eps-converted-to.pdf, id=1104, 578.16pt x 433.62pt>
 File: images/m105_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/m105_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/m105_1Dfit-eps-converted-to.pdf used on input l
-ine 1828.
+ine 1832.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [36 <./images/m105_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 1873--1875
+ [31 <./images/m105_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1877--1879
 
  []
 
@@ -1218,17 +1183,17 @@ Package epstopdf Info: Source file: <images/m106_1Dfit.eps>
 (epstopdf)                    size: 107606 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/m106_1Dfit-eps-conv
 erted-to.pdf images/m106_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 1878.
+(epstopdf)             \includegraphics on input line 1882.
 Package epstopdf Info: Output file is already uptodate.
-<images/m106_1Dfit-eps-converted-to.pdf, id=1181, 578.16pt x 433.62pt>
+<images/m106_1Dfit-eps-converted-to.pdf, id=1166, 578.16pt x 433.62pt>
 File: images/m106_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/m106_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/m106_1Dfit-eps-converted-to.pdf used on input l
-ine 1878.
+ine 1882.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [37 <./images/m106_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 1923--1925
+ [32 <./images/m106_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1927--1929
 
  []
 
@@ -1240,17 +1205,17 @@ Package epstopdf Info: Source file: <images/n0524_1Dfit.eps>
 (epstopdf)                    size: 86766 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n0524_1Dfit-eps-con
 verted-to.pdf images/n0524_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 1928.
+(epstopdf)             \includegraphics on input line 1932.
 Package epstopdf Info: Output file is already uptodate.
-<images/n0524_1Dfit-eps-converted-to.pdf, id=1242, 578.16pt x 433.62pt>
+<images/n0524_1Dfit-eps-converted-to.pdf, id=1226, 578.16pt x 433.62pt>
 File: images/n0524_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n0524_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n0524_1Dfit-eps-converted-to.pdf used on input 
-line 1928.
+line 1932.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [38 <./images/n0524_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 1969--1970
+ [33 <./images/n0524_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1973--1974
 
  []
 
@@ -1262,17 +1227,17 @@ Package epstopdf Info: Source file: <images/n0821_1Dfit.eps>
 (epstopdf)                    size: 71145 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n0821_1Dfit-eps-con
 verted-to.pdf images/n0821_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 1973.
+(epstopdf)             \includegraphics on input line 1977.
 Package epstopdf Info: Output file is already uptodate.
-<images/n0821_1Dfit-eps-converted-to.pdf, id=1301, 578.16pt x 433.62pt>
+<images/n0821_1Dfit-eps-converted-to.pdf, id=1285, 578.16pt x 433.62pt>
 File: images/n0821_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n0821_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n0821_1Dfit-eps-converted-to.pdf used on input 
-line 1973.
+line 1977.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [39 <./images/n0821_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 2014--2016
+ [34 <./images/n0821_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 2018--2020
 
  []
 
@@ -1284,17 +1249,17 @@ Package epstopdf Info: Source file: <images/n1023_1Dfit.eps>
 (epstopdf)                    size: 129759 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n1023_1Dfit-eps-con
 verted-to.pdf images/n1023_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 2019.
+(epstopdf)             \includegraphics on input line 2023.
 Package epstopdf Info: Output file is already uptodate.
-<images/n1023_1Dfit-eps-converted-to.pdf, id=1361, 578.16pt x 433.62pt>
+<images/n1023_1Dfit-eps-converted-to.pdf, id=1345, 578.16pt x 433.62pt>
 File: images/n1023_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n1023_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n1023_1Dfit-eps-converted-to.pdf used on input 
-line 2019.
+line 2023.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [40 <./images/n1023_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 2065--2067
+ [35 <./images/n1023_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 2069--2071
 
  []
 
@@ -1306,17 +1271,17 @@ Package epstopdf Info: Source file: <images/n1300_1Dfit.eps>
 (epstopdf)                    size: 65041 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n1300_1Dfit-eps-con
 verted-to.pdf images/n1300_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 2070.
+(epstopdf)             \includegraphics on input line 2074.
 Package epstopdf Info: Output file is already uptodate.
-<images/n1300_1Dfit-eps-converted-to.pdf, id=1421, 578.16pt x 433.62pt>
+<images/n1300_1Dfit-eps-converted-to.pdf, id=1405, 578.16pt x 433.62pt>
 File: images/n1300_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n1300_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n1300_1Dfit-eps-converted-to.pdf used on input 
-line 2070.
+line 2074.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [41 <./images/n1300_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 2110--2112
+ [36 <./images/n1300_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 2114--2116
 
  []
 
@@ -1328,22 +1293,22 @@ Package epstopdf Info: Source file: <images/n1316_1Dfit.eps>
 (epstopdf)                    size: 307600 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n1316_1Dfit-eps-con
 verted-to.pdf images/n1316_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 2117.
+(epstopdf)             \includegraphics on input line 2119.
 Package epstopdf Info: Output file is already uptodate.
-<images/n1316_1Dfit-eps-converted-to.pdf, id=1480, 578.16pt x 433.62pt>
+<images/n1316_1Dfit-eps-converted-to.pdf, id=1464, 578.16pt x 433.62pt>
 File: images/n1316_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n1316_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n1316_1Dfit-eps-converted-to.pdf used on input 
-line 2117.
+line 2119.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [42 <./images/n1316_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 2144--2146
+ [37 <./images/n1316_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 2152--2154
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2147--2160
+Underfull \hbox (badness 10000) in paragraph at lines 2155--2168
 
  []
 
@@ -1355,17 +1320,17 @@ Package epstopdf Info: Source file: <images/n1332_1Dfit.eps>
 (epstopdf)                    size: 109905 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n1332_1Dfit-eps-con
 verted-to.pdf images/n1332_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 2164.
+(epstopdf)             \includegraphics on input line 2172.
 Package epstopdf Info: Output file is already uptodate.
-<images/n1332_1Dfit-eps-converted-to.pdf, id=1540, 578.16pt x 433.62pt>
+<images/n1332_1Dfit-eps-converted-to.pdf, id=1525, 578.16pt x 433.62pt>
 File: images/n1332_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n1332_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n1332_1Dfit-eps-converted-to.pdf used on input 
-line 2164.
+line 2172.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [43 <./images/n1332_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 2195--2197
+ [38 <./images/n1332_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 2203--2205
 
  []
 
@@ -1377,17 +1342,17 @@ Package epstopdf Info: Source file: <images/n1374_1Dfit.eps>
 (epstopdf)                    size: 90995 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n1374_1Dfit-eps-con
 verted-to.pdf images/n1374_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 2200.
+(epstopdf)             \includegraphics on input line 2208.
 Package epstopdf Info: Output file is already uptodate.
-<images/n1374_1Dfit-eps-converted-to.pdf, id=1601, 578.16pt x 433.62pt>
+<images/n1374_1Dfit-eps-converted-to.pdf, id=1584, 578.16pt x 433.62pt>
 File: images/n1374_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n1374_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n1374_1Dfit-eps-converted-to.pdf used on input 
-line 2200.
+line 2208.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [44 <./images/n1374_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 2228--2230
+ [39 <./images/n1374_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 2236--2238
 
  []
 
@@ -1399,17 +1364,17 @@ Package epstopdf Info: Source file: <images/n1399_1Dfit.eps>
 (epstopdf)                    size: 165730 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n1399_1Dfit-eps-con
 verted-to.pdf images/n1399_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 2233.
+(epstopdf)             \includegraphics on input line 2241.
 Package epstopdf Info: Output file is already uptodate.
-<images/n1399_1Dfit-eps-converted-to.pdf, id=1661, 578.16pt x 433.62pt>
+<images/n1399_1Dfit-eps-converted-to.pdf, id=1645, 578.16pt x 433.62pt>
 File: images/n1399_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n1399_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n1399_1Dfit-eps-converted-to.pdf used on input 
-line 2233.
+line 2241.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [45 <./images/n1399_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 2280--2282
+ [40 <./images/n1399_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 2288--2290
 
  []
 
@@ -1421,17 +1386,17 @@ Package epstopdf Info: Source file: <images/n2273_1Dfit.eps>
 (epstopdf)                    size: 68607 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n2273_1Dfit-eps-con
 verted-to.pdf images/n2273_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 2285.
+(epstopdf)             \includegraphics on input line 2293.
 Package epstopdf Info: Output file is already uptodate.
-<images/n2273_1Dfit-eps-converted-to.pdf, id=1721, 578.16pt x 433.62pt>
+<images/n2273_1Dfit-eps-converted-to.pdf, id=1705, 578.16pt x 433.62pt>
 File: images/n2273_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n2273_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n2273_1Dfit-eps-converted-to.pdf used on input 
-line 2285.
+line 2293.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [46 <./images/n2273_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 2325--2327
+ [41 <./images/n2273_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 2333--2335
 
  []
 
@@ -1443,17 +1408,17 @@ Package epstopdf Info: Source file: <images/n2549_1Dfit.eps>
 (epstopdf)                    size: 74776 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n2549_1Dfit-eps-con
 verted-to.pdf images/n2549_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 2330.
+(epstopdf)             \includegraphics on input line 2338.
 Package epstopdf Info: Output file is already uptodate.
-<images/n2549_1Dfit-eps-converted-to.pdf, id=1781, 578.16pt x 433.62pt>
+<images/n2549_1Dfit-eps-converted-to.pdf, id=1765, 578.16pt x 433.62pt>
 File: images/n2549_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n2549_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n2549_1Dfit-eps-converted-to.pdf used on input 
-line 2330.
+line 2338.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [47 <./images/n2549_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 2370--2372
+ [42 <./images/n2549_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 2378--2380
 
  []
 
@@ -1465,17 +1430,17 @@ Package epstopdf Info: Source file: <images/n2778_1Dfit.eps>
 (epstopdf)                    size: 64094 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n2778_1Dfit-eps-con
 verted-to.pdf images/n2778_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 2375.
+(epstopdf)             \includegraphics on input line 2383.
 Package epstopdf Info: Output file is already uptodate.
-<images/n2778_1Dfit-eps-converted-to.pdf, id=1840, 578.16pt x 433.62pt>
+<images/n2778_1Dfit-eps-converted-to.pdf, id=1824, 578.16pt x 433.62pt>
 File: images/n2778_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n2778_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n2778_1Dfit-eps-converted-to.pdf used on input 
-line 2375.
+line 2383.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [48 <./images/n2778_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 2414--2416
+ [43 <./images/n2778_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 2422--2424
 
  []
 
@@ -1487,17 +1452,17 @@ Package epstopdf Info: Source file: <images/n2787_1Dfit.eps>
 (epstopdf)                    size: 101255 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n2787_1Dfit-eps-con
 verted-to.pdf images/n2787_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 2419.
+(epstopdf)             \includegraphics on input line 2427.
 Package epstopdf Info: Output file is already uptodate.
-<images/n2787_1Dfit-eps-converted-to.pdf, id=1900, 578.16pt x 433.62pt>
+<images/n2787_1Dfit-eps-converted-to.pdf, id=1885, 578.16pt x 433.62pt>
 File: images/n2787_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n2787_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n2787_1Dfit-eps-converted-to.pdf used on input 
-line 2419.
+line 2427.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [49 <./images/n2787_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 2490--2492
+ [44 <./images/n2787_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 2498--2500
 
  []
 
@@ -1509,15 +1474,15 @@ Package epstopdf Info: Source file: <images/n2974_1Dfit.eps>
 (epstopdf)                    size: 100254 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n2974_1Dfit-eps-con
 verted-to.pdf images/n2974_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 2495.
+(epstopdf)             \includegraphics on input line 2503.
 Package epstopdf Info: Output file is already uptodate.
 File: images/n2974_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 <use images/n2974_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n2974_1Dfit-eps-converted-to.pdf used on input 
-line 2495.
+line 2503.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [50]
-Underfull \hbox (badness 10000) in paragraph at lines 2538--2539
+ [45]
+Underfull \hbox (badness 10000) in paragraph at lines 2546--2547
 
  []
 
@@ -1529,17 +1494,17 @@ Package epstopdf Info: Source file: <images/n3079_1Dfit.eps>
 (epstopdf)                    size: 75027 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n3079_1Dfit-eps-con
 verted-to.pdf images/n3079_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 2542.
+(epstopdf)             \includegraphics on input line 2550.
 Package epstopdf Info: Output file is already uptodate.
-<images/n3079_1Dfit-eps-converted-to.pdf, id=1964, 578.16pt x 433.62pt>
+<images/n3079_1Dfit-eps-converted-to.pdf, id=1948, 578.16pt x 433.62pt>
 File: images/n3079_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n3079_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n3079_1Dfit-eps-converted-to.pdf used on input 
-line 2542.
+line 2550.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [51 <./images/n3079_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 2581--2583
+ [46 <./images/n3079_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 2589--2591
 
  []
 
@@ -1551,17 +1516,17 @@ Package epstopdf Info: Source file: <images/n3091_1Dfit.eps>
 (epstopdf)                    size: 84173 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n3091_1Dfit-eps-con
 verted-to.pdf images/n3091_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 2586.
+(epstopdf)             \includegraphics on input line 2594.
 Package epstopdf Info: Output file is already uptodate.
-<images/n3091_1Dfit-eps-converted-to.pdf, id=2023, 578.16pt x 433.62pt>
+<images/n3091_1Dfit-eps-converted-to.pdf, id=2007, 578.16pt x 433.62pt>
 File: images/n3091_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n3091_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n3091_1Dfit-eps-converted-to.pdf used on input 
-line 2586.
+line 2594.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [52 <./images/n3091_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 2624--2626
+ [47 <./images/n3091_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 2632--2634
 
  []
 
@@ -1573,17 +1538,17 @@ Package epstopdf Info: Source file: <images/n3115_1Dfit.eps>
 (epstopdf)                    size: 171790 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n3115_1Dfit-eps-con
 verted-to.pdf images/n3115_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 2629.
+(epstopdf)             \includegraphics on input line 2637.
 Package epstopdf Info: Output file is already uptodate.
-<images/n3115_1Dfit-eps-converted-to.pdf, id=2084, 578.16pt x 433.62pt>
+<images/n3115_1Dfit-eps-converted-to.pdf, id=2067, 578.16pt x 433.62pt>
 File: images/n3115_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n3115_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n3115_1Dfit-eps-converted-to.pdf used on input 
-line 2629.
+line 2637.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [53 <./images/n3115_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 2689--2691
+ [48 <./images/n3115_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 2697--2699
 
  []
 
@@ -1595,17 +1560,17 @@ Package epstopdf Info: Source file: <images/n3227_1Dfit.eps>
 (epstopdf)                    size: 104441 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n3227_1Dfit-eps-con
 verted-to.pdf images/n3227_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 2694.
+(epstopdf)             \includegraphics on input line 2702.
 Package epstopdf Info: Output file is already uptodate.
-<images/n3227_1Dfit-eps-converted-to.pdf, id=2143, 578.16pt x 433.62pt>
+<images/n3227_1Dfit-eps-converted-to.pdf, id=2127, 578.16pt x 433.62pt>
 File: images/n3227_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n3227_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n3227_1Dfit-eps-converted-to.pdf used on input 
-line 2694.
+line 2702.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [54 <./images/n3227_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 2735--2737
+ [49 <./images/n3227_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 2743--2745
 
  []
 
@@ -1617,17 +1582,17 @@ Package epstopdf Info: Source file: <images/n3245_1Dfit.eps>
 (epstopdf)                    size: 64590 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n3245_1Dfit-eps-con
 verted-to.pdf images/n3245_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 2740.
+(epstopdf)             \includegraphics on input line 2748.
 Package epstopdf Info: Output file is already uptodate.
-<images/n3245_1Dfit-eps-converted-to.pdf, id=2203, 578.16pt x 433.62pt>
+<images/n3245_1Dfit-eps-converted-to.pdf, id=2188, 578.16pt x 433.62pt>
 File: images/n3245_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n3245_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n3245_1Dfit-eps-converted-to.pdf used on input 
-line 2740.
+line 2748.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [55 <./images/n3245_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 2783--2784
+ [50 <./images/n3245_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 2791--2792
 
  []
 
@@ -1639,17 +1604,17 @@ Package epstopdf Info: Source file: <images/n3377_1Dfit.eps>
 (epstopdf)                    size: 114924 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n3377_1Dfit-eps-con
 verted-to.pdf images/n3377_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 2787.
+(epstopdf)             \includegraphics on input line 2795.
 Package epstopdf Info: Output file is already uptodate.
-<images/n3377_1Dfit-eps-converted-to.pdf, id=2263, 578.16pt x 433.62pt>
+<images/n3377_1Dfit-eps-converted-to.pdf, id=2247, 578.16pt x 433.62pt>
 File: images/n3377_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n3377_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n3377_1Dfit-eps-converted-to.pdf used on input 
-line 2787.
+line 2795.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [56 <./images/n3377_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 2834--2836
+ [51 <./images/n3377_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 2842--2844
 
  []
 
@@ -1661,17 +1626,17 @@ Package epstopdf Info: Source file: <images/n3384_1Dfit.eps>
 (epstopdf)                    size: 94140 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n3384_1Dfit-eps-con
 verted-to.pdf images/n3384_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 2839.
+(epstopdf)             \includegraphics on input line 2847.
 Package epstopdf Info: Output file is already uptodate.
-<images/n3384_1Dfit-eps-converted-to.pdf, id=2323, 578.16pt x 433.62pt>
+<images/n3384_1Dfit-eps-converted-to.pdf, id=2307, 578.16pt x 433.62pt>
 File: images/n3384_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n3384_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n3384_1Dfit-eps-converted-to.pdf used on input 
-line 2839.
+line 2847.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [57 <./images/n3384_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 2879--2881
+ [52 <./images/n3384_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 2887--2889
 
  []
 
@@ -1683,17 +1648,17 @@ Package epstopdf Info: Source file: <images/n3393_1Dfit.eps>
 (epstopdf)                    size: 58327 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n3393_1Dfit-eps-con
 verted-to.pdf images/n3393_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 2884.
+(epstopdf)             \includegraphics on input line 2892.
 Package epstopdf Info: Output file is already uptodate.
-<images/n3393_1Dfit-eps-converted-to.pdf, id=2383, 578.16pt x 433.62pt>
+<images/n3393_1Dfit-eps-converted-to.pdf, id=2367, 578.16pt x 433.62pt>
 File: images/n3393_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n3393_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n3393_1Dfit-eps-converted-to.pdf used on input 
-line 2884.
+line 2892.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [58 <./images/n3393_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 2916--2918
+ [53 <./images/n3393_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 2924--2926
 
  []
 
@@ -1705,17 +1670,17 @@ Package epstopdf Info: Source file: <images/n3414_1Dfit.eps>
 (epstopdf)                    size: 93758 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n3414_1Dfit-eps-con
 verted-to.pdf images/n3414_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 2921.
+(epstopdf)             \includegraphics on input line 2929.
 Package epstopdf Info: Output file is already uptodate.
-<images/n3414_1Dfit-eps-converted-to.pdf, id=2443, 578.16pt x 433.62pt>
+<images/n3414_1Dfit-eps-converted-to.pdf, id=2427, 578.16pt x 433.62pt>
 File: images/n3414_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n3414_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n3414_1Dfit-eps-converted-to.pdf used on input 
-line 2921.
+line 2929.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [59 <./images/n3414_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 2965--2967
+ [54 <./images/n3414_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 2973--2975
 
  []
 
@@ -1727,17 +1692,17 @@ Package epstopdf Info: Source file: <images/n3489_1Dfit.eps>
 (epstopdf)                    size: 58104 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n3489_1Dfit-eps-con
 verted-to.pdf images/n3489_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 2970.
+(epstopdf)             \includegraphics on input line 2978.
 Package epstopdf Info: Output file is already uptodate.
-<images/n3489_1Dfit-eps-converted-to.pdf, id=2502, 578.16pt x 433.62pt>
+<images/n3489_1Dfit-eps-converted-to.pdf, id=2486, 578.16pt x 433.62pt>
 File: images/n3489_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n3489_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n3489_1Dfit-eps-converted-to.pdf used on input 
-line 2970.
+line 2978.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [60 <./images/n3489_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 3009--3010
+ [55 <./images/n3489_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 3017--3018
 
  []
 
@@ -1749,17 +1714,17 @@ Package epstopdf Info: Source file: <images/n3585_1Dfit.eps>
 (epstopdf)                    size: 126822 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n3585_1Dfit-eps-con
 verted-to.pdf images/n3585_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 3013.
+(epstopdf)             \includegraphics on input line 3021.
 Package epstopdf Info: Output file is already uptodate.
-<images/n3585_1Dfit-eps-converted-to.pdf, id=2562, 578.16pt x 433.62pt>
+<images/n3585_1Dfit-eps-converted-to.pdf, id=2547, 578.16pt x 433.62pt>
 File: images/n3585_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n3585_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n3585_1Dfit-eps-converted-to.pdf used on input 
-line 3013.
+line 3021.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [61 <./images/n3585_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 3048--3049
+ [56 <./images/n3585_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 3056--3057
 
  []
 
@@ -1771,17 +1736,17 @@ Package epstopdf Info: Source file: <images/n3607_1Dfit.eps>
 (epstopdf)                    size: 110916 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n3607_1Dfit-eps-con
 verted-to.pdf images/n3607_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 3052.
+(epstopdf)             \includegraphics on input line 3060.
 Package epstopdf Info: Output file is already uptodate.
-<images/n3607_1Dfit-eps-converted-to.pdf, id=2624, 578.16pt x 433.62pt>
+<images/n3607_1Dfit-eps-converted-to.pdf, id=2607, 578.16pt x 433.62pt>
 File: images/n3607_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n3607_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n3607_1Dfit-eps-converted-to.pdf used on input 
-line 3052.
+line 3060.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [62 <./images/n3607_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 3089--3090
+ [57 <./images/n3607_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 3097--3098
 
  []
 
@@ -1793,17 +1758,17 @@ Package epstopdf Info: Source file: <images/n3608_1Dfit.eps>
 (epstopdf)                    size: 79103 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n3608_1Dfit-eps-con
 verted-to.pdf images/n3608_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 3093.
+(epstopdf)             \includegraphics on input line 3101.
 Package epstopdf Info: Output file is already uptodate.
-<images/n3608_1Dfit-eps-converted-to.pdf, id=2684, 578.16pt x 433.62pt>
+<images/n3608_1Dfit-eps-converted-to.pdf, id=2668, 578.16pt x 433.62pt>
 File: images/n3608_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n3608_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n3608_1Dfit-eps-converted-to.pdf used on input 
-line 3093.
+line 3101.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [63 <./images/n3608_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 3130--3132
+ [58 <./images/n3608_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 3138--3140
 
  []
 
@@ -1816,17 +1781,17 @@ Package epstopdf Info: Source file: <images/n3842exp_1Dfit.eps>
 (epstopdf)                    size: 94074 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n3842exp_1Dfit-eps-
 converted-to.pdf images/n3842exp_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 3135.
+(epstopdf)             \includegraphics on input line 3143.
 Package epstopdf Info: Output file is already uptodate.
-<images/n3842exp_1Dfit-eps-converted-to.pdf, id=2744, 578.16pt x 433.62pt>
+<images/n3842exp_1Dfit-eps-converted-to.pdf, id=2728, 578.16pt x 433.62pt>
 File: images/n3842exp_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n3842exp_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n3842exp_1Dfit-eps-converted-to.pdf used on inp
-ut line 3135.
+ut line 3143.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [64 <./images/n3842exp_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 3171--3173
+ [59 <./images/n3842exp_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 3179--3181
 
  []
 
@@ -1838,17 +1803,17 @@ Package epstopdf Info: Source file: <images/n3998_1Dfit.eps>
 (epstopdf)                    size: 85563 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n3998_1Dfit-eps-con
 verted-to.pdf images/n3998_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 3176.
+(epstopdf)             \includegraphics on input line 3184.
 Package epstopdf Info: Output file is already uptodate.
-<images/n3998_1Dfit-eps-converted-to.pdf, id=2804, 578.16pt x 433.62pt>
+<images/n3998_1Dfit-eps-converted-to.pdf, id=2788, 578.16pt x 433.62pt>
 File: images/n3998_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n3998_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n3998_1Dfit-eps-converted-to.pdf used on input 
-line 3176.
+line 3184.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [65 <./images/n3998_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 3221--3223
+ [60 <./images/n3998_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 3229--3231
 
  []
 
@@ -1860,17 +1825,17 @@ Package epstopdf Info: Source file: <images/n4026_1Dfit.eps>
 (epstopdf)                    size: 66199 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n4026_1Dfit-eps-con
 verted-to.pdf images/n4026_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 3226.
+(epstopdf)             \includegraphics on input line 3234.
 Package epstopdf Info: Output file is already uptodate.
-<images/n4026_1Dfit-eps-converted-to.pdf, id=2863, 578.16pt x 433.62pt>
+<images/n4026_1Dfit-eps-converted-to.pdf, id=2847, 578.16pt x 433.62pt>
 File: images/n4026_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n4026_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n4026_1Dfit-eps-converted-to.pdf used on input 
-line 3226.
+line 3234.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [66 <./images/n4026_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 3261--3263
+ [61 <./images/n4026_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 3269--3271
 
  []
 
@@ -1882,17 +1847,17 @@ Package epstopdf Info: Source file: <images/n4151_1Dfit.eps>
 (epstopdf)                    size: 171844 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n4151_1Dfit-eps-con
 verted-to.pdf images/n4151_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 3266.
+(epstopdf)             \includegraphics on input line 3274.
 Package epstopdf Info: Output file is already uptodate.
-<images/n4151_1Dfit-eps-converted-to.pdf, id=2922, 578.16pt x 433.62pt>
+<images/n4151_1Dfit-eps-converted-to.pdf, id=2907, 578.16pt x 433.62pt>
 File: images/n4151_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n4151_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n4151_1Dfit-eps-converted-to.pdf used on input 
-line 3266.
+line 3274.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [67 <./images/n4151_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 3301--3303
+ [62 <./images/n4151_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 3309--3311
 
  []
 
@@ -1904,17 +1869,17 @@ Package epstopdf Info: Source file: <images/n4261_1Dfit.eps>
 (epstopdf)                    size: 109664 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n4261_1Dfit-eps-con
 verted-to.pdf images/n4261_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 3306.
+(epstopdf)             \includegraphics on input line 3314.
 Package epstopdf Info: Output file is already uptodate.
-<images/n4261_1Dfit-eps-converted-to.pdf, id=2984, 578.16pt x 433.62pt>
+<images/n4261_1Dfit-eps-converted-to.pdf, id=2968, 578.16pt x 433.62pt>
 File: images/n4261_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n4261_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n4261_1Dfit-eps-converted-to.pdf used on input 
-line 3306.
+line 3314.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [68 <./images/n4261_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 3349--3351
+ [63 <./images/n4261_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 3357--3359
 
  []
 
@@ -1926,17 +1891,17 @@ Package epstopdf Info: Source file: <images/n4291_1Dfit.eps>
 (epstopdf)                    size: 70081 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n4291_1Dfit-eps-con
 verted-to.pdf images/n4291_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 3355.
+(epstopdf)             \includegraphics on input line 3363.
 Package epstopdf Info: Output file is already uptodate.
-<images/n4291_1Dfit-eps-converted-to.pdf, id=3044, 578.16pt x 433.62pt>
+<images/n4291_1Dfit-eps-converted-to.pdf, id=3028, 578.16pt x 433.62pt>
 File: images/n4291_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n4291_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n4291_1Dfit-eps-converted-to.pdf used on input 
-line 3355.
+line 3363.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [69 <./images/n4291_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 3388--3390
+ [64 <./images/n4291_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 3396--3398
 
  []
 
@@ -1948,17 +1913,17 @@ Package epstopdf Info: Source file: <images/n4388_1Dfit.eps>
 (epstopdf)                    size: 94100 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n4388_1Dfit-eps-con
 verted-to.pdf images/n4388_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 3393.
+(epstopdf)             \includegraphics on input line 3401.
 Package epstopdf Info: Output file is already uptodate.
-<images/n4388_1Dfit-eps-converted-to.pdf, id=3105, 578.16pt x 433.62pt>
+<images/n4388_1Dfit-eps-converted-to.pdf, id=3088, 578.16pt x 433.62pt>
 File: images/n4388_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n4388_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n4388_1Dfit-eps-converted-to.pdf used on input 
-line 3393.
+line 3401.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [70 <./images/n4388_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 3425--3427
+ [65 <./images/n4388_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 3433--3435
 
  []
 
@@ -1970,17 +1935,17 @@ Package epstopdf Info: Source file: <images/n4459_1Dfit.eps>
 (epstopdf)                    size: 90900 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n4459_1Dfit-eps-con
 verted-to.pdf images/n4459_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 3430.
+(epstopdf)             \includegraphics on input line 3438.
 Package epstopdf Info: Output file is already uptodate.
-<images/n4459_1Dfit-eps-converted-to.pdf, id=3165, 578.16pt x 433.62pt>
+<images/n4459_1Dfit-eps-converted-to.pdf, id=3149, 578.16pt x 433.62pt>
 File: images/n4459_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n4459_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n4459_1Dfit-eps-converted-to.pdf used on input 
-line 3430.
+line 3438.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [71 <./images/n4459_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 3480--3482
+ [66 <./images/n4459_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 3488--3490
 
  []
 
@@ -1992,17 +1957,17 @@ Package epstopdf Info: Source file: <images/n4473_1Dfit.eps>
 (epstopdf)                    size: 108822 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n4473_1Dfit-eps-con
 verted-to.pdf images/n4473_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 3485.
+(epstopdf)             \includegraphics on input line 3493.
 Package epstopdf Info: Output file is already uptodate.
-<images/n4473_1Dfit-eps-converted-to.pdf, id=3225, 578.16pt x 433.62pt>
+<images/n4473_1Dfit-eps-converted-to.pdf, id=3209, 578.16pt x 433.62pt>
 File: images/n4473_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n4473_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n4473_1Dfit-eps-converted-to.pdf used on input 
-line 3485.
+line 3493.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [72 <./images/n4473_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 3524--3526
+ [67 <./images/n4473_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 3532--3534
 
  []
 
@@ -2014,17 +1979,17 @@ Package epstopdf Info: Source file: <images/n4564_1Dfit.eps>
 (epstopdf)                    size: 76736 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n4564_1Dfit-eps-con
 verted-to.pdf images/n4564_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 3529.
+(epstopdf)             \includegraphics on input line 3537.
 Package epstopdf Info: Output file is already uptodate.
-<images/n4564_1Dfit-eps-converted-to.pdf, id=3285, 578.16pt x 433.62pt>
+<images/n4564_1Dfit-eps-converted-to.pdf, id=3270, 578.16pt x 433.62pt>
 File: images/n4564_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n4564_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n4564_1Dfit-eps-converted-to.pdf used on input 
-line 3529.
+line 3537.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [73 <./images/n4564_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 3564--3566
+ [68 <./images/n4564_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 3572--3574
 
  []
 
@@ -2036,17 +2001,17 @@ Package epstopdf Info: Source file: <images/n4596_1Dfit.eps>
 (epstopdf)                    size: 127721 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n4596_1Dfit-eps-con
 verted-to.pdf images/n4596_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 3569.
+(epstopdf)             \includegraphics on input line 3577.
 Package epstopdf Info: Output file is already uptodate.
-<images/n4596_1Dfit-eps-converted-to.pdf, id=3345, 578.16pt x 433.62pt>
+<images/n4596_1Dfit-eps-converted-to.pdf, id=3329, 578.16pt x 433.62pt>
 File: images/n4596_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n4596_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n4596_1Dfit-eps-converted-to.pdf used on input 
-line 3569.
+line 3577.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [74 <./images/n4596_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 3615--3617
+ [69 <./images/n4596_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 3623--3625
 
  []
 
@@ -2058,17 +2023,17 @@ Package epstopdf Info: Source file: <images/n4697_1Dfit.eps>
 (epstopdf)                    size: 144339 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n4697_1Dfit-eps-con
 verted-to.pdf images/n4697_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 3620.
+(epstopdf)             \includegraphics on input line 3628.
 Package epstopdf Info: Output file is already uptodate.
-<images/n4697_1Dfit-eps-converted-to.pdf, id=3405, 578.16pt x 433.62pt>
+<images/n4697_1Dfit-eps-converted-to.pdf, id=3389, 578.16pt x 433.62pt>
 File: images/n4697_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n4697_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n4697_1Dfit-eps-converted-to.pdf used on input 
-line 3620.
+line 3628.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [75 <./images/n4697_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 3667--3669
+ [70 <./images/n4697_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 3675--3677
 
  []
 
@@ -2080,17 +2045,17 @@ Package epstopdf Info: Source file: <images/n4889_1Dfit.eps>
 (epstopdf)                    size: 84421 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n4889_1Dfit-eps-con
 verted-to.pdf images/n4889_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 3673.
+(epstopdf)             \includegraphics on input line 3681.
 Package epstopdf Info: Output file is already uptodate.
-<images/n4889_1Dfit-eps-converted-to.pdf, id=3465, 578.16pt x 433.62pt>
+<images/n4889_1Dfit-eps-converted-to.pdf, id=3449, 578.16pt x 433.62pt>
 File: images/n4889_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n4889_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n4889_1Dfit-eps-converted-to.pdf used on input 
-line 3673.
+line 3681.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [76 <./images/n4889_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 3705--3707
+ [71 <./images/n4889_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 3713--3715
 
  []
 
@@ -2102,17 +2067,17 @@ Package epstopdf Info: Source file: <images/n4945_1Dfit.eps>
 (epstopdf)                    size: 115869 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n4945_1Dfit-eps-con
 verted-to.pdf images/n4945_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 3710.
+(epstopdf)             \includegraphics on input line 3718.
 Package epstopdf Info: Output file is already uptodate.
-<images/n4945_1Dfit-eps-converted-to.pdf, id=3525, 578.16pt x 433.62pt>
+<images/n4945_1Dfit-eps-converted-to.pdf, id=3509, 578.16pt x 433.62pt>
 File: images/n4945_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n4945_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n4945_1Dfit-eps-converted-to.pdf used on input 
-line 3710.
+line 3718.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [77 <./images/n4945_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 3741--3743
+ [72 <./images/n4945_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 3749--3751
 
  []
 
@@ -2124,17 +2089,17 @@ Package epstopdf Info: Source file: <images/n5077_1Dfit.eps>
 (epstopdf)                    size: 89635 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n5077_1Dfit-eps-con
 verted-to.pdf images/n5077_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 3746.
+(epstopdf)             \includegraphics on input line 3754.
 Package epstopdf Info: Output file is already uptodate.
-<images/n5077_1Dfit-eps-converted-to.pdf, id=3586, 578.16pt x 433.62pt>
+<images/n5077_1Dfit-eps-converted-to.pdf, id=3569, 578.16pt x 433.62pt>
 File: images/n5077_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n5077_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n5077_1Dfit-eps-converted-to.pdf used on input 
-line 3746.
+line 3754.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [78 <./images/n5077_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 3778--3779
+ [73 <./images/n5077_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 3786--3787
 
  []
 
@@ -2146,17 +2111,17 @@ Package epstopdf Info: Source file: <images/n5128_1Dfit.eps>
 (epstopdf)                    size: 149666 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n5128_1Dfit-eps-con
 verted-to.pdf images/n5128_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 3782.
+(epstopdf)             \includegraphics on input line 3790.
 Package epstopdf Info: Output file is already uptodate.
-<images/n5128_1Dfit-eps-converted-to.pdf, id=3646, 578.16pt x 433.62pt>
+<images/n5128_1Dfit-eps-converted-to.pdf, id=3631, 578.16pt x 433.62pt>
 File: images/n5128_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n5128_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n5128_1Dfit-eps-converted-to.pdf used on input 
-line 3782.
+line 3790.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [79 <./images/n5128_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 3815--3816
+ [74 <./images/n5128_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 3824--3825
 
  []
 
@@ -2168,17 +2133,17 @@ Package epstopdf Info: Source file: <images/n5576_1Dfit.eps>
 (epstopdf)                    size: 111581 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n5576_1Dfit-eps-con
 verted-to.pdf images/n5576_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 3819.
+(epstopdf)             \includegraphics on input line 3828.
 Package epstopdf Info: Output file is already uptodate.
-<images/n5576_1Dfit-eps-converted-to.pdf, id=3707, 578.16pt x 433.62pt>
+<images/n5576_1Dfit-eps-converted-to.pdf, id=3691, 578.16pt x 433.62pt>
 File: images/n5576_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n5576_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n5576_1Dfit-eps-converted-to.pdf used on input 
-line 3819.
+line 3828.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [80 <./images/n5576_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 3857--3859
+ [75 <./images/n5576_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 3866--3868
 
  []
 
@@ -2190,17 +2155,17 @@ Package epstopdf Info: Source file: <images/n5845_1Dfit.eps>
 (epstopdf)                    size: 53798 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n5845_1Dfit-eps-con
 verted-to.pdf images/n5845_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 3862.
+(epstopdf)             \includegraphics on input line 3871.
 Package epstopdf Info: Output file is already uptodate.
-<images/n5845_1Dfit-eps-converted-to.pdf, id=3767, 578.16pt x 433.62pt>
+<images/n5845_1Dfit-eps-converted-to.pdf, id=3751, 578.16pt x 433.62pt>
 File: images/n5845_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n5845_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n5845_1Dfit-eps-converted-to.pdf used on input 
-line 3862.
+line 3871.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [81 <./images/n5845_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 3905--3907
+ [76 <./images/n5845_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 3914--3916
 
  []
 
@@ -2212,17 +2177,17 @@ Package epstopdf Info: Source file: <images/n5846_1Dfit.eps>
 (epstopdf)                    size: 145806 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n5846_1Dfit-eps-con
 verted-to.pdf images/n5846_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 3910.
+(epstopdf)             \includegraphics on input line 3919.
 Package epstopdf Info: Output file is already uptodate.
-<images/n5846_1Dfit-eps-converted-to.pdf, id=3827, 578.16pt x 433.62pt>
+<images/n5846_1Dfit-eps-converted-to.pdf, id=3811, 578.16pt x 433.62pt>
 File: images/n5846_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n5846_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n5846_1Dfit-eps-converted-to.pdf used on input 
-line 3910.
+line 3919.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [82 <./images/n5846_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 3947--3949
+ [77 <./images/n5846_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 3956--3958
 
  []
 
@@ -2234,17 +2199,17 @@ Package epstopdf Info: Source file: <images/n6251_1Dfit.eps>
 (epstopdf)                    size: 110078 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n6251_1Dfit-eps-con
 verted-to.pdf images/n6251_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 3952.
+(epstopdf)             \includegraphics on input line 3961.
 Package epstopdf Info: Output file is already uptodate.
-<images/n6251_1Dfit-eps-converted-to.pdf, id=3887, 578.16pt x 433.62pt>
+<images/n6251_1Dfit-eps-converted-to.pdf, id=3871, 578.16pt x 433.62pt>
 File: images/n6251_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n6251_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n6251_1Dfit-eps-converted-to.pdf used on input 
-line 3952.
+line 3961.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [83 <./images/n6251_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 3988--3990
+ [78 <./images/n6251_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 3997--3999
 
  []
 
@@ -2256,17 +2221,17 @@ Package epstopdf Info: Source file: <images/n7052_1Dfit.eps>
 (epstopdf)                    size: 88977 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n7052_1Dfit-eps-con
 verted-to.pdf images/n7052_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 3993.
+(epstopdf)             \includegraphics on input line 4002.
 Package epstopdf Info: Output file is already uptodate.
-<images/n7052_1Dfit-eps-converted-to.pdf, id=3947, 578.16pt x 433.62pt>
+<images/n7052_1Dfit-eps-converted-to.pdf, id=3931, 578.16pt x 433.62pt>
 File: images/n7052_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n7052_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n7052_1Dfit-eps-converted-to.pdf used on input 
-line 3993.
+line 4002.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [84 <./images/n7052_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 4034--4036
+ [79 <./images/n7052_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 4043--4045
 
  []
 
@@ -2278,17 +2243,17 @@ Package epstopdf Info: Source file: <images/n7619_1Dfit.eps>
 (epstopdf)                    size: 99551 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n7619_1Dfit-eps-con
 verted-to.pdf images/n7619_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 4039.
+(epstopdf)             \includegraphics on input line 4048.
 Package epstopdf Info: Output file is already uptodate.
-<images/n7619_1Dfit-eps-converted-to.pdf, id=4007, 578.16pt x 433.62pt>
+<images/n7619_1Dfit-eps-converted-to.pdf, id=3992, 578.16pt x 433.62pt>
 File: images/n7619_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n7619_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n7619_1Dfit-eps-converted-to.pdf used on input 
-line 4039.
+line 4048.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [85 <./images/n7619_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 4071--4073
+ [80 <./images/n7619_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 4080--4082
 
  []
 
@@ -2300,17 +2265,17 @@ Package epstopdf Info: Source file: <images/n7768_1Dfit.eps>
 (epstopdf)                    size: 56645 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/n7768_1Dfit-eps-con
 verted-to.pdf images/n7768_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 4076.
+(epstopdf)             \includegraphics on input line 4085.
 Package epstopdf Info: Output file is already uptodate.
-<images/n7768_1Dfit-eps-converted-to.pdf, id=4068, 578.16pt x 433.62pt>
+<images/n7768_1Dfit-eps-converted-to.pdf, id=4052, 578.16pt x 433.62pt>
 File: images/n7768_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/n7768_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/n7768_1Dfit-eps-converted-to.pdf used on input 
-line 4076.
+line 4085.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
- [86 <./images/n7768_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 4108--4110
+ [81 <./images/n7768_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 4117--4119
 
  []
 
@@ -2323,67 +2288,63 @@ Package epstopdf Info: Source file: <images/ugc03789_1Dfit.eps>
 (epstopdf)                    size: 60419 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/ugc03789_1Dfit-eps-
 converted-to.pdf images/ugc03789_1Dfit.eps>
-(epstopdf)             \includegraphics on input line 4113.
+(epstopdf)             \includegraphics on input line 4122.
 Package epstopdf Info: Output file is already uptodate.
-<images/ugc03789_1Dfit-eps-converted-to.pdf, id=4129, 578.16pt x 433.62pt>
+<images/ugc03789_1Dfit-eps-converted-to.pdf, id=4112, 578.16pt x 433.62pt>
 File: images/ugc03789_1Dfit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/ugc03789_1Dfit-eps-converted-to.pdf>
 Package pdftex.def Info: images/ugc03789_1Dfit-eps-converted-to.pdf used on inp
-ut line 4113.
+ut line 4122.
 (pdftex.def)             Requested size: 410.4955pt x 307.87236pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 4163--4167
+Underfull \hbox (badness 10000) in paragraph at lines 4172--4176
 
  []
 
-[87 <./images/ugc03789_1Dfit-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 4185--4186
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 4191--4193
+[82 <./images/ugc03789_1Dfit-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 4194--4195
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4199--4202
+Underfull \hbox (badness 10000) in paragraph at lines 4200--4202
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4212--4214
+Underfull \hbox (badness 10000) in paragraph at lines 4208--4211
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4223--4228
+Underfull \hbox (badness 10000) in paragraph at lines 4221--4223
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4233--4236
+Underfull \hbox (badness 10000) in paragraph at lines 4232--4237
 
  []
 
-(./datapaper.bbl [88] [89])
 
-Package natbib Warning: There were undefined citations.
+Underfull \hbox (badness 10000) in paragraph at lines 4242--4245
 
-[90] (./datapaper.aux)
+ []
+
+(./datapaper.bbl [83] [84]) [85] (./datapaper.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5690 strings out of 493488
- 84150 string characters out of 3141326
- 276407 words of memory out of 3000000
+ 5687 strings out of 493488
+ 84087 string characters out of 3141326
+ 249547 words of memory out of 3000000
  8795 multiletter control sequences out of 15000+200000
  18535 words of font info for 73 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 42i,13n,31p,1981b,507s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,13n,31p,1981b,509s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb><
 /usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></u
@@ -2421,10 +2382,10 @@ type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2012/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2012/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1
 /public/amsfonts/symbols/msam10.pfb>
-Output written on datapaper.pdf (90 pages, 10224886 bytes).
+Output written on datapaper.pdf (85 pages, 10212070 bytes).
 PDF statistics:
- 4305 PDF objects out of 5155 (max. 8388607)
- 1054 compressed objects within 11 object streams
+ 4290 PDF objects out of 4296 (max. 8388607)
+ 1044 compressed objects within 11 object streams
  0 named destinations out of 1000 (max. 500000)
  422 words of extra memory for PDF output out of 10000 (max. 10000000)
 

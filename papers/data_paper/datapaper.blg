@@ -16,7 +16,6 @@ Repeated entry---line 6818 of file /Users/gsavorgnan/galaxy_vivisection/papers/S
  : @article{haringrix2004
  :                       ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "savorgnangraham2014"
 Name 1 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
 while executing---line 1587 of file apj.bst
 Name 1 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
@@ -34,45 +33,45 @@ while executing---line 1671 of file apj.bst
 Name 2 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
 while executing---line 1671 of file apj.bst
 Warning--empty publisher in sersic1968
-You've used 117 entries,
+You've used 118 entries,
             3085 wiz_defined-function locations,
-            1417 strings with 32548 characters,
-and the built_in function-call counts, 57920 in all, are:
-= -- 4773
-> -- 4398
-< -- 46
-+ -- 1480
-- -- 1603
-* -- 5024
-:= -- 10942
-add.period$ -- 117
-call.type$ -- 117
-change.case$ -- 820
-chr.to.int$ -- 113
-cite$ -- 119
-duplicate$ -- 2225
-empty$ -- 3326
-format.name$ -- 1753
-if$ -- 11429
+            1422 strings with 32732 characters,
+and the built_in function-call counts, 58349 in all, are:
+= -- 4813
+> -- 4420
+< -- 47
++ -- 1487
+- -- 1610
+* -- 5056
+:= -- 11019
+add.period$ -- 118
+call.type$ -- 118
+change.case$ -- 826
+chr.to.int$ -- 114
+cite$ -- 120
+duplicate$ -- 2244
+empty$ -- 3355
+format.name$ -- 1764
+if$ -- 11518
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 114
-newline$ -- 355
-num.names$ -- 471
-pop$ -- 898
+missing$ -- 115
+newline$ -- 358
+num.names$ -- 475
+pop$ -- 905
 preamble$ -- 1
-purify$ -- 820
+purify$ -- 826
 quote$ -- 0
-skip$ -- 1840
+skip$ -- 1857
 stack$ -- 0
-substring$ -- 2426
+substring$ -- 2450
 swap$ -- 32
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1047
+type$ -- 1056
 warning$ -- 2
-while$ -- 450
+while$ -- 454
 width$ -- 0
-write$ -- 1171
+write$ -- 1181
 (There were 10 error messages)
