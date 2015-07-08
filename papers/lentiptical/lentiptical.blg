@@ -1,0 +1,68 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: lentiptical.aux
+The style file: apj.bst
+Database file #1: lentipticalNotes.bib
+Database file #2: /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+Repeated entry---line 948 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+ : @article{rixwhite1992
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1827 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+ : @article{scorzabender1995
+ :                          ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "scorzavandenbosch1998"
+Warning--I didn't find a database entry for "rest2001"
+Warning--I didn't find a database entry for "balcells2007"
+Warning--I didn't find a database entry for "khochfarsilk2006"
+Warning--I didn't find a database entry for "dekel2009nat"
+Warning--I didn't find a database entry for "dekel2009apj"
+Warning--I didn't find a database entry for "ceverino2010"
+Warning--I didn't find a database entry for "ceverino2012"
+Warning--I didn't find a database entry for "conselice2012"
+Warning--I didn't find a database entry for "scorza1998"
+Warning--I didn't find a database entry for "bendersaglia1999"
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+You've used 14 entries,
+            3085 wiz_defined-function locations,
+            738 strings with 7001 characters,
+and the built_in function-call counts, 6713 in all, are:
+= -- 568
+> -- 465
+< -- 8
++ -- 157
+- -- 170
+* -- 563
+:= -- 1253
+add.period$ -- 14
+call.type$ -- 14
+change.case$ -- 95
+chr.to.int$ -- 13
+cite$ -- 14
+duplicate$ -- 269
+empty$ -- 406
+format.name$ -- 187
+if$ -- 1337
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 13
+newline$ -- 46
+num.names$ -- 57
+pop$ -- 102
+preamble$ -- 1
+purify$ -- 95
+quote$ -- 0
+skip$ -- 226
+stack$ -- 0
+substring$ -- 301
+swap$ -- 10
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 126
+warning$ -- 0
+while$ -- 57
+width$ -- 0
+write$ -- 143
+(There were 2 error messages)
