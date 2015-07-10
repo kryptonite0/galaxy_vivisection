@@ -26,10 +26,10 @@
 
 \begin{document}
 
-\title{Supermassive black hole and host bulge affairs \\ I. True to life, physically motivated galaxy decomposition.}
+\title{Supermassive black hole and host bulge affairs \\ I. True to life, physically motivated galaxy decomposition}
 
 \author{G. A. D. Savorgnan and A. W. Graham}
-\affil{Centre for Astrophysics and Supercomputing, Swinburne University of Technology, Hawthorn, Victoria 3122, Australia.}
+\affil{Centre for Astrophysics and Supercomputing, Swinburne University of Technology, Hawthorn, Victoria 3122, Australia}
 \email{gsavorgn@astro.swin.edu.au}
 
 %\and
@@ -51,17 +51,33 @@
 %\altaffiltext{4}{Visiting Programmer, Space Telescope Science Institute}
 %\altaffiltext{5}{Patron, Alonso's Bar and Grill}
 
-%% Mark off your abstract in the ``abstract'' environment. In the manuscript
-%% style, abstract will output a Received/Accepted line after the
-%% title and affiliation information. No date will appear since the author
-%% does not have this information. The dates will be filled in by the
-%% editorial office after submission.
 
 \begin{abstract}
-abstract % 2d worse than 1d say it!!!
+Several recent studies have performed galaxy decompositions 
+to investigate correlations between the black hole mass and the host spheroid properties, 
+but they have not converged to the same conclusions. 
+This is because their best fit models for the same galaxy were often significantly different 
+and not consistent with each other in terms of fitted components. 
+Using $3.6 \rm ~\mu m$ \emph{Spitzer} imagery, which is a superb tracer of the stellar mass (superior to the $K$-band), 
+we have performed state-of-the-art multicomponent decompositions for 66 galaxies 
+with directly measured black hole masses. 
+Our sample is the largest to date and, 
+unlike previous studies, contains a large number (17) of spiral galaxies with low black hole masses. 
+We paid careful attention to the image mosaicking, sky subtraction and masking of contaminating sources.
+Thanks to a scrupulous inspection of the galaxy photometry (through isophotal analysis and unsharp masking) and -- for the first time -- of the 2D kinematics, 
+we were able to identify and model bulges, large-scale, intermediate-scale or nuclear disks, bars, rings, spiral arms, halos, extended or unresolved nuclear 
+sources and partially depleted cores. 
+For each individual galaxy, we compared our best-fit model with those presented by the previous studies, 
+explained the discrepancies and identified the optimal decomposition.
+We independently performed 1D and 2D decompositions, 
+and concluded that, at least when modelling large, nearby galaxies, 1D techniques have more advantages than 2D techniques. 
+Finally, we developed a method to estimate the uncertainties on the 1D best-fit parameters 
+that takes into account systematic errors, 
+unlike popular 2D codes that only consider statistical errors.
+
 \end{abstract}
 
-\keywords{keywords}
+\keywords{galaxies: bulges; galaxies: elliptical and lenticular, cD; galaxies: evolution; galaxies: structure; black hole physics}
 
 \section{Introduction}
 \label{sec:int}
@@ -131,12 +147,11 @@ With the two-dimensional (2D) technique, one fits analytic functions directly to
 Over the past eight years, five independent studies 
 \citep{grahamdriver2007,sani2011,vika2012,beifiori2012,lasker2014data,lasker2014anal} have attempted galaxy decomposition
 in order to derive the bulge parameters and explore their relation with the black hole masses. 
-{\bf Rusli has explored the black hole - core relation.}
 Interestingly, the past studies used almost the same sample of galaxies, yet they claimed some contradictory conclusions.
 For example, one study \citep{grahamdriver2007} obtained a good $M_{\rm BH}-n_{\rm sph}$ correlation
 (the bulge S\'ersic index $n_{\rm sph}$ is a measure of the central radial concentration of stars, \citealt{trujillo2001}), 
 whereas the remaining four did not.
-In addition, \cite{lasker2014anal} {\bf who did not work at 3.6um} 
+In addition, \cite{lasker2014anal} 
 declared that $M_{\rm BH}$ correlates equally well with the total galaxy luminosity and the bulge luminosity, 
 as opposed to \cite{beifiori2012}, who claimed that the bulge mass is a better tracer of $M_{\rm BH}$ than the galaxy mass.
 The past studies did not converge to the same conclusions 
@@ -304,15 +319,14 @@ has the following form:
 \begin{equation}
 \mu = \mu_{\rm 0} - 2.5 \log \Biggl[ 1 + \biggl( \frac{R}{\alpha} \biggr)^2 \Biggr]^{-\beta} ,
 \end{equation}
-where $R$ is the projected galaxy radius, $\mu_{\rm 0}$ is the central surface brightness, and 
+where $R$ is the projected radius, $\mu_{\rm 0}$ is the central surface brightness, and 
 $\alpha$ and $\beta$ regulate the width and the shape of the profile.} 
 of fixed center and zero background was fit to the 
 (background subtracted) pixels of 20 bright stars, belonging to different image mosaics.
 %We employed both a Gaussian and a Moffat \citep{moffat1969} profile. 
 The best-fit parameters of the 20 stars were then averaged together. 
 Doing so, we obtained %$FWHM = 2''.03$ for the Gaussian function,
-$(\alpha, \beta) = (2''.38, 4.39)$ %for the Moffat function
-(see Appendix \ref{sec:app1} for the analytical expressions of the Moffat function).
+$(\alpha, \beta) = (2''.38, 4.39)$.
 
 \subsubsection{2D PSF}
 The IRAC support team provides users with a two-dimensional instrument Point Response Function (PRF) at $3.6~\rm \mu m$.
@@ -470,13 +484,12 @@ The minimization routine is based on the Levenberg-Marquardt algorithm.
 During the fit, we deliberately did not make use of any weighting scheme on the data points that constitute the 
 surface brightness profile, 
 although the use of a linearly and logarithmically sampled profile effectively represents a different weighting scheme.
-The all too often over-looked {\bf ??} with (signal-to-noise)-based weighting schemes 
+The all too often over-looked flaw with (signal-to-noise)-based weighting schemes 
 is that they immediately become an incorrectly biased weighting schemes when additional components are present but not modelled.
-For example, fitting a S\'ersic model to what is actually a nucleated elliptical galaxy immediately {\bf ??} 
+For example, fitting a S\'ersic model to what is actually a nucleated elliptical galaxy immediately voids 
 a (signal-to-noise)-based weighting scheme 
 and results in S\'ersic parameters which describe the bulge less accurately than had no (signal-to-noise)-weighting been used.
 While we have paid careful attention to the components in each galaxy, 
-and more so than the studies upon which our work is building from,
 this is an issue that warrants the non application of (signal-to-noise)-based weighting schemes.
 What is best in theory is not always best in practice -- in this case, because theory does not allow for unknown additional components
 that are modelled.
@@ -1165,21 +1178,37 @@ These results will be presented in a series of forthcoming papers.
 
 %\clearpage
 
+\acknowledgments
+GS acknowledges the invaluable support received from Alessandro Marconi, Eleonora Sani and Leslie Hunt 
+in the early stages of this research.
+GS warmly thanks Chieng Peng, Peter Erwin, Luca Cortese, Giuseppe Gavazzi, 
+Bililign Dullo, Paolo Bonfini, Elisabete Lima Da Cunha 
+and Gonzalo Diaz 
+for useful discussion. \\
+This research was supported by Australian Research Council funding through grants
+DP110103509 and FT110100263.
+This work is based on observations made with the IRAC instrument \citep{fazio2004IRAC} 
+on-board the Spitzer Space Telescope, 
+which is operated by the Jet Propulsion Laboratory, 
+California Institute of Technology under a contract with NASA.
+This research has made use of the GOLDMine database \citep{goldmine} and the NASA/IPAC Extragalactic Database (NED) 
+which is operated by the Jet Propulsion Laboratory, California Institute of Technology, 
+under contract with the National Aeronautics and Space Administration. 
 
 
+\clearpage
 
   \onecolumngrid
-  \subsection{individual galaxies}
+  \subsection{Individual galaxy decompositions}
   \label{sec:indgal}
 
-  individual galaxies \\
   For each galaxy, we show a figure and a table. 
   The figure illustrates our 1D best-fit model and the galaxy isophotal parameters. 
   The left panels refer to the major-axis $R_{\rm maj}$, 
   while the right panels refer to the equivalent-axis $R_{\rm eq}$, 
   i.e.~the geometric mean of the major ($a$) and minor ($b$) axis ($R_{\rm eq} = \sqrt{ab}$).
   The top panels display the galaxy surface brightness ($\mu$) radial profiles obtained with a linear sampling. 
-  The black points are the observed data.  
+  The black points are the observed data used in the fit and the empty points are the observed data excluded from the fit.  
   The color lines represent the individual (PSF-convolved) model components:
   red=S\'ersic, dark blue=exponential, green=Gaussian, cyan=Ferrer, gray=Gaussian ring, pink=PSF. 
   The best-fit parameters for the S\'ersic bulge model are inset.
@@ -1199,7 +1228,7 @@ These results will be presented in a series of forthcoming papers.
   and L+14 = \citeauthor{lasker2014data} (\citeyear{lasker2014data}, who performed 2D fits).
   Each galaxy model is the sum of its individual components, which are expressed with the following nomenclature: (analytic function)-(physical component).
   The analytic functions can be: S=S\'ersic, e=exponential, G=Gaussian, F=Ferrer, M=Moffat and PSF.
-  The physical components can be: bul=bulge or spheroid, d=disk, id=inner disk, bar, n=nucleus, l=lens or oval, r=ring, halo and spiral arms. 
+  The physical components can be: bul=bulge (or spheroid), d=disk, id=inner disk, bar, n=nucleus, l=lens or oval, r=ring, halo and spiral arms. 
   When a nuclear component or a partially depleted core have been masked, we signal them as ``m-n'' and ``m-c'', respectively.
   For example, the model ``S-bul + e-d + e-id + m-n + G-r'' reads ``S\'ersic-bulge + exponential-disk + exponential-inner disk + mask-nucleus + Gaussian-ring''. 
   The core-S\'ersic model used by \cite{rusli2013} is always implicitly associated with the galaxy spheroidal component. 
@@ -1244,9 +1273,9 @@ These results will be presented in a series of forthcoming papers.
   \end{tabular}
   \end{center}
   \label{tab:ic1459}
-  \tablecomments{S+11 obtained the smallest estimate of the S\'ersic index because they fit a nuclear component rather than masking the core. 
-  R+13 obtained the smallest estimate of the effective radius 
-  because they fit a circularized light profile that only extends out to $R_{\rm eq} \lesssim 60''$. }
+  %\tablecomments{S+11 obtained the smallest estimate of the S\'ersic index because they fit a nuclear component rather than masking the core. 
+  %R+13 obtained the smallest estimate of the effective radius 
+  %because they fit a circularized light profile that only extends out to $R_{\rm eq} \lesssim 60''$. }
   \end{table}
 
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1327,10 +1356,10 @@ These results will be presented in a series of forthcoming papers.
   \label{tab:ic4296}
   \tablecomments{
   S+11 obtained the smallest effective radius and S\'ersic index because they fit a nuclear component rather than masking the core. 
-  L+14 obtained the largest effective radius and S\'ersic index, 
-  although the 1D representation of their 2D fit (their Figure 8) shows that their model overestimates the galaxy light at large radii ($R_{\rm maj} > 100''$), 
-  implying the need for a smaller $R_{\rm e}$ and $n$. 
-  We suspect that this could be due to the pixel weighting scheme that they used.
+  %L+14 obtained the largest effective radius and S\'ersic index, 
+  %although the 1D representation of their 2D fit (their Figure 8) shows that their model overestimates the galaxy light at large radii ($R_{\rm maj} > 100''$), 
+  %implying the need for a smaller $R_{\rm e}$ and $n$. 
+  %We suspect that this could be due to the pixel weighting scheme that they used.
   }
   \end{table}
 
@@ -1634,7 +1663,7 @@ These results will be presented in a series of forthcoming papers.
   \end{center}
   \label{tab:m87}
   \tablecomments{
-  The fit of R+13 returns the largest values for $R_{\rm e,sph}$ and $n_{\rm sph}$. 
+  The equivalent-axis fit of R+13 returns the largest values for $R_{\rm e,sph}$ and $n_{\rm sph}$. 
   As in the case of M49, since their circularized light profile is almost three times more extended than ours, 
   it is possible that their best-fit model required a larger $R_{\rm e}$ to account for the extra intracluster halo light.
   V+12 obtained the smallest estimates of $R_{\rm e,sph}$ and $n_{\rm sph}$ because of the small radial extent of their data.
@@ -1648,11 +1677,6 @@ These results will be presented in a series of forthcoming papers.
   \clearpage\newpage\noindent
 
   {\bf M89 -- NGC 4552 \\}
-
-  m87 has ellipticity still increasing, the halo is not prevailing
-  m89 instead has a plateau in the ell prof, bcz the halo is predominant
-  we need to fit the halo
-
 
   \begin{figure}[h]
   \begin{center}
@@ -2152,6 +2176,15 @@ These results will be presented in a series of forthcoming papers.
   \clearpage\newpage\noindent
   {\bf NGC 1332 \\}
 
+  \begin{figure}[h]
+  \begin{center}
+  \includegraphics[width=\fitfigurewidth]{images/n1332_1Dfit.eps}
+  \caption{Best-fit model and isophotal parameters for NGC 1332.
+  NGC 1332 is an edge-on elliptical/lenticular galaxy. 
+  Given its large stellar velocity dispersion, this galaxy is expected to host a partially depleted core. 
+  The ellipticity profile proves the presence of an intermediate-scale disk. 
+  Given the edge-on inclination of such disk, we model it with a low-$n$ S\'ersic profile. 
+  The data within the innermost $6''.1$ are excluded from the fit.
   Our equivalent-axis decomposition returns a spheroidal component accounting for 95\% of the total light,
   and an embedded disk accounting for the remaining 5\%.
   In passing, we note that the bulge-disk decomposition performed by \citet{rusli2011} on NGC 1332 
@@ -2165,17 +2198,6 @@ These results will be presented in a series of forthcoming papers.
   Assuming instead that, as follows from our model, 
   the galaxy spheroid is a factor of two more luminous than what claimed by \citet{rusli2011}, 
   NGC 1332 would no longer be an outlier in our $M_{\rm BH} - L_{\rm sph}$ diagram. \\
-
-
-  \begin{figure}[h]
-  \begin{center}
-  \includegraphics[width=\fitfigurewidth]{images/n1332_1Dfit.eps}
-  \caption{Best-fit model and isophotal parameters for NGC 1332.
-  NGC 1332 is an edge-on elliptical/lenticular galaxy. 
-  Given its large stellar velocity dispersion, this galaxy is expected to host a partially depleted core. 
-  The ellipticity profile proves the presence of an intermediate-scale disk. 
-  Given the edge-on inclination of such disk, we model it with a low-$n$ S\'ersic profile. 
-  The data within the innermost $6''.1$ are excluded from the fit.
   }
   \end{center}
   \end{figure}
@@ -2277,7 +2299,7 @@ These results will be presented in a series of forthcoming papers.
   \tablecomments{
   R+13 used a combination of a S\'ersic + exponential profile to model the halo of this galaxy, 
   and obtained the smallest estimate of the effective radius, 
-  which is at odds with the fact that central cluster galaxies typically have the largest sizes. 
+  which is at odds with the fact that central cluster galaxies typically have very large sizes. 
   L+14 finds an effective radius which is a factor of two smaller than that obtained by us 
   because their data have a smaller radial extent ($R_{\rm maj} \lesssim 130'$). 
   }
@@ -2683,10 +2705,8 @@ These results will be presented in a series of forthcoming papers.
   \end{center}
   \label{tab:n3115}
   \tablecomments{
-  S+11 found a smaller effective radius and S\'ersic index for the spheroidal component of this galaxy, 
-  possibly because they modelled the intermediate scale disk as a large-scale disk.
-  L+14 also used a model with a bulge encased in a larger disk, and attributed the excess of light at large radii to a halo. 
-  In doing so, they obviously obtained an even smaller bulge effective radius.
+  L+14 used a model with a bulge encased in a larger disk, and attributed the excess of light at large radii to a halo. 
+  In doing so, they obviously obtained a smaller bulge effective radius.
   }
   \end{table}
     
@@ -2706,7 +2726,7 @@ These results will be presented in a series of forthcoming papers.
   The large-scale bar produces an evident bump in the major-axis surface brightness profile,
   which is curiously absent in the equivalent-axis profile. 
   We model the bar with a Ferrer function and the nucleus with a Gaussian function. 
-  As expected, the Ferrer component is rejected by the equivalent-axis fit. 
+  The Ferrer component is rejected by the equivalent-axis fit. 
   }
   \end{center}
   \end{figure}
@@ -2734,7 +2754,7 @@ These results will be presented in a series of forthcoming papers.
   \tablecomments{
   The models of L+10 and L+14 do not account for the bright nulcear component, 
   and thus underestimate the bulge effective radius and overestimate the bulge S\'ersic index.
-  The bulge effective radius obtained by S+11 is even larger because they did not model the bar. 
+  The bulge effective radius obtained by S+11 is larger because they did not model the bar. 
   }
   \end{table}
 
@@ -2778,9 +2798,9 @@ These results will be presented in a series of forthcoming papers.
   \end{tabular}
   \end{center}
   \label{tab:n3245}
-  \tablecomments{
-  GD07 found the largest estimates of the bulge effective radius and S\'ersic index.
-  }
+%  \tablecomments{
+%  GD07 found the largest estimates of the bulge effective radius and S\'ersic index.
+%  }
   \end{table}
 
 
@@ -3004,9 +3024,9 @@ These results will be presented in a series of forthcoming papers.
   \end{tabular}
   \end{center}
   \label{tab:n3489}
-  \tablecomments{
-  S+11 did not fit the bar and thus obtained a larger estimate of the bulge effective radius.
-  }
+  %\tablecomments{
+  %S+11 did not fit the bar and thus obtained a larger estimate of the bulge effective radius.
+  %}
   \end{table}
 
 
@@ -3020,7 +3040,7 @@ These results will be presented in a series of forthcoming papers.
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n3585_1Dfit.eps}
   \caption{Best-fit model and isophotal parameters for NGC 3585. 
-  NGC 3585 is an elliptical galaxy with an embedded disk \cite{scorzabender1995}. 
+  NGC 3585 is an elliptical galaxy with an embedded disk \citep{scorzabender1995}. 
   The embedded disk is visible in the unsharp mask and modeled with an exponential function. }
   \end{center}
   \end{figure}
@@ -3102,7 +3122,7 @@ These results will be presented in a series of forthcoming papers.
   \caption{Best-fit model and isophotal parameters for NGC 3608.
   NGC 3608 is an elliptical galaxy with an unresolved partially depleted core \citep{rusli2013} 
   and a kinematically decoupled core. 
-  We find unnnecessary masking the nuclear region of this galaxy and we fit the light profile with a single S\'ersic model.
+  We find that masking the nuclear region of this galaxy is unnnecessary and we fit the light profile with a single S\'ersic model.
   }
   \end{center}
   \end{figure}
@@ -3129,7 +3149,7 @@ These results will be presented in a series of forthcoming papers.
   \end{center}
   \label{tab:n3608}
   \tablecomments{B+12 obtained the largest estimates of the effective radius and S\'ersic index, 
-  but the reasons for this are not clear. }
+  possibly due to incorrect sky subtraction. }
   \end{table}
 
 
@@ -3284,7 +3304,7 @@ These results will be presented in a series of forthcoming papers.
 
   \begin{table}[h]
   \small
-  \caption{Best-fit parameters for the spheroidal component of NGC 4261.}
+  \caption{Best-fit parameters for the spheroidal component of NGC 4151.}
   \begin{center}
   \begin{tabular}{llcc}
   \hline
@@ -3348,7 +3368,7 @@ These results will be presented in a series of forthcoming papers.
   \label{tab:n4261}
   \tablecomments{
   S+11 found the smallest estimate of the effective radius because they added a large-scale disk to their model.
-  Similarly, V+12 obtained a small estimate of the effective radius because of the limited radial extent of their data.
+  V+12 obtained a small estimate of the effective radius because of the limited radial extent of their data.
   }
   \end{table}
 
@@ -3612,7 +3632,7 @@ These results will be presented in a series of forthcoming papers.
   \label{tab:n4596}
   \tablecomments{
   B+12 fit nor the bar neither the inner disk and obtained the largest estimates of the bulge effective radius and S\'ersic index.
-  The models of S+11 and V+12 account for the bar and thus result in lower estimates of the bulge effective radius and S\'ersic index.
+  The models of S+11 and V+12 do not account for the inner disk and thus result in larger estimates of the bulge effective radius.
   }
   \end{table}
 
@@ -3790,7 +3810,7 @@ These results will be presented in a series of forthcoming papers.
   \includegraphics[width=\fitfigurewidth]{images/n5128_1Dfit.eps}
   \caption{Best-fit model and isophotal parameters for NGC 5128.
   NGC 5128 is a merging system. 
-  The data within $50'' \lesssim R_{\rm maj} \lesssim 200''$ is excluded from the fit.}
+  The data within $50'' \lesssim R_{\rm maj} \lesssim 200''$ are excluded from the fit.}
   \end{center}
   \end{figure}
 
@@ -3812,7 +3832,6 @@ These results will be presented in a series of forthcoming papers.
   \end{tabular}
   \end{center}
   \label{tab:n5128}
-  \tablecomments{}
   \end{table}
 
 
@@ -4034,7 +4053,7 @@ These results will be presented in a series of forthcoming papers.
   \end{tabular}
   \end{center}
   \label{tab:n7052}
-  \tablecomments{The model of V+12 subtracts a large-scale disk and thus results in the lowest estimates of the effective radius and S\'ersic index.}
+  \tablecomments{The model of V+12 oversubtracts a large-scale disk and thus results in the lowest estimates of the effective radius and S\'ersic index.}
   \end{table}
 
 
@@ -4149,21 +4168,7 @@ These results will be presented in a series of forthcoming papers.
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-
-\acknowledgments
-{\bf marconi, sani, hunt...}
-GS warmly thanks Chieng Peng, Peter Erwin, Luca Cortese, Elisabete Lima Da Cunha and Gonzalo Diaz 
-for useful discussion. \\
-This research was supported by Australian Research Council funding through grants
-DP110103509 and FT110100263.
-This work is based on observations made with the IRAC instrument \citep{fazio2004IRAC} 
-on-board the Spitzer Space Telescope, 
-which is operated by the Jet Propulsion Laboratory, 
-California Institute of Technology under a contract with NASA.
-This research has made use of the GOLDMine database \citep{goldmine} and the NASA/IPAC Extragalactic Database (NED) 
-which is operated by the Jet Propulsion Laboratory, California Institute of Technology, 
-under contract with the National Aeronautics and Space Administration. 
+\clearpage
 
 \appendix
 

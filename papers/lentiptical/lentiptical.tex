@@ -23,7 +23,7 @@
 
 %% preprint2 produces a double-column, single-spaced document:
 
-\documentclass[preprint2]{emulateapj}
+\documentclass[12pt,preprint]{nature}
 
 \usepackage{natbib}
 \bibliographystyle{apj}
@@ -66,8 +66,6 @@
 %% head is a modified title of up to roughly 44 characters.
 %% Running heads will not print in the manuscript style.
 
-\shorttitle{Lentiptical galaxies}
-\shortauthors{Savorgnan \& Graham}
 
 %% This is the end of the preamble.  Indicate the beginning of the
 %% paper itself with \begin{document}.
@@ -78,72 +76,52 @@
 %% one line. However, you may use \\ to force a line break if
 %% you desire.
 
-\title{Lentiptical galaxies and their ordinary black holes}
+Title: Lentiptical galaxies \\
+Authors: G. A. D. Savorgnan and A. W. Graham \\
+Affiliation: Centre for Astrophysics and Supercomputing, Swinburne University of Technology, Hawthorn, Victoria 3122, Australia. \\
 
-%% Use \author, \affil, and the \and command to format
-%% author and affiliation information.
-%% Note that \email has replaced the old \authoremail command
-%% from AASTeX v4.0. You can use \email to mark an email address
-%% anywhere in the paper, not just in the front matter.
-%% As in the title, use \\ to force line breaks.
-
-\author{G. A. D. Savorgnan\altaffilmark{1} and A. W. Graham\altaffilmark{1}}
-\affil{Centre for Astrophysics and Supercomputing, Swinburne University of Technology, Hawthorn, Victoria 3122, Australia.}
-
-%\author{C. D. Biemesderfer\altaffilmark{4,5}}
-%\affil{National Optical Astronomy Observatories, Tucson, AZ 85719}
-\email{gsavorgn@astro.swin.edu.au}
-
-%\and
-
-%\author{A. W. Graham\altaffilmark{1}}
-%\affil{Centre for Astrophysics and Supercomputing, Swinburne University of Technology, Hawthorn, Victoria 3122, Australia.}
-
-%% Notice that each of these authors has alternate affiliations, which
-%% are identified by the \altaffilmark after each name.  Specify alternate
-%% affiliation information with \altaffiltext, with one command per each
-%% affiliation.
-
-%\altaffiltext{1}{Visiting Astronomer, Cerro Tololo Inter-American Observatory.
-%CTIO is operated by AURA, Inc.\ under contract to the National Science
-%Foundation.}
-%\altaffiltext{2}{Society of Fellows, Harvard University.}
-%\altaffiltext{3}{present address: Center for Astrophysics,
-%    60 Garden Street, Cambridge, MA 02138}
-%\altaffiltext{4}{Visiting Programmer, Space Telescope Science Institute}
-%\altaffiltext{5}{Patron, Alonso's Bar and Grill}
-
-%% Mark off your abstract in the ``abstract'' environment. In the manuscript
-%% style, abstract will output a Received/Accepted line after the
-%% title and affiliation information. No date will appear since the author
-%% does not have this information. The dates will be filled in by the
-%% editorial office after submission.
 
 \begin{abstract}
-Lentiptical galaxies are an intermediate class of galaxies between elliptical  
-and lenticular galaxies.
-Lentipticals are early-type, bulge-dominated galaxies that feature a fast-rotating, 
-intermediate-scale disk of stars embedded within a slow-rotating spheroid of stars.
-Such spheroid dominates the light in the central region of the galaxy and also at large radii, 
-unlike lenticular galaxies, whose bulge is encased within a (more extended) large-scale disk. 
-Lentiptical galaxies have often been confused with lenticular galaxies and,
+Early-type galaxies are quiescent galaxies, with little or no star formation activity. 
+The majority of early-type galaxies are made of two principal components: 
+a spheroid (or bulge) of stars with random motion and a rapidly rotating stellar disk (1 krajnovic). 
+The relative importance of these two components determines the morphological classification of early-type galaxies into two types: 
+elliptical galaxies are spheroid-dominated systems, 
+whereas lenticular galaxies are composed of a small bulge of stars encased in a larger stellar disk. 
+When perfoming bulge/disk decomposition, 
+the spheroidal component is typically described with a S\'ersic profile (2 sersic), 
+while the disk is fit with an exponential function. 
+Theoretically, the bulge-to-disk ratio, 
+which describes the relative importance of the spheroidal component over the disk component, 
+can assume any positive value. 
+However, several studies have taken into account only bulge/disk decompositions 
+in which the exponential function neatly dominates over the S\'ersic profile at large galaxy radii, 
+and rejected those decompositions in which the exponential function remains ``embedded'' within the S\'ersic profile, 
+considering such decompositions as unphysical.
+Here we show that these rejected models correctly reproduce the kinematics of a class of early-type galaxies, 
+that we name \emph{lentiptical}. 
+Lentiptical galaxies have often been confused with lenticular galaxies and, 
 consequently, their bulge luminosities have been largely underestimated. 
 This surprisingly common mistake has led to some wrong conclusions, 
-such as the claim that a number of lentiptical galaxies are extreme outliers 
-in the $M_{\rm BH} - M_{\rm *,sph}$ diagram, 
-i.e. these galaxies host a central black hole whose mass, $M_{\rm BH}$, is abnormally large 
-compared to expectations from their (underestimated) bulge stellar mass, $M_{\rm *,sph}$. 
+such as the claim that a number of lentiptical galaxies host a central black hole whose mass is abnormally large 
+compared to expectations from its (underestimated) bulge luminosity.
+
+Our results demonstrate that there is no bimodality in the distribution of the bulgetodisk
+that the claimed bimodality is artificial
+
+we show that the ell profile is enough to estabilish if the disk is embedded or not
 
 
 
+
+%Lentiptical galaxies are an intermediate class of galaxies between elliptical  
+%and lenticular galaxies.
+%Lentipticals are early-type, bulge-dominated galaxies that feature a fast-rotating, 
+%intermediate-scale disk of stars embedded within a slow-rotating spheroid of stars.
+%Such spheroid dominates the light in the central region of the galaxy and also at large radii, 
+%unlike lenticular galaxies, whose bulge is encased within a (more extended) large-scale disk. 
 \end{abstract}
 
-%% Keywords should appear after the \end{abstract} command. The uncommented
-%% example has been keyed in ApJ style. See the instructions to authors
-%% for the journal to which you are submitting your paper to determine
-%% what keyword punctuation is appropriate.
-
-\keywords{keywords}
 
 
 \section{Introduction}
@@ -301,7 +279,6 @@ classification for galaxies without spiral arms could be better represented by a
 
 
 
-\acknowledgments
 luca cortese, peppo gavazzi, matteo fossati
 %%
 %%We are grateful to V. Barger, T. Han, and R. J. N. Phillips for
@@ -393,7 +370,7 @@ luca cortese, peppo gavazzi, matteo fossati
 %% delimit the year from the author name used in the citation.
 %% See the natbib documentation for more details and options.
 
-\bibliography{/Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography}
+%\bibliography{/Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography}
 
 
 \clearpage
