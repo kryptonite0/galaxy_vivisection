@@ -35,34 +35,34 @@ while executing---line 1671 of file apj.bst
 Warning--empty publisher in sersic1968
 You've used 118 entries,
             3085 wiz_defined-function locations,
-            1422 strings with 32732 characters,
-and the built_in function-call counts, 58349 in all, are:
-= -- 4813
-> -- 4420
-< -- 47
-+ -- 1487
-- -- 1610
-* -- 5056
-:= -- 11019
+            1424 strings with 32846 characters,
+and the built_in function-call counts, 58605 in all, are:
+= -- 4832
+> -- 4461
+< -- 46
++ -- 1502
+- -- 1628
+* -- 5089
+:= -- 11068
 add.period$ -- 118
 call.type$ -- 118
-change.case$ -- 826
+change.case$ -- 832
 chr.to.int$ -- 114
 cite$ -- 120
-duplicate$ -- 2244
+duplicate$ -- 2246
 empty$ -- 3355
-format.name$ -- 1764
-if$ -- 11518
+format.name$ -- 1781
+if$ -- 11562
 int.to.chr$ -- 5
 int.to.str$ -- 0
 missing$ -- 115
 newline$ -- 358
 num.names$ -- 475
-pop$ -- 905
+pop$ -- 914
 preamble$ -- 1
-purify$ -- 826
+purify$ -- 832
 quote$ -- 0
-skip$ -- 1857
+skip$ -- 1855
 stack$ -- 0
 substring$ -- 2450
 swap$ -- 32

@@ -193,11 +193,8 @@
   {Magorrian}, {Pinkney}, {Richstone}, \& {Tremaine}}]{gebhardt2000}
 {Gebhardt}, K., {Bender}, R., {Bower}, G., {et~al.} 2000, \apjl, 539, L13
 
-\bibitem[{{Graham}(2012)}]{graham2012bent}
-{Graham}, A.~W. 2012, \apj, 746, 113
-
 \bibitem[{{Graham}(2015)}]{graham2015bulges}
----. 2015, ArXiv e-prints, arXiv:1501.02937
+{Graham}, A.~W. 2015, ArXiv e-prints, arXiv:1501.02937
 
 \bibitem[{{Graham} {et~al.}(1998){Graham}, {Colless}, {Busarello}, {Zaggia}, \&
   {Longo}}]{graham1998fornax}
@@ -440,6 +437,11 @@
   {Risaliti}}]{sani2011}
 {Sani}, E., {Marconi}, A., {Hunt}, L.~K., \& {Risaliti}, G. 2011, \mnras, 413,
   1479
+
+\bibitem[{{Savorgnan} {et~al.}(2013){Savorgnan}, {Graham}, {Marconi}, {Sani},
+  {Hunt}, {Vika}, \& {Driver}}]{savorgnan2013}
+{Savorgnan}, G., {Graham}, A.~W., {Marconi}, A., {et~al.} 2013, \mnras, 434,
+  387
 
 \bibitem[{{Savorgnan} \& {Graham}(2015)}]{savorgnangraham2015}
 {Savorgnan}, G.~A.~D., \& {Graham}, A.~W. 2015, \mnras, 446, 2330
