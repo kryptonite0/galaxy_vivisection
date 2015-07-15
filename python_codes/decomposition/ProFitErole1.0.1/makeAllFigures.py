@@ -180,7 +180,8 @@ def readFitAndPlot(excludedRangeList, galaxy, axisFit, psfFunction, sampling, be
         rrr = rrr * np.sqrt(1. - ellip) 
     
     
-    bestFitParamsFileName = galaxy + '_' + axisFit + '_' + gaussianPsf.name + '_comb_par_SM.dat'
+    #bestFitParamsFileName = galaxy + '_' + axisFit + '_' + gaussianPsf.name + '_comb_par_SM.dat'
+    bestFitParamsFileName = galaxy + '_' + axisFit + '_' + moffatPsf.name + '_comb_par_SM.dat'
     
     componentslist, finalparams = readBestFitModel(bestFitParamsFileName)
     
@@ -241,7 +242,7 @@ for sampling in samplingList:
 
 
 bestfitFig.subplots_adjust(wspace=0, hspace=0)
-#bestfitFig.savefig('/Users/gsavorgnan/galaxy_vivisection/papers/data_paper/images/' + galaxy + '_1Dfit.eps', format='eps', dpi=1000)
-bestfitFig.savefig(galaxy + '_1Dfit.eps', format='eps', dpi=1000)
+bestfitFig.savefig('/Users/gsavorgnan/galaxy_vivisection/papers/data_paper/images/' + galaxy + '_1Dfit.eps', format='eps', dpi=1000)
+#bestfitFig.savefig(galaxy + '_1Dfit.eps', format='eps', dpi=1000)
 
 

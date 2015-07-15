@@ -19,11 +19,11 @@ class Settings:
     useErrorsInFit = False
     #useErrorsInFit = True
     
-    smoothing = False
-    #smoothing = True
+    #smoothing = False
+    smoothing = True
     
-    #observation = 'spitzer3.6um'
-    observation = 'n1271' 
+    observation = 'spitzer3.6um'
+    #observation = 'n1271' 
         
     if (observation == 'n1277'):
         pxlToArcsec = 0.05

@@ -44,6 +44,11 @@ def doFitPanel(fitPanel, rrr, mu, good_rrr, good_mu, bad_rrr, bad_mu, maxsma_arc
 	fitPanel.yaxis.set_major_locator(majorLocator)
 	fitPanel.yaxis.set_minor_locator(minorLocator)
 	
+	start, end = fitPanel.get_ylim()
+	ticks = np.arange(int(start)-1, int(end), -2)
+	fitPanel.yaxis.set_ticks(ticks)
+	fitPanel.yaxis.set_major_formatter(ticker.FormatStrFormatter('%0.0f'))
+	
 	#xxx = np.arange(min(rrr),max(rrr),0.1)
 	xxx = rrr
 	
@@ -286,6 +291,13 @@ def doB4Panel(B4Panel, datatab, Settings, equivalentAxisFit, maxsma_arcsec):
 	B4Panel.yaxis.set_ticks(ticks)
 	B4Panel.yaxis.set_major_formatter(ticker.FormatStrFormatter('%0.3f'))
 	
+        xticks = B4Panel.xaxis.get_major_ticks()   #
+        xticks[0].label1.set_visible(False)	   #
+        xticks[-1].label1.set_visible(False)	   #
+        xticks[-2].label1.set_visible(False)	   #
+     
+        #B4Panel.xaxis.set_ticks(np.arange(0, 800, 200) )
+
 	return B4Panel
 	
 xaxisMinorLocator = 200

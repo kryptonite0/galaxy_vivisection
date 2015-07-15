@@ -27,7 +27,9 @@ def createPsf(Settings):
 
     gaussianSmoothing = PsfFunction()
     gaussianSmoothing.name = 'gaussian'
-    gaussianSmoothing.gaussianFWHM = 60 * 2.3548 * Settings.pxlToArcsec 
+    #gaussianSmoothing.gaussianFWHM = 60 * 2.3548 * Settings.pxlToArcsec  # m31
+    gaussianSmoothing.gaussianFWHM = 5 * 2.3548 * Settings.pxlToArcsec    # m81 n5128
+    #gaussianSmoothing.gaussianFWHM = 3 * 2.3548 * Settings.pxlToArcsec    # n4945
     
     return psfList, gaussianSmoothing
 

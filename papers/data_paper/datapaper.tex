@@ -1462,7 +1462,7 @@ under contract with the National Aeronautics and Space Administration.
   An elliptical galaxy with an edge-on, intermediate-scale embedded disk \citep{scorzabender1995}
   and a thin, faint nuclear stellar disk \citep{ferrarese2006acsvcs,ledo2010}. 
   The intermediate-scale embedded disk is clearly visible in our unsharp mask image (not shown), and 
-  the velocity map confirms the presence of this rapidly rotating component, which is modeled with an exponential function.
+  the velocity map (ATLAS$^{\rm 3D}$) confirms the presence of this rapidly rotating component, which is modeled with an exponential function.
   We choose not to account for the nuclear stellar disk by excluding the innermost $6''.1$ from the fit.  
   }
   \end{center}
@@ -1827,7 +1827,7 @@ under contract with the National Aeronautics and Space Administration.
   \caption{M104: 
   A lenticular/spiral galaxy with a partially depleted core \citep{jardel2011}. 
   The data within the innermost $6''.1$ are excluded from the fit, 
-  and the most obvious ring of this galaxy is modeled.
+  and the most obvious elongated feature of this galaxy is modeled with a Ferrer function.
   }
   \end{center}
   \end{figure}
@@ -1841,8 +1841,8 @@ under contract with the National Aeronautics and Space Administration.
   {\bf Work} & {\bf Model}   & $\bm R_{\rm e,sph}$    & $\bm n_{\rm sph}$ \\
     &  &  $[\rm arcsec]$ & \\
   \hline
-  1D maj. & S-bul + e-d + G-r + m-c  & $11.1$  &  $5.4$ \\
-  1D eq.  & S-bul + e-d + G-r + m-c  & $52.5$  &  $7.1$ \\
+  1D maj. & S-bul + e-d + F-bar + m-c  & $11.0$  &  $5.8$ \\
+  1D eq.  & S-bul + e-d + F-bar + m-c  & $19.6$  &  $3.7$ \\
   \hline
   S+11 2D         & S-bul + e-d + G-bar + G-n  & $66.1$  &  $1.5$ \\
   \hline
@@ -1865,7 +1865,7 @@ under contract with the National Aeronautics and Space Administration.
   \caption{M105: 
   An elliptical galaxy with an unresolved partially depleted core \citep{rusli2013}. %($R_{\rm break} = 1''.1$, \citealt{rusli2013}).
   M105 exhibits a mild isophotal twist and an abrupt change of ellipticity at $R_{\rm maj} \sim 30''$.
-  The velocity map shows rotation at least within $R_{\rm maj} \lesssim 30''$, 
+  The velocity map (ATLAS$^{\rm 3D}$) shows rotation at least within $R_{\rm maj} \lesssim 30''$, 
   but no embedded disk can be recognized in the unsharp mask 
   and the ellipticity profile is quite unusual for a spheroidal system with an inner disk.
   The data within the innermost $6''.1$ are excluded from the fit.
@@ -2008,8 +2008,8 @@ under contract with the National Aeronautics and Space Administration.
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n0821_1Dfit.eps}
   \caption{NGC 0821: 
-  An edge-on elliptical/lenticular galaxy. 
-  The ellipticity profile and the velocity map show the presence of a faint intermediate-scale disk. 
+  An elliptical galaxy with an edge-on embedded disk. 
+  The ellipticity profile and the velocity map (ATLAS$^{\rm 3D}$, SLUGGS) show the presence of the faint intermediate-scale disk. 
   Given its edge-on inclination, the disk is modeled with a low-$n$ S\'ersic function.   
   }
   \end{center}
@@ -2369,7 +2369,7 @@ under contract with the National Aeronautics and Space Administration.
   We model the large-scale bar with a Ferrer function.
   A peak in the ellipticity profile discloses the presence of a disky component
   embedded in the bulge ($R_{\rm maj} \lesssim 10''$).
-  This inner component can be spotted also by looking at the velocity map, and 
+  This inner component can be spotted also by looking at the velocity map (ATLAS$^{\rm 3D}$), and 
   we fit it with a Ferrer function.
   }
   \end{center}
@@ -2815,17 +2815,17 @@ under contract with the National Aeronautics and Space Administration.
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n3377_1Dfit.eps}
-  \caption{NGC 3377.
-  NGC 3377 is an elliptical/lenticular galaxy with an intermediate-scale disk and a nuclear stellar disk \citep{ledo2010}. 
+  \caption{NGC 3377: 
+  An elliptical galaxy with an intermediate-scale disk and a nuclear stellar disk \citep{ledo2010}. 
   For this galaxy, \citet{arnold2014} reported a strong decline in local specific angular momentum beyond $\sim 35''$, 
   with a disk-to-bulge transition occurring at about $R_{\rm maj} \sim 50''$.
   \citet{arnold2014} attempted a three-component decomposition (accounting for a bulge, an embedded disk and a central cusp), 
-  but unfortunately they fit the spheroidal component with a limited two-parameter $R^{1/4}$ profile 
+  but unfortunately they fit the spheroidal component with a limited two-parameter $R^{1/4}$ function 
   rather than a three-parameter $R^{1/n}$ S\'ersic function.
   Here we use a surface brightness profile twice as extended as that used by \citet{arnold2014} 
   and we identify a nuclear disk and an intermediate-scale disk, both embedded in a larger spheroidal component.
-  The presence of an intermediate-scale disk is evident from the unsharp mask of the image mosaic 
-  and also from the ellipticity profile, which increases with increasing radius until $R_{\rm maj} \sim 45''$ 
+  The presence of the intermediate-scale disk is also evident in the unsharp mask of the image mosaic 
+  and also from the ellipticity, which increases with increasing radius until $R_{\rm maj} \sim 45''$ 
   and then drops at larger radii.
   The nuclear stellar disk can be spotted from the peak at $R_{\rm maj} \sim 5''$ in the $B4$ profile.
   Each of the two disks is modelled with an exponential profile. 
@@ -2854,7 +2854,7 @@ under contract with the National Aeronautics and Space Administration.
   \end{tabular}
   \end{center}
   \label{tab:n3377}
-  \tablecomments{L+14 2D obtained the smallest estimate of the effective radius because they oversubtracted a halo.   
+  \tablecomments{L+14 obtained the smallest estimate of the effective radius because they oversubtracted a halo.   
   }
   \end{table}
   
@@ -2867,15 +2867,15 @@ under contract with the National Aeronautics and Space Administration.
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n3384_1Dfit.eps}
-  \caption{NGC 3384.
-  NGC 3384 is a barred lenticular galaxy that hosts 
+  \caption{NGC 3384: 
+  A barred lenticular galaxy that hosts 
   an embedded disk (with size $\lesssim 11''$, \citealt{erwin2004}) and 
   a nuclear stellar disk (with size $\lesssim 0''.8$, \citealt{ledo2010}).
-  The isophotal parameters clearly show the presence of a boxy bar that extends out to $R_{\rm maj} \lesssim 18''$.
+  The isophotal parameters show clearly the presence of a boxy bar that extends out to $R_{\rm maj} \lesssim 18''$.
   We model the bar with a Ferrer function.
   An embedded disk can be seen in the unsharp mask and produces the peak in the ellipticity profile at $R_{\rm maj} \sim 4''$.
   However, any attempt to account for this component resulted in a degenerate model.
-  We elect not to fit neither the embedded disk nor the nuclear disk, by excluding from the fit the data within $R_{\rm maj} < 3''.7$. 
+  We elect to fit neither the embedded disk nor the nuclear disk, by excluding from the fit the data within $R_{\rm maj} < 3''.7$. 
   }
   \end{center}
   \end{figure}
@@ -2912,13 +2912,12 @@ under contract with the National Aeronautics and Space Administration.
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n3393_1Dfit.eps}
-  \caption{NGC 3393.
-  NGC 3393 is an edge-on spiral galaxy hosting a Seyfert AGN \citep{diaz1988n3393} and 
+  \caption{NGC 3393: 
+  An edge-on spiral galaxy hosting a Seyfert AGN \citep{diaz1988n3393} and 
   circumnuclear dust \citep{martini2003}.
   The galaxy has a large-scale bar and a nuclear bar (with size $\lesssim 3''$, \citealt{erwin2004}).  
   The large-scale bar ($R_{\rm maj} \lesssim 20''$) is modeled with a Ferrer function.
-  We do not model the nuclear bar and the AGN component because the poor spatial resolution of the data does not allow to fit them 
-  without incurring into degeneracies.
+  We do not model the nuclear bar and the AGN component because the poor spatial resolution of the data does not allow to fit them.
   }
   \end{center}
   \end{figure}
@@ -2949,17 +2948,17 @@ under contract with the National Aeronautics and Space Administration.
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n3414_1Dfit.eps}
-  \caption{NGC 3414.
-  NGC 3414 is a peculiar lenticular/elliptical galaxy. 
+  \caption{NGC 3414: 
+  A peculiar lenticular/elliptical galaxy. 
   Different interpretations have been proposed about the morphology of this galaxy.
-  \cite{whitmore1990} suggested that NGC 3414 is an spheroidal galaxy 
+  \cite{whitmore1990} suggested that NGC 3414 is a spheroidal galaxy 
   with a large-scale edge-on polar ring, rather than a face-on barred lenticular galaxy.
   \cite{laurikainen2010} decomposed NGC 3414 as a barred lenticular galaxy, but 
   they cautioned against the uncertainty of their solution due to the possible misinterpretation of the galaxy morphology.
   The unsharp mask clearly shows that an embedded component does not extend all the way through the 
   center of the galaxy, but instead it is truncated at $R_{\rm maj} \sim 20''$.
   However, an elongated structure in the galaxy center resembles a nuclear edge-on disk ($R_{\rm maj} \lesssim 5''$).
-  The velocity map shows rotation within $R_{\rm maj} \lesssim 5''$, no rotation within $5'' \lesssim R_{\rm maj} \lesssim 15''$,
+  The velocity map (ATLAS$^{\rm 3D}$) shows rotation within $R_{\rm maj} \lesssim 5''$, no rotation within $5'' \lesssim R_{\rm maj} \lesssim 15''$,
   and counterrotation beyond $R_{\rm maj} \gtrsim 15''$.
   The velocity pattern is consistent with the galaxy being a spheroidal system containing an edge-on polar ring and an edge-on nuclear disk.
   }
@@ -2985,7 +2984,7 @@ under contract with the National Aeronautics and Space Administration.
   \end{center}
   \label{tab:n3414}
   \tablecomments{
-  L+10 2D used a model with a large-scale exponential disk, thus they obtained a smaller bulge effective radius and S\'ersic index.
+  L+10 used a model with a large-scale exponential disk, thus they obtained a smaller bulge effective radius and S\'ersic index.
   }
   \end{table}
 
@@ -2998,9 +2997,9 @@ under contract with the National Aeronautics and Space Administration.
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n3489_1Dfit.eps}
-  \caption{NGC 3489.
-  NGC 3489 is a barred lenticular galaxy. 
-  Its disk has a smooth antitruncation at $R_{\rm maj} \sim 85''$ \citep{erwin2008}.
+  \caption{NGC 3489: 
+  A barred lenticular galaxy. 
+  Its disk has a smooth anti-truncation at $R_{\rm maj} \sim 85''$ \citep{erwin2008}.
   %\cite{nowak2010n3368n3489} argued for the presence of both a pseudo-bulge and a classical bulge. 
   The bar is fit with a Ferrer function.
   }
@@ -3026,9 +3025,6 @@ under contract with the National Aeronautics and Space Administration.
   \end{tabular}
   \end{center}
   \label{tab:n3489}
-  %\tablecomments{
-  %S+11 2D did not fit the bar and thus obtained a larger estimate of the bulge effective radius.
-  %}
   \end{table}
 
 
@@ -3041,8 +3037,8 @@ under contract with the National Aeronautics and Space Administration.
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n3585_1Dfit.eps}
-  \caption{NGC 3585. 
-  NGC 3585 is an elliptical galaxy with an embedded disk \citep{scorzabender1995}. 
+  \caption{NGC 3585: 
+  An elliptical galaxy with an embedded disk \citep{scorzabender1995}. 
   The embedded disk is visible in the unsharp mask and modeled with an exponential function. }
   \end{center}
   \end{figure}
@@ -3066,7 +3062,7 @@ under contract with the National Aeronautics and Space Administration.
   \label{tab:n3585}
   \tablecomments{
   S+11 2D obtained smaller estimates of the effective radius and S\'ersic index because
-  they oversubtracted a large-scale disk.
+  they included a large-scale disk in their model.
   }
   \end{table}
 
@@ -3080,9 +3076,9 @@ under contract with the National Aeronautics and Space Administration.
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n3607_1Dfit.eps}
-  \caption{NGC 3607. 
-  NGC 3607 is an elliptical galaxy with an embedded disk. 
-  The velocity map shows rotation only within $R_{\rm maj} \lesssim 20''$. 
+  \caption{NGC 3607: 
+  An elliptical galaxy with an embedded disk. 
+  The velocity map (ATLAS$^{\rm 3D}$) shows rotation only within $R_{\rm maj} \lesssim 20''$. 
    }
   \end{center}
   \end{figure}
@@ -3107,8 +3103,8 @@ under contract with the National Aeronautics and Space Administration.
   \end{tabular}
   \end{center}
   \label{tab:n3607}
-  \tablecomments{L+10 2D obtained the smallest estimates of the effective radius and S\'ersic index because
-  they oversubtracted a large-scale disk.
+  \tablecomments{L+10 obtained the smallest estimates of the effective radius and S\'ersic index because
+  they included a large-scale disk in their model.
   }
   \end{table}
 
@@ -3121,9 +3117,9 @@ under contract with the National Aeronautics and Space Administration.
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n3608_1Dfit.eps}
-  \caption{NGC 3608.
-  NGC 3608 is an elliptical galaxy with an unresolved partially depleted core \citep{rusli2013} 
-  and a kinematically decoupled core. 
+  \caption{NGC 3608: 
+  An elliptical galaxy with an unresolved partially depleted core \citep{rusli2013} 
+  and a kinematically decoupled core (ATLAS$^{\rm 3D}$, SLUGGS). 
   We find that masking the nuclear region of this galaxy is unnnecessary and we fit the light profile with a single S\'ersic model.
   }
   \end{center}
@@ -3150,7 +3146,7 @@ under contract with the National Aeronautics and Space Administration.
   \end{tabular}
   \end{center}
   \label{tab:n3608}
-  \tablecomments{B+12 2D obtained the largest estimates of the effective radius and S\'ersic index, 
+  \tablecomments{B+12 obtained the largest estimates of the effective radius and S\'ersic index, 
   possibly due to incorrect sky subtraction. }
   \end{table}
 
@@ -3163,9 +3159,9 @@ under contract with the National Aeronautics and Space Administration.
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n3842exp_1Dfit.eps}
-  \caption{NGC 3842.
-  NGC 3842 is the brightest member of the Leo Cluster (Abell 1367).
-  It is an elliptical galaxy with an unresolved partially depleted core \citep{rusli2013,dullograham2014cores}. %($R_{\rm break} = 0''.7$,   \citealt{rusli2013,dullograham2014cores}).
+  \caption{NGC 3842: 
+  The brightest member of the Leo Cluster (Abell 1367), 
+  an elliptical galaxy with an unresolved partially depleted core \citep{rusli2013,dullograham2014cores}. %($R_{\rm break} = 0''.7$,   \citealt{rusli2013,dullograham2014cores}).
   The light profile presents a swelling at $R_{\rm maj} \sim 20''$ and the ellipticity profile has a peak in the same position.
   One can also glimpse a faint elongated oval in the unsharp mask.
   The innermost $6''.1$ are excluded from the fit.
@@ -3186,7 +3182,6 @@ under contract with the National Aeronautics and Space Administration.
   \hline
   1D maj. & S-bul + F-l + m-c  & $100.7$  &  $8.1$ \\
   1D eq.  & S-bul + F-l + m-c  & $73.6$   &  $8.2$ \\
-  %2D	&  & $$  & $$  &  $$ \\
   \hline
   R+13 1D eq.         & core-S\'ersic & $58.8$  &  $6.3$ \\
   \hline
@@ -3204,11 +3199,11 @@ under contract with the National Aeronautics and Space Administration.
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n3998_1Dfit.eps}
-  \caption{NGC 3998.
-  NGC 3998 is a barred lenticular galaxy with a Seyfert AGN and nuclear dust \citep{knapp1996n3998}.
+  \caption{NGC 3998: 
+  A barred lenticular galaxy with a Seyfert AGN and nuclear dust \citep{knapp1996n3998}.
   Despite its large stellar velocity dispersion, this galaxy does not have a partially depleted core. 
   \cite{gutierrez2011} identified a bar at $R_{\rm maj} \lesssim 8''$, a ring between $30'' \lesssim R_{\rm maj} \lesssim 50''$, and  
-  an antitruncation in the light profile of the disk at $R_{\rm maj} \sim 122''$.
+  an anti-truncation in the light profile of the disk at $R_{\rm maj} \sim 122''$.
   \cite{laurikainen2010} found that NGC 3998 features a weak bar at $R_{\rm maj} < 8''$,
   a bright lens at $R_{\rm maj} < 15''$ and a weak bump in the surface brightness profile at $R_{\rm maj} \sim 40''$.
   We see three distinct peaks in the ellipticity profile.
@@ -3254,11 +3249,11 @@ under contract with the National Aeronautics and Space Administration.
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n4026_1Dfit.eps}
-  \caption{NGC 4026.
-  NGC 4026 is an edge-on lenticular galaxy with a nuclear stellar disk (with size $\lesssim 0''.5$, \citealt{ledo2010}).
-  The unsharp mask reveals the presence of a bar ($R_{\rm maj} \lesssim 30''$) and of a disky component 
-  embedded in the bulge, that is responsible for the peak at $R_{\rm maj} \sim 5''$ in the $B4$ profile.
-  The disky component can be also recognized in the velocity map.
+  \caption{NGC 4026: 
+  An edge-on lenticular galaxy with a nuclear stellar disk (with size $\lesssim 0''.5$, \citealt{ledo2010}).
+  The unsharp mask reveals the presence of a bar ($R_{\rm maj} \lesssim 30''$) and a disky component 
+  embedded in the bulge that is responsible for the peak at $R_{\rm maj} \sim 5''$ in the $B4$ profile.
+  The disky component can be also recognized in the velocity map (ATLAS$^{\rm 3D}$).
   The bar is fit with a Ferrer function and the inner disk with a low-$n$ S\'ersic profile.
   We do not model the nuclear component to avoid degeneracies.
   }
@@ -3283,7 +3278,7 @@ under contract with the National Aeronautics and Space Administration.
   \end{tabular}
   \end{center}
   \label{tab:n4026}
-  \tablecomments{S+11 2D obtained larger estimates of the bulge effective radius and S\'ersic index because they did not model the bar.}
+  \tablecomments{S+11 obtained larger estimates of the bulge effective radius and S\'ersic index because they did not model the bar.}
   \end{table}
 
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -3294,8 +3289,8 @@ under contract with the National Aeronautics and Space Administration.
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n4151_1Dfit.eps}
-  \caption{NGC 4151.
-  NGC 4151 is a face-on barred spiral galaxy that hosts a Seyfert AGN \citep{veroncettyveron2006} 
+  \caption{NGC 4151:
+  A face-on barred spiral galaxy that hosts a Seyfert AGN \citep{veroncettyveron2006} 
   and circumnuclear dust \citep{pott2010}.
   The nucleus of this galaxy is very bright and the IRAf task {\tt ellipse} fails at fitting the isophotes within $R_{\rm maj} < 4''$, 
   thus our light profile starts at $R_{\rm maj} \sim 4''$. 
@@ -3325,7 +3320,6 @@ under contract with the National Aeronautics and Space Administration.
   \end{table}
 
 
-
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \clearpage\newpage\noindent
@@ -3334,8 +3328,8 @@ under contract with the National Aeronautics and Space Administration.
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n4261_1Dfit.eps}
-  \caption{NGC 4261.
-  NGC 4261 is an elliptical galaxy with a LINER nucleus \citep{veroncettyveron2006}
+  \caption{NGC 4261: 
+  An elliptical galaxy with a LINER nucleus \citep{veroncettyveron2006}
   and a dusty nuclear disk \citep{tran2001}.
   The galaxy features an unresolved partially depleted core \citep{rusli2013}. %($R_{\rm break} = 1''.2$, \citealt{rusli2013}).
   The ellipticity profile has a peak at $R_{\rm maj} \sim 10''$, revealing the presence of an embedded component, 
@@ -3369,8 +3363,8 @@ under contract with the National Aeronautics and Space Administration.
   \end{center}
   \label{tab:n4261}
   \tablecomments{
-  S+11 2D found the smallest estimate of the effective radius because they added a large-scale disk to their model.
-  V+12 2D obtained a small estimate of the effective radius because of the limited radial extent of their data.
+  S+11 found the smallest estimate of the effective radius because they added a large-scale disk to their model.
+  V+12 obtained a small estimate of the effective radius because of the limited radial extent of their data.
   }
   \end{table}
 
@@ -3383,10 +3377,10 @@ under contract with the National Aeronautics and Space Administration.
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n4291_1Dfit.eps}
-  \caption{NGC 4291.
-  NGC 4291 is an elliptical galaxy with an unresolved partially depleted core \citep{rusli2013}. %%($R_{\rm break} = 0''.3$, \citealt{rusli2013}).
-  After excluding from the fit the data within the innermost $6''.1$, 
-  we observe that NGC 4291 can be well modeled with a S\'ersic profile.
+  \caption{NGC 4291: 
+  An elliptical galaxy with an unresolved partially depleted core \citep{rusli2013}. %%($R_{\rm break} = 0''.3$, \citealt{rusli2013}).
+  After excluding the data within the innermost $6''.1$ from the fit, 
+  we observe that NGC 4291 can be reasonably well modeled with a S\'ersic profile.
   }
   \end{center}
   \end{figure}
@@ -3421,8 +3415,8 @@ under contract with the National Aeronautics and Space Administration.
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n4388_1Dfit.eps}
-  \caption{NGC 4388.
-  NGC 4388 is an edge-on spiral galaxy with a Seyfert AGN \citep{veroncettyveron2006} 
+  \caption{NGC 4388: 
+  An edge-on spiral galaxy with a Seyfert AGN \citep{veroncettyveron2006} 
   and copious nuclear dust \citep{martini2003}.
   The peaks at $R_{\rm maj} \sim 30''$ in the ellipticity and $B4$ profiles signal the presence of a bar.
   The data between $35'' \lesssim R_{\rm maj} \lesssim 65''$ are excluded from the fit.
@@ -3458,9 +3452,9 @@ under contract with the National Aeronautics and Space Administration.
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n4459_1Dfit.eps}
-  \caption{NGC 4459.
-  NGC 4459 is a lenticular galaxy.
-  Its disk profile is reported to have an antitruncation at $R_{\rm maj} \sim 119''$ \citep{gutierrez2011}.
+  \caption{NGC 4459: 
+  A lenticular galaxy, 
+  whose disk profile has been reported to have an anti-truncation at $R_{\rm maj} \sim 119''$ \citep{gutierrez2011}.
   The ellipticity constantly increases across all the observed radial range ($R_{\rm maj} \lesssim 100''$).
   This is an indication that, going from the galaxy center to the outskirts,
   the disk component becomes increasingly more important over the spheroidal component.
@@ -3468,8 +3462,7 @@ under contract with the National Aeronautics and Space Administration.
   the contribution from the bulge is still significant compared to that of the disk.
   In fact, the surface brightness profile does not display an exponential decline at large radii.
   We note that the antitruncation reported by \cite{gutierrez2011} could be an artificial feature 
-  produced by the transition between the radial range where the disk becomes increasingly more important 
-  over the bulge and the truly exponential decline of the disk beyond $R_{\rm maj} \gtrsim 119''$.
+  produced by the transition from the S\'ersic bulge to the exponential disk.
   We do not find evidence for any embedded components in our data.
   A nuclear light excess is modeled with a Gaussian profile.
   }
@@ -3498,7 +3491,7 @@ under contract with the National Aeronautics and Space Administration.
   \end{center}
   \label{tab:n4459}
   \tablecomments{
-  B+12 2D did not model the large-scale disk and thus overestimated the bulge effective radius and S\'ersic index.
+  B+12 did not model the large-scale disk and thus overestimated the bulge effective radius and S\'ersic index.
   }
   \end{table}
 
@@ -3513,9 +3506,9 @@ under contract with the National Aeronautics and Space Administration.
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n4473_1Dfit.eps}
-  \caption{NGC 4473.
-  NGC 4473 is an elliptical galaxy with an embedded disk \citep{ledo2010}.
-  The disk is clearly visible in the velocity map. 
+  \caption{NGC 4473: 
+  An elliptical galaxy with an embedded disk \citep{ledo2010}.
+  The disk is clearly visible in the velocity map (ATLAS$^{\rm 3D}$, SLUGGS). 
   We account for a nuclear excess of light by adding a narrow Gaussian function to the model.
   }
   \end{center}
@@ -3544,7 +3537,7 @@ under contract with the National Aeronautics and Space Administration.
   \end{center}
   \label{tab:n4459}
   \tablecomments{
-  B+12 2D obtained the smallest estimates of the effective radius and S\'ersic index because they oversubtracted a large-scale disk. 
+  B+12 obtained the smallest estimates of the effective radius and S\'ersic index because they included a large-scale disk in their model. 
   }
   \end{table}
 
@@ -3557,11 +3550,11 @@ under contract with the National Aeronautics and Space Administration.
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n4564_1Dfit.eps}
-  \caption{NGC 4564.
-  NGC 4564 is an edge-on lenticular galaxy.
+  \caption{NGC 4564: 
+  An edge-on lenticular galaxy.
   In the unsharp mask, one can glimpse an oval structure extending out to $R_{\rm maj} \lesssim 15''$ (see the peak in the $B4$ profile).
-  Fitting NGC 4564 with a S\'ersic + exponential model produces bad residuals.
-  The addition of a Ferrer function to the model dramatically improves the fit and smoothes the residuals.
+  Fitting NGC 4564 with a S\'ersic + exponential model produces poor residuals.
+  However, the addition of a Ferrer function to the model dramatically improves the fit and smoothes the residuals.
   }
   \end{center}
   \end{figure}
@@ -3586,7 +3579,7 @@ under contract with the National Aeronautics and Space Administration.
   \end{tabular}
   \end{center}
   \label{tab:n4564}
-  \tablecomments{The most dicrepant results are obtained by S+11 2D, although they used the same model as GD07 1D maj. and V+12 2D. }
+  \tablecomments{The most dicrepant results are obtained by S+11, although they used the same model as GD07 and V+12. }
   \end{table}
 
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -3597,15 +3590,15 @@ under contract with the National Aeronautics and Space Administration.
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n4596_1Dfit.eps}
-  \caption{NGC 4596.
-  NGC 4596 is an edge-on barred lenticular galaxy.
+  \caption{NGC 4596: 
+  An edge-on barred lenticular galaxy.
   The morphology of this galaxy is quite complex. 
   The bar extends out to $R_{\rm maj} \lesssim 50''$ and concludes in two evident ansae.
   The large-scale disk features a wide ring that is responsible for the curvature in the light profile observed within 
   $60'' \lesssim R_{\rm maj} \lesssim 130''$ (see also \citealt{comeron2014}).
   An additional embedded disky component ($R_{\rm maj} \lesssim 15''$) can be recognized in the $B4$ profile and in the velocity map.
-  The bump in the light profile within $60'' \lesssim R_{\rm maj} \lesssim 70''$ corresponds to the ansae of the bar.
-  This data range is excluded from the fit.
+  The bump in the light profile within $60'' \lesssim R_{\rm maj} \lesssim 70''$ corresponds to the ansae of the bar and 
+  this data range is therefore excluded from the fit.
   The large scale bar is fit with a Ferrer function and the inner disk with a low-$n$ S\'ersic profile.
   }
   \end{center}
@@ -3633,8 +3626,8 @@ under contract with the National Aeronautics and Space Administration.
   \end{center}
   \label{tab:n4596}
   \tablecomments{
-  B+12 2D fit nor the bar neither the inner disk and obtained the largest estimates of the bulge effective radius and S\'ersic index.
-  The models of S+11 2D and V+12 2D do not account for the inner disk and thus result in larger estimates of the bulge effective radius.
+  B+12 fit neither the bar nor the inner disk and obtained the largest estimates of the bulge effective radius and S\'ersic index.
+  The models of S+11 and V+12 do not account for the inner disk and thus result in larger estimates of the bulge effective radius.
   }
   \end{table}
 
@@ -3648,13 +3641,13 @@ under contract with the National Aeronautics and Space Administration.
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n4697_1Dfit.eps}
-  \caption{NGC 4697.
-  NGC 4697 is an elliptical galaxy with an embedded disk \citep{scorzabender1995}.
-  The velocity map and the unsharp mask of NGC 4697 clearly show 
+  \caption{NGC 4697: 
+  An elliptical galaxy with an embedded disk \citep{scorzabender1995}.
+  The velocity map (ATLAS$^{\rm 3D}$, SLUGGS) and the unsharp mask of NGC 4697 clearly show 
   the presence of an intermediate-size disk embedded in the galaxy's spheroidal component.
   However, the ellipticity profile presents two peaks. 
   The peak at $R_{\rm maj} \sim 40''$ corresponds to the intermediate-size embedded disk just mentioned,
-  while the peak at $R_{\rm maj} \sim 10''$ unveils a smaller inner disk.
+  while the peak at $R_{\rm maj} \sim 10''$ pertains to a smaller inner disk.
   After testing different decomposition models, 
   in which we fit the two embedded disks with different functions (exponential, S\'ersic, Ferrer),
   while always describing the main spheroidal component with a S\'ersic profile,
@@ -3679,16 +3672,17 @@ under contract with the National Aeronautics and Space Administration.
   \hline
   GD07 1D maj.  & S-bul & $-$  &  $4.0$ \\
   S+11 2D  & S-bul & $100.5$  &  $5.0$ \\
-  V+12 2D  & S-bul & $39.1$  &  $3.8$ \\
-  V+12 2D  & S-bul + e-d & $10.0$  &  $2.9$ \\
+  V+12 (1) 2D  & S-bul & $39.1$  &  $3.8$ \\
+  V+12 (2) 2D  & S-bul + e-d & $10.0$  &  $2.9$ \\
   L+14 2D  & S-bul + e-d + PSF-n + S-halo & $6.3$  &  $2.1$ \\
   \hline
   \end{tabular}
   \end{center}
   \label{tab:n4697}
   \tablecomments{
-  In both their models, V+12 2D underestimated the effective radius and the S\'ersic index because of the small radial range of their data. 
-  L+14 2D oversubtracted a large-scale disk and a halo, and thus underestimated the spheroid effective radius and the S\'ersic index. 
+  In both their models, V+12 underestimated the effective radius and the S\'ersic index because of the small radial range of their data. 
+  In an effort to model the curved light profile, 
+  L+14 included a large-scale disk plus a halo, and thus underestimated the spheroid effective radius and the S\'ersic index. 
   }
   \end{table}
 
@@ -3701,11 +3695,11 @@ under contract with the National Aeronautics and Space Administration.
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n4889_1Dfit.eps}
-  \caption{NGC 4889.
-  NGC 4889 is the brightest member of the Coma cluster. 
-  It is an elliptical galaxy with an unresolved partially depleted core \citep{rusli2013}. % ($R_{\rm break} = 1''.6$, \citealt{rusli2013}).
-  We exclude from the fit the innermost $6''.1$ and
-  we successfully model the galaxy with a single S\'ersic profile.
+  \caption{NGC 4889: 
+  The brightest member of the Coma cluster, 
+  an elliptical galaxy with an unresolved partially depleted core \citep{rusli2013}. % ($R_{\rm break} = 1''.6$, \citealt{rusli2013}).
+  We exclude the innermost $6''.1$ from the fit and
+  successfully model the galaxy with a single S\'ersic profile.
   }
   \end{center}
   \end{figure}
@@ -3738,10 +3732,10 @@ under contract with the National Aeronautics and Space Administration.
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n4945_1Dfit.eps}
-  \caption{NGC 4945.
-  NGC 4945 is an edge-on, dusty spiral galaxy that hosts a Seyfert AGN \citep{lin2011}.
-  The light profile has an obvious bump that can be ascribed to a bar.
-  This bumb cannot be easily modeled with a Ferrer function, thus we exclude form the fit the data in the range $100'' \lesssim R_{\rm maj} \sim 400''$.
+  \caption{NGC 4945: 
+  An edge-on, dusty spiral galaxy that hosts a Seyfert AGN \citep{lin2011}.
+  The light profile has an obvious bump that can be ascribed to the bar.
+  This bumb cannot be easily modeled with a Ferrer function, thus we exclude the data in the range $100'' \lesssim R_{\rm maj} \sim 400''$ form the fit.
   We also exclude the data within the innermost $6''.4$ due to the contribution from the AGN.
   }
   \end{center}
@@ -3774,8 +3768,8 @@ under contract with the National Aeronautics and Space Administration.
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n5077_1Dfit.eps}
-  \caption{NGC 5077. 
-  NGC 5077 is an elliptical galaxy with an unresolved partially depleted core \citep{trujillo2004coresersicmodel}. 
+  \caption{NGC 5077:  
+  An elliptical galaxy with an unresolved partially depleted core \citep{trujillo2004coresersicmodel}. 
   We mask the data within the innermost $6''.1$ and fit the galaxy with a S\'ersic profile. }
   \end{center}
   \end{figure}
@@ -3810,8 +3804,8 @@ under contract with the National Aeronautics and Space Administration.
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n5128_1Dfit.eps}
-  \caption{NGC 5128.
-  NGC 5128 is a merging system. 
+  \caption{NGC 5128: 
+  A merging system. 
   The data within $50'' \lesssim R_{\rm maj} \lesssim 200''$ are excluded from the fit.}
   \end{center}
   \end{figure}
@@ -3847,10 +3841,10 @@ under contract with the National Aeronautics and Space Administration.
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n5576_1Dfit.eps}
-  \caption{NGC 5576.
-  NGC 5576 is an elliptical galaxy with a disturbed morphology. 
+  \caption{NGC 5576: 
+  An elliptical galaxy with a disturbed morphology. 
   The isophotal parameters suggest the presence of an embedded disk ($R_{\rm maj} \lesssim 20''$), 
-  but any attempt to account for such component was unsuccessful. 
+  but attempts to account for such a component were unsuccessful. 
   The data within $R_{\rm maj} \lesssim 36''$ are excluded from the fit 
   and the galaxy is modeled with a S\'ersic profile.
   } 
@@ -3877,9 +3871,9 @@ under contract with the National Aeronautics and Space Administration.
   \end{tabular}
   \end{center}
   \label{tab:n5845}
-  \tablecomments{The results obtained by S+11 2D and B+12 2D best agree with the results from our 2D model, 
+  \tablecomments{The results obtained by S+11 and B+12 agree best with the results from our 2D model, 
   in which we did not mask the inner region of the galaxy. 
-  The small radial extent of the data used by V+12 2D led them to underestimate the effective radius.}
+  The small radial extent of the data used by V+12 led them to underestimate the effective radius.}
   \end{table}
 
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -3890,16 +3884,11 @@ under contract with the National Aeronautics and Space Administration.
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n5845_1Dfit.eps}
-  \caption{NGC 5845.
-  NGC 5845 is an elliptical/lenticular galaxy. 
-  The small apparent size of NGC 5845 (compared to the PSF FWHM) implies low resolution for the data 
-  and complications for the modeling of this galaxy.
-  Here, looking at the unsharp mask and the velocity field, we identify a disk, but it is not clear whether the disk is large-scale or embedded.
-  The ellipticity profile has a peak at $R_{\rm maj} \sim 13''$ which suggests that the disk is indeed embedded.
-  However, when fitting NGC 5845 with a S\'ersic + exponential model, 
-  the lowest-$\chi^2$ solution does not reproduce an embedded disk.
-  This is because the S\'ersic and the exponential functions are degenerate in this decomposition, 
-  due to the small number of data points in the galaxy light profile.
+  \caption{NGC 5845: 
+  A lenticular galaxy. 
+  From the unsharp mask and the velocity map (ATLAS$^{\rm 3D}$), we identify a disk, but it is not clear whether the disk is large-scale or intermediate-scale.
+  The ellipticity profile has a peak at $R_{\rm maj} \sim 13''$ which suggests that the disk is indeed intermediate-scale, 
+  i.e.~it does not dominate at large radii.
   }
   \end{center}
   \end{figure}
@@ -3938,12 +3927,12 @@ under contract with the National Aeronautics and Space Administration.
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n5846_1Dfit.eps}
-  \caption{NGC 5846.
-  NGC 5846 is an elliptical galaxy with an unresolved partially depleted core \citep{rusli2013}. %%($R_{\rm break} = 1''.2$, \citealt{rusli2013}).
+  \caption{NGC 5846: 
+  An elliptical galaxy with an unresolved partially depleted core \citep{rusli2013}. %%($R_{\rm break} = 1''.2$, \citealt{rusli2013}).
   This galaxy has a LINER nucleus \citep{carrillo1999} and filamentary nuclear dust \citep{tran2001}.
   It also displays a strong isophotal twist between its center and $R_{\rm maj} \sim 70''$.
   The light profile presents a slight bump at $R_{\rm maj} \sim 20''$.
-  However, the isophotal parameters, the unsharp mask and the velocity map lack of clear evidence for an embedded component.
+  However, the isophotal parameters, the unsharp mask and the velocity map (ATLAS$^{\rm 3D}$) lack of clear evidence for an embedded component.
   We thus model NGC 5846 with a single S\'ersic profile, after masking the data within innermost $6''.1$.
   }
   \end{center}
@@ -3969,7 +3958,7 @@ under contract with the National Aeronautics and Space Administration.
   \end{tabular}
   \end{center}
   \label{tab:n5846}
-  \tablecomments{S+11 2D did not mask the core and thus underestimated the effective radius and S\'ersic index. }
+  \tablecomments{S+11 did not mask the core and thus underestimated the effective radius and S\'ersic index. }
   \end{table}
 
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -3980,8 +3969,9 @@ under contract with the National Aeronautics and Space Administration.
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n6251_1Dfit.eps}
-  \caption{NGC 6251.
-  NGC 6251 is an elliptical galaxy. Its large stellar velocity dispersion suggests the presence of a partially depleted core.
+  \caption{NGC 6251: 
+  An elliptical galaxy. 
+  Its large stellar velocity dispersion suggests the presence of a partially depleted core.
   The galaxy features a nuclear disk of dust \citep{ferrareseford1999n6251} and a Seyfert AGN \citep{panessabassani2002}.
   We mask the data within the innermost $6''.1$. 
   A single S\'ersic profile provides a good description of this galaxy.
@@ -4009,7 +3999,8 @@ under contract with the National Aeronautics and Space Administration.
   \end{tabular}
   \end{center}
   \label{tab:n6251}
-  \tablecomments{It is not clear why GD07 1D maj. obtained the largest estimates of the effective radius and S\'ersic index.}
+  \tablecomments{It is not clear why GD07 obtained the largest estimates of the effective radius and S\'ersic index 
+  (possibly the AGN was bright in their $R$-band image and added to the central cusp). }
   \end{table}
 
 
@@ -4021,8 +4012,8 @@ under contract with the National Aeronautics and Space Administration.
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n7052_1Dfit.eps}
-  \caption{NGC 7052.
-  NGC 7052 is an elliptical galaxy with an unresolved partially depleted core \citep{quillen2000}. %% ($R_{\rm break} = 0''.8$, \citealt{quillen2000}). 
+  \caption{NGC 7052: 
+  An elliptical galaxy with an unresolved partially depleted core \citep{quillen2000}. %% ($R_{\rm break} = 0''.8$, \citealt{quillen2000}). 
   We mask the data within the innermost $6''.1$ and model the galaxy with a single S\'ersic profile.
   }
   \end{center}
@@ -4055,7 +4046,8 @@ under contract with the National Aeronautics and Space Administration.
   \end{tabular}
   \end{center}
   \label{tab:n7052}
-  \tablecomments{The model of V+12 2D oversubtracts a large-scale disk and thus results in the lowest estimates of the effective radius and S\'ersic index.}
+  \tablecomments{The model of V+12 2D includes an artificial large-scale disk 
+  and thus results in the lowest estimates of the effective radius and S\'ersic index.}
   \end{table}
 
 
@@ -4067,13 +4059,13 @@ under contract with the National Aeronautics and Space Administration.
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n7619_1Dfit.eps}
-  \caption{NGC 7619.
-  NGC 7619 is an elliptical galaxy with an unresolved partially depleted core \citep{rusli2013}. %% ($R_{\rm break} = 0''.5$, \citealt{rusli2013}).
+  \caption{NGC 7619: 
+  An elliptical galaxy with an unresolved partially depleted core \citep{rusli2013}. %% ($R_{\rm break} = 0''.5$, \citealt{rusli2013}).
   We identified an embedded disk signaled by the peak at $R_{\rm maj} \sim 10''$ in the ellipticity profile.
   The velocity map of this galaxy confirms the presence of a fast rotating component (Falcon-Barroso, private comm.).
-  We note that the residuals obtained from our best-fit model do not suggest the presence of a partially depleted core,
-  whereas they display a nuclear lack of light when the galaxy is modeled with a single S\'ersic-bulge. 
+  We note that the residuals obtained from our bulge + inner-disk model do not suggest the presence of a partially depleted core.
   }
+  \label{fig:n7619}
   \end{center}
   \end{figure}
 
@@ -4104,8 +4096,8 @@ under contract with the National Aeronautics and Space Administration.
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/n7768_1Dfit.eps}
-  \caption{NGC 7768.
-  NGC 7768 is an elliptical galaxy with an unresolved partially depleted core \citep{rusli2013}. %%($R_{\rm break} = 0''.3$, \citealt{rusli2013}).
+  \caption{NGC 7768: 
+  An elliptical galaxy with an unresolved partially depleted core \citep{rusli2013}. %%($R_{\rm break} = 0''.3$, \citealt{rusli2013}).
   The image of NGC 7768 is corrupted by a saturated star, which lies close to the galaxy.
   The sky background is not constant across the image.
   To be safe, we fit only the data within the innermost $R_{\rm maj} \lesssim 30''$, where the contribution from the background is negligible.
@@ -4141,9 +4133,9 @@ under contract with the National Aeronautics and Space Administration.
   \begin{figure}[h]
   \begin{center}
   \includegraphics[width=\fitfigurewidth]{images/ugc03789_1Dfit.eps}
-  \caption{UGC 03789.
-  UGC 03789 is a face-on spiral galaxy.
-  This galaxy features a ring ($R_{\rm maj} \sim 20''$) and a nuclear bar ($R_{\rm maj} \lesssim 4''$),
+  \caption{UGC 03789:
+  A face-on spiral galaxy, 
+  featuring a ring ($R_{\rm maj} \sim 20''$) and a nuclear bar ($R_{\rm maj} \lesssim 4''$),
   which can be seen in the unsharp mask and produces corresponding peaks in the ellipticity and $PA$ profiles.
   The bar is fit with a Ferrer function.
   }
