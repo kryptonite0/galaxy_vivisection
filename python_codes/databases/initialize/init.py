@@ -10,7 +10,7 @@ literaturefilename = '/Users/gsavorgnan/galaxy_vivisection/data/ancillary/litera
 mosaicsfilename = '/Users/gsavorgnan/galaxy_vivisection/data/galaxies/mosaics.list'
 sgs2013filename = '/Users/gsavorgnan/galaxy_vivisection/data/Alister-data/SGS13/kmagssph.dat'
 colorfilename = '/Users/gsavorgnan/galaxy_vivisection/data/ancillary/iraccolor.dat'
-
+kormendyho2013filename = '/Users/gsavorgnan/galaxy_vivisection/data/KH13/SMBHmasses.top'
 
 def replaceNull(entry):
 	if entry == '""':
@@ -724,6 +724,37 @@ def spitzerdata():
 	connection.close()
 	data.close()
 		
+def kormendyho2013():
+	connection = sql3.connect(dbname)
+	cur = connection.cursor()
+
+	data = open(kormendyho2013filename)
+
+	cur.execute('''CREATE TABLE KormendyHo2013
+		(gal_id text, mass_BH real, perr_mass_BH real, merr_mass_BH real)''')
+	
+	for line in data:
+		if line.split()[0] != '#':
+			gal_id = line.split()[1]	
+			gal_id = replaceNull(gal_id)
+			mass_BH = line.split()[6]
+			mass_BH = replaceNull(mass_BH)
+			min_mass_BH = line.split()[7]
+			min_mass_BH = replaceNull(min_mass_BH)
+			max_mass_BH = line.split()[8]
+			max_mass_BH = replaceNull(max_mass_BH)
+			
+			merr_mass_BH = float(mass_BH) - float(min_mass_BH)
+			perr_mass_BH = -float(mass_BH) + float(max_mass_BH)
+			
+			collection = [gal_id, mass_BH, perr_mass_BH, merr_mass_BH]		
+			cur.execute('INSERT INTO KormendyHo2013 VALUES (?,?,?,?)', collection)
+
+	connection.commit()
+
+	cur.close()
+	connection.close()
+	data.close()
 		
 
 def main():
@@ -763,6 +794,7 @@ def main():
 	#print 'Table SpitzerData has been created.'
 	kmagSGS2013PhysicalUnits()
 	print 'Table KmagSGS2013PhysicalUnits has been created.'
-	
+	kormendyho2013()
+	print 'Table KormendyHo2013 has been created.'
 	
 main()	

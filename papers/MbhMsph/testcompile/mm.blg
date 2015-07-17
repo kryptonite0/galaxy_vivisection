@@ -1,0 +1,78 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: mm.aux
+The style file: apj.bst
+Database file #1: mmNotes.bib
+Database file #2: SMBHbibliography.bib
+Repeated entry---line 948 of file SMBHbibliography.bib
+ : @article{rixwhite1992
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1827 of file SMBHbibliography.bib
+ : @article{scorzabender1995
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 6818 of file SMBHbibliography.bib
+ : @article{haringrix2004
+ :                       ,
+I'm skipping whatever remains of this entry
+Name 1 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
+while executing---line 1587 of file apj.bst
+Name 1 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
+while executing---line 1587 of file apj.bst
+Name 2 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
+while executing---line 1587 of file apj.bst
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Name 1 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
+while executing---line 1671 of file apj.bst
+Name 2 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
+while executing---line 1671 of file apj.bst
+Name 1 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
+while executing---line 1671 of file apj.bst
+Name 2 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
+while executing---line 1671 of file apj.bst
+Warning--can't use both author and editor fields in graham2013review
+Warning--empty publisher in graham2013review
+Warning--empty publisher in press1992
+You've used 103 entries,
+            3085 wiz_defined-function locations,
+            1322 strings with 28392 characters,
+and the built_in function-call counts, 50220 in all, are:
+= -- 4102
+> -- 3718
+< -- 55
++ -- 1244
+- -- 1332
+* -- 4305
+:= -- 9466
+add.period$ -- 103
+call.type$ -- 103
+change.case$ -- 682
+chr.to.int$ -- 99
+cite$ -- 106
+duplicate$ -- 1997
+empty$ -- 2978
+format.name$ -- 1469
+if$ -- 9951
+int.to.chr$ -- 5
+int.to.str$ -- 0
+missing$ -- 95
+newline$ -- 313
+num.names$ -- 421
+pop$ -- 758
+preamble$ -- 1
+purify$ -- 682
+quote$ -- 0
+skip$ -- 1671
+stack$ -- 0
+substring$ -- 2120
+swap$ -- 78
+text.length$ -- 8
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 921
+warning$ -- 3
+while$ -- 402
+width$ -- 0
+write$ -- 1032
+(There were 10 error messages)

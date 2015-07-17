@@ -1,0 +1,28 @@
+bh massses "very" different for n0821, n4291, n3377, n3608, 
+n5845, n1399, n3227, n5576, n4564, n4473, n3384, n3393
+
+distance different for ic4296 (10 Mpc), other differences <5 Mpc
+
+n0821 -> factor of 4
+n4291 -> factor of 3
+n3377,n3608 -> factor of 2.5
+n1399,n5845,n3393 -> factor of 2
+
+using kormendy's bh masses and my bulge masses for the 58 galaxies that we have in common, 
+i get linear regressions:
+
+early
+n 41
+---------------------------------
+y = A*(x-<x>) + B 
+<x> = 10.803530705
+
+bisector    A = 1.01 \pm 0.11    B =  8.65 \pm 0.08
+---------------------------------
+sersic bul of spi
+n 13
+---------------------------------
+y = A*(x-<x>) + B 
+<x> = 9.97945629437
+
+bisector    A = 2.54 \pm 1.36    B =  7.14 \pm 0.22

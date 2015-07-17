@@ -1,0 +1,22 @@
+Dear Editor,
+
+My name is Giulia Savorgnan and I am a PhD candidate at Swinburne University of Technology in Melbourne, under the supervision of Prof. Alister W. Graham.  
+
+I am sending you two manuscripts that I would like you to consider for publication in ApJ and ApJS. 
+These two manuscripts are meant to be the first and the second paper of a series named "SUPERMASSIVE BLACK HOLE AND HOST SPHEROID AFFAIRS", in which I intend to publish the results from my PhD Thesis. 
+My PhD project consisted in performing accurate multicomponent decompositions for a sample of galaxies with directly measured black hole masses, to investigate scaling relations between the black hole mass and various properties of the host spheroid. 
+In the first manuscript (the "data-paper") I illustrate the galaxy sample and the individual decompositions.
+In the second manuscript I present the correlation between black hole mass and spheroid stellar mass (along with spheroid luminosity and total galaxy luminosity). 
+Over the next months, I am planning to submit to ApJ at least other three manuscripts, that are meant to become the third, fourth and fifth paper of the series, and that will address other black hole mass scaling relations and the issue of the existence of a black hole fundamental plane. 
+
+Several recent studies have investigated black hole mass scaling relations, but they have not converged on the same conclusions. Here, we tackle and solve past discrepancies or issues.
+This work represents a notable improvement in its field thanks to the large size of the galaxy sample used, to the accuracy of the galaxy models from which reliable spheroid parameters were derived, and to the complete overview that it will provide about the co-evolution of black holes and host spheroids (or galaxies). 
+
+To avoid potential conflicts of interest and biased referees, we politely ask that members of the self-named "Nuker team" (Gultelkin et al. 2009) not be allowed to see our manuscript prior to publication. 
+There have been ongoing tensions since Graham et al. (2003) revealed serious flaws with the new Nuker model. 
+
+Thank you for receiving our manuscript and considering it for review. 
+I appreciate your time and look forward to your response.
+
+Sincerely,
+Giulia Savorgnan

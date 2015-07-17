@@ -1040,9 +1040,9 @@ def mbh_vs_mag_sph_psb():
         ax.set_xlabel(r'spheroid absolute magnitude $\rm [mag]$', labelpad=12)
         ax.set_ylabel(r'black hole mass $\rm [M_\odot]$', labelpad=12)
 	plt.subplots_adjust(left=0.15,bottom=0.15,right=0.99,top=0.9)
-        #plt.show()
+        plt.show()
 	#plt.savefig(path_paper_figures + 'mbh_vs_mag_sph_psb.pdf', format='pdf', dpi=1000)
-	plt.savefig('mbh_vs_mag_sph_psb.pdf', format='pdf', dpi=1000)
+	#plt.savefig('mbh_vs_mag_sph_psb.pdf', format='pdf', dpi=1000)
 	
 def inset_psb():
 	
@@ -2350,8 +2350,8 @@ def mbh_vs_mass_sph_galsymb_agn():
 def main():
 	#mag_lit_vs_mag_my()
 	#mbh_vs_mass_sph_agn()
-	mbh_vs_mass_sph()
-	#mbh_vs_mag_sph_psb()
+	#mbh_vs_mass_sph()
+	mbh_vs_mag_sph_psb()
 	#inset_psb()
 	#mbh_vs_mag_tot()
 	#mbh_vs_mag_sph()
