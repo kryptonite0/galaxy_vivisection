@@ -2350,8 +2350,8 @@ def mbh_vs_mass_sph_galsymb_agn():
 def main():
 	#mag_lit_vs_mag_my()
 	#mbh_vs_mass_sph_agn()
-	#mbh_vs_mass_sph()
-	mbh_vs_mag_sph_psb()
+	mbh_vs_mass_sph()
+	#mbh_vs_mag_sph_psb()
 	#inset_psb()
 	#mbh_vs_mag_tot()
 	#mbh_vs_mag_sph()

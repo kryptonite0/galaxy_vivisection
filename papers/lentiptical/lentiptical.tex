@@ -28,12 +28,11 @@
 \usepackage{natbib}
 \bibliographystyle{apj}
 \usepackage{longtable}
-\usepackage[]{graphicx}
+\usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{natbib}
 \usepackage{tabularx}
 \usepackage{bm}
-\graphicspath{{/Users/gsavorgnan/galaxy_vivisection/papers/lentiptical/images/}}
 
 %% Sometimes a paper's abstract is too long to fit on the
 %% title page in preprint2 mode. When that is the case,
@@ -76,40 +75,48 @@
 %% one line. However, you may use \\ to force a line break if
 %% you desire.
 
-Title: Lentiptical galaxies \\
+Title: Lentiptical galaxies and their extraordinarily ordinary black holes \\
 Authors: G. A. D. Savorgnan and A. W. Graham \\
 Affiliation: Centre for Astrophysics and Supercomputing, Swinburne University of Technology, Hawthorn, Victoria 3122, Australia. \\
 
 
 \begin{abstract}
-Early-type galaxies are quiescent galaxies, with little or no star formation activity. 
-The majority of early-type galaxies are made of two principal components: 
-a spheroid (or bulge) of stars with random motion and a rapidly rotating stellar disk (1 krajnovic). 
-The relative importance of these two components determines the morphological classification of early-type galaxies into two types: 
-elliptical galaxies are spheroid-dominated systems, 
-whereas lenticular galaxies are composed of a small bulge of stars encased in a larger stellar disk. 
+Early-type galaxies include elliptical and lenticular galaxies. 
+%Most early-type galaxies are made of two principal components [ref krajnovic]: 
+%a spheroid (or bulge) of stars, with an approximately ellipsoidal shape, 
+%and a relatively flat stellar disk. 
+%Elliptical galaxies are said to have no stellar disk, 
+%whereas lenticular galaxies are composed of a central bulge of stars encased in a larger stellar disk. 
+Lenticular galaxies are composed of a central spheroid (or bulge) of stars encased in a larger stellar disk. 
 When perfoming bulge/disk decomposition, 
-the spheroidal component is typically described with a S\'ersic profile (2 sersic), 
-while the disk is fit with an exponential function. 
+the spheroidal component is typically described with a S\'ersic profile (ref sersic), 
+while the disk is modelled with an exponential function. 
 Theoretically, the bulge-to-disk ratio, 
 which describes the relative importance of the spheroidal component over the disk component, 
 can assume any positive value. 
 However, several studies have taken into account only bulge/disk decompositions 
-in which the exponential function neatly dominates over the S\'ersic profile at large galaxy radii, 
-and rejected those decompositions in which the exponential function remains ``embedded'' within the S\'ersic profile, 
+in which the exponential-disk function neatly dominates over the S\'ersic-spheroid profile at large galaxy radii, 
+and rejected those decompositions in which the exponential-disk function remains ``embedded'' within the S\'ersic-spheroid profile, 
 considering such decompositions as unphysical.
-Here we show that these rejected models correctly reproduce the kinematics of a class of early-type galaxies, 
-that we name \emph{lentiptical}. 
+Here we show that these ``rejected'' models correctly reproduce the photometric and kinematic properties of a class of early-type galaxies, 
+intermediate between elliptical and lenticular galaxies, that we name \emph{lentiptical}. 
 Lentiptical galaxies have often been confused with lenticular galaxies and, 
 consequently, their bulge luminosities have been largely underestimated. 
-This surprisingly common mistake has led to some wrong conclusions, 
-such as the claim that a number of lentiptical galaxies host a central black hole whose mass is abnormally large 
+This mistake has led to some wrong conclusions, 
+such as the claim that a number of lentiptical galaxies (MRK 1216 [ref yldrim+2015], 
+NGC 1277 [ref vdb+2012], NGC 1271 [ref walsh+2015], and NGC 1332 [ref rusli+2011]) 
+host a central black hole whose mass is abnormally large 
 compared to expectations from its (underestimated) bulge luminosity.
+When lentiptical galaxies are modelled according to our simple prescription, 
+which uses the lowest number of free parameters, 
+they no longer appear as extreme outliers in the (black hole mass) -- (spheroid stellar mass) diagram. 
+Previous ``anomalies'' are explained by one simple ``rule'' 
+and no need di avere nuovi scenari
 
-Our results demonstrate that there is no bimodality in the distribution of the bulgetodisk
-that the claimed bimodality is artificial
+%Our results demonstrate that there is no bimodality in the distribution of the bulgetodisk
+%that the claimed bimodality is artificial
 
-we show that the ell profile is enough to estabilish if the disk is embedded or not
+%we show that the ell profile is enough to estabilish if the disk is embedded or not
 
 
 
@@ -145,91 +152,134 @@ why are there not accretion events which create disks larger than the typical nu
 but which are not large enough to dominate at large radii? 
 Here we report on the existence of these intermediate-sized stellar disks. \\
 
-The existence of such disks is not only important for our understanding of disk growth in general, 
-reducing or eliminating an old mystery, 
-but accounting for such structure will impact on our galaxy scaling relations 
-and surely see the reclassification of many ``disky'' elliptical galaxies 
-and lenticular galaxies as \emph{lentiptical} 
-galaxies with intermediate-sized stellar disks that do not dominate at large radii. \\ 
-
-It is well known to the astronomers that identifying a face-on, featureless stellar disk 
-in an early-type galaxy only by looking at the galaxy image 
-is a very challenging if not even impossible task. 
-Luckily, the majority of such disks are observed by us with some level of inclination, 
+The majority of stellar disks have some level of inclination with respect to our line-of-sight, 
 which makes them appear as flat, elliptical components, 
 and helps us distinguishing them from the more spherical galaxy bulges. 
-A more subtle and overlooked issue is the difficulty in identifying the extent of these disks 
-with respect to their bulge. 
-
-Kinematic maps, obtained from IFU spectroscopy, constitute an extremely powerful instrument to this purpose. 
-{\bf However, xxxSLUGGS have shown that the limited FOV of the atlas3d maps is not enough to get the full picture,
-and more extended maps are needed to reveal which galaxies display a FR behaviour all the way out 
-and which ones become SR at large radii.}
-Unfortunately, kinematic maps are not yet available for a large sample of galaxies in the local Universe. 
-Notwhithstanding, there is another powerful instrument that can help identify the extent of 
+Yet, identifying the extent of these disks with respect to their bulge can be subtle.
+Two-dimensional kinematic maps represent an extremely powerful instrument to this purpose. 
+However, only kinematic maps that extend beyond $\sim$$2$ half-light radii can help distinguish which galaxies, 
+among those classified as central fast rotators (within $\sim$$1$ half-light radius), 
+have increasing or decreasing specific angular momentum profiles at large radii [ref arnold+14]. 
+A specific angular momentum profile that is rapidly increasing at large radii is a signature of a large-scale disk, 
+whereas a profile that declines at large radii is consistent with the presence of an intermediate-scale disk. 
+Unfortunately, such extended kinematic maps are not yet available for a large sample of galaxies in the local Universe. 
+Nevertheless, there is another powerful instrument that can help identify the extent of 
 stellar disks in early-type galaxies, 
-and that has the advantage of requiring only galaxy images (even photometrically uncalibrated), 
-which are cheaper to acquire in terms of telescope time than IFU observations. 
-This instrument is the ellipticity profile of a galaxy's isophotes, 
-that can be easily obtained from a 1D isophotal analysis of the galaxy image, 
-using for example the IRAF task {\tt ellipse}. 
+and has the advantage of requiring only galaxy images (even photometrically uncalibrated), 
+which are cheaper to acquire in terms of telescope time than spatially resolved two-dimensional kinematic maps. 
+This instrument is the ellipticity profile of a galaxy's isophotes.
 
 The toy model shown in Figure \ref{fig:ellp} illustrates the typical ellipticity profile 
 for a large-scale disk that encases a bulge, as in lenticular (S0) galaxies, 
 for an intermediate-scale disk embedded in a larger spheroid, that we name lentiptical (E/S0) galaxy, 
 and for an elliptical (E) galaxy featuring a nuclear stellar disk. 
 Note that, in the case of an intermediate-scale disk, 
-the maximum of the ellipticity profile corresponds to the minimum difference between the 
+the maximum value of the ellipticity should correspond to the minimum difference between the 
 light profile of the bulge and that of the disk (vertical dashed line in Figure \ref{fig:ellp}). 
-Galaxy modellers that attempt to perform bulge/disk decomposition of lentiptical galaxies 
-should always check that their model correctly reproduces this important signature.
+Galaxy modellers that attempt to perform bulge/disk decomposition of early-type galaxies 
+should always check that their model correctly matches the galaxy's ellipticity profile.
 
-The {\bf realization, coscienza, not-knowledge} that many ``elliptical'' galaxies 
-actually contain embedded stellar disks 
+The awareness that many ``elliptical'' galaxies actually contain embedded stellar disks 
 dates back at least three decades 
 \citep{capaccioli1987,carter1987,rixwhite1990,bender1990,scorzabender1990,nieto1991,rixwhite1992,scorzabender1995,
 donofrio1995,graham1998fornax,scorza1998,scorzavandenbosch1998,bendersaglia1999} and, 
 more recently, intermediate-scale disks were all but unfamiliar to \cite{krajnovic2013}. 
 However, the class of lentiptical galaxies has been missed out by many galaxy modellers, 
-who labelled as ``unphysical'' the idea that an intermediate-sized stellar disk 
-can exist fully embedded in a larger spheroidal component. 
+who labelled as ``unphysical'' those bulge/disk decompositions in which 
+the exponential-disk function does not dominate over the S\'ersic-spheroid profile at large radii. 
+%the idea that an intermediate-sized stellar disk 
+%can exist fully embedded in a larger spheroidal component. 
 This unspoken bias has led them to reject any bulge/disk decomposition with an outcome 
 similar to that illustrated in the middle panel of Figure \ref{fig:ellp}. 
-Unsurprisingly, some studies have found that the b/t ratio of S0s is less than...
+%Unsurprisingly, some studies have found that the b/t ratio of S0s is less than...
 
-Examples of lentiptical galaxies are the galaxies MRK 1216, NGC 1271, NGC 1277, NGC 1332, NGC 3115, NGC 3377 
-(see Figure \ref{fig:n3377ex}) and NGC 4621. 
+Examples of lentiptical galaxies are the galaxies MRK 1216, NGC 1271, NGC 1277, NGC 1332, and NGC 3115. 
 All of these galaxies can be easily described and explained with a simple two-component model: 
-an outer S\'ersic bulge plus an embedded, intemediate-sized exponential\footnote{Given 
-its close-to-edge-on inclination,  
-the stellar disk of NGC 1332 is better described by a S\'ersic profile with S\'ersic index $n<1$ 
-\citep{pastrav2013a,pastrav2013b}.} disk. 
-Models that ``forzatamente'' describe the galaxy with an inner S\'ersic bulge 
-encased within a large-scale exponential disk can produce acceptable fits ???? statistically decent??
-only in two cases:
-either the data are shallow, thus they are not probing the re-rise of the bulge, 
-or an outer Sersic halo is added to the model to account for the outer light (n3115 and n3377 lasker).....
+a S\'ersic-spheroid plus an intemediate-sized exponential-disk. 
+Our bulge/disk decomposition for the galaxy NGC 3115 is presented in Figure \ref{fig:n3115}.
+Light profile extended out to 5 re
+kinematics
 
 
 
+Models that ``forcedly'' describe the galaxy with an inner S\'ersic-bulge 
+encased within a large-scale exponential-disk can match the surface brightness distribution 
+of the galaxy only in two cases. 
+If the radial extent of the galaxy image is relatively small (less than or similar to one half-light radius), 
+the outer rise of the bulge over the disk is not probed 
+and a model with a large-scale disk can accommodate the observed surface brightness distribution. 
+This problem can affect bulge/disk decompositions that use relatively shallow imagind data, 
+such as 2MASS [ref vika, laurikainen]. 
+When a more extended galaxy image is available, 
+a model featuring a bulge encased in large-scale disk can only work with the addition of an outer S\'ersic-envelope, 
+that accounts for the outer portion of the spheroidal component. 
+These three-component decompositions will typically result in an outer S\'ersic-envelope with a curvature 
+(regulated by the S\'ersic index) similar to that of the inner S\'ersic-bulge, 
+(see the models of [ref lasker+2014] for the galaxies NGC 0821, NGC 3115, NGC 4342, NGC 4697;
+curiously, in these decompositions, the luminosity of the S\'ersic-envelope is comparable or larger than that of the inner S\'ersic-bulge).  
+
+Our two-component models (intermediate-sized disk embedded within a spheroidal component)  
+%require a lower number of galaxy components than three-component models (bulge + disk + envelope), 
+require the lowest number of free parameters, 
+yet they match the kinematic maps (when available) and the ellipticity profiles of lentiptical galaxies. 
+Moreover, when lentiptical galaxies are modeled according to our prescription, 
+they no longer are outlier in the (black hole mass) -- (spheroid stellar mass) diagram, 
+as shown in Figure \ref{fig:mm}. 
+This eliminates the need of invocking a different evolutionary path ... compact relic...
+
+For early-type galaxies, the bulge luminosity and the total galaxy luminosity can be used to predict the black hole mass 
+with the same level of accuracy [cite me].
+The fact that a galaxy hosts a black hole that is over-massive compared to expectations from the bulge luminosity, 
+but is ``normal'' compared to expectations from the total galaxy luminosity, 
+suggests that the bulge luminosity may have been underestimated. 
+Indeed, none of these galaxies is an outlier in the (black hole mass) -- (total galaxy luminosity) diagram [cite me]. 
 
 
-show vel map? + ell profile, explain shape
 
-
-our models are physically motivated and produce bulge luminosities which make these galaxies no longer outliers
-btw they are not outliers on the M-Mgal relation, which suggests poor bulge/disk decomposition
-
-
-
-people that do only 2d decompositions, should still perform a 1d isophotal analysis to check extent of disk
+%people that do only 2d decompositions, should still perform a 1d isophotal analysis to check extent of disk
 
 
  
 
 
+The existence of intermediate-scale stellar discs suggests that a continuum of disc sizes may exist, 
+rather than a dichotomy of nuclear vs. large-scale discs.  
+The presence of intermediate-scale disks blurs the distinction between elliptical and lenticular galaxies.
+The existence of such disks is not only important for our understanding of disk growth in general, 
+reducing or eliminating an old mystery, 
+but accounting for such structure will impact on our galaxy scaling relations 
+and surely see the reclassification of many ``disky'' elliptical galaxies 
+and lenticular galaxies as \emph{lentiptical} 
+galaxies with intermediate-sized stellar disks that do not dominate at large radii. 
+
+
+
+ 
+% and it may be that our E vs S0 
+%classification for galaxies without spiral arms could be better represented by a range of bulge-to-disc (luminosity and size) ratios. 
+%In a somewhat similar vein, it was previously thought that bulges came in just one of two flavours: 
+%classical bulges with n=4 light profiles and pseudobulges with n=1 light profiles (e.g. Carollo et al. 1998-2002?).  
+%Although many works still advocate this bulge dichotomy based on their light profiles, Graham \& Worley (2008) have revealed no 
+%evidence for a bimodality in the distribution of their Sersic indices from a sample of 400 disc 
+%galaxies\footnote{The co-existence of classical and pseudo bulges in the same galaxy (e.g. Erwin et al. 2003, ApJ, 597, 929) 
+%further blurs claims for galaxies having either a classical bulge or a pseudobulge.}.   
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%
+
+
+
+luca cortese, peppo gavazzi, matteo fossati
+%%
 \begin{figure}
-\includegraphics[width=\columnwidth]{diskextent.eps}
+\includegraphics[width=\columnwidth]{images/diskextent.eps}
 \caption{Illustration of the typical light profile (top plots) and ellipticity profile (bottom plots) of a galaxy 
 featuring a stellar disk with varying size. 
 For simplicity, we show separately the light profile of the bulge (or spheroid) in red 
@@ -252,35 +302,20 @@ large- and intermediate-scale disks.
 \end{figure}
 
 \begin{figure}
-\includegraphics[width=\columnwidth]{n3377ex.eps}
+\includegraphics[width=\columnwidth]{images/n3115_decomposition.eps}
 \caption{
 }
-\label{fig:n3377ex}
+\label{fig:n3115}
 \end{figure}
 
-The existence of intermediate-scale stellar discs suggests that a continuum of disc sizes may exist, rather than a dichotomy of nuclear vs. large-scale discs.  
-In a somewhat similar vein, it was previously thought that bulges came in just one of two flavours: 
-classical bulges with n=4 light profiles and pseudobulges with n=1 light profiles (e.g. Carollo et al. 1998-2002?).  
-Although many works still advocate this bulge dichotomy based on their light profiles, Graham \& Worley (2008) have revealed no 
-evidence for a bimodality in the distribution of their Sersic indices from a sample of 400 disc 
-galaxies\footnote{The co-existence of classical and pseudo bulges in the same galaxy (e.g. Erwin et al. 2003, ApJ, 597, 929) 
-further blurs claims for galaxies having either a classical bulge or a pseudobulge.}.   
-The presence of intermediate-scale discs blurs the distinction between elliptical and lenticular galaxies and it may be that our E vs S0 
-classification for galaxies without spiral arms could be better represented by a range of bulge-to-disc (luminosity and size) ratios. 
+\begin{figure}
+\includegraphics[width=\columnwidth]{images/mm.eps}
+\caption{
+}
+\label{fig:mm}
+\end{figure}
 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-%%%%%%%%%%%%
-
-
-
-luca cortese, peppo gavazzi, matteo fossati
-%%
 %%We are grateful to V. Barger, T. Han, and R. J. N. Phillips for
 %%doing the math in section~\ref{bozomath}.
 %%More information on the AASTeX macros package is available \\ at

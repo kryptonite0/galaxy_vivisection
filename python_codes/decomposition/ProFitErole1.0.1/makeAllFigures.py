@@ -60,6 +60,15 @@ if (Settings.observation == 'n1271'):
         
         psfList = [gaussianPsf]
 	
+if (Settings.observation == 'n4342'):
+	print 'n4342'
+        moffatPsf = PsfFunction()
+        moffatPsf.name = 'moffat'
+        moffatPsf.moffatAlpha = (2./(2*np.sqrt(2**(1/1.9)-1)) ) * Settings.pxlToArcsec  # alpha = fwhm / (2 * sqrt(2**(1/beta) - 1) )
+        moffatPsf.moffatBeta = 1.9  
+        
+        psfList = [moffatPsf]
+	
 gaussianSmoothing = PsfFunction()
 gaussianSmoothing.name = 'gaussian'
 gaussianSmoothing.gaussianFWHM = 5 * 2.3548 * Settings.pxlToArcsec 
@@ -242,7 +251,7 @@ for sampling in samplingList:
 
 
 bestfitFig.subplots_adjust(wspace=0, hspace=0)
-bestfitFig.savefig('/Users/gsavorgnan/galaxy_vivisection/papers/data_paper/images/' + galaxy + '_1Dfit.eps', format='eps', dpi=1000)
-#bestfitFig.savefig(galaxy + '_1Dfit.eps', format='eps', dpi=1000)
+#bestfitFig.savefig('/Users/gsavorgnan/galaxy_vivisection/papers/data_paper/images/' + galaxy + '_1Dfit.eps', format='eps', dpi=1000)
+bestfitFig.savefig(galaxy + '_1Dfit.eps', format='eps', dpi=1000)
 
 

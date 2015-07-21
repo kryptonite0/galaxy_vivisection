@@ -19,11 +19,12 @@ class Settings:
     useErrorsInFit = False
     #useErrorsInFit = True
     
-    #smoothing = False
-    smoothing = True
+    smoothing = False
+    #smoothing = True
     
-    observation = 'spitzer3.6um'
+    #observation = 'spitzer3.6um'
     #observation = 'n1271' 
+    observation = 'n4342' 
         
     if (observation == 'n1277'):
         pxlToArcsec = 0.05
@@ -32,6 +33,10 @@ class Settings:
     if (observation == 'n1271'):
         pxlToArcsec = 0.12825
         zeropoint = 24.6949 # Vega
+    
+    if (observation == 'n4342'):
+        pxlToArcsec = 0.046
+        zeropoint = 21.639 # Vega f814w
     
     if (observation == 'spitzer3.6um'):
         pxlToArcsec = 1.2232836
