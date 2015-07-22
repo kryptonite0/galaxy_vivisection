@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=latex 2012.6.30)  21 JUL 2015 18:02
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=latex 2012.6.30)  22 JUL 2015 10:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -221,122 +221,122 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
 ]
 
 Package natbib Warning: Citation `scorzavandenbosch1998' on page 2 undefined on
- input line 136.
+ input line 138.
 
 
 Package natbib Warning: Citation `rest2001' on page 2 undefined on input line 1
-36.
+38.
 
 
 Package natbib Warning: Citation `balcells2007' on page 2 undefined on input li
-ne 136.
+ne 138.
 
 
 Package natbib Warning: Citation `ledo2010' on page 2 undefined on input line 1
-36.
+38.
 
 
 Package natbib Warning: Citation `khochfarsilk2006' on page 2 undefined on inpu
-t line 141.
+t line 143.
 
 
 Package natbib Warning: Citation `dekel2009nat' on page 2 undefined on input li
-ne 141.
+ne 143.
 
 
 Package natbib Warning: Citation `dekel2009apj' on page 2 undefined on input li
-ne 141.
+ne 143.
 
 
 Package natbib Warning: Citation `ceverino2010' on page 2 undefined on input li
-ne 141.
+ne 143.
 
 
 Package natbib Warning: Citation `ceverino2012' on page 2 undefined on input li
-ne 141.
+ne 143.
 
 
 Package natbib Warning: Citation `conselice2012' on page 2 undefined on input l
-ine 141.
+ine 143.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--143
+Underfull \hbox (badness 10000) in paragraph at lines 133--145
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--149
+Underfull \hbox (badness 10000) in paragraph at lines 146--151
 
  []
 
 [2] [3]
 
 Package natbib Warning: Citation `capaccioli1987' on page 4 undefined on input 
-line 180.
+line 182.
 
 
 Package natbib Warning: Citation `carter1987' on page 4 undefined on input line
- 180.
+ 182.
 
 
 Package natbib Warning: Citation `rixwhite1990' on page 4 undefined on input li
-ne 180.
+ne 182.
 
 
 Package natbib Warning: Citation `bender1990' on page 4 undefined on input line
- 180.
+ 182.
 
 
 Package natbib Warning: Citation `scorzabender1990' on page 4 undefined on inpu
-t line 180.
+t line 182.
 
 
 Package natbib Warning: Citation `nieto1991' on page 4 undefined on input line 
-180.
+182.
 
 
 Package natbib Warning: Citation `rixwhite1992' on page 4 undefined on input li
-ne 180.
+ne 182.
 
 
 Package natbib Warning: Citation `scorzabender1995' on page 4 undefined on inpu
-t line 180.
+t line 182.
 
 
 Package natbib Warning: Citation `donofrio1995' on page 4 undefined on input li
-ne 180.
+ne 182.
 
 
 Package natbib Warning: Citation `graham1998fornax' on page 4 undefined on inpu
-t line 180.
+t line 182.
 
 
 Package natbib Warning: Citation `scorza1998' on page 4 undefined on input line
- 180.
+ 182.
 
 
 Package natbib Warning: Citation `scorzavandenbosch1998' on page 4 undefined on
- input line 180.
+ input line 182.
 
 
 Package natbib Warning: Citation `bendersaglia1999' on page 4 undefined on inpu
-t line 180.
+t line 182.
 
 
 Package natbib Warning: Citation `krajnovic2013' on page 4 undefined on input l
-ine 181.
+ine 183.
 
 [4] [5] [6]
 
 Package natbib Warning: There were undefined citations.
 
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 409.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 411.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 409.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 411.
  [7
 
 ]
@@ -350,4 +350,4 @@ Here is how much of TeX's memory you used:
  957 hyphenation exceptions out of 8191
  28i,4n,22p,222b,135s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on lentiptical.dvi (7 pages, 14272 bytes).
+Output written on lentiptical.dvi (7 pages, 14536 bytes).

@@ -166,15 +166,15 @@ def mbh_vs_mass_sph():
 	
 	x0 = mass_sph_n1277
 	y0 = mbh_n1277
-	ax.text(x0/1.3, 1.55*y0, 'N1277', size=12, color='red')
+	ax.text(x0/1.3, 1.6*y0, 'N1277', size=12, color='red')
 	
 	x0 = mass_sph_n1271
 	y0 = mbh_n1271
-	ax.text(x0/1.3, 1.55*y0, 'N1271', size=12, color='red')
+	ax.text(x0/1.3, 1.6*y0, 'N1271', size=12, color='red')
 	
 	x0 = mass_sph_m1216
 	y0 = mbh_m1216
-	ax.text(x0/1.3, 1.1*y0, 'M1216', size=12, color='red')
+	ax.text(x0/1.3, 1.15*y0, 'M1216', size=12, color='red')
 	
 	x0 = float(mass_sph[gal_id=='n4291'])
 	y0 = float(mbh[gal_id=='n4291'])
@@ -226,12 +226,12 @@ def mbh_vs_mass_sph():
 		
 	yy_3epsilon_up = (A[2]*(logxx) + B[2]) + 3*epsilon
 	yy_3epsilon_lo = (A[2]*(logxx) + B[2]) - 3*epsilon
-	ax.plot(10**(logxx+np.average(log_mass_sph[earlytype==1])),10**yy_3epsilon_up, color='k', ls='-.', linewidth=2.)
-	ax.plot(10**(logxx+np.average(log_mass_sph[earlytype==1])),10**yy_3epsilon_lo, color='k', ls='-.', linewidth=2.)
+	ax.plot(10**(logxx+np.average(log_mass_sph[earlytype==1])),10**yy_3epsilon_up, color='k', ls='--', linewidth=2.)
+	ax.plot(10**(logxx+np.average(log_mass_sph[earlytype==1])),10**yy_3epsilon_lo, color='k', ls='--', linewidth=2.)
 	ax.fill_between(10**(logxx+np.average(log_mass_sph[earlytype==1])),10**yy_3epsilon_lo,10**yy_3epsilon_up,alpha=0.2, facecolor='gray') 
 	
-	ax.text(10**8.7, 10**7.2, r'$\pm 1 \epsilon$', rotation=30, color='k', size=20)
-	ax.text(10**8.7, 10**8.05, r'$\pm 3 \epsilon$', rotation=30, color='k', size=20)
+	ax.text(10**8.7, 10**7.2, r'$\pm 1 \sigma$', rotation=30, color='k', size=20)
+	ax.text(10**8.7, 10**8.05, r'$\pm 3 \sigma$', rotation=30, color='k', size=20)
 		
        ###### calculates 1sigma uncertainty band
        #yy_1 = ((A[2]+Aerr[2])*(logxx) + (B[2]+Berr[2]))
@@ -276,8 +276,8 @@ def mbh_vs_mass_sph():
         plt.xlabel(r'$M_{\rm *,sph}\rm~[M_\odot]$', labelpad=13)
         plt.ylabel(r'$M_{\rm BH} \rm ~[M_\odot]$', labelpad=13)
 	plt.subplots_adjust(left=0.15,bottom=0.15,right=0.97,top=0.9)
-        plt.show()
-	#plt.savefig(path_paper_figures + 'mbh_vs_mass_sph.pdf', format='pdf', dpi=1000)
+        #plt.show()
+	plt.savefig(path_paper_figures + 'mm.pdf', format='pdf', dpi=1000)
 
 
 
