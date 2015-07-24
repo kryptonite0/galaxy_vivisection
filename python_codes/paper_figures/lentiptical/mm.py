@@ -216,7 +216,8 @@ def mbh_vs_mass_sph():
         yy = (A[2]*(logxx) + B[2])
         ax.plot(10**(logxx+np.average(log_mass_sph[earlytype==1])),10**yy, color='k', ls='-', linewidth=2.)
 
-	epsilon = 0.43
+	#epsilon = 0.43 # intrinsic scatter
+	epsilon = 0.51 # tot rms scatter
 	
 	yy_1epsilon_up = (A[2]*(logxx) + B[2]) + epsilon
 	yy_1epsilon_lo = (A[2]*(logxx) + B[2]) - epsilon
@@ -276,8 +277,8 @@ def mbh_vs_mass_sph():
         plt.xlabel(r'$M_{\rm *,sph}\rm~[M_\odot]$', labelpad=13)
         plt.ylabel(r'$M_{\rm BH} \rm ~[M_\odot]$', labelpad=13)
 	plt.subplots_adjust(left=0.15,bottom=0.15,right=0.97,top=0.9)
-        #plt.show()
-	plt.savefig(path_paper_figures + 'mm.pdf', format='pdf', dpi=1000)
+        plt.show()
+	#plt.savefig(path_paper_figures + 'mm.pdf', format='pdf', dpi=1000)
 
 
 
