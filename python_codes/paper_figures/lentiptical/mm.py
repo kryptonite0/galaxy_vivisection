@@ -231,8 +231,8 @@ def mbh_vs_mass_sph():
 	ax.plot(10**(logxx+np.average(log_mass_sph[earlytype==1])),10**yy_3epsilon_lo, color='k', ls='--', linewidth=2.)
 	ax.fill_between(10**(logxx+np.average(log_mass_sph[earlytype==1])),10**yy_3epsilon_lo,10**yy_3epsilon_up,alpha=0.2, facecolor='gray') 
 	
-	ax.text(10**8.7, 10**7.2, r'$\pm 1 \sigma$', rotation=30, color='k', size=20)
-	ax.text(10**8.7, 10**8.05, r'$\pm 3 \sigma$', rotation=30, color='k', size=20)
+	ax.text(10**8.7, 10**6.9, r'$\pm 1 \sigma$', rotation=30, color='k', size=20)
+	ax.text(10**8.7, 10**7.9, r'$\pm 3 \sigma$', rotation=30, color='k', size=20)
 		
        ###### calculates 1sigma uncertainty band
        #yy_1 = ((A[2]+Aerr[2])*(logxx) + (B[2]+Berr[2]))
@@ -261,7 +261,7 @@ def mbh_vs_mass_sph():
 	ax.text(10**9.1, 10**10.75, 'elliptical')
 	ax.scatter([10**8.85], [10**10.45], marker=r'$\star$', s=500, color='red', **scatter_kwargs)
 	#markers.lenticular(ax, 'red', 8.85, 10.45, 0.08)
-	ax.text(10**9.1, 10**10.3, 'lentiptical')
+	ax.text(10**9.1, 10**10.3, 'elliptical/lenticular')
 	markers.lenticular(ax, 'k', 8.85, 10., 0.05)
 	ax.text(10**9.1, 10**9.85, 'lenticular')
 	#markers.spiral(ax, 'darkorange', 9.8, 10.9, 0.04)
@@ -277,8 +277,8 @@ def mbh_vs_mass_sph():
         plt.xlabel(r'$M_{\rm *,sph}\rm~[M_\odot]$', labelpad=13)
         plt.ylabel(r'$M_{\rm BH} \rm ~[M_\odot]$', labelpad=13)
 	plt.subplots_adjust(left=0.15,bottom=0.15,right=0.97,top=0.9)
-        plt.show()
-	#plt.savefig(path_paper_figures + 'mm.pdf', format='pdf', dpi=1000)
+        #plt.show()
+	plt.savefig(path_paper_figures + 'mm.pdf', format='pdf', dpi=1000)
 
 
 
