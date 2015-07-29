@@ -150,7 +150,7 @@ def mbh_vs_mass_sph():
 	mass_sph_m1216 = 2.27*10**11
 	mbh_m1216 = 10**10 ## upper limit
 	#ax.scatter([mass_sph_m1216], [mbh_m1216], marker='.', s=500, color='red', **scatter_kwargs)
-	ax.scatter([mass_sph_m1216], [mbh_m1216/1.5], marker=r'$\uparrow$', s=500, color='red', **scatter_kwargs)
+	ax.scatter([mass_sph_m1216], [mbh_m1216/1.5], marker=r'$\downarrow$', s=500, color='red', **scatter_kwargs)
 	
 	
 	for x0,y0 in zip(mass_sph[simplemorphtype=='S0'], mbh[simplemorphtype=='S0']):
@@ -166,7 +166,7 @@ def mbh_vs_mass_sph():
 	
 	x0 = mass_sph_n1277
 	y0 = mbh_n1277
-	ax.text(x0/1.3, 1.6*y0, 'N1277', size=12, color='red')
+	ax.text(x0/1.7, 1.6*y0, 'N1277', size=12, color='red')
 	
 	x0 = mass_sph_n1271
 	y0 = mbh_n1271
@@ -183,7 +183,7 @@ def mbh_vs_mass_sph():
 	
 	x0 = float(mass_sph[gal_id=='n3998'])
 	y0 = float(mbh[gal_id=='n3998'])
-	ax.text(x0/1.3, 1.3*y0, 'N3998', size=12, color='k')
+	ax.text(x0/0.95, 1.3*y0, 'N3998', size=12, color='k')
 	
         #for x0,y0 in zip(mass_sph[simplemorphtype=='S0/Sp'], mbh[simplemorphtype=='S0/Sp']):
 	#	markers.spiral(ax, 'darkorange', np.log10(x0), np.log10(y0), 0.04)
@@ -231,7 +231,7 @@ def mbh_vs_mass_sph():
 	ax.plot(10**(logxx+np.average(log_mass_sph[earlytype==1])),10**yy_3epsilon_lo, color='k', ls='--', linewidth=2.)
 	ax.fill_between(10**(logxx+np.average(log_mass_sph[earlytype==1])),10**yy_3epsilon_lo,10**yy_3epsilon_up,alpha=0.2, facecolor='gray') 
 	
-	ax.text(10**8.7, 10**6.9, r'$\pm 1 \sigma$', rotation=30, color='k', size=20)
+	ax.text(10**8.7, 10**6.87, r'$\pm 1 \sigma$', rotation=30, color='k', size=20)
 	ax.text(10**8.7, 10**7.9, r'$\pm 3 \sigma$', rotation=30, color='k', size=20)
 		
        ###### calculates 1sigma uncertainty band
@@ -261,7 +261,7 @@ def mbh_vs_mass_sph():
 	ax.text(10**9.1, 10**10.75, 'elliptical')
 	ax.scatter([10**8.85], [10**10.45], marker=r'$\star$', s=500, color='red', **scatter_kwargs)
 	#markers.lenticular(ax, 'red', 8.85, 10.45, 0.08)
-	ax.text(10**9.1, 10**10.3, 'elliptical/lenticular')
+	ax.text(10**9.1, 10**10.3, 'lentiptical')
 	markers.lenticular(ax, 'k', 8.85, 10., 0.05)
 	ax.text(10**9.1, 10**9.85, 'lenticular')
 	#markers.spiral(ax, 'darkorange', 9.8, 10.9, 0.04)
@@ -274,8 +274,10 @@ def mbh_vs_mass_sph():
  	ax.set_xscale('log')
 	ax.set_yscale('log')
         plt.axis([10**8.6,10**12.3,10**6.3,10**11.2])
-        plt.xlabel(r'$M_{\rm *,sph}\rm~[M_\odot]$', labelpad=13)
-        plt.ylabel(r'$M_{\rm BH} \rm ~[M_\odot]$', labelpad=13)
+        #plt.xlabel(r'$M_{\rm *,sph}\rm~[M_\odot]$', labelpad=13)
+        #plt.ylabel(r'$M_{\rm BH} \rm ~[M_\odot]$', labelpad=13)
+	plt.xlabel(r'spheroid stellar mass $[M_{\rm SUN}]$', labelpad=13)
+	plt.ylabel(r'black hole mass $[M_{\rm SUN}]$', labelpad=13)
 	plt.subplots_adjust(left=0.15,bottom=0.15,right=0.97,top=0.9)
         #plt.show()
 	plt.savefig(path_paper_figures + 'mm.pdf', format='pdf', dpi=1000)

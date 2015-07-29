@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  17 JUL 2015 11:51
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  29 JUL 2015 16:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -642,11 +642,11 @@ Package rerunfilecheck Info: File `mm.out' has not changed.
 Here is how much of TeX's memory you used:
  8685 strings out of 493488
  121214 string characters out of 3141326
- 319881 words of memory out of 3000000
+ 320994 words of memory out of 3000000
  11704 multiletter control sequences out of 15000+200000
  18234 words of font info for 72 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 44i,14n,31p,1204b,523s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,14n,31p,1204b,517s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy
 6.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cmextra/c
 mbsy8.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cmext
@@ -682,7 +682,7 @@ ve/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2012/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2012/te
 xmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on mm.pdf (12 pages, 1925365 bytes).
+Output written on mm.pdf (12 pages, 1925892 bytes).
 PDF statistics:
  1687 PDF objects out of 1728 (max. 8388607)
  727 compressed objects within 8 object streams
