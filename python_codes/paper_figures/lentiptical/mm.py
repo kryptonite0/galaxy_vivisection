@@ -144,14 +144,20 @@ def mbh_vs_mass_sph():
 	ax.scatter([mass_sph_n1277], [mbh_n1277], marker=r'$\star$', s=500, color='red', **scatter_kwargs)
 	
 	mass_sph_n1271 = 9.17*10**10
+	mass_sph_n1271_old = 5.4*10**10
 	mbh_n1271 = 3*10**9
 	ax.scatter([mass_sph_n1271], [mbh_n1271], marker=r'$\star$', s=500, color='red', **scatter_kwargs)
+	ax.plot([mass_sph_n1271_old,mass_sph_n1271], [mbh_n1271,mbh_n1271], color='blue', lw=3)
 	
 	mass_sph_m1216 = 2.27*10**11
 	mbh_m1216 = 10**10 ## upper limit
 	#ax.scatter([mass_sph_m1216], [mbh_m1216], marker='.', s=500, color='red', **scatter_kwargs)
 	ax.scatter([mass_sph_m1216], [mbh_m1216/1.5], marker=r'$\downarrow$', s=500, color='red', **scatter_kwargs)
 	
+	mass_sph_n1332 = mass_sph[gal_id=='n1332']
+	mass_sph_n1332_old = mass_sph_n1332/0.95*0.43
+	mbh_n1332 = mbh[gal_id=='n1332']
+	ax.plot([mass_sph_n1332_old,mass_sph_n1332], [mbh_n1332,mbh_n1332], color='blue', lw=3)
 	
 	for x0,y0 in zip(mass_sph[simplemorphtype=='S0'], mbh[simplemorphtype=='S0']):
 		markers.lenticular(ax, 'k', np.log10(x0), np.log10(y0), 0.05)
@@ -183,7 +189,7 @@ def mbh_vs_mass_sph():
 	
 	x0 = float(mass_sph[gal_id=='n3998'])
 	y0 = float(mbh[gal_id=='n3998'])
-	ax.text(x0/0.95, 1.3*y0, 'N3998', size=12, color='k')
+	#ax.text(x0/0.95, 1.3*y0, 'N3998', size=12, color='k')
 	
         #for x0,y0 in zip(mass_sph[simplemorphtype=='S0/Sp'], mbh[simplemorphtype=='S0/Sp']):
 	#	markers.spiral(ax, 'darkorange', np.log10(x0), np.log10(y0), 0.04)
@@ -276,11 +282,11 @@ def mbh_vs_mass_sph():
         plt.axis([10**8.6,10**12.3,10**6.3,10**11.2])
         #plt.xlabel(r'$M_{\rm *,sph}\rm~[M_\odot]$', labelpad=13)
         #plt.ylabel(r'$M_{\rm BH} \rm ~[M_\odot]$', labelpad=13)
-	plt.xlabel(r'spheroid stellar mass $[M_{\rm SUN}]$', labelpad=13)
-	plt.ylabel(r'black hole mass $[M_{\rm SUN}]$', labelpad=13)
+	plt.xlabel(r'Spheroid stellar mass $[M_\odot]$', labelpad=13)
+	plt.ylabel(r'Black hole mass $[M_\odot]$', labelpad=13)
 	plt.subplots_adjust(left=0.15,bottom=0.15,right=0.97,top=0.9)
-        #plt.show()
-	plt.savefig(path_paper_figures + 'mm.pdf', format='pdf', dpi=1000)
+        plt.show()
+	#plt.savefig(path_paper_figures + 'mm.pdf', format='pdf', dpi=1000)
 
 
 
