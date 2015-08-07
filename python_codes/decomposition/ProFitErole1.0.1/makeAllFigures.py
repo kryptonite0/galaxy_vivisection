@@ -69,6 +69,15 @@ if (Settings.observation == 'n4342'):
         
         psfList = [moffatPsf]
 	
+if (Settings.observation == 'LEDA'):
+	print 'LEDA'
+        moffatPsf = PsfFunction()
+        moffatPsf.name = 'moffat'
+        moffatPsf.moffatAlpha = (2.69/(2*np.sqrt(2**(1/6.62)-1)) ) * Settings.pxlToArcsec  # alpha = fwhm / (2 * sqrt(2**(1/beta) - 1) )
+        moffatPsf.moffatBeta = 6.62  
+        
+        psfList = [moffatPsf]
+	
 gaussianSmoothing = PsfFunction()
 gaussianSmoothing.name = 'gaussian'
 gaussianSmoothing.gaussianFWHM = 5 * 2.3548 * Settings.pxlToArcsec 

@@ -24,8 +24,13 @@ from matplotlib import rc, font_manager
 from textwrap import wrap
 
 
-def doFitPanel(fitPanel, rrr, mu, good_rrr, good_mu, bad_rrr, bad_mu, maxsma_arcsec, minmu, maxmu, componentslist, finalparams, Settings, psfFunction, psfwing_02pxscale_datatab, psfwing_logscale_datatab, goodIndexes, skyRMS, deltarms, sampling, goodIndexes_integer, badIndexes_integer, gaussianSmoothing):
+def doFitPanel(fitPanel, rrr, mu, good_rrr, good_mu, bad_rrr, bad_mu, maxsma_arcsec, minmu, maxmu, componentslist, finalparams, Settings, psfFunction, psfwing_02pxscale_datatab, psfwing_logscale_datatab, goodIndexes, skyRMS, deltarms, sampling, goodIndexes_integer, badIndexes_integer, gaussianSmoothing, datatab):
 	
+        mu_lo = Settings.zeropoint - 2.5*np.log10(datatab['intens']+datatab['intens_err']) + 2.5*np.log10(Settings.pxlToArcsec**2)
+        mu_up = Settings.zeropoint - 2.5*np.log10(datatab['intens']-datatab['intens_err']) + 2.5*np.log10(Settings.pxlToArcsec**2)
+        mu_perr = mu_up - mu
+        mu_merr = mu - mu_lo
+    
 	sensitivity = Settings.zeropoint - 2.5*np.log10(skyRMS) + 2.5*np.log10(Settings.pxlToArcsec**2)
 	
 	fitPanel.set_xlim([maxsma_arcsec*(-0.1),1.1*maxsma_arcsec])
@@ -110,6 +115,7 @@ def doFitPanel(fitPanel, rrr, mu, good_rrr, good_mu, bad_rrr, bad_mu, maxsma_arc
 				bad_mu_undersampled = np.append(bad_mu_undersampled, mu[i])
 		fitPanel.plot(good_rrr_undersampled, good_mu_undersampled, 'ko', markersize=4)
 		fitPanel.plot(bad_rrr_undersampled, bad_mu_undersampled, 'wo', markersize=4)
+		#fitPanel.errorbar(rrr, mu, yerr=[mu_merr, mu_perr], fmt='o')
 		
 	fitPanel.axhline(sensitivity, linewidth=2, color='grey', ls = 'dashed')
 	
@@ -204,7 +210,7 @@ def makePaperFigure(bestfitFig, psfFunction, equivalentAxisFit, rrr, mu, good_rr
 		plt.setp(initB4Panel.get_yticklabels(), visible=False)
 		initB4Panel.set_xlabel(r'R$_{\rm eq}$ [arcsec]', fontsize=14)
 			
-	fitPanel = doFitPanel(initFitPanel, rrr, mu, good_rrr, good_mu, bad_rrr, bad_mu, maxsma_arcsec, minmu, maxmu, componentslist, finalparams, Settings, psfFunction, psfwing_02pxscale_datatab, psfwing_logscale_datatab, goodIndexes, skyRMS, deltarms, sampling, goodIndexes_integer, badIndexes_integer, gaussianSmoothing)		
+	fitPanel = doFitPanel(initFitPanel, rrr, mu, good_rrr, good_mu, bad_rrr, bad_mu, maxsma_arcsec, minmu, maxmu, componentslist, finalparams, Settings, psfFunction, psfwing_02pxscale_datatab, psfwing_logscale_datatab, goodIndexes, skyRMS, deltarms, sampling, goodIndexes_integer, badIndexes_integer, gaussianSmoothing, datatab)		
 	resPanel = doResPanel(initResPanel, rrr, good_rrr, resid, good_resid, maxsma_arcsec, sampling, goodIndexes_integer, badIndexes_integer)
 	ellPanel = doEllipticityPanel(initEllPanel, datatab, Settings, equivalentAxisFit, maxsma_arcsec) 
 	PAPanel = doPAPanel(initPAPanel, datatab, Settings, equivalentAxisFit, maxsma_arcsec) 

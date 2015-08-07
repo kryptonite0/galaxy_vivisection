@@ -139,15 +139,18 @@ def mbh_vs_mass_sph():
 	#	markers.lenticular(ax, 'red', np.log10(x0), np.log10(y0), 0.08)
         ax.scatter(mass_sph[simplemorphtype=='E/S0'], mbh[simplemorphtype=='E/S0'], marker=r'$\star$', s=500, color='red', **scatter_kwargs)
 	
-	mass_sph_n1277 = 1.36*10**11	
+	mass_sph_n1277 = 2.69*10**11	
+	mass_sph_n1277_old = 2.88*10**10
 	mbh_n1277 = 1.7*10**10
 	ax.scatter([mass_sph_n1277], [mbh_n1277], marker=r'$\star$', s=500, color='red', **scatter_kwargs)
+	ax.scatter([mass_sph_n1277_old], [mbh_n1277], marker=r'$\star$', s=500, color='gray', **scatter_kwargs)
+	ax.plot([mass_sph_n1277_old,mass_sph_n1277], [mbh_n1277,mbh_n1277], color='gray', lw=2, ls='--')
 	
 	mass_sph_n1271 = 9.17*10**10
 	mass_sph_n1271_old = 5.4*10**10
 	mbh_n1271 = 3*10**9
 	ax.scatter([mass_sph_n1271], [mbh_n1271], marker=r'$\star$', s=500, color='red', **scatter_kwargs)
-	ax.plot([mass_sph_n1271_old,mass_sph_n1271], [mbh_n1271,mbh_n1271], color='blue', lw=3)
+	#ax.plot([mass_sph_n1271_old,mass_sph_n1271], [mbh_n1271,mbh_n1271], color='blue', lw=3)
 	
 	mass_sph_m1216 = 2.27*10**11
 	mbh_m1216 = 10**10 ## upper limit
@@ -157,7 +160,7 @@ def mbh_vs_mass_sph():
 	mass_sph_n1332 = mass_sph[gal_id=='n1332']
 	mass_sph_n1332_old = mass_sph_n1332/0.95*0.43
 	mbh_n1332 = mbh[gal_id=='n1332']
-	ax.plot([mass_sph_n1332_old,mass_sph_n1332], [mbh_n1332,mbh_n1332], color='blue', lw=3)
+	#ax.plot([mass_sph_n1332_old,mass_sph_n1332], [mbh_n1332,mbh_n1332], color='blue', lw=3)
 	
 	for x0,y0 in zip(mass_sph[simplemorphtype=='S0'], mbh[simplemorphtype=='S0']):
 		markers.lenticular(ax, 'k', np.log10(x0), np.log10(y0), 0.05)
@@ -172,7 +175,7 @@ def mbh_vs_mass_sph():
 	
 	x0 = mass_sph_n1277
 	y0 = mbh_n1277
-	ax.text(x0/1.7, 1.6*y0, 'N1277', size=12, color='red')
+	ax.text(x0/1.3, 1.6*y0, 'N1277', size=12, color='red')
 	
 	x0 = mass_sph_n1271
 	y0 = mbh_n1271
@@ -180,7 +183,7 @@ def mbh_vs_mass_sph():
 	
 	x0 = mass_sph_m1216
 	y0 = mbh_m1216
-	ax.text(x0/1.3, 1.15*y0, 'M1216', size=12, color='red')
+	ax.text(x0/1.9, 0.9*y0, 'M1216', size=12, color='red')
 	
 	x0 = float(mass_sph[gal_id=='n4291'])
 	y0 = float(mbh[gal_id=='n4291'])
@@ -264,12 +267,12 @@ def mbh_vs_mass_sph():
 	
 	# legend
 	markers.elliptical(ax, 'k', 8.85, 10.9, 0.05)
-	ax.text(10**9.1, 10**10.75, 'elliptical')
+	ax.text(10**9.1, 10**10.75, 'Elliptical')
 	ax.scatter([10**8.85], [10**10.45], marker=r'$\star$', s=500, color='red', **scatter_kwargs)
 	#markers.lenticular(ax, 'red', 8.85, 10.45, 0.08)
-	ax.text(10**9.1, 10**10.3, 'lentiptical')
+	ax.text(10**9.1, 10**10.3, 'Ellicular')
 	markers.lenticular(ax, 'k', 8.85, 10., 0.05)
-	ax.text(10**9.1, 10**9.85, 'lenticular')
+	ax.text(10**9.1, 10**9.85, 'Lenticular')
 	#markers.spiral(ax, 'darkorange', 9.8, 10.9, 0.04)
 	#ax.text(10**10.05, 10**10.75, 'S0/Sp')
 	#markers.spiral(ax, 'blue', 9.8, 10.45, 0.04)
@@ -285,8 +288,8 @@ def mbh_vs_mass_sph():
 	plt.xlabel(r'Spheroid stellar mass $[M_\odot]$', labelpad=13)
 	plt.ylabel(r'Black hole mass $[M_\odot]$', labelpad=13)
 	plt.subplots_adjust(left=0.15,bottom=0.15,right=0.97,top=0.9)
-        plt.show()
-	#plt.savefig(path_paper_figures + 'mm.pdf', format='pdf', dpi=1000)
+        #plt.show()
+	plt.savefig(path_paper_figures + 'mm.pdf', format='pdf', dpi=1000)
 
 
 

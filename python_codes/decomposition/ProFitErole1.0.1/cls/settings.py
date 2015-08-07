@@ -24,7 +24,8 @@ class Settings:
     
     #observation = 'spitzer3.6um'
     #observation = 'n1271' 
-    observation = 'n4342' 
+    #observation = 'n4342' 
+    observation = 'LEDA' 
         
     if (observation == 'n1277'):
         pxlToArcsec = 0.05
@@ -41,6 +42,10 @@ class Settings:
     if (observation == 'spitzer3.6um'):
         pxlToArcsec = 1.2232836
         zeropoint = 17.25585 #spitzer 3.6 um
+
+    if (observation == 'LEDA'):
+        pxlToArcsec = 0.396
+        zeropoint = 22.5 # sdss r
 
     colordict = {'sersic' : 'red', 'tsersic' : 'red', 'disc' : 'blue', 'gaussian' : 'green', 'psf' : 'purple', 'ferrer' : 'lightblue', 'tdisc' : 'blue', 'gring' : 'grey', 'psfwing' : 'purple'}
     
