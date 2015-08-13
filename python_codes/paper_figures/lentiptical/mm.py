@@ -139,10 +139,12 @@ def mbh_vs_mass_sph():
 	#	markers.lenticular(ax, 'red', np.log10(x0), np.log10(y0), 0.08)
         ax.scatter(mass_sph[simplemorphtype=='E/S0'], mbh[simplemorphtype=='E/S0'], marker=r'$\star$', s=500, color='red', **scatter_kwargs)
 	
-	mass_sph_n1277 = 2.69*10**11	
+	mass_sph_n1277 = 2.69*10**11
+	mass_sph_n1277_b = mass_sph_n1277/11.65*6	
 	mass_sph_n1277_old = 2.88*10**10
 	mbh_n1277 = 1.7*10**10
 	ax.scatter([mass_sph_n1277], [mbh_n1277], marker=r'$\star$', s=500, color='red', **scatter_kwargs)
+	ax.scatter([mass_sph_n1277_b], [mbh_n1277], marker=r'$\star$', s=100, color='red', **scatter_kwargs)
 	ax.scatter([mass_sph_n1277_old], [mbh_n1277], marker=r'$\star$', s=500, color='gray', **scatter_kwargs)
 	ax.plot([mass_sph_n1277_old,mass_sph_n1277], [mbh_n1277,mbh_n1277], color='gray', lw=2, ls='--')
 	
@@ -167,7 +169,7 @@ def mbh_vs_mass_sph():
 	
 	x0 = mass_sph[gal_id=='n3115']
 	y0 = mbh[gal_id=='n3115']
-	ax.text(x0/1.3, 1.55*y0, 'N3115', size=12, color='red')
+	ax.text(x0/1.5, 1.55*y0, 'N3115', size=12, color='red')
 	
 	x0 = mass_sph[gal_id=='n1332']
 	y0 = mbh[gal_id=='n1332']
@@ -179,11 +181,11 @@ def mbh_vs_mass_sph():
 	
 	x0 = mass_sph_n1271
 	y0 = mbh_n1271
-	ax.text(x0/1.3, 1.6*y0, 'N1271', size=12, color='red')
+	ax.text(x0/1.5, 1.6*y0, 'N1271', size=12, color='red')
 	
 	x0 = mass_sph_m1216
 	y0 = mbh_m1216
-	ax.text(x0/1.9, 0.9*y0, 'M1216', size=12, color='red')
+	ax.text(x0/1.9, 0.7*y0, 'M1216', size=12, color='red')
 	
 	x0 = float(mass_sph[gal_id=='n4291'])
 	y0 = float(mbh[gal_id=='n4291'])
