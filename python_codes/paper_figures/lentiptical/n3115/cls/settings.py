@@ -23,13 +23,13 @@ class Settings:
     #smoothing = True
     
     observation = 'spitzer3.6um'
-    #observation = 'n1271' 
+    #observation = 'm1216' 
         
     if (observation == 'n1277'):
         pxlToArcsec = 0.05
         zeropoint = 24.851 # hst for n1277
     
-    if (observation == 'n1271'):
+    if (observation == 'm1216'):
         pxlToArcsec = 0.12825
         zeropoint = 24.6949 # Vega
     

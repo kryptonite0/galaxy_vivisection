@@ -132,6 +132,8 @@ def get_err_epsilon(x,sigx,y,sigy,afit,bfit,epsilonfit,chisqminfit,precision,N,m
 			chisq = chisq + numer**2/denom
 		chisqmin = chisq
 		#print 'chi', chisqmin, ((N-2.)*(1.+(2./N)**0.5))
+		print 'chisq', chisqmin
+		print 'e', epsilon
 		epsilon_minus = epsilon
 	
 	chisqmin = chisqminfit
@@ -150,6 +152,8 @@ def get_err_epsilon(x,sigx,y,sigy,afit,bfit,epsilonfit,chisqminfit,precision,N,m
 				denom = (sigy[i])**2 + (bfit**2)*(sigx[i])**2 + (bfit**2)*(epsilon**2)	
 			chisq = chisq + numer**2/denom
 		chisqmin = chisq
+		print 'chisq', chisqmin
+		print 'e', epsilon
 		epsilon_plus = epsilon
 	
 	return epsilon_minus, epsilon_plus

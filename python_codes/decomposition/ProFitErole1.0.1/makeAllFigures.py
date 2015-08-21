@@ -56,7 +56,7 @@ if (Settings.observation == 'n1271'):
 	print 'n1271'
         gaussianPsf = PsfFunction()
         gaussianPsf.name = 'gaussian'
-        gaussianPsf.gaussianFWHM = 1.8 * Settings.pxlToArcsec 
+        gaussianPsf.gaussianFWHM = 2.3 * Settings.pxlToArcsec 
         
         psfList = [gaussianPsf]
 	

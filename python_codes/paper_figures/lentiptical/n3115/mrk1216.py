@@ -56,13 +56,12 @@ from textwrap import wrap
 
 #################################################### 
 
-moffatPsf = PsfFunction()
-moffatPsf.name = 'moffat'
-moffatPsf.moffatAlpha = (1.61467/(2*np.sqrt(2**(1/4.39)-1)) ) * Settings.pxlToArcsec  # alpha = fwhm / (2 * sqrt(2**(1/beta) - 1) )
-moffatPsf.moffatBeta = 4.39  
-        
-psfList = [moffatPsf]
-	
+gaussianPsf = PsfFunction()
+gaussianPsf.name = 'gaussian'
+gaussianPsf.gaussianFWHM = 2.3 * Settings.pxlToArcsec 
+
+psfList = [gaussianPsf]
+
 gaussianSmoothing = PsfFunction()
 gaussianSmoothing.name = 'gaussian'
 gaussianSmoothing.gaussianFWHM = 5 * 2.3548 * Settings.pxlToArcsec 
@@ -183,8 +182,8 @@ def readFitAndPlot(excludedRangeList, galaxy, axisFit, psfFunction, sampling, be
         rrr = rrr * np.sqrt(1. - ellip) 
     
     
-    #bestFitParamsFileName = galaxy + '_' + axisFit + '_' + gaussianPsf.name + '_comb_par_SM.dat'
-    bestFitParamsFileName = galaxy + '_' + axisFit + '_' + moffatPsf.name + '_comb_par_SM.dat'
+    bestFitParamsFileName = galaxy + '_' + axisFit + '_' + gaussianPsf.name + '_comb_par_SM.dat'
+    #bestFitParamsFileName = galaxy + '_' + axisFit + '_' + moffatPsf.name + '_comb_par_SM.dat'
     
     componentslist, finalparams = readBestFitModel(bestFitParamsFileName)
     
@@ -367,10 +366,7 @@ def createFigure(bestfitFig, psfFunction, equivalentAxisFit, rrr, mu, good_rrr, 
 	fitPanel = doFitPanel(initFitPanel, rrr, mu, good_rrr, good_mu, bad_rrr, bad_mu, maxsma_arcsec, minmu, maxmu, componentslist, finalparams, Settings, psfFunction, psfwing_02pxscale_datatab, psfwing_logscale_datatab, goodIndexes, skyRMS, deltarms, sampling, goodIndexes_integer, badIndexes_integer, gaussianSmoothing)		
 	resPanel = doResPanel(initResPanel, rrr, good_rrr, resid, good_resid, maxsma_arcsec, sampling, goodIndexes_integer, badIndexes_integer)
 	ellPanel = doEllipticityPanel(initEllPanel, datatab, Settings, equivalentAxisFit, maxsma_arcsec) 
-	#PAPanel = doPAPanel(initPAPanel, datatab, Settings, equivalentAxisFit, maxsma_arcsec) 
-	#B4Panel = doB4Panel(initB4Panel, datatab, Settings, equivalentAxisFit, maxsma_arcsec) 
 	
-	#bestfitFig.add_subplot(fitPanel, resPanel, ellPanel, PAPanel, B4Panel)
 	bestfitFig.add_subplot(fitPanel, resPanel, ellPanel)
 	
 	return bestfitFig
@@ -473,7 +469,7 @@ psfList, gaussianSmoothing = createPsf(Settings)
 #axisFitList = ['maj', 'eq']
 axisFitList = ['maj']
 
-prefixEllipseOutput, galaxy, skyRMS = readDataFileNames('init_n3115.1dfit')
+prefixEllipseOutput, galaxy, skyRMS = readDataFileNames('init_mrk1216.1dfit')
 excludedDataFileName = galaxy + '.excl'
 excludedRangeList = readExcludedData(excludedDataFileName, Settings) # this is in pixels
 
@@ -495,7 +491,7 @@ for sampling in samplingList:
             
             equivalentAxisFit = False
             if (axisFit == 'eq'):
-                equivalentAxisFit = True	
+            	equivalentAxisFit = True       
                 
             readFitAndPlot(excludedRangeList, galaxy, axisFit, psfFunction, sampling, bestfitFig, equivalentAxisFit)					
     

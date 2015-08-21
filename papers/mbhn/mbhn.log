@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=latex 2012.6.30)  13 OCT 2014 19:15
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=latex 2012.6.30)  21 AUG 2015 14:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -235,53 +235,50 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
 LaTeX Font Info:    ... okay on input line 75.
 
 AAS 2-column preprint substyle, v5.2 <12 Dec 2003>.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 158.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 130.
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 158.
+LaTeX Font Info:    Try loading font information for U+msa on input line 130.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 158.
+LaTeX Font Info:    Try loading font information for U+msb on input line 130.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 158.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 130.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 158.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 130.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 205.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 138.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <5> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 205.
-File: /Users/gsavorgnan/galaxy_vivisection/results/plots/auxiliary/histo_err_lo
-gn.eps Graphic file (type eps)
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 138.
 
-</Users/gsavorgnan/galaxy_vivisection/results/plots/auxiliary/histo_err_logn.ep
-s>
-File: /Users/gsavorgnan/galaxy_vivisection/results/plots/scaling_relations/mbh_
-vs_logn.eps Graphic file (type eps)
-
-</Users/gsavorgnan/galaxy_vivisection/results/plots/scaling_relations/mbh_vs_lo
-gn.eps>
-File: /Users/gsavorgnan/galaxy_vivisection/results/plots/scaling_relations/mbh_
-vs_median_logn.eps Graphic file (type eps)
-
-</Users/gsavorgnan/galaxy_vivisection/results/plots/scaling_relations/mbh_vs_me
-dian_logn.eps> (./mbhn.bbl [1
+Overfull \hbox (21.84341pt too wide) in paragraph at lines 139--189
+ [][] 
+ []
 
 
-]) [2] (./mbhn.aux) ) 
+Overfull \hbox (16.8434pt too wide) in paragraph at lines 194--240
+ [][] 
+ []
+
+(./mbhn.bbl) [1
+
+
+
+] [2] [3] (./mbhn.aux) ) 
 Here is how much of TeX's memory you used:
- 2577 strings out of 493489
- 29530 string characters out of 3141349
- 89294 words of memory out of 3000000
- 5846 multiletter control sequences out of 15000+200000
- 18121 words of font info for 72 fonts, out of 3000000 for 9000
+ 2559 strings out of 493489
+ 28987 string characters out of 3141349
+ 106041 words of memory out of 3000000
+ 5833 multiletter control sequences out of 15000+200000
+ 18422 words of font info for 73 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 32i,5n,26p,232b,247s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 32i,9n,26p,215b,254s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on mbhn.dvi (2 pages, 6904 bytes).
+Output written on mbhn.dvi (3 pages, 10964 bytes).

@@ -144,7 +144,7 @@ def mbh_vs_mass_sph():
 	mass_sph_n1277_old = 2.88*10**10
 	mbh_n1277 = 1.7*10**10
 	ax.scatter([mass_sph_n1277], [mbh_n1277], marker=r'$\star$', s=500, color='red', **scatter_kwargs)
-	ax.scatter([mass_sph_n1277_b], [mbh_n1277], marker=r'$\star$', s=100, color='red', **scatter_kwargs)
+	#ax.scatter([mass_sph_n1277_b], [mbh_n1277], marker=r'$\star$', s=100, color='red', **scatter_kwargs)
 	ax.scatter([mass_sph_n1277_old], [mbh_n1277], marker=r'$\star$', s=500, color='gray', **scatter_kwargs)
 	ax.plot([mass_sph_n1277_old,mass_sph_n1277], [mbh_n1277,mbh_n1277], color='gray', lw=2, ls='--')
 	

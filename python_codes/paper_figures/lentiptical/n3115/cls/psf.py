@@ -17,7 +17,7 @@ def createPsf(Settings):
 #        psfList = [gaussianPsf, moffatPsf]
         psfList = [moffatPsf]
 
-    if (Settings.observation == 'n1271'):
+    if (Settings.observation == 'm1216'):
     
         gaussianPsf = PsfFunction()
         gaussianPsf.name = 'gaussian'
