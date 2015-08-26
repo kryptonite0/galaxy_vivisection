@@ -8,6 +8,7 @@ dbname = '/Users/gsavorgnan/galaxy_vivisection/python_codes/databases/galaxy_viv
 sampletableFileName = '/Users/gsavorgnan/galaxy_vivisection/papers/data_paper/table_sample.tex'
 fitresultstableFileName = '/Users/gsavorgnan/galaxy_vivisection/papers/data_paper/table_fitresults.tex'
 mmsampletableFileName = '/Users/gsavorgnan/galaxy_vivisection/papers/MbhMsph/table_sample.tex'
+mnsampletableFileName = '/Users/gsavorgnan/galaxy_vivisection/papers/MbhN/table_sample.tex'
 
 def putBlankInPlaceOfNone(entry):
         if entry is None:
@@ -147,6 +148,57 @@ def footer_mmpaper_sampletable(label):
 			Four galaxies had their magnitudes overestimated, which are given here as upper limits. '
 		print '\\emph{Column (8)}: $[3.6]-[4.5]$ colour. '
 		print '\\emph{Column (9)}: Bulge stellar mass. } '	
+        print '\\end{center}    '
+        print '\\end{table*}    '
+
+def header_mnpaper_sampletable(caption):
+
+        print '\\begin{table*}                                        '
+        print '\\small                                                '
+        print '\\begin{center}                                        '
+	if caption:
+        	print '\\caption{Galaxy sample.} '
+        print '\\begin{tabular}{llllllrll}                           '
+        print '\\tableline                                                '
+        print '\\multicolumn{1}{l}{{\\bf Galaxy}} &                   '
+        print '\\multicolumn{1}{l}{{\\bf Type}} &                     '
+        print '\\multicolumn{1}{l}{{\\bf Distance}} &                 '
+        print '\\multicolumn{1}{l}{{\\bf $\\bm{M_{\\rm BH}}$}} &  '
+        print '\\multicolumn{1}{l}{{\\bf $\\bm{MAG_{\\rm sph}}$}} &  '
+        print '\\multicolumn{1}{l}{{\\bf $\\bm{n_{\\rm sph}}$}} \\\\  '
+        print '\\multicolumn{1}{l}{} &                                '
+        print '\\multicolumn{1}{l}{} &                                '
+        print '\\multicolumn{1}{l}{[Mpc]} &                           '
+        print '\\multicolumn{1}{l}{$[10^8~\\rm M_{\odot}]$} &         '
+        print '\\multicolumn{1}{l}{[mag]} &                                '
+        print '\\multicolumn{1}{l}{} \\\\                             '
+        print '\\multicolumn{1}{l}{(1)} &                             '
+        print '\\multicolumn{1}{l}{(2)} &                             '
+        print '\\multicolumn{1}{l}{(3)} &                             '
+        print '\\multicolumn{1}{l}{(4)} &                             '
+        print '\\multicolumn{1}{l}{(5)} &                             '
+        print '\\multicolumn{1}{l}{(6)} \\\\  '
+        print '\\tableline                                                '
+
+def footer_mnpaper_sampletable(label):
+
+        print '\\tableline         '
+        print '\\end{tabular}   '
+        if label:
+		print '\\label{tab:sample} '
+	if not label:
+		print '\\tablecomments{\\emph{Column (1)}: Galaxy name. '
+		print '\\emph{Column (2)}: Morphological type (E=elliptical, S0=lenticular, Sp=spiral, merger). \
+		       The morphological classification of four galaxies is uncertain (E/S0 or S0/Sp). \
+		       The presence of a bar is indicated. '
+        	print '\\emph{Column (3)}: Distance. '
+        	print '\\emph{Column (4)}: Black hole mass. '
+		print '\\emph{Column (5)}: Absolute $3.6\\rm~\mu m$ spheroid magnitude. \ '
+		print '\\emph{Column (6)}: Spheroid major-axis ' + r'S\'ersic ' + 'index. \ '
+		print 'Spheroid magnitudes and ' + r'S\'ersic ' + 'indices come from our state-of-the-art multicomponent galaxy decompositions (\\emph{Paper I}), \
+		       which include bulges, disks, bars, spiral arms, rings, haloes, extended or unresolved nuclear sources and partially depleted cores, \
+                       and that -- for the first time -- were checked to be consistent with the galaxy kinematics. \
+		       The uncertainties were estimated with a method that takes into account systematic errors, which are typically not considered by popular 2D fitting codes. } '	
         print '\\end{center}    '
         print '\\end{table*}    '
 
@@ -596,12 +648,103 @@ def mmpaper_sampletable():
         #("{0:.2f}".format(b))
         #("{0:.2f}".format(b))
 
+def mnpaper_sampletable():
+	connection = sql3.connect(dbname)
+        cur = connection.cursor()
+
+        cur.execute('''SELECT anc.gal_id, anc.simplemorphtype, anc.core, anc.core_inferred_from_sigma, anc.distance,  
+		anc.mass_BH, anc.perr_mass_BH, anc.merr_mass_BH, 
+		physres.mag_sph_eq_moffat_comb, 
+		errV.perr_mag_sph, errV.merr_mag_sph, 
+		physres.log_n_maj_moffat_comb, 
+		errV.perr_log_n, errV.merr_log_n, 
+		anc.bar
+		FROM Ancillary AS anc 
+		JOIN OneDFitResultsPhysicalUnits AS physres ON anc.gal_id = physres.gal_id 
+		JOIN ErrorsVote as errV ON anc.gal_id = errV.gal_id 
+		WHERE anc.fit1D_done = 1
+                ORDER BY anc.gal_id;''')
+                
+        datat = cur.fetchall()
+        data= np.asarray(datat).transpose()
+	
+        shape = np.shape(data)
+        columns = shape[0]
+        rows = shape[1]
+        #for i in range(columns):
+        #        for j in range(rows):
+        #                data[i,j] = putBlankInPlaceOfNone(data[i,j])
+        
+        gal_name = data[0]
+	morphtype = data[1]
+        core = data[2]
+        core[core=='1'] = 'yes'
+        core[core=='0'] = 'no'
+        core_inferred_from_sigma = data[3]
+        core_inferred_from_sigma[core_inferred_from_sigma=='1'] = '?'
+        core_inferred_from_sigma[core_inferred_from_sigma=='0'] = ' '
+        distance = data[4].astype(np.float)
+        mass_BH = data[5].astype(np.float)/10**8
+        perr_mass_BH = data[6].astype(np.float)/10**8
+        merr_mass_BH = data[7].astype(np.float)/10**8
+	mag_sph = data[8].astype(np.float)
+	perr_mag_sph = data[9].astype(np.float)
+	merr_mag_sph = data[10].astype(np.float)
+	log_n = data[11].astype(np.float)
+	n = 10**log_n
+	perr_log_n = data[12].astype(np.float)
+	merr_log_n = data[13].astype(np.float)
+	perr_n = (10**perr_log_n - 1)*n
+	merr_n = (10**(-perr_log_n) - 1)*(-n)
+	bar = data[14].astype(np.int)
+				
+	mnsampletableFile = open(mnsampletableFileName, 'w')
+        sys.stdout = mnsampletableFile
+        
+        header_mnpaper_sampletable(True)
+        for i in range(rows):
+		if gal_name[i] == 'n4697':
+			footer_mnpaper_sampletable(True)
+			print
+			header_mnpaper_sampletable(False)
+                gal_name[i] = gal_name[i].replace('circinus', 'Circinus ')
+                if gal_name[i][0] == 'n':
+                        gal_name[i] = gal_name[i].replace('n', 'NGC ')
+                if gal_name[i][0] == 'i':
+                        gal_name[i] = gal_name[i].replace('ic', 'IC ')
+                if gal_name[i][0] == 'u':
+                        gal_name[i] = gal_name[i].replace('ugc', 'UGC ')
+                if gal_name[i][0] == 'm':
+                        gal_name[i] = gal_name[i].replace('m', 'M')
+                if gal_name[i][-1] == 'a':
+                        gal_name[i] = gal_name[i].replace('a', 'A')
+                gal_name[i] = gal_name[i].replace('exp', '')    
+                print gal_name[i], ' & ', 
+		if bar[i] == 0 or morphtype[i] == 'merger':
+			print morphtype[i], ' & ', 
+		elif bar[i] == 1:
+			print morphtype[i] + ' (bar)', ' & ', 	
+                #print str(core[i])+str(core_inferred_from_sigma[i]), ' & ',  
+                print '$'+str("{0:.1f}".format(distance[i]))+'$', ' & ', 
+                print_bhmass(mass_BH[i],merr_mass_BH[i],perr_mass_BH[i])
+		print '$' + str("{0:.2f}".format(mag_sph[i])) + '_{-' + str("{0:.2f}".format(merr_mag_sph[i])) + '}^{+' + str("{0:.2f}".format(perr_mag_sph[i])) + '}$ ', ' & ',
+		print '$' + str("{0:.1f}".format(n[i])) + '_{-' + str("{0:.1f}".format(merr_n[i])) + '}^{+' + str("{0:.1f}".format(perr_n[i])) + '}$ ', ' & ',
+		print ' \\\\ '
+        footer_mnpaper_sampletable(False)
+	
+        mnsampletableFile.close() 
+        terminal = sys.stdout
+        #("{0:.2f}".format(b))
+        #("{0:.2f}".format(b))
+
+
 
 
         
 def main():
         #datapaper_sampletable()
 	#datapaper_fitresultstable()
-	mmpaper_sampletable()
+	#mmpaper_sampletable()
+	mnpaper_sampletable()
 
 main()

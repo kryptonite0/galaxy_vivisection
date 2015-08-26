@@ -1,0 +1,69 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: ellicular.aux
+The style file: mn2e.bst
+Database file #1: /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+Repeated entry---line 1139 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+ : @article{rixwhite1992
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2047 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+ : @article{scorzabender1995
+ :                          ,
+I'm skipping whatever remains of this entry
+Name 1 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
+while executing---line 1184 of file mn2e.bst
+Name 2 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
+while executing---line 1184 of file mn2e.bst
+Name 1 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
+while executing---line 1184 of file mn2e.bst
+Name 1 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
+while executing---line 1184 of file mn2e.bst
+Name 2 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
+while executing---line 1184 of file mn2e.bst
+Name 1 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
+while executing---line 1260 of file mn2e.bst
+Name 2 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
+while executing---line 1260 of file mn2e.bst
+You've used 28 entries,
+            2601 wiz_defined-function locations,
+            708 strings with 8710 characters,
+and the built_in function-call counts, 13174 in all, are:
+= -- 1266
+> -- 972
+< -- 18
++ -- 332
+- -- 332
+* -- 1263
+:= -- 2406
+add.period$ -- 0
+call.type$ -- 28
+change.case$ -- 224
+chr.to.int$ -- 28
+cite$ -- 28
+duplicate$ -- 360
+empty$ -- 526
+format.name$ -- 374
+if$ -- 2437
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 28
+newline$ -- 91
+num.names$ -- 118
+pop$ -- 172
+preamble$ -- 1
+purify$ -- 248
+quote$ -- 0
+skip$ -- 448
+stack$ -- 0
+substring$ -- 636
+swap$ -- 66
+text.length$ -- 6
+text.prefix$ -- 108
+top$ -- 0
+type$ -- 252
+warning$ -- 0
+while$ -- 117
+width$ -- 0
+write$ -- 288
+(There were 9 error messages)
