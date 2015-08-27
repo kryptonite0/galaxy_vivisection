@@ -3,14 +3,15 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: ellicular.aux
 The style file: mn2e.bst
 Database file #1: /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
-Repeated entry---line 1139 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+Repeated entry---line 1186 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  : @article{rixwhite1992
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2047 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+Repeated entry---line 2094 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  : @article{scorzabender1995
  :                          ,
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "savorgnan2015"
 Name 1 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
 while executing---line 1184 of file mn2e.bst
 Name 2 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
@@ -25,45 +26,45 @@ Name 1 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry
 while executing---line 1260 of file mn2e.bst
 Name 2 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
 while executing---line 1260 of file mn2e.bst
-You've used 28 entries,
+You've used 34 entries,
             2601 wiz_defined-function locations,
-            708 strings with 8710 characters,
-and the built_in function-call counts, 13174 in all, are:
-= -- 1266
-> -- 972
-< -- 18
-+ -- 332
-- -- 332
-* -- 1263
-:= -- 2406
+            742 strings with 9771 characters,
+and the built_in function-call counts, 15423 in all, are:
+= -- 1485
+> -- 1098
+< -- 26
++ -- 374
+- -- 373
+* -- 1461
+:= -- 2823
 add.period$ -- 0
-call.type$ -- 28
-change.case$ -- 224
-chr.to.int$ -- 28
-cite$ -- 28
-duplicate$ -- 360
-empty$ -- 526
-format.name$ -- 374
-if$ -- 2437
-int.to.chr$ -- 1
+call.type$ -- 34
+change.case$ -- 262
+chr.to.int$ -- 33
+cite$ -- 34
+duplicate$ -- 436
+empty$ -- 636
+format.name$ -- 425
+if$ -- 2855
+int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 28
-newline$ -- 91
-num.names$ -- 118
-pop$ -- 172
+missing$ -- 34
+newline$ -- 110
+num.names$ -- 144
+pop$ -- 198
 preamble$ -- 1
-purify$ -- 248
+purify$ -- 291
 quote$ -- 0
-skip$ -- 448
+skip$ -- 535
 stack$ -- 0
-substring$ -- 636
-swap$ -- 66
-text.length$ -- 6
-text.prefix$ -- 108
+substring$ -- 748
+swap$ -- 80
+text.length$ -- 8
+text.prefix$ -- 121
 top$ -- 0
-type$ -- 252
+type$ -- 306
 warning$ -- 0
-while$ -- 117
+while$ -- 141
 width$ -- 0
-write$ -- 288
+write$ -- 349
 (There were 9 error messages)

@@ -1,5 +1,4 @@
-latex ellicular
+pdflatex ellicular
 bibtex ellicular
-latex ellicular
-latex ellicular
-dvipdfm ellicular.dvi
+pdflatex ellicular
+pdflatex ellicular

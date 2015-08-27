@@ -5,6 +5,13 @@
 {Allen} P.~D.,  {Driver} S.~P.,  {Graham} A.~W.,  {Cameron} E.,  {Liske} J.,
   {de Propris} R.,  2006, \mnras, 371, 2
 
+\bibitem[\protect\citeauthoryear{{Arnold}, {Romanowsky}, {Brodie}, {Chomiuk},
+  {Spitler}, {Strader}, {Benson} \& {Forbes}}{{Arnold}
+  et~al.}{2011}]{arnold2011n3115}
+{Arnold} J.~A.,  {Romanowsky} A.~J.,  {Brodie} J.~P.,  {Chomiuk} L.,  {Spitler}
+  L.~R.,  {Strader} J.,  {Benson} A.~J.,    {Forbes} D.~A.,  2011, \apjl, 736,
+  L26
+
 \bibitem[\protect\citeauthoryear{{Arnold}, {Romanowsky}, {Brodie}, {Forbes},
   {Strader}, {Spitler}, {Foster}, {Blom}, {Kartha}, {Pastorello}, {Pota},
   {Usher} \& {Woodley}}{{Arnold} et~al.}{2014}]{arnold2014}
@@ -38,6 +45,15 @@ pp 47--60
 {Ceverino} D.,  {Dekel} A.,  {Mandelker} N.,  {Bournaud} F.,  {Burkert} A.,
   {Genzel} R.,    {Primack} J.,  2012, \mnras, 420, 3490
 
+\bibitem[\protect\citeauthoryear{{Combes}}{{Combes}}{2014a}]{combes2014arX}
+{Combes} F.,  2014a, ArXiv e-prints
+
+\bibitem[\protect\citeauthoryear{{Combes}}{{Combes}}{2014b}]{combes2014pro}
+{Combes} F.,  2014b, in {Seigar} M.~S.,  {Treuthardt} P.,  eds, Structure and
+  Dynamics of Disk Galaxies Vol.~480 of Astronomical Society of the Pacific
+  Conference Series, {Gas Accretion in Disk Galaxies}.
+p.~211
+
 \bibitem[\protect\citeauthoryear{{Conselice}, {Mortlock} \&
   {Bluck}}{{Conselice} et~al.}{2012}]{conselice2012}
 {Conselice} C.,  {Mortlock} A.,    {Bluck} A.~F.~L.,  2012, in American
@@ -52,10 +68,6 @@ p. 107.04
 {Dekel} A.,  {Birnboim} Y.,  {Engel} G.,  {Freundlich} J.,  {Goerdt} T.,
   {Mumcuoglu} M.,  {Neistein} E.,  {Pichon} C.,  {Teyssier} R.,    {Zinger} E.,
    2009, \nat, 457, 451
-
-\bibitem[\protect\citeauthoryear{{Dekel}, {Sari} \& {Ceverino}}{{Dekel}
-  et~al.}{2009}]{dekel2009apj}
-{Dekel} A.,  {Sari} R.,    {Ceverino} D.,  2009, \apj, 703, 785
 
 \bibitem[\protect\citeauthoryear{{D'Onofrio}, {Zaggia}, {Longo}, {Caon} \&
   {Capaccioli}}{{D'Onofrio} et~al.}{1995}]{donofrio1995}
@@ -79,9 +91,20 @@ p. 107.04
 {Head} J.~T.~C.~G.,  {Lucey} J.~R.,  {Hudson} M.~J.,    {Smith} R.~J.,  2014,
   \mnras, 440, 1690
 
+\bibitem[\protect\citeauthoryear{{Jedrzejewski}}{{Jedrzejewski}}{1987}]{taskellipse}
+{Jedrzejewski} R.~I.,  1987, \mnras, 226, 747
+
 \bibitem[\protect\citeauthoryear{{Khochfar} \& {Silk}}{{Khochfar} \&
   {Silk}}{2006}]{khochfarsilk2006}
 {Khochfar} S.,  {Silk} J.,  2006, \apjl, 648, L21
+
+\bibitem[\protect\citeauthoryear{{Kormendy} \& {Bender}}{{Kormendy} \&
+  {Bender}}{2012}]{kormendybender2012}
+{Kormendy} J.,  {Bender} R.,  2012, \apjs, 198, 2
+
+\bibitem[\protect\citeauthoryear{{Krajnovi{\'c}} \& {et al.}}{{Krajnovi{\'c}}
+  \& {et al.}}{2013}]{krajnovic2013etal}
+{Krajnovi{\'c}} D.,  {et al.} 2013, \mnras, 432, 1768
 
 \bibitem[\protect\citeauthoryear{{Ledo}, {Sarzi}, {Dotti}, {Khochfar} \&
   {Morelli}}{{Ledo} et~al.}{2010}]{ledo2010}
@@ -95,6 +118,9 @@ p. 107.04
   eds, Highlights of Spanish Astrophysics VIII {Deconstructing bulges in
   lenticular galaxies using CALIFA}.
 pp 268--273
+
+\bibitem[\protect\citeauthoryear{{Moffat}}{{Moffat}}{1969}]{moffat1969}
+{Moffat} A.~F.~J.,  1969, \aap, 3, 455
 
 \bibitem[\protect\citeauthoryear{{Nieto}, {Bender}, {Arnaud} \&
   {Surma}}{{Nieto} et~al.}{1991}]{nieto1991}
