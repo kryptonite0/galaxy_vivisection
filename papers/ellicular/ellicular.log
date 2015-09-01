@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  27 AUG 2015 22:08
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  1 SEP 2015 11:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -163,11 +163,7 @@ LaTeX Info: Redefining \] on input line 2667.
 LaTeX Warning: Unused global option(s):
     [article].
 
-(./ellicular.aux
-
-LaTeX Warning: Label `fig:m1216' multiply defined.
-
-)
+(./ellicular.aux)
 \openout1 = `ellicular.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
@@ -182,7 +178,8 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 92.
 LaTeX Font Info:    ... okay on input line 92.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 92.
 LaTeX Font Info:    ... okay on input line 92.
- (/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
+
+(/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count107
 \scratchdimen=\dimen116
@@ -265,179 +262,183 @@ Overfull \hbox (3.07225pt too wide) in paragraph at lines 94--94
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 176.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 200.
 
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 176.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 200.
  [1{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
 Package epstopdf Info: Source file: <images/discmodel.eps>
-(epstopdf)                    date: 2015-08-27 09:27:37
+(epstopdf)                    date: 2015-08-26 15:17:21
 (epstopdf)                    size: 12462382 bytes
 (epstopdf)             Output file: <images/discmodel-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-08-27 10:22:46
+(epstopdf)                    date: 2015-08-28 11:02:17
 (epstopdf)                    size: 249849 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/discmodel-eps-conve
 rted-to.pdf images/discmodel.eps>
-(epstopdf)             \includegraphics on input line 179.
+(epstopdf)             \includegraphics on input line 203.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/discmodel-eps-converted-to.pdf, id=22, 1583.9175pt x 1303.87125pt>
+<images/discmodel-eps-converted-to.pdf, id=20, 1583.9175pt x 1303.87125pt>
 File: images/discmodel-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/discmodel-eps-converted-to.pdf>
 Package pdftex.def Info: images/discmodel-eps-converted-to.pdf used on input li
-ne 179.
+ne 203.
 (pdftex.def)             Requested size: 240.0pt x 197.56178pt.
- [2 <./images/discmodel-eps-converted-to.pdf>] <images/n3115_image.jpeg, id=33,
- 906.38625pt x 900.36375pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2 <./images/discmodel-eps-converted-to.pdf>]
+Underfull \hbox (badness 1062) in paragraph at lines 291--299
+\OT1/cmr/m/n/9 Our mod-els with an intermediate-sized disc em-bed-ded
+ []
+
+<images/n3115_image.jpeg, id=32, 906.38625pt x 900.36375pt>
 File: images/n3115_image.jpeg Graphic file (type jpg)
 
 <use images/n3115_image.jpeg>
-Package pdftex.def Info: images/n3115_image.jpeg used on input line 255.
+Package pdftex.def Info: images/n3115_image.jpeg used on input line 303.
 (pdftex.def)             Requested size: 117.60132pt x 116.81784pt.
 
-<images/n3115_unsharp.jpeg, id=34, 906.38625pt x 900.36375pt>
+<images/n3115_unsharp.jpeg, id=33, 906.38625pt x 900.36375pt>
 File: images/n3115_unsharp.jpeg Graphic file (type jpg)
 
 <use images/n3115_unsharp.jpeg>
-Package pdftex.def Info: images/n3115_unsharp.jpeg used on input line 256.
+Package pdftex.def Info: images/n3115_unsharp.jpeg used on input line 304.
 (pdftex.def)             Requested size: 117.60132pt x 116.81784pt.
 
-<images/n3115_decomposition.pdf, id=35, 278.74806pt x 261.40964pt>
+<images/n3115_decomposition.pdf, id=34, 278.74806pt x 261.40964pt>
 File: images/n3115_decomposition.pdf Graphic file (type pdf)
 
 <use images/n3115_decomposition.pdf>
-Package pdftex.def Info: images/n3115_decomposition.pdf used on input line 257.
+Package pdftex.def Info: images/n3115_decomposition.pdf used on input line 305.
 
 (pdftex.def)             Requested size: 252.00073pt x 236.33548pt.
 
-Overfull \hbox (12.00073pt too wide) in paragraph at lines 257--258
+Overfull \hbox (12.00073pt too wide) in paragraph at lines 305--317
  [][] 
  []
 
-<images/mrk1216_image.jpeg, id=36, 871.255pt x 735.74875pt>
+<images/n1332_image.jpeg, id=35, 639.38875pt x 657.45625pt>
+File: images/n1332_image.jpeg Graphic file (type jpg)
+
+<use images/n1332_image.jpeg>
+Package pdftex.def Info: images/n1332_image.jpeg used on input line 324.
+(pdftex.def)             Requested size: 117.60132pt x 120.91522pt.
+
+<images/n1332_unsharp.jpeg, id=36, 639.38875pt x 657.45625pt>
+File: images/n1332_unsharp.jpeg Graphic file (type jpg)
+
+<use images/n1332_unsharp.jpeg>
+Package pdftex.def Info: images/n1332_unsharp.jpeg used on input line 325.
+(pdftex.def)             Requested size: 117.60132pt x 120.91522pt.
+
+<images/n1332_decomposition.pdf, id=37, 266.7446pt x 262.74342pt>
+File: images/n1332_decomposition.pdf Graphic file (type pdf)
+
+<use images/n1332_decomposition.pdf>
+Package pdftex.def Info: images/n1332_decomposition.pdf used on input line 326.
+
+(pdftex.def)             Requested size: 247.1997pt x 243.4989pt.
+
+Overfull \hbox (7.1997pt too wide) in paragraph at lines 326--340
+ [][] 
+ []
+
+<images/mrk1216_image.jpeg, id=38, 871.255pt x 735.74875pt>
 File: images/mrk1216_image.jpeg Graphic file (type jpg)
 
 <use images/mrk1216_image.jpeg>
-Package pdftex.def Info: images/mrk1216_image.jpeg used on input line 265.
+Package pdftex.def Info: images/mrk1216_image.jpeg used on input line 347.
 (pdftex.def)             Requested size: 117.60132pt x 99.31056pt.
 
-<images/mrk1216_unsharp.jpeg, id=37, 871.255pt x 735.74875pt>
+<images/mrk1216_unsharp.jpeg, id=39, 871.255pt x 735.74875pt>
 File: images/mrk1216_unsharp.jpeg Graphic file (type jpg)
 
 <use images/mrk1216_unsharp.jpeg>
-Package pdftex.def Info: images/mrk1216_unsharp.jpeg used on input line 266.
+Package pdftex.def Info: images/mrk1216_unsharp.jpeg used on input line 348.
 (pdftex.def)             Requested size: 117.60132pt x 99.31056pt.
 
-<images/mrk1216_decomposition.pdf, id=38, 278.08127pt x 268.74512pt>
+<images/mrk1216_decomposition.pdf, id=40, 278.08127pt x 268.74512pt>
 File: images/mrk1216_decomposition.pdf Graphic file (type pdf)
 
 <use images/mrk1216_decomposition.pdf>
-Package pdftex.def Info: images/mrk1216_decomposition.pdf used on input line 26
-7.
+Package pdftex.def Info: images/mrk1216_decomposition.pdf used on input line 34
+9.
 (pdftex.def)             Requested size: 252.00073pt x 243.54144pt.
 
-Overfull \hbox (12.00073pt too wide) in paragraph at lines 267--268
+Overfull \hbox (12.00073pt too wide) in paragraph at lines 349--362
  [][] 
  []
 
-<images/n1271_image.png, id=39, 517.935pt x 513.92pt>
-File: images/n1271_image.png Graphic file (type png)
-
-<use images/n1271_image.png>
-Package pdftex.def Info: images/n1271_image.png used on input line 275.
-(pdftex.def)             Requested size: 117.60132pt x 116.68564pt.
-
-<images/n1271_unsharp.png, id=40, 516.93124pt x 517.935pt>
-File: images/n1271_unsharp.png Graphic file (type png)
-
-<use images/n1271_unsharp.png>
-Package pdftex.def Info: images/n1271_unsharp.png used on input line 276.
-(pdftex.def)             Requested size: 117.60132pt x 117.82643pt.
-
-<images/n1271_decomposition.pdf, id=41, 273.638pt x 261.67712pt>
-File: images/n1271_decomposition.pdf Graphic file (type pdf)
-
-<use images/n1271_decomposition.pdf>
-Package pdftex.def Info: images/n1271_decomposition.pdf used on input line 277.
-
-(pdftex.def)             Requested size: 252.00073pt x 240.99342pt.
-
-Overfull \hbox (12.00073pt too wide) in paragraph at lines 277--278
- [][] 
+[3]
+Underfull \hbox (badness 1127) in paragraph at lines 402--445
+\OT1/cmr/m/n/9 galax-ies can im-pact galaxy scal-ing re-la-tions. Re-cently,
  []
 
-
-Package natbib Warning: Citation `savorgnan2015' on page 3 undefined on input l
-ine 292.
-
-
-Package natbib Warning: Citation `savorgnan2015' on page 3 undefined on input l
-ine 298.
-
-[3 <./images/n3115_image.jpeg> <./images/n3115_unsharp.jpeg> <./images/n3115_de
-composition.pdf> <./images/mrk1216_image.jpeg> <./images/mrk1216_unsharp.jpeg> 
-<./images/mrk1216_decomposition.pdf>]
-<images/mm.pdf, id=64, 578.16pt x 433.62pt>
+[4 <./images/n3115_image.jpeg> <./images/n3115_unsharp.jpeg> <./images/n3115_de
+composition.pdf> <./images/n1332_image.jpeg> <./images/n1332_unsharp.jpeg> <./i
+mages/n1332_decomposition.pdf>] [5 <./images/mrk1216_image.jpeg> <./images/mrk1
+216_unsharp.jpeg> <./images/mrk1216_decomposition.pdf>]
+<images/mm.pdf, id=79, 578.16pt x 433.62pt>
 File: images/mm.pdf Graphic file (type pdf)
  <use images/mm.pdf>
-Package pdftex.def Info: images/mm.pdf used on input line 345.
+Package pdftex.def Info: images/mm.pdf used on input line 494.
 (pdftex.def)             Requested size: 240.0pt x 179.99525pt.
 
-(./ellicular.bbl [4 <./images/n1271_image.png> <./images/n1271_unsharp.png> <./
-images/n1271_decomposition.pdf> <./images/mm.pdf>]) [5]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Package natbib Warning: There were undefined citations.
 
-(./ellicular.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+(./ellicular.bbl [6 <./images/mm.pdf>]) [7] (./ellicular.aux) ) 
 Here is how much of TeX's memory you used:
- 3043 strings out of 493488
- 40322 string characters out of 3141326
- 110764 words of memory out of 3000000
- 6287 multiletter control sequences out of 15000+200000
+ 3100 strings out of 493488
+ 41398 string characters out of 3141326
+ 119883 words of memory out of 3000000
+ 6342 multiletter control sequences out of 15000+200000
  18432 words of font info for 66 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,16n,34p,973b,326s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></
-usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></us
-r/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr
-/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/
-local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/lo
-cal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loca
-l/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/
-texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/te
-xlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texl
-ive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texliv
-e/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2
-012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2012
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2012/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2012/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/local/texlive/2012/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2012/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2012/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2012/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2012/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2012/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2012/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2012/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on ellicular.pdf (5 pages, 2752569 bytes).
+ 38i,16n,34p,1123b,326s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texl
+ive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texli
+ve/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texliv
+e/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/
+2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/20
+12/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/201
+2/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2012
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2012/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2012/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2012/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2012/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2012/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2012/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2012/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2012/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2012/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmss17.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmti12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmti8.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmti9.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmtt8.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmtt9.pfb>
+Output written on ellicular.pdf (7 pages, 2904717 bytes).
 PDF statistics:
- 225 PDF objects out of 1000 (max. 8388607)
- 124 compressed objects within 2 object streams
+ 240 PDF objects out of 1000 (max. 8388607)
+ 133 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

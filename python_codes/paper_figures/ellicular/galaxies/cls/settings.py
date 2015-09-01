@@ -22,9 +22,9 @@ class Settings:
     smoothing = False
     #smoothing = True
     
-    #observation = 'spitzer3.6um'
+    observation = 'spitzer3.6um'
     #observation = 'm1216' 
-    observation = 'n1271'
+    #observation = 'n1271'
         
     if (observation == 'n1277'):
         pxlToArcsec = 0.05

@@ -27,6 +27,14 @@
 \bibitem[\protect\citeauthoryear{{Bender}}{{Bender}}{1990}]{bender1990}
 {Bender} R.,  1990, \aap, 229, 441
 
+\bibitem[\protect\citeauthoryear{{Bogd{\'a}n}, {Forman}, {Zhuravleva}, {Mihos},
+  {Kraft}, {Harding}, {Guo}, {Li}, {Churazov}, {Vikhlinin}, {Nulsen},
+  {Schindler} \& {Jones}}{{Bogd{\'a}n} et~al.}{2012}]{bogdan2012}
+{Bogd{\'a}n} {\'A}.,  {Forman} W.~R.,  {Zhuravleva} I.,  {Mihos} J.~C.,
+  {Kraft} R.~P.,  {Harding} P.,  {Guo} Q.,  {Li} Z.,  {Churazov} E.,
+  {Vikhlinin} A.,  {Nulsen} P.~E.~J.,  {Schindler} S.,    {Jones} C.,  2012,
+  \apj, 753, 140
+
 \bibitem[\protect\citeauthoryear{{Capaccioli}}{{Capaccioli}}{1987}]{capaccioli1987}
 {Capaccioli} M.,  1987, in {de Zeeuw} P.~T.,  ed., Structure and Dynamics of
   Elliptical Galaxies Vol.~127 of IAU Symposium, {Distribution of light - Outer
@@ -45,6 +53,9 @@ pp 47--60
 {Ceverino} D.,  {Dekel} A.,  {Mandelker} N.,  {Bournaud} F.,  {Burkert} A.,
   {Genzel} R.,    {Primack} J.,  2012, \mnras, 420, 3490
 
+\bibitem[\protect\citeauthoryear{{Ciambur}}{{Ciambur}}{2015}]{ciambur2015}
+{Ciambur} B.~C.,  2015, ArXiv e-prints
+
 \bibitem[\protect\citeauthoryear{{Combes}}{{Combes}}{2014a}]{combes2014arX}
 {Combes} F.,  2014a, ArXiv e-prints
 
@@ -62,6 +73,15 @@ p.~211
   Galaxies from the GOODS NICMOS Survey}.
 p. 107.04
 
+\bibitem[\protect\citeauthoryear{{Damjanov}, {McCarthy}, {Abraham},
+  {Glazebrook}, {Yan}, {Mentuch}, {Le Borgne}, {Savaglio}, {Crampton},
+  {Murowinski}, {Juneau}, {Carlberg}, {J{\o}rgensen}, {Roth}, {Chen} \&
+  {Marzke}}{{Damjanov} et~al.}{2009}]{damjanov2009}
+{Damjanov} I.,  {McCarthy} P.~J.,  {Abraham} R.~G.,  {Glazebrook} K.,  {Yan}
+  H.,  {Mentuch} E.,  {Le Borgne} D.,  {Savaglio} S.,  {Crampton} D.,
+  {Murowinski} R.,  {Juneau} S.,  {Carlberg} R.~G.,  {J{\o}rgensen} I.,  {Roth}
+  K.,  {Chen} H.-W.,    {Marzke} R.~O.,  2009, \apj, 695, 101
+
 \bibitem[\protect\citeauthoryear{{Dekel}, {Birnboim}, {Engel}, {Freundlich},
   {Goerdt}, {Mumcuoglu}, {Neistein}, {Pichon}, {Teyssier} \& {Zinger}}{{Dekel}
   et~al.}{2009}]{dekel2009nat}
@@ -74,17 +94,30 @@ p. 107.04
 {D'Onofrio} M.,  {Zaggia} S.~R.,  {Longo} G.,  {Caon} N.,    {Capaccioli} M.,
   1995, \aap, 296, 319
 
-\bibitem[\protect\citeauthoryear{{Emsellem}, {} \& {E. et al.}}{{Emsellem}
+\bibitem[\protect\citeauthoryear{{Emsellem}, {} \& {et al.}}{{Emsellem}
   et~al.}{2011}]{atlas3dIII-MNRAS}
-{Emsellem} {}   {E. et al.} 2011, \mnras, 414, 888
+{Emsellem} E.,  {}   {et al.} 2011, \mnras, 414, 888
+
+\bibitem[\protect\citeauthoryear{{Fazio}, {} \& {et al.}}{{Fazio}
+  et~al.}{2004}]{fazio2004IRAC-MNRAS}
+{Fazio} G.~G.,  {}   {et al.} 2004, \apjs, 154, 10
 
 \bibitem[\protect\citeauthoryear{{Gadotti}}{{Gadotti}}{2008}]{gadotti2008}
 {Gadotti} D.~A.,  2008, \mnras, 384, 420
+
+\bibitem[\protect\citeauthoryear{{Gavazzi}, {Boselli}, {Donati}, {Franzetti} \&
+  {Scodeggio}}{{Gavazzi} et~al.}{2003}]{goldmine}
+{Gavazzi} G.,  {Boselli} A.,  {Donati} A.,  {Franzetti} P.,    {Scodeggio} M.,
+  2003, \aap, 400, 451
 
 \bibitem[\protect\citeauthoryear{{Graham}, {Colless}, {Busarello}, {Zaggia} \&
   {Longo}}{{Graham} et~al.}{1998}]{graham1998fornax}
 {Graham} A.~W.,  {Colless} M.~M.,  {Busarello} G.,  {Zaggia} S.,    {Longo} G.,
    1998, \aaps, 133, 325
+
+\bibitem[\protect\citeauthoryear{{Graham}, {Dullo} \& {Savorgnan}}{{Graham}
+  et~al.}{2015}]{GDS2015}
+{Graham} A.~W.,  {Dullo} B.~T.,    {Savorgnan} G.~A.~D.,  2015, \apj, 804, 32
 
 \bibitem[\protect\citeauthoryear{{Head}, {Lucey}, {Hudson} \& {Smith}}{{Head}
   et~al.}{2014}]{head2014}
@@ -106,10 +139,29 @@ p. 107.04
   \& {et al.}}{2013}]{krajnovic2013etal}
 {Krajnovi{\'c}} D.,  {et al.} 2013, \mnras, 432, 1768
 
+\bibitem[\protect\citeauthoryear{{L{\"a}sker}, {Ferrarese} \& {van de
+  Ven}}{{L{\"a}sker} et~al.}{2014}]{lasker2014data}
+{L{\"a}sker} R.,  {Ferrarese} L.,    {van de Ven} G.,  2014, \apj, 780, 69
+
 \bibitem[\protect\citeauthoryear{{Ledo}, {Sarzi}, {Dotti}, {Khochfar} \&
   {Morelli}}{{Ledo} et~al.}{2010}]{ledo2010}
 {Ledo} H.~R.,  {Sarzi} M.,  {Dotti} M.,  {Khochfar} S.,    {Morelli} L.,  2010,
   \mnras, 407, 969
+
+\bibitem[\protect\citeauthoryear{{Marconi} \& {Hunt}}{{Marconi} \&
+  {Hunt}}{2003}]{marconihunt2003}
+{Marconi} A.,  {Hunt} L.~K.,  2003, \apjl, 589, L21
+
+\bibitem[\protect\citeauthoryear{{Mart{\'{\i}}n-Navarro}, {La Barbera},
+  {Vazdekis}, {Ferr{\'e}-Mateu}, {Trujillo} \&
+  {Beasley}}{{Mart{\'{\i}}n-Navarro} et~al.}{2015}]{martinnavarro2015}
+{Mart{\'{\i}}n-Navarro} I.,  {La Barbera} F.,  {Vazdekis} A.,
+  {Ferr{\'e}-Mateu} A.,  {Trujillo} I.,    {Beasley} M.~A.,  2015, \mnras, 451,
+  1081
+
+\bibitem[\protect\citeauthoryear{{Meidt}, {} \& {et al.}}{{Meidt}
+  et~al.}{2014}]{meidt2014-MNRAS}
+{Meidt} S.~E.,  {}   {et al.} 2014, \apj, 788, 144
 
 \bibitem[\protect\citeauthoryear{{M{\'e}ndez-Abreu} \& {CALIFA
   Team}}{{M{\'e}ndez-Abreu} \& {CALIFA Team}}{2015}]{mendezabreu2015}
@@ -125,6 +177,11 @@ pp 268--273
 \bibitem[\protect\citeauthoryear{{Nieto}, {Bender}, {Arnaud} \&
   {Surma}}{{Nieto} et~al.}{1991}]{nieto1991}
 {Nieto} J.-L.,  {Bender} R.,  {Arnaud} J.,    {Surma} P.,  1991, \aap, 244, L25
+
+\bibitem[\protect\citeauthoryear{{Pastrav}, {Popescu}, {Tuffs} \&
+  {Sansom}}{{Pastrav} et~al.}{2013}]{pastrav2013a}
+{Pastrav} B.~A.,  {Popescu} C.~C.,  {Tuffs} R.~J.,    {Sansom} A.~E.,  2013,
+  \aap, 553, A80
 
 \bibitem[\protect\citeauthoryear{{Querejeta}, {Eliche-Moral}, {Tapia},
   {Borlaff}, {Rodr{\'{\i}}guez-P{\'e}rez}, {Zamorano} \& {Gallego}}{{Querejeta}
@@ -146,6 +203,11 @@ pp 268--273
   {White}}{1992}]{rixwhite1992}
 {Rix} H.-W.,  {White} S.~D.~M.,  1992, \mnras, 254, 389
 
+\bibitem[\protect\citeauthoryear{{Rusli}, {Thomas}, {Erwin}, {Saglia}, {Nowak}
+  \& {Bender}}{{Rusli} et~al.}{2011}]{rusli2011}
+{Rusli} S.~P.,  {Thomas} J.,  {Erwin} P.,  {Saglia} R.~P.,  {Nowak} N.,
+  {Bender} R.,  2011, \mnras, 410, 1223
+
 \bibitem[\protect\citeauthoryear{{Scorza}}{{Scorza}}{1998}]{scorza1998}
 {Scorza} C.,  1998, in {Aguilar} A.,  {Carraminana} A.,  eds, IX Latin American
   Regional IAU Meeting, ''Focal Points in Latin American Astronomy'' {Disky
@@ -163,5 +225,36 @@ p.~117
 \bibitem[\protect\citeauthoryear{{Scorza} \& {van den Bosch}}{{Scorza} \& {van
   den Bosch}}{1998}]{scorzavandenbosch1998}
 {Scorza} C.,  {van den Bosch} F.~C.,  1998, \mnras, 300, 469
+
+\bibitem[\protect\citeauthoryear{{S{\'e}rsic}}{{S{\'e}rsic}}{1963}]{sersic1963}
+{S{\'e}rsic} J.~L.,  1963, Boletin de la Asociacion Argentina de Astronomia La
+  Plata Argentina, 6, 41
+
+\bibitem[\protect\citeauthoryear{{van den Bosch}, {Gebhardt}, {G{\"u}ltekin},
+  {van de Ven}, {van der Wel} \& {Walsh}}{{van den Bosch}
+  et~al.}{2012}]{vandenbosch2012}
+{van den Bosch} R.~C.~E.,  {Gebhardt} K.,  {G{\"u}ltekin} K.,  {van de Ven} G.,
+   {van der Wel} A.,    {Walsh} J.~L.,  2012, \nat, 491, 729
+
+\bibitem[\protect\citeauthoryear{{van Dokkum}, {Franx}, {Kriek}, {Holden},
+  {Illingworth}, {Magee}, {Bouwens}, {Marchesini}, {Quadri}, {Rudnick},
+  {Taylor} \& {Toft}}{{van Dokkum} et~al.}{2008}]{vandokkum2008}
+{van Dokkum} P.~G.,  {Franx} M.,  {Kriek} M.,  {Holden} B.,  {Illingworth}
+  G.~D.,  {Magee} D.,  {Bouwens} R.,  {Marchesini} D.,  {Quadri} R.,  {Rudnick}
+  G.,  {Taylor} E.~N.,    {Toft} S.,  2008, \apjl, 677, L5
+
+\bibitem[\protect\citeauthoryear{{Walsh}, {van den Bosch}, {Gebhardt},
+  {Yildirim}, {G{\"u}ltekin}, {Husemann} \& {Richstone}}{{Walsh}
+  et~al.}{2015}]{walsh2015}
+{Walsh} J.~L.,  {van den Bosch} R.~C.~E.,  {Gebhardt} K.,  {Yildirim} A.,
+  {G{\"u}ltekin} K.,  {Husemann} B.,    {Richstone} D.~O.,  2015, \apj, 808,
+  183
+
+\bibitem[\protect\citeauthoryear{{Y{\i}ld{\i}r{\i}m}, {van den Bosch}, {van de
+  Ven}, {Husemann}, {Lyubenova}, {Walsh}, {Gebhardt} \&
+  {G{\"u}ltekin}}{{Y{\i}ld{\i}r{\i}m} et~al.}{2015}]{yildirim2015}
+{Y{\i}ld{\i}r{\i}m} A.,  {van den Bosch} R.~C.~E.,  {van de Ven} G.,
+  {Husemann} B.,  {Lyubenova} M.,  {Walsh} J.~L.,  {Gebhardt} K.,
+  {G{\"u}ltekin} K.,  2015, \mnras, 452, 1792
 
 \end{thebibliography}

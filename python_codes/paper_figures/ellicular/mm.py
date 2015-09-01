@@ -89,7 +89,8 @@ def mbh_vs_mass_sph():
         earlytype = ELL*[0]
 	earlytype[simplemorphtype=='E'] = 1
 	earlytype[simplemorphtype=='S0'] = 1
-	earlytype[simplemorphtype=='E/S0'] = 1
+	#earlytype[simplemorphtype=='E/S0'] = 1
+	earlytype[gal_id=='n4291'] = 0
 	
 	bulge = core*[0]
 	bulge[simplemorphtype=='S0'] = 1
@@ -114,30 +115,27 @@ def mbh_vs_mass_sph():
 			morph_coreList.append('outlier')	
         morph_core = np.asarray(morph_coreList)
 	       
-       #### produce .dat file for paper with Ewan (19 June 2015)
-       #datfileName = '/Users/gsavorgnan/galaxy_vivisection/results/tables/mbh_vs_mass_sph.dat'
-       #datfile = open(datfileName, 'w')
-       #datfile.write('# galaxy    logMassSph	  +err_logMassSph     -err_logMassSph	  average_err_logMassSph     logMassBH     +err_logMassBH    -err_logMassBH    average_err_logMassBH	 core	type   \n')
-       #for a,b,c,d,e,f,g,h,i,j,k in zip(gal_id, log_mass_sph, perr_log_mass_sph, merr_log_mass_sph, 
-       #	0.5*(perr_log_mass_sph + merr_log_mass_sph),
-       #	log_mbh, perr_log_mbh, merr_log_mbh, 0.5*(merr_log_mbh + perr_log_mbh), 
-       #	core, simplemorphtype):
-       #	datfile.write(str(a) + '    ' + str(b) + '    ' + str(c) + '	' + str(d) + '    ')
-       #	datfile.write(str(e) + '    ' + str(f) + '    ' + str(g) + '	' + str(h) + '    ') 
-       #	datfile.write(str(i) + '    ' + str(j) + '    ' + str(k) + '\n')
-       #datfile.close()
-
-        fig, ax = plt.subplots()
+        ##################################################################
+	
+	fig, ax = plt.subplots()
 
 	scatter_kwargs = {"zorder":100}
 	error_kwargs = {"lw":.5, "zorder":0}
 
-	for x0,y0 in zip(mass_sph[simplemorphtype=='E'], mbh[simplemorphtype=='E']):
+	for x0,y0 in zip(mass_sph[earlytype==1], mbh[earlytype==1]):
 		markers.elliptical(ax, 'k', np.log10(x0), np.log10(y0), 0.05)
+	for x0,y0 in zip(mass_sph[gal_id=='n3115'], mbh[gal_id=='n3115']):
+		markers.elliptical(ax, 'green', np.log10(x0), np.log10(y0), 0.05)	
+	for x0,y0 in zip(mass_sph[gal_id=='n4697'], mbh[gal_id=='n4697']):
+		markers.elliptical(ax, 'green', np.log10(x0), np.log10(y0), 0.05)	
+	for x0,y0 in zip(mass_sph[gal_id=='n0821'], mbh[gal_id=='n0821']):
+		markers.elliptical(ax, 'green', np.log10(x0), np.log10(y0), 0.05)	
+	for x0,y0 in zip(mass_sph[gal_id=='n3377'], mbh[gal_id=='n3377']):
+		markers.elliptical(ax, 'green', np.log10(x0), np.log10(y0), 0.05)	
 	
  	#for x0,y0 in zip(mass_sph[simplemorphtype=='E/S0'], mbh[simplemorphtype=='E/S0']):
 	#	markers.lenticular(ax, 'red', np.log10(x0), np.log10(y0), 0.08)
-        ax.scatter(mass_sph[simplemorphtype=='E/S0'], mbh[simplemorphtype=='E/S0'], marker=r'$\star$', s=500, color='red', **scatter_kwargs)
+        ax.scatter(mass_sph[gal_id=='n1332'], mbh[gal_id=='n1332'], marker=r'$\star$', s=500, color='red', **scatter_kwargs)
 	
 	mass_sph_n1277 = 2.69*10**11
 	mass_sph_n1277_b = mass_sph_n1277/11.65*6	
@@ -164,49 +162,48 @@ def mbh_vs_mass_sph():
 	mbh_n1332 = mbh[gal_id=='n1332']
 	#ax.plot([mass_sph_n1332_old,mass_sph_n1332], [mbh_n1332,mbh_n1332], color='blue', lw=3)
 	
-	for x0,y0 in zip(mass_sph[simplemorphtype=='S0'], mbh[simplemorphtype=='S0']):
-		#markers.lenticular(ax, 'k', np.log10(x0), np.log10(y0), 0.05)
-		markers.elliptical(ax, 'k', np.log10(x0), np.log10(y0), 0.05)
 	
 	x0 = mass_sph[gal_id=='n3115']
 	y0 = mbh[gal_id=='n3115']
-	ax.text(x0/1.5, 1.55*y0, 'N3115', size=12, color='red')
+	ax.text(x0/1.5, 1.4*y0, 'N3115', size=12, color='green')
+	
+	x0 = mass_sph[gal_id=='n4697']
+	y0 = mbh[gal_id=='n4697']
+	ax.text(x0/1.4, y0/2., 'N4697', size=12, color='green')
+	
+	x0 = mass_sph[gal_id=='n0821']
+	y0 = mbh[gal_id=='n0821']
+	ax.text(1.2*x0, y0/1.3, 'N0821', size=12, color='green')
+	
+	x0 = mass_sph[gal_id=='n3377']
+	y0 = mbh[gal_id=='n3377']
+	ax.text(1.2*x0, y0/1.4, 'N3377', size=12, color='green')
 	
 	x0 = mass_sph[gal_id=='n1332']
 	y0 = mbh[gal_id=='n1332']
-	ax.text(x0*1.3, y0/1.2, 'N1332', size=12, color='red')
+	ax.text(x0*1.2, y0/1.3, 'N1332', size=12, color='red')
 	
 	x0 = mass_sph_n1277
 	y0 = mbh_n1277
-	ax.text(x0/1.3, 1.6*y0, 'N1277', size=12, color='red')
+	ax.text(x0*1.2, y0/1.3, 'N1277', size=12, color='red')
 	
 	x0 = mass_sph_n1271
 	y0 = mbh_n1271
-	ax.text(x0/1.5, 1.6*y0, 'N1271', size=12, color='red')
+	ax.text(x0*1.1, y0*1.3, 'N1271', size=12, color='red')
 	
 	x0 = mass_sph_m1216
 	y0 = mbh_m1216
-	ax.text(x0/1.9, 0.7*y0, 'M1216', size=12, color='red')
+	ax.text(x0/1.9, 0.8*y0, 'M1216', size=12, color='red')
 	
 	x0 = float(mass_sph[gal_id=='n4291'])
 	y0 = float(mbh[gal_id=='n4291'])
-	markers.elliptical(ax, 'green', np.log10(x0), np.log10(y0), 0.05)
-	ax.text(x0/2, y0/1.6, 'N4291', size=12, color='green')
+	ax.scatter([x0], [y0], marker=r'$\star$', s=500, color='red', **scatter_kwargs)
+	ax.text(x0/2, y0/1.6, 'N4291', size=12, color='red')
 	
-	x0 = float(mass_sph[gal_id=='n3998'])
-	y0 = float(mbh[gal_id=='n3998'])
+	#x0 = float(mass_sph[gal_id=='n3998'])
+	#y0 = float(mbh[gal_id=='n3998'])
 	#ax.text(x0/0.95, 1.3*y0, 'N3998', size=12, color='k')
 	
-        #for x0,y0 in zip(mass_sph[simplemorphtype=='S0/Sp'], mbh[simplemorphtype=='S0/Sp']):
-	#	markers.spiral(ax, 'darkorange', np.log10(x0), np.log10(y0), 0.04)
-			
-        #for x0,y0 in zip(mass_sph[simplemorphtype=='Sp'], mbh[simplemorphtype=='Sp']):
-	#	markers.spiral(ax, 'blue', np.log10(x0), np.log10(y0), 0.04)
-		
-        #for x0,y0 in zip(mass_sph[simplemorphtype=='Sp'], mbh[simplemorphtype=='Sp']):
-	#	markers.spiral(ax, 'blue', np.log10(x0), np.log10(y0), 0.04)
-
-	#ax.scatter(mass_sph[simplemorphtype=='merger'], mbh[simplemorphtype=='merger'], marker=r'$\star$', s=500, color='k', **scatter_kwargs)	
 			
 	
 	print 'early'

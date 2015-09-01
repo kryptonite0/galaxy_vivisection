@@ -3,68 +3,95 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: ellicular.aux
 The style file: mn2e.bst
 Database file #1: /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
-Repeated entry---line 1186 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+Repeated entry---line 1234 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  : @article{rixwhite1992
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2094 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+Repeated entry---line 2157 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  : @article{scorzabender1995
  :                          ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "savorgnan2015"
-Name 1 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
+Name 1 in "{Emsellem}, E., and {}, and {et al.}" has a comma at the end for entry atlas3dIII-MNRAS
 while executing---line 1184 of file mn2e.bst
-Name 2 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
+Name 2 in "{Emsellem}, E., and {}, and {et al.}" has a comma at the end for entry atlas3dIII-MNRAS
 while executing---line 1184 of file mn2e.bst
-Name 1 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
+Name 1 in "{Emsellem}, E., and {}, and {et al.}" has a comma at the end for entry atlas3dIII-MNRAS
 while executing---line 1184 of file mn2e.bst
-Name 1 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
+Name 1 in "{Emsellem}, E., and {}, and {et al.}" has a comma at the end for entry atlas3dIII-MNRAS
 while executing---line 1184 of file mn2e.bst
-Name 2 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
+Name 2 in "{Emsellem}, E., and {}, and {et al.}" has a comma at the end for entry atlas3dIII-MNRAS
 while executing---line 1184 of file mn2e.bst
-Name 1 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
+Name 1 in "{Meidt}, S.~E., and {}, and {et al.}" has a comma at the end for entry meidt2014-MNRAS
+while executing---line 1184 of file mn2e.bst
+Name 2 in "{Meidt}, S.~E., and {}, and {et al.}" has a comma at the end for entry meidt2014-MNRAS
+while executing---line 1184 of file mn2e.bst
+Name 1 in "{Meidt}, S.~E., and {}, and {et al.}" has a comma at the end for entry meidt2014-MNRAS
+while executing---line 1184 of file mn2e.bst
+Name 1 in "{Meidt}, S.~E., and {}, and {et al.}" has a comma at the end for entry meidt2014-MNRAS
+while executing---line 1184 of file mn2e.bst
+Name 2 in "{Meidt}, S.~E., and {}, and {et al.}" has a comma at the end for entry meidt2014-MNRAS
+while executing---line 1184 of file mn2e.bst
+Name 1 in "{Fazio}, G.~G., and {}, and {et al.}" has a comma at the end for entry fazio2004IRAC-MNRAS
+while executing---line 1184 of file mn2e.bst
+Name 2 in "{Fazio}, G.~G., and {}, and {et al.}" has a comma at the end for entry fazio2004IRAC-MNRAS
+while executing---line 1184 of file mn2e.bst
+Name 1 in "{Fazio}, G.~G., and {}, and {et al.}" has a comma at the end for entry fazio2004IRAC-MNRAS
+while executing---line 1184 of file mn2e.bst
+Name 1 in "{Fazio}, G.~G., and {}, and {et al.}" has a comma at the end for entry fazio2004IRAC-MNRAS
+while executing---line 1184 of file mn2e.bst
+Name 2 in "{Fazio}, G.~G., and {}, and {et al.}" has a comma at the end for entry fazio2004IRAC-MNRAS
+while executing---line 1184 of file mn2e.bst
+Name 1 in "{Emsellem}, E., and {}, and {et al.}" has a comma at the end for entry atlas3dIII-MNRAS
 while executing---line 1260 of file mn2e.bst
-Name 2 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
+Name 2 in "{Emsellem}, E., and {}, and {et al.}" has a comma at the end for entry atlas3dIII-MNRAS
 while executing---line 1260 of file mn2e.bst
-You've used 34 entries,
+Name 1 in "{Fazio}, G.~G., and {}, and {et al.}" has a comma at the end for entry fazio2004IRAC-MNRAS
+while executing---line 1260 of file mn2e.bst
+Name 2 in "{Fazio}, G.~G., and {}, and {et al.}" has a comma at the end for entry fazio2004IRAC-MNRAS
+while executing---line 1260 of file mn2e.bst
+Name 1 in "{Meidt}, S.~E., and {}, and {et al.}" has a comma at the end for entry meidt2014-MNRAS
+while executing---line 1260 of file mn2e.bst
+Name 2 in "{Meidt}, S.~E., and {}, and {et al.}" has a comma at the end for entry meidt2014-MNRAS
+while executing---line 1260 of file mn2e.bst
+You've used 51 entries,
             2601 wiz_defined-function locations,
-            742 strings with 9771 characters,
-and the built_in function-call counts, 15423 in all, are:
-= -- 1485
-> -- 1098
-< -- 26
-+ -- 374
-- -- 373
-* -- 1461
-:= -- 2823
+            830 strings with 13708 characters,
+and the built_in function-call counts, 24491 in all, are:
+= -- 2303
+> -- 1939
+< -- 29
++ -- 671
+- -- 670
+* -- 2400
+:= -- 4523
 add.period$ -- 0
-call.type$ -- 34
-change.case$ -- 262
-chr.to.int$ -- 33
-cite$ -- 34
-duplicate$ -- 436
-empty$ -- 636
-format.name$ -- 425
-if$ -- 2855
+call.type$ -- 51
+change.case$ -- 429
+chr.to.int$ -- 50
+cite$ -- 51
+duplicate$ -- 622
+empty$ -- 907
+format.name$ -- 741
+if$ -- 4457
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 34
-newline$ -- 110
-num.names$ -- 144
-pop$ -- 198
+missing$ -- 51
+newline$ -- 161
+num.names$ -- 212
+pop$ -- 330
 preamble$ -- 1
-purify$ -- 291
+purify$ -- 475
 quote$ -- 0
-skip$ -- 535
+skip$ -- 807
 stack$ -- 0
-substring$ -- 748
-swap$ -- 80
+substring$ -- 1099
+swap$ -- 97
 text.length$ -- 8
-text.prefix$ -- 121
+text.prefix$ -- 220
 top$ -- 0
-type$ -- 306
+type$ -- 459
 warning$ -- 0
-while$ -- 141
+while$ -- 208
 width$ -- 0
-write$ -- 349
-(There were 9 error messages)
+write$ -- 518
+(There were 23 error messages)
