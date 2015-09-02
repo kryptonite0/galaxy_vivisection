@@ -18,7 +18,7 @@ def buildModel(params, componentslist, xxx, goodIndexes, psfFunction, convolve, 
 						
 	model = 0
 	for component in componentslist:
-		if (component.name == 'sersic'):
+		if (component.name == 'sersic' or component.name == 'sersicdisc'):
 			y_component = buildSersic(xxx, params, component, psfFunction, False, Settings.zeropoint)
 		elif (component.name == 'disc'):
 			y_component = buildDisc(xxx, params, component, psfFunction, False, Settings.zeropoint)

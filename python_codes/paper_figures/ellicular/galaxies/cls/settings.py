@@ -42,7 +42,7 @@ class Settings:
         pxlToArcsec = 1.2232836
         zeropoint = 17.25585 #spitzer 3.6 um
 
-    colordict = {'sersic' : 'red', 'tsersic' : 'red', 'disc' : 'blue', 'gaussian' : 'green', 'psf' : 'purple', 'ferrer' : 'lightblue', 'tdisc' : 'blue', 'gring' : 'grey', 'psfwing' : 'purple'}
+    colordict = {'sersic' : 'red', 'tsersic' : 'red', 'disc' : 'blue', 'gaussian' : 'green', 'psf' : 'purple', 'ferrer' : 'lightblue', 'tdisc' : 'blue', 'gring' : 'grey', 'psfwing' : 'purple', 'sersicdisc' : 'blue'}
     
     #oversamplingStep = 0.2 # pixels
     

@@ -22,6 +22,6 @@ def buildFerrer(x, params, component, psfFunction, convolve, zeropoint):
 
 def computeFerrerParameters(r_out, mu_0, alpha, beta):
 	
-	m_tot = mu_0 - 2.5 * np.log10(2 * np.pi * r_out**2 * (0.5 * special.hyp2f1(-alpha, 2/(2-beta), (2-beta+2)/(2-beta), 1)))
+	m_tot = mu_0 - 2.5 * np.log10(2 * np.pi * r_out**2 * (0.5 * special.hyp2f1(-alpha, 2/(2-beta), (-beta)/(2-beta), 1)))
 	
 	return m_tot

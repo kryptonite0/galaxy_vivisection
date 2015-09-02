@@ -239,7 +239,7 @@ def doFitPanel(fitPanel, rrr, mu, good_rrr, good_mu, bad_rrr, bad_mu, maxsma_arc
 	fitPanel.plot(xxx, y_finalmodel_sb_plot, 'black')
 
 	for component in componentslist:
-		if (component.name == 'sersic'):
+		if (component.name == 'sersic' or component.name == 'sersicdisc'):
 			y_component = buildSersic(xxx, finalparams, component, psfFunction, Settings.plotConvolvedComponent, Settings.zeropoint)
 # 			y_component_sb = Settings.zeropoint - 2.5*np.log10(y_component)
 		elif (component.name == 'disc'):

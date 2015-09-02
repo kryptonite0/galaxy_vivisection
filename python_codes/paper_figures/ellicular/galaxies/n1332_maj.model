@@ -3,7 +3,7 @@
 #      expdisc    h       	  mu_0   	  ---
 #      gaussian   fwhm    	  int	 	  ---    
     1	sersic   35.	 True	 17.4	 True	 5.2	True
-     2	sersic   55.	 True	 18.2	 True	 0.4	True
+     2	sersicdisc   55.	 True	 18.2	 True	 0.4	True
 #    3	disc	 24.29	 True	 16.	 True	 -99	True
 #    6	sersic   30.0	 True	 17.5	 True	 1.2	True
 #   4	gaussian   2.0    True    13.0    True    -99    True

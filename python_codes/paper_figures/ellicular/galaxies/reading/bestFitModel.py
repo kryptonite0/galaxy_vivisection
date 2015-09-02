@@ -54,7 +54,7 @@ def readBestFitModel(bestFitModelFileName):
                     componentslist.append(comp)
                 
                 #components with 3 parameters
-                if (comp.name == 'sersic'):
+                if (comp.name == 'sersic' or comp.name == 'sersicdisc'):
                 
                     par1name = 'par1_' + str(line.split()[0])
                     par2name = 'par2_' + str(line.split()[0])
