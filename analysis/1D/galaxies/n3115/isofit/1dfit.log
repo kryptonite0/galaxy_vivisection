@@ -1,0 +1,160 @@
+Input ellipse file:  n3115_op_mos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: arcsec
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.039
+Delta:  0.0160994026936
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 89
+Chisq:  7.02675854401e-06
+Reduced chisq:  1.25477831143e-07
+N_free:  56
+Component 1: sersic.
+R_e [arcsec] =  44.37 +/- 0.66 	[initial value = 42.8 ]
+mu_e [mag/arcsec^2] =  16.67 +/- 0.03 	 [initial value = 16.6 ]
+n =  4.03 +/- 0.04        [initial value = 4.3 ]
+b_n =  7.73
+m_tot [mag] =  5.04
+
+Component 2: disc.
+h [arcsec] =  49.08 +/- 0.47        [initial value = 50.0 ]
+mu_0 [mag/arcsec^2] =  16.33 +/- 0.03 	 [initial value = 16.4 ]
+m_tot [mag] =  5.88
+
+Component 6: gring.
+fwhm [arcsec] =  17.22 +/- 0.66 	 [initial value = 18.6 ]
+mu_0 [mag/arcsec^2] =  15.59 +/- 0.04 	[initial value = 15.7 ]
+R_0 [arcsec] =  9.00 +/- 0.00 	[initial value = 9.0 ]
+m_tot [mag] = -99
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n3115_op_mos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: arcsec
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.039
+Delta:  0.0160166362315
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 120
+Chisq:  6.10764419578e-06
+Reduced chisq:  1.11048076287e-07
+N_free:  55
+Component 1: sersic.
+R_e [arcsec] =  39.14 +/- 0.47 	[initial value = 34.7 ]
+mu_e [mag/arcsec^2] =  17.17 +/- 0.03 	 [initial value = 16.7 ]
+n =  4.93 +/- 0.04        [initial value = 5.1 ]
+b_n =  9.53
+m_tot [mag] =  5.71
+
+Component 2: disc.
+h [arcsec] =  30.28 +/- 0.71        [initial value = 34.4 ]
+mu_0 [mag/arcsec^2] =  17.17 +/- 0.06 	 [initial value = 17.6 ]
+m_tot [mag] =  7.76
+
+Component 6: gring.
+fwhm [arcsec] =  18.98 +/- 0.31 	 [initial value = 17.5 ]
+mu_0 [mag/arcsec^2] =  15.06 +/- 0.04 	[initial value = 15.0 ]
+R_0 [arcsec] =  0.01 +/- 0.11 	[initial value = 7.0 ]
+m_tot [mag] = -99
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n3115_op_mos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: arcsec
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.039
+Delta:  0.0661953850233
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 81
+Chisq:  0.0162643312914
+Reduced chisq:  7.39287785975e-05
+N_free:  220
+Component 1: sersic.
+R_e [arcsec] =  37.21 +/- 1.92 	[initial value = 42.8 ]
+mu_e [mag/arcsec^2] =  15.89 +/- 0.13 	 [initial value = 16.6 ]
+n =  3.00 +/- 0.16        [initial value = 4.3 ]
+b_n =  5.68
+m_tot [mag] =  4.80
+
+Component 2: disc.
+h [arcsec] =  56.88 +/- 3.11        [initial value = 50.0 ]
+mu_0 [mag/arcsec^2] =  16.82 +/- 0.13 	 [initial value = 16.4 ]
+m_tot [mag] =  6.05
+
+Component 6: gring.
+fwhm [arcsec] =  28.05 +/- 8.00 	 [initial value = 18.6 ]
+mu_0 [mag/arcsec^2] =  16.80 +/- 0.71 	[initial value = 15.7 ]
+R_0 [arcsec] =  9.00 +/- 0.00 	[initial value = 9.0 ]
+m_tot [mag] = -99
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n3115_op_mos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: arcsec
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.039
+Delta:  0.0602539746229
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 101
+Chisq:  0.00979859589135
+Reduced chisq:  4.47424469925e-05
+N_free:  219
+Component 1: sersic.
+R_e [arcsec] =  35.00 +/- 1.77 	[initial value = 34.7 ]
+mu_e [mag/arcsec^2] =  16.82 +/- 0.19 	 [initial value = 16.7 ]
+n =  4.75 +/- 0.40        [initial value = 5.1 ]
+b_n =  9.17
+m_tot [mag] =  5.62
+
+Component 2: disc.
+h [arcsec] =  30.46 +/- 1.75        [initial value = 34.4 ]
+mu_0 [mag/arcsec^2] =  17.32 +/- 0.42 	 [initial value = 17.6 ]
+m_tot [mag] =  7.91
+
+Component 6: gring.
+fwhm [arcsec] =  27.74 +/- 8.31 	 [initial value = 17.5 ]
+mu_0 [mag/arcsec^2] =  15.30 +/- 0.75 	[initial value = 15.0 ]
+R_0 [arcsec] =  0.10 +/- 10.73 	[initial value = 7.0 ]
+m_tot [mag] = -99
+
+--------------------------------------------
+--------------------------------------------
+

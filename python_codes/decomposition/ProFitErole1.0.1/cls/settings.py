@@ -22,10 +22,10 @@ class Settings:
     smoothing = False
     #smoothing = True
     
-    #observation = 'spitzer3.6um'
+    observation = 'spitzer3.6um'
     #observation = 'n1271' 
     #observation = 'n4342' 
-    observation = 'LEDA' 
+    #observation = 'LEDA' 
         
     if (observation == 'n1277'):
         pxlToArcsec = 0.05
