@@ -249,9 +249,9 @@ def performFitAndPlot(excludedRangeList, galaxy, axisFit, psfFunction, sampling,
 ########## MAIN BODY HERE ############
 
 #samplingList = ['comb', 'log' ]
-samplingList = ['log',  'comb']
+#samplingList = ['log',  'comb']
 #samplingList = ['log' ]
-#samplingList = ['comb']
+samplingList = ['comb']
 #samplingList = ['1lin', 'log']
 
 suffixDict = {'comb' : '_combscale', '02lin' : '_linscale02px', '05lin' : '_linscale05px', 'log' : '_logscale', '1lin' : '_linscale1px', '2lin' : '_linscale2px'}
@@ -259,8 +259,8 @@ suffixDict = {'comb' : '_combscale', '02lin' : '_linscale02px', '05lin' : '_lins
 
 psfList, gaussianSmoothing = createPsf(Settings)
 
-axisFitList = ['maj', 'eq']
-# axisFitList = ['maj']
+#axisFitList = ['maj', 'eq']
+axisFitList = ['maj']
 #axisFitList = ['eq']
 
 prefixEllipseOutput, galaxy, skyRMS = readDataFileNames('init.1dfit')

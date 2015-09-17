@@ -158,3 +158,205 @@ m_tot [mag] = -99
 --------------------------------------------
 --------------------------------------------
 
+Input ellipse file:  n3115_op_mos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: arcsec
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.039
+Delta:  0.0160994026936
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 89
+Chisq:  7.02675854401e-06
+Reduced chisq:  1.25477831143e-07
+N_free:  56
+Component 1: sersic.
+R_e [arcsec] =  44.37 +/- 0.66 	[initial value = 42.8 ]
+mu_e [mag/arcsec^2] =  16.67 +/- 0.03 	 [initial value = 16.6 ]
+n =  4.03 +/- 0.04        [initial value = 4.3 ]
+b_n =  7.73
+m_tot [mag] =  5.04
+
+Component 2: disc.
+h [arcsec] =  49.08 +/- 0.47        [initial value = 50.0 ]
+mu_0 [mag/arcsec^2] =  16.33 +/- 0.03 	 [initial value = 16.4 ]
+m_tot [mag] =  5.88
+
+Component 6: gring.
+fwhm [arcsec] =  17.22 +/- 0.66 	 [initial value = 18.6 ]
+mu_0 [mag/arcsec^2] =  15.59 +/- 0.04 	[initial value = 15.7 ]
+R_0 [arcsec] =  9.00 +/- 0.00 	[initial value = 9.0 ]
+m_tot [mag] = -99
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n3115_op_mos_galfitsky_logscale.ell
+Excluded data:  []
+Axis Used:  eq
+x-Axis units: arcsec
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.039
+Delta:  0.0160166362315
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 120
+Chisq:  6.10764419578e-06
+Reduced chisq:  1.11048076287e-07
+N_free:  55
+Component 1: sersic.
+R_e [arcsec] =  39.14 +/- 0.47 	[initial value = 34.7 ]
+mu_e [mag/arcsec^2] =  17.17 +/- 0.03 	 [initial value = 16.7 ]
+n =  4.93 +/- 0.04        [initial value = 5.1 ]
+b_n =  9.53
+m_tot [mag] =  5.71
+
+Component 2: disc.
+h [arcsec] =  30.28 +/- 0.71        [initial value = 34.4 ]
+mu_0 [mag/arcsec^2] =  17.17 +/- 0.06 	 [initial value = 17.6 ]
+m_tot [mag] =  7.76
+
+Component 6: gring.
+fwhm [arcsec] =  18.98 +/- 0.31 	 [initial value = 17.5 ]
+mu_0 [mag/arcsec^2] =  15.06 +/- 0.04 	[initial value = 15.0 ]
+R_0 [arcsec] =  0.01 +/- 0.11 	[initial value = 7.0 ]
+m_tot [mag] = -99
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n3115_op_mos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: arcsec
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.039
+Delta:  0.0955797636753
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 123
+Chisq:  0.0667372397278
+Reduced chisq:  0.000296609954346
+N_free:  225
+Component 1: sersic.
+R_e [arcsec] =  41.17 +/- 2.95 	[initial value = 42.8 ]
+mu_e [mag/arcsec^2] =  15.90 +/- 0.15 	 [initial value = 16.6 ]
+n =  2.90 +/- 0.20        [initial value = 4.3 ]
+b_n =  5.48
+m_tot [mag] =  4.61
+
+Component 2: disc.
+h [arcsec] =  59.93 +/- 8.51        [initial value = 50.0 ]
+mu_0 [mag/arcsec^2] =  17.48 +/- 0.34 	 [initial value = 16.4 ]
+m_tot [mag] =  6.60
+
+Component 6: gring.
+fwhm [arcsec] =  63.84 +/- 6.96 	 [initial value = 18.6 ]
+mu_0 [mag/arcsec^2] =  16.66 +/- 0.41 	[initial value = 15.7 ]
+R_0 [arcsec] =  9.00 +/- 0.00 	[initial value = 9.0 ]
+m_tot [mag] = -99
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n3115_op_mos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: arcsec
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.039
+Delta:  0.0742365867795
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 86
+Chisq:  0.0160332879581
+Reduced chisq:  8.22219895285e-05
+N_free:  195
+Component 1: sersic.
+R_e [arcsec] =  52.09 +/- 0.92 	[initial value = 42.8 ]
+mu_e [mag/arcsec^2] =  16.44 +/- 0.08 	 [initial value = 16.6 ]
+n =  3.35 +/- 0.12        [initial value = 4.3 ]
+b_n =  6.37
+m_tot [mag] =  4.56
+
+Component 2: disc.
+h [arcsec] =  29.18 +/- 1.03        [initial value = 50.0 ]
+mu_0 [mag/arcsec^2] =  15.71 +/- 0.19 	 [initial value = 16.4 ]
+m_tot [mag] =  6.39
+
+Component 6: gring.
+fwhm [arcsec] =  18.62 +/- 0.00 	 [initial value = 18.62 ]
+mu_0 [mag/arcsec^2] =  15.66 +/- 0.00 	[initial value = 15.66 ]
+R_0 [arcsec] =  9.00 +/- 0.00 	[initial value = 9.0 ]
+m_tot [mag] = -99
+
+--------------------------------------------
+--------------------------------------------
+
+Input ellipse file:  n3115_op_mos_galfitsky_combscale.ell
+Excluded data:  []
+Axis Used:  maj
+x-Axis units: arcsec
+pixels to arcsec scale:  1.2232836
+Smoothing:  False sigma =  5.0
+Zeropoint:  17.25585
+Sky RMS:  0.039
+Delta:  0.0756376687703
+Convolution done?  True
+PSF:  moffat
+Fit weighted with errors?  False
+--------------------------------------------
+Results from fit:
+--------------------------------------------
+Number of iterations: 353
+Chisq:  0.0144549009131
+Reduced chisq:  7.45097985211e-05
+N_free:  194
+Component 1: sersic.
+R_e [arcsec] =  60.87 +/- 19.03 	[initial value = 42.8 ]
+mu_e [mag/arcsec^2] =  17.78 +/- 1.65 	 [initial value = 16.6 ]
+n =  5.02 +/- 2.26        [initial value = 4.3 ]
+b_n =  9.71
+m_tot [mag] =  5.35
+
+Component 3: sersic.
+R_e [arcsec] =  48.33 +/- 1.40 	[initial value = 50.0 ]
+mu_e [mag/arcsec^2] =  16.39 +/- 0.47 	 [initial value = 17.5 ]
+n =  2.00 +/- 0.42        [initial value = 0.9 ]
+b_n =  3.68
+m_tot [mag] =  4.94
+
+Component 6: gring.
+fwhm [arcsec] =  18.62 +/- 0.00 	 [initial value = 18.62 ]
+mu_0 [mag/arcsec^2] =  15.66 +/- 0.00 	[initial value = 15.66 ]
+R_0 [arcsec] =  9.00 +/- 0.00 	[initial value = 9.0 ]
+m_tot [mag] = -99
+
+--------------------------------------------
+--------------------------------------------
+

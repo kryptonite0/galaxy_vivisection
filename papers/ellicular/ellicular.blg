@@ -3,11 +3,11 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: ellicular.aux
 The style file: mn2e.bst
 Database file #1: /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
-Repeated entry---line 1234 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+Repeated entry---line 1288 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  : @article{rixwhite1992
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2157 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+Repeated entry---line 2221 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  : @article{scorzabender1995
  :                          ,
 I'm skipping whatever remains of this entry
@@ -31,6 +31,16 @@ Name 1 in "{Meidt}, S.~E., and {}, and {et al.}" has a comma at the end for entr
 while executing---line 1184 of file mn2e.bst
 Name 2 in "{Meidt}, S.~E., and {}, and {et al.}" has a comma at the end for entry meidt2014-MNRAS
 while executing---line 1184 of file mn2e.bst
+Name 1 in "{Cappellari}, M., and {}, and {et al.}" has a comma at the end for entry cappellari2011kmdr-MNRAS
+while executing---line 1184 of file mn2e.bst
+Name 2 in "{Cappellari}, M., and {}, and {et al.}" has a comma at the end for entry cappellari2011kmdr-MNRAS
+while executing---line 1184 of file mn2e.bst
+Name 1 in "{Cappellari}, M., and {}, and {et al.}" has a comma at the end for entry cappellari2011kmdr-MNRAS
+while executing---line 1184 of file mn2e.bst
+Name 1 in "{Cappellari}, M., and {}, and {et al.}" has a comma at the end for entry cappellari2011kmdr-MNRAS
+while executing---line 1184 of file mn2e.bst
+Name 2 in "{Cappellari}, M., and {}, and {et al.}" has a comma at the end for entry cappellari2011kmdr-MNRAS
+while executing---line 1184 of file mn2e.bst
 Name 1 in "{Fazio}, G.~G., and {}, and {et al.}" has a comma at the end for entry fazio2004IRAC-MNRAS
 while executing---line 1184 of file mn2e.bst
 Name 2 in "{Fazio}, G.~G., and {}, and {et al.}" has a comma at the end for entry fazio2004IRAC-MNRAS
@@ -41,6 +51,10 @@ Name 1 in "{Fazio}, G.~G., and {}, and {et al.}" has a comma at the end for entr
 while executing---line 1184 of file mn2e.bst
 Name 2 in "{Fazio}, G.~G., and {}, and {et al.}" has a comma at the end for entry fazio2004IRAC-MNRAS
 while executing---line 1184 of file mn2e.bst
+Name 1 in "{Cappellari}, M., and {}, and {et al.}" has a comma at the end for entry cappellari2011kmdr-MNRAS
+while executing---line 1260 of file mn2e.bst
+Name 2 in "{Cappellari}, M., and {}, and {et al.}" has a comma at the end for entry cappellari2011kmdr-MNRAS
+while executing---line 1260 of file mn2e.bst
 Name 1 in "{Emsellem}, E., and {}, and {et al.}" has a comma at the end for entry atlas3dIII-MNRAS
 while executing---line 1260 of file mn2e.bst
 Name 2 in "{Emsellem}, E., and {}, and {et al.}" has a comma at the end for entry atlas3dIII-MNRAS
@@ -53,45 +67,46 @@ Name 1 in "{Meidt}, S.~E., and {}, and {et al.}" has a comma at the end for entr
 while executing---line 1260 of file mn2e.bst
 Name 2 in "{Meidt}, S.~E., and {}, and {et al.}" has a comma at the end for entry meidt2014-MNRAS
 while executing---line 1260 of file mn2e.bst
-You've used 51 entries,
+Warning--empty publisher in sandage1961
+You've used 58 entries,
             2601 wiz_defined-function locations,
-            830 strings with 13708 characters,
-and the built_in function-call counts, 24491 in all, are:
-= -- 2303
-> -- 1939
-< -- 29
-+ -- 671
-- -- 670
-* -- 2400
-:= -- 4523
+            865 strings with 14730 characters,
+and the built_in function-call counts, 27247 in all, are:
+= -- 2574
+> -- 2101
+< -- 35
++ -- 724
+- -- 723
+* -- 2651
+:= -- 5028
 add.period$ -- 0
-call.type$ -- 51
-change.case$ -- 429
-chr.to.int$ -- 50
-cite$ -- 51
-duplicate$ -- 622
-empty$ -- 907
-format.name$ -- 741
-if$ -- 4457
+call.type$ -- 58
+change.case$ -- 475
+chr.to.int$ -- 57
+cite$ -- 59
+duplicate$ -- 711
+empty$ -- 1040
+format.name$ -- 803
+if$ -- 4971
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 51
-newline$ -- 161
-num.names$ -- 212
-pop$ -- 330
+missing$ -- 59
+newline$ -- 183
+num.names$ -- 242
+pop$ -- 368
 preamble$ -- 1
-purify$ -- 475
+purify$ -- 527
 quote$ -- 0
-skip$ -- 807
+skip$ -- 907
 stack$ -- 0
-substring$ -- 1099
-swap$ -- 97
-text.length$ -- 8
-text.prefix$ -- 220
+substring$ -- 1244
+swap$ -- 112
+text.length$ -- 10
+text.prefix$ -- 237
 top$ -- 0
-type$ -- 459
-warning$ -- 0
-while$ -- 208
+type$ -- 519
+warning$ -- 1
+while$ -- 236
 width$ -- 0
-write$ -- 518
-(There were 23 error messages)
+write$ -- 589
+(There were 30 error messages)

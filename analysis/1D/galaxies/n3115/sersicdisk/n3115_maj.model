@@ -3,9 +3,9 @@
 #      expdisc    h       	  mu_0   	  ---
 #      gaussian   fwhm    	  int	 	  ---    
     1	sersic   42.8	 True	 16.6	 True	 4.3	True
-#   2	disc	 50.	 True	 16.4	 True	 -99	True
-    3	sersic   50.	 True	 17.5	 True	 0.9	True
-    6	gring    18.62	 False   15.66	 False	 9.0	False    
+#    2	disc	 50.	 True	 16.4	 True	 -99	True
+   3	sersic   50.	 True	 17.	 True	 0.9	True
+    6	gring    18.6	 False	 15.7	 False	 9.	False    
 #    4	gaussian   3.0    True    11.0    True    -99    True
 #    5    psf        -99     True    12.0     True    -99    True
 #   8	sersic   10.0	 True	 15.0	 True	 2.0	True

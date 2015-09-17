@@ -41,6 +41,10 @@
   regions}.
 pp 47--60
 
+\bibitem[\protect\citeauthoryear{{Cappellari}, {} \& {et al.}}{{Cappellari}
+  et~al.}{2011}]{cappellari2011kmdr-MNRAS}
+{Cappellari} M.,  {}   {et al.} 2011, \mnras, 416, 1680
+
 \bibitem[\protect\citeauthoryear{{Carter}}{{Carter}}{1987}]{carter1987}
 {Carter} D.,  1987, \apj, 312, 514
 
@@ -110,6 +114,12 @@ p. 107.04
 {Gavazzi} G.,  {Boselli} A.,  {Donati} A.,  {Franzetti} P.,    {Scodeggio} M.,
   2003, \aap, 400, 451
 
+\bibitem[\protect\citeauthoryear{{Graham}}{{Graham}}{2014}]{graham2014review}
+{Graham} A.~W.,  2014, in {Seigar} M.~S.,  {Treuthardt} P.,  eds, Structure and
+  Dynamics of Disk Galaxies Vol.~480 of Astronomical Society of the Pacific
+  Conference Series, {Scaling Laws in Disk Galaxies}.
+p.~185
+
 \bibitem[\protect\citeauthoryear{{Graham}, {Colless}, {Busarello}, {Zaggia} \&
   {Longo}}{{Graham} et~al.}{1998}]{graham1998fornax}
 {Graham} A.~W.,  {Colless} M.~M.,  {Busarello} G.,  {Zaggia} S.,    {Longo} G.,
@@ -118,6 +128,10 @@ p. 107.04
 \bibitem[\protect\citeauthoryear{{Graham}, {Dullo} \& {Savorgnan}}{{Graham}
   et~al.}{2015}]{GDS2015}
 {Graham} A.~W.,  {Dullo} B.~T.,    {Savorgnan} G.~A.~D.,  2015, \apj, 804, 32
+
+\bibitem[\protect\citeauthoryear{{Graham} \& {Worley}}{{Graham} \&
+  {Worley}}{2008}]{grahamworley2008}
+{Graham} A.~W.,  {Worley} C.~C.,  2008, \mnras, 388, 1708
 
 \bibitem[\protect\citeauthoryear{{Head}, {Lucey}, {Hudson} \& {Smith}}{{Head}
   et~al.}{2014}]{head2014}
@@ -142,6 +156,16 @@ p. 107.04
 \bibitem[\protect\citeauthoryear{{L{\"a}sker}, {Ferrarese} \& {van de
   Ven}}{{L{\"a}sker} et~al.}{2014}]{lasker2014data}
 {L{\"a}sker} R.,  {Ferrarese} L.,    {van de Ven} G.,  2014, \apj, 780, 69
+
+\bibitem[\protect\citeauthoryear{{L{\"a}sker}, {Ferrarese}, {van de Ven} \&
+  {Shankar}}{{L{\"a}sker} et~al.}{2014}]{lasker2014anal}
+{L{\"a}sker} R.,  {Ferrarese} L.,  {van de Ven} G.,    {Shankar} F.,  2014,
+  \apj, 780, 70
+
+\bibitem[\protect\citeauthoryear{{Laurikainen}, {Salo}, {Buta}, {Knapen} \&
+  {Comer{\'o}n}}{{Laurikainen} et~al.}{2010}]{laurikainen2010}
+{Laurikainen} E.,  {Salo} H.,  {Buta} R.,  {Knapen} J.~H.,    {Comer{\'o}n} S.,
+   2010, \mnras, 405, 1089
 
 \bibitem[\protect\citeauthoryear{{Ledo}, {Sarzi}, {Dotti}, {Khochfar} \&
   {Morelli}}{{Ledo} et~al.}{2010}]{ledo2010}
@@ -208,6 +232,9 @@ pp 268--273
 {Rusli} S.~P.,  {Thomas} J.,  {Erwin} P.,  {Saglia} R.~P.,  {Nowak} N.,
   {Bender} R.,  2011, \mnras, 410, 1223
 
+\bibitem[\protect\citeauthoryear{{Sandage}}{{Sandage}}{1961}]{sandage1961}
+{Sandage} A.,  1961, {The Hubble atlas of galaxies}
+
 \bibitem[\protect\citeauthoryear{{Scorza}}{{Scorza}}{1998}]{scorza1998}
 {Scorza} C.,  1998, in {Aguilar} A.,  {Carraminana} A.,  eds, IX Latin American
   Regional IAU Meeting, ''Focal Points in Latin American Astronomy'' {Disky
@@ -229,6 +256,10 @@ p.~117
 \bibitem[\protect\citeauthoryear{{S{\'e}rsic}}{{S{\'e}rsic}}{1963}]{sersic1963}
 {S{\'e}rsic} J.~L.,  1963, Boletin de la Asociacion Argentina de Astronomia La
   Plata Argentina, 6, 41
+
+\bibitem[\protect\citeauthoryear{{van den Bergh}}{{van den
+  Bergh}}{1976}]{vandenbergh1976}
+{van den Bergh} S.,  1976, \apj, 206, 883
 
 \bibitem[\protect\citeauthoryear{{van den Bosch}, {Gebhardt}, {G{\"u}ltekin},
   {van de Ven}, {van der Wel} \& {Walsh}}{{van den Bosch}
