@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  17 SEP 2015 15:52
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  18 SEP 2015 15:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -262,14 +262,14 @@ Overfull \hbox (3.07225pt too wide) in paragraph at lines 96--96
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 202.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 199.
 
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 202.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 199.
  [1{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
@@ -282,126 +282,126 @@ Package epstopdf Info: Source file: <images/discmodel.eps>
 (epstopdf)                    size: 249849 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/discmodel-eps-conve
 rted-to.pdf images/discmodel.eps>
-(epstopdf)             \includegraphics on input line 205.
+(epstopdf)             \includegraphics on input line 202.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/discmodel-eps-converted-to.pdf, id=20, 1583.9175pt x 1303.87125pt>
+<images/discmodel-eps-converted-to.pdf, id=21, 1583.9175pt x 1303.87125pt>
 File: images/discmodel-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/discmodel-eps-converted-to.pdf>
 Package pdftex.def Info: images/discmodel-eps-converted-to.pdf used on input li
-ne 205.
+ne 202.
 (pdftex.def)             Requested size: 240.0pt x 197.56178pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2 <./images/discmodel-eps-converted-to.pdf>]
-Underfull \hbox (badness 1062) in paragraph at lines 303--311
+Underfull \hbox (badness 1062) in paragraph at lines 301--309
 \OT1/cmr/m/n/9 Our mod-els with an intermediate-sized disc em-bed-ded
  []
 
-<images/n3115_image.jpeg, id=33, 906.38625pt x 900.36375pt>
+<images/n3115_image.jpeg, id=34, 906.38625pt x 900.36375pt>
 File: images/n3115_image.jpeg Graphic file (type jpg)
 
 <use images/n3115_image.jpeg>
-Package pdftex.def Info: images/n3115_image.jpeg used on input line 315.
+Package pdftex.def Info: images/n3115_image.jpeg used on input line 313.
 (pdftex.def)             Requested size: 117.60132pt x 116.81784pt.
 
-<images/n3115_unsharp.jpeg, id=34, 906.38625pt x 900.36375pt>
+<images/n3115_unsharp.jpeg, id=35, 906.38625pt x 900.36375pt>
 File: images/n3115_unsharp.jpeg Graphic file (type jpg)
 
 <use images/n3115_unsharp.jpeg>
-Package pdftex.def Info: images/n3115_unsharp.jpeg used on input line 316.
+Package pdftex.def Info: images/n3115_unsharp.jpeg used on input line 314.
 (pdftex.def)             Requested size: 117.60132pt x 116.81784pt.
 
-<images/n3115_decomposition.pdf, id=35, 268.07835pt x 262.29886pt>
+<images/n3115_decomposition.pdf, id=36, 268.07835pt x 262.29886pt>
 File: images/n3115_decomposition.pdf Graphic file (type pdf)
 
 <use images/n3115_decomposition.pdf>
-Package pdftex.def Info: images/n3115_decomposition.pdf used on input line 317.
+Package pdftex.def Info: images/n3115_decomposition.pdf used on input line 315.
 
 (pdftex.def)             Requested size: 252.00073pt x 246.58095pt.
 
-Overfull \hbox (12.00073pt too wide) in paragraph at lines 317--329
+Overfull \hbox (12.00073pt too wide) in paragraph at lines 315--327
  [][] 
  []
 
-<images/n1332_image.jpeg, id=36, 639.38875pt x 657.45625pt>
+<images/n1332_image.jpeg, id=37, 639.38875pt x 657.45625pt>
 File: images/n1332_image.jpeg Graphic file (type jpg)
 
 <use images/n1332_image.jpeg>
-Package pdftex.def Info: images/n1332_image.jpeg used on input line 336.
+Package pdftex.def Info: images/n1332_image.jpeg used on input line 334.
 (pdftex.def)             Requested size: 117.60132pt x 120.91522pt.
 
-<images/n1332_unsharp.jpeg, id=37, 639.38875pt x 657.45625pt>
+<images/n1332_unsharp.jpeg, id=38, 639.38875pt x 657.45625pt>
 File: images/n1332_unsharp.jpeg Graphic file (type jpg)
 
 <use images/n1332_unsharp.jpeg>
-Package pdftex.def Info: images/n1332_unsharp.jpeg used on input line 337.
+Package pdftex.def Info: images/n1332_unsharp.jpeg used on input line 335.
 (pdftex.def)             Requested size: 117.60132pt x 120.91522pt.
 
-<images/n1332_decomposition.pdf, id=38, 272.74637pt x 264.0771pt>
+<images/n1332_decomposition.pdf, id=39, 272.74637pt x 264.0771pt>
 File: images/n1332_decomposition.pdf Graphic file (type pdf)
 
 <use images/n1332_decomposition.pdf>
-Package pdftex.def Info: images/n1332_decomposition.pdf used on input line 338.
+Package pdftex.def Info: images/n1332_decomposition.pdf used on input line 336.
 
 (pdftex.def)             Requested size: 247.1997pt x 239.3515pt.
 
-Overfull \hbox (7.1997pt too wide) in paragraph at lines 338--352
+Overfull \hbox (7.1997pt too wide) in paragraph at lines 336--350
  [][] 
  []
 
-<images/mrk1216_image.jpeg, id=39, 871.255pt x 735.74875pt>
+<images/mrk1216_image.jpeg, id=40, 871.255pt x 735.74875pt>
 File: images/mrk1216_image.jpeg Graphic file (type jpg)
 
 <use images/mrk1216_image.jpeg>
-Package pdftex.def Info: images/mrk1216_image.jpeg used on input line 359.
+Package pdftex.def Info: images/mrk1216_image.jpeg used on input line 357.
 (pdftex.def)             Requested size: 117.60132pt x 99.31056pt.
 
-<images/mrk1216_unsharp.jpeg, id=40, 871.255pt x 735.74875pt>
+<images/mrk1216_unsharp.jpeg, id=41, 871.255pt x 735.74875pt>
 File: images/mrk1216_unsharp.jpeg Graphic file (type jpg)
 
 <use images/mrk1216_unsharp.jpeg>
-Package pdftex.def Info: images/mrk1216_unsharp.jpeg used on input line 360.
+Package pdftex.def Info: images/mrk1216_unsharp.jpeg used on input line 358.
 (pdftex.def)             Requested size: 117.60132pt x 99.31056pt.
 
-<images/mrk1216_decomposition.pdf, id=41, 278.08127pt x 268.74512pt>
+<images/mrk1216_decomposition.pdf, id=42, 278.08127pt x 268.74512pt>
 File: images/mrk1216_decomposition.pdf Graphic file (type pdf)
 
 <use images/mrk1216_decomposition.pdf>
-Package pdftex.def Info: images/mrk1216_decomposition.pdf used on input line 36
-1.
+Package pdftex.def Info: images/mrk1216_decomposition.pdf used on input line 35
+9.
 (pdftex.def)             Requested size: 252.00073pt x 243.54144pt.
 
-Overfull \hbox (12.00073pt too wide) in paragraph at lines 361--374
+Overfull \hbox (12.00073pt too wide) in paragraph at lines 359--372
  [][] 
  []
 
 [3] [4 <./images/n3115_image.jpeg> <./images/n3115_unsharp.jpeg> <./images/n311
 5_decomposition.pdf> <./images/n1332_image.jpeg> <./images/n1332_unsharp.jpeg> 
 <./images/n1332_decomposition.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 3514) has occurred while \output is active []
 
 
 Underfull \vbox (badness 7133) has occurred while \output is active []
 
  [5 <./images/mrk1216_image.jpeg> <./images/mrk1216_unsharp.jpeg> <./images/mrk
-1216_decomposition.pdf>] <images/mm.pdf, id=79, 578.16pt x 433.62pt>
+1216_decomposition.pdf>] <images/mm.pdf, id=80, 578.16pt x 433.62pt>
 File: images/mm.pdf Graphic file (type pdf)
  <use images/mm.pdf>
-Package pdftex.def Info: images/mm.pdf used on input line 509.
+Package pdftex.def Info: images/mm.pdf used on input line 507.
 (pdftex.def)             Requested size: 240.0pt x 179.99525pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6 <./images/mm.pdf>]
-<images/Hubble-grid-2/Hubblegrid.pdf, id=164, 1445.4pt x 1024.82875pt>
+<images/Hubble-grid-2/Hubblegrid.pdf, id=165, 1445.4pt x 1024.82875pt>
 File: images/Hubble-grid-2/Hubblegrid.pdf Graphic file (type pdf)
 
 <use images/Hubble-grid-2/Hubblegrid.pdf>
 Package pdftex.def Info: images/Hubble-grid-2/Hubblegrid.pdf used on input line
- 563.
+ 561.
 (pdftex.def)             Requested size: 240.0pt x 170.1528pt.
  (./ellicular.bbl [7 <./images/Hubble-grid-2/Hubblegrid.pdf>]
 Underfull \vbox (badness 5578) has occurred while \output is active []
@@ -409,11 +409,11 @@ Underfull \vbox (badness 5578) has occurred while \output is active []
 ) [8]
 (./ellicular.aux) ) 
 Here is how much of TeX's memory you used:
- 3129 strings out of 493488
- 42111 string characters out of 3141326
- 120182 words of memory out of 3000000
- 6369 multiletter control sequences out of 15000+200000
- 18432 words of font info for 66 fonts, out of 3000000 for 9000
+ 3134 strings out of 493488
+ 42195 string characters out of 3141326
+ 120332 words of memory out of 3000000
+ 6373 multiletter control sequences out of 15000+200000
+ 18778 words of font info for 67 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,16n,34p,1120b,332s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfo
@@ -437,15 +437,16 @@ texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
 exlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/tex
 live/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texli
 ve/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive
-/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/
-2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/20
-12/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2012
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2012/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on ellicular.pdf (8 pages, 3103535 bytes).
+/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/
+2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2
+012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/201
+2/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2012/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2012/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on ellicular.pdf (8 pages, 3112119 bytes).
 PDF statistics:
- 252 PDF objects out of 1000 (max. 8388607)
- 141 compressed objects within 2 object streams
+ 256 PDF objects out of 1000 (max. 8388607)
+ 144 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

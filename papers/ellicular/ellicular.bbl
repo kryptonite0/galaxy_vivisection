@@ -149,9 +149,9 @@ p.~185
   {Bender}}{2012}]{kormendybender2012}
 {Kormendy} J.,  {Bender} R.,  2012, \apjs, 198, 2
 
-\bibitem[\protect\citeauthoryear{{Krajnovi{\'c}} \& {et al.}}{{Krajnovi{\'c}}
-  \& {et al.}}{2013}]{krajnovic2013etal}
-{Krajnovi{\'c}} D.,  {et al.} 2013, \mnras, 432, 1768
+\bibitem[\protect\citeauthoryear{{Krajnovi{\'c}}, {} \& {et
+  al.}}{{Krajnovi{\'c}} et~al.}{2013}]{krajnovic2013etal}
+{Krajnovi{\'c}} D.,  {}   {et al.} 2013, \mnras, 432, 1768
 
 \bibitem[\protect\citeauthoryear{{L{\"a}sker}, {Ferrarese} \& {van de
   Ven}}{{L{\"a}sker} et~al.}{2014}]{lasker2014data}
@@ -280,6 +280,10 @@ p.~117
 {Walsh} J.~L.,  {van den Bosch} R.~C.~E.,  {Gebhardt} K.,  {Yildirim} A.,
   {G{\"u}ltekin} K.,  {Husemann} B.,    {Richstone} D.~O.,  2015, \apj, 808,
   183
+
+\bibitem[\protect\citeauthoryear{{White} \& {Rees}}{{White} \&
+  {Rees}}{1978}]{whiterees1978}
+{White} S.~D.~M.,  {Rees} M.~J.,  1978, \mnras, 183, 341
 
 \bibitem[\protect\citeauthoryear{{Y{\i}ld{\i}r{\i}m}, {van den Bosch}, {van de
   Ven}, {Husemann}, {Lyubenova}, {Walsh}, {Gebhardt} \&

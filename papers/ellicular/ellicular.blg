@@ -7,7 +7,7 @@ Repeated entry---line 1288 of file /Users/gsavorgnan/galaxy_vivisection/papers/S
  : @article{rixwhite1992
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2221 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+Repeated entry---line 2234 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  : @article{scorzabender1995
  :                          ,
 I'm skipping whatever remains of this entry
@@ -21,6 +21,10 @@ Name 1 in "{Emsellem}, E., and {}, and {et al.}" has a comma at the end for entr
 while executing---line 1184 of file mn2e.bst
 Name 2 in "{Emsellem}, E., and {}, and {et al.}" has a comma at the end for entry atlas3dIII-MNRAS
 while executing---line 1184 of file mn2e.bst
+Name 2 in "{Krajnovi{\'c}}, D. and {}, and {et al.}" has a comma at the end for entry krajnovic2013etal
+while executing---line 1184 of file mn2e.bst
+Name 2 in "{Krajnovi{\'c}}, D. and {}, and {et al.}" has a comma at the end for entry krajnovic2013etal
+while executing---line 1184 of file mn2e.bst
 Name 1 in "{Meidt}, S.~E., and {}, and {et al.}" has a comma at the end for entry meidt2014-MNRAS
 while executing---line 1184 of file mn2e.bst
 Name 2 in "{Meidt}, S.~E., and {}, and {et al.}" has a comma at the end for entry meidt2014-MNRAS
@@ -63,50 +67,52 @@ Name 1 in "{Fazio}, G.~G., and {}, and {et al.}" has a comma at the end for entr
 while executing---line 1260 of file mn2e.bst
 Name 2 in "{Fazio}, G.~G., and {}, and {et al.}" has a comma at the end for entry fazio2004IRAC-MNRAS
 while executing---line 1260 of file mn2e.bst
+Name 2 in "{Krajnovi{\'c}}, D. and {}, and {et al.}" has a comma at the end for entry krajnovic2013etal
+while executing---line 1260 of file mn2e.bst
 Name 1 in "{Meidt}, S.~E., and {}, and {et al.}" has a comma at the end for entry meidt2014-MNRAS
 while executing---line 1260 of file mn2e.bst
 Name 2 in "{Meidt}, S.~E., and {}, and {et al.}" has a comma at the end for entry meidt2014-MNRAS
 while executing---line 1260 of file mn2e.bst
 Warning--empty publisher in sandage1961
-You've used 58 entries,
+You've used 59 entries,
             2601 wiz_defined-function locations,
-            865 strings with 14730 characters,
-and the built_in function-call counts, 27247 in all, are:
-= -- 2574
-> -- 2101
+            870 strings with 14888 characters,
+and the built_in function-call counts, 27650 in all, are:
+= -- 2615
+> -- 2128
 < -- 35
-+ -- 724
-- -- 723
-* -- 2651
-:= -- 5028
++ -- 733
+- -- 732
+* -- 2690
+:= -- 5103
 add.period$ -- 0
-call.type$ -- 58
-change.case$ -- 475
-chr.to.int$ -- 57
-cite$ -- 59
-duplicate$ -- 711
-empty$ -- 1040
-format.name$ -- 803
-if$ -- 4971
+call.type$ -- 59
+change.case$ -- 482
+chr.to.int$ -- 58
+cite$ -- 60
+duplicate$ -- 722
+empty$ -- 1056
+format.name$ -- 813
+if$ -- 5044
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 59
-newline$ -- 183
-num.names$ -- 242
-pop$ -- 368
+missing$ -- 60
+newline$ -- 186
+num.names$ -- 246
+pop$ -- 373
 preamble$ -- 1
-purify$ -- 527
+purify$ -- 535
 quote$ -- 0
-skip$ -- 907
+skip$ -- 920
 stack$ -- 0
-substring$ -- 1244
-swap$ -- 112
+substring$ -- 1266
+swap$ -- 113
 text.length$ -- 10
-text.prefix$ -- 237
+text.prefix$ -- 240
 top$ -- 0
-type$ -- 519
+type$ -- 528
 warning$ -- 1
-while$ -- 236
+while$ -- 240
 width$ -- 0
-write$ -- 589
-(There were 30 error messages)
+write$ -- 599
+(There were 33 error messages)
