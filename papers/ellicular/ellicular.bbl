@@ -35,6 +35,9 @@
   {Vikhlinin} A.,  {Nulsen} P.~E.~J.,  {Schindler} S.,    {Jones} C.,  2012,
   \apj, 753, 140
 
+\bibitem[\protect\citeauthoryear{{Boroson}}{{Boroson}}{1981}]{boroson1981}
+{Boroson} T.,  1981, \apjs, 46, 177
+
 \bibitem[\protect\citeauthoryear{{Capaccioli}}{{Capaccioli}}{1987}]{capaccioli1987}
 {Capaccioli} M.,  1987, in {de Zeeuw} P.~T.,  ed., Structure and Dynamics of
   Elliptical Galaxies Vol.~127 of IAU Symposium, {Distribution of light - Outer
@@ -77,6 +80,15 @@ p.~211
   Galaxies from the GOODS NICMOS Survey}.
 p. 107.04
 
+\bibitem[\protect\citeauthoryear{{Daddi}, {Renzini}, {Pirzkal}, {Cimatti},
+  {Malhotra}, {Stiavelli}, {Xu}, {Pasquali}, {Rhoads}, {Brusa}, {di Serego
+  Alighieri}, {Ferguson}, {Koekemoer}, {Moustakas}, {Panagia} \&
+  {Windhorst}}{{Daddi} et~al.}{2005}]{daddi2005}
+{Daddi} E.,  {Renzini} A.,  {Pirzkal} N.,  {Cimatti} A.,  {Malhotra} S.,
+  {Stiavelli} M.,  {Xu} C.,  {Pasquali} A.,  {Rhoads} J.~E.,  {Brusa} M.,  {di
+  Serego Alighieri} S.,  {Ferguson} H.~C.,  {Koekemoer} A.~M.,  {Moustakas}
+  L.~A.,  {Panagia} N.,    {Windhorst} R.~A.,  2005, \apj, 626, 680
+
 \bibitem[\protect\citeauthoryear{{Damjanov}, {McCarthy}, {Abraham},
   {Glazebrook}, {Yan}, {Mentuch}, {Le Borgne}, {Savaglio}, {Crampton},
   {Murowinski}, {Juneau}, {Carlberg}, {J{\o}rgensen}, {Roth}, {Chen} \&
@@ -98,6 +110,10 @@ p. 107.04
 {D'Onofrio} M.,  {Zaggia} S.~R.,  {Longo} G.,  {Caon} N.,    {Capaccioli} M.,
   1995, \aap, 296, 319
 
+\bibitem[\protect\citeauthoryear{{Dullo} \& {Graham}}{{Dullo} \&
+  {Graham}}{2014}]{dullograham2014cores}
+{Dullo} B.~T.,  {Graham} A.~W.,  2014, \mnras, 444, 2700
+
 \bibitem[\protect\citeauthoryear{{Emsellem}, {} \& {et al.}}{{Emsellem}
   et~al.}{2011}]{atlas3dIII-MNRAS}
 {Emsellem} E.,  {}   {et al.} 2011, \mnras, 414, 888
@@ -114,6 +130,11 @@ p. 107.04
 {Gavazzi} G.,  {Boselli} A.,  {Donati} A.,  {Franzetti} P.,    {Scodeggio} M.,
   2003, \aap, 400, 451
 
+\bibitem[\protect\citeauthoryear{{Graham}}{{Graham}}{2013}]{graham2013review}
+{Graham} A.~W.,  2013, {Elliptical and Disk Galaxy Structure and Modern Scaling
+  Laws}.
+p.~91
+
 \bibitem[\protect\citeauthoryear{{Graham}}{{Graham}}{2014}]{graham2014review}
 {Graham} A.~W.,  2014, in {Seigar} M.~S.,  {Treuthardt} P.,  eds, Structure and
   Dynamics of Disk Galaxies Vol.~480 of Astronomical Society of the Pacific
@@ -129,6 +150,11 @@ p.~185
   et~al.}{2015}]{GDS2015}
 {Graham} A.~W.,  {Dullo} B.~T.,    {Savorgnan} G.~A.~D.,  2015, \apj, 804, 32
 
+\bibitem[\protect\citeauthoryear{{Graham}, {Erwin}, {Trujillo} \& {Asensio
+  Ramos}}{{Graham} et~al.}{2003}]{graham2003coresersicmodel}
+{Graham} A.~W.,  {Erwin} P.,  {Trujillo} I.,    {Asensio Ramos} A.,  2003, \aj,
+  125, 2951
+
 \bibitem[\protect\citeauthoryear{{Graham} \& {Worley}}{{Graham} \&
   {Worley}}{2008}]{grahamworley2008}
 {Graham} A.~W.,  {Worley} C.~C.,  2008, \mnras, 388, 1708
@@ -141,9 +167,16 @@ p.~185
 \bibitem[\protect\citeauthoryear{{Jedrzejewski}}{{Jedrzejewski}}{1987}]{taskellipse}
 {Jedrzejewski} R.~I.,  1987, \mnras, 226, 747
 
+\bibitem[\protect\citeauthoryear{{Kent}}{{Kent}}{1985}]{kent1985}
+{Kent} S.~M.,  1985, \apjs, 59, 115
+
 \bibitem[\protect\citeauthoryear{{Khochfar} \& {Silk}}{{Khochfar} \&
   {Silk}}{2006}]{khochfarsilk2006}
 {Khochfar} S.,  {Silk} J.,  2006, \apjl, 648, L21
+
+\bibitem[\protect\citeauthoryear{{Kodaira}, {Watanabe} \& {Okamura}}{{Kodaira}
+  et~al.}{1986}]{kodaira1986}
+{Kodaira} K.,  {Watanabe} M.,    {Okamura} S.,  1986, \apjs, 62, 703
 
 \bibitem[\protect\citeauthoryear{{Kormendy} \& {Bender}}{{Kormendy} \&
   {Bender}}{2012}]{kormendybender2012}
@@ -197,6 +230,10 @@ pp 268--273
 
 \bibitem[\protect\citeauthoryear{{Moffat}}{{Moffat}}{1969}]{moffat1969}
 {Moffat} A.~F.~J.,  1969, \aap, 3, 455
+
+\bibitem[\protect\citeauthoryear{{Navarro} \& {Benz}}{{Navarro} \&
+  {Benz}}{1991}]{navarrobenz1991}
+{Navarro} J.~F.,  {Benz} W.,  1991, \apj, 380, 320
 
 \bibitem[\protect\citeauthoryear{{Nieto}, {Bender}, {Arnaud} \&
   {Surma}}{{Nieto} et~al.}{1991}]{nieto1991}
@@ -257,6 +294,22 @@ p.~117
 {S{\'e}rsic} J.~L.,  1963, Boletin de la Asociacion Argentina de Astronomia La
   Plata Argentina, 6, 41
 
+\bibitem[\protect\citeauthoryear{{Simien} \& {de Vaucouleurs}}{{Simien} \& {de
+  Vaucouleurs}}{1986}]{simiendevaucouleurs1986}
+{Simien} F.,  {de Vaucouleurs} G.,  1986, \apj, 302, 564
+
+\bibitem[\protect\citeauthoryear{{Trujillo}, {Erwin}, {Asensio Ramos} \&
+  {Graham}}{{Trujillo} et~al.}{2004}]{trujillo2004coresersicmodel}
+{Trujillo} I.,  {Erwin} P.,  {Asensio Ramos} A.,    {Graham} A.~W.,  2004, \aj,
+  127, 1917
+
+\bibitem[\protect\citeauthoryear{{Trujillo}, {Feulner}, {Goranova}, {Hopp},
+  {Longhetti}, {Saracco}, {Bender}, {Braito}, {Della Ceca}, {Drory}, {Mannucci}
+  \& {Severgnini}}{{Trujillo} et~al.}{2006}]{trujillo2006}
+{Trujillo} I.,  {Feulner} G.,  {Goranova} Y.,  {Hopp} U.,  {Longhetti} M.,
+  {Saracco} P.,  {Bender} R.,  {Braito} V.,  {Della Ceca} R.,  {Drory} N.,
+  {Mannucci} F.,    {Severgnini} P.,  2006, \mnras, 373, L36
+
 \bibitem[\protect\citeauthoryear{{van den Bergh}}{{van den
   Bergh}}{1976}]{vandenbergh1976}
 {van den Bergh} S.,  1976, \apj, 206, 883
@@ -280,6 +333,10 @@ p.~117
 {Walsh} J.~L.,  {van den Bosch} R.~C.~E.,  {Gebhardt} K.,  {Yildirim} A.,
   {G{\"u}ltekin} K.,  {Husemann} B.,    {Richstone} D.~O.,  2015, \apj, 808,
   183
+
+\bibitem[\protect\citeauthoryear{{White} \& {Frenk}}{{White} \&
+  {Frenk}}{1991}]{whitefrenk1991}
+{White} S.~D.~M.,  {Frenk} C.~S.,  1991, \apj, 379, 52
 
 \bibitem[\protect\citeauthoryear{{White} \& {Rees}}{{White} \&
   {Rees}}{1978}]{whiterees1978}

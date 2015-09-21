@@ -3,11 +3,11 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: ellicular.aux
 The style file: mn2e.bst
 Database file #1: /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
-Repeated entry---line 1288 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+Repeated entry---line 1390 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  : @article{rixwhite1992
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2234 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+Repeated entry---line 2336 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  : @article{scorzabender1995
  :                          ,
 I'm skipping whatever remains of this entry
@@ -67,6 +67,8 @@ Name 1 in "{Fazio}, G.~G., and {}, and {et al.}" has a comma at the end for entr
 while executing---line 1260 of file mn2e.bst
 Name 2 in "{Fazio}, G.~G., and {}, and {et al.}" has a comma at the end for entry fazio2004IRAC-MNRAS
 while executing---line 1260 of file mn2e.bst
+Warning--can't use both author and editor fields in graham2013review
+Warning--empty publisher in graham2013review
 Name 2 in "{Krajnovi{\'c}}, D. and {}, and {et al.}" has a comma at the end for entry krajnovic2013etal
 while executing---line 1260 of file mn2e.bst
 Name 1 in "{Meidt}, S.~E., and {}, and {et al.}" has a comma at the end for entry meidt2014-MNRAS
@@ -74,45 +76,45 @@ while executing---line 1260 of file mn2e.bst
 Name 2 in "{Meidt}, S.~E., and {}, and {et al.}" has a comma at the end for entry meidt2014-MNRAS
 while executing---line 1260 of file mn2e.bst
 Warning--empty publisher in sandage1961
-You've used 59 entries,
+You've used 71 entries,
             2601 wiz_defined-function locations,
-            870 strings with 14888 characters,
-and the built_in function-call counts, 27650 in all, are:
-= -- 2615
-> -- 2128
-< -- 35
-+ -- 733
-- -- 732
-* -- 2690
-:= -- 5103
+            933 strings with 17077 characters,
+and the built_in function-call counts, 33220 in all, are:
+= -- 3149
+> -- 2561
+< -- 43
++ -- 883
+- -- 882
+* -- 3241
+:= -- 6133
 add.period$ -- 0
-call.type$ -- 59
-change.case$ -- 482
-chr.to.int$ -- 58
-cite$ -- 60
-duplicate$ -- 722
-empty$ -- 1056
-format.name$ -- 813
-if$ -- 5044
+call.type$ -- 71
+change.case$ -- 580
+chr.to.int$ -- 70
+cite$ -- 74
+duplicate$ -- 858
+empty$ -- 1253
+format.name$ -- 983
+if$ -- 6050
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 60
-newline$ -- 186
-num.names$ -- 246
-pop$ -- 373
+missing$ -- 73
+newline$ -- 223
+num.names$ -- 294
+pop$ -- 446
 preamble$ -- 1
-purify$ -- 535
+purify$ -- 645
 quote$ -- 0
-skip$ -- 920
+skip$ -- 1100
 stack$ -- 0
-substring$ -- 1266
-swap$ -- 113
-text.length$ -- 10
-text.prefix$ -- 240
+substring$ -- 1530
+swap$ -- 131
+text.length$ -- 11
+text.prefix$ -- 290
 top$ -- 0
-type$ -- 528
-warning$ -- 1
-while$ -- 240
+type$ -- 633
+warning$ -- 3
+while$ -- 288
 width$ -- 0
-write$ -- 599
+write$ -- 719
 (There were 33 error messages)
