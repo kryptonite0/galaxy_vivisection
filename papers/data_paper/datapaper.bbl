@@ -75,6 +75,12 @@
 {Comer{\'o}n}, S., {Knapen}, J.~H., {Beckman}, J.~E., {et~al.} 2010, \mnras,
   402, 2462
 
+\bibitem[{{Comer{\'o}n} {et~al.}(2012){Comer{\'o}n}, {Elmegreen}, {Salo},
+  {Laurikainen}, {Athanassoula}, {Bosma}, {Knapen}, {Gadotti}, {Sheth}, {Hinz},
+  {Regan}, {Gil de Paz}, {Mu{\~n}oz-Mateos}, {Men{\'e}ndez-Delmestre},
+  {Seibert}, {Kim}, {Mizusawa}, {Laine}, {Ho}, \& {Holwerda}}]{comeron2012}
+{Comer{\'o}n}, S., {Elmegreen}, B.~G., {Salo}, H., {et~al.} 2012, \apj, 759, 98
+
 \bibitem[{{Comer{\'o}n} {et~al.}(2014){Comer{\'o}n}, {Salo}, {Laurikainen},
   {Knapen}, {Buta}, {Herrera-Endoqui}, {Laine}, {Holwerda}, {Sheth}, {Regan},
   {Hinz}, {Mu{\~n}oz-Mateos}, {Gil de Paz}, {Men{\'e}ndez-Delmestre},
@@ -122,15 +128,22 @@
 {Elmegreen}, D.~M., {Elmegreen}, B.~G., \& {Eberwein}, K.~S. 2002, \apj, 564,
   234
 
-\bibitem[{{Emsellem} {et~al.}(2011){Emsellem}, {}, \& {E. et
-  al.}}]{atlas3dIII-MNRAS}
-{Emsellem}, {}, \& {E. et al.} 2011, \mnras, 414, 888
+\bibitem[{{Emsellem} {et~al.}(2011){Emsellem}, {Cappellari}, {Krajnovi{\'c}},
+  {Alatalo}, {Blitz}, {Bois}, {Bournaud}, {Bureau}, {Davies}, {Davis}, {de
+  Zeeuw}, {Khochfar}, {Kuntschner}, {Lablanche}, {McDermid}, {Morganti},
+  {Naab}, {Oosterloo}, {Sarzi}, {Scott}, {Serra}, {van de Ven}, {Weijmans}, \&
+  {Young}}]{atlas3dIII}
+{Emsellem}, E., {Cappellari}, M., {Krajnovi{\'c}}, D., {et~al.} 2011, \mnras,
+  414, 888
 
 \bibitem[{{Erwin}(2004)}]{erwin2004}
 {Erwin}, P. 2004, \aap, 415, 941
 
 \bibitem[{{Erwin}(2015)}]{imfit}
 ---. 2015, \apj, 799, 226
+
+\bibitem[{{Erwin} {et~al.}(2005){Erwin}, {Beckman}, \& {Pohlen}}]{erwin2005}
+{Erwin}, P., {Beckman}, J.~E., \& {Pohlen}, M. 2005, \apjl, 626, L81
 
 \bibitem[{{Erwin} {et~al.}(2003){Erwin}, {Beltr{\'a}n}, {Graham}, \&
   {Beckman}}]{erwin2003n2787}
@@ -139,6 +152,13 @@
 
 \bibitem[{{Erwin} \& {Debattista}(2013)}]{erwindebattista2013}
 {Erwin}, P., \& {Debattista}, V.~P. 2013, \mnras, 431, 3060
+
+\bibitem[{{Erwin} \& {Gadotti}(2012)}]{erwingadotti2012}
+{Erwin}, P., \& {Gadotti}, D.~A. 2012, Advances in Astronomy, 2012, 4
+
+\bibitem[{{Erwin} {et~al.}(2012){Erwin}, {Guti{\'e}rrez}, \&
+  {Beckman}}]{erwin2012}
+{Erwin}, P., {Guti{\'e}rrez}, L., \& {Beckman}, J.~E. 2012, \apjl, 744, L11
 
 \bibitem[{{Erwin} {et~al.}(2008){Erwin}, {Pohlen}, \& {Beckman}}]{erwin2008}
 {Erwin}, P., {Pohlen}, M., \& {Beckman}, J.~E. 2008, \aj, 135, 20
@@ -173,6 +193,10 @@
 \bibitem[{{Fisher} \& {Drory}(2010)}]{fisherdrory2010}
 {Fisher}, D.~B., \& {Drory}, N. 2010, \apj, 716, 942
 
+\bibitem[{{Fontanot} {et~al.}(2015){Fontanot}, {Monaco}, \&
+  {Shankar}}]{fontanot2015}
+{Fontanot}, F., {Monaco}, P., \& {Shankar}, F. 2015, \mnras, 453, 4112
+
 \bibitem[{{Forbes} {et~al.}(1997){Forbes}, {Brodie}, \& {Huchra}}]{forbes1997}
 {Forbes}, D.~A., {Brodie}, J.~P., \& {Huchra}, J. 1997, \aj, 113, 887
 
@@ -182,6 +206,9 @@
 
 \bibitem[{{Franx} \& {Illingworth}(1988)}]{franxillingworth1988ic1459}
 {Franx}, M., \& {Illingworth}, G.~D. 1988, \apjl, 327, L55
+
+\bibitem[{{Gadotti}(2008)}]{gadotti2008}
+{Gadotti}, D.~A. 2008, \mnras, 384, 420
 
 \bibitem[{{Gavazzi} {et~al.}(2003){Gavazzi}, {Boselli}, {Donati}, {Franzetti},
   \& {Scodeggio}}]{goldmine}
@@ -217,8 +244,7 @@
   378, 198
 
 \bibitem[{{Graham} {et~al.}(2015){Graham}, {Dullo}, \& {Savorgnan}}]{GDS2015}
-{Graham}, A.~W., {Dullo}, B.~T., \& {Savorgnan}, G.~A.~D. 2015, ArXiv e-prints,
-  arXiv:1502.07024
+{Graham}, A.~W., {Dullo}, B.~T., \& {Savorgnan}, G.~A.~D. 2015, \apj, 804, 32
 
 \bibitem[{{Graham} {et~al.}(2001){Graham}, {Erwin}, {Caon}, \&
   {Trujillo}}]{graham2001}
@@ -270,8 +296,26 @@
 \bibitem[{{Jedrzejewski}(1987)}]{taskellipse}
 {Jedrzejewski}, R.~I. 1987, \mnras, 226, 747
 
+\bibitem[{{Jun} \& {Im}(2008)}]{junim2008}
+{Jun}, H.~D., \& {Im}, M. 2008, \apjl, 678, L97
+
 \bibitem[{{Khachikian} \& {Weedman}(1974)}]{khachikian1974}
 {Khachikian}, E.~Y., \& {Weedman}, D.~W. 1974, \apj, 192, 581
+
+\bibitem[{{Kim} {et~al.}(2014){Kim}, {Gadotti}, {Sheth}, {Athanassoula},
+  {Bosma}, {Lee}, {Madore}, {Elmegreen}, {Knapen}, {Zaritsky}, {Ho},
+  {Comer{\'o}n}, {Holwerda}, {Hinz}, {Mu{\~n}oz-Mateos}, {Cisternas},
+  {Erroz-Ferrer}, {Buta}, {Laurikainen}, {Salo}, {Laine},
+  {Men{\'e}ndez-Delmestre}, {Regan}, {de Swardt}, {Gil de Paz}, {Seibert}, \&
+  {Mizusawa}}]{kim2014}
+{Kim}, T., {Gadotti}, D.~A., {Sheth}, K., {et~al.} 2014, \apj, 782, 64
+
+\bibitem[{{Kim} {et~al.}(2015){Kim}, {Sheth}, {Gadotti}, {Lee}, {Zaritsky},
+  {Elmegreen}, {Athanassoula}, {Bosma}, {Holwerda}, {Ho}, {Comer{\'o}n},
+  {Knapen}, {Hinz}, {Mu{\~n}oz-Mateos}, {Erroz-Ferrer}, {Buta}, {Kim},
+  {Laurikainen}, {Salo}, {Madore}, {Laine}, {Men{\'e}ndez-Delmestre}, {Regan},
+  {de Swardt}, {Gil de Paz}, {Seibert}, \& {Mizusawa}}]{kim2015}
+{Kim}, T., {Sheth}, K., {Gadotti}, D.~A., {et~al.} 2015, \apj, 799, 99
 
 \bibitem[{{King} \& {Minkowski}(1966)}]{kingminkowski1966}
 {King}, I.~R., \& {Minkowski}, R. 1966, \apj, 143, 1002
@@ -280,6 +324,11 @@
   {Wynn-Williams}}]{knapp1996n3998}
 {Knapp}, G.~R., {Rupen}, M.~P., {Fich}, M., {Harper}, D.~A., \&
   {Wynn-Williams}, C.~G. 1996, \aap, 315, L75
+
+\bibitem[{{Kormendy} \& {Gebhardt}(2001)}]{kormendygebhardt2001}
+{Kormendy}, J., \& {Gebhardt}, K. 2001, in American Institute of Physics
+  Conference Series, Vol. 586, 20th Texas Symposium on relativistic
+  astrophysics, ed. J.~C. {Wheeler} \& H.~{Martel}, 363--381
 
 \bibitem[{{Kormendy} \& {Richstone}(1995)}]{kormendyrichstone1995}
 {Kormendy}, J., \& {Richstone}, D. 1995, \araa, 33, 581
@@ -308,12 +357,12 @@
 \bibitem[{{L{\"a}sker} {et~al.}(2014{\natexlab{a}}){L{\"a}sker}, {Ferrarese},
   \& {van de Ven}}]{lasker2014data}
 {L{\"a}sker}, R., {Ferrarese}, L., \& {van de Ven}, G. 2014{\natexlab{a}},
-  \apj, 780, 69
+  \apj, arXiv:1311.1530
 
 \bibitem[{{L{\"a}sker} {et~al.}(2014{\natexlab{b}}){L{\"a}sker}, {Ferrarese},
   {van de Ven}, \& {Shankar}}]{lasker2014anal}
 {L{\"a}sker}, R., {Ferrarese}, L., {van de Ven}, G., \& {Shankar}, F.
-  2014{\natexlab{b}}, \apj, 780, 70
+  2014{\natexlab{b}}, \apj, arXiv:1311.1531
 
 \bibitem[{{Laurikainen} {et~al.}(2005){Laurikainen}, {Salo}, \&
   {Buta}}]{laurikainen2005}
@@ -358,6 +407,15 @@
 {Morrison}, H., {Caldwell}, N., {Schiavon}, R.~P., {et~al.} 2011, \apjl, 726,
   L9
 
+\bibitem[{{Mu{\~n}oz-Mateos} {et~al.}(2013){Mu{\~n}oz-Mateos}, {Sheth}, {Gil de
+  Paz}, {Meidt}, {Athanassoula}, {Bosma}, {Comer{\'o}n}, {Elmegreen},
+  {Elmegreen}, {Erroz-Ferrer}, {Gadotti}, {Hinz}, {Ho}, {Holwerda}, {Jarrett},
+  {Kim}, {Knapen}, {Laine}, {Laurikainen}, {Madore}, {Menendez-Delmestre},
+  {Mizusawa}, {Regan}, {Salo}, {Schinnerer}, {Seibert}, {Skibba}, \&
+  {Zaritsky}}]{munozmateos2013}
+{Mu{\~n}oz-Mateos}, J.~C., {Sheth}, K., {Gil de Paz}, A., {et~al.} 2013, \apj,
+  771, 59
+
 \bibitem[{{Munoz-Tunon} {et~al.}(1989){Munoz-Tunon}, {Prieto}, {Beckman}, \&
   {Cepa}}]{munoztunon1989m94}
 {Munoz-Tunon}, C., {Prieto}, M., {Beckman}, J., \& {Cepa}, J. 1989, \apss, 156,
@@ -386,9 +444,11 @@
 \bibitem[{{Peeples} \& {Martini}(2006)}]{peeplesmartini2006m94}
 {Peeples}, M.~S., \& {Martini}, P. 2006, \apj, 652, 1097
 
+\bibitem[{{Peng} {et~al.}(2002){Peng}, {Ho}, {Impey}, \& {Rix}}]{peng2002}
+{Peng}, C.~Y., {Ho}, L.~C., {Impey}, C.~D., \& {Rix}, H.-W. 2002, \aj, 124, 266
+
 \bibitem[{{Peng} {et~al.}(2010){Peng}, {Ho}, {Impey}, \& {Rix}}]{peng2010}
-{Peng}, C.~Y., {Ho}, L.~C., {Impey}, C.~D., \& {Rix}, H.-W. 2010, \aj, 139,
-  2097
+---. 2010, \aj, 139, 2097
 
 \bibitem[{{Pott} {et~al.}(2010){Pott}, {Malkan}, {Elitzur}, {Ghez}, {Herbst},
   {Sch{\"o}del}, \& {Woillez}}]{pott2010}
@@ -397,6 +457,11 @@
 \bibitem[{{Quillen} {et~al.}(2000){Quillen}, {Bower}, \&
   {Stritzinger}}]{quillen2000}
 {Quillen}, A.~C., {Bower}, G.~A., \& {Stritzinger}, M. 2000, \apjs, 128, 85
+
+\bibitem[{{Ravindranath} {et~al.}(2001){Ravindranath}, {Ho}, {Peng},
+  {Filippenko}, \& {Sargent}}]{ravindranath2001}
+{Ravindranath}, S., {Ho}, L.~C., {Peng}, C.~Y., {Filippenko}, A.~V., \&
+  {Sargent}, W.~L.~W. 2001, \aj, 122, 653
 
 \bibitem[{{Richings} {et~al.}(2011){Richings}, {Uttley}, \&
   {K{\"o}rding}}]{richings2011}
@@ -470,6 +535,12 @@
 \bibitem[{{Sersic}(1968)}]{sersic1968}
 {Sersic}, J.~L. 1968, {Atlas de galaxias australes}
 
+\bibitem[{{Shankar}(2009)}]{shankar2009}
+{Shankar}, F. 2009, \nar, 53, 57
+
+\bibitem[{{Shankar}(2013)}]{shankar2013}
+---. 2013, Classical and Quantum Gravity, 30, 244001
+
 \bibitem[{{Sheth} {et~al.}(2010){Sheth}, {Regan}, {Hinz}, {Gil de Paz},
   {Men{\'e}ndez-Delmestre}, {Mu{\~n}oz-Mateos}, {Seibert}, {Kim},
   {Laurikainen}, {Salo}, {Gadotti}, {Laine}, {Mizusawa}, {Armus},
@@ -504,6 +575,10 @@
   {Robotham}}]{vika2012}
 {Vika}, M., {Driver}, S.~P., {Cameron}, E., {Kelvin}, L., \& {Robotham}, A.
   2012, \mnras, 419, 2264
+
+\bibitem[{{Wadadekar} {et~al.}(1999){Wadadekar}, {Robbason}, \&
+  {Kembhavi}}]{wadadekar1999}
+{Wadadekar}, Y., {Robbason}, B., \& {Kembhavi}, A. 1999, \aj, 117, 1219
 
 \bibitem[{{Whitmore} {et~al.}(1990){Whitmore}, {Lucas}, {McElroy},
   {Steiman-Cameron}, {Sackett}, \& {Olling}}]{whitmore1990}

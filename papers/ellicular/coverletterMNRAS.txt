@@ -1,0 +1,31 @@
+Dear Editor, 
+
+I am sending you a copy of my latest manuscript, entitled "Ellicular galaxies and their (non over-massive) black holes".
+The manuscript presents the need for introducing a new class (Ellicular) in the morphological classification scheme of early-type galaxies. 
+Ellicular galaxies are different from lenticular galaxies in the sense that they have intermediate-scale, rather than large-scale, discs. 
+Over the past 3 years of my PhD, I had the chance to talk to many astronomers whose main area of expertise is bulge/disc decomposition 
+of galaxies, and realized that the majority of them consider intermediate-scale discs (see Figure 1 in the manuscript) as something unphysical. 
+This bias seems to always be in the back of their minds when they are modeling galaxies, although it's not easy to track down in the literature. 
+Beside galaxy modelers, the manuscript is also addressed to anyone interested in supermassive black holes 
+or the evolution of high-redshift compact massive quiescent galaxies. 
+These are two hot topics of today's Astronomy, thus I feel that the manuscript should have the broadest possible visibility, 
+as that provided by MNRAS. 
+
+During the submission process, I indicated a list of non-preferred referees for this manuscript. 
+They are some of the authors of the papers Rusli et al. (2011), van den Bosch et al. (2012), Lasker et al. (2014), Walsh et al. (2015), 
+Yildirim et al. (2015) and Ferre-Mateu et al. (2015). 
+I kindly ask you not to disclose our work to these authors, as they surely represent competitors for us. 
+In addition to them, I also indicated the members of the Nuker team as non-preferred referees. 
+This is because in the past there have been tensions between our group and the Nuker team, due to a dibate about the introduction of the 
+core-Sersic model over the Nuker model. 
+
+I hope you enjoy the reading.
+
+Sincerely, 
+Giulia Savorgnan
+Centre for Astrophysics & Supercomputing
+Swinburne University of Technology
+H29, PO Box 218,
+Hawthorn, Victoria 3122, Australia 
+E: gsavorgn@astro.swin.edu.au
+T: +61 (0)3 9214 5622

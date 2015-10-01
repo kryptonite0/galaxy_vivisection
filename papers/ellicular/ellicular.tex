@@ -1,84 +1,12 @@
 
-\documentclass[useAMS,usenatbib,article]{mn2e}
+\documentclass[useAMS,usenatbib,article]{mnras}
 
 \usepackage{longtable}
 \usepackage[]{graphicx}
 \usepackage{amsmath}
 \usepackage{natbib}
-\bibliographystyle{mn2e}
-%\usepackage{tabularx}
-%\usepackage{bm}
-%\usepackage{color}
-%\usepackage{hyperref}
+\bibliographystyle{mnras}
 
-%% Sometimes a paper's abstract is too long to fit on the
-%% title page in preprint2 mode. When that is the case,
-%% use the longabstract style option.
-
-%% \documentclass[preprint2,longabstract]{aastex}
-\newcommand\aj{{AJ}}%
-\newcommand\actaa{{Acta Astron.}}%
-\newcommand\araa{{ARA\&A}}%
-\newcommand\apj{{ApJ}}%
-\newcommand\apjl{{ApJ}}%
-\newcommand\apjs{{ApJS}}%
-\newcommand\ao{{Appl.~Opt.}}%
-\newcommand\apss{{Ap\&SS}}%
-\newcommand\aap{{A\&A}}%
-\newcommand\aapr{{A\&A~Rev.}}%
-\newcommand\aaps{{A\&AS}}%
-\newcommand\azh{{AZh}}%
-\newcommand\baas{{BAAS}}%
-\newcommand\caa{{Chinese Astron. Astrophys.}}%
-\newcommand\cjaa{{Chinese J. Astron. Astrophys.}}%
-\newcommand\icarus{{Icarus}}%
-\newcommand\jcap{{J. Cosmology Astropart. Phys.}}%
-\newcommand\jrasc{{JRASC}}%
-\newcommand\memras{{MmRAS}}%
-\newcommand\mnras{{MNRAS}}%
-\newcommand\na{{New A}}%
-\newcommand\nar{{New A Rev.}}%
-\newcommand\pra{{Phys.~Rev.~A}}%
-\newcommand\prb{{Phys.~Rev.~B}}%
-\newcommand\prc{{Phys.~Rev.~C}}%
-\newcommand\prd{{Phys.~Rev.~D}}%
-\newcommand\pre{{Phys.~Rev.~E}}%
-\newcommand\prl{{Phys.~Rev.~Lett.}}%
-\newcommand\pasa{{PASA}}%
-\newcommand\pasp{{PASP}}%
-\newcommand\pasj{{PASJ}}%
-\newcommand\qjras{{QJRAS}}%
-\newcommand\rmxaa{{Rev. Mexicana Astron. Astrofis.}}%
-\newcommand\skytel{{S\&T}}%
-\newcommand\solphys{{Sol.~Phys.}}%
-\newcommand\sovast{{Soviet~Ast.}}%
-\newcommand\ssr{{Space~Sci.~Rev.}}%
-\newcommand\zap{{ZAp}}%
-\newcommand\nat{{Nature}}%
-\newcommand\iaucirc{{IAU~Circ.}}%
-\newcommand\aplett{{Astrophys.~Lett.}}%
-\newcommand\apspr{{Astrophys.~Space~Phys.~Res.}}%
-\newcommand\bain{{Bull.~Astron.~Inst.~Netherlands}}%
-\newcommand\fcp{{Fund.~Cosmic~Phys.}}%
-\newcommand\gca{{Geochim.~Cosmochim.~Acta}}%
-\newcommand\grl{{Geophys.~Res.~Lett.}}%
-\newcommand\jcp{{J.~Chem.~Phys.}}%
-\newcommand\jgr{{J.~Geophys.~Res.}}%
-\newcommand\jqsrt{{J.~Quant.~Spec.~Radiat.~Transf.}}%
-\newcommand\memsai{{Mem.~Soc.~Astron.~Italiana}}%
-\newcommand\nphysa{{Nucl.~Phys.~A}}%
-\newcommand\physrep{{Phys.~Rep.}}%
-\newcommand\physscr{{Phys.~Scr}}%
-\newcommand\planss{{Planet.~Space~Sci.}}%
-\newcommand\procspie{{Proc.~SPIE}}%
-
-
-%\newcommand{\vdag}{(v)^\dagger}
-%\newcommand{\myemail}{gsavorgn@astro.swin.edu.au}
-%\newcommand{\fitfigurewidth}{0.8\textwidth}
-
-
-%\title[Intermediate-scale discs]{Early-type galaxies with intermediate-scale discs and their ordinary supermassive black holes}
 \title[Ellicular galaxies]{Ellicular galaxies and their (non over-massive) black holes}
 
 
@@ -110,12 +38,11 @@ Here we reveal that decompositions in which the disc remains embedded within the
 correctly reproduce both the photometric and kinematic properties of a class of early-type galaxy 
 intermediate between that of elliptical and lenticular galaxies, which we refer to as \emph{ellicular} galaxies for ease of reference. 
 Ellicular galaxies have often been confused with lenticular galaxies, 
-such that %their disc luminosities have been considerably overestimated 
-their spheroid luminosities have been considerably underestimated. 
+such that their spheroid luminosities have been considerably underestimated. 
 This has recently led to some surprising conclusions, 
 such as the claim that a number of ellicular galaxies (e.g.~Mrk 1216, NGC 1277, NGC 1271, and NGC 1332) 
 host a central black hole whose mass is abnormally large compared to expectations from the (underestimated) spheroid luminosity. 
-We show that when ellicular galaxies are correctly modeled, 
+We show that when ellicular galaxies are correctly modelled, 
 they no longer appear as extreme outliers in the (black hole mass)-(spheroid mass) diagram. 
 This not only nullifies the need for invoking different evolutionary scenarios for these galaxies 
 but it strengthens the significance of the observed (black hole mass)-(spheroid mass) correlation 
@@ -125,81 +52,90 @@ used to describe the coevolution of spheroids and their central supermassive bla
 \end{abstract}
 
 \begin{keywords}
-black hole physics -- galaxies: bulges -- galaxies: elliptical and lenticular, cD -- galaxies: evolution -- galaxies: structure
+galaxies: classification -- galaxies: bulges -- galaxies: elliptical and lenticular, 
+cD -- galaxies: evolution -- galaxies: structure -- galaxies: individual: Mrk 1216, NGC 1271, NGC 1277, NGC 1332, NGC 4291
 \end{keywords}
 
 \section{Introduction}
 \label{sec:int}
 There are currently two well-known types of stellar discs in galaxies. 
-The first are the large-scale discs (with sizes of a few kiloparsec) 
+The first are the large-scale discs (with exponential scale lengths of a few kiloparsec) 
 that dominate the light at large radii in spiral and lenticular galaxies; 
 the second are the small (tens to a couple of hundred parsec) nuclear discs observed in both early- and late-type galaxies 
 (e.g.~\citealt{scorzavandenbosch1998,rest2001,balcells2007,ledo2010}). 
 The origin of the nuclear discs has been speculated to arise from the infall of small satellite galaxies or gas clouds.  
 The origin, or at least the on-going feeding and growth, of the large-scale discs has been attributed to cold gas flows, 
 gas rich mergers and halo accretion events 
-(e.g.~\citealt{whiterees1978,whitefrenk1991,navarrobenz1991,khochfarsilk2006,dekel2009nat,ceverino2010,ceverino2012,conselice2012}), 
+(e.g.~\citealt{whiterees1978,whitefrenk1991,navarrobenz1991,barneshernquist1992,khochfarsilk2006,dekel2009nat,ceverino2010,
+ceverino2012,conselice2012,rubin2012,martini2013,ueda2014}), 
 and a thorough review can be found in \citet{combes2014arX,combes2014pro}.
 On the other hand, intermediate-sized discs have not received the same level of attention 
 as their nuclear and large-scale homologues and 
 they have at times been labelled and rejected as ''unphysical'' when detected. 
-Here we report on the photometric and kinematical signatures of these intermediate-sized stellar discs 
-and the impact this has on the (black hole mass)-to-(spheroid stellar mass) ratio %, $M_{\rm BH}/M_{*,sph}$, 
+Here we focus on the increasingly overlooked occurence of intermediate-scale discs in galaxies with directly measured black hole masses. 
+We report on the photometric and kinematical signatures of these intermediate-sized stellar discs,  
+and the impact they have on the (black hole mass)-to-(spheroid stellar mass) ratio 
 which is used to constrain galaxy evolution models. \\
-%A puzzling question, which has been unspoken for decades, is why are there not intermediate-sized discs: 
-%why are there not accretion events which create discs larger than the typical nuclear discs but which are not large enough to dominate at large radii? 
 The majority of stellar discs have some level of inclination with respect to our line-of-sight, 
 and this makes them appear elliptical (rather than round) when seen in projection on the sky. 
 This can help one distinguish them from the more spherically-shaped spheroids. 
 Identifying the radial extent of these discs with respect to the spheroid can however be subtle. 
 Two-dimensional kinematic maps represent an important diagnostic tool for this purpose. 
-Most early-type galaxies are classified as ``central fast rotators'' \citep{atlas3dIII-MNRAS}, 
+Most early-type galaxies are classified as ``central fast rotators'' \citep{franx1989,atlas3dIII,scott2014}, 
 that is, they are rapidly rotating within their half-light radius.  
 However, more extended kinematic maps \citep{arnold2014} reveal that 
 some of the central fast rotators continue to be fast rotating at large radii, 
 whereas other central fast rotators become slow rotators in their outer regions.
-A specific angular momentum profile that is rapidly increasing beyond $1-2$ half-light radii 
+A specific angular momentum profile that is rapidly increasing beyond 1--2 half-light radii 
 is a signature of a large-scale disc, 
-while a specific angular momentum profile that increases up to $1-2$ half-light radii and then declines beyond that point 
+while a specific angular momentum profile that increases up to 1--2 half-light radii and then declines beyond that point 
 indicates the presence of an intermediate-scale disc that no longer dominates at large radii. 
 Unfortunately, such extended kinematic maps are not yet available for large numbers of galaxies in the local Universe. 
 Nevertheless, the ellipticity profile of a galaxy's isophotes can help identify the extent of stellar discs in early-type galaxies. \\
-The toy model shown in Figure \ref{fig:model} illustrates the typical ellipticity profile 
+Building on the investigation of \cite{rixwhite1990}, 
+the toy model shown in Figure \ref{fig:model} illustrates the typical ellipticity profile 
 ($\epsilon = 1 - b/a$, where $b/a$ is the ratio of minor-to-major axis length) of 
-(i) a lenticular galaxy comprised of a large-scale disc and a relatively smaller encased bulge, 
-(ii) an elliptical galaxy with a nuclear stellar disc, 
-and (iii) a galaxy composed of an intermediate-scale disc embedded in a relatively larger spheroid. 
-We refer to the last case as an ellicular galaxy. 
+(i) a ``lenticular'' galaxy comprised of a large-scale disc which dominates the light at large radii over a relatively smaller encased bulge, 
+(ii) an ``elliptical'' galaxy with an additional nuclear stellar disc, 
+and (iii) a galaxy composed of an intermediate-scale disc embedded in a relatively larger spheroid 
+which dominates the light at large radii. 
+We refer to the last case as an ``ellicular'' galaxy. 
 In general, stellar discs are intrinsically flat and circular; 
 their ellipticity, dictated by their inclination to our line of sight, is fixed. 
 Spheroids are often rounder than the observed projection on the sky of their associated discs, 
 thus their average ellipticity is often lower than that of their disc. 
 An ellipticity profile that increases with radius can be ascribed to an inclined disc that becomes progressively more important at large radii, 
-whereas a radial decrease of ellipticity signifies the opposite case. \\
+whereas a radial decrease of ellipticity signifies the opposite case. 
+This approach can be taken to the next level by inspecting the isophotes for discy structures and checking the velocity line profiles for asymmetry 
+(e.g.~\citealt{scorzabender1995} and references therein; \citealt{scorza1998}). \\
 The awareness that many so-called ``elliptical'' galaxies actually contain stellar discs 
-dates back at least three decades 
-\citep{capaccioli1987,carter1987,rixwhite1990,bender1990,scorzabender1990,nieto1991,rixwhite1992,scorzabender1995,
-donofrio1995,graham1998fornax,scorza1998,scorzavandenbosch1998} and, 
+dates back many years 
+\citep{michard1984,djorgovski1985,carter1987,capaccioli1987,capaccioli1988,franx1989,nieto1988,nieto1991,rixwhite1990,rixwhite1992,
+vandenbergh1990,bender1990,scorzabender1990,scorzabender1995,
+simienmichard1990,cinzanovandermarel1993,donofrio1995,graham1998fornax,scorza1998,scorzavandenbosch1998,bendersaglia1999} and, 
 more recently, intermediate-scale discs were anything but unfamiliar to \cite{kormendybender2012} and \cite{krajnovic2013etal}. 
-However, the class of ellicular galaxies has been missed by many galaxy modellers, 
+However, the class of ellicular galaxies has been missed by many galaxy modellers of late, 
 who have labelled as ``unphysical'' \citep{allen2006} those spheroid/disc decompositions in which the disc does not dominate over the spheroid at large radii 
 as is observed with spiral galaxies. 
-This bias has led to the rejection of many spheroid/disc decompositions similar to that illustrated in the middle panel of Figure \ref{fig:model}. 
+Indeed, \citeauthor{graham2011} (\citeyear{graham2011}, his Figure 7) warned about such erroneous fits to spiral galaxies. 
+This bias has led to the rejection of many early-type galaxy decompositions similar to that illustrated in the middle panel of Figure \ref{fig:model}. 
 Unsurprisingly, studies affected by this bias have not obtained spheroid/disc decompositions with a spheroid-to-total ratio larger than $0.6 - 0.8$ 
-(e.g.~\citealt{gadotti2008,head2014,querejeta2015,mendezabreu2015}). \\
-{\bf This paper is structured as follows. 
+(e.g.~\citealt{gadotti2008,head2014,querejeta2015,mendezabreu2015}). 
+In this paper we investigate the influence this has had on research pertaining to supermassive black hole mass scaling relations involving the host spheroid. \\
+This paper is structured as follows. 
 In Section \ref{sec:gal} we present a detailed photometric analysis of three ellicular galaxies (Mrk 1216, NGC 1332, and NGC 3115) 
-and we briefly describe other five ellicular galaxies (NGC 821, NGC 1271, NGC 1277, NGC 3377, and NGC 4697). 
-We compare our photometric analysis with the kinematical information available from the literature 
+and we briefly describe another five ellicular galaxies (NGC 821, NGC 1271, NGC 1277, NGC 3377, and NGC 4697) 
+already modelled by us elsewhere in the literature. 
+We compare our photometric analysis with the kinematical information available from the literature, 
 and explain the differences between our galaxy models and past decompositions. 
 In Section \ref{sec:mm} we explore the important implications this has for the (black hole mass)-(spheroid stellar mass) diagram. 
 In Section \ref{sec:disc} we discuss our results in terms of galaxy evolution 
-and we update the Hubble grid with the inclusion of ellicular galaxies. }
+and we present the location of ellicular galaxies, relative to other galaxies, in the Hubble grid. 
 
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=\columnwidth]{images/discmodel.eps}
+\includegraphics[width=\columnwidth]{discmodel.eps}
 \caption{Illustration of the spheroid/disc decomposition of the one-dimensional surface brightness profile, $\mu$, 
 the ellipticity profile, $\epsilon$, and the specific angular momentum profile, $\lambda$,
 for the three prototype early-type galaxy sub-classes. 
@@ -256,7 +192,8 @@ because the galaxy is rapidly rotating only within two galaxy half-light radii (
 and the rotation significantly drops at larger radii.  
 The unsharp mask of NGC 3115 (Figure \ref{fig:n3115}) betrays the presence of a faint edge-on nuclear ring, 
 which can also be spotted as a small peak in the ellipticity profile 
-(at semimajor-axis length $R_{\rm maj} \sim 15~\rm arcsec$).
+(at semi-major axis length $R_{\rm maj} \sim 15~\rm arcsec$). 
+Such rings are common in early-type galaxies \citep{michardmarchal1993}.
 The spheroidal component of NGC 3115 is well described with a \cite{sersic1963} profile.
 The highly inclined intermediate-scale disc is better fit with an $n<1$ S\'ersic profile 
 (the S\'ersic index $n$ regulates the curvature of the S\'ersic profile) 
@@ -288,24 +225,22 @@ with a spheroid-to-total ratio of $0.95$. \\
 as revealed by the ellipticity profile, 
 and proposed a model featuring a S\'ersic-bulge and a large-scale exponential-disc, 
 with a spheroid-to-total ratio of $0.43$.
-Based on their bulge/disc decomposition, they concluded that NGC 1332 is a disc dominated lenticular galaxy 
+Based on their bulge/disc decomposition, they concluded that NGC 1332 is a disc-dominated lenticular galaxy 
 which is displaced from the (black hole mass)-(spheroid luminosity) correlation of \cite{marconihunt2003} 
 by an order of magnitude along the black hole mass direction. 
 However, in Section \ref{sec:mm} we show that, according to our decomposition, 
 NGC 1332 lies within the $1\sigma$ scatter about the (black hole mass)-(spheroid stellar mass) correlation 
 for early-type galaxies. 
-{\bf We also note that the majority of galaxies with an elevated stellar velocity dispersion ($\sigma > 270~\rm km~s^{-1}$) 
-are core-S\'ersic galaxies \citep{graham2003coresersicmodel,trujillo2004coresersicmodel,dullograham2014cores}, 
+We also note that the majority of galaxies with an elevated stellar velocity dispersion ($\sigma > 270~\rm km~s^{-1}$) 
+are core-S\'ersic galaxies \citep{graham2003coresersicmodel,ferrarese2006acsvcs,dullograham2014cores}, 
 i.e.~they have a partially depleted core which has been identified from high-resolution photometric data. 
 NGC 1332 has $\sigma = 320~\rm km~s^{-1}$, but, 
 based on their decomposition of \emph{HST} imaging, \cite{rusli2011} did not find a core in this galaxy. 
-However, the identification of a partially depleted core is model dependent, 
-that is, only a correct galaxy decomposition can confirm or rule out the presence of a core. 
-Our galaxy decomposition (Figure \ref{fig:n1332}) suggests that NGC 1332 is in fact a core-S\'ersic galaxy. 
+However, our galaxy decomposition (Figure \ref{fig:n1332}) suggests that NGC 1332 is in fact a core-S\'ersic galaxy. 
 Since we did not use high-resolution photometric data, 
 we refrain from a firm conclusion, 
 but we caution that a re-analysis of the \emph{HST} data -- by taking into account the correct radial extent of the intermediate-scale disc --
-may indeed reveal the presence of a core.}
+may indeed reveal the presence of a depleted core in this galaxy.
 
 \subsection{Mrk 1216}
 Although the disc in the galaxy Mrk 1216 is not immediately apparent from the image (Figure \ref{fig:m1216}), 
@@ -330,36 +265,36 @@ Graham, Savorgnan \& Ciambur (\emph{in prep.}) and Graham et al.~(2015), respect
 while the galaxies NGC 821, NGC 3377 and NGC 4697 have been analysed in Savorgnan \& Graham (2015). 
 
 \subsubsection{NGC 1271}
-{\bf \cite{walsh2015} explored a three-component decomposition for NGC 1271 
+\cite{walsh2015} explored a three-component decomposition for NGC 1271 
 and identified the galaxy bulge with the innermost of the three components, 
-having a half-light radius of $0.61~\rm arcsec$ and a bulge-to-total ratio of $0.23$; 
+having a half-light radius of $0.61~\rm arcsec$ and a bulge-to-total flux ratio of $0.23$; 
 our model features a spheroid + intermediate-scale disc, 
-with a spheroid half-light radius of $3.3~\rm arcsec$ and a spheroid-to-total ratio of $0.67$. }
+with a spheroid half-light radius of $3.3~\rm arcsec$ and a spheroid-to-total flux ratio of $0.67$. 
 
 \subsubsection{NGC 1277}
 \cite{vandenbosch2012} proposed a model for the galaxy NGC 1277 with a bulge + disc + nuclear source + envelope, 
-which gives a bulge half-light radius of $0.9~\rm arcsec$ and a bulge-to-total ratio of $0.24$; 
+which gives a bulge half-light radius of $0.9~\rm arcsec$ and a bulge-to-total flux ratio of $0.24$; 
 our model consists of a spheroid + intermediate-scale disc + nuclear component, 
-and produces a spheroid half-light radius of $6.0~\rm arcsec$ and a spheroid-to-total ratio of $0.79$. 
+and produces a spheroid half-light radius of $6.0~\rm arcsec$ and a spheroid-to-total flux ratio of $0.79$. 
 
 \subsubsection{NGC 3377}
 \cite{lasker2014data} modelled the galaxy NGC 3377 with a bulge + nuclear disc + disc + envelope, 
-and obtained a bulge half-light radius of $10.1~\rm arcsec$ and a bulge-to-total ratio of $0.35$; 
+and obtained a bulge half-light radius of $10.1~\rm arcsec$ and a bulge-to-total flux ratio of $0.35$; 
 our model with a spheroid + intermediate-scale disc + nuclear disc 
-returns a spheroid half-light radius of $61.8~\rm arcsec$ and a spheroid-to-total ratio of $0.94$. 
+returns a spheroid half-light radius of $61.8~\rm arcsec$ and a spheroid-to-total flux ratio of $0.94$. 
 
 \subsubsection{NGC 821}
 \cite{lasker2014data} decomposed the galaxy NGC 821 into a bulge + disc + envelope, 
-and measured a bulge half-light radius of $3.8~\rm arcsec$ and a bulge-to-total ratio of $0.19$; 
+and measured a bulge half-light radius of $3.8~\rm arcsec$ and a bulge-to-total flux ratio of $0.19$; 
 our decomposition consists of a spheroid + intermediate-scale disc, 
-with a spheroid half-light radius of $36.5~\rm arcsec$ and a spheroid-to-total ratio of $0.79$. 
+with a spheroid half-light radius of $36.5~\rm arcsec$ and a spheroid-to-total flux ratio of $0.79$. 
 
 \subsubsection{NGC 4697}
 The galaxy NGC 4697 represents an ``extreme'' case. 
 \cite{lasker2014data} fit this galaxy with a bulge + nuclear source + disc + envelope, 
-and obtained a bulge half-light radius of $6.3~\rm arcsec$ and a bulge-to-total ratio of $0.08$; 
+and obtained a bulge half-light radius of $6.3~\rm arcsec$ and a bulge-to-total flux ratio of $0.08$; 
 we described NGC 4697 using a spheroid + intermediate-scale disc + nuclear disc model, 
-and measured a spheroid half-light radius of $239.3~\rm arcsec$ and a spheroid-to-total ratio of $0.89$. \\
+and measured a spheroid half-light radius of $239.3~\rm arcsec$ and a spheroid-to-total flux ratio of $0.89$. \\
 
 Past models that ``forcedly'' described ellicular galaxies using an inner bulge 
 encased within a large-scale disc 
@@ -371,9 +306,9 @@ although more ``extreme'' cases can be found.
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.49\columnwidth]{images/n3115_image.jpeg}
-\includegraphics[width=0.49\columnwidth]{images/n3115_unsharp.jpeg} \\
-\includegraphics[width=1.05\columnwidth]{images/n3115_decomposition.pdf}
+\includegraphics[width=0.49\columnwidth]{n3115_image.jpeg}
+\includegraphics[width=0.49\columnwidth]{n3115_unsharp.jpeg} \\
+\includegraphics[width=1.05\columnwidth]{n3115_decomposition.pdf}
 \caption{NGC 3115. 
 The top panels are the \emph{Spitzer}/IRAC $3.6~\rm \mu m$ image (left) and its unsharp mask (right), 
 obtained by dividing the image by a Gaussian-smoothed version of itself. 
@@ -392,25 +327,13 @@ $\Delta$ denotes the root mean square scatter of the fit in units of $\rm mag~ar
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.49\columnwidth]{images/n1332_image}
-\includegraphics[width=0.49\columnwidth]{images/n1332_unsharp} \\
-\includegraphics[width=1.03\columnwidth]{images/n1332_decomposition.pdf}
+\includegraphics[width=0.49\columnwidth]{n1332_image}
+\includegraphics[width=0.49\columnwidth]{n1332_unsharp} \\
+\includegraphics[width=1.03\columnwidth]{n1332_decomposition.pdf}
 \caption{NGC 1332.
 Same as Figure \ref{fig:n3115}, except for the following. 
 The surface brightness profile extends out to seven galaxy half-light radii ($\sim 7 \times 20~\rm arcsec$). 
 The empty points are data excluded from the fit. 
-%The top panels are the \emph{Spitzer}/IRAC $3.6~\rm \mu m$ image (left) and its unsharp mask (right), 
-%obtained by dividing the image by a Gaussian-smoothed version of itself. 
-%The bottom plots display the best-fit model of the surface brightness profile, $\mu$, 
-%and the ellipticity profile, $\epsilon$, 
-%along the major-axis, $R_{\rm maj}$. 
-%The black points are the observed data, which extend out to seven galaxy half-light radii ($\sim 7 \times 20~\rm arcsec$). 
-%The empty points are data excluded from the fit.   
-%The color lines represent the individual (PSF-convolved) model components: 
-%red = S\'ersic (spheroid), blue = S\'ersic (disc). 
-%The residual profile (data $-$ model) is shown as $\Delta \mu$. 
-%The horizontal gray dashed line corresponds to an intensity equal to three times the root mean square of the sky background fluctuations. 
-%$\Delta$ denotes the root mean square scatter of the fit in units of $\rm mag~arcsec^{-2}$.
 }
 \label{fig:n1332}
 \end{center}
@@ -418,26 +341,15 @@ The empty points are data excluded from the fit.
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.49\columnwidth]{images/mrk1216_image.jpeg}
-\includegraphics[width=0.49\columnwidth]{images/mrk1216_unsharp.jpeg} \\
-\includegraphics[width=1.05\columnwidth]{images/mrk1216_decomposition.pdf}
+\includegraphics[width=0.49\columnwidth]{mrk1216_image.jpeg}
+\includegraphics[width=0.49\columnwidth]{mrk1216_unsharp.jpeg} \\
+\includegraphics[width=1.05\columnwidth]{mrk1216_decomposition.pdf}
 \caption{Mrk 1216. 
 Same as Figure \ref{fig:n3115}, except for the following. 
 The top panels are the \emph{HST}/WFC3 \emph{F160W} image (left) and its unsharp mask (right).
 The surface brightness profile extends out to five galaxy half-light radii ($\sim 5 \times 5~\rm arcsec$). 
 The color lines represent the individual (PSF-convolved) model components:
 red = S\'ersic (spheroid), blue = exponential (disc).
-%The top panels are the \emph{HST}/WFC3 \emph{F160W} image (left) and its unsharp mask (right),
-%obtained by dividing the image by a Gaussian-smoothed version of itself.
-%The bottom plots display the best-fit model of the surface brightness profile, $\mu$,
-%and the ellipticity profile, $\epsilon$,
-%along the major-axis, $R_{\rm maj}$.
-%The black points are the observed data, which extend out to five galaxy half-light radii ($\sim 5 \times 5~\rm arcsec$).
-%The color lines represent the individual (PSF-convolved) model components:
-%red = S\'ersic (spheroid), blue = exponential (disc).
-%The residual profile (data $-$ model) is shown as $\Delta \mu$.
-%The horizontal gray dashed line corresponds to an intensity equal to three times the root mean square of the sky background fluctuations.
-%$\Delta$ denotes the root mean square scatter of the fit in units of $\rm mag~arcsec^{-2}$.
 }
 \label{fig:m1216}
 \end{center}
@@ -481,30 +393,20 @@ which already had a dynamical detection of their black hole mass.
 We modelled their one-dimensional surface brightness profiles with a combination of analytic functions, 
 using one function per galaxy component. 
 Spheroid luminosities were converted into stellar masses using individual, 
-but almost constant mass-to-light ratios ($\sim$$0.6$, \citealt{meidt2014-MNRAS}). \\
+but almost constant mass-to-light ratios ($\sim$$0.6$, \citealt{meidt2014}). \\
 In Figure \ref{fig:mm}, we show the galaxies Mrk 1216, NGC 1271 and NGC 1277, 
 which were not a part of the original sample of 45 early-type galaxies.
 For the galaxy NGC 1271, we use the black hole mass measurement 
 and the stellar mass-to-light ratio obtained by \cite{walsh2015}. 
-%The luminosity of the spheroidal component of this galaxy comes from the one-dimensional spheroid/disc decomposition 
-%of Graham, Savorgnan \& Ciambur (\emph{in prep.}),  
-%who used an archived \emph{HST} image taken with the WFC3 and the near-infrared \emph{F160W} filter. 
 For the galaxy NGC 1277, we use the black hole mass measurement obtained by \cite{vandenbosch2012} 
 and the stellar mass-to-light ratio obtained by \cite{martinnavarro2015}. 
-%The luminosity of the spheroidal component of this galaxy comes from the one-dimensional spheroid/disc decomposition of Graham et al.~(\emph{in prep.}), 
-%who used an archived \emph{HST} image taken with the Advanced Camera for Surveys (\emph{ACS}) and the \emph{F550M} filter. 
 For the galaxy Mrk 1216, we use the upper limit on the black hole mass 
 and the stellar mass-to-light ratio obtained by \cite{yildirim2015}. 
-%The luminosity of the spheroidal component of this galaxy comes from our one-dimensional spheroid/disc decomposition (Figure \ref{fig:m1216}).
 For the first time, Figure \ref{fig:mm} reveals that when the four ellicular galaxies Mrk 1216, NGC 1271, NGC 1277, NGC 1332, 
-and the elliptical galaxy NGC 4291 are properly modeled, 
+and the elliptical galaxy NGC 4291 are properly modelled, 
 they no longer appear as extreme outliers above the (black hole mass)-(spheroid stellar mass) correlation for early-type galaxies, 
 i.e.~they all reside well within a $3\sigma$ deviation from the correlation.
 
-%{\bf change: This not only nullifies the need for invoking different evolutionary scenarios for these galaxies 
-%but it strengthens the significance of the observed (black hole mass)-(spheroid mass) correlation 
-%and confirms its importance as a fundamental ingredient for theoretical and semi-analytic models 
-%used to describe the coevolution of spheroids and their central supermassive black holes. }
 
 \section{Discussion}
 \label{sec:disc}
@@ -515,21 +417,22 @@ According to the current paradigm of cosmological structure evolution,
 the genesis of massive early-type galaxies is characterized by two distinct phases: ``in-situ'' and ``ex-situ''. 
 The first phase takes place in a young Universe (within its first $4~\rm Gyr$), 
 when cold gas inflows produced short and intense bursts of star formation 
-that created compact and dense conglomerates of stars with high velocity dispersion. 
+that created compact and dense conglomerates of stars with high velocity dispersion (e.g.~\citealt{prieto2013}). 
 These naked and compact conglomerates, named ``red nuggets'' \citep{damjanov2009}, 
-have been observed at high-redshift with half-light sizes of $1-2~\rm kpc$ \citep{daddi2005,trujillo2006,vandokkum2008}.
-In the second phase (last $10~\rm Gyr$), stellar discs and stellar envelopes 
-were accreted around these primordial conglomerates and the external parts of today's galaxies assembled on scales of $2-20~\rm kpc$. \\
+have been observed at high-redshift with half-light sizes of 1--2 kpc \citep{daddi2005,trujillo2006,vandokkum2008}.
+In the second phase (last $10~\rm Gyr$), discs and stellar envelopes 
+were accreted around these primordial conglomerates and the external parts of today's galaxies assembled on scales of 2--20 kpc 
+(e.g.~\citealt{driver2013}). \\
 Today's Universe is populated by an abundance of compact, massive spheroids, 
 with the same physical properties -- mass and compactness -- as the high-redshift red nuggets \citep{graham2013review,GDS2015}. 
 Some of these local compact massive spheroids are encased within a large-scale disc, 
-that is to say they are the bulges of some lenticular and spiral galaxies. 
-Over the last $10~\rm Gyr$ their spheroids have evolved by growing a relatively flat disc -- 
-rather than a three-dimensional envelope -- 
+that is to say they are the bulges of some lenticular and spiral galaxies.  
+Over the last $10~\rm Gyr$ their spheroids have evolved by growing a relatively flat disc (e.g.~\citealt{pichon2011,danovich2012,stewart2013})
+-- rather than a three-dimensional envelope -- 
 which has increased the galaxy size but preserved the bulge compactness. 
 The other compact massive spheroids of today's Universe belong to some ellicular galaxies. 
 Indeed, Mrk 1216, NGC 1271, NGC 1277, NGC 1332, and NGC 3115 are all local compact ellicular galaxies 
-with purely old ($>10~\rm Gyr$) stellar populations. {\bf [these 4 are COMPACT elliculars, the others are non-compact elliculars]}
+with purely old ($>10~\rm Gyr$) stellar populations. 
 These galaxies have undergone the lowest degree of disc growth. \\
 In addition to the observational clues as to the actual physical components in ellicular galaxies, 
 one can reason on other grounds as to why these compact galaxies are not comprised of an inner bulge 
@@ -539,14 +442,14 @@ The first possibility is that these galaxies were already fully assembled $10~\r
 this would explain their old stellar populations, 
 but it would also imply that their discs and envelopes had already formed during the first $4~\rm Gyr$ of the Universe, 
 in disagreement with the current cosmological picture. 
-The second possibility is that only their inner bulges (with sizes of $0.1-0.2~\rm kpc$, 
+The second possibility is that only their inner bulges (with sizes of 0.1--0.2 kpc, 
 according to past decompositions) originated in the first $4~\rm Gyr$ 
 and they subsequently accreted a substantial disc and envelope. 
 If this was correct, then we would observe high-redshift, star-like, naked bulges with stellar masses 
 within a factor of a few times the currently observed red nuggets but sizes which are $10$ times smaller. 
 However, a dramatically different expectation is reached 
 if one considers these galaxies today as spheroid-dominated systems with an intermediate-scale disc; 
-in this case, both the galaxy size and the spheroid size are compact ($1-2~\rm kpc$). 
+in this case, both the galaxy size and the spheroid size are compact (1--2 kpc). 
 This implies that, among the local descendants of the high-redshift red nuggets, 
 the compact ellicular galaxies have undergone the lowest degree of disc growth. 
 That is, the bulk of a compact ellicular galaxy quickly assembled ``in-situ'' in a very young Universe 
@@ -554,13 +457,13 @@ and experienced very little evolution over the last $10~\rm Gyr$.
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=\columnwidth]{images/mm.pdf}
+\includegraphics[width=\columnwidth]{mm.pdf}
 \caption{Black hole mass plotted against spheroid stellar mass for 45+3 early-type galaxies (from Savorgnan et al.~2015). 
 The black solid line is the bisector linear regression for all galaxies except Mrk 1216, NGC 1271 and NGC 1277. 
 The dashed lines mark the $1\sigma$ and $3\sigma$ deviations, 
 where $\sigma$ ($0.51$ dex) is the total \emph{rms} scatter about the correlation in the black hole mass direction. 
-{\bf The red symbols mark five galaxies that were claimed to be extreme outliers in this diagram: 
-four intermediate-scale disc galaxies (Mrk 1216, NGC 1271, NGC 1277 and NGC 1332) and one elliptical galaxy (NGC 4291). }
+The red symbols mark five galaxies that were claimed to be extreme outliers in this diagram: 
+four intermediate-scale disc galaxies (Mrk 1216, NGC 1271, NGC 1277 and NGC 1332) and one elliptical galaxy (NGC 4291). 
 All five reside well within a $3\sigma$ deviation from the correlation when using their correct spheroid mass. 
 For NGC 1277, we show the previously reported spheroid stellar mass \citep{vandenbosch2012} in gray. 
 The green color is used to show the location of four additional intermediate-scale disc galaxies mentioned in Section \ref{sec:gal}.}
@@ -573,13 +476,13 @@ The existence of the oft-overlooked, intermediate-scale discs
 exposes a likely continuum of disc sizes in early-type
 galaxies, as opposed to a dichotomy of nuclear discs versus large-scale
 discs. The presence of these intermediate-scale discs also blurs the
-distinction between elliptical (E) and lenticular (S0) galaxies and
+distinction between elliptical (E) and lenticular (S0: $\epsilon = 1-b/a > 0.7$, \citealt{hubble1936,sandage1961}) galaxies and
 arguably creates the need for a new subclass which bridges this
 divide.  While expanding the galaxy nomenclature beyond ellipticals
 with possible nuclear discs, and lenticulars with large-scale discs,
 to include something like \emph{elliculars} with intermediate-scale
 discs will be helpful for distinguishing among 
-early-type galaxies with different disk scale-lengths, it should be
+early-type galaxies with different disc scale-lengths, it should be
 remembered that just as portions of the electromagnetic spectrum are
 labelled according to their different wavelengths, there is still an
 underlying continuum.  Similarly, binning early-type galaxies as
@@ -588,24 +491,30 @@ that a continuum exists.  Importantly, in the case of early-type
 galaxies with intermediate-scale discs, this particular
 rotation-based classification depends on the galaxy's radial range probed, 
 changing from FR to SR as the radial extent is sufficiently increased. 
-There is thus a need for more the two bins (E vs. S0, or FR vs. SR) 
-and a continuum in the (Hubble-Jeans)-like classification schemes. \\
-It has recently been argued (Graham 2014) that the classification
-scheme for elliptical galaxies should not be their apparent axis ratio
-as seen on the plane of the sky, but rather early-type galaxies should
-be quantified by their spheroid-to-total flux ratio, with a
+There is thus a need for more than two bins (E vs. S0, or FR vs. SR) 
+and a continuum in the (Hubble-Jeans)-like classification schemes \citep{vandenbergh1997,sandage2005}. \\
+It has been argued that the classification
+scheme for ``elliptical'' galaxies should not be their apparent axis ratio
+as seen on the plane of the sky (E0--E7), 
+because this depends on the viewing angle rather than being intrinsic to the galaxy. 
+Obviously when dealing with intermediate-scale discs, the boxy/discy shape of the isophotes is a function of both radius and disc inclination, 
+making a single isophote shape parameter problematic and particularly inappropriate for the classification task at hand.
+Section 4 of \cite{kormendybender1996} points out additional complications. 
+Instead, early-type galaxies would be better quantified by their spheroid-to-total flux ratio, with a
 continuum from pure elliptical galaxies to disc-dominated lenticular
-galaxies.  While spiral galaxies display a range of spheroid-to-total flux ratios
+galaxies (Figure \ref{fig:grid}).  \\
+While spiral galaxies display a range of spheroid-to-total flux ratios
 from 0 to $\sim$3/4 (e.g.~\citealt{grahamworley2008}, and references
 therein), lenticular galaxies typically display a range from
 $\sim$3/4 to $\sim$0.1 \citep{laurikainen2010}.  This spheroid-to-total flux
 ratio is widely recognised as an important quantity, and its broad range observed in
-lenticular galaxies (see \citealt{cappellari2011kmdr-MNRAS} and \citealt{kormendybender2012}) recently led to a reintroduction of 
+lenticular galaxies recently led to a re-introduction of 
 \citeauthor{vandenbergh1976}'s (\citeyear{vandenbergh1976})
 Hubble comb, in which both late-type galaxies (i.e.~spiral galaxies)
 and lenticular galaxies form separate arms of an expanded Hubble-Jeans tuning
 fork, with an additional arm for disc galaxies hosting anaemic spiral
-patterns.  However because every spiral Hubble type (e.g.~Sa, Sb, Sc), not just the S0 galaxies, 
+patterns \citep{cappellari2011kmdr,kormendybender2012}.  
+However because every spiral Hubble type (e.g.~Sa, Sb, Sc), not just the S0 galaxies, 
 has a broad range of spheroid-to-total ratio, and because this information is not captured by the Hubble comb, 
 a grid of spiral morphological type (predominantly determined by the spiral
 arms) versus spheroid-to-total ratio can also be useful for classifying galaxies.  \\
@@ -622,47 +531,9 @@ Allowing for the varying spheroid-to-total ratio among each galaxy type,
 the Hubble grid helps to reveal how ellicular galaxies unify the early-type sequence and compare with late-type galaxies. 
 
 
-
-
-%The existence of the oft-overlooked, intermediate-scale discs presented here exposes a likely continuum of disc sizes in early-type galaxies 
-%as opposed to a dichotomy of nuclear discs versus large-scale discs. 
-%The presence of these intermediate-scale discs also blurs the distinction between elliptical (E) and lenticular (S0) galaxies 
-%and arguably creates the need for a new subclass which bridges this divide.  
-%While expanding the galaxy nomenclature beyond ellipticals with possible nuclear discs, and lenticulars with large-scale discs, 
-%to include something like {\it elliculars} with intermediate-scale discs will be helpful 
-%for distinguishing among early-type galaxies with different disk scale-lengths, 
-%it should be remembered that just as portions of the electromagnetic spectrum are labelled according to their different wavelengths, 
-%there is still an underlying continuum.  
-%Similarly, binning early-type galaxies as either a fast-rotator (FR) or a slow-rotator (SR) can hide the fact that a continuum exists.  
-%Importantly, in the case of early-type galaxies with intermediate-scale discs, 
-%this particular rotation-classification depends on the galaxy's radial range probed.  
-%There is thus a need for more than two bins (E vs.~S0, or SR vs.~FR). \\
-%%The existence of intermediate-scale discs is not only important for our understanding of disc growth in general, 
-%%but accounting for such components impacts upon our broader understanding of galaxy structure.  
-%It has recently been argued \citep{graham2014review} that the classification scheme for elliptical galaxies 
-%should not be their apparent axis ratio as seen on the plane of the sky, 
-%but rather early-type galaxies should be quantified by their spheroid-to-total flux ratio, 
-%with a continuum from pure elliptical galaxies to disc-dominated lenticular galaxies.   
-%While spiral galaxies display a range of spheroid-to-total flux ratios from 0 to $\sim$3/4, 
-%lenticular galaxies display a range from $\sim$3/4 to $\sim$0.1 (see \citealt{laurikainen2010}).   
-%The spheroid-to-total flux ratio is an important quantity, and its broad range observed in lenticular galaxies 
-%has led to a resurgence of \citeauthor{vandenbergh1976}'s (\citeyear{vandenbergh1976}) Hubble comb, 
-%in which both late-type galaxies (i.e.~spiral galaxies) and lenticular galaxies form the arms of an expanded Hubble tuning fork, 
-%with an additional arm for disc galaxies hosting anaemic spiral patterns (see \citealt{cappellari2011kmdr-MNRAS} and \citealt{kormendybender2012}).  
-%However because every spiral Hubble type (e.g.~Sa, Sb, Sc) has a broad range of spheroid-to-total ratio 
-%(e.g.~\citealt{grahamworley2008}, and references therein), 
-%and because this information is not captured by the Hubble comb, 
-%a grid of spiral type (predominantly determined by the spiral arms) versus spheroid-to-total ratio is also useful for classifying galaxies.   
-%In Figure \ref{fig:grid} we show the location of galaxies with intermediate-scale discs in such a Hubble grid \citep{graham2014review}, 
-%revealing how they are related to the other galaxies.  
-%Aside from the pure elliptical galaxies, each galaxy type displays a range of spheroid-to-total flux ratio.  
-%Rather than a scheme in which the spiral morphological type (a, b, c, etc.) changes if the spheroid-to-total ratio changes (as in the Hubble comb), 
-%here the galaxy type is linked to the nature and winding of the spiral arms which has been the primary criteria used 
-%to classify spiral galaxies over the last half century \citep{sandage1961}.
-
 \begin{figure}[h]
 \begin{center}
-\includegraphics[width=\columnwidth]{images/Hubble-grid-2/Hubblegrid.pdf}
+\includegraphics[width=\columnwidth]{Hubblegrid.pdf}
 \caption{The Hubble grid \citep{graham2014review}, 
 which uses the mean pitch angle of the arms in spiral galaxies to define their morphological type. 
 Ellicular (ES) galaxies are intermediate between elliptical (E) and lenticular (S0) galaxies. }
@@ -670,14 +541,40 @@ Ellicular (ES) galaxies are intermediate between elliptical (E) and lenticular (
 \end{center}
 \end{figure}
 
-\section{Conclusions}
-{\bf I'll write them after the first ref. rep. :) }
+\section{Summary and conclusions}
+Early-type galaxies display a continuous distribution of spheroid-to-total flux ratios, 
+going from disc-less, ``pure'' elliptical galaxies to disc-dominated lenticular galaxies 
+\citep{michard1984,djorgovski1985,carter1987,capaccioli1987,capaccioli1988,franx1989,nieto1988,nieto1991,rixwhite1990,rixwhite1992,
+vandenbergh1990,bender1990,scorzabender1990,scorzabender1995,
+simienmichard1990,cinzanovandermarel1993,donofrio1995,graham1998fornax,scorza1998,scorzavandenbosch1998,
+bendersaglia1999}\footnote{Many past studies were hampered by bulge/disc decompositions which forced an $R^{1/4}$ model for the bulge component 
+and thus obtained spurious bulge-to-disc ratios, and from the \emph{IRAF} task {\tt ellipse} which does not report the correct deviations of isophotes 
+from ellipses \citep{ciambur2015}.}. 
+In between these two extremes lie galaxies with intermediate-scale discs, 
+i.e.~discs of kiloparsec-size that remain ``embedded'' within the spheroidal component of the galaxy 
+and do not dominate the galaxy light at large radii as large-scale discs do. 
+while this is likely known to some readers, 
+the surge of papers presenting galaxy decompositions which are not aware of this reality 
+has created a pressing need for this reminder. 
+For ease of reference, we have introduced the term \emph{ellicular} to designate such early-type galaxies with intermediate-scale discs. 
+We have shown that the light distribution of ellicular galaxies can be accurately described 
+with a simple spheroid + disc (+ optional nuclear component) model, 
+without the need for the addition of a bright envelope-component. \\
+Our decompositions correctly reproduce both the photometric (surface brightness and ellipticity profiles) 
+and kinematic (specific angular momentum profile) properties of nine ellicular galaxies. 
+Four of these nine ellicular galaxies (Mrk 1216, NGC 1271, NGC 1277, NGC 1332) and one additional elliptical galaxy (NGC 4291) 
+had previously been claimed to be extreme outliers in the (black hole mass)-(spheroid mass) diagram. 
+However, here we have demonstrated that, when correctly modelled, 
+these five galaxies all reside well within the scatter of the correlation, 
+i.e. they do not host over-massive black holes. 
+This serves to strengthen the (black hole mass)-(spheroid mass) relation, 
+and rules out the need for exotic formation scenarios. 
 
 \section{Acknowledgments}
 % referee thank you!!
 This research was supported by Australian Research Council funding through grant FT110100263. 
 GS is grateful to Matteo Fossati, Luca Cortese and Giuseppe Gavazzi for useful comments and discussion. 
-This work is based on observations made with the IRAC instrument \citep{fazio2004IRAC-MNRAS} on-board the Spitzer Space Telescope, 
+This work is based on observations made with the IRAC instrument \citep{fazio2004IRAC} on-board the Spitzer Space Telescope, 
 which is operated by the Jet Propulsion Laboratory, California Institute of Technology under a contract with NASA, 
 and also on observations made with the NASA/ESA Hubble Space Telescope, 
 and obtained from the Hubble Legacy Archive, 

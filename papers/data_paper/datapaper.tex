@@ -9,6 +9,7 @@
 \usepackage{natbib}
 \usepackage{tabularx}
 \usepackage{bm}
+\usepackage{hyperref} 
 
 %% Sometimes a paper's abstract is too long to fit on the
 %% title page in preprint2 mode. When that is the case,
@@ -21,12 +22,12 @@
 \newcommand{\fitfigurewidth}{0.8\textwidth}
 
 
-\shorttitle{True-to-life galaxy decomposition}
+\shorttitle{Galaxy vivisection}
 \shortauthors{Savorgnan \& Graham}
 
 \begin{document}
 
-\title{Supermassive black hole and host spheroid affairs \\ I. True to life, physically motivated galaxy decomposition}
+\title{Supermassive black holes and their host spheroids \\ I. Galaxy vivisection}
 
 \author{G. A. D. Savorgnan and A. W. Graham}
 \affil{Centre for Astrophysics and Supercomputing, Swinburne University of Technology, Hawthorn, Victoria 3122, Australia}
@@ -106,7 +107,7 @@ to match the $z=0$ black hole mass -- galaxy mass relation.
 The observed scaling relations can also be employed to predict the masses of black holes in other galaxies, where a direct
 measure of $M_{\rm BH}$ would be extremely time consuming or simply impossible due to technological limitations.
 Moreover, many accurate $M_{\rm BH}$ predictions enable one to derive 
-the local black hole mass function (e.g.~\citealt{salucci1999,graham2007smbhmassfunction}; Fontanot et al. \emph{submitted}) 
+the local black hole mass function (e.g.~\citealt{salucci1999,graham2007smbhmassfunction,shankar2009,shankar2013,fontanot2015}) 
 and space density (e.g.~\citealt{grahamdriver2007smbhmassdensity,comastri2015}). 
 All of these examples depend on the $z=0$ relations, 
 and as such the recalibration of the black hole mass -- spheroid stellar mass ratio ($M_{\rm BH}/M_{\rm *,sph}$) in large spheroids,
@@ -128,7 +129,7 @@ After examining long-slit and integral field unit spectroscopic observations of 
 \cite{donofrio1995}, \cite{graham1998fornax} and \cite{scott2014} concluded that only 3 bright galaxies do not harbour a disk-like component.
 Larger surveys with integral field spectrographs of early-type galaxies, such as the ATLAS$^{\rm 3D}$ Project \citep{cappellari2011}, 
 have further advanced this view of ``elliptical'' galaxies being all but simple and featureless pressure-supported systems.
-Most of the morphologically classified elliptical galaxies in the ATLAS$^{\rm 3D}$ sample are fast rotators \citep{atlas3dIII-MNRAS}.
+Most of the morphologically classified elliptical galaxies in the ATLAS$^{\rm 3D}$ sample are fast rotators \citep{atlas3dIII}.
 \cite{krajnovic2013} showed that ``fast rotators'' as a class are disk-galaxies or at least disk-like galaxies. 
 In their magnitude-limited survey, systems 
 without any signature of disk-like components (neither in the kinematics nor in the photometry) 
@@ -154,12 +155,11 @@ For example, one study \citep{grahamdriver2007} obtained a good $M_{\rm BH}-n_{\
 (the spheroid S\'ersic index $n_{\rm sph}$ is a measure of the central radial concentration of stars, \citealt{trujillo2001}), 
 whereas the remaining four did not\footnote{\cite{savorgnan2013} showed that, 
 by rejecting the most discrepant S\'ersic index measurements and averaging the remaning ones, 
-a strong $M_{\rm BH}-n_{\rm sph}$ correlation was recovered. 
-The fact that none of the four studies obtained a significant $M_{\rm BH}-n_{\rm sph}$ correlation with their individual measurements 
-is indicative of non accurate galaxy decompositions. }.
+a strong $M_{\rm BH}-n_{\rm sph}$ correlation was recovered. }.
 In addition, \cite{lasker2014anal} 
 declared that $M_{\rm BH}$ correlates equally well with the total galaxy luminosity as it does with the spheroid luminosity, 
-as opposed to \cite{beifiori2012} who claimed that the spheroid mass is a better tracer of $M_{\rm BH}$ than the galaxy mass.
+as opposed to \cite{beifiori2012} who claimed that the spheroid mass is a better tracer of $M_{\rm BH}$ than the galaxy mass 
+{\bf (see also \citealt{kormendygebhardt2001,erwingadotti2012})}.
 The past studies did not converge to the same conclusions 
 because their best-fit models for the same galaxy were often 
 significantly different and not consistent with each other in terms of fitted components. 
@@ -167,7 +167,7 @@ Moreover, none of these studies attempted an individual galaxy-by-galaxy
 comparison of their models with the previous literature. 
 We have now made this comparison and performed the optimal decompositions,
 using $3.6~\rm \mu m$ \emph{Spitzer} satellite imagery, 
-which is an excellent proxy for the stellar mass, superior to the $K$-band (\citealt{sheth2010} and references therein).
+which is an excellent proxy for the stellar mass, superior to the $K$-band \citep{junim2008,sheth2010}.
 We will use these in a series of forthcoming papers to obtain improved black hole mass scaling relations 
 using the largest sample (66) of galaxies to date with accurate spheroid properties. \\
 
@@ -204,7 +204,6 @@ this initial sample was ultimately reduced to 66 galaxies for which useful spher
 For each of our 75 galaxies, we downloaded from the 
 Spitzer Heritage Archive\footnote{\url{http://irsa.ipac.caltech.edu/applications/Spitzer/SHA/}} 
 all the available $3.6~\rm \mu m$ IRAC Astronomical Observation Requests (AORs). 
-%listed in Table \ref{tab:obs}.
 Each AOR is an individual Spitzer observation sequence, and
 includes a number of data frames (the individual exposures) and the calibration data.
 The data frames were selected to be %``enhanced Level 1 products'', or
@@ -234,7 +233,6 @@ The pixel size of the mosaic was set to be the same as the input cBCD frames ($1
 For $3.6~\rm \mu m$ observations with this pixel scale, 
 the photometric zeropoint magnitude is $m_{\rm zp} = 17.26 \rm~mag$.
 The orientation of the mosaic was set to the average rotation angle of the input cBCD frames. 
-%{\bf TBD: not n-e oriented or re-sampled because problems with 2d PSF. }
 Individual cBCD frames were combined together into a single mosaic with the default linear interpolation algorithm.
 
 \subsubsection{Overlap correction}
@@ -242,7 +240,10 @@ Before generating a mosaic, MOPEX can perform background matching among the indi
 by using the \emph{overlap} module. 
 This module calculates and applies an additive correction to the individual frames,
 producing a consistent background across the mosaicked image.
-According to the \emph{Spitzer Data Cookbook}, the use of the \emph{overlap} module is not particularly recommended for 
+According to the \emph{Spitzer Data Analysis 
+Cookbook}\footnote{\href{http://irsa.ipac.caltech.edu/data/SPITZER/docs/dataanalysistools/cookbook/Spitzer_Data_Cookbook.pdf}
+{\tt http://irsa.ipac.caltech.edu/data/SPITZER/docs/ dataanalysistools/cookbook/Spitzer\_Data\_Cookbook.pdf}}, 
+the use of the \emph{overlap} module is not particularly recommended for 
 $3.6~\rm \mu m$ observations. 
 However, after a visual inspection of the mosaics obtained without activating the \emph{overlap} module,
 we found that all the mosaics obtained from multiple AORs were affected by patchiness, 
@@ -329,9 +330,8 @@ where $R$ is the projected radius, $\mu_{\rm 0}$ is the central surface brightne
 $\alpha$ and $\beta$ regulate the width and the shape of the profile.} 
 of fixed center and zero background was fit to the 
 (background subtracted) pixels of 20 bright stars, belonging to different image mosaics.
-%We employed both a Gaussian and a Moffat \citep{moffat1969} profile. 
 The best-fit parameters of the 20 stars were then averaged together. 
-Doing so, we obtained %$FWHM = 2''.03$ for the Gaussian function,
+Doing so, we obtained 
 $(\alpha, \beta) = (2''.38, 4.39)$.
 
 \subsubsection{2D PSF}
@@ -354,7 +354,6 @@ The 2D PSF image was then obtained by taking the best fit Moffat model -- the sa
 and convolving it with the IRAC instrument PRF.
 The advantage of this method is to obtain a 2D PSF that is wider than the instrument PRF, 
 but maintains the asymmetric features of the instrument PRF (e.g.~wings and spikes).
-%This procedure was repeated using a Moffat profile in place of the Gaussian profile.
 We then tested this 2D PSF 
 on a number of stars (these stars were different from the 7 stars employed to build the 2D PSF image)
 and verified that it correctly reproduces the shape of ``real'' point sources. 
@@ -384,7 +383,7 @@ The inserts display the images of the observed point source and the IRAC PRF.}
 \subsubsection{Kinematics}
 \label{sec:kinem}
 A kinematical classification (slow/fast rotator) is available for 34 of our 75 galaxies 
-from the ATLAS$^{\rm 3D}$ survey \citep{atlas3dIII-MNRAS} 
+from the ATLAS$^{\rm 3D}$ survey \citep{atlas3dIII} 
 and for 3 additional galaxies from \citet{scott2014}.
 This classification (Table \ref{tab:sample}, column 7) 
 concerns the kinematic properties of galaxies within the spectroscopic instrument's field-of-view, 
@@ -462,7 +461,10 @@ Isophotes corresponding to an intensity less than
 three times the root mean square of the sky background fluctuations ($3 \times RMS_{\rm sky}$) were ignored.
 Some surface brightness profiles were truncated at our discretion before the $3 \times RMS_{\rm sky}$ limit, 
 according to specific technical reasons (e.g.~contamination from light of a neighboring galaxy, 
-disturbed morphology in the galaxy outskirts, etc.).
+disturbed morphology in the galaxy outskirts, etc.). 
+{\bf In particular, we did not attempt to fit down- or up-bendings of large-scale disks 
+(e.g.~\citealt{erwin2005,erwin2008,erwin2012,gutierrez2011,comeron2012,munozmateos2013,kim2014}) 
+by truncating the surface brightness profiles well before the occurrence of these features. }
 Individual cases are discussed in Section \ref{sec:indgal}.
 
 \subsection{Unsharp masking}
@@ -491,15 +493,14 @@ During the fit, we deliberately did not make use of any weighting scheme on the 
 surface brightness profile, 
 although the use of a linearly and logarithmically sampled profile effectively represents a different weighting scheme.
 The all too often over-looked flaw with (signal-to-noise)-based weighting schemes 
-is that they immediately become an incorrectly biased weighting schemes when additional components are present but not modelled.
-For example, fitting a S\'ersic model to what is actually a nucleated elliptical galaxy immediately voids 
+is that they immediately become biased weighting schemes when additional components are present but not modelled.
+For example, fitting only a S\'ersic model to what is actually a nucleated elliptical galaxy immediately voids 
 a (signal-to-noise)-based weighting scheme 
 and results in S\'ersic parameters which describe the spheroid less accurately than had no (signal-to-noise)-weighting been used.
 While we have paid careful attention to the components in each galaxy, 
 this is an issue that warrants the non application of (signal-to-noise)-based weighting schemes.
-What is best in theory is not always best in practice -- in this case, because theory does not allow for unknown additional components
-that are modelled.
-
+{\bf Over-looked partially depleted cores, or an incorrect PSF, can of course also result in (signal-to-noise)-weighted fitting schemes 
+performing poorly because of the emphasis they place on matching the model to the inner data. }
 
 \subsection{Smoothing technique}
 \label{sec:smooth}
@@ -568,54 +569,24 @@ the shape of the ellipticity profile can be decisive.
 Another way to establish the presence of an embedded disk is to look at the velocity map of a galaxy,
 following the approach of \citet{arnold2014}. 
 A local angular momentum decrease with increasing radius is indicative of an intermediate-scale disk 
-that fades toward larger radii. \\
-%As an illustration, we consider the galaxy NGC 3377.
-%For this galaxy, \citet{arnold2014} reported a strong decline in local specific angular momentum beyond $\sim 35''$, 
-%with a disk-to-bulge transition occurring at about $\sim 50''$.
-%They did attempt a three-component decomposition (accounting for a bulge, an embedded disk and a central cusp), 
-%but unfortunately they fit the spheroidal component with a limited two-parameter $R^{1/4}$ profile {\bf TBD: cite de vaucouleurs} 
-%rather than a three-parameter $R^{1/n}$ S\'ersic function.
-%Here we used a surface brightness profile twice as extended as that used by \citet{arnold2014} 
-%and we identified a nuclear disk and an intermediate-scale disk, both embedded in a larger spheroidal component (see Figure \ref{fig:n3377ex}).
-%The presence of an intermediate-scale disk is evident from the unsharp mask of the image mosaic 
-%and also from the ellipticity profile, which increases with increasing radius until $R \sim 45''$ (along the major-axis) 
-%and dramatically drops at larger radii.
-%The nuclear disk can be spotted from the peak at $R \sim 5''$ in the $B4$ profile.
-%In our galaxy model for NGC 3377, 
-%the difference between the S\'ersic profile of the bulge and the exponential profile of the intermediate-scale disk is minimum in correspondence 
-%of the maximum ellipticity, 
-%thus our model correctly reproduces the isophotal properties of the galaxy. 
-%The residuals of the fit, especially along the major-axis, display some minor structures which indicate that 
-%the bulge S\'ersic index might have been slightly overestimated.
-%This could be due to the fact that the embedded disk would be better described by a truncated exponential function.
-%Alternatively, a contribution from a stellar halo (not included in our model) at large radii could be the reason of a 
-%too large S\'ersic index for the bulge. 
-%Our equivalent-axis decomposition results in a bulge component that accounts for 94\% of the total luminosity, 
-%an intermediate-scale embedded disk contributing to 5\% 
-%and a nuclear disk with 1\% of the total light. \\
-%A similar situation occurs for the galaxy M59 (see Figure \ref{fig:m59ex}), 
-%for which our equivalent-axis model returns a spheroidal component and an embedded disk 
-%contributing to 92\% and 8\% of the total light respectively. \\
-%The edge-on embedded disk of the S\'ersic galaxy NGC 1332 (see Figure \ref{fig:n1332ex}) was hard to model with an exponential function, 
-%leading us to prefer a low-$n$ S\'ersic profile. 
-%Our equivalent-axis decomposition returns a spheroidal component accounting for 95\% of the total light,
-%and an embedded disk accounting for the remaining 5\%.
-%In passing, we note that the bulge-disk decomposition performed by \citet{rusli2011} on NGC 1332 
-%is significantly different from our best-fit model.
-%\citet{rusli2011} did not identify an intermediate-scale embedded disk, 
-%but instead proposed a model featuring a S\'ersic bulge ($n \sim 2.3$, $R_{\rm e} \sim 8''$), accounting for 43\% of the total light, 
-%and a large-scale exponential disk. 
-%This result led them to the conclusion that NGC 1332 is a disk dominated lenticular galaxy 
-%and is displaced from the $M_{\rm BH} - L_{\rm K,sph}$ (black hole mass vs. $K$-band spheroid luminosity) relation of \citet{marconihunt2003} 
-%by an order of magnitude along the $M_{\rm BH}$ direction.
-%Assuming instead that, as suggested by our model, 
-%the galaxy spheroid is a factor of two more luminous than what claimed by \citet{rusli2011}, 
-%NGC 1332 would no longer be an outlier in the $M_{\rm BH} - L_{\rm K,sph}$ diagram (see Figure \ref{fig:n1332pl}), 
-%perfectly fitting within the $1\sigma$ scatter of the $M_{\rm BH} - L_{\rm K,sph}$ relation for S\'ersic bulges of \citet{grahamscott2013}. \\
+that fades toward larger radii. 
+{\bf Savorgnan \& Graham (\emph{submitted}) extensively discuss the topic of galaxies with intermediate-scale disks 
+and show that, when these disks are misclassified and modeled as large-scale disks, 
+the luminosity of the spheroidal component is underestimated, 
+which makes these galaxies falsely appear as extreme outliers in the (black hole mass)-(spheroid stellar mass) diagram. } \\
 Bars are usually recognizable from galaxy images and unsharp masks, 
 although local maxima/minima or abrupt changes in the radial profiles of the isophotal parameters 
 can provide additional evidence for less obvious bars. 
-As noted, we were able to successfully fit bars with a Ferrer function or a low-$n$ S\'ersic model ($n \sim 0.2$). \\
+{\bf As noted, we were able to successfully fit bars with a Ferrer function 
+(NGC 4151 is the only case for which we described the bar with a $n \sim 0.2$ S\'ersic model). 
+Disk-like components embedded in the bulges of spiral galaxies were described with a $n \lesssim 1$ S\'ersic model or, 
+in a few cases, with a Ferrer function\footnote{\bf The advantage of choosing a Ferrer function over a S\'ersic profile 
+to fit a disk-like component embedded in the bulge 
+is to reduce degeneracies with the S\'ersic profile that describes the bulge.}. 
+This approach is similar to that of \cite{laurikainen2010}, 
+who fit bars with a Ferrer function and inner disks with a S\'ersic model. 
+We did not find evidence of bars with exponential profiles (e.g.~\citealt{elmegreenelmegreen1985,gadotti2008,kim2015}), 
+but this might be due to the low number statistics of barred galaxies in our sample. }\\
 The presence of a nuclear component -- either resolved or unresolved -- was generally expected in 
 (but not restricted to) galaxies that host an optical AGN and circumnuclear dust.
 Nuclear stellar disks and nuclear star clusters fall into the category of nuclear components too,
@@ -632,7 +603,8 @@ we repeated the fit by excluding the data points within the nuclear region.
 Only after checking that the outcome of the last fit was consistent with a fit that included a small nuclear component, 
 we inferred the presence of a stellar nuclear component.}.
 Unresolved nuclear components were fit with our optimal Moffat PSF,
-whereas resolved nuclear components were modeled with (PSF-convolved) narrow Gaussian functions. \\
+whereas resolved nuclear components were modeled with (PSF-convolved) narrow Gaussian functions 
+{\bf (\citealt{wadadekar1999,ravindranath2001,peng2002} and \citealt{gadotti2008} discuss the importance of fitting nuclear components)}. \\
 Rings were identified from galaxy images and unsharp masks, and modeled with symmetric Gaussian ring profiles. \\
 As an illustration, we consider the galaxy NGC 2974, 
 a spiral galaxy which has been misclassified as an elliptical galaxy in the RC3 catalog \citep{RC3}. 
@@ -641,8 +613,6 @@ NGC 2974 is classified as a fast rotator by the ATLAS$^{\rm 3D}$ survey,
 and indeed the velocity map obtained by the SLUGGS survey shows that the galaxy kinematics is rotation-dominated 
 well beyond three effective radii ($R>150''$), 
 as expected from a large-scale disk. 
-%\cite{sani2011} modeled this galaxy with a S\'ersic-bulge + Gaussian-AGN 
-%($R_{\rm e} = 27''.2$, $n = 3.0$). 
 From an inspection of the unsharp mask, we identified a ring at $R \sim 50''$, 
 which might be a residual of two tightly wound spiral arms,
 and an elongated bar-like component within $R \lesssim 30''$,
@@ -663,28 +633,6 @@ $3.6~\rm \mu m$ bulge major-axis effective radius ($R_{\rm e,sph}^{\rm maj} = 27
 a 2.5 times larger S\'ersic index ($n_{\rm sph} = 3$),
 and a significantly brighter apparent magnitude ($m_{\rm sph} = 7.28~\rm mag$).
 
-
-%\begin{figure*}[h]
-%\begin{center}
-%\includegraphics[width=\fitfigurewidth]{images/n3377_1Dfit.eps}
-%\caption{the galaxy NGC 3377. 
-%The left panels refer to the major-axis $R_{\rm maj}$, 
-%whereas the right panels refer to the equivalent-axis $R_{\rm eq}$.
-%The top panels display the galaxy surface brightness radial profiles obtained with a linear sampling. 
-%The black points are the observed data.  
-%The color lines represent the individual (PSF-convolved) model components:
-%red=S\'ersic (bulge), blue=exponential (disk). 
-%The best-fit parameters for the S\'ersic profile are included.
-%The total (PSF-convolved) model is shown with a black dashed line, 
-%but it is hard to distinguish because it almost perfectly matches the data.
-%The horizontal grey dashed line indicates the $3~RMS_{\rm sky}$ level.
-%$\Delta$ denotes the rms scatter of the fit in units of $\rm mag~arcsec^{-2}$.
-%$\Delta \mu$ are the residuals from the fit.
-%The six panels below show the ellipticity ($\epsilon$), position angle ($PA$) and $B4$ radial profiles.
-%}
-%\label{fig:n3377ex}
-%\end{center}
-%\end{figure*}
 
 \begin{figure*}[h]
 \begin{center}
@@ -711,44 +659,13 @@ Such profiles are available online for all other galaxies successfully modelled 
 \end{figure*}
 
 
-%\begin{figure*}[h]
-%\begin{center}
-%\includegraphics[width=\fitfigurewidth]{images/m59_1Dfit.eps}
-%\caption{the galaxy M59. 
-%The figure caption is the same as Figure \ref{fig:n3377ex}. 
-%Empty data points represent data excluded from the fit.}
-%\label{fig:m59ex}
-%\end{center}
-%\end{figure*}
-%
-%\begin{figure*}[h]
-%\begin{center}
-%\includegraphics[width=\fitfigurewidth]{images/n1332_1Dfit.eps}
-%\caption{the galaxy NGC 1332.
-%The figure caption is the same as Figure \ref{fig:n3377ex}. 
-%Empty data points represent data excluded from the fit.}
-%\label{fig:n1332ex}
-%\end{center}
-%\end{figure*}
-%
-%\begin{figure}[h]
-%\begin{center}
-%\includegraphics[width=\columnwidth]{images/mbhmagk_n1332.pdf}
-%\caption{The location of the S\'ersic galaxy NGC 1332 in the black hole mass versus $K$-band spheroid absolute magnitude diagram,
-%according to our galaxy decomposition. 
-%The red and blue solid lines show the scaling relations for core-S\'ersic and S\'ersic galaxies, respectively, 
-%reported by \citet{grahamscott2013}, 
-%while the shaded areas mark the $1\sigma$ errors.}
-%\label{fig:n1332pl}
-%\end{center}
-%\end{figure}
-
 \subsection{2D fits}
 \label{sec:2d}
 Two-dimensional decompositions were carried out using the software \textsc{Imfit} \citep{imfit}.
 For each galaxy, we built a 2D model that was consistent with the corresponding 1D model in terms of number and type of components. 
-Because the Ferrer profile is not made available in \textsc{Imfit},
-bars were fit with a 2D Gaussian function. \\
+{\bf The only difference between our 1D and 2D models pertains to the description of bars: 
+because the Ferrer profile is not made available in \textsc{Imfit},
+bars were fit with a 2D Gaussian function. } \\
 The 2D decomposition of NGC 2974 is presented in Figure \ref{fig:n29742d}. 
 The galaxy was modeled with a S\'ersic bulge, an exponential disk and a Gaussian bar.
 The nuclear component was masked and the ring was not 
@@ -766,9 +683,11 @@ Fits and descriptions for the other galaxies are available online.
 \includegraphics[width=\columnwidth]{images/n2974_unsharp.jpeg}
 \includegraphics[width=\columnwidth]{images/n2974_model.jpeg}
 \includegraphics[width=\columnwidth]{images/n2974_resid.jpeg}
-\caption{Image of the galaxy NGC 2974 with its mask (top panel), unsharp mask (second panel), 
-best-fit 2D model (third panel), 
-and residual image after the subtraction of the 2D model (bottom panel).
+\caption{Image of the galaxy NGC 2974 with its mask (top panel, {\bf on a logarithmic scale}), 
+unsharp mask (second panel, {\bf on a linear scale}), 
+best-fit 2D model (third panel, {\bf on a logarithmic scale}), 
+and residual image after the subtraction of the 2D model (bottom panel, {\bf on a linear scale; 
+the residual patterns correspond to differences between the data and the model of less than 6\%}).
 The lefthand side of the mosaic allowed an accurate determination of the sky background level.}
 \label{fig:n29742d}
 \end{center}
@@ -869,7 +788,9 @@ The dashed line displays the 1:1 relation.}
 \begin{center}
 \includegraphics[width=\columnwidth]{images/comparison_n.eps} 
 \caption{2D measurements of the spheroid S\'ersic indices roughly approximate the 1D equivalent-axis measurements. 
-The dashed line displays the 1:1 relation.}
+The dashed line displays the 1:1 relation.
+{\bf The four most obvious outliers are NGC 821, NGC 3377, NGc 4945, and NGC 5576. 
+Their individual cases are discussed in the Appendix. }}
 \label{fig:n1d2d}
 \end{center}
 \end{figure}
@@ -938,7 +859,8 @@ We did this using a grade from 1 to 3, assigned according to the following crite
 The residuals in correspondence with the radial extent of the spheroidal component are not randomly distributed around zero, 
 being symptomatic of a S\'ersic model having a curvature (regulated by the S\'ersic index $n$) 
 that does not quite match the real ``shape'' of the spheroid. 
-When we identified, but were not able to accurately model. a galaxy sub-component.
+{\bf When we identified, 
+but were not able to model a galaxy sub-component with the same accuracy dedicated to the other components}.
 In the case of apparent inconsistencies between the model and the observed galaxy properties 
 (e.g.~an embedded disk modeled with an exponential function, 
 whose scale length does not quite match the size of the disk as expected from the ellipticity profile or the velocity map).
@@ -971,7 +893,13 @@ for our measurements.
 78\% lie within $-\sigma_2^- = -0.21~\rm dex$ and $+\sigma_2^+ = +0.17~\rm dex$,
 and 92\% lie within $-\sigma_3^- = -0.25~\rm dex$ and $+\sigma_3^+ = +0.25~\rm dex$. 
 We elect to use $\pm \sigma_1^\pm$, $\pm \sigma_2^\pm$ and $\pm \sigma_3^\pm$ as $1\sigma$ uncertainties 
-for our measurements of $\log(n_{\rm sph})$ obtained from ``grade 1'', ``grade 2'' and ``grade 3'' fits, respectively. \\
+for our measurements of $\log(n_{\rm sph})$ obtained from ``grade 1'', ``grade 2'' and ``grade 3'' fits, respectively. 
+{\bf This means that, if the fit of a galaxy was classified as ``grade 1'', 
+the (logarithmic) value of the spheroid S\'ersic index $\tilde{n}_{\rm sph}$ and associated uncertainties would be 
+$\log(\tilde{n}_{\rm sph})^{+\sigma_1^+}_{-\sigma_1^-} = \log(\tilde{n}_{\rm sph})^{+0.06}_{-0.08}$; 
+if the fit of that galaxy was classified as ``grade 2'', 
+then one would have $\log(\tilde{n}_{\rm sph})^{+\sigma_2^+}_{-\sigma_2^-} = \log(\tilde{n}_{\rm sph})^{+0.17}_{-0.21}$, 
+and so on.  } 
 
 \subsubsection{Uncertainties on $R_{\rm e,sph}$}
 The uncertainties on the spheroid effective radii were computed using the same methodology as employed for the S\'ersic indices. 
@@ -2040,7 +1968,9 @@ under contract with the National Aeronautics and Space Administration.
   L+14 obtained a tiny estimate of the spheroid effective radius and a small S\'ersic index because they failed to identify the extent 
   of the intermediate-scale disk. 
   Inaccurate sky subtraction could be the reason why B+12 obtained a large estimate of the effective radius.
-  }
+  {\bf We could not obtain a successful 2D model that included a nuclear component, 
+  therefore we opted for masking the nuclear region of the galaxy. 
+  This resulted in a significantly lower S\'ersic index, that we consider underestimated. }}
   \end{table}
 
 
@@ -2189,7 +2119,9 @@ under contract with the National Aeronautics and Space Administration.
   \includegraphics[width=\fitfigurewidth]{images/n1332_1Dfit.eps}
   \caption{NGC 1332: 
   An edge-on elliptical/lenticular galaxy. 
-  The ellipticity profile broadcasts the presence of an intermediate-scale disk. 
+  {\bf The identification of a disk is trivial due to its edge-on orientation, 
+  although a visual inspection of the galaxy image is not enough to estabilish the radial extent of this disk. 
+  The ellipticity profile indicates that the disk is indeed intermediate-sized, i.e.~it does not dominate at large radii. }
   Given the edge-on inclination of this disk, we model it with a low-$n$ S\'ersic profile. 
   The data within the innermost $6''.1$ are excluded from the fit.
   Our equivalent-axis decomposition returns a spheroidal component accounting for 95\% of the total light,
@@ -2846,7 +2778,7 @@ under contract with the National Aeronautics and Space Administration.
   1D eq.  & S-bul + 2 e-id     & $91.7$  &  $9.2$ \\
   2D      & S-bul + e-id + m-n & $71.8$  &  $3.7$ \\
   \hline
-  GD07 1D maj.         & S-bul     		     & $44.1$  &  $3.0$ \\
+  GD07 1D maj.    & S-bul     		     & $44.1$  &  $3.0$ \\
   S+11 2D         & S-bul     		     & $55.2$  &  $6.0$ \\
   B+12 2D         & S-bul     		     & $43.5$  &  $3.5$ \\
   L+14 2D         & S-bul + e-id + e-d + S-halo & $10.1$  &  $6.0$ \\
@@ -2854,7 +2786,9 @@ under contract with the National Aeronautics and Space Administration.
   \end{tabular}
   \end{center}
   \label{tab:n3377}
-  \tablecomments{L+14 obtained the smallest estimate of the effective radius because they oversubtracted a halo.   
+  \tablecomments{L+14 obtained the smallest estimate of the effective radius because they oversubtracted a halo. 
+  {\bf In our 2D fit, we were not successful in modelling the nuclear disk and opted for masking the nuclear region of the galaxy. 
+  Such 2D model resulted in a significantly lower S\'ersic index, that we trust being underestimated. } 
   }
   \end{table}
   
@@ -3460,9 +3394,19 @@ under contract with the National Aeronautics and Space Administration.
   the disk component becomes increasingly more important over the spheroidal component.
   However, the lack of a plateau in the ellipticity profile at large radii implies that at $R_{\rm maj} \sim 100''$ 
   the contribution from the bulge is still significant compared to that of the disk.
-  In fact, the surface brightness profile does not display an exponential decline at large radii.
   We note that the antitruncation reported by \cite{gutierrez2011} could be an artificial feature 
-  produced by the transition from the S\'ersic bulge to the exponential disk.
+  produced by the transition from the S\'ersic bulge to the exponential disk. 
+  {\bf According to their analysis of the surface brightness profile of NGC 4459 (their Figure 14), 
+  the contribution from the disk completely overcomes that of the bulge beyond $R_{\rm maj} \gtrsim 60''$. 
+  In the surface brightness profile, they identified two exponential declines with different scale lengths 
+  (the first between $60'' \lesssim R_{\rm maj} \lesssim 110''$, and the second beyond $R_{\rm maj} \gtrsim 120''$). 
+  However, we checked that in the radial range $60'' \lesssim R_{\rm maj} \lesssim 110''$ 
+  the surface brightness profile is not a perfect exponential, but presents a curvature. 
+  This can be securely assessed only by fitting the data within the mentioned radial range with a single exponential function 
+  and plotting the residuals; 
+  if the residuals betray a curvature, the data cannot be accommodated by a single exponential function. 
+  According to our decomposition, the disk of NGC 4459 starts dominating beyond $R_{\rm maj} \gtrsim 100''$. 
+  The exponential function of our model seems to nicely match the ``second'' exponential decline identified by \cite{gutierrez2011}.  }
   We do not find evidence for any embedded components in our data.
   A nuclear light excess is modeled with a Gaussian profile.
   }
@@ -3735,7 +3679,8 @@ under contract with the National Aeronautics and Space Administration.
   \caption{NGC 4945: 
   An edge-on, dusty spiral galaxy that hosts a Seyfert AGN \citep{lin2011}.
   The light profile has an obvious bump that can be ascribed to the bar.
-  This bumb cannot be easily modeled with a Ferrer function, thus we exclude the data in the range $100'' \lesssim R_{\rm maj} \sim 400''$ form the fit.
+  This bumb cannot be easily modeled with a Ferrer function {\bf nor with a S\'ersic profile}, 
+  thus we exclude the data in the range $100'' \lesssim R_{\rm maj} \sim 400''$ form the fit.
   We also exclude the data within the innermost $6''.4$ due to the contribution from the AGN.
   }
   \end{center}
