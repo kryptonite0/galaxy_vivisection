@@ -8,65 +8,64 @@ Repeated entry---line 1823 of file /Users/gsavorgnan/galaxy_vivisection/papers/S
  : @article{rixwhite1992
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2908 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+Repeated entry---line 2922 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  : @article{scorzabender1995
  :                          ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 7545 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+I was expecting a `,' or a `}'---line 7559 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  :      year = 2014
  :                 a,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 7564 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+I was expecting a `,' or a `}'---line 7578 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  :      year = 2014
  :                 b,
 I'm skipping whatever remains of this entry
-Repeated entry---line 8031 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+Repeated entry---line 8045 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  : @article{haringrix2004
  :                       ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "elmegreenelmegreen1985"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty publisher in RC3
 Warning--empty publisher in sersic1968
-You've used 134 entries,
+You've used 136 entries,
             3085 wiz_defined-function locations,
-            1536 strings with 37968 characters,
-and the built_in function-call counts, 67081 in all, are:
-= -- 5458
-> -- 5207
-< -- 53
-+ -- 1747
-- -- 1888
-* -- 5874
-:= -- 12702
-add.period$ -- 134
-call.type$ -- 134
-change.case$ -- 928
-chr.to.int$ -- 130
-cite$ -- 136
-duplicate$ -- 2557
-empty$ -- 3818
-format.name$ -- 2064
-if$ -- 13213
+            1549 strings with 38224 characters,
+and the built_in function-call counts, 67917 in all, are:
+= -- 5536
+> -- 5251
+< -- 55
++ -- 1761
+- -- 1902
+* -- 5936
+:= -- 12854
+add.period$ -- 136
+call.type$ -- 136
+change.case$ -- 940
+chr.to.int$ -- 132
+cite$ -- 138
+duplicate$ -- 2595
+empty$ -- 3874
+format.name$ -- 2086
+if$ -- 13385
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 130
-newline$ -- 406
-num.names$ -- 540
-pop$ -- 1018
+missing$ -- 132
+newline$ -- 412
+num.names$ -- 548
+pop$ -- 1032
 preamble$ -- 1
-purify$ -- 928
+purify$ -- 940
 quote$ -- 0
-skip$ -- 2116
+skip$ -- 2148
 stack$ -- 0
-substring$ -- 2791
+substring$ -- 2833
 swap$ -- 42
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1200
+type$ -- 1218
 warning$ -- 2
-while$ -- 514
+while$ -- 522
 width$ -- 0
-write$ -- 1341
+write$ -- 1361
 (There were 5 error messages)

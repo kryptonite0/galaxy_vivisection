@@ -1,0 +1,61 @@
+- 
+
+- The referee is correct in saying that the last point in our Conclusion Section is not a new result and,  
+  indeed, we didn't mean to deliver this result as a novelty. The Introductions of Papers I and II present 
+  some points about black hole mass scaling relations that are currently under debate. One of these points 
+  is the level of intrinsic scatter in the black hole mass - spheroid/galaxy luminosity correlation. Some 
+  studies (e.g. Erwin & Gadotti 2012, Beifiori et al. 2012, Kormandy & Ho 2013) claimed that the spheroid 
+  luminosity is a better tracer of the black hole mass, but the most recent study by Lasker et al. reported 
+  that the spheroid luminosity and the galaxy luminosity are equally good proxies of the black hole mass. 
+  Our work solves this controversy by showing that the spheroid luminosity and the galaxy luminosity correlate 
+  equally well with the black hole mass when only early-type galaxies are considered (Lasker's sample has only 
+  4 spiral galaxies). However, when the galaxy sample contains a reasonable number of spiral galaxies, the 
+  correlation with the spheroid luminosity has less intrinsic scatter than that with the galaxy luminosity. 
+  To our best knowledge, this has never been shown before in the literature. 
+  Additional references have been added to the last point in our Conclusion Section.
+  
+- The referee is correct, and we are aware of this. Unlike many papers, we believe that we have not under-
+  estimated the uncertainties associated to the bulge best-fit parameters. It is possible that some of the 
+  results taken from the literature are "grossly wrong", however the exclusion of extreme outliers would 
+  affect only the sigma_3 error bars, i.e. the uncertainties associated to the "grade 3" fits, which constitute 
+  only 14% of all fits. The exclusion of extreme outliers would have a very small impact on the sigma_1 and 
+  sigma_2 errorbars (we learned this from Savorgnan et al. 2013, where we applied a very similar method). 
+  In conclusion, the exclusion of extreme outliers would decrease the uncertainties associated to 14% of 
+  all galaxies, with little or no effects on the measurement of the intrinsic scatter. 
+
+- We prefer not to reference Burstein et al. because they falsely identified many discs due to poor R^(1/4) 
+  decompositions. 
+
+- A footnote has been added in Section 4.3 to remind the reader why a slope~1 is consistent with a dry-merging 
+  formation scenario, although it simply repeats what already stated in the Introduction. 
+
+- A (B-V) galaxy color vs. log(galaxy stellar mass) plot is attached. The early-type galaxies are seen to occupy 
+  the region of the red sequence, and the spiral galaxies are located in the region of the blue cloud. 
+  The correspondence between galaxy morphological type (early vs. late) and position in the color-mass diagram 
+  (red sequence vs. blue cloud) is a very well estabilished result and we don't feel the need of showing this 
+  (poor) diagram in the paper. 
+
+- We fully agree with the referee on this point, as extensively discussed in Section 4.2.1. We don't think that 
+  classical and pseudo-bulges can be distinguished based on their Sersic index. However, this has been common 
+  practice in the recent literature, and here we are showing that n<2 bulges are not offset from the correlation
+  traced by n>2 bulges. The referee might appreciate that we never refereed to our n<2 bulges merely as pseudo-bulges, 
+  but we always specified "claimed by some to be pseudo-bulges". In addition, in the text we have questioned the 
+  n<2 criterion used by some to identify pseudo-bulges. 
+
+- We never claimed that the break of the black hole - bulge mass correlation is due to the bulge mass. 
+  In the Introduction, we anticipated that, for consistency with other known scaling relations (Lsph-sigma and 
+  Mbh-sigma), a bent Mbh-Lsph correlation is expected, with the bend occurring around Mbh~10^8. 
+  In the Mbh-Lsph and Mbh-Msph diagrams, we identified two different sequences (early vs. late) precisely according 
+  to the morphology of galaxies. Indeed, the break is caused by the galaxy morphology. 
+  We did not identify pseudo-bulges with n<2 bulges. 
+  In Figure 5, the red dashed line marks the correlation for ellipticals+lenticulars (as stated in the caption). 
+  The correlation for ellipticals only is not shown in this Figure. The spiral galaxies can be seen not following 
+  this correlation. 
+  Concerns about the lack of a correlation for spiral galaxies are not correct, and have already been addressed in 
+  the last paragraph of Section 4.2. The correlation for spiral galaxies has been measured and quantified with 3 
+  different linear regression routines. If there was no correlation for spiral galaxies, the uncertainties associated 
+  to the slope and intercept of the linear regression would be extremely large.  
+  
+  
+  
+  

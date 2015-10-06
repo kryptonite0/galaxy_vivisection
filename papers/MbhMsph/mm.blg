@@ -4,75 +4,70 @@ The top-level auxiliary file: mm.aux
 The style file: apj.bst
 Database file #1: mmNotes.bib
 Database file #2: /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
-Repeated entry---line 998 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+Repeated entry---line 1837 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  : @article{rixwhite1992
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1906 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+Repeated entry---line 2936 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  : @article{scorzabender1995
  :                          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 7029 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+I was expecting a `,' or a `}'---line 7573 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+ :      year = 2014
+ :                 a,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 7592 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+ :      year = 2014
+ :                 b,
+I'm skipping whatever remains of this entry
+Repeated entry---line 8059 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  : @article{haringrix2004
  :                       ,
 I'm skipping whatever remains of this entry
-Name 1 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
-while executing---line 1587 of file apj.bst
-Name 1 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
-while executing---line 1587 of file apj.bst
-Name 2 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
-while executing---line 1587 of file apj.bst
+Warning--I didn't find a database entry for "atlas3dIII-MNRAS"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Name 1 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
-while executing---line 1671 of file apj.bst
-Name 2 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
-while executing---line 1671 of file apj.bst
-Name 1 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
-while executing---line 1671 of file apj.bst
-Name 2 in "{Emsellem}, and {}, and {E. et al.}" has a comma at the end for entry atlas3dIII-MNRAS
-while executing---line 1671 of file apj.bst
 Warning--can't use both author and editor fields in graham2013review
 Warning--empty publisher in graham2013review
 Warning--empty publisher in press1992
 You've used 103 entries,
             3085 wiz_defined-function locations,
-            1322 strings with 28436 characters,
-and the built_in function-call counts, 50220 in all, are:
-= -- 4102
-> -- 3718
-< -- 55
-+ -- 1244
-- -- 1332
-* -- 4305
-:= -- 9466
+            1315 strings with 28213 characters,
+and the built_in function-call counts, 50030 in all, are:
+= -- 4082
+> -- 3700
+< -- 56
++ -- 1238
+- -- 1324
+* -- 4282
+:= -- 9438
 add.period$ -- 103
 call.type$ -- 103
-change.case$ -- 682
+change.case$ -- 680
 chr.to.int$ -- 99
 cite$ -- 106
-duplicate$ -- 1997
-empty$ -- 2978
-format.name$ -- 1469
-if$ -- 9951
+duplicate$ -- 1998
+empty$ -- 2977
+format.name$ -- 1461
+if$ -- 9909
 int.to.chr$ -- 5
 int.to.str$ -- 0
 missing$ -- 95
 newline$ -- 313
 num.names$ -- 421
-pop$ -- 758
+pop$ -- 759
 preamble$ -- 1
-purify$ -- 682
+purify$ -- 680
 quote$ -- 0
-skip$ -- 1671
+skip$ -- 1663
 stack$ -- 0
-substring$ -- 2120
+substring$ -- 2096
 swap$ -- 78
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 921
 warning$ -- 3
-while$ -- 402
+while$ -- 399
 width$ -- 0
 write$ -- 1032
-(There were 10 error messages)
+(There were 5 error messages)

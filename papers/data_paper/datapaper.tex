@@ -82,8 +82,9 @@ unlike popular 2D codes that only consider statistical errors.
 
 \section{Introduction}
 \label{sec:int}
-Supermassive black holes and their host spheroids\footnote{The term ``spheroid'' refers to either an elliptical galaxy or the spheroidal component 
-of a galaxy with a disk. } 
+Supermassive black holes and their host bulges/spheroids\footnote{\bf By the term ``bulge/spheroid'' 
+we mean either an elliptical galaxy or the bulge component of disk galaxies, 
+with no attempt of distinguishing between classical and disk-like pseudo-bulges. } 
 have very different sizes. 
 If the event horizon of the Galactic supermassive black hole was as big as a grain of sand in the Sahara desert, 
 then the black hole's gravitational sphere-of-influence would be as big as the international airport of Cairo, 
@@ -100,8 +101,6 @@ the driving mechanisms of the black hole -- spheroid coevolution.
 Observations at $z=0$ set the local benchmark from which to measure this evolution.
 Any complete theory or model describing the coevolution of spheroids and black holes must incorporate 
 all of the observed scaling relations, which also have to be consistent with each other.
-%Modern semi-analytic models use the observed black hole mass scaling relations 
-%to constrain the black hole accretion rate .
 Modern hydrodynamical simulations, such as EAGLE \citep{schaye2015}, calibrate the feedback efficiencies 
 to match the $z=0$ black hole mass -- galaxy mass relation.
 The observed scaling relations can also be employed to predict the masses of black holes in other galaxies, where a direct
@@ -139,8 +138,8 @@ if one is to properly explore the black hole -- spheroid connection.
 Indeed, separating the disk light from that of the bulge has led to the discovery of the missing population of compact, massive spheroids 
 in the local Universe \citep{GDS2015}.
 If we are to properly understand the evolution of galaxies, we need to understand their components.\\
-Measuring the photometric and structural properties of a galaxy's spheroidal component requires the ability to 
-separate it from the rest of the galaxy. 
+Measuring the photometric and structural properties of a galaxy's spheroidal component 
+requires the ability to separate it from the rest of the galaxy. 
 Such galaxy decomposition involves a parametric analysis that allows one to fit the surface brightness distribution
 of galaxies using a combination of analytic functions (usually one function per
 galaxy component, such as spheroids, disks, bars, nuclei, etc.).
@@ -537,10 +536,15 @@ it is hard to encompass all aspects of this matter in a few paragraphs.
 The modeling of each galaxy represented a particular and original problem, 
 and we remand the reader to Section \ref{sec:indgal},
 where we provide individual descriptions of the galaxies that we analyzed. \\
-As stressed in Section \ref{sec:int}, our investigation is primarily focused on the central spheroidal components 
-of galaxies.
-We assumed \emph{a priori} that each of our galaxies has a unique spheroidal component, 
-that we modeled with a S\'ersic profile. \\
+{\bf As stressed in Section \ref{sec:int}, our investigation is primarily focused on the central bulge/spheroidal components 
+of galaxies. 
+The objects in our sample are either early-type galaxies (elliptical+lenticular), 
+or ``early-type spiral'' galaxies 
+(i.e.~the morphological classification of our spiral galaxies is within \emph{Sa-Sc}, 
+with the only exception of NGC 4945 which is classified as \emph{Scd}), 
+therefore -- by definition -- they all have a bulge/spheroidal component, 
+unlike ``late-type spiral'' galaxies that can be bulge-less (e.g.~NGC 300).   
+We modeled spheroids/bulges with a S\'ersic profile, without attempting to distinguish between classical and pseudo-bulges. } \\
 Disks were usually fit with the exponential model, 
 although in the case of highly inclined or edge-on systems we preferred using an $n < 1$ S\'ersic function. 
 \citet{pastrav2013a,pastrav2013b} showed that, due to projection effects, their simulated images of inclined galaxy disks 
@@ -585,8 +589,10 @@ to fit a disk-like component embedded in the bulge
 is to reduce degeneracies with the S\'ersic profile that describes the bulge.}. 
 This approach is similar to that of \cite{laurikainen2010}, 
 who fit bars with a Ferrer function and inner disks with a S\'ersic model. 
-We did not find evidence of bars with exponential profiles (e.g.~\citealt{elmegreenelmegreen1985,gadotti2008,kim2015}), 
-but this might be due to the low number statistics of barred galaxies in our sample. }\\
+Our galaxy sample lacks of ``late-type spiral galaxies''.
+As expected, we did not find evidence of bars with exponential profiles (e.g.~\citealt{elmegreenelmegreen1985,gadotti2008,kim2015}), 
+which are typical of late-type spiral galaxies \citep{gadottidesouza2006}, 
+and we only modeled bars with flat profiles, which are common features of ``early-type spiral'' galaxies \citep{gadottidesouza2006}. }\\
 The presence of a nuclear component -- either resolved or unresolved -- was generally expected in 
 (but not restricted to) galaxies that host an optical AGN and circumnuclear dust.
 Nuclear stellar disks and nuclear star clusters fall into the category of nuclear components too,
@@ -605,7 +611,8 @@ we inferred the presence of a stellar nuclear component.}.
 Unresolved nuclear components were fit with our optimal Moffat PSF,
 whereas resolved nuclear components were modeled with (PSF-convolved) narrow Gaussian functions 
 {\bf (\citealt{wadadekar1999,ravindranath2001,peng2002} and \citealt{gadotti2008} discuss the importance of fitting nuclear components)}. \\
-Rings were identified from galaxy images and unsharp masks, and modeled with symmetric Gaussian ring profiles. \\
+Rings were identified from galaxy images and unsharp masks, and modeled with symmetric Gaussian ring profiles 
+(e.g.~\citealt{sheth2010,kim2014}). \\
 As an illustration, we consider the galaxy NGC 2974, 
 a spiral galaxy which has been misclassified as an elliptical galaxy in the RC3 catalog \citep{RC3}. 
 This galaxy hosts a Seyfert AGN \citep{veroncettyveron2006} and filamentary dust in its center \citep{tran2001}.
@@ -789,7 +796,7 @@ The dashed line displays the 1:1 relation.}
 \includegraphics[width=\columnwidth]{images/comparison_n.eps} 
 \caption{2D measurements of the spheroid S\'ersic indices roughly approximate the 1D equivalent-axis measurements. 
 The dashed line displays the 1:1 relation.
-{\bf The four most obvious outliers are NGC 821, NGC 3377, NGc 4945, and NGC 5576. 
+{\bf The four most obvious outliers are NGC 821, NGC 3377, NGC 4945, and NGC 5576. 
 Their individual cases are discussed in the Appendix. }}
 \label{fig:n1d2d}
 \end{center}
@@ -3680,7 +3687,7 @@ under contract with the National Aeronautics and Space Administration.
   An edge-on, dusty spiral galaxy that hosts a Seyfert AGN \citep{lin2011}.
   The light profile has an obvious bump that can be ascribed to the bar.
   This bumb cannot be easily modeled with a Ferrer function {\bf nor with a S\'ersic profile}, 
-  thus we exclude the data in the range $100'' \lesssim R_{\rm maj} \sim 400''$ form the fit.
+  thus we exclude the data in the range $100'' \lesssim R_{\rm maj} \sim 400''$ from the fit.
   We also exclude the data within the innermost $6''.4$ due to the contribution from the AGN.
   }
   \end{center}
