@@ -259,8 +259,8 @@ suffixDict = {'comb' : '_combscale', '02lin' : '_linscale02px', '05lin' : '_lins
 
 psfList, gaussianSmoothing = createPsf(Settings)
 
-#axisFitList = ['maj', 'eq']
-axisFitList = ['maj']
+axisFitList = ['maj', 'eq']
+#axisFitList = ['maj']
 #axisFitList = ['eq']
 
 prefixEllipseOutput, galaxy, skyRMS = readDataFileNames('init.1dfit')

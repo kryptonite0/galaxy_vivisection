@@ -82,9 +82,9 @@ unlike popular 2D codes that only consider statistical errors.
 
 \section{Introduction}
 \label{sec:int}
-Supermassive black holes and their host bulges/spheroids\footnote{\bf By the term ``bulge/spheroid'' 
-we mean either an elliptical galaxy or the bulge component of disk galaxies, 
-with no attempt of distinguishing between classical and disk-like pseudo-bulges. } 
+Supermassive black holes and their host spheroids\footnote{\bf By the term ``spheroid'' 
+we mean either an elliptical galaxy or the bulge component of a disk galaxy, 
+with no attempt at distinguishing between classical bulges and disk-like pseudo-bulges. } 
 have very different sizes. 
 If the event horizon of the Galactic supermassive black hole was as big as a grain of sand in the Sahara desert, 
 then the black hole's gravitational sphere-of-influence would be as big as the international airport of Cairo, 
@@ -461,9 +461,9 @@ three times the root mean square of the sky background fluctuations ($3 \times R
 Some surface brightness profiles were truncated at our discretion before the $3 \times RMS_{\rm sky}$ limit, 
 according to specific technical reasons (e.g.~contamination from light of a neighboring galaxy, 
 disturbed morphology in the galaxy outskirts, etc.). 
-{\bf In particular, we did not attempt to fit down- or up-bendings of large-scale disks 
+{\bf In particular, we did not attempt to fit bends or truncations of large-scale disks 
 (e.g.~\citealt{erwin2005,erwin2008,erwin2012,gutierrez2011,comeron2012,munozmateos2013,kim2014}) 
-by truncating the surface brightness profiles well before the occurrence of these features. }
+but instead truncated the surface brightness profiles before the occurrence of such features. }
 Individual cases are discussed in Section \ref{sec:indgal}.
 
 \subsection{Unsharp masking}
@@ -536,14 +536,14 @@ it is hard to encompass all aspects of this matter in a few paragraphs.
 The modeling of each galaxy represented a particular and original problem, 
 and we remand the reader to Section \ref{sec:indgal},
 where we provide individual descriptions of the galaxies that we analyzed. \\
-{\bf As stressed in Section \ref{sec:int}, our investigation is primarily focused on the central bulge/spheroidal components 
+{\bf As stressed in Section \ref{sec:int}, our investigation is primarily focused on the central spheroidal components 
 of galaxies. 
 The objects in our sample are either early-type galaxies (elliptical+lenticular), 
 or ``early-type spiral'' galaxies 
 (i.e.~the morphological classification of our spiral galaxies is within \emph{Sa-Sc}, 
 with the only exception of NGC 4945 which is classified as \emph{Scd}), 
 therefore -- by definition -- they all have a bulge/spheroidal component, 
-unlike ``late-type spiral'' galaxies that can be bulge-less (e.g.~NGC 300).   
+unlike ``late-type spiral'' galaxies that can be bulgeless (e.g.~NGC 300).   
 We modeled spheroids/bulges with a S\'ersic profile, without attempting to distinguish between classical and pseudo-bulges. } \\
 Disks were usually fit with the exponential model, 
 although in the case of highly inclined or edge-on systems we preferred using an $n < 1$ S\'ersic function. 
@@ -574,7 +574,7 @@ Another way to establish the presence of an embedded disk is to look at the velo
 following the approach of \citet{arnold2014}. 
 A local angular momentum decrease with increasing radius is indicative of an intermediate-scale disk 
 that fades toward larger radii. 
-{\bf Savorgnan \& Graham (\emph{submitted}) extensively discuss the topic of galaxies with intermediate-scale disks 
+{\bf \cite{savorgnangraham2015ellicular} extensively discuss the topic of galaxies with intermediate-scale disks 
 and show that, when these disks are misclassified and modeled as large-scale disks, 
 the luminosity of the spheroidal component is underestimated, 
 which makes these galaxies falsely appear as extreme outliers in the (black hole mass)-(spheroid stellar mass) diagram. } \\
@@ -582,17 +582,18 @@ Bars are usually recognizable from galaxy images and unsharp masks,
 although local maxima/minima or abrupt changes in the radial profiles of the isophotal parameters 
 can provide additional evidence for less obvious bars. 
 {\bf As noted, we were able to successfully fit bars with a Ferrer function 
-(NGC 4151 is the only case for which we described the bar with a $n \sim 0.2$ S\'ersic model). 
-Disk-like components embedded in the bulges of spiral galaxies were described with a $n \lesssim 1$ S\'ersic model or, 
-in a few cases, with a Ferrer function\footnote{\bf The advantage of choosing a Ferrer function over a S\'ersic profile 
+(NGC 4151 is the only case for which we described the bar with an $n \sim 0.2$ S\'ersic model). 
+Disk-like components embedded in the bulges of spiral galaxies were described with an $n \lesssim 1$ S\'ersic model or, 
+in a few cases, with a Ferrer function\footnote{\bf One advantage of choosing a Ferrer function over a S\'ersic profile 
 to fit a disk-like component embedded in the bulge 
 is to reduce degeneracies with the S\'ersic profile that describes the bulge.}. 
 This approach is similar to that of \cite{laurikainen2010}, 
 who fit bars with a Ferrer function and inner disks with a S\'ersic model. 
-Our galaxy sample lacks of ``late-type spiral galaxies''.
-As expected, we did not find evidence of bars with exponential profiles (e.g.~\citealt{elmegreenelmegreen1985,gadotti2008,kim2015}), 
-which are typical of late-type spiral galaxies \citep{gadottidesouza2006}, 
-and we only modeled bars with flat profiles, which are common features of ``early-type spiral'' galaxies \citep{gadottidesouza2006}. }\\
+Given that our galaxy sample lacks ``late-type spiral'' galaxies, 
+it is not surprising \citep{gadottidesouza2006} that we did not find bars with exponential profiles 
+(e.g.~\citealt{elmegreenelmegreen1985,gadotti2008,kim2015}).
+The bars in our sample were found to have rather flat inner profiles, 
+as is commonly found for bars in ``early-type spiral'' galaxies \citep{gadottidesouza2006}. } \\
 The presence of a nuclear component -- either resolved or unresolved -- was generally expected in 
 (but not restricted to) galaxies that host an optical AGN and circumnuclear dust.
 Nuclear stellar disks and nuclear star clusters fall into the category of nuclear components too,
@@ -755,7 +756,9 @@ about a galaxy's constituents.
 \item The ellipticity and position angle of triaxial spheroids can vary with radius.
 The analytic functions used by 2D decomposition codes to fit galaxy components have fixed ellipticity and position angle, 
 thus they cannot account for these radial gradients. 
-This problem is overcome with 1D decomposition techniques.
+This problem is overcome with 1D decomposition techniques 
+{\bf because the ellipticity, and additionally the deviations from elliptical isophotes, 
+are efficiently included in the equivalent-axis fit (see the Appendix of \citealt{ciambur2015})}.
 \item The interpretation of the residual surface brightness profile is often crucial to identify the optimal decomposition for a galaxy. 
 In our experience, we found that interpreting 1D residuals was easier and more productive than 2D residuals.
 \end{itemize}
@@ -901,10 +904,10 @@ for our measurements.
 and 92\% lie within $-\sigma_3^- = -0.25~\rm dex$ and $+\sigma_3^+ = +0.25~\rm dex$. 
 We elect to use $\pm \sigma_1^\pm$, $\pm \sigma_2^\pm$ and $\pm \sigma_3^\pm$ as $1\sigma$ uncertainties 
 for our measurements of $\log(n_{\rm sph})$ obtained from ``grade 1'', ``grade 2'' and ``grade 3'' fits, respectively. 
-{\bf This means that, if the fit of a galaxy was classified as ``grade 1'', 
+{\bf This means that, if the fit to a galaxy was classified as ``grade 1'', 
 the (logarithmic) value of the spheroid S\'ersic index $\tilde{n}_{\rm sph}$ and associated uncertainties would be 
 $\log(\tilde{n}_{\rm sph})^{+\sigma_1^+}_{-\sigma_1^-} = \log(\tilde{n}_{\rm sph})^{+0.06}_{-0.08}$; 
-if the fit of that galaxy was classified as ``grade 2'', 
+if the fit to that galaxy was classified as ``grade 2'', 
 then one would have $\log(\tilde{n}_{\rm sph})^{+\sigma_2^+}_{-\sigma_2^-} = \log(\tilde{n}_{\rm sph})^{+0.17}_{-0.21}$, 
 and so on.  } 
 
@@ -1762,7 +1765,9 @@ under contract with the National Aeronautics and Space Administration.
   \caption{M104: 
   A lenticular/spiral galaxy with a partially depleted core \citep{jardel2011}. 
   The data within the innermost $6''.1$ are excluded from the fit, 
-  and the most obvious elongated feature of this galaxy is modeled with a Ferrer function.
+  and the most obvious elongated feature of this galaxy is modeled with a Ferrer function. 
+  The ellipticity profile indicates that the disk is of intermediate-scale 
+  {\bf (for a thorough analysis of this galaxy, see \citealt{gadottisanchezjanssen2012})}.
   }
   \end{center}
   \end{figure}

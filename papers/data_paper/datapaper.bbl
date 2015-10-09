@@ -62,6 +62,9 @@
 \bibitem[{{Carter}(1987)}]{carter1987}
 {Carter}, D. 1987, \apj, 312, 514
 
+\bibitem[{{Ciambur}(2015)}]{ciambur2015}
+{Ciambur}, B.~C. 2015, ArXiv e-prints, arXiv:1507.02691
+
 \bibitem[{{Ciotti}(1991)}]{ciotti1991}
 {Ciotti}, L. 1991, \aap, 249, 99
 
@@ -215,6 +218,9 @@
 
 \bibitem[{{Gadotti} \& {de Souza}(2006)}]{gadottidesouza2006}
 {Gadotti}, D.~A., \& {de Souza}, R.~E. 2006, \apjs, 163, 270
+
+\bibitem[{{Gadotti} \& {S{\'a}nchez-Janssen}(2012)}]{gadottisanchezjanssen2012}
+{Gadotti}, D.~A., \& {S{\'a}nchez-Janssen}, R. 2012, \mnras, 423, 877
 
 \bibitem[{{Gavazzi} {et~al.}(2003){Gavazzi}, {Boselli}, {Donati}, {Franzetti},
   \& {Scodeggio}}]{goldmine}
@@ -514,8 +520,13 @@
 {Savorgnan}, G., {Graham}, A.~W., {Marconi}, A., {et~al.} 2013, \mnras, 434,
   387
 
-\bibitem[{{Savorgnan} \& {Graham}(2015)}]{savorgnangraham2015}
-{Savorgnan}, G.~A.~D., \& {Graham}, A.~W. 2015, \mnras, 446, 2330
+\bibitem[{{Savorgnan} \&
+  {Graham}(2015{\natexlab{a}})}]{savorgnangraham2015ellicular}
+{Savorgnan}, G.~A.~D., \& {Graham}, A.~W. 2015{\natexlab{a}},
+  \emph{submitted}~to~\mnras
+
+\bibitem[{{Savorgnan} \& {Graham}(2015{\natexlab{b}})}]{savorgnangraham2015}
+---. 2015{\natexlab{b}}, \mnras, 446, 2330
 
 \bibitem[{{Schaye} {et~al.}(2015){Schaye}, {Crain}, {Bower}, {Furlong},
   {Schaller}, {Theuns}, {Dalla Vecchia}, {Frenk}, {McCarthy}, {Helly},
