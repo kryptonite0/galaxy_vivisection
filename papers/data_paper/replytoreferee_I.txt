@@ -1,3 +1,16 @@
+Dear Lee, 
+
+The referee's comments and suggestions have been very useful and helped improve the quality of the manuscript. 
+We have addressed all the points listed in the reviewer's report. Below are our responses to the report. 
+The title of the paper has been modified, as suggested by the referee, and all changes to the text have been printed 
+in bold face. 
+
+Kind regards,
+
+Giulia Savorgnan
+
+
+RESPONSES TO THE REVIEWER'S REPORT:
 
 - The tone of the title was not meant to be presumptuous, but we now understand that it is prone to misinterpretation, 
   therefore we have modified it. The new title reads: "Galaxy vivisection".
@@ -7,22 +20,21 @@
   By definition, these galaxies have a spheroid/bulge component, which is what we modelled with a Sersic profile, 
   without attempting to distinguish between classical and pseudo-bulges. The text in Section 3.5 was actually misleading 
   and has been modified.
-  Throughout the text, we used the terms "spheroid" and "bulge" as synonims, although we recognize that some bulges are 
+  Throughout the text, we used the terms "spheroid" and "bulge" as synonyms, although we recognize that some bulges are 
   "disk-like" rather than "spheroidal-like". This point has now been clarified in Footnote 1. 
   
-- We did not attempt to fit down- or up-bendings of large-scale disks. We scrutinized the 
-  available literature for all individual galaxies, and we paid particular attention to the papers that recorded disk breaks. 
-  The surface brightness profiles of galaxies that present this feature were truncated well before the occurence of the 
-  bending. This was not explicit in the text, and we now added a sentence at the end of Section 3.1. 
+- We did not attempt to fit down- or up-bendings of large-scale disks. We scrutinized the available literature for all 
+  individual galaxies, and we paid particular attention to the papers that recorded disk breaks. 
+  The surface brightness profiles of galaxies that present this feature were truncated well before the occurrence of the 
+  bending. This was not explicit in the text, and we have now added a sentence at the end of Section 3.1. 
   
-- The 1D equivalent axis fit does account for the varying ellipticity because the equivalent 
-  axis is calculated as Req = Rmaj * (1-ellipticity)^0.5. 
+- The 1D equivalent axis fit does account for the varying ellipticity because the equivalent axis is calculated as 
+  Req = Rmaj * (1-ellipticity)^0.5. 
   M87 has a strong ellipticity gradient. The 2D model cannot account for this gradient, and this can be seen in the 2D 
   residual image which looks like a "butterfly pattern". 
-  Ideally, galaxies should be fit in 3D, rather than 2D or 1D. 
-  However, because the 1D fit tracks the changes in the observed P.A. and ellipticity, the geometric mean axis 
-  (equivalent to a circularised axis) enables one to accurately recover the total and component magnitudes 
-  in a way that the 2D model cannot.
+  Ideally, galaxies should be fit in 3D, rather than 2D or 1D. However, because the 1D fit tracks the changes in the 
+  observed P.A. and ellipticity, the geometric mean axis (equivalent to a circularized axis) enables one to accurately 
+  recover the total and component magnitudes in a way that the 2D model cannot.
 
 - The text in Section 3.5 was not accurate, and we have now clarified this point. All bars have been fit with a Ferrer function, 
   except for NGC 4151 where we preferred to use a Sersic model. Disk-like components embedded in the bulges/spheroids have 
@@ -48,6 +60,9 @@
   spheroid/bulge. These correlations are commonly expressed as power laws: Mbh \propto X^a, i.e. log(Mbh) = a*log(X) + b. 
   Therefore we are interested in the logarithmic values of the Sersic indices and effective radii, along with their associated 
   uncertainties. 
+  In addition, the Sersic index is the "exponent" in the Sersic equation, and that one needs to deal with the log of this quantity.  
+  A fixed change in n is very different depending on the value of n, for example 2+/-1 results in a much greater change to the profile 
+  than 10+/-1. 
   
 - The point that Footnote 2 was trying to make is the following. Sani et al., Vika et al. and Beifiori et al. did not find a 
   correlation between black hole mass and Sersic index. However, after averaging their Sersic indices together, a strong correlation
@@ -61,7 +76,7 @@
 
 - The Spitzer cookbook does not explain why the overlap correction is not recommended for 3.6 um images, it just states so. 
   It might be that the cookbook does not consider mosaicking images belonging to different "Astronomical Observation Requests", 
-  for which we found that the overlap correction was needed to remove the chessboard effect. 
+  for which we found that the overlap correction was needed to remove the chess-board effect. 
 
 - We did check that the PSF does not significantly vary across the various mosaics. In each mosaic, we selected up to 10 bright 
   non-saturated stars and we characterized them with a Moffat function (using IRAF imexamine). For each mosaic, we averaged 
@@ -101,10 +116,10 @@
 - The edge-on disc of NGC 1332 is clearly identified in the galaxy image. The ellipticity profile of the galaxy isophotes indicates 
   that the disc is intermediate-scale. We modified the caption of Figure 35 to better illustrate this point. 
   
-- The fourth paragraph of Section 3.5 explains how we decided to include a nuclear component in our models. 
+- The fifth paragraph of Section 3.5 explains how we decided to include a nuclear component in our models. 
 
 - We tried to model the bar of NGC 4945 with a Ferrer function or a Sersic model, but we did not obtain a satisfactory result. 
-  We now realize that NGC 4945 is the only later type (Scd) spiral galaxy in our sample, and its bar might might not be well described 
+  We now realize that NGC 4945 is the only later type (Scd) spiral galaxy in our sample, and its bar might not be well described 
   by a Ferrer function. However, a Sersic model did not provide a good fit of the bar either. It is likely that the edge-on 
   inclination of the galaxy complicated the extraction of the surface brightness profile with ELLIPSE. 
   Our best solution is still to exclude the data in the range where the bar dominates the light and model only the bulge and the 
@@ -114,5 +129,7 @@
   in the literature. We wanted to compare the results from our decompositions with the results from other systematic studies that 
   performed galaxy modelling in a consistent way. 
   
-  
+And finally, I'd like to say thanks for the kind words at the beginning of the report. 
+It is actually "refreshing" for myself to see that our effort is acknowledged by someone that fully understands the problematic 
+involved in galaxy decomposition, so thanks a lot for the encouragement!
   

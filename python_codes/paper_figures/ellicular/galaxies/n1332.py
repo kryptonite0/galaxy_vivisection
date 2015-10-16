@@ -273,7 +273,7 @@ def doFitPanel(fitPanel, rrr, mu, good_rrr, good_mu, bad_rrr, bad_mu, maxsma_arc
 		if Settings.smoothing:
 			y_component = doPsfConvolution(y_component, gaussianSmoothing, xxx)
 		y_component_sb = Settings.zeropoint - 2.5*np.log10(y_component)
-		fitPanel.plot(xxx, y_component_sb, color=Settings.colordict[component.name])	
+		fitPanel.plot(xxx, y_component_sb, color=Settings.colordict[component.name], linestyle=Settings.linestyledict[component.name], linewidth=2)	
 	
 	if (sampling == 'log'):
 		fitPanel.plot(good_rrr, good_mu, 'ko', markersize=4)

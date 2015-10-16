@@ -1,0 +1,135 @@
+Dear Lee, 
+
+The referee's comments and suggestions have been very useful and helped improve the quality of the manuscript. 
+We have addressed all the points listed in the reviewer's report. Below are our responses to the report. 
+The title of the paper has been modified, as suggested by the referee, and all changes to the text have been printed 
+in bold face. 
+
+Kind regards,
+
+Giulia Savorgnan
+
+
+RESPONSES TO THE REVIEWER'S REPORT:
+
+- The tone of the title was not meant to be presumptuous, but we now understand that it is prone to misinterpretation, 
+  therefore we have modified it. The new title reads: "Galaxy vivisection".
+
+- We agree that some disk galaxies, like NGC 300, can be bulge-less. However, all galaxies in our sample are either 
+  ellipticals/lenticulars or early-type spirals (Sa-Sc), with the only exception of NGC 4945 (Scd). 
+  By definition, these galaxies have a spheroid/bulge component, which is what we modelled with a Sersic profile, 
+  without attempting to distinguish between classical and pseudo-bulges. The text in Section 3.5 was actually misleading 
+  and has been modified.
+  Throughout the text, we used the terms "spheroid" and "bulge" as synonyms, although we recognize that some bulges are 
+  "disk-like" rather than "spheroidal-like". This point has now been clarified in Footnote 1. 
+  
+- We did not attempt to fit down- or up-bendings of large-scale disks. We scrutinized the available literature for all 
+  individual galaxies, and we paid particular attention to the papers that recorded disk breaks. 
+  The surface brightness profiles of galaxies that present this feature were truncated well before the occurence of the 
+  bending. This was not explicit in the text, and we have now added a sentence at the end of Section 3.1. 
+  
+- The 1D equivalent axis fit does account for the varying ellipticity because the equivalent axis is calculated as 
+  Req = Rmaj * (1-ellipticity)^0.5. 
+  M87 has a strong ellipticity gradient. The 2D model cannot account for this gradient, and this can be seen in the 2D 
+  residual image which looks like a "butterfly pattern". 
+  Ideally, galaxies should be fit in 3D, rather than 2D or 1D. However, because the 1D fit tracks the changes in the 
+  observed P.A. and ellipticity, the geometric mean axis (equivalent to a circularised axis) enables one to accurately 
+  recover the total and component magnitudes in a way that the 2D model cannot.
+
+- The text in Section 3.5 was not accurate, and we have now clarified this point. All bars have been fit with a Ferrer function, 
+  except for NGC 4151 where we preferred to use a Sersic model. Disk-like components embedded in the bulges/spheroids have 
+  been fit with a low-n Sersic profile and, in a few cases (when the Sersic model was degenerate with the other model-
+  components), with a Ferrer function. 
+  Gadotti & De Souza (2006) report that flat bars are typical of earlier type spirals, whereas exponential bars are common 
+  in later type spirals. This is in agreement with our findings: our galaxy sample lacks of later-type spirals and we did 
+  not detect any bar with an exponential profile. 
+
+- Sheth et al. (2010, the paper that presents the S4G collaboration) refers to Jun & Im (2008) to point out that the 3.6 um
+  band is indeed a better tracer of the stellar mass than the K-band, which still suffers from dust absorption (Driver et al.
+  2008, 678, L101).
+  
+- In Figure 7 we compared the 2D Sersic indices with the 1D equivalent-axis Sersic indices. These two quantities are not 
+  expected to be exactly the same, but they should be approximatively similar. There are four most obvious outliers in this 
+  plot: NGC 821, NGC 3377, NGC 4945, and NGC 5576. Their individual cases are discussed in the Appendix. 
+  For M87, the 2D Sersic index (4.3) and the 1D equivalent-axis Sersic index (5.9) are in fairly good agreement. 
+  The large discrepancy between the M87's 1D major-axis Sersic index and the other two measurements is due to the strong ellipticity
+  gradient that this galaxy has. In fact, the 2D model cannot account for such gradient (whereas the 1D equivalent-axis fit can) 
+  and the 2D residuals show a significant ``butterfly'' feature caused by this well-understood problem. 
+
+- The aim of this work is to investigate scaling relations between the black hole mass, Mbh, and several properties, X, of the host 
+  spheroid/bulge. These correlations are commonly expressed as power laws: Mbh \propto X^a, i.e. log(Mbh) = a*log(X) + b. 
+  Therefore we are interested in the logarithmic values of the Sersic indices and effective radii, along with their associated 
+  uncertainties. 
+  In addition, the Sersic index is the "exponent" in the Sersic equation, and that one needs to deal with the log of this quantity.  
+  A fixed change in n is very different depending on the value of n, for example 2+/-1 results in a much greater change to the profile 
+  than 10+/-1. 
+  
+- The point that Footnote 2 was trying to make is the following. Sani et al., Vika et al. and Beifiori et al. did not find a 
+  correlation between black hole mass and Sersic index. However, after averaging their Sersic indices together, a strong correlation
+  was recovered. This is telling us that the measurements obtained by the individual authors were "noisy", i.e. non accurate. 
+  Averaging the Sersic indices together reduces the noise and shows that the black hole mass is indeed correlated to the Sersic 
+  index. However, we removed the second sentence of Footnote 2; we will come back to this point in a future paper. 
+  
+- The claim about the anti-truncation of NGC 4459 has been clarified in the Appendix. 
+
+- Thanks for pointing out the missing reference to Erwin & Gadotti (2012), which has now been added. 
+
+- The Spitzer cookbook does not explain why the overlap correction is not recommended for 3.6 um images, it just states so. 
+  It might be that the cookbook does not consider mosaicking images belonging to different "Astronomical Observation Requests", 
+  for which we found that the overlap correction was needed to remove the chessboard effect. 
+
+- We did check that the PSF does not significantly vary across the various mosaics. In each mosaic, we selected up to 10 bright 
+  non-saturated stars and we characterized them with a Moffat function (using IRAF imexamine). For each mosaic, we averaged 
+  together the best-fit parameters of the stars and obtained an average FWHM and beta (the PSF parameters specific of each mosaic). 
+  The variation of the Moffat FWHM across all mosaics is +-0''.1; the variation of the Moffat beta is +-2.0.
+  The use of a universal PSF is justified for the following reasons: 
+  i) the PSF-convolution is way more sensitive to the value of the FWHM than beta, therefore having a 50% variation in beta is 
+  not an issue as long as the variation in FWHM is small;
+  ii) the use of a non-signal-to-noise-weighted fitting scheme minimizes biases from a non-accurate PSF description;
+  iii) not all mosaics have enough stars suitable for PSF characterization; rather than having an individual PSF for each mosaic 
+  (which would have been based on only 1-2 stars for some mosaics), we preferred using a universal PSF;
+  iv) the IRAC instrument handbook guarantees a pretty stable PSF across time.
+
+- A reference to Gadotti (2008) has been added in Section 3.5. 
+
+- Regarding the comment on weighting schemes in Section 3.3, we attach two simple, but hopefully illustrative figures. 
+  In both figures, the left hand panel shows a perfect R^(1/4) profile.
+  In one figure no weighting scheme is used, while in the other a signal-to-noise-weighting scheme is used. 
+  The results of the fit are the same. 
+  Now in the right hand-panel, exactly the same partially depleted core has been introduced in both figures.  
+  When the R^(1/4) model is fit with the different weighting schemes, the signal-to-noise-weighted scheme can be seen to perform worse.  
+  In fact, any central deviation from the assumed model (in this case an R^(1/4) model, but we could have used a Sersic model) 
+  results in the signal-to-noise-weighted fitting scheme performing worse.  
+  Such deviations arise from: additional star clusters, dust, depleted cores, AGN, non accurate PSF, etc.  
+  Unless one correctly accounts for all of these things (which realistically doesn't happen), then the signal-to-noise-weighted scheme 
+  performs worse than a scheme with no weighting when it comes to matching the global light profile. 
+  ATTACH FIGURES TBD
+  
+- References to Sheth et al. and Kim et al. have been added.  
+
+- The contrast in Figure 5 was indeed not appropriate and has been adjusted. 
+
+- Section 4.2.1, item 2: the typo has been corrected. 
+
+- Section 4.2.2: a sentence has been added to explain the different sigma symbols. 
+
+- The edge-on disc of NGC 1332 is clearly identified in the galaxy image. The ellipticity profile of the galaxy isophotes indicates 
+  that the disc is intermediate-scale. We modified the caption of Figure 35 to better illustrate this point. 
+  
+- The fifth paragraph of Section 3.5 explains how we decided to include a nuclear component in our models. 
+
+- We tried to model the bar of NGC 4945 with a Ferrer function or a Sersic model, but we did not obtain a satisfactory result. 
+  We now realize that NGC 4945 is the only later type (Scd) spiral galaxy in our sample, and its bar might not be well described 
+  by a Ferrer function. However, a Sersic model did not provide a good fit of the bar either. It is likely that the edge-on 
+  inclination of the galaxy complicated the extraction of the surface brightness profile with ELLIPSE. 
+  Our best solution is still to exclude the data in the range where the bar dominates the light and model only the bulge and the 
+  large-scale disk. We note that we classified the fit of this galaxy as "grade 2". 
+  
+- Kormendy & Ho (2013) did not perform bulge/disk decompositions for their galaxies, but they collected results from various sources 
+  in the literature. We wanted to compare the results from our decompositions with the results from other systematic studies that 
+  performed galaxy modelling in a consistent way. 
+  
+And finally, I'd like to say thanks for the kind words at the beginning of the report. 
+It is actually "refreshing" for myself to see that our effort is acknowledged by someone that fully understands the problematics 
+involved in galaxy decomposition, thanks for the encouragement :)
+  

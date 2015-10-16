@@ -3,71 +3,69 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: ellicular.aux
 The style file: mnras.bst
 Database file #1: /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
-Repeated entry---line 1531 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+Repeated entry---line 1929 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  : @article{rixwhite1992
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2616 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+You're missing a field part---line 2101 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+ :    volume = 
+ :             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3044 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  : @article{scorzabender1995
  :                          ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 7253 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+I was expecting a `,' or a `}'---line 7697 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  :      year = 2014
  :                 a,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 7272 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+I was expecting a `,' or a `}'---line 7716 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  :      year = 2014
  :                 b,
 I'm skipping whatever remains of this entry
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Name 2 in "{Krajnovi{\'c}}, D. and {}, and {et al.}" has a comma at the end for entry krajnovic2013etal
-while executing---line 1706 of file mnras.bst
 Warning--can't use both author and editor fields in graham2013review
 Warning--empty publisher in graham2013review
-Warning--empty publisher in hubble1936
-Name 2 in "{Krajnovi{\'c}}, D. and {}, and {et al.}" has a comma at the end for entry krajnovic2013etal
-while executing---line 1822 of file mnras.bst
-Warning--empty publisher in sandage1961
-You've used 96 entries,
+You've used 71 entries,
             2881 wiz_defined-function locations,
-            1453 strings with 32936 characters,
-and the built_in function-call counts, 46988 in all, are:
-= -- 3707
-> -- 3500
-< -- 280
-+ -- 1542
-- -- 526
-* -- 5816
-:= -- 7423
+            1270 strings with 28408 characters,
+and the built_in function-call counts, 34403 in all, are:
+= -- 2719
+> -- 2579
+< -- 189
++ -- 1140
+- -- 386
+* -- 4301
+:= -- 5428
 add.period$ -- 0
-call.type$ -- 96
-change.case$ -- 192
-chr.to.int$ -- 94
-cite$ -- 100
-duplicate$ -- 2271
-empty$ -- 2313
-format.name$ -- 828
-if$ -- 8112
-int.to.chr$ -- 3
+call.type$ -- 71
+change.case$ -- 142
+chr.to.int$ -- 70
+cite$ -- 73
+duplicate$ -- 1657
+empty$ -- 1684
+format.name$ -- 616
+if$ -- 5917
+int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 98
-newline$ -- 302
-num.names$ -- 697
-pop$ -- 548
+missing$ -- 71
+newline$ -- 227
+num.names$ -- 503
+pop$ -- 389
 preamble$ -- 1
-purify$ -- 384
+purify$ -- 284
 quote$ -- 0
-skip$ -- 1359
+skip$ -- 982
 stack$ -- 0
-substring$ -- 2518
-swap$ -- 1305
-text.length$ -- 403
+substring$ -- 1842
+swap$ -- 934
+text.length$ -- 296
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 855
-warning$ -- 4
-while$ -- 737
+type$ -- 636
+warning$ -- 2
+while$ -- 539
 width$ -- 0
-write$ -- 974
-(There were 6 error messages)
+write$ -- 723
+(There were 5 error messages)

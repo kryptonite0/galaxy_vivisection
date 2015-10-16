@@ -313,14 +313,23 @@ SAOImage DS9\footnote{SAOImage DS9 development has been made possible by funding
 from the Chandra X-ray Science Center (CXC) 
 and the High Energy Astrophysics Science Archive Center (HEASARC).} 
 in conjunction with the IRAF task 
-{\tt mskregions}. %\footnote{{\tt mskregions} is part of the {\tt proto} package.}.
+{\tt mskregions}. 
 We identified and carefully masked not only contaminating sources located in the field of the image mosaic,
 but also objects overlapping with the target galaxy, such as foreground stars, background galaxies, 
 globular clusters or red giant stars.
 
 \subsubsection{1D PSF}
-A universal, average, one-dimensional Point Spread Function was characterized using the IRAF task {\tt imexamine}.
-A nonlinear least squares \citep{moffat1969} profile\footnote{The \citep{moffat1969} profile 
+A universal\footnote{\bf Across all mosaics, the variation of the Moffat $FWHM$ is $\pm 0''.1$, 
+and the variation of the Moffat $\beta$ is $\pm 2.0$.
+The use of a universal PSF is justified for the following reasons: 
+\emph{i}) the PSF-convolution is more sensitive to the value of the $FWHM$ than $\beta$, 
+i.e. having a 50\% variation in $\beta$ is not an issue as long as the variation in $FWHM$ is small;
+\emph{ii}) the use of a non-signal-to-noise-weighted fitting scheme minimizes biases from a non-accurate PSF description;
+\emph{iii}) not all mosaics have enough stars suitable for the PSF characterization: 
+rather than having an individual PSF for each mosaic (which would have been based on only 1-2 stars for some mosaics), 
+we preferred the use of a universal PSF.}, 
+average, one-dimensional Point Spread Function was characterized using the IRAF task {\tt imexamine}.
+A nonlinear least squares \cite{moffat1969} profile\footnote{The \citep{moffat1969} profile 
 has the following form:
 \begin{equation}
 \mu = \mu_{\rm 0} - 2.5 \log \Biggl[ 1 + \biggl( \frac{R}{\alpha} \biggr)^2 \Biggr]^{-\beta} ,
@@ -360,8 +369,6 @@ and verified that it correctly reproduces the shape of ``real'' point sources.
 \begin{figure}[h]
 \begin{center}
 \includegraphics[width=1\columnwidth, trim = 240 40 50 20, clip=True]{images/psf.eps}
-%\includegraphics[width=1\columnwidth]{images/star1_cut.eps} \\
-%\includegraphics[width=1\columnwidth]{images/PRF_IRACch1_129_129_cut.eps}
 \caption{Normalized flux versus radial distance 
 from the image centroid of an observed point source (bottom panel) 
 and of the IRAC instrument Point Response Function (PRF, top panel). 
@@ -687,10 +694,10 @@ Fits and descriptions for the other galaxies are available online.
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[width=\columnwidth]{images/n2974_imgmsk.jpeg}
-\includegraphics[width=\columnwidth]{images/n2974_unsharp.jpeg}
-\includegraphics[width=\columnwidth]{images/n2974_model.jpeg}
-\includegraphics[width=\columnwidth]{images/n2974_resid.jpeg}
+\includegraphics[width=\columnwidth]{images/n2974_imgmsk.eps}
+\includegraphics[width=\columnwidth]{images/n2974_unsharp.eps}
+\includegraphics[width=\columnwidth]{images/n2974_model.eps}
+\includegraphics[width=\columnwidth]{images/n2974_resid.eps}
 \caption{Image of the galaxy NGC 2974 with its mask (top panel, {\bf on a logarithmic scale}), 
 unsharp mask (second panel, {\bf on a linear scale}), 
 best-fit 2D model (third panel, {\bf on a logarithmic scale}), 
@@ -736,7 +743,6 @@ We compared our best-fit models with those of \cite{grahamdriver2007}, \cite{san
 We also considered the best-fit models of \cite{laurikainen2010} and \cite{rusli2013} because,   
 although they did not specifically deal with black hole -- galaxy scaling relations, 
 their galaxy samples significantly overlap with ours. \\
-%In Section \ref{sec:indgal} we discuss individual cases, explaining the discrepancies between different decompositions. \\
 Table \ref{tab:fitres} lists the results from both the 1D and 2D fits.
 
 \input{table_fitresults.tex}
@@ -769,11 +775,6 @@ When physically meaningful spheroid parameters are required,
 the output may not be reliable and should be inspected.
 For the 31 galaxies that had successful 2D decompositions, 
 we compare with their 1D parameters in Figures \ref{fig:re1d2d}, \ref{fig:n1d2d} and \ref{fig:mag1d2d}.
-%The software \textsc{Imfit} returns major-axis measurements of effective radii, 
-%which are plotted in Figure \ref{fig:re1d2d} versus the corresponding 1D major-axis measurements.
-%2D measurements of S\'ersic indices can be approximated to 1D equivalent-axis measurements, 
-%and are therefore compared to them in Figure \ref{fig:n1d2d}.
-%Figure \ref{fig:mag1d2d} shows 2D versus 1D measurements of bulge magnitudes. 
 The agreement between 1D and 2D effective radii and magnitudes is remarkable, 
 whereas a larger amount of scatter in the S\'ersic indices can be caused by the fact that 
 2D measurements do not exactly correspond to 1D equivalent-axis measurements. 
@@ -888,7 +889,6 @@ Six galaxies could not be modelled.
 We report the assigned grades in Table \ref{tab:fitres} (column 10).
 
 \subsubsection{Uncertainties on $n_{\rm sph}$}
-%\label{sec:sigman}
 In Figure \ref{fig:compn}, for 58 galaxies, 
 we compare the measurements of the spheroid S\'ersic index obtained by different authors 
 with those obtained by us. 
@@ -962,7 +962,7 @@ and $-\sigma_3^- = -1.05~\rm mag$ and $+\sigma_3^+ = +1.57~\rm mag$.
 
 
 
-\begin{figure}%[h]
+\begin{figure}
 \begin{center}
 \includegraphics[width=1.1\columnwidth]{images/comparison_all_n.eps} 
 \caption{Bottom panel: 58 galaxies for which at least one measurement of the spheroid S\'ersic index $n_{\rm sph}$ is available 
@@ -994,7 +994,7 @@ given the care we have taken to minimise sources of systematic errors. }
 
 
 
-\begin{figure}%[h]
+\begin{figure}
 \begin{center}
 \includegraphics[width=1.1\columnwidth]{images/comparison_all_r_e.eps} 
 \caption{Bottom panel: 52 galaxies for which at least one measurement of the spheroid major-axis effective radius $R_{\rm e}^{\rm maj}$ is available 
@@ -1007,7 +1007,7 @@ See Figure \ref{fig:compn} for color description and explanation of the top pane
 \end{center}
 \end{figure}
 
-\begin{figure}%[h]
+\begin{figure}
 \begin{center}
 \includegraphics[width=1.1\columnwidth]{images/comparison_all_mag_sph.eps} 
 \caption{Bottom panel: 51 galaxies for which at least one measurement of the spheroid apparent magnitude $m_{\rm sph}$ 
@@ -1021,7 +1021,7 @@ See Figure \ref{fig:compn} for color description and explanation of the top pane
 \end{center}
 \end{figure}
 
-\begin{figure}%[h]
+\begin{figure}
 \begin{center}
 \includegraphics[width=1.1\columnwidth]{images/comparison_all_mu_e.eps} 
 \caption{Bottom panel: 49 galaxies for which at least one measurement of the spheroid effective surface brightness $\mu_{\rm e,sph}$ 
@@ -1036,7 +1036,7 @@ See Figure \ref{fig:compn} for color description and explanation of the top pane
 \end{center}
 \end{figure}
 
-\begin{figure}%[h]
+\begin{figure}
 \begin{center}
 \includegraphics[width=1.1\columnwidth]{images/comparison_all_mu_0.eps} 
 \caption{Bottom panel: 49 galaxies for which at least one measurement of the spheroid central surface brightness $\mu_{\rm 0,sph}$ 
@@ -1074,12 +1074,12 @@ Table \ref{tab:lit} summarizes the main characteristics of the five past studies
 in order to derive black hole -- spheroid scaling relations, 
 and highlights, in part, why our endeavor represents a substantial improvement over the past literature. \\
 
-\begin{table*}%[ht] 
+\begin{table*}
 \begin{center}  				      
 \caption{Summary of previous investigations of black hole mass scaling relations} 
 \begin{tabular}{lllllll}
 \hline
-              & {\bf GD07}  & {\bf S+11}   & {\bf V+12} & {\bf B+12}   & {\bf L+14} & {\bf This work}	      \\ %%[0.5ex] 
+              & {\bf GD07}  & {\bf S+11}   & {\bf V+12} & {\bf B+12}   & {\bf L+14} & {\bf This work}	      \\ 
 \hline
 {\bf Galaxies with successful fit} & 27		     & 57	       & 25      & 19          & 35      & 66               \\
 {\bf Wavelength}        	   & $R$-band	     & $3.6~\rm \mu m$ & $K$-band& $i$-band    & $K$-band& $3.6~\rm \mu m$  \\
@@ -1088,7 +1088,7 @@ and highlights, in part, why our endeavor represents a substantial improvement o
 {\bf Partially depleted cores} 	   & masked	     & masked	       & masked  & not treated & masked  & masked	    \\ 
 {\bf Bars}	        	   & excluded	     & modeled         & modeled & excluded    & modeled & modeled	    \\ 
 {\bf Other components}  	   & no 	     & no 	       & no	 & no	       & yes	 & yes  	    \\ 
-{\bf Kinematics}        	   & no 	     & no	       & no	 & no	       & no	 & yes  	    \\ %%[0.5ex] 
+{\bf Kinematics}        	   & no 	     & no	       & no	 & no	       & no	 & yes  	    \\  
 \hline 
 \end{tabular}
 \label{tab:lit} 
@@ -1116,12 +1116,6 @@ For this reason, we developed a method to estimate the uncertainties on the best
 We will use the results from our one-dimensional galaxy decompositions to obtain improved black hole mass scaling relations. 
 These results will be presented in a series of forthcoming papers.
 
-%{\bf Lasker's conclusions are: bulge+disk decompositions are not enough, we do better by adding bars, spiral arms and stuff (really?? what a surprising conclusion);
-%we modelled the envelope of 5 galaxies; we observed central light deficits in 9 ellipticals; total magnitudes are independent from details of modelling (no, really?)
-%and bulge magnitudes are 0.36 mag fainter when additional components (other than bulge and disk) are modelled.  }
-
-
-%\clearpage
 
 \acknowledgments
 GS acknowledges the invaluable support received from Alessandro Marconi, Eleonora Sani and Leslie Hunt 
@@ -1129,7 +1123,9 @@ in the early stages of this research.
 GS warmly thanks Chieng Peng, Peter Erwin, Luca Cortese, Giuseppe Gavazzi, 
 Bililign Dullo, Paolo Bonfini, Elisabete Lima Da Cunha 
 and Gonzalo Diaz 
-for useful discussion. \\
+for useful discussion. 
+{\bf We thank the anonymous referee for their thorough review and highly appreciate the comments and suggestions, 
+which significantly contributed to improving the quality of the publication. } \\
 This research was supported by Australian Research Council funding through grants
 DP110103509 and FT110100263.
 This work is based on observations made with the IRAC instrument \citep{fazio2004IRAC} 
@@ -1192,7 +1188,7 @@ under contract with the National Aeronautics and Space Administration.
   An elliptical galaxy with a fast counterrotating stellar component \citep{franxillingworth1988ic1459,cappellari2002ic1459},
   nuclear dust and indications of a nuclear stellar disk \citep{forbes1994ic1459}.
   The kinematically decoupled component cannot be identified as a separate structure in photometric observations.
-  This galaxy also has an unresolved partially depleted core \citep{rusli2013}.  % ($R_{\rm break} = 0''.69$, \citealt{rusli2013}).
+  This galaxy also has an unresolved partially depleted core \citep{rusli2013}.  
   Our isophotal analysis confirms a simple morphology for IC 1459, with no evident embedded components.
   After masking the innermost $6''.1$, we fit this galaxy with a S\'ersic profile.  }
   \end{center}

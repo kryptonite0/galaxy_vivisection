@@ -22,8 +22,8 @@ class Settings:
     smoothing = False
     #smoothing = True
     
-    observation = 'spitzer3.6um'
-    #observation = 'm1216' 
+    #observation = 'spitzer3.6um'
+    observation = 'm1216' 
     #observation = 'n1271'
         
     if (observation == 'n1277'):
@@ -42,7 +42,8 @@ class Settings:
         pxlToArcsec = 1.2232836
         zeropoint = 17.25585 #spitzer 3.6 um
 
-    colordict = {'sersic' : 'red', 'tsersic' : 'red', 'disc' : 'blue', 'gaussian' : 'green', 'psf' : 'purple', 'ferrer' : 'lightblue', 'tdisc' : 'blue', 'gring' : 'grey', 'psfwing' : 'purple', 'sersicdisc' : 'blue'}
+    colordict = {'sersic' : 'red', 'tsersic' : 'red', 'disc' : 'blue', 'gaussian' : 'green', 'psf' : 'purple', 'ferrer' : 'lightblue', 'tdisc' : 'blue', 'gring' : 'green', 'psfwing' : 'purple', 'sersicdisc' : 'blue'}
+    linestyledict = {'sersic' : '-', 'tsersic' : '-', 'disc' : '--', 'gaussian' : '-', 'psf' : '-', 'ferrer' : '-', 'tdisc' : '-', 'gring' : ':', 'psfwing' : '-', 'sersicdisc' : '--'}
     
     #oversamplingStep = 0.2 # pixels
     

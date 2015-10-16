@@ -272,7 +272,7 @@ def doFitPanel(fitPanel, rrr, mu, good_rrr, good_mu, bad_rrr, bad_mu, maxsma_arc
 		if Settings.smoothing:
 			y_component = doPsfConvolution(y_component, gaussianSmoothing, xxx)
 		y_component_sb = Settings.zeropoint - 2.5*np.log10(y_component)
-		fitPanel.plot(xxx, y_component_sb, color=Settings.colordict[component.name])	
+		fitPanel.plot(xxx, y_component_sb, color=Settings.colordict[component.name], linestyle=Settings.linestyledict[component.name], linewidth=2)	
 	
 	if (sampling == 'log'):
 		fitPanel.plot(good_rrr, good_mu, 'ko', markersize=4)
@@ -498,6 +498,6 @@ for sampling in samplingList:
 
 
 bestfitFig.subplots_adjust(wspace=0, hspace=0)
-bestfitFig.savefig('/Users/gsavorgnan/galaxy_vivisection/papers/lentiptical/images/' + galaxy + '_decomposition.eps', format='eps', dpi=1000)
+bestfitFig.savefig('/Users/gsavorgnan/galaxy_vivisection/papers/ellicular/images/' + galaxy + '_decomposition.eps', format='eps', dpi=1000)
 #bestfitFig.savefig(galaxy + '_decomposition.eps', format='eps', dpi=1000)
 
