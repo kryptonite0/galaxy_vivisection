@@ -1,124 +1,35 @@
-%%
-%% Beginning of file 'sample.tex'
-%%
-%% Modified 2005 December 5
-%%
-%% This is a sample manuscript marked up using the
-%% AASTeX v5.x LaTeX 2e macros.
-
-%% The first piece of markup in an AASTeX v5.x document
-%% is the \documentclass command. LaTeX will ignore
-%% any data that comes before this command.
-
-%% The command below calls the preprint style
-%% which will produce a one-column, single-spaced document.
-%% Examples of commands for other substyles follow. Use
-%% whichever is most appropriate for your purposes.
-%%
-%%\documentclass[12pt,preprint]{aastex}
-
-%% manuscript produces a one-column, double-spaced document:
-
-%\documentclass[manuscript]{aastex}
-
-%% preprint2 produces a double-column, single-spaced document:
 
 \documentclass[preprint2]{emulateapj}
 
-\usepackage{natbib}
 \bibliographystyle{apj}
+\usepackage{natbib}
 \usepackage{longtable}
 \usepackage[]{graphicx}
 \usepackage{amsmath}
-\usepackage{natbib}
 \usepackage{tabularx}
 \usepackage{bm}
 \usepackage{color}
 \usepackage{hyperref}
 
-%% Sometimes a paper's abstract is too long to fit on the
-%% title page in preprint2 mode. When that is the case,
-%% use the longabstract style option.
-
-%% \documentclass[preprint2,longabstract]{aastex}
-
-%% If you want to create your own macros, you can do so
-%% using \newcommand. Your macros should appear before
-%% the \begin{document} command.
-%%
-%% If you are submitting to a journal that translates manuscripts
-%% into SGML, you need to follow certain guidelines when preparing
-%% your macros. See the AASTeX v5.x Author Guide
-%% for information.
 
 \newcommand{\vdag}{(v)^\dagger}
 \newcommand{\myemail}{gsavorgn@astro.swin.edu.au}
-
 \newcommand{\fitfigurewidth}{0.8\textwidth}
 
-%% You can insert a short comment on the title page using the command below.
-
-%\slugcomment{Not to appear in Nonlearned J., 45.}
-
-%% If you wish, you may supply running head information, although
-%% this information may be modified by the editorial offices.
-%% The left head contains a list of authors,
-%% usually a maximum of three (otherwise use et al.).  The right
-%% head is a modified title of up to roughly 44 characters.
-%% Running heads will not print in the manuscript style.
 
 \shorttitle{Mbh-n paper}
 \shortauthors{Savorgnan et al.}
 
-%% This is the end of the preamble.  Indicate the beginning of the
-%% paper itself with \begin{document}.
-
 \begin{document}
 
-%% LaTeX will automatically break titles if they run longer than
-%% one line. However, you may use \\ to force a line break if
-%% you desire.
 
 \title{Mbh-n paper}
 
-%% Use \author, \affil, and the \and command to format
-%% author and affiliation information.
-%% Note that \email has replaced the old \authoremail command
-%% from AASTeX v4.0. You can use \email to mark an email address
-%% anywhere in the paper, not just in the front matter.
-%% As in the title, use \\ to force line breaks.
 
 \author{G. A. D. Savorgnan\altaffilmark{1} and A. W. Graham\altaffilmark{1}}
 \affil{Centre for Astrophysics and Supercomputing, Swinburne University of Technology, Hawthorn, Victoria 3122, Australia.}
-
-%\author{C. D. Biemesderfer\altaffilmark{4,5}}
-%\affil{National Optical Astronomy Observatories, Tucson, AZ 85719}
 \email{gsavorgn@astro.swin.edu.au}
 
-%\and
-
-%\author{A. W. Graham\altaffilmark{1}}
-%\affil{Centre for Astrophysics and Supercomputing, Swinburne University of Technology, Hawthorn, Victoria 3122, Australia.}
-
-%% Notice that each of these authors has alternate affiliations, which
-%% are identified by the \altaffilmark after each name.  Specify alternate
-%% affiliation information with \altaffiltext, with one command per each
-%% affiliation.
-
-%\altaffiltext{1}{Visiting Astronomer, Cerro Tololo Inter-American Observatory.
-%CTIO is operated by AURA, Inc.\ under contract to the National Science
-%Foundation.}
-%\altaffiltext{2}{Society of Fellows, Harvard University.}
-%\altaffiltext{3}{present address: Center for Astrophysics,
-%    60 Garden Street, Cambridge, MA 02138}
-%\altaffiltext{4}{Visiting Programmer, Space Telescope Science Institute}
-%\altaffiltext{5}{Patron, Alonso's Bar and Grill}
-
-%% Mark off your abstract in the ``abstract'' environment. In the manuscript
-%% style, abstract will output a Received/Accepted line after the
-%% title and affiliation information. No date will appear since the author
-%% does not have this information. The dates will be filled in by the
-%% editorial office after submission.
 
 \begin{abstract}
 blah blah
@@ -129,15 +40,40 @@ blah blah
 
 
 \section{Introduction}
-The empirical \cite{sersic1963,1968} model has been demonstrated to provide adequate description 
-of the light distribution of the stellar spheroidal component of galaxies, 
-yet its physical intepretation has remained unknown for decades. 
+The empirical \cite{sersic1963,sersic1968} $R^{1/n}$ model has been demonstrated to provide adequate description 
+of the light distribution of the stellar spheroidal and disk components of galaxies (add REFS), 
+yet its physical origin has remained unexplained for decades. 
+The S\'ersic model parametrizes the intensity $I$ as a function of the projected galactic radius $R$ such that
+\begin{equation}
+I(R; I_{\rm e},R_{\rm e},n) = I_{\rm e} \exp \biggl \{ -b_{\rm n} \biggl [ \Bigl (\frac{R}{R_{\rm e}} \bigr )^{1/n} -1 \biggr ] \biggr \}, 
+\end{equation}
+where $I_{\rm e}$ indicates the intensity at the effective radius $R_{\rm e}$ that encloses half of the total light from the model, 
+the S\'ersic index $n$ is the parameter that regulates the curvature of the radial light profile, 
+and $b_{\rm n}$ is a constant defined in terms of the S\'ersic index $n$ (see \citealt{grahamdriver2005}, and references therein). 
+A large S\'ersic index corresponds to a steep central profile and a shallow outer profile, 
+whereas a small S\'ersic index corresponds to a shallow central profile and a steep outer profile. 
+This means that, for a stellar spheroidal system whose light distribution is well approximated by the S\'ersic model, 
+the larger the S\'ersic index $n$ is, the more centrally concentrated the stars are and the more extended the outer envelope is. \\
+A compelling physical interpretation for the S\'ersic profile family was recently theorized by \cite{cen2014} 
+and later confirmed by \cite{nipoti2015} by means of $N$-body simulations. 
+\cite{cen2014} conjectured that, when structures form within a standard cold dark matter model seeded by random Gaussian fluctuations, 
+any centrally concentrated stellar structure always possesses an extended stellar envelope, and vice versa. 
+\cite{nipoti2015} quantitatively explored Cen's hypothesis and showed that 
+systems originated from several mergers have a large S\'ersic index ($n \gtrsim 4$), 
+whereas systems with a S\'ersic index as small as $n \simeq 2$ can be produced by coherent dissipationless collapse, 
+and exponential profiles ($n=1$) can only be obtained through dissipative processes.
+This scenario sets the theoretical framework for the well known correlation between the spheroid luminosity, $L_{\rm sph}$,  
+and the spheroid S\'ersic index, $n_{\rm sph}$, (e.g.~\citealt{youngcurrie1994,jerjen2000,grahamguzman2003}), 
+although the numerical results of \cite{nipoti2015} seem to lack of spheroidal systems with $n$ as large as $7 - 10$, 
+which are commonly observed in the local Universe.  \\
+Given the existence of the $L_{\rm sph} - n_{\rm sph}$ correlation 
+and the relation between the central black hole mass, $M_{\rm BH}$, and $L_{\rm sph}$ (e.g.~\citealt{magorrian1998}), 
+an $M_{\rm BH} - n_{\rm sph}$ relation must exist. 
+After \cite{graham2001} showed that the black hole mass is tightly linked to the stellar light concentration of spheroids 
+(measured through a parameter different from but closely related to the S\'ersic index), 
+\cite{grahamdriver2007} presented for the first time the $M_{\rm BH} - n_{\rm sph}$ correlation. 
 
-
-origin of L-n \\
-M-L + L-n ... M-n \\
-M-C and M-n \\
-s+11 v+12 b+12 \\
+s+11 v+12 b+12  \\
 my paper \\
 paper I and II \\
 
@@ -151,7 +87,7 @@ paper I and II \\
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[width=\columnwidth]{images/mag_vs_n_maj.pdf}
+%\includegraphics[width=\columnwidth]{images/mag_vs_n_maj.pdf}
 \caption{}
 \label{fig:magn}
 \end{center}
@@ -159,7 +95,7 @@ paper I and II \\
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[width=\columnwidth]{images/mbh_vs_n_maj.pdf}
+%\includegraphics[width=\columnwidth]{images/mbh_vs_n_maj.pdf}
 \caption{}
 \label{fig:mbhn}
 \end{center}
@@ -435,6 +371,8 @@ Both the early- and late-type subsamples do not contain the two galaxies classif
 
 %%
 \acknowledgments
+kkkkk
+
 
 \bibliography{/Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography}
 

@@ -57,6 +57,10 @@
   {10.1088/0004-637X/753/2/140}, \href
   {http://adsabs.harvard.edu/abs/2012ApJ...753..140B} {753, 140}
 
+\bibitem[\protect\citeauthoryear{{Boroson}}{{Boroson}}{1981}]{boroson1981}
+{Boroson} T.,  1981, \mn@doi [\apjs] {10.1086/190742}, \href
+  {http://adsabs.harvard.edu/abs/1981ApJS...46..177B} {46, 177}
+
 \bibitem[\protect\citeauthoryear{{Capaccioli}}{{Capaccioli}}{1987}]{capaccioli1987}
 {Capaccioli} M.,  1987, in {de Zeeuw} P.~T.,  ed.,  IAU Symposium Vol. 127,
   Structure and Dynamics of Elliptical Galaxies. pp 47--60
@@ -74,10 +78,16 @@
   {http://adsabs.harvard.edu/abs/2007MNRAS.379..418C} {379, 418}
 
 \bibitem[\protect\citeauthoryear{{Cappellari} et~al.,}{{Cappellari}
-  et~al.}{2011}]{cappellari2011}
-{Cappellari} M.,  et~al., 2011, \mn@doi [\mnras]
+  et~al.}{2011a}]{cappellari2011}
+{Cappellari} M.,  et~al., 2011a, \mn@doi [\mnras]
   {10.1111/j.1365-2966.2010.18174.x}, \href
   {http://adsabs.harvard.edu/abs/2011MNRAS.413..813C} {413, 813}
+
+\bibitem[\protect\citeauthoryear{{Cappellari} et~al.,}{{Cappellari}
+  et~al.}{2011b}]{cappellari2011kmdr}
+{Cappellari} M.,  et~al., 2011b, \mn@doi [\mnras]
+  {10.1111/j.1365-2966.2011.18600.x}, \href
+  {http://adsabs.harvard.edu/abs/2011MNRAS.416.1680C} {416, 1680}
 
 \bibitem[\protect\citeauthoryear{{Carter}}{{Carter}}{1987}]{carter1987}
 {Carter} D.,  1987, \mn@doi [\apj] {10.1086/164897}, \href
@@ -177,6 +187,17 @@
   Laws}.
 p.~91, \mn@doi{10.1007/978-94-007-5609-0_2}
 
+\bibitem[\protect\citeauthoryear{{Graham}}{{Graham}}{2014}]{graham2014review}
+{Graham} A.~W.,  2014, in {Seigar} M.~S.,  {Treuthardt} P.,  eds,  Astronomical
+  Society of the Pacific Conference Series Vol. 480, Structure and Dynamics of
+  Disk Galaxies. p.~185 (\mn@eprint {arXiv} {1311.7207})
+
+\bibitem[\protect\citeauthoryear{{Graham} \& {Worley}}{{Graham} \&
+  {Worley}}{2008}]{grahamworley2008}
+{Graham} A.~W.,  {Worley} C.~C.,  2008, \mn@doi [\mnras]
+  {10.1111/j.1365-2966.2008.13506.x}, \href
+  {http://adsabs.harvard.edu/abs/2008MNRAS.388.1708G} {388, 1708}
+
 \bibitem[\protect\citeauthoryear{{Graham}, {Colless}, {Busarello}, {Zaggia}  \&
   {Longo}}{{Graham} et~al.}{1998}]{graham1998fornax}
 {Graham} A.~W.,  {Colless} M.~M.,  {Busarello} G.,  {Zaggia} S.,   {Longo} G.,
@@ -207,9 +228,22 @@ p.~91, \mn@doi{10.1007/978-94-007-5609-0_2}
   \mn@doi [\mnras] {10.1093/mnras/stu325}, \href
   {http://adsabs.harvard.edu/abs/2014MNRAS.440.1690H} {440, 1690}
 
+\bibitem[\protect\citeauthoryear{{Hubble}}{{Hubble}}{1936}]{hubble1936}
+{Hubble} E.~P.,  1936, {Realm of the Nebulae}
+
 \bibitem[\protect\citeauthoryear{{Jedrzejewski}}{{Jedrzejewski}}{1987}]{taskellipse}
 {Jedrzejewski} R.~I.,  1987, \mnras, \href
   {http://adsabs.harvard.edu/abs/1987MNRAS.226..747J} {226, 747}
+
+\bibitem[\protect\citeauthoryear{{Kent}}{{Kent}}{1985}]{kent1985}
+{Kent} S.~M.,  1985, \mn@doi [\apjs] {10.1086/191066}, \href
+  {http://adsabs.harvard.edu/abs/1985ApJS...59..115K} {59, 115}
+
+\bibitem[\protect\citeauthoryear{{Kodaira}, {Watanabe}  \& {Okamura}}{{Kodaira}
+  et~al.}{1986}]{kodaira1986}
+{Kodaira} K.,  {Watanabe} M.,   {Okamura} S.,  1986, \mn@doi [\apjs]
+  {10.1086/191154}, \href {http://adsabs.harvard.edu/abs/1986ApJS...62..703K}
+  {62, 703}
 
 \bibitem[\protect\citeauthoryear{{Kormendy} \& {Bender}}{{Kormendy} \&
   {Bender}}{1996}]{kormendybender1996}
@@ -235,6 +269,12 @@ p.~91, \mn@doi{10.1007/978-94-007-5609-0_2}
   {Shankar}}{{L{\"a}sker} et~al.}{2014b}]{lasker2014anal}
 {L{\"a}sker} R.,  {Ferrarese} L.,  {van de Ven} G.,   {Shankar} F.,  2014b,
   \apj
+
+\bibitem[\protect\citeauthoryear{{Laurikainen}, {Salo}, {Buta}, {Knapen}  \&
+  {Comer{\'o}n}}{{Laurikainen} et~al.}{2010}]{laurikainen2010}
+{Laurikainen} E.,  {Salo} H.,  {Buta} R.,  {Knapen} J.~H.,   {Comer{\'o}n} S.,
+  2010, \mn@doi [\mnras] {10.1111/j.1365-2966.2010.16521.x}, \href
+  {http://adsabs.harvard.edu/abs/2010MNRAS.405.1089L} {405, 1089}
 
 \bibitem[\protect\citeauthoryear{{Marconi} \& {Hunt}}{{Marconi} \&
   {Hunt}}{2003}]{marconihunt2003}
@@ -330,6 +370,13 @@ Romanowsky A.~J.,  Fall S.~M.,  2012, The Astrophysical Journal Supplement
   {Bender} R.,  2011, \mn@doi [\mnras] {10.1111/j.1365-2966.2010.17610.x},
   \href {http://adsabs.harvard.edu/abs/2011MNRAS.410.1223R} {410, 1223}
 
+\bibitem[\protect\citeauthoryear{{Sandage}}{{Sandage}}{1961}]{sandage1961}
+{Sandage} A.,  1961, {The Hubble atlas of galaxies}
+
+\bibitem[\protect\citeauthoryear{{Sandage}}{{Sandage}}{2005}]{sandage2005}
+{Sandage} A.,  2005, \mn@doi [\araa] {10.1146/annurev.astro.43.112904.104839},
+  \href {http://adsabs.harvard.edu/abs/2005ARA%26A..43..581S} {43, 581}
+
 \bibitem[\protect\citeauthoryear{{Scorza}}{{Scorza}}{1998}]{scorza1998}
 {Scorza} C.,  1998, in {Aguilar} A.,  {Carraminana} A.,  eds, IX Latin American
   Regional IAU Meeting, ''Focal Points in Latin American Astronomy''. p.~117
@@ -366,6 +413,11 @@ Romanowsky A.~J.,  Fall S.~M.,  2012, The Astrophysical Journal Supplement
 {Simien} F.,  {Michard} R.,  1990, \aap, \href
   {http://adsabs.harvard.edu/abs/1990A%26A...227...11S} {227, 11}
 
+\bibitem[\protect\citeauthoryear{{Simien} \& {de Vaucouleurs}}{{Simien} \& {de
+  Vaucouleurs}}{1986}]{simiendevaucouleurs1986}
+{Simien} F.,  {de Vaucouleurs} G.,  1986, \mn@doi [\apj] {10.1086/164015},
+  \href {http://adsabs.harvard.edu/abs/1986ApJ...302..564S} {302, 564}
+
 \bibitem[\protect\citeauthoryear{{Stewart}, {Brooks}, {Bullock}, {Maller},
   {Diemand}, {Wadsley}  \& {Moustakas}}{{Stewart} et~al.}{2013}]{stewart2013}
 {Stewart} K.~R.,  {Brooks} A.~M.,  {Bullock} J.~S.,  {Maller} A.~H.,  {Diemand}
@@ -401,9 +453,19 @@ Romanowsky A.~J.,  Fall S.~M.,  2012, The Astrophysical Journal Supplement
   {http://adsabs.harvard.edu/abs/2008ApJ...677L...5V} {677, L5}
 
 \bibitem[\protect\citeauthoryear{{van den Bergh}}{{van den
+  Bergh}}{1976}]{vandenbergh1976}
+{van den Bergh} S.,  1976, \mn@doi [\apj] {10.1086/154452}, \href
+  {http://adsabs.harvard.edu/abs/1976ApJ...206..883V} {206, 883}
+
+\bibitem[\protect\citeauthoryear{{van den Bergh}}{{van den
   Bergh}}{1990}]{vandenbergh1990}
 {van den Bergh} S.,  1990, \mn@doi [\apj] {10.1086/168213}, \href
   {http://adsabs.harvard.edu/abs/1990ApJ...348...57V} {348, 57}
+
+\bibitem[\protect\citeauthoryear{{van den Bergh}}{{van den
+  Bergh}}{1997}]{vandenbergh1997}
+{van den Bergh} S.,  1997, \mn@doi [\aj] {10.1086/118417}, \href
+  {http://adsabs.harvard.edu/abs/1997AJ....113.2054V} {113, 2054}
 
 \bibitem[\protect\citeauthoryear{{van den Bosch}, {Gebhardt}, {G{\"u}ltekin},
   {van de Ven}, {van der Wel}  \& {Walsh}}{{van den Bosch}

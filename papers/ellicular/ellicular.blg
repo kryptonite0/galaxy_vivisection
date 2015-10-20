@@ -27,45 +27,47 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--can't use both author and editor fields in graham2013review
 Warning--empty publisher in graham2013review
-You've used 71 entries,
+Warning--empty publisher in hubble1936
+Warning--empty publisher in sandage1961
+You've used 84 entries,
             2881 wiz_defined-function locations,
-            1270 strings with 28408 characters,
-and the built_in function-call counts, 34403 in all, are:
-= -- 2719
-> -- 2579
-< -- 189
-+ -- 1140
-- -- 386
-* -- 4301
-:= -- 5428
+            1366 strings with 31324 characters,
+and the built_in function-call counts, 40326 in all, are:
+= -- 3203
+> -- 2960
+< -- 237
++ -- 1323
+- -- 428
+* -- 5015
+:= -- 6354
 add.period$ -- 0
-call.type$ -- 71
-change.case$ -- 142
-chr.to.int$ -- 70
-cite$ -- 73
-duplicate$ -- 1657
-empty$ -- 1684
-format.name$ -- 616
-if$ -- 5917
-int.to.chr$ -- 2
+call.type$ -- 84
+change.case$ -- 168
+chr.to.int$ -- 82
+cite$ -- 88
+duplicate$ -- 1961
+empty$ -- 2011
+format.name$ -- 694
+if$ -- 6944
+int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 71
-newline$ -- 227
-num.names$ -- 503
-pop$ -- 389
+missing$ -- 86
+newline$ -- 266
+num.names$ -- 591
+pop$ -- 478
 preamble$ -- 1
-purify$ -- 284
+purify$ -- 336
 quote$ -- 0
-skip$ -- 982
+skip$ -- 1162
 stack$ -- 0
-substring$ -- 1842
-swap$ -- 934
-text.length$ -- 296
+substring$ -- 2183
+swap$ -- 1076
+text.length$ -- 351
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 636
-warning$ -- 2
-while$ -- 539
+type$ -- 747
+warning$ -- 4
+while$ -- 638
 width$ -- 0
-write$ -- 723
+write$ -- 852
 (There were 5 error messages)

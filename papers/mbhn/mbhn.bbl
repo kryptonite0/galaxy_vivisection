@@ -1,4 +1,30 @@
 \begin{thebibliography}{}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
+\bibitem[{{Cen}(2014)}]{cen2014}
+{Cen}, R. 2014, \apjl, 790, L24
+
+\bibitem[{{Graham} \& {Driver}(2005)}]{grahamdriver2005}
+{Graham}, A.~W., \& {Driver}, S.~P. 2005, \pasa, 22, 118
+
+\bibitem[{{Graham} \& {Guzm{\'a}n}(2003)}]{grahamguzman2003}
+{Graham}, A.~W., \& {Guzm{\'a}n}, R. 2003, \aj, 125, 2936
+
+\bibitem[{{Jerjen} {et~al.}(2000){Jerjen}, {Binggeli}, \&
+  {Freeman}}]{jerjen2000}
+{Jerjen}, H., {Binggeli}, B., \& {Freeman}, K.~C. 2000, \aj, 119, 593
+
+\bibitem[{{Nipoti}(2015)}]{nipoti2015}
+{Nipoti}, C. 2015, \apjl, 805, L16
+
+\bibitem[{{S{\'e}rsic}(1963)}]{sersic1963}
+{S{\'e}rsic}, J.~L. 1963, Boletin de la Asociacion Argentina de Astronomia La
+  Plata Argentina, 6, 41
+
+\bibitem[{{S{\'e}rsic}(1968)}]{sersic1968}
+---. 1968, {Atlas de galaxias australes}
+
+\bibitem[{{Young} \& {Currie}(1994)}]{youngcurrie1994}
+{Young}, C.~K., \& {Currie}, M.~J. 1994, \mnras, 268, L11
+
 \end{thebibliography}

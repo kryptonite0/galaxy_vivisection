@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  25 AUG 2015 15:04
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  20 OCT 2015 16:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -16,7 +16,7 @@ kurmanji, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk,
  polish, portuguese, romanian, romansh, russian, sanskrit, serbian, serbianc, s
 lovak, slovenian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, 
 welsh, loaded.
-(/usr/local/texlive/2012/texmf-dist/tex/latex/emulateapj/emulateapj.cls
+(./emulateapj.cls
 Document Class: emulateapj 
 \bibbaselineskip=\skip41
 (/usr/local/texlive/2012/texmf-dist/tex/latex/revtex/revtex4-1.cls
@@ -78,20 +78,14 @@ Class revtex4-1 Info: Overriding \@vspace, \@vspacer, \@no@pgbk, \@newline, and
 \@bibdataout=\write3
 \widetext@top=\box39
 \widetext@bot=\box40
-
-Class revtex4-1 Warning: No Society specified, using default society aps.
-
+Class revtex4-1 Info: Selecting society aps on input line 7542.
 (/usr/local/texlive/2012/texmf-dist/tex/latex/revtex/aps4-1.rtx
 File: aps4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ for docu
 mentation)
 Class revtex4-1 Info: RevTeX society APS selected on input line 31.
 )
-
-Class revtex4-1 Warning: No journal specified, using default pra.
-
+Class revtex4-1 Info: Selecting journal pra on input line 7544.
 Class revtex4-1 Info: APS journal PRA selected on input line 7545.
-
-Class revtex4-1 Warning: No type size specified, using default 10.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/revtex/aps10pt4-1.rtx
 File: aps10pt4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ for 
@@ -426,14 +420,14 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip63
 )
-Class revtex4-1 Info: Patching array package. on input line 76.
+Class revtex4-1 Info: Patching array package. on input line 23.
 Class revtex4-1 Info: Patching unrecognized longtable package. (Proceeding with
- fingers crossed) on input line 76.
-Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 76.
+ fingers crossed) on input line 23.
+Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 23.
 
-Class revtex4-1 Info: cite was not loaded (OK!) on input line 76.
-Class revtex4-1 Info: mcite was not loaded (OK!) on input line 76.
-Class revtex4-1 Info: multicol was not loaded (OK!) on input line 76.
+Class revtex4-1 Info: cite was not loaded (OK!) on input line 23.
+Class revtex4-1 Info: mcite was not loaded (OK!) on input line 23.
+Class revtex4-1 Info: multicol was not loaded (OK!) on input line 23.
 
 
 LaTeX Warning: Unused global option(s):
@@ -442,20 +436,20 @@ LaTeX Warning: Unused global option(s):
 (./mbhn.aux)
 \openout1 = `mbhn.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
  (/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count132
@@ -485,7 +479,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box48
-Package hyperref Info: Link coloring OFF on input line 76.
+Package hyperref Info: Link coloring OFF on input line 23.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
@@ -495,137 +489,89 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count138
 )
-LaTeX Info: Redefining \ref on input line 76.
-LaTeX Info: Redefining \pageref on input line 76.
-LaTeX Info: Redefining \nameref on input line 76.
+LaTeX Info: Redefining \ref on input line 23.
+LaTeX Info: Redefining \pageref on input line 23.
+LaTeX Info: Redefining \nameref on input line 23.
 
 (./mbhn.out) (./mbhn.out)
 \@outlinefile=\write4
 \openout4 = `mbhn.out'.
 
-Class revtex4-1 Info: Taking \maketitle back from hyperref on input line 76.
+Class revtex4-1 Info: Taking \maketitle back from hyperref on input line 23.
 \openout3 = `mbhnNotes.bib'.
 
-LaTeX Font Info:    Try loading font information for U+lasy on input line 131.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 42.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 131.
+LaTeX Font Info:    Try loading font information for U+msa on input line 42.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 131.
+LaTeX Font Info:    Try loading font information for U+msb on input line 42.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 131.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 42.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <5> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 131.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 42.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <9> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 131.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 42.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 131.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 42.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 131.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 42.
 
-(./table_sample.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--4
-$[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--4
+Underfull \hbox (badness 10000) in paragraph at lines 71--77
 
  []
 
-) <images/mag_vs_n_maj.pdf, id=21, 578.16pt x 433.62pt>
-File: images/mag_vs_n_maj.pdf Graphic file (type pdf)
+(./table_sample.tex) (./mbhn.bbl) [1{/usr/local/texlive/2012/texmf-var/fonts/ma
+p/pdftex/updmap/pdftex.map}] [2]
 
-<use images/mag_vs_n_maj.pdf>
-Package pdftex.def Info: images/mag_vs_n_maj.pdf used on input line 142.
-(pdftex.def)             Requested size: 245.26653pt x 183.94531pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 143--143
-$[]$
- []
+LaTeX Warning: A float is stuck (cannot be placed) on input line 379.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--143
+Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
 
- []
+[3]
 
-<images/mbh_vs_n_maj.pdf, id=22, 578.16pt x 433.62pt>
-File: images/mbh_vs_n_maj.pdf Graphic file (type pdf)
-
-<use images/mbh_vs_n_maj.pdf>
-Package pdftex.def Info: images/mbh_vs_n_maj.pdf used on input line 150.
-(pdftex.def)             Requested size: 245.26653pt x 183.94531pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 151--151
-$[]$
- []
+LaTeX Warning: A float is stuck (cannot be placed) on input line 379.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 151--151
+Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
 
- []
+[4]
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 159--159
-$[]$
- []
+LaTeX Warning: A float is stuck (cannot be placed) on input line 379.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--159
+Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
 
- []
+[5]
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 214--214
-$[]$
- []
+LaTeX Warning: A float is stuck (cannot be placed) on input line 379.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 214--214
+Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 347--347
-$[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 347--347
-
- []
-
-(./mbhn.bbl
-
-LaTeX Warning: Empty `thebibliography' environment on input line 4.
-
-) [1{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./i
-mages/mag_vs_n_maj.pdf> <./images/mbh_vs_n_maj.pdf
-
-pdfTeX warning: pdflatex (file ./images/mbh_vs_n_maj.pdf): PDF inclusion: multi
-ple pdfs with page group included in a single page
->] [2] [3] [4] [5] [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 433.
+[6]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 381.
  (./mbhn.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 433.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 433.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 381.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 381.
 Package rerunfilecheck Info: File `mbhn.out' has not changed.
 (rerunfilecheck)             Checksum: A9EA6ABE67F7B35693474ED10BEDB712;182.
  ) 
 Here is how much of TeX's memory you used:
- 8359 strings out of 493488
- 116120 string characters out of 3141326
- 326618 words of memory out of 3000000
- 11519 multiletter control sequences out of 15000+200000
+ 8399 strings out of 493488
+ 116288 string characters out of 3141326
+ 315894 words of memory out of 3000000
+ 11553 multiletter control sequences out of 15000+200000
  18367 words of font info for 72 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  42i,14n,31p,594b,384s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -634,34 +580,34 @@ Here is how much of TeX's memory you used:
 pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pf
 b></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb>
 </usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
-</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.p
-fb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pf
-b></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb>
-</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></
-usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></us
-r/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb>
-</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib9.
-pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pf
-b></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></u
-sr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/
-local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loc
-al/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/
-texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/tex
-live/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texl
-ive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/local/texli
-ve/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
-e/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/
-2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/20
-12/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2012
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2012/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2012/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2012/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on mbhn.pdf (6 pages, 2447157 bytes).
+</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pf
+b></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><
+/usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></u
+sr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
+/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/l
+ocal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></u
+sr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb
+></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
+/usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></us
+r/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/l
+ocal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loca
+l/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/t
+exlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texl
+ive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
+ve/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive
+/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2
+012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/201
+2/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2012
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2012/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2012/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2012/texmf
+-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on mbhn.pdf (6 pages, 303909 bytes).
 PDF statistics:
- 635 PDF objects out of 1000 (max. 8388607)
- 163 compressed objects within 2 object streams
- 17 named destinations out of 1000 (max. 500000)
- 43 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 211 PDF objects out of 1000 (max. 8388607)
+ 172 compressed objects within 2 object streams
+ 26 named destinations out of 1000 (max. 500000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
