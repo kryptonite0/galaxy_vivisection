@@ -50,10 +50,10 @@ I(R; I_{\rm e},R_{\rm e},n) = I_{\rm e} \exp \biggl \{ -b_{\rm n} \biggl [ \Bigl
 where $I_{\rm e}$ indicates the intensity at the effective radius $R_{\rm e}$ that encloses half of the total light from the model, 
 the S\'ersic index $n$ is the parameter that regulates the curvature of the radial light profile, 
 and $b_{\rm n}$ is a constant defined in terms of the S\'ersic index $n$ (see \citealt{grahamdriver2005}, and references therein). 
-A large S\'ersic index corresponds to a steep central profile and a shallow outer profile, 
-whereas a small S\'ersic index corresponds to a shallow central profile and a steep outer profile. 
+A large S\'ersic index corresponds to a steep inner profile and a shallow outer profile, 
+whereas a small S\'ersic index corresponds to a shallow inner profile and a steep outer profile. 
 This means that, for a stellar spheroidal system whose light distribution is well approximated by the S\'ersic model, 
-the larger the S\'ersic index $n$ is, the more centrally concentrated the stars are and the more extended the outer envelope is. \\
+the larger the S\'ersic index is, the more centrally concentrated the stars are and the more extended the outer envelope is. \\
 A compelling physical interpretation for the S\'ersic profile family was recently theorized by \cite{cen2014} 
 and later confirmed by \cite{nipoti2015} by means of $N$-body simulations. 
 \cite{cen2014} conjectured that, when structures form within a standard cold dark matter model seeded by random Gaussian fluctuations, 
@@ -64,21 +64,82 @@ whereas systems with a S\'ersic index as small as $n \simeq 2$ can be produced b
 and exponential profiles ($n=1$) can only be obtained through dissipative processes.
 This scenario sets the theoretical framework for the well known correlation between the spheroid luminosity, $L_{\rm sph}$,  
 and the spheroid S\'ersic index, $n_{\rm sph}$, (e.g.~\citealt{youngcurrie1994,jerjen2000,grahamguzman2003}), 
-although the numerical results of \cite{nipoti2015} seem to lack of spheroidal systems with $n$ as large as $7 - 10$, 
+although the numerical results of \cite{nipoti2015} seem to lack of spheroidal systems with S\'ersic indices as large as $7 - 10$, 
 which are commonly observed in the local Universe.  \\
 Given the existence of the $L_{\rm sph} - n_{\rm sph}$ correlation 
-and the relation between the central black hole mass, $M_{\rm BH}$, and $L_{\rm sph}$ (e.g.~\citealt{magorrian1998}), 
+and the relation between the central black hole mass, $M_{\rm BH}$, and the spheroid luminosity (e.g.~\citealt{magorrian1998}), 
 an $M_{\rm BH} - n_{\rm sph}$ relation must exist. 
 After \cite{graham2001} showed that the black hole mass is tightly linked to the stellar light concentration of spheroids 
-(measured through a parameter different from but closely related to the S\'ersic index), 
-\cite{grahamdriver2007} presented for the first time the $M_{\rm BH} - n_{\rm sph}$ correlation. 
-
-s+11 v+12 b+12  \\
-my paper \\
-paper I and II \\
+(measured through a parameter different from, but closely related to the S\'ersic index), 
+\cite{grahamdriver2007} presented for the first time the $M_{\rm BH} - n_{\rm sph}$ correlation 
+using a sample of 27 elliptical and disk galaxies. 
+\cite{grahamdriver2007} fit their data with a log-quadratic regression, 
+finding that the $M_{\rm BH} - n_{\rm sph}$ log-relation is steeper for spheroids with small S\'ersic indices 
+and shallower for spheroids with large S\'ersic indices, 
+and measured a relatively small level of scatter\footnote{At the time, the $M_{\rm BH} - \sigma$ relation 
+\citep{ferraresemerritt2000,gebhardt2000} was reported to have the same level of scatter as the $M_{\rm BH} - n_{\rm sph}$ 
+relation ($\simeq 0.3~\rm dex$). }.
+A few years later, \cite{sani2011}, \cite{vika2012} and \cite{beifiori2012} performed multi-component decompositions 
+for samples of galaxies similar to that used by \cite{grahamdriver2007}, 
+but they surprisingly failed to recover a strong $M_{\rm BH} - n_{\rm sph}$ relation. 
+This issue was tackled by \cite{savorgnan2013}, who collected the S\'ersic index measurements published by 
+\cite{grahamdriver2007}, \cite{sani2011}, \cite{vika2012} and \cite{beifiori2012} for a sample of 54 galaxies, 
+and showed that, by rejecting the most discrepant measurements and averaging the remaning ones, 
+a strong $M_{\rm BH} - n_{\rm sph}$ relation was retrieved. 
+Remarkably, \cite{savorgnan2013} repeated their analysis upon excluding the S\'ersic index measurements of \cite{grahamdriver2007} 
+and still regained a significant $M_{\rm BH} - n_{\rm sph}$ relation. 
+This was suggestive that the individual galaxy decompositions of \cite{sani2011}, \cite{vika2012} and \cite{beifiori2012} were not accurate, 
+i.e.~each individual study obtained ``noisy'' S\'ersic index measurements 
+which prevented the recovery of a strong $M_{\rm BH} - n_{\rm sph}$ relation. \\
+Motivated by the need of more accurate galaxy decompositions to refine and re-investigate scaling relations 
+between the black hole mass and several galaxy structural parameters, 
+we performed state-of-the-art modelling for the largest sample of galaxies to date (Savorgnan \& Graham 2015, hereafter \emph{Paper I}),  
+for which a dynamical measurement of the black hole mass was available.
+In doing so, we used $3.6\rm~\mu m$ \emph{Spitzer} satellite imagery, 
+given its superb capability to trace the stellar mass (\citealt{sheth2010}, and references therein). 
+In Savorgnan et al.~(2015, hereafter \emph{Paper II}) we examined the correlations between black hole mass and 
+galaxy luminosity, spheroid luminosity and spheroid stellar mass. 
+In this Paper (\emph{Paper III}) we focus on the $M_{\rm BH} - n_{\rm sph}$ relation. \\
+This paper is structured as follows...
 
 
 \section{Data}
+We populated the $M_{\rm BH} - n_{\rm sph}$ diagram with the same galaxy sample used in \emph{Paper II}, 
+i.e.~66 galaxies for which a dynamical measurement of the black hole mass has been reported in the literature 
+(by \citealt{grahamscott2013} or \citealt{rusli2013}) 
+and for which we were able to successfully model the light distribution and measure the spheroid structural parameters 
+using $3.6\rm~\mu m$ \emph{Spitzer} satellite images. 
+Our galaxy decompositions take into account bulge, disks, spiral arms, bars, rings, halo, 
+extended or unresolved nuclear source and partially depleted core, 
+and -- for the first time -- they were checked to be consistent with the galaxy kinematics 
+\citep{atlas3dIII,scott2014,arnold2014}. 
+Kinematical information was used to confirm the presence of disk components 
+in the majority of early-type (elliptical + lenticular) galaxies and, more importantly,  
+to estabilish the radial extent of these disks. 
+This enabled us to distinguish between intermediate-scale disks, 
+that are fully embedded in the spheroid,  
+and large-scale disks, that encase the bulge and dominate the light at large radii 
+(see Savorgnan \& Graham 2015 for a discussion on this topic).  
+
+
+%%%Spheroid magnitudes were derived from our state-ofthe-art galaxy decompositions, which take into account
+%%%bulge, disks, spiral arms, bars, rings, halo, extended orunresolved nuclear source and partially depleted core.
+%%%Kinematical information (Emsellem et al. 2011; Scottet al. 2014; Arnold et al. 2014) was used to conrm the
+%%%presence of rotationally supported disk components inmost early-type (elliptical + lenticular) galaxies, and to
+%%%identify their extent (intermediate-scale disks that arefully embedded in the bulge, or large-scale disks that encase
+%%%the bulge and dominate the light at large radii).It is worth stressing that, contrary to common knowledge,
+%%%the majority of elliptical galaxies contain disks,i.e. they are not single-component spheroidal systems.
+%%%Paper I presents the dataset used here, including detailsabout the data reduction process and the galaxy modelling
+%%%technique that we developed. It also discusses howwe estimated the uncertainties5 on the bulge magnitudes,
+%%%and presents the individual 66 galaxy decompositions,along with a comparison and discussion of past decompositions.
+%%%The morphological classication (E = elliptical; E/S0 =elliptical/lenticular; S0 = lenticular; S0/Sp = lenticular/
+%%%spiral; Sp = spiral; and merger") follows from thegalaxy models presented in Paper I. Throughout this paper
+%%%we will refer to early-type galaxies (E+S0) and latetypegalaxies (Sp). Two galaxies classied as E/S0 are
+%%%obviously included in the early-type bin, whereas twogalaxies classied as S0/Sp and another two classied as
+%%%mergers are included in neither the early- nor the latetypebin.
+
+
+
 
 \input{table_sample.tex}
 
@@ -87,7 +148,7 @@ paper I and II \\
 
 \begin{figure}[h]
 \begin{center}
-%\includegraphics[width=\columnwidth]{images/mag_vs_n_maj.pdf}
+\includegraphics[width=\columnwidth]{images/mag_vs_n_maj.pdf}
 \caption{}
 \label{fig:magn}
 \end{center}
@@ -95,7 +156,7 @@ paper I and II \\
 
 \begin{figure}[h]
 \begin{center}
-%\includegraphics[width=\columnwidth]{images/mbh_vs_n_maj.pdf}
+\includegraphics[width=\columnwidth]{images/mbh_vs_n_maj.pdf}
 \caption{}
 \label{fig:mbhn}
 \end{center}
