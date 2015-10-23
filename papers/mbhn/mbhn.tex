@@ -104,7 +104,8 @@ This paper is structured as follows...
 
 
 \section{Data}
-We populated the $M_{\rm BH} - n_{\rm sph}$ diagram with the same galaxy sample used in \emph{Paper II}, 
+We populated the $L_{\rm sph} - n_{\rm sph}$ and $M_{\rm BH} - n_{\rm sph}$ diagrams 
+with the same galaxy sample (Table \ref{tab:sample}) used in \emph{Paper II}, 
 i.e.~66 galaxies for which a dynamical measurement of the black hole mass has been reported in the literature 
 (by \citealt{grahamscott2013} or \citealt{rusli2013}) 
 and for which we were able to successfully model the light distribution and measure the spheroid structural parameters 
@@ -115,49 +116,82 @@ and -- for the first time -- they were checked to be consistent with the galaxy 
 \citep{atlas3dIII,scott2014,arnold2014}. 
 Kinematical information was used to confirm the presence of disk components 
 in the majority of early-type (elliptical + lenticular) galaxies and, more importantly,  
-to estabilish the radial extent of these disks. 
+to estabilish the radial extent of these disks, 
+which in most cases is not obvious from a visual inspection of the galaxy images. 
 This enabled us to distinguish between intermediate-scale disks, 
 that are fully embedded in the spheroid,  
-and large-scale disks, that encase the bulge and dominate the light at large radii 
-(see Savorgnan \& Graham 2015 for a discussion on this topic).  
-
-
-%%%Spheroid magnitudes were derived from our state-ofthe-art galaxy decompositions, which take into account
-%%%bulge, disks, spiral arms, bars, rings, halo, extended orunresolved nuclear source and partially depleted core.
-%%%Kinematical information (Emsellem et al. 2011; Scottet al. 2014; Arnold et al. 2014) was used to conrm the
-%%%presence of rotationally supported disk components inmost early-type (elliptical + lenticular) galaxies, and to
-%%%identify their extent (intermediate-scale disks that arefully embedded in the bulge, or large-scale disks that encase
-%%%the bulge and dominate the light at large radii).It is worth stressing that, contrary to common knowledge,
-%%%the majority of elliptical galaxies contain disks,i.e. they are not single-component spheroidal systems.
-%%%Paper I presents the dataset used here, including detailsabout the data reduction process and the galaxy modelling
-%%%technique that we developed. It also discusses howwe estimated the uncertainties5 on the bulge magnitudes,
-%%%and presents the individual 66 galaxy decompositions,along with a comparison and discussion of past decompositions.
-%%%The morphological classication (E = elliptical; E/S0 =elliptical/lenticular; S0 = lenticular; S0/Sp = lenticular/
-%%%spiral; Sp = spiral; and merger") follows from thegalaxy models presented in Paper I. Throughout this paper
-%%%we will refer to early-type galaxies (E+S0) and latetypegalaxies (Sp). Two galaxies classied as E/S0 are
-%%%obviously included in the early-type bin, whereas twogalaxies classied as S0/Sp and another two classied as
-%%%mergers are included in neither the early- nor the latetypebin.
-
-
-
+and large-scale disks, that encase the bulge and dominate the light at large radii.  
+Savorgnan \& Graham (2015) explain that when an intermediate-scale disk is misclassified and modeled as a large-scale disk, 
+the luminosity of the spheroid is underestimated, 
+hence the galaxy incorrectly appears as a positive outlier (an ``over-massive'' black hole) in the $M_{\rm BH} - L_{\rm sph}$ diagram. 
+A detailed description of the dataset used here, the data reduction process and the galaxy modelling technique that we developed 
+can be found in \emph{Paper I}, 
+along with a discussion of how we estimated the uncertainties on the spheroid S\'ersic indices\footnote{The uncertainties associated with 
+the spheroid S\'ersic indices have been estimated with a method that takes into account systematic errors. 
+This method consists in comparing, for each of our galaxies, the measurements of the spheroid S\'ersic index obtained by different studies 
+with that obtained by us. 
+Systematic errors are typically not considered by popular 2D fitting codes which report only the statistical errors 
+associated with their fitted parameters. 
+Refer to \emph{Paper I} for a detailed discussion on this. }.  
+The morphological classification (E = elliptical; E/S0 = elliptical/lenticular; S0 = lenticular; 
+S0/Sp = lenticular/spiral; Sp = spiral; and ``merger'') follows from the galaxy decompositions illustrated in \emph{Paper I}. 
+As in \emph{Paper II}, here we will refer to early-type galaxies (E+S0) and late-type galaxies (Sp). 
+The early-type bin includes two galaxies classified as E/S0, 
+whereas two galaxies classified as S0/Sp and another two classified as mergers are included in neither the early- nor the late-type bin.
 
 \input{table_sample.tex}
 
-\section{Results}
+\section{Analysis and results}
+As in \emph{Paper II}, a linear regression analysis of the $L_{\rm sph} - n_{\rm sph}$ 
+and $M_{\rm BH} - n_{\rm sph}$ diagrams (see Table \ref{tab:lregLn} and Table \ref{tab:lregMn}, respectively) 
+was performed using three different routines: 
+the BCES code from \cite{akritasbershady1996}, 
+the FITEXY routine \citep{press1992}, as modified by \cite{tremaine2002}, 
+and the Bayesian estimator {\tt linmix\_err} \citep{linmixerr}.
+All of these three routines take into account the intrinsic scatter, 
+but only the FITEXY and the {\tt linmix\_err} codes allow one to quantify it.
+We report both symmetrical and nonsymmetrical linear regressions.  
+Symmetrical regressions are meant to be compared with theoretical expectations, 
+whereas nonsymmetrical forward ($Y|X$) regressions -- which minimize the scatter in the $Y$ direction -- 
+allow one to predict values of the ordinate observable ($Y$) with the best possible precision. 
 
+%for different morphological types (elliptical/lenticular/spiral)
+
+
+
+\subsection{$L_{\rm sph} - n_{\rm sph}$}
 
 \begin{figure}[h]
 \begin{center}
 \includegraphics[width=\columnwidth]{images/mag_vs_n_maj.pdf}
-\caption{}
+\caption{Spheroid absolute magnitude (at $3.6\rm~\mu m$) plotted against spheroid S\'ersic index 
+measured along the galaxy major-axis. 
+Symbols are coded according to the galaxy morphological type (see legend). 
+The red dashed line indicates the FITEXY bisector linear regression for the $45-2=43$  early-type galaxies (E+S0), 
+with the red shaded area denoting its $1\sigma$ uncertainty. 
+The shallower blue solid line shows the FITEXY bisector linear regression for the bulges of the 17 late-type (Sp) galaxies, 
+with the blue shaded area denoting its $1\sigma$ uncertainty. 
+The inset panel shows the error bars associated to each data point,  
+where the error bars have the same color coding as the symbols in the main figure. 
+}
 \label{fig:magn}
 \end{center}
 \end{figure}
 
+\subsection{$M_{\rm BH} - n_{\rm sph}$}
+
 \begin{figure}[h]
 \begin{center}
 \includegraphics[width=\columnwidth]{images/mbh_vs_n_maj.pdf}
-\caption{}
+\caption{Black hole mass plotted against spheroid S\'ersic index measured along the galaxy major-axis. 
+Symbols are coded according to the galaxy morphological type (see legend). 
+The red dashed line indicates the FITEXY bisector linear regression for the $45-2=43$  early-type galaxies (E+S0), 
+with the red shaded area denoting its $1\sigma$ uncertainty. 
+The shallower blue solid line shows the FITEXY bisector linear regression for the bulges of the 17 late-type (Sp) galaxies, 
+with the blue shaded area denoting its $1\sigma$ uncertainty. 
+The inset panel shows the error bars associated to each data point,  
+where the error bars have the same color coding as the symbols in the main figure. 
+}
 \label{fig:mbhn}
 \end{center}
 \end{figure}

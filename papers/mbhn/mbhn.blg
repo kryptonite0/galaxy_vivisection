@@ -17,46 +17,47 @@ I was expecting a `,' or a `}'---line 7716 of file /Users/gsavorgnan/galaxy_vivi
  :                 b,
 I'm skipping whatever remains of this entry
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--empty publisher in press1992
 Warning--empty publisher in sersic1968
-You've used 23 entries,
+You've used 27 entries,
             3085 wiz_defined-function locations,
-            805 strings with 10449 characters,
-and the built_in function-call counts, 11501 in all, are:
-= -- 909
-> -- 915
-< -- 10
-+ -- 305
-- -- 327
-* -- 1011
-:= -- 2205
-add.period$ -- 23
-call.type$ -- 23
-change.case$ -- 153
-chr.to.int$ -- 23
-cite$ -- 24
-duplicate$ -- 429
-empty$ -- 654
-format.name$ -- 360
-if$ -- 2255
+            833 strings with 11376 characters,
+and the built_in function-call counts, 13344 in all, are:
+= -- 1054
+> -- 1049
+< -- 12
++ -- 349
+- -- 374
+* -- 1165
+:= -- 2554
+add.period$ -- 27
+call.type$ -- 27
+change.case$ -- 177
+chr.to.int$ -- 27
+cite$ -- 29
+duplicate$ -- 503
+empty$ -- 774
+format.name$ -- 413
+if$ -- 2622
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 23
-newline$ -- 73
-num.names$ -- 92
-pop$ -- 164
+missing$ -- 27
+newline$ -- 85
+num.names$ -- 108
+pop$ -- 192
 preamble$ -- 1
-purify$ -- 153
+purify$ -- 177
 quote$ -- 0
-skip$ -- 366
+skip$ -- 431
 stack$ -- 0
-substring$ -- 479
+substring$ -- 556
 swap$ -- 0
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 204
-warning$ -- 1
-while$ -- 86
+type$ -- 237
+warning$ -- 2
+while$ -- 100
 width$ -- 0
-write$ -- 232
+write$ -- 271
 (There were 3 error messages)

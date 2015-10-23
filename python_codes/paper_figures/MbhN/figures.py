@@ -208,7 +208,7 @@ def mag_sph_vs_n_maj():
 	
 		logxx = np.arange(-10,20,0.1)
         	yy = (A_mfitexy*(logxx) + B_mfitexy)
-        	ax.plot(10**(logxx+np.average(log_n[earlytype==1])),yy, color='red', ls='-', linewidth=2.)
+        	ax.plot(10**(logxx+np.average(log_n[earlytype==1])),yy, color='red', ls='--', linewidth=2.)
         	#colorline.colorline(10**(logxx+np.average(log_n)), 10**yy, cmap=green_red)
        
         	##### calculates 1sigma uncertainty band
@@ -506,9 +506,9 @@ def mag_sph_vs_n_maj():
         xticks_labels = ['$0.5$','$1$','$2$','$3$','$4$','$5$','$6$','$10$']
         ax.set_xticks(xticks)
         ax.set_xticklabels(xticks_labels)
-        plt.xlabel(r'$n_{\rm maj}$', labelpad=13)
+        plt.xlabel(r'$n_{\rm sph}^{\rm maj}$', labelpad=13)
         plt.ylabel(r'$MAG_{\rm sph}~[\rm mag]$', labelpad=13)
-        plt.subplots_adjust(left=0.17,bottom=0.15,right=0.97,top=0.9)
+        plt.subplots_adjust(left=0.17,bottom=0.17,right=0.97,top=0.9)
         
 	# legend
         markers_linlog.elliptical(ax, 'red', np.log10(0.52), (-27.9), 0.035, 0.12)
@@ -738,7 +738,7 @@ def mag_sph_vs_n_eq():
        
         	logxx = np.arange(-10,20,0.1)
         	yy = (A_mfitexy*(logxx) + B_mfitexy)
-        	ax.plot(10**(logxx+np.average(log_n[earlytype==1])),yy, color='red', ls='-', linewidth=2.)
+        	ax.plot(10**(logxx+np.average(log_n[earlytype==1])),yy, color='red', ls='--', linewidth=2.)
         	#colorline.colorline(10**(logxx+np.average(log_n)), 10**yy, cmap=green_red)
        
         	##### calculates 1sigma uncertainty band
@@ -1270,7 +1270,7 @@ def mbh_vs_n_sph_maj():
 	
 		logxx = np.arange(-10,20,0.1)
         	yy = (A_mfitexy*(logxx) + B_mfitexy)
-        	ax.plot(10**(logxx+np.average(log_n[earlytype==1])),10**yy, color='red', ls='-', linewidth=2.)
+        	ax.plot(10**(logxx+np.average(log_n[earlytype==1])),10**yy, color='red', ls='--', linewidth=2.)
         	#colorline.colorline(10**(logxx+np.average(log_n)), 10**yy, cmap=green_red)
        
         	##### calculates 1sigma uncertainty band
@@ -1520,9 +1520,9 @@ def mbh_vs_n_sph_maj():
         xticks_labels = ['$0.5$','$1$','$2$','$3$','$4$','$5$','$6$','$10$']
         ax.set_xticks(xticks)
         ax.set_xticklabels(xticks_labels)
-        plt.xlabel(r'$n_{\rm maj}$', labelpad=13)
+        plt.xlabel(r'$n_{\rm sph}^{\rm maj}$', labelpad=13)
         plt.ylabel(r'$M_{\rm BH}~[\rm M_\odot]$', labelpad=13)
-	plt.subplots_adjust(left=0.15,bottom=0.15,right=0.97,top=0.9)
+	plt.subplots_adjust(left=0.15,bottom=0.17,right=0.97,top=0.9)
         
         # make inset
         ins = plt.axes([.61, .18, .34, .3])
@@ -1857,7 +1857,7 @@ def mbh_vs_n_sph_eq():
 def main():
 	mag_sph_vs_n_maj()
 	#mag_sph_vs_n_eq()
-	#mbh_vs_n_sph_maj()
+	mbh_vs_n_sph_maj()
 	#mbh_vs_n_sph_eq()
 	
 main()		
