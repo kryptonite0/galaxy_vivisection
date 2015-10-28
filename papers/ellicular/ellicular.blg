@@ -3,23 +3,27 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: ellicular.aux
 The style file: mnras.bst
 Database file #1: /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
-Repeated entry---line 1929 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
- : @article{rixwhite1992
- :                      ,
+Repeated entry---line 122 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+ : @article{carter1978
+ :                    ,
 I'm skipping whatever remains of this entry
-You're missing a field part---line 2101 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+Repeated entry---line 1407 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+ : @article{simiendevaucouleurs1986
+ :                                 ,
+I'm skipping whatever remains of this entry
+You're missing a field part---line 2434 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  :    volume = 
  :             ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3044 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+Repeated entry---line 3377 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  : @article{scorzabender1995
  :                          ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 7697 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+I was expecting a `,' or a `}'---line 8030 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  :      year = 2014
  :                 a,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 7716 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+I was expecting a `,' or a `}'---line 8049 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  :      year = 2014
  :                 b,
 I'm skipping whatever remains of this entry
@@ -27,47 +31,47 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--can't use both author and editor fields in graham2013review
 Warning--empty publisher in graham2013review
-Warning--empty publisher in hubble1936
-Warning--empty publisher in sandage1961
-You've used 84 entries,
+Warning--empty publisher in Jeans1919
+Warning--empty publisher in scorza1993
+You've used 93 entries,
             2881 wiz_defined-function locations,
-            1366 strings with 31324 characters,
-and the built_in function-call counts, 40326 in all, are:
-= -- 3203
-> -- 2960
-< -- 237
-+ -- 1323
-- -- 428
-* -- 5015
-:= -- 6354
+            1417 strings with 32052 characters,
+and the built_in function-call counts, 44224 in all, are:
+= -- 3531
+> -- 3210
+< -- 275
++ -- 1451
+- -- 452
+* -- 5447
+:= -- 6993
 add.period$ -- 0
-call.type$ -- 84
-change.case$ -- 168
-chr.to.int$ -- 82
-cite$ -- 88
-duplicate$ -- 1961
-empty$ -- 2011
-format.name$ -- 694
-if$ -- 6944
-int.to.chr$ -- 3
+call.type$ -- 93
+change.case$ -- 186
+chr.to.int$ -- 90
+cite$ -- 97
+duplicate$ -- 2154
+empty$ -- 2219
+format.name$ -- 742
+if$ -- 7610
+int.to.chr$ -- 4
 int.to.str$ -- 0
-missing$ -- 86
-newline$ -- 266
-num.names$ -- 591
-pop$ -- 478
+missing$ -- 95
+newline$ -- 293
+num.names$ -- 650
+pop$ -- 520
 preamble$ -- 1
-purify$ -- 336
+purify$ -- 372
 quote$ -- 0
-skip$ -- 1162
+skip$ -- 1288
 stack$ -- 0
-substring$ -- 2183
-swap$ -- 1076
-text.length$ -- 351
+substring$ -- 2418
+swap$ -- 1162
+text.length$ -- 385
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 747
+type$ -- 828
 warning$ -- 4
-while$ -- 638
+while$ -- 714
 width$ -- 0
-write$ -- 852
-(There were 5 error messages)
+write$ -- 940
+(There were 6 error messages)

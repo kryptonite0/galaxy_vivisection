@@ -658,8 +658,8 @@ def mbh_vs_mass_sph():
 	ML = 10**log_ML
 	
 	mass_sph = ML*10**(-0.4*(mag_sph-3.25))
+	perr_mass_sph =  ML*10**(-0.4*(mag_sph-merr_mag_sph-3.25)) - mass_sph
 	merr_mass_sph = -ML*10**(-0.4*(mag_sph+perr_mag_sph-3.25)) + mass_sph
-	perr_mass_sph = +ML*10**(-0.4*(mag_sph-merr_mag_sph-3.25)) - mass_sph
 	
 	log_mass_sph = np.log10(mass_sph)
 	perr_log_mass_sph = np.log10(1+perr_mass_sph/mass_sph)
@@ -698,18 +698,27 @@ def mbh_vs_mass_sph():
 			morph_coreList.append('outlier')	
         morph_core = np.asarray(morph_coreList)
 	       
-        ### produce .dat file for paper with Ewan (19 June 2015)
-        datfileName = '/Users/gsavorgnan/galaxy_vivisection/results/tables/mbh_vs_mass_sph.dat'
+       #### produce .dat file for paper with Ewan (19 June 2015)
+       #datfileName = '/Users/gsavorgnan/galaxy_vivisection/results/tables/mbh_vs_mass_sph.dat'
+       #datfile = open(datfileName, 'w')
+       #datfile.write('# galaxy    logMassSph	  +err_logMassSph     -err_logMassSph	  average_err_logMassSph     logMassBH     +err_logMassBH    -err_logMassBH    average_err_logMassBH	 core	type   \n')
+       #for a,b,c,d,e,f,g,h,i,j,k in zip(gal_id, log_mass_sph, perr_log_mass_sph, merr_log_mass_sph, 
+       #	0.5*(perr_log_mass_sph + merr_log_mass_sph),
+       #	log_mbh, perr_log_mbh, merr_log_mbh, 0.5*(merr_log_mbh + perr_log_mbh), 
+       #	core, simplemorphtype):
+       #	datfile.write(str(a) + '    ' + str(b) + '    ' + str(c) + '	' + str(d) + '    ')
+       #	datfile.write(str(e) + '    ' + str(f) + '    ' + str(g) + '	' + str(h) + '    ') 
+       #	datfile.write(str(i) + '    ' + str(j) + '    ' + str(k) + '\n')
+       #datfile.close()
+
+        ### produce .dat file for Francesco (28 October 2015)
+        datfileName = '/Users/gsavorgnan/galaxy_vivisection/results/tables/mass_sph_Francesco.txt'
         datfile = open(datfileName, 'w')
-        datfile.write('# galaxy    logMassSph     +err_logMassSph     -err_logMassSph     average_err_logMassSph     logMassBH     +err_logMassBH    -err_logMassBH    average_err_logMassBH     core   type   \n')
-        for a,b,c,d,e,f,g,h,i,j,k in zip(gal_id, log_mass_sph, perr_log_mass_sph, merr_log_mass_sph, 
-		0.5*(perr_log_mass_sph + merr_log_mass_sph),
-        	log_mbh, perr_log_mbh, merr_log_mbh, 0.5*(merr_log_mbh + perr_log_mbh), 
-		core, simplemorphtype):
-        	datfile.write(str(a) + '    ' + str(b) + '    ' + str(c) + '    ' + str(d) + '    ')
-		datfile.write(str(e) + '    ' + str(f) + '    ' + str(g) + '    ' + str(h) + '    ') 
-		datfile.write(str(i) + '    ' + str(j) + '    ' + str(k) + '\n')
+        datfile.write('# galaxy    MassSph     +err_MassSph     -err_MassSph   \n')
+        for a,b,c,d in zip(gal_id, mass_sph, perr_mass_sph, merr_mass_sph):
+        	datfile.write(str(a) + '    ' + str(b) + '    ' + str(c) + '    ' + str(d) +  '\n')
         datfile.close()
+	#print mag_sph[gal_id=='ic1459'],merr_mag_sph[gal_id=='ic1459'],perr_mag_sph[gal_id=='ic1459'],color[gal_id=='ic1459'],(mass_sph[gal_id=='ic1459'])/(10**10),(merr_mass_sph[gal_id=='ic1459'])/(10**10),(perr_mass_sph[gal_id=='ic1459'])/(10**10)
 
         fig, ax = plt.subplots()
 

@@ -336,11 +336,11 @@ def print_bhmass(mass,merr,perr):
 def print_mass(mass,merr,perr):
 
 	if mass<1:
-		print '$' + str("{0:.2f}".format(mass)) + '_{' + str("{0:.2f}".format(merr)) + '}^{+' + str("{0:.2f}".format(perr)) + '}$ ', 
+		print '$' + str("{0:.2f}".format(mass)) + '_{-' + str("{0:.2f}".format(merr)) + '}^{+' + str("{0:.2f}".format(perr)) + '}$ ', 
 	if mass>1 and mass<10:
-		print '$' + str("{0:.1f}".format(mass)) + '_{' + str("{0:.1f}".format(merr)) + '}^{+' + str("{0:.1f}".format(perr)) + '}$ ', 
+		print '$' + str("{0:.1f}".format(mass)) + '_{-' + str("{0:.1f}".format(merr)) + '}^{+' + str("{0:.1f}".format(perr)) + '}$ ', 
 	if mass>10:
-		print '$' + str("{0:.0f}".format(mass)) + '_{' + str("{0:.0f}".format(merr)) + '}^{+' + str("{0:.0f}".format(perr)) + '}$ ', 
+		print '$' + str("{0:.0f}".format(mass)) + '_{-' + str("{0:.0f}".format(merr)) + '}^{+' + str("{0:.0f}".format(perr)) + '}$ ', 
 		
 def header_datapaper_fitresultstable(caption):
 
@@ -570,6 +570,7 @@ def mmpaper_sampletable():
         #                data[i,j] = putBlankInPlaceOfNone(data[i,j])
         
         gal_name = data[0]
+	gal_id = data[0]
 	morphtype = data[1]
         core = data[2]
         core[core=='1'] = 'yes'
@@ -598,53 +599,55 @@ def mmpaper_sampletable():
 	log_ML = 3.98*color+0.13 # meidt+2014
 	ML = 10**log_ML
 	
-	mass_sph = ML*10**(-0.4*(mag_sph-3.25))/10**10
-	perr_mass_sph = (ML*10**(-0.4*(mag_sph-merr_mag_sph-3.25)) - mass_sph ) /10**10
-	merr_mass_sph = (mass_sph - ML*10**(-0.4*(mag_sph+perr_mag_sph-3.25)) ) /10**10
+	mass_sph = ML*10**(-0.4*(mag_sph-3.25))
+	perr_mass_sph = (ML*10**(-0.4*(mag_sph-merr_mag_sph-3.25)) - mass_sph ) 
+	merr_mass_sph = (mass_sph - ML*10**(-0.4*(mag_sph+perr_mag_sph-3.25)) ) 
 		
-	mmsampletableFile = open(mmsampletableFileName, 'w')
+        mmsampletableFile = open(mmsampletableFileName, 'w')
         sys.stdout = mmsampletableFile
         
         header_mmpaper_sampletable(True)
         for i in range(rows):
-		if gal_name[i] == 'n4697':
-			footer_mmpaper_sampletable(True)
-			print
-			header_mmpaper_sampletable(False)
-                gal_name[i] = gal_name[i].replace('circinus', 'Circinus ')
-                if gal_name[i][0] == 'n':
-                        gal_name[i] = gal_name[i].replace('n', 'NGC ')
-                if gal_name[i][0] == 'i':
-                        gal_name[i] = gal_name[i].replace('ic', 'IC ')
-                if gal_name[i][0] == 'u':
-                        gal_name[i] = gal_name[i].replace('ugc', 'UGC ')
-                if gal_name[i][0] == 'm':
-                        gal_name[i] = gal_name[i].replace('m', 'M')
-                if gal_name[i][-1] == 'a':
-                        gal_name[i] = gal_name[i].replace('a', 'A')
-                gal_name[i] = gal_name[i].replace('exp', '')    
-                print gal_name[i], ' & ', 
-		if bar[i] == 0 or morphtype[i] == 'merger':
-			print morphtype[i], ' & ', 
-		elif bar[i] == 1:
-			print morphtype[i] + ' (bar)', ' & ', 	
-                print str(core[i])+str(core_inferred_from_sigma[i]), ' & ',  
-                print '$'+str("{0:.1f}".format(distance[i]))+'$', ' & ', 
-                print_bhmass(mass_BH[i],merr_mass_BH[i],perr_mass_BH[i])
-		print '$' + str("{0:.2f}".format(mag_sph[i])) + '_{-' + str("{0:.2f}".format(merr_mag_sph[i])) + '}^{+' + str("{0:.2f}".format(perr_mag_sph[i])) + '}$ ', ' & ',
-		if gal_name[i] in ['M94', 'NGC 3079', 'NGC 4388', 'NGC 4945']:
-			print '$\leq' + str("{0:.2f}".format(mag_tot[i])) + '$ ', 
-		else:	
-			print '$' + str("{0:.2f}".format(mag_tot[i])) + ' \pm 0.25$ ' ##+ str("{0:.2f}".format(err_mag_tot[i])) + '$ ', 
-		print ' & ',
-		print '$' + str("{0:.2f}".format(color[i])) +'$', ' & ', 
-		#print '$' + str("{0:.2f}".format(mass_sph[i])) + '_{' + str("{0:.2f}".format(merr_mass_sph[i])) + '}^{+' + str("{0:.2f}".format(perr_mass_sph[i])) + '}$ ', 
-                print_mass(mass_sph[i],merr_mass_sph[i],perr_mass_sph[i])
-		print ' \\\\ '
+        	if gal_name[i] == 'n4697':
+        		footer_mmpaper_sampletable(True)
+        		print
+        		header_mmpaper_sampletable(False)
+        	gal_name[i] = gal_name[i].replace('circinus', 'Circinus ')
+        	if gal_name[i][0] == 'n':
+        		gal_name[i] = gal_name[i].replace('n', 'NGC ')
+        	if gal_name[i][0] == 'i':
+        		gal_name[i] = gal_name[i].replace('ic', 'IC ')
+        	if gal_name[i][0] == 'u':
+        		gal_name[i] = gal_name[i].replace('ugc', 'UGC ')
+        	if gal_name[i][0] == 'm':
+        		gal_name[i] = gal_name[i].replace('m', 'M')
+        	if gal_name[i][-1] == 'a':
+        		gal_name[i] = gal_name[i].replace('a', 'A')
+        	gal_name[i] = gal_name[i].replace('exp', '')	
+        	print gal_name[i], ' & ', 
+        	if bar[i] == 0 or morphtype[i] == 'merger':
+        		print morphtype[i], ' & ', 
+        	elif bar[i] == 1:
+        		print morphtype[i] + ' (bar)', ' & ',	
+        	print str(core[i])+str(core_inferred_from_sigma[i]), ' & ',  
+        	print '$'+str("{0:.1f}".format(distance[i]))+'$', ' & ', 
+        	print_bhmass(mass_BH[i],merr_mass_BH[i],perr_mass_BH[i])
+        	print '$' + str("{0:.2f}".format(mag_sph[i])) + '_{-' + str("{0:.2f}".format(merr_mag_sph[i])) + '}^{+' + str("{0:.2f}".format(perr_mag_sph[i])) + '}$ ', ' & ',
+        	if gal_name[i] in ['M94', 'NGC 3079', 'NGC 4388', 'NGC 4945']:
+        		print '$\leq' + str("{0:.2f}".format(mag_tot[i])) + '$ ', 
+        	else:	
+        		print '$' + str("{0:.2f}".format(mag_tot[i])) + ' \pm 0.25$ ' ##+ str("{0:.2f}".format(err_mag_tot[i])) + '$ ', 
+        	print ' & ',
+        	print '$' + str("{0:.2f}".format(color[i])) +'$', ' & ', 
+        	#print '$' + str("{0:.2f}".format(mass_sph[i])) + '_{' + str("{0:.2f}".format(merr_mass_sph[i])) + '}^{+' + str("{0:.2f}".format(perr_mass_sph[i])) + '}$ ', 
+        	print_mass(mass_sph[i]/10**10,merr_mass_sph[i]/10**10,perr_mass_sph[i]/10**10)
+        	print ' \\\\ '
         footer_mmpaper_sampletable(False)
-	
+      
         mmsampletableFile.close() 
         terminal = sys.stdout
+	
+	#print mag_sph[gal_id=='ic1459'],merr_mag_sph[gal_id=='ic1459'],perr_mag_sph[gal_id=='ic1459'],color[gal_id=='ic1459'],mass_sph[gal_id=='ic1459']/10**10,merr_mass_sph[gal_id=='ic1459']/10**10,perr_mass_sph[gal_id=='ic1459']/10**10
         #("{0:.2f}".format(b))
         #("{0:.2f}".format(b))
 
@@ -744,7 +747,7 @@ def mnpaper_sampletable():
 def main():
         #datapaper_sampletable()
 	#datapaper_fitresultstable()
-	#mmpaper_sampletable()
-	mnpaper_sampletable()
+	mmpaper_sampletable()
+	#mnpaper_sampletable()
 
 main()
