@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  26 OCT 2015 18:08
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  29 OCT 2015 14:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -296,23 +296,34 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
 )
-(./ellicular.aux)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/soul/soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks23
+\SOUL@lasttoken=\toks24
+\SOUL@cmds=\toks25
+\SOUL@buffer=\toks26
+\SOUL@token=\toks27
+\SOUL@spaceskip=\skip56
+\SOUL@ttwidth=\dimen126
+\SOUL@uldp=\dimen127
+\SOUL@ulht=\dimen128
+) (./ellicular.aux)
 \openout1 = `ellicular.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -357,7 +368,7 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 )
-Package hyperref Info: Link coloring ON on input line 23.
+Package hyperref Info: Link coloring ON on input line 24.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
@@ -367,9 +378,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count118
 )
-LaTeX Info: Redefining \ref on input line 23.
-LaTeX Info: Redefining \pageref on input line 23.
-LaTeX Info: Redefining \nameref on input line 23.
+LaTeX Info: Redefining \ref on input line 24.
+LaTeX Info: Redefining \pageref on input line 24.
+LaTeX Info: Redefining \nameref on input line 24.
 
 (./ellicular.out) (./ellicular.out)
 \@outlinefile=\write3
@@ -379,16 +390,16 @@ LaTeX Info: Redefining \nameref on input line 23.
 (/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count119
-\scratchdimen=\dimen126
+\scratchdimen=\dimen129
 \scratchbox=\box33
 \nofMPsegments=\count120
 \nofMParguments=\count121
-\everyMPshowfont=\toks23
+\everyMPshowfont=\toks28
 \MPscratchCnt=\count122
-\MPscratchDim=\dimen127
+\MPscratchDim=\dimen130
 \MPnumerator=\count123
 \makeMPintoPDFobject=\count124
-\everyMPtoPDFconversion=\toks24
+\everyMPtoPDFconversion=\toks29
 ) (/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -404,27 +415,27 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for U+eur on input line 25.
+LaTeX Font Info:    Try loading font information for U+eur on input line 26.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/ueur.fd
 File: ueur.fd 2009/06/22 v3.00 Euler Roman
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 25.
+LaTeX Font Info:    Try loading font information for U+msa on input line 26.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-Underfull \hbox (badness 10000) in paragraph at lines 25--25
+Underfull \hbox (badness 10000) in paragraph at lines 26--26
 
  []
 
 
-Overfull \hbox (3.07225pt too wide) in paragraph at lines 25--25
+Overfull \hbox (3.07225pt too wide) in paragraph at lines 26--26
 [][]  
  []
 
 
-Underfull \hbox (badness 1024) in paragraph at lines 31--54
+Underfull \hbox (badness 1024) in paragraph at lines 32--55
 \OT1/cmr/bx/n/10 The clas-si-fi-ca-tion ``early-type'' galaxy in-cludes both el
 liptically- and
  []
@@ -432,14 +443,14 @@ liptically- and
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 172.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 173.
 
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 172.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 173.
  [1{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
@@ -455,111 +466,116 @@ Package epstopdf Info: Source file: <discmodel.eps>
 (epstopdf)                    size: 262415 bytes
 (epstopdf)             Command: <repstopdf --outfile=discmodel-eps-converted-to
 .pdf discmodel.eps>
-(epstopdf)             \includegraphics on input line 178.
+(epstopdf)             \includegraphics on input line 179.
 Package epstopdf Info: Output file is already uptodate.
 
-<discmodel-eps-converted-to.pdf, id=306, 1683.28876pt x 1314.9125pt>
+<discmodel-eps-converted-to.pdf, id=312, 1683.28876pt x 1314.9125pt>
 File: discmodel-eps-converted-to.pdf Graphic file (type pdf)
 
 <use discmodel-eps-converted-to.pdf>
-Package pdftex.def Info: discmodel-eps-converted-to.pdf used on input line 178.
+Package pdftex.def Info: discmodel-eps-converted-to.pdf used on input line 179.
 
 (pdftex.def)             Requested size: 240.0pt x 187.4773pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1082) has occurred while \output is active []
 
  [3pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.251 
+l.252 
        <./discmodel-eps-converted-to.pdf>]
-Underfull \hbox (badness 1062) in paragraph at lines 299--307
+Underfull \hbox (badness 1062) in paragraph at lines 300--308
 \OT1/cmr/m/n/9 Our mod-els with an intermediate-sized disc em-bed-ded
  []
 
 [4]
-Underfull \hbox (badness 1708) in paragraph at lines 336--343
+
+Package natbib Warning: Citation `jedrzejewski1987inproceedings' on page 5 unde
+fined on input line 324.
+
+
+Underfull \hbox (badness 1708) in paragraph at lines 337--344
 \OT1/cmr/m/n/9 and a bulge-to-total flux ra-tio of $0\OML/cmm/m/it/9 :\OT1/cmr/
 m/n/9 08$; we de-scribed
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 336--343
+Underfull \hbox (badness 10000) in paragraph at lines 337--344
 
  []
 
-<n3115_image.jpeg, id=439, 1086.0575pt x 950.55125pt>
+<n3115_image.jpeg, id=448, 1086.0575pt x 950.55125pt>
 File: n3115_image.jpeg Graphic file (type jpg)
  <use n3115_image.jpeg>
-Package pdftex.def Info: n3115_image.jpeg used on input line 354.
+Package pdftex.def Info: n3115_image.jpeg used on input line 355.
 (pdftex.def)             Requested size: 117.60132pt x 102.92198pt.
 
-<n3115_unsharp.jpeg, id=440, 1086.0575pt x 950.55125pt>
+<n3115_unsharp.jpeg, id=449, 1086.0575pt x 950.55125pt>
 File: n3115_unsharp.jpeg Graphic file (type jpg)
 
 <use n3115_unsharp.jpeg>
-Package pdftex.def Info: n3115_unsharp.jpeg used on input line 355.
+Package pdftex.def Info: n3115_unsharp.jpeg used on input line 356.
 (pdftex.def)             Requested size: 117.60132pt x 102.92198pt.
 
-<n3115_decomposition.pdf, id=441, 273.85776pt x 264.52176pt>
+<n3115_decomposition.pdf, id=450, 273.85776pt x 264.52176pt>
 File: n3115_decomposition.pdf Graphic file (type pdf)
 
 <use n3115_decomposition.pdf>
-Package pdftex.def Info: n3115_decomposition.pdf used on input line 356.
+Package pdftex.def Info: n3115_decomposition.pdf used on input line 357.
 (pdftex.def)             Requested size: 252.00073pt x 243.41946pt.
 
-Overfull \hbox (12.00073pt too wide) in paragraph at lines 356--368
+Overfull \hbox (12.00073pt too wide) in paragraph at lines 357--369
  [][] 
  []
 
-<n1332_image.jpeg, id=442, 1086.0575pt x 950.55125pt>
+<n1332_image.jpeg, id=451, 1086.0575pt x 950.55125pt>
 File: n1332_image.jpeg Graphic file (type jpg)
  <use n1332_image.jpeg>
-Package pdftex.def Info: n1332_image.jpeg used on input line 375.
+Package pdftex.def Info: n1332_image.jpeg used on input line 376.
 (pdftex.def)             Requested size: 117.60132pt x 102.92198pt.
 
-<n1332_unsharp.jpeg, id=443, 1086.0575pt x 950.55125pt>
+<n1332_unsharp.jpeg, id=452, 1086.0575pt x 950.55125pt>
 File: n1332_unsharp.jpeg Graphic file (type jpg)
 
 <use n1332_unsharp.jpeg>
-Package pdftex.def Info: n1332_unsharp.jpeg used on input line 376.
+Package pdftex.def Info: n1332_unsharp.jpeg used on input line 377.
 (pdftex.def)             Requested size: 117.60132pt x 102.92198pt.
 
-<n1332_decomposition.pdf, id=444, 272.96863pt x 264.0772pt>
+<n1332_decomposition.pdf, id=453, 272.96863pt x 264.0772pt>
 File: n1332_decomposition.pdf Graphic file (type pdf)
 
 <use n1332_decomposition.pdf>
-Package pdftex.def Info: n1332_decomposition.pdf used on input line 377.
+Package pdftex.def Info: n1332_decomposition.pdf used on input line 378.
 (pdftex.def)             Requested size: 247.1997pt x 239.15817pt.
 
-Overfull \hbox (7.1997pt too wide) in paragraph at lines 377--382
+Overfull \hbox (7.1997pt too wide) in paragraph at lines 378--383
  [][] 
  []
 
-<mrk1216_image.jpeg, id=447, 1086.0575pt x 950.55125pt>
+<mrk1216_image.jpeg, id=456, 1086.0575pt x 950.55125pt>
 File: mrk1216_image.jpeg Graphic file (type jpg)
 
 <use mrk1216_image.jpeg>
-Package pdftex.def Info: mrk1216_image.jpeg used on input line 389.
+Package pdftex.def Info: mrk1216_image.jpeg used on input line 390.
 (pdftex.def)             Requested size: 117.60132pt x 102.92198pt.
 
-<mrk1216_unsharp.jpeg, id=448, 1086.0575pt x 950.55125pt>
+<mrk1216_unsharp.jpeg, id=457, 1086.0575pt x 950.55125pt>
 File: mrk1216_unsharp.jpeg Graphic file (type jpg)
 
 <use mrk1216_unsharp.jpeg>
-Package pdftex.def Info: mrk1216_unsharp.jpeg used on input line 390.
+Package pdftex.def Info: mrk1216_unsharp.jpeg used on input line 391.
 (pdftex.def)             Requested size: 117.60132pt x 102.92198pt.
 
-<mrk1216_decomposition.pdf, id=449, 272.0795pt x 262.29886pt>
+<mrk1216_decomposition.pdf, id=458, 272.0795pt x 262.29886pt>
 File: mrk1216_decomposition.pdf Graphic file (type pdf)
 
 <use mrk1216_decomposition.pdf>
-Package pdftex.def Info: mrk1216_decomposition.pdf used on input line 391.
+Package pdftex.def Info: mrk1216_decomposition.pdf used on input line 392.
 (pdftex.def)             Requested size: 252.00073pt x 242.93881pt.
 
-Overfull \hbox (12.00073pt too wide) in paragraph at lines 391--398
+Overfull \hbox (12.00073pt too wide) in paragraph at lines 392--399
  [][] 
  []
 
@@ -568,112 +584,85 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.454 
+l.455 
        <./n3115_image.jpeg> <./n3115_unsharp.jpeg> <./n3115_decomposition.pdf>]
 [6pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.454 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-4}) has been already used, duplicate ignored
+l.457 \section
+              {Origin of compact massive galaxies}pdfTeX warning (ext4): destin
+ation with the same identifier (name{figure.4}) has been already used, duplicat
+e ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.454 
-       <./n1332_image.jpeg> <./n1332_unsharp.jpeg> <./n1332_decomposition.pdf> 
-<./mrk1216_image.jpeg> <./mrk1216_unsharp.jpeg> <./mrk1216_decomposition.pdf>]
-Underfull \hbox (badness 2359) in paragraph at lines 459--502
+l.457 \section
+              {Origin of compact massive galaxies} <./n1332_image.jpeg> <./n133
+2_unsharp.jpeg> <./n1332_decomposition.pdf> <./mrk1216_image.jpeg> <./mrk1216_u
+nsharp.jpeg> <./mrk1216_decomposition.pdf>]
+Underfull \hbox (badness 2359) in paragraph at lines 460--503
 \OT1/cmr/m/n/9 Acknowledging the cor-rect struc-ture of galax-ies with
  []
 
-<mm.pdf, id=557, 578.16pt x 433.62pt>
+<mm.pdf, id=564, 578.16pt x 433.62pt>
 File: mm.pdf Graphic file (type pdf)
  <use mm.pdf>
-Package pdftex.def Info: mm.pdf used on input line 505.
+Package pdftex.def Info: mm.pdf used on input line 506.
 (pdftex.def)             Requested size: 240.0pt x 179.99525pt.
  [7pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.531 I
-       t has been argued that the classification scheme for "elliptical" gal...
- <./mm.pdf>]
-! Misplaced alignment tab character &.
-l.537 Section 4 of Kormendy &
-                              Bender (1996) points out additional complicati...
-
-? 
-! Misplaced alignment tab character &.
-l.545 ...ellari et al. (2011b, see also Kormendy &
-                                                   Bender 2012) presented a ...
-
-? 
-! Misplaced alignment tab character &.
-l.553 ...t (1985), Kodaira et al. (1986), Simien &
-                                                   de Vaucouleurs (1986) and...
-
-? 
-! Text line contains an invalid character.
-l.558 ratios from 0 to ^^X
-                          3/4 (e.g. Graham & Worley 2008, and references the...
-
-? 
-! Misplaced alignment tab character &.
-l.558 ratios from 0 to ^^X3/4 (e.g. Graham &
-                                             Worley 2008, and references the...
-
-? 
-! Text line contains an invalid character.
-l.559 ...alaxies commonly display a range from ^^X
-                                                  3/4 to ^^X0.1 (Laurikainen...
-
-? 
-! Text line contains an invalid character.
-l.559 ...mmonly display a range from ^^X3/4 to ^^X
-                                                  0.1 (Laurikainen et al. 20...
-
-? 
-<Hubblegrid.pdf, id=695, 1445.4pt x 1024.82875pt>
+l.568 
+       <./mm.pdf>] <Hubblegrid.pdf, id=753, 2015.53pt x 1407.2575pt>
 File: Hubblegrid.pdf Graphic file (type pdf)
- <use Hubblegrid.pdf>
+
+<use Hubblegrid.pdf>
 Package pdftex.def Info: Hubblegrid.pdf used on input line 572.
-(pdftex.def)             Requested size: 240.0pt x 170.1528pt.
- [8pdfTeX warning (ext4): destination with the same identifier (name{figure.6})
- has been already used, duplicate ignored
+(pdftex.def)             Requested size: 240.0pt x 167.55376pt.
+
+Underfull \hbox (badness 1371) in paragraph at lines 580--602
+\OT1/cmr/bx/n/9 ies (slow ro-ta-tors) to disc-dominated lentic-u-lar
+ []
+
+[8pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) 
+has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.608 
+l.602 
        <./Hubblegrid.pdf>] (./ellicular.bbl
-Underfull \hbox (badness 2293) in paragraph at lines 364--368
+Underfull \hbox (badness 1194) in paragraph at lines 232--235
+\OT1/cmr/m/n/8 480, Struc-ture and Dy-nam-ics of Disk Galax-ies. p. 185
+ []
+
+[9]
+Underfull \hbox (badness 2293) in paragraph at lines 438--442
 []\OT1/cmr/m/n/8 Querejeta M., Eliche-Moral M. C., Tapia T., Bor-laff A.,
  []
 
+) [10]
 
-Underfull \vbox (badness 2111) has occurred while \output is active []
+Package natbib Warning: There were undefined citations.
 
- [9])
-[10
-
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 631.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 631.
- (./ellicular.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 631.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 631.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 626.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 626.
+(./ellicular.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 626.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 626.
 Package rerunfilecheck Info: File `ellicular.out' has not changed.
 (rerunfilecheck)             Checksum: 1309BB8EFCB1BF6FD3C0F2A695749949;681.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 631.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 626.
  ) 
 Here is how much of TeX's memory you used:
- 7310 strings out of 493488
- 105548 string characters out of 3141326
- 245459 words of memory out of 3000000
- 10385 multiletter control sequences out of 15000+200000
- 18791 words of font info for 67 fonts, out of 3000000 for 9000
+ 7561 strings out of 493488
+ 109493 string characters out of 3141326
+ 249933 words of memory out of 3000000
+ 10611 multiletter control sequences out of 15000+200000
+ 19104 words of font info for 68 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  36i,17n,34p,1120b,596s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
@@ -706,10 +695,10 @@ nts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2012/texmf-dist/font
 s/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2012/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2012/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmtt9.pfb>
-Output written on ellicular.pdf (10 pages, 4589315 bytes).
+Output written on ellicular.pdf (10 pages, 4893878 bytes).
 PDF statistics:
- 989 PDF objects out of 1000 (max. 8388607)
- 864 compressed objects within 9 object streams
- 134 named destinations out of 1000 (max. 500000)
+ 1098 PDF objects out of 1200 (max. 8388607)
+ 972 compressed objects within 10 object streams
+ 154 named destinations out of 1000 (max. 500000)
  149 words of extra memory for PDF output out of 10000 (max. 10000000)
 

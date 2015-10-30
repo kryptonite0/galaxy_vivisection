@@ -2,6 +2,11 @@ This is BibTeX, Version 0.99d (TeX Live 2012)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: ellicular.aux
 The style file: mnras.bst
+Case mismatch error between cite keys jedrzejewski1987inproceedings and Jedrzejewski1987INPROCEEDINGS
+---line 86 of file ellicular.aux
+ : \citation{jedrzejewski1987inproceedings
+ :                                        ,scorzabender1995}
+I'm skipping whatever remains of this command
 Database file #1: /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
 Repeated entry---line 122 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  : @article{carter1978
@@ -11,19 +16,19 @@ Repeated entry---line 1407 of file /Users/gsavorgnan/galaxy_vivisection/papers/S
  : @article{simiendevaucouleurs1986
  :                                 ,
 I'm skipping whatever remains of this entry
-You're missing a field part---line 2434 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+You're missing a field part---line 2499 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  :    volume = 
  :             ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3377 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+Repeated entry---line 3442 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  : @article{scorzabender1995
  :                          ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 8030 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+I was expecting a `,' or a `}'---line 8095 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  :      year = 2014
  :                 a,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 8049 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+I was expecting a `,' or a `}'---line 8114 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  :      year = 2014
  :                 b,
 I'm skipping whatever remains of this entry
@@ -31,47 +36,51 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--can't use both author and editor fields in graham2013review
 Warning--empty publisher in graham2013review
+Warning--empty publisher in hubble1936
 Warning--empty publisher in Jeans1919
+Warning--empty publisher in jeans1928
+Warning--empty publisher in sandage1961
 Warning--empty publisher in scorza1993
-You've used 93 entries,
+Warning--empty publisher in devaucouleurs1964
+You've used 113 entries,
             2881 wiz_defined-function locations,
-            1417 strings with 32052 characters,
-and the built_in function-call counts, 44224 in all, are:
-= -- 3531
-> -- 3210
-< -- 275
-+ -- 1451
-- -- 452
-* -- 5447
-:= -- 6993
+            1566 strings with 36712 characters,
+and the built_in function-call counts, 53717 in all, are:
+= -- 4252
+> -- 3867
+< -- 350
++ -- 1761
+- -- 533
+* -- 6568
+:= -- 8486
 add.period$ -- 0
-call.type$ -- 93
-change.case$ -- 186
-chr.to.int$ -- 90
-cite$ -- 97
-duplicate$ -- 2154
-empty$ -- 2219
-format.name$ -- 742
-if$ -- 7610
-int.to.chr$ -- 4
+call.type$ -- 113
+change.case$ -- 226
+chr.to.int$ -- 109
+cite$ -- 121
+duplicate$ -- 2648
+empty$ -- 2759
+format.name$ -- 885
+if$ -- 9264
+int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 95
-newline$ -- 293
-num.names$ -- 650
-pop$ -- 520
+missing$ -- 119
+newline$ -- 353
+num.names$ -- 796
+pop$ -- 674
 preamble$ -- 1
-purify$ -- 372
+purify$ -- 452
 quote$ -- 0
-skip$ -- 1288
+skip$ -- 1578
 stack$ -- 0
-substring$ -- 2418
-swap$ -- 1162
-text.length$ -- 385
+substring$ -- 2899
+swap$ -- 1417
+text.length$ -- 472
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 828
-warning$ -- 4
-while$ -- 714
+type$ -- 996
+warning$ -- 8
+while$ -- 867
 width$ -- 0
-write$ -- 940
-(There were 6 error messages)
+write$ -- 1138
+(There were 7 error messages)
