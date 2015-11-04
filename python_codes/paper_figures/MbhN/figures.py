@@ -113,7 +113,12 @@ def mag_sph_vs_n_maj():
 	ax.scatter(n[gal_id=='n0524'], mag_sph[gal_id=='n0524'], marker='x', color='darkorange', s=100, linewidth=3)
 	ax.scatter(n[gal_id=='n3998'], mag_sph[gal_id=='n3998'], marker='x', color='darkorange', s=100, linewidth=3)
 	
-	
+	#expected_mag_sph = -23.94 -7.08*(log_n-0.51)
+	#diff = mag_sph - expected_mag_sph
+	#twosout = gal_id[diff>2*1.16]
+	#threesout = gal_id[diff>3*1.16]
+	#print twosout, threesout
+
 	#######################################
 	### linear regressions
 	
@@ -559,8 +564,8 @@ def mag_sph_vs_n_maj():
         	yerr=[merr_mag_sph[simplemorphtype=='out'],perr_mag_sph[simplemorphtype=='out']],
         	ecolor='darkorange', marker='', ls=' ', elinewidth=1.2, capthick=1.2, barsabove=False)
        
-	#plt.show()
-	plt.savefig(path_paper_figures + 'mag_vs_n_maj.pdf', format='pdf', dpi=1000)
+	plt.show()
+	#plt.savefig(path_paper_figures + 'mag_vs_n_maj.pdf', format='pdf', dpi=1000)
 
 def mag_sph_vs_n_eq():
 	outliers = [u'n0524', u'n3998']
@@ -1177,6 +1182,12 @@ def mbh_vs_n_sph_maj():
 	ax.scatter(n[gal_id=='n0524'], mbh[gal_id=='n0524'], marker='x', color='darkorange', s=100, linewidth=3)
 	ax.scatter(n[gal_id=='n3998'], mbh[gal_id=='n3998'], marker='x', color='darkorange', s=100, linewidth=3)
 	
+	#expected_log_mbh = 8.18 + 3.39*(log_n - 0.51)
+	#diff = log_mbh - expected_log_mbh 
+	#twosout = gal_id[diff>2*0.58]
+	#threesout = gal_id[diff>3*0.58]
+	#print twosout, threesout
+
 	#################################################
        
         print 'all'
@@ -1561,8 +1572,8 @@ def mbh_vs_n_sph_maj():
         	ecolor='darkorange', marker='', ls=' ', elinewidth=1.2, capthick=1.2, barsabove=False)
        
 	
-        #plt.show()
-	plt.savefig(path_paper_figures + 'mbh_vs_n_maj.pdf', format='pdf', dpi=1000)
+        plt.show()
+	#plt.savefig(path_paper_figures + 'mbh_vs_n_maj.pdf', format='pdf', dpi=1000)
 
 def mbh_vs_n_sph_eq():
 	
@@ -1857,7 +1868,7 @@ def mbh_vs_n_sph_eq():
 def main():
 	mag_sph_vs_n_maj()
 	#mag_sph_vs_n_eq()
-	mbh_vs_n_sph_maj()
+	#mbh_vs_n_sph_maj()
 	#mbh_vs_n_sph_eq()
 	
 main()		

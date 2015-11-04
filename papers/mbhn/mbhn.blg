@@ -4,24 +4,25 @@ The top-level auxiliary file: mbhn.aux
 The style file: apj.bst
 Database file #1: mbhnNotes.bib
 Database file #2: /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
-You're missing a field part---line 2101 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+You're missing a field part---line 2499 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  :    volume = 
  :             ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 7697 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+I was expecting a `,' or a `}'---line 8095 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  :      year = 2014
  :                 a,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 7716 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+I was expecting a `,' or a `}'---line 8114 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  :      year = 2014
  :                 b,
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "graham2013"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty publisher in press1992
 Warning--empty publisher in sersic1968
 You've used 27 entries,
             3085 wiz_defined-function locations,
-            833 strings with 11376 characters,
+            834 strings with 11386 characters,
 and the built_in function-call counts, 13344 in all, are:
 = -- 1054
 > -- 1049

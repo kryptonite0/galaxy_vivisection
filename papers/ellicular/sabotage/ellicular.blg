@@ -1,0 +1,74 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: ellicular.aux
+The style file: mnras.bst
+Case mismatch error between cite keys jedrzejewski1987inproceedings and Jedrzejewski1987INPROCEEDINGS
+---line 72 of file ellicular.aux
+ : \citation{jedrzejewski1987inproceedings
+ :                                        ,scorzabender1995}
+I'm skipping whatever remains of this command
+Database file #1: /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+Repeated entry---line 122 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+ : @article{carter1978
+ :                    ,
+I'm skipping whatever remains of this entry
+You're missing a field part---line 2499 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+ :    volume = 
+ :             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3442 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+ : @article{scorzabender1995
+ :                          ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 8095 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+ :      year = 2014
+ :                 a,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 8114 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+ :      year = 2014
+ :                 b,
+I'm skipping whatever remains of this entry
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 82 entries,
+            2881 wiz_defined-function locations,
+            1343 strings with 30630 characters,
+and the built_in function-call counts, 39455 in all, are:
+= -- 3157
+> -- 2904
+< -- 228
++ -- 1294
+- -- 425
+* -- 4905
+:= -- 6221
+add.period$ -- 0
+call.type$ -- 82
+change.case$ -- 164
+chr.to.int$ -- 78
+cite$ -- 82
+duplicate$ -- 1901
+empty$ -- 1949
+format.name$ -- 683
+if$ -- 6799
+int.to.chr$ -- 5
+int.to.str$ -- 0
+missing$ -- 81
+newline$ -- 259
+num.names$ -- 576
+pop$ -- 441
+preamble$ -- 1
+purify$ -- 328
+quote$ -- 0
+skip$ -- 1133
+stack$ -- 0
+substring$ -- 2171
+swap$ -- 1048
+text.length$ -- 342
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 738
+warning$ -- 0
+while$ -- 628
+width$ -- 0
+write$ -- 832
+(There were 6 error messages)
