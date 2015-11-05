@@ -34,6 +34,10 @@
   {Magorrian}, {Pinkney}, {Richstone}, \& {Tremaine}}]{gebhardt2000}
 {Gebhardt}, K., {Bender}, R., {Bower}, G., {et~al.} 2000, \apjl, 539, L13
 
+\bibitem[{{Graham}(2013)}]{graham2013review}
+{Graham}, A.~W. 2013, {Elliptical and Disk Galaxy Structure and Modern Scaling
+  Laws}, ed. T.~D. {Oswalt} \& W.~C. {Keel}, 91
+
 \bibitem[{{Graham} \& {Driver}(2005)}]{grahamdriver2005}
 {Graham}, A.~W., \& {Driver}, S.~P. 2005, \pasa, 22, 118
 
@@ -44,6 +48,11 @@
   {Trujillo}}]{graham2001}
 {Graham}, A.~W., {Erwin}, P., {Caon}, N., \& {Trujillo}, I. 2001, \apjl, 563,
   L11
+
+\bibitem[{{Graham} {et~al.}(2003){Graham}, {Erwin}, {Trujillo}, \& {Asensio
+  Ramos}}]{graham2003coresersicmodel}
+{Graham}, A.~W., {Erwin}, P., {Trujillo}, I., \& {Asensio Ramos}, A. 2003, \aj,
+  125, 2951
 
 \bibitem[{{Graham} \& {Guzm{\'a}n}(2003)}]{grahamguzman2003}
 {Graham}, A.~W., \& {Guzm{\'a}n}, R. 2003, \aj, 125, 2936
@@ -110,6 +119,11 @@
   {Dressler}, {Faber}, {Filippenko}, {Green}, {Grillmair}, {Ho}, {Kormendy},
   {Lauer}, {Magorrian}, {Pinkney}, \& {Richstone}}]{tremaine2002}
 {Tremaine}, S., {Gebhardt}, K., {Bender}, R., {et~al.} 2002, \apj, 574, 740
+
+\bibitem[{{Trujillo} {et~al.}(2004){Trujillo}, {Erwin}, {Asensio Ramos}, \&
+  {Graham}}]{trujillo2004coresersicmodel}
+{Trujillo}, I., {Erwin}, P., {Asensio Ramos}, A., \& {Graham}, A.~W. 2004, \aj,
+  127, 1917
 
 \bibitem[{{Vika} {et~al.}(2012){Vika}, {Driver}, {Cameron}, {Kelvin}, \&
   {Robotham}}]{vika2012}
