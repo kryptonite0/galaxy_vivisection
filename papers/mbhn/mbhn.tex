@@ -18,12 +18,12 @@
 
 
 \shorttitle{Mbh-n paper}
-\shortauthors{Savorgnan et al.}
+\shortauthors{Savorgnan \& Graham}
 
 \begin{document}
 
 
-\title{Mbh-n paper}
+\title{Supermassive black holes and their host spheroids \\ III. Mbh-n paper}
 
 
 \author{G. A. D. Savorgnan\altaffilmark{1} and A. W. Graham\altaffilmark{1}}
@@ -105,7 +105,7 @@ This paper (\emph{Paper III}) is structured as follows...
 
 \section{Data}
 We populated the $L_{\rm sph} - n_{\rm sph}$ and $M_{\rm BH} - n_{\rm sph}$ diagrams 
-with the same galaxy sample (Table \ref{tab:sample}) used in \emph{Paper II}, 
+with the same galaxy sample used in \emph{Paper II} (and presented here in Table \ref{tab:sample}), 
 i.e.~66 galaxies for which a dynamical measurement of the black hole mass has been reported in the literature 
 (by \citealt{grahamscott2013} or \citealt{rusli2013}) 
 and for which we were able to successfully model the light distribution and measure the spheroid structural parameters 
@@ -142,6 +142,7 @@ whereas the two galaxies classified as S0/Sp and the two galaxies classified as 
 \input{table_sample.tex}
 
 \section{Analysis and results}
+\label{sec:anal}
 As in \emph{Paper II}, a linear regression analysis of the $L_{\rm sph} - n_{\rm sph}$ 
 (Table \ref{tab:lregLn} and Figure \ref{fig:magn})
 and $M_{\rm BH} - n_{\rm sph}$ (Table \ref{tab:lregMn} and Figure \ref{fig:mbhn}) diagrams 
@@ -159,7 +160,7 @@ We searched for extreme outliers in both the $L_{\rm sph} - n_{\rm sph}$ and $M_
 and found that in our $L_{\rm sph} - n_{\rm sph}$ plot there are no $3\sigma$ outliers, 
 whereas in our $M_{\rm BH} - n_{\rm sph}$ plot 
 the S0 galaxies NGC 0524 and NGC 3998 reside more than $3\sigma$ from the bisector linear regression for all galaxies. 
-These two galaxies have therefore been excluded from the rest of the analysis. \\
+These two galaxies have therefore been excluded from the rest of the analysis. {\bf mergers are excluded?? 62??} \\
 {\bf fitexy does better job, we report that} \\
 
 
@@ -177,7 +178,7 @@ It is also worth mentioning that,
 although the K-band luminosities of the bulges of disk galaxies had been corrected for internal dust absorption, 
 {\bf the dust corrections are not precise today refs??, imagine at the time.....}  
 Here we re-investigate the $L_{\rm sph} - n_{\rm sph}$ diagram with our high-quality dataset  
-derived from state-of-the-art multicomponent galaxy decompositions, 
+derived from state-of-the-art multicomponent decompositions, 
 that were performed in a consistent manner 
 and using the $3.6\rm~\mu m$ band, which is less affected by dust extinction than the K-band. \\
 \cite{graham2013review} presented a single $L_{\rm sph} - n_{\rm sph}$ correlation for the bulges of disk galaxies (S0+Sp).
@@ -199,7 +200,8 @@ whereas the combination of lenticular and spiral galaxies do not.
 \caption{Spheroid absolute magnitude (at $3.6\rm~\mu m$) plotted against spheroid S\'ersic index 
 measured along the galaxy major-axis. 
 Symbols are coded according to the galaxy morphological type (see legend).
-{\bf crosses outliers!} 
+The orange crosses denote two lenticular galaxies (NGC 0524 and NGC 3998) which were excluded from the linear regression analysis 
+(see Section \ref{sec:anal}). 
 The red dashed line indicates the FITEXY bisector linear regression for the $45-2=43$  early-type galaxies (E+S0), 
 with the red shaded area denoting its $1\sigma$ uncertainty. 
 The shallower blue solid line shows the FITEXY bisector linear regression for the bulges of the 17 late-type (Sp) galaxies, 
@@ -215,9 +217,9 @@ where the error bars have the same color coding as the symbols in the main figur
 \cite{grahamscott2013} presented two different $M_{\rm BH} - L_{\rm sph}$ relations for S\'ersic and core-S\'ersic 
 spheroids\footnote{Core-S\'ersic spheroids have partially depleted cores relative to their outer S\'ersic light profile, 
 whereas S\'ersic spheroids have no central deficit of stars. } \citep{graham2003coresersicmodel,trujillo2004coresersicmodel}.
-However, in \emph{Paper II} we found that the slopes of the correlations for S\'ersic and core-S\'ersic spheroids 
+However, in \emph{Paper II} we found that the slopes of the $M_{\rm BH} - L_{\rm sph}$ correlations for S\'ersic and core-S\'ersic spheroids 
 are consistent with each other within their $1\sigma$ uncertainties, 
-which prevents us from considering them as two separate correlations. 
+which prevents us from considering them as two separate sequences. 
 On the other hand, our analysis showed that early- and late-type galaxies follow two different $M_{\rm BH} - L_{\rm sph}$ relations 
 ($M_{\rm BH} \propto L_{\rm sph}^{1.00 \pm 0.10}$ 
 and $M_{\rm BH} \propto L_{\rm sph}^{2.88 \pm 0.68}$, respectively). \\
@@ -225,7 +227,7 @@ Given that early- and late-type galaxies define two separate sequences in both t
 and $M_{\rm BH} - L_{\rm sph}$ diagrams, 
 we investigate substructure in the $M_{\rm BH} - n_{\rm sph}$ diagram. 
 Using the results from the modified FITEXY routine, 
-we report that 
+we find that 
 early-type galaxies follow $M_{\rm BH} \propto n_{\rm sph}^{3.58 \pm 0.27}$, 
 while late-type galaxies follow $M_{\rm BH} \propto n_{\rm sph}^{4.55 \pm 0.66}$. 
 The Bayesian estimator {\tt linmix\_err} returns consistent results: 
@@ -236,13 +238,13 @@ are consistent with each other within their $1\sigma$ uncertainties\footnote{In 
 considering the results of the modified FITEXY routine, 
 the slopes of the relations for early- and late-type galaxies 
 are only marginally consistent with each other within their $1\sigma$ uncertainties. 
-However, the slopes obtained with Bayesian estimator {\tt linmix\_err} 
-are fully consistent with each other within their $1\sigma$ uncertainties. }
-Our analysis shows that the early- and late-type galaxies do not define two separate trends in the $M_{\rm BH} - n_{\rm sph}$ diagram, 
-i.e.~we do not identify any significant substructure based on the galaxy morphological type. 
+However, the same slopes obtained with Bayesian estimator {\tt linmix\_err} 
+are fully consistent with each other within their $1\sigma$ uncertainties. }.
+Our analysis shows that the early- and late-type galaxies do not follow two separate trends in the $M_{\rm BH} - n_{\rm sph}$ diagram, 
+i.e.~we do not identify any significant substructure based on the galaxy morphological type. \\
 The symmetrical linear regression for all galaxies obtained with the modified FITEXY routine is: 
 \begin{equation}
-\log \biggl( \frac{M_{\rm BH}}{\rm M_\odot} \biggr) = (8.18 \pm 0.06) + (3.39 \pm 0.15) \bigl(\log n_{\rm sph} - 0.51 \bigr) .
+\log \biggl( \frac{M_{\rm BH}}{\rm M_\odot} \biggr) = (8.18 \pm 0.06) + (3.39 \pm 0.15) \bigl(\log n_{\rm sph}^{\rm maj} - 0.51 \bigr) .
 \end{equation}
 
 
@@ -251,7 +253,8 @@ The symmetrical linear regression for all galaxies obtained with the modified FI
 \includegraphics[width=\columnwidth]{images/mbh_vs_n_maj.pdf}
 \caption{Black hole mass plotted against spheroid S\'ersic index measured along the galaxy major-axis. 
 Symbols are coded according to the galaxy morphological type (see legend). 
-{\bf crosses outliers!} 
+The orange crosses denote two lenticular galaxies (NGC 0524 and NGC 3998) which were excluded from the linear regression analysis 
+(see Section \ref{sec:anal}). 
 The red dashed line indicates the FITEXY bisector linear regression for the $45-2=43$  early-type galaxies (E+S0), 
 with the red shaded area denoting its $1\sigma$ uncertainty. 
 The shallower blue solid line shows the FITEXY bisector linear regression for the bulges of the 17 late-type (Sp) galaxies, 
@@ -264,9 +267,28 @@ where the error bars have the same color coding as the symbols in the main figur
 \end{center}
 \end{figure}
 
-\section{Discussion and conclusions}
+\section{Discussion and conclusions} 
+We have seen that the early- and late-type galaxies in the $M_{\rm BH} - n_{\rm sph}$ diagram can be fit with a single power-law, 
+whereas they follow two separate correlations in the $M_{\rm BH} - L_{\rm sph}$ diagram (\emph{Paper II}). 
+We now want to compare the amount of scatter among these two plots. 
+When considering all galaxies, irrespective of their morphological type, 
+the intrinsic scatter of the $M_{\rm BH} - n_{\rm sph}$ relation is smaller than that of the $M_{\rm BH} - L_{\rm sph}$ relation. 
+However, because of the different nature of the $M_{\rm BH} - n_{\rm sph}$ and $M_{\rm BH} - L_{\rm sph}$ correlations 
+(single and double power-law, respectively),  
+we are not comparing apples with apples. 
+One can obtain more informative results by considering early- and late-type galaxies separately. 
+For early-type galaxies only, the intrinsic scatter of the $M_{\rm BH} - n_{\rm sph}$ relation is consistent\footnote{Looking 
+at the results obtained with the modified FITEXY routine, 
+the values of the intrisic scatter are only marginally consistent with each other, 
+but looking at the results obtained with the Bayesian estimator {\tt linmix\_err}, 
+the values of the intrisic scatter are fully consistent with each other. } with  
+that of the $M_{\rm BH} - L_{\rm sph}$ relation (within their $1\sigma$ uncertainties). 
+For late-type galaxies only, the intrinsic scatter of the $M_{\rm BH} - n_{\rm sph}$ relation is consistent with 
+that of the $M_{\rm BH} - L_{\rm sph}$ relation, 
+{\bf except fitexy xy}. 
 
-intr scatter of correlation for all?\\
+
+
 data suggest that m-n more fundamental than l-n or m-l woooooh? \\
 
 
@@ -277,10 +299,10 @@ data suggest that m-n more fundamental than l-n or m-l woooooh? \\
 \begin{tabular}{llccccc}
 \tableline
 \tableline
-{\bf Subsample (size)} & {\bf Regression} & $\boldsymbol \alpha$ & $\boldsymbol \beta$ & $\boldsymbol \langle \log n_{\rm sph} \rangle$ & $\boldsymbol \epsilon$ & $\boldsymbol \Delta$ \\ 
+{\bf Subsample (size)} & {\bf Regression} & $\boldsymbol \alpha$ & $\boldsymbol \beta$ & $\boldsymbol \langle \log n_{\rm sph}^{\rm maj} \rangle$ & $\boldsymbol \epsilon$ & $\boldsymbol \Delta$ \\ 
 \tableline 
 \\
- & \multicolumn{6}{l}{$MAG_{\rm sph}/{\rm [mag]} = \alpha + \beta \bigl(\log n_{\rm sph} - \langle \log n_{\rm sph,maj} \rangle \bigr)$} \\ [0.5em]
+ & \multicolumn{6}{l}{$MAG_{\rm sph}/{\rm [mag]} = \alpha + \beta \bigl(\log n_{\rm sph}^{\rm maj} - \langle \log n_{\rm sph}^{\rm maj} \rangle \bigr)$} \\ [0.5em]
 All (62)               & BCES $(Y|X)$               & $-23.88 \pm 0.15$ & $-7.17 \pm 0.80$ & $0.51$ & $-$ & $1.18$ \\
                        & mFITEXY $(Y|X)$            & $-23.95 \pm 0.13$ & $-6.70 \pm 0.45$ & $0.51$ & $0.56^{+0.15}_{-0.10}$ & $0.98$ \\
                        & {\tt linmix\_err} $(Y|X)$  & $-23.92 \pm 0.15$ & $-6.40 \pm 0.57$ & $0.51$ & $0.74 \pm 0.13$ & $1.07$ \\ [0.5em]
@@ -332,7 +354,7 @@ Spiral (Sp) (17)       & BCES $(Y|X)$		    & $-22.33 \pm 0.26$ & $-5.31 \pm 5.83
 \begin{tabular}{llccccc}
 \tableline
 \tableline
-{\bf Subsample (size)} & {\bf Regression} & $\boldsymbol \alpha$ & $\boldsymbol \beta$ & $\boldsymbol \langle \log n_{\rm sph} \rangle$ & $\boldsymbol \epsilon$ & $\boldsymbol \Delta$ \\ 
+{\bf Subsample (size)} & {\bf Regression} & $\boldsymbol \alpha$ & $\boldsymbol \beta$ & $\boldsymbol \langle \log n_{\rm sph}^{\rm maj} \rangle$ & $\boldsymbol \epsilon$ & $\boldsymbol \Delta$ \\ 
 \tableline 
 \\
 Early-type (E+S0) (43) & BCES $(Y|X)$		    & $-24.55 \pm 0.22$ & $-11.84 \pm 2.29$ & $0.64$ & $-$ & $1.50$ \\
@@ -465,10 +487,10 @@ Both the early- and late-type subsamples do not contain the two galaxies classif
 \begin{tabular}{llccccc}
 \tableline
 \tableline
-{\bf Subsample (size)} & {\bf Regression} & $\boldsymbol \alpha$ & $\boldsymbol \beta$ & $\boldsymbol \langle \log n_{\rm sph} \rangle$ & $\boldsymbol \epsilon$ & $\boldsymbol \Delta$ \\ 
+{\bf Subsample (size)} & {\bf Regression} & $\boldsymbol \alpha$ & $\boldsymbol \beta$ & $\boldsymbol \langle \log n_{\rm sph}^{\rm maj} \rangle$ & $\boldsymbol \epsilon$ & $\boldsymbol \Delta$ \\ 
 \tableline 
 \\
- & \multicolumn{6}{l}{$\log \bigl( M_{\rm BH}/{\rm [M_\odot]} \bigr) = \alpha + \beta \bigl(\log n_{\rm sph} - \langle \log n_{\rm sph} \rangle \bigr)$} \\ [0.5em]
+ & \multicolumn{6}{l}{$\log \bigl( M_{\rm BH}/{\rm [M_\odot]} \bigr) = \alpha + \beta \bigl(\log n_{\rm sph}^{\rm maj} - \langle \log n_{\rm sph}^{\rm maj} \rangle \bigr)$} \\ [0.5em]
  All (62)		& BCES $(Y|X)$  	     & $8.14 \pm 0.08$ & $3.56 \pm 0.38$ & $0.51$ & $-$ & $0.60$ \\
  			& mFITEXY $(Y|X)$	     & $8.18 \pm 0.06$ & $3.27 \pm 0.21$ & $0.51$ & $0.22^{+0.10}_{-0.07}$ & $0.45$ \\
  			& {\tt linmix\_err} $(Y|X)$  & $8.17 \pm 0.06$ & $3.17 \pm 0.24$ & $0.51$ & $0.29 \pm 0.07$ & $0.56$ \\ [0.5em]
@@ -528,6 +550,40 @@ In the last two columns, we report $\epsilon$, the intrinsic scatter, and $\Delt
 all - mergers - outliers
 Both the early- and late-type subsamples do not contain the two galaxies classified as S0/Sp and the two galaxies classified as mergers (45+17=66-2-2).  }
 \end{table*}
+
+
+  \begin{table*}
+  \centering
+  \caption{Intrinsic scatter of the $M_{\rm BH} - n_{\rm sph}$ and $M_{\rm BH} - L_{\rm sph}$ relations.}
+  \begin{tabular}{llccr}
+  \tableline
+  \tableline
+  {\bf Subsample} & {\bf Regression} & $\boldsymbol \epsilon$ {\bf for} $\boldsymbol M_{\rm BH} - n_{\rm sph}$ & 
+  $\boldsymbol \epsilon$ {\bf for} $\boldsymbol M_{\rm BH} - L_{\rm sph}$ & \\ 
+  \tableline 
+  \\
+  All		  & mFITEXY $(Y|X)$	      & $0.22^{+0.10}_{-0.07}$ & $0.49^{+0.06}_{-0.05}$ & non consist. \\
+ 		  & {\tt linmix\_err} $(Y|X)$ & $0.29 \pm 0.07$ & $0.51 \pm 0.06$               & non consist. \\
+ 		  & mFITEXY $(X|Y)$	      & $0.23^{+0.10}_{-0.07}$ & $0.58^{+0.07}_{-0.06}$ & non consist. \\
+ 		  & {\tt linmix\_err} $(X|Y)$ & $0.30 \pm 0.07$ & $0.60 \pm 0.09$               & non consist. \\ [0.5em]
+  
+  Early-type	  & mFITEXY $(Y|X)$	      & $0.24^{+0.10}_{-0.07}$ & $0.40^{+0.06}_{-0.05}$ & marg. consist. \\
+ 		  & {\tt linmix\_err} $(Y|X)$ & $0.32 \pm 0.08$ & $0.41 \pm 0.06$               & consist. \\
+ 		  & mFITEXY $(X|Y)$	      & $0.26^{+0.11}_{-0.08}$ & $0.49^{+0.08}_{-0.06}$ & marg. consist. \\
+ 		  & {\tt linmix\_err} $(X|Y)$ & $0.35 \pm 0.10$ & $0.51 \pm 0.10$               & consist. \\ [0.5em]
+  
+  Late-type	  & mFITEXY $(Y|X)$	      & $0.13^{+0.42}_{-0.13}$ & $0.55^{+0.15}_{-0.10}$ & consist. \\
+ 		  & {\tt linmix\_err} $(Y|X)$ & $0.39 \pm 0.19$ & $0.63 \pm 0.16$               & consist. \\
+ 		  & mFITEXY $(X|Y)$	      & $0.13^{+0.43}_{-0.13}$ & $1.09^{+0.41}_{-0.24}$ & non consist.\\
+ 		  & {\tt linmix\_err} $(X|Y)$ & $0.45 \pm 0.31$ & $1.31 \pm 0.97$               & consist. \\ [0.5em]
+  
+  \tableline 
+  \tableline
+  \end{tabular}
+  \label{tab:intsc} 
+  \tablecomments{  }
+  \end{table*}
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
