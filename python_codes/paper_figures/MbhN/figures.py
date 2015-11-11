@@ -82,7 +82,7 @@ def mag_sph_vs_n_maj():
 	
 	all = mag_sph*[0] + 1
 	all[simplemorphtype=='out'] = 0
-	all[simplemorphtype=='merger'] = 0
+	#all[simplemorphtype=='merger'] = 0
 	
 	# build figure
 	
@@ -617,7 +617,7 @@ def mag_sph_vs_n_eq():
 	
 	all = mag_sph*[0] + 1
 	all[simplemorphtype=='out'] = 0
-	all[simplemorphtype=='merger'] = 0
+	#all[simplemorphtype=='merger'] = 0
 	
 	# build figure
 	
@@ -1145,7 +1145,7 @@ def mbh_vs_n_sph_maj():
         earlytype[simplemorphtype=='E/S0'] = 1
 	
 	all = mbh*[0] + 1
-	all[simplemorphtype=='merger'] = 0
+	#all[simplemorphtype=='merger'] = 0
         all[gal_id=='n0524'] = 0
 	all[gal_id=='n3998'] = 0
 	
@@ -1868,7 +1868,7 @@ def mbh_vs_n_sph_eq():
 def main():
 	mag_sph_vs_n_maj()
 	#mag_sph_vs_n_eq()
-	#mbh_vs_n_sph_maj()
+	mbh_vs_n_sph_maj()
 	#mbh_vs_n_sph_eq()
 	
 main()		

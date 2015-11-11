@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  6 NOV 2015 16:56
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  9 NOV 2015 19:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -500,144 +500,121 @@ LaTeX Info: Redefining \nameref on input line 23.
 Class revtex4-1 Info: Taking \maketitle back from hyperref on input line 23.
 \openout3 = `mbhnNotes.bib'.
 
-LaTeX Font Info:    Try loading font information for U+lasy on input line 42.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 35.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 42.
+LaTeX Font Info:    Try loading font information for U+msa on input line 35.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 42.
+LaTeX Font Info:    Try loading font information for U+msb on input line 35.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 42.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 35.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <5> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 42.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 35.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <9> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 42.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 61.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 42.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 61.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 42.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 61.
  [1{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./t
 able_sample.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 146--165
 
- []
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 185.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 167.
+(hyperref)                removing `subscript' on input line 185.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 167.
+(hyperref)                removing `subscript' on input line 185.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 167.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 167.
-
-<images/mag_vs_n_maj.pdf, id=182, 578.16pt x 433.62pt>
-File: images/mag_vs_n_maj.pdf Graphic file (type pdf)
-
-<use images/mag_vs_n_maj.pdf>
-Package pdftex.def Info: images/mag_vs_n_maj.pdf used on input line 199.
-(pdftex.def)             Requested size: 245.26653pt x 183.94531pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 216.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 216.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 216.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 216.
+(hyperref)                removing `math shift' on input line 185.
 
 [2] [3]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 246.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 212.
 
-[4]
+[4] <images/mag_vs_n_maj.pdf, id=222, 578.16pt x 433.62pt>
+File: images/mag_vs_n_maj.pdf Graphic file (type pdf)
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 246.
+<use images/mag_vs_n_maj.pdf>
+Package pdftex.def Info: images/mag_vs_n_maj.pdf used on input line 217.
+(pdftex.def)             Requested size: 245.26653pt x 183.94531pt.
 
 
-Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 234.
 
 
-Overfull \hbox (3.5183pt too wide) detected at line 248
-[] [][][][] \OT1/cmr/m/n/10 = (8\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 18 \OMS/cmsy/
-m/n/10 ^^F \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 06) + (3\OML/cmm/
-m/it/10 :\OT1/cmr/m/n/10 39 \OMS/cmsy/m/n/10 ^^F \OT1/cmr/m/n/10 0\OML/cmm/m/it
-/10 :\OT1/cmr/m/n/10 15)[][] \OML/cmm/m/it/10 n[] \OMS/cmsy/m/n/10 ^^@ \OT1/cmr
-/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 51[]\OML/cmm/m/it/10 :
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 234.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 234.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 234.
+
+
+Overfull \hbox (1.85167pt too wide) detected at line 266
+[][][][] \OT1/cmr/m/n/10 = (8\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 15 \OMS/cmsy/m/n
+/10 ^^F \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 06) + (3\OML/cmm/m/i
+t/10 :\OT1/cmr/m/n/10 37 \OMS/cmsy/m/n/10 ^^F \OT1/cmr/m/n/10 0\OML/cmm/m/it/10
+ :\OT1/cmr/m/n/10 15)[][] \OML/cmm/m/it/10 n[] \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/
+n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 50[]\OML/cmm/m/it/10 :
  []
 
-<images/mbh_vs_n_maj.pdf, id=233, 578.16pt x 433.62pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 266--268
+
+ []
+
+[5 <./images/mag_vs_n_maj.pdf>]
+<images/mbh_vs_n_maj.pdf, id=493, 578.16pt x 433.62pt>
 File: images/mbh_vs_n_maj.pdf Graphic file (type pdf)
 
 <use images/mbh_vs_n_maj.pdf>
-Package pdftex.def Info: images/mbh_vs_n_maj.pdf used on input line 253.
+Package pdftex.def Info: images/mbh_vs_n_maj.pdf used on input line 300.
 (pdftex.def)             Requested size: 245.26653pt x 183.94531pt.
- [5 <./images/mag_vs_n_maj.pdf> <./images/mbh_vs_n_maj.pdf
+ (./mbhn.bbl [6 <./images/mbh_vs_n_maj.pdf>])
+[7] [8]
 
-pdfTeX warning: pdflatex (file ./images/mbh_vs_n_maj.pdf): PDF inclusion: multi
-ple pdfs with page group included in a single page
->]
-Underfull \hbox (badness 10000) in paragraph at lines 292--293
-
- []
-
-(./mbhn.bbl) [6] [7]
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 606.
-
-
-Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
-
-[8]
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 606.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 639.
 
 
 Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
 
 [9]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 608.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 641.
  (./mbhn.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 608.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 608.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 641.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 641.
 Package rerunfilecheck Info: File `mbhn.out' has not changed.
-(rerunfilecheck)             Checksum: A0FA1C5BB6DBAB30EFF62D5065ABF435;375.
+(rerunfilecheck)             Checksum: 4F061DE0309DBA7ED1D03156FE9DD4A1;360.
  ) 
 Here is how much of TeX's memory you used:
- 8477 strings out of 493488
- 117585 string characters out of 3141326
- 292160 words of memory out of 3000000
- 11592 multiletter control sequences out of 15000+200000
+ 8476 strings out of 493488
+ 117577 string characters out of 3141326
+ 281394 words of memory out of 3000000
+ 11593 multiletter control sequences out of 15000+200000
  18535 words of font info for 73 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 42i,14n,31p,1087b,384s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,14n,31p,1087b,529s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy
 8.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10
 .pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.p
@@ -674,10 +651,10 @@ t/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2012/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2012/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2012/texmf-dist/fon
 ts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on mbhn.pdf (9 pages, 2558486 bytes).
+Output written on mbhn.pdf (9 pages, 2562475 bytes).
 PDF statistics:
- 863 PDF objects out of 1000 (max. 8388607)
- 379 compressed objects within 4 object streams
- 61 named destinations out of 1000 (max. 500000)
+ 864 PDF objects out of 1000 (max. 8388607)
+ 380 compressed objects within 4 object streams
+ 59 named destinations out of 1000 (max. 500000)
  67 words of extra memory for PDF output out of 10000 (max. 10000000)
 
