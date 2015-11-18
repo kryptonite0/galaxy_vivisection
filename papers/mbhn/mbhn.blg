@@ -4,62 +4,60 @@ The top-level auxiliary file: mbhn.aux
 The style file: apj.bst
 Database file #1: mbhnNotes.bib
 Database file #2: /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
-You're missing a field part---line 2499 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+You're missing a field part---line 2593 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  :    volume = 
  :             ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 8095 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+I was expecting a `,' or a `}'---line 8189 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  :      year = 2014
  :                 a,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 8114 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+I was expecting a `,' or a `}'---line 8208 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  :      year = 2014
  :                 b,
 I'm skipping whatever remains of this entry
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Warning--can't use both author and editor fields in graham2013review
-Warning--empty publisher in graham2013review
 Warning--empty publisher in press1992
 Warning--empty publisher in sersic1968
-You've used 30 entries,
+You've used 36 entries,
             3085 wiz_defined-function locations,
-            854 strings with 12092 characters,
-and the built_in function-call counts, 14793 in all, are:
-= -- 1176
-> -- 1144
-< -- 13
-+ -- 381
-- -- 409
-* -- 1282
-:= -- 2820
-add.period$ -- 30
-call.type$ -- 30
-change.case$ -- 198
-chr.to.int$ -- 30
-cite$ -- 34
-duplicate$ -- 562
-empty$ -- 868
-format.name$ -- 450
-if$ -- 2915
+            897 strings with 13166 characters,
+and the built_in function-call counts, 17571 in all, are:
+= -- 1425
+> -- 1313
+< -- 17
++ -- 436
+- -- 467
+* -- 1509
+:= -- 3317
+add.period$ -- 36
+call.type$ -- 36
+change.case$ -- 237
+chr.to.int$ -- 36
+cite$ -- 38
+duplicate$ -- 690
+empty$ -- 1045
+format.name$ -- 522
+if$ -- 3481
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 30
-newline$ -- 94
-num.names$ -- 121
-pop$ -- 219
+missing$ -- 34
+newline$ -- 112
+num.names$ -- 146
+pop$ -- 265
 preamble$ -- 1
-purify$ -- 198
+purify$ -- 237
 quote$ -- 0
-skip$ -- 484
+skip$ -- 588
 stack$ -- 0
-substring$ -- 619
-swap$ -- 5
-text.length$ -- 0
+substring$ -- 747
+swap$ -- 14
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 261
-warning$ -- 4
-while$ -- 113
+type$ -- 318
+warning$ -- 2
+while$ -- 138
 width$ -- 0
-write$ -- 301
+write$ -- 361
 (There were 3 error messages)

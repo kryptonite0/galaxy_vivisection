@@ -63,6 +63,36 @@ def make_alister_table1():
         f.close()
        
         ############################
+
+def make_shankar_table():
+        connection = sql3.connect(dbname)
+        cur = connection.cursor()
+       
+        getdata_query = 'SELECT anc.gal_id, \
+		physres.log_r_e_maj_moffat_comb, physres.log_r_e_eq_moffat_comb, errV.perr_log_r_e, errV.merr_log_r_e \
+		FROM Ancillary AS anc \
+		JOIN OneDFitResultsPhysicalUnits AS physres ON anc.gal_id = physres.gal_id \
+		JOIN ErrorsVote as errV ON anc.gal_id = errV.gal_id \
+		WHERE anc.fit1D_done = 1;'
+	
+	cur.execute(getdata_query)
+	datalist = cur.fetchall()
+	data= np.asarray(datalist).transpose()
+	#print data
+	gal_id = data[0]
+	log_r_e_maj = data[1].astype(np.float)
+	log_r_e_eq = data[2].astype(np.float)
+	perr_log_r_e = data[3].astype(np.float)
+	merr_log_r_e = data[4].astype(np.float)
+	
+        fName = path_tables + 'r_e_maj-r_e_eq.dat'
+        f = open(fName, 'w')
+        f.write('# galaxy   log_r_e_maj [log(kpc)]   log_r_e_eq [log(kpc)]   perr_log_r_e   merr_log_r_e   \n')
+        for g, a,b,c,d in zip(gal_id, log_r_e_maj, log_r_e_eq, perr_log_r_e, merr_log_r_e):
+        	f.write(str(g) + '     ' + str(a) + '     ' + str(b) + '     ' + str(c) + '     ' + str(d)  + '\n')
+        f.close()
+       
+        ############################
 	
 
 def make_BHFP_data_table():
@@ -215,5 +245,6 @@ def make_BHFP_data_table():
         fi.close()
 
 	
-make_alister_table1()	
-make_BHFP_data_table()	
+#make_alister_table1()	
+#make_BHFP_data_table()	
+make_shankar_table()

@@ -4,6 +4,11 @@
 \bibitem[{{Akritas} \& {Bershady}(1996)}]{akritasbershady1996}
 {Akritas}, M.~G., \& {Bershady}, M.~A. 1996, \apj, 470, 706
 
+\bibitem[{{Andredakis} {et~al.}(1995){Andredakis}, {Peletier}, \&
+  {Balcells}}]{andredakis1995}
+{Andredakis}, Y.~C., {Peletier}, R.~F., \& {Balcells}, M. 1995, \mnras, 275,
+  874
+
 \bibitem[{{Arnold} {et~al.}(2014){Arnold}, {Romanowsky}, {Brodie}, {Forbes},
   {Strader}, {Spitler}, {Foster}, {Blom}, {Kartha}, {Pastorello}, {Pota},
   {Usher}, \& {Woodley}}]{arnold2014}
@@ -14,6 +19,9 @@
   {Zhu}}]{beifiori2012}
 {Beifiori}, A., {Courteau}, S., {Corsini}, E.~M., \& {Zhu}, Y. 2012, \mnras,
   419, 2497
+
+\bibitem[{{Caon} {et~al.}(1993){Caon}, {Capaccioli}, \& {D'Onofrio}}]{caon1993}
+{Caon}, N., {Capaccioli}, M., \& {D'Onofrio}, M. 1993, \mnras, 265, 1013
 
 \bibitem[{{Cen}(2014)}]{cen2014}
 {Cen}, R. 2014, \apjl, 790, L24
@@ -34,20 +42,14 @@
   {Magorrian}, {Pinkney}, {Richstone}, \& {Tremaine}}]{gebhardt2000}
 {Gebhardt}, K., {Bender}, R., {Bower}, G., {et~al.} 2000, \apjl, 539, L13
 
-\bibitem[{{Graham}(2013)}]{graham2013review}
-{Graham}, A.~W. 2013, {Elliptical and Disk Galaxy Structure and Modern Scaling
-  Laws}, ed. T.~D. {Oswalt} \& W.~C. {Keel}, 91
+\bibitem[{{Graham}(2001)}]{graham2001bulges}
+{Graham}, A.~W. 2001, \aj, 121, 820
 
 \bibitem[{{Graham} \& {Driver}(2005)}]{grahamdriver2005}
 {Graham}, A.~W., \& {Driver}, S.~P. 2005, \pasa, 22, 118
 
 \bibitem[{{Graham} \& {Driver}(2007)}]{grahamdriver2007}
 ---. 2007, \apj, 655, 77
-
-\bibitem[{{Graham} {et~al.}(2001){Graham}, {Erwin}, {Caon}, \&
-  {Trujillo}}]{graham2001}
-{Graham}, A.~W., {Erwin}, P., {Caon}, N., \& {Trujillo}, I. 2001, \apjl, 563,
-  L11
 
 \bibitem[{{Graham} {et~al.}(2003){Graham}, {Erwin}, {Trujillo}, \& {Asensio
   Ramos}}]{graham2003coresersicmodel}
@@ -60,12 +62,33 @@
 \bibitem[{{Graham} \& {Scott}(2013)}]{grahamscott2013}
 {Graham}, A.~W., \& {Scott}, N. 2013, \apj, 764, 151
 
+\bibitem[{{Graham} \& {Worley}(2008)}]{grahamworley2008}
+{Graham}, A.~W., \& {Worley}, C.~C. 2008, \mnras, 388, 1708
+
+\bibitem[{{Iodice} {et~al.}(1997){Iodice}, {D'Onofrio}, \&
+  {Capaccioli}}]{iodice1997}
+{Iodice}, E., {D'Onofrio}, M., \& {Capaccioli}, M. 1997, in Astronomical
+  Society of the Pacific Conference Series, Vol. 116, The Nature of Elliptical
+  Galaxies; 2nd Stromlo Symposium, ed. M.~{Arnaboldi}, G.~S. {Da Costa}, \&
+  P.~{Saha}, 84
+
+\bibitem[{{Iodice} {et~al.}(1999){Iodice}, {D'Onofrio}, \&
+  {Capaccioli}}]{iodice1999}
+{Iodice}, E., {D'Onofrio}, M., \& {Capaccioli}, M. 1999, in Astronomical
+  Society of the Pacific Conference Series, Vol. 176, Observational Cosmology:
+  The Development of Galaxy Systems, ed. G.~{Giuricin}, M.~{Mezzetti}, \&
+  P.~{Salucci}, 402
+
 \bibitem[{{Jerjen} {et~al.}(2000){Jerjen}, {Binggeli}, \&
   {Freeman}}]{jerjen2000}
 {Jerjen}, H., {Binggeli}, B., \& {Freeman}, K.~C. 2000, \aj, 119, 593
 
 \bibitem[{{Kelly}(2007)}]{linmixerr}
 {Kelly}, B.~C. 2007, \apj, 665, 1489
+
+\bibitem[{{Khosroshahi} {et~al.}(2000){Khosroshahi}, {Wadadekar}, \&
+  {Kembhavi}}]{khosroshahi2000}
+{Khosroshahi}, H.~G., {Wadadekar}, Y., \& {Kembhavi}, A. 2000, \apj, 533, 162
 
 \bibitem[{{Magorrian} {et~al.}(1998){Magorrian}, {Tremaine}, {Richstone},
   {Bender}, {Bower}, {Dressler}, {Faber}, {Gebhardt}, {Green}, {Grillmair},
@@ -98,6 +121,9 @@
   {Graham}, \& {Pimbblet}}]{scott2014}
 {Scott}, N., {Davies}, R.~L., {Houghton}, R.~C.~W., {et~al.} 2014, \mnras, 441,
   274
+
+\bibitem[{{Seigar} \& {James}(1998)}]{seigar1998}
+{Seigar}, M.~S., \& {James}, P.~A. 1998, \mnras, 299, 672
 
 \bibitem[{{S{\'e}rsic}(1963)}]{sersic1963}
 {S{\'e}rsic}, J.~L. 1963, Boletin de la Asociacion Argentina de Astronomia La

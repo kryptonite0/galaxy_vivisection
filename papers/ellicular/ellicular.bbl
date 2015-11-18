@@ -229,9 +229,16 @@
   \mn@doi [\aj] {10.1086/375320}, \href
   {http://adsabs.harvard.edu/abs/2003AJ....125.2951G} {125, 2951}
 
+\bibitem[\protect\citeauthoryear{{Graham}, {Durr\'e}, {Savorgnan},
+  {Batcheldor}, {Watson}, {Medling}, {Scott}  \& {Marconi}}{{Graham}
+  et~al.}{2015a}]{graham2015n1277}
+{Graham} A.~W.,  {Durr\'e} M.,  {Savorgnan} G.~A.~D.,  {Batcheldor} D.,
+  {Watson} B.,  {Medling} A.,  {Scott} N.,   {Marconi} A.,  2015a, Submitted to
+  \apj
+
 \bibitem[\protect\citeauthoryear{{Graham}, {Dullo}  \& {Savorgnan}}{{Graham}
-  et~al.}{2015}]{GDS2015}
-{Graham} A.~W.,  {Dullo} B.~T.,   {Savorgnan} G.~A.~D.,  2015, \mn@doi [\apj]
+  et~al.}{2015b}]{GDS2015}
+{Graham} A.~W.,  {Dullo} B.~T.,   {Savorgnan} G.~A.~D.,  2015b, \mn@doi [\apj]
   {10.1088/0004-637X/804/1/32}, \href
   {http://adsabs.harvard.edu/abs/2015ApJ...804...32G} {804, 32}
 
@@ -384,6 +391,15 @@ Romanowsky A.~J.,  Fall S.~M.,  2012, The Astrophysical Journal Supplement
 {Rusli} S.~P.,  {Thomas} J.,  {Erwin} P.,  {Saglia} R.~P.,  {Nowak} N.,
   {Bender} R.,  2011, \mn@doi [\mnras] {10.1111/j.1365-2966.2010.17610.x},
   \href {http://adsabs.harvard.edu/abs/2011MNRAS.410.1223R} {410, 1223}
+
+\bibitem[\protect\citeauthoryear{{Savorgnan} \& {Graham}}{{Savorgnan} \&
+  {Graham}}{2015}]{paperI}
+{Savorgnan} G.~A.~D.,  {Graham} A.~W.,  2015, Submitted to \apj
+
+\bibitem[\protect\citeauthoryear{{Savorgnan}, {Graham}, {Marconi}  \&
+  {Sani}}{{Savorgnan} et~al.}{2015}]{paperII}
+{Savorgnan} G.~A.~D.,  {Graham} A.~W.,  {Marconi} A.,   {Sani} E.,  2015,
+  Submitted to \apj
 
 \bibitem[\protect\citeauthoryear{{Scorza}}{{Scorza}}{1998}]{scorza1998}
 {Scorza} C.,  1998, in {Aguilar} A.,  {Carraminana} A.,  eds, IX Latin American

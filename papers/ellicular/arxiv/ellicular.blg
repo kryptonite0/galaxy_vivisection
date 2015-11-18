@@ -1,0 +1,81 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: ellicular.aux
+The style file: mnras.bst
+Database file #1: SMBHbibliography.bib
+You're missing a field part---line 10 of file SMBHbibliography.bib
+ :     month = 
+ :             ,
+I'm skipping whatever remains of this entry
+You're missing a field part---line 27 of file SMBHbibliography.bib
+ :     month = 
+ :             ,
+I'm skipping whatever remains of this entry
+You're missing a field part---line 45 of file SMBHbibliography.bib
+ :     month = 
+ :             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 211 of file SMBHbibliography.bib
+ : @article{carter1978
+ :                    ,
+I'm skipping whatever remains of this entry
+You're missing a field part---line 2588 of file SMBHbibliography.bib
+ :    volume = 
+ :             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3531 of file SMBHbibliography.bib
+ : @article{scorzabender1995
+ :                          ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 8184 of file SMBHbibliography.bib
+ :      year = 2014
+ :                 a,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 8203 of file SMBHbibliography.bib
+ :      year = 2014
+ :                 b,
+I'm skipping whatever remains of this entry
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 86 entries,
+            2881 wiz_defined-function locations,
+            1365 strings with 31607 characters,
+and the built_in function-call counts, 41817 in all, are:
+= -- 3291
+> -- 3138
+< -- 237
++ -- 1396
+- -- 469
+* -- 5159
+:= -- 6615
+add.period$ -- 0
+call.type$ -- 86
+change.case$ -- 172
+chr.to.int$ -- 81
+cite$ -- 86
+duplicate$ -- 2019
+empty$ -- 2072
+format.name$ -- 735
+if$ -- 7213
+int.to.chr$ -- 6
+int.to.str$ -- 0
+missing$ -- 85
+newline$ -- 271
+num.names$ -- 614
+pop$ -- 485
+preamble$ -- 1
+purify$ -- 344
+quote$ -- 0
+skip$ -- 1206
+stack$ -- 0
+substring$ -- 2246
+swap$ -- 1131
+text.length$ -- 360
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 774
+warning$ -- 0
+while$ -- 656
+width$ -- 0
+write$ -- 869
+(There were 8 error messages)
