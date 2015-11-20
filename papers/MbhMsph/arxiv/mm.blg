@@ -1,0 +1,84 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: mm.aux
+The style file: apj.bst
+Database file #1: mmNotes.bib
+Database file #2: SMBHbibliography.bib
+You're missing a field part---line 73 of file SMBHbibliography.bib
+ :     month = 
+ :             ,
+I'm skipping whatever remains of this entry
+You're missing a field part---line 90 of file SMBHbibliography.bib
+ :     month = 
+ :             ,
+I'm skipping whatever remains of this entry
+You're missing a field part---line 108 of file SMBHbibliography.bib
+ :     month = 
+ :             ,
+I'm skipping whatever remains of this entry
+You're missing a field part---line 2708 of file SMBHbibliography.bib
+ :    volume = 
+ :             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3651 of file SMBHbibliography.bib
+ : @article{scorzabender1995
+ :                          ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 8304 of file SMBHbibliography.bib
+ :      year = 2014
+ :                 a,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 8323 of file SMBHbibliography.bib
+ :      year = 2014
+ :                 b,
+I'm skipping whatever remains of this entry
+Repeated entry---line 8790 of file SMBHbibliography.bib
+ : @article{haringrix2004
+ :                       ,
+I'm skipping whatever remains of this entry
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--can't use both author and editor fields in graham2013review
+Warning--empty publisher in graham2013review
+Warning--empty publisher in press1992
+You've used 108 entries,
+            3085 wiz_defined-function locations,
+            1343 strings with 29663 characters,
+and the built_in function-call counts, 52504 in all, are:
+= -- 4267
+> -- 3915
+< -- 58
++ -- 1309
+- -- 1400
+* -- 4507
+:= -- 9926
+add.period$ -- 108
+call.type$ -- 108
+change.case$ -- 711
+chr.to.int$ -- 104
+cite$ -- 111
+duplicate$ -- 2093
+empty$ -- 3114
+format.name$ -- 1544
+if$ -- 10385
+int.to.chr$ -- 5
+int.to.str$ -- 0
+missing$ -- 100
+newline$ -- 328
+num.names$ -- 441
+pop$ -- 793
+preamble$ -- 1
+purify$ -- 711
+quote$ -- 0
+skip$ -- 1735
+stack$ -- 0
+substring$ -- 2178
+swap$ -- 78
+text.length$ -- 8
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 966
+warning$ -- 3
+while$ -- 415
+width$ -- 0
+write$ -- 1082
+(There were 8 error messages)

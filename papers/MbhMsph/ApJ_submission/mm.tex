@@ -12,11 +12,6 @@
 \usepackage{color}
 \usepackage{hyperref}
 
-%% Sometimes a paper's abstract is too long to fit on the
-%% title page in preprint2 mode. When that is the case,
-%% use the longabstract style option.
-
-%% \documentclass[preprint2,longabstract]{aastex}
 
 \newcommand{\vdag}{(v)^\dagger}
 \newcommand{\myemail}{gsavorgn@astro.swin.edu.au}
@@ -42,55 +37,33 @@
 \author{Eleonora Sani}
 \affil{European Southern Observatory, Alonso de Cordova, Vitacura 3107, Santiago, Chile.}
 
-%\and
-
-%\author{A. W. Graham\altaffilmark{1}}
-%\affil{Centre for Astrophysics and Supercomputing, Swinburne University of Technology, Hawthorn, Victoria 3122, Australia.}
-
-%% Notice that each of these authors has alternate affiliations, which
-%% are identified by the \altaffilmark after each name.  Specify alternate
-%% affiliation information with \altaffiltext, with one command per each
-%% affiliation.
-
-%\altaffiltext{1}{}
-%\altaffiltext{2}{Society of Fellows, Harvard University.}
-%\altaffiltext{3}{present address: Center for Astrophysics,
-%    60 Garden Street, Cambridge, MA 02138}
-%\altaffiltext{4}{Visiting Programmer, Space Telescope Science Institute}
-%\altaffiltext{5}{Patron, Alonso's Bar and Grill}
-
-%% Mark off your abstract in the ``abstract'' environment. In the manuscript
-%% style, abstract will output a Received/Accepted line after the
-%% title and affiliation information. No date will appear since the author
-%% does not have this information. The dates will be filled in by the
-%% editorial office after submission.
 
 \begin{abstract}
 In our first paper, we performed a detailed (i.e.~bulge, disks, bars, spiral arms, rings, halo, nucleus, etc.) 
-decomposition of 66 galaxies, with directly measured black hole masses, 
+decomposition of 66 galaxies, with directly measured black hole masses, $M_{\rm BH}$, 
 that had been imaged at $3.6\rm~\mu m$ with \emph{Spitzer}.
 Our sample is the largest to date and, for the first time, the decompositions were checked for consistency with the galaxy kinematics. 
-We present correlations between the black hole mass, $M_{\rm BH}$, 
+We present correlations between $M_{\rm BH}$ 
 and the host spheroid (and galaxy) luminosity, $L_{\rm sph}$ (and $L_{\rm gal}$), 
 and also stellar mass, $M_{\rm *,sph}$.
-Most previous studies have used galaxy samples that were overwhelmingly dominated by high-mass, early-type galaxies.
-Instead, our sample includes 17 spiral galaxies, half of which have $M_{\rm BH} < 10^7\rm~M_\odot$, 
+While most previous studies have used galaxy samples that were overwhelmingly dominated by high-mass, early-type galaxies,
+our sample includes 17 spiral galaxies, half of which have $M_{\rm BH} < 10^7\rm~M_\odot$, 
 and allows us to better investigate the poorly studied low-mass end of the $M_{\rm BH} - M_{\rm *,sph}$ correlation.
-The bulges of early-type (E + S0) galaxies follow $M_{\rm BH} \propto M_{\rm *,sph}^{1.04 \pm 0.10}$  
-and define a tight %\emph{early-type sequence} 
-\emph{red sequence} with intrinsic scatter $\epsilon_{(Y|X)} = 0.43 \pm 0.06\rm~dex$ 
+The bulges of early-type galaxies follow $M_{\rm BH} \propto M_{\rm *,sph}^{1.04 \pm 0.10}$  
+and define a tight 
+\emph{red sequence} with intrinsic scatter $\epsilon_{(M_{\rm BH}|M_{\rm *,sph})} = 0.43 \pm 0.06\rm~dex$ 
 and a median $M_{\rm BH}/M_{\rm *,sph}$ ratio of $0.68 \pm 0.04\%$, 
 i.e.~a $\pm 2\sigma$ range of 0.1--5\%.
-At the low-mass end, the bulges of late-type (Sp) galaxies define a much steeper %\emph{late-type sequence}, 
+At the low-mass end, the bulges of late-type galaxies define a much steeper 
 \emph{blue sequence}, 
-with $M_{\rm BH} \propto M_{\rm *,sph}^{2-3}$, 
+with $M_{\rm BH} \propto M_{\rm *,sph}^{2-3}$ and $M_{\rm BH}/M_{\rm *,sph}$ equal to $0.02\%$ at $M_{\rm BH} \approx 10^6~\rm M_\odot$, 
 indicating that gas-rich processes feed the black hole more efficiently than the host bulge as they coevolve. 
-We additionally report that: i) S\'ersic galaxies follow $M_{\rm BH} \propto M_{\rm *,sph}^{1.48 \pm 0.20}$, a less steep sequence than previously reported; 
+We additionally report that: i) our S\'ersic galaxy sample follows $M_{\rm BH} \propto M_{\rm *,sph}^{1.48 \pm 0.20}$, 
+a less steep sequence than previously reported; 
 ii) bulges with S\'ersic index $n_{\rm sph}<2$, argued by some to be pseudo-bulges, 
 are not offset to lower $M_{\rm BH}$ from the correlation defined by the current bulge sample with $n_{\rm sph}>2$; 
 and iii) $L_{\rm sph}$ and $L_{\rm gal}$ correlate equally well with $M_{\rm BH}$, in terms of intrinsic scatter, only for early-type galaxies 
-(most elliptical galaxies contain disks, i.e.~$L_{\rm sph} \neq L_{\rm gal}$) --
-once reasonable numbers of spiral galaxies are included, the correlation with $L_{\rm sph}$ is better than that with $L_{\rm gal}$. 
+-- once reasonable numbers of spiral galaxies are included, the correlation with $L_{\rm sph}$ is better than that with $L_{\rm gal}$. 
 
 \end{abstract}
 
@@ -168,7 +141,7 @@ using a mean statistical bulge-to-total ratio based on each object's morphologic
 inclination\footnote{While this resulted in individual bulge magnitudes not being exactly correct, 
 their large sample size allowed them to obtain a reasonable $M_{\rm BH} - L_{\rm sph}$ relation for the ensemble.}. 
 These mean statistical bulge-to-total ratios were obtained from the results of two-component (S\'ersic-bulge/exponential-disk) decompositions in the literature. \\
-Here we investigate in more detail %substructure in 
+Here we investigate in more detail 
 the $M_{\rm BH} - L_{\rm sph}$ and $M_{\rm BH} - M_{\rm *,sph}$ diagrams 
 using state-of-the-art galaxy decompositions (Savorgnan \& Graham 2015, hereafter \emph{Paper I}) 
 for galaxies with directly measured black hole masses.
@@ -182,7 +155,6 @@ Furthermore, our galaxy sample includes 17 spiral galaxies,
 representing a notable improvement over past studies dominated by early-type galaxies. 
 In a forthcoming paper, we will explore the relation between the black hole mass and the bulge dynamical mass, 
 $M_{\rm dyn,sph} \propto R_{\rm e} \sigma^2$, and address the issue of a black hole fundamental plane.
-%{\bf This paper is structured as follows... }
 
 \section{Data}
 \label{sec:data}
@@ -200,7 +172,6 @@ or large-scale disks that encase the bulge and dominate the light at large radii
 It is worth stressing that, contrary to common knowledge, the majority of ``elliptical'' galaxies contain disks,
 i.e.~they are not single-component spheroidal systems.
 \emph{Paper I} presents the dataset used here, 
-%to investigate the $M_{\rm BH} - L_{\rm gal}$, $M_{\rm BH} - L_{\rm sph}$ and $M_{\rm BH} - M_{\rm *,sph}$ diagrams, 
 including details about the data reduction process and the galaxy modelling technique that we developed. 
 It also discusses how we estimated the uncertainties\footnote{By comparing, for each of our galaxies, the measurements of the bulge magnitude 
 obtained by different authors with that obtained by us, we estimated the uncertainties on the bulge magnitudes, 
@@ -209,10 +180,10 @@ Systematic errors include incorrect sky subtraction, inaccurate masking of conta
 erroneous choice of model components (for example, when failing to identify a galaxy subcomponent and thus omitting it in the model, 
 or when describing a galaxy sub-component with an inadequate function), 
 the radial extent of the surface brightness profile and one's sampling of this. 
-Most of these factors are not included in popular 2D fitting codes which report only the {\bf statistical} errors associated with their fitted parameters. 
+Most of these factors are not included in popular 2D fitting codes which report only the statistical errors associated with their fitted parameters. 
 In fact, when performing multi-component decomposition of high signal-to-noise images of nearby -- therefore well spatially resolved -- galaxies, 
 errors are dominated by systematics rather than Poisson noise. 
-{\bf Unlike many papers, we believe that we have not under-estimated the uncertainties associated to the bulge best-fit parameters.} } 
+Unlike many papers, we believe that we have not under-estimated the uncertainties associated to the bulge best-fit parameters. } 
 on the bulge magnitudes, and presents the individual 66 galaxy decompositions, 
 along with a comparison and discussion of past decompositions. \\
 Bulge luminosities\footnote{Following \cite{sani2011}, absolute luminosities were calculated 
@@ -268,9 +239,6 @@ We also repeated the analysis using both the FITEXY routine \citep{press1992}, a
 and the Bayesian estimator {\tt linmix\_err} \citep{linmixerr}. 
 All of these three linear regression routines account for the intrinsic scatter, 
 but only the last two allow one to quantify it.
-%Because the BCES routine {\bf AL: did you wanna write (correctly) this sentence for me please? 
-%can give biased results (wrong slope) when the scatter is comparable to the range of the data},
-%we checked that the best-fit parameters obtained with the BCES code were consistent with those output by the modified FITEXY code.
 We report linear regressions, both symmetrical and non-symmetrical, 
 for S\'ersic/core-S\'ersic and for early/late-type galaxies.
 Symmetrical regressions are meant to be compared with theoretical expectations, 
@@ -315,8 +283,7 @@ One might wonder whether this constitutes a bias in our analysis.
 However, we checked that $M_{\rm BH}$ correlates equally well with $L_{\rm sph}$ and $L_{\rm gal}$ 
 not only for early-type (elliptical + lenticular) galaxies, 
 but also for lenticular galaxies only. }, 
-but not for all (early+late-type) galaxies.
-
+but not for all (early+late-type) galaxies. 
 
 \begin{figure}[h]
 \begin{center}
@@ -376,7 +343,6 @@ The black dashed-dotted and dotted lines represent the BCES bisector linear regr
                         & BCES Bisector  & $8.56 \pm 0.07$ & $-0.53 \pm 0.04$ & $-24.88$ & $-$ & $0.47$ \\
                         & mFITEXY Bisector & $8.56^{+0.07}_{-0.07}$ & $-0.54^{+0.06}_{-0.06}$ & $-24.88$ & $-$    & $0.47$ \\
                         & {\tt linmix\_err} Bisector & $8.56 \pm 0.08$ & $-0.53 \pm 0.05$ & $-24.88$ & $-$    & $0.47$ \\ [0.5em]
-
 
 \tableline 
 \tableline
@@ -480,7 +446,9 @@ it has been shown that mergers can create bulges with $n_{\rm sph}<2$
 (e.g.~\citealt{elichemoral2011,scannapieco2011,querejeta2015}), 
 just as low-luminosity elliptical galaxies (not built from the secular evolution of a disk)
 are also well known to have $n_{\rm sph}<2$ and even $n_{\rm sph}<1$ (e.g.~\citealt{davies1988,youngcurrie1994,jerjen2000}). 
-The use of the S\'ersic index (in addition to rotation) to identify pseudo-bulges is thus a dangerous practice. \\
+The use of the S\'ersic index (in addition to rotation) to identify pseudo-bulges is thus a dangerous practice. 
+{\bf We therefore do not assume that all bulges with $n_{\rm sph}<2$ are built from internal processes in the disk 
+(i.e.~are what some authors call pseudo-bulges). } \\
 \cite{sani2011} reported that pseudo-bulges -- which they labelled as such according to the $n_{\rm sph}<2$ criterion -- 
 with low black hole masses ($M_{\rm BH} < 10^7\rm~M_\odot$) are significantly displaced from the correlation 
 traced by their (classical) bulges with $n_{\rm sph}>2$. 
@@ -502,7 +470,8 @@ Similarly, there are 15 and 8 bulges with $n_{\rm sph}<2$ that lie above and bel
 What we observe, instead, is that there are the same number of bulges with $n_{\rm sph}<2$ lying above and below 
 the correlation defined by bulges with $n_{\rm sph}>2$, 
 and that the amplitude of their offset is the same ($\lesssim 1.5\rm~dex$).
-That is, bulges with $n_{\rm sph}<2$ do not appear to be offset from the correlation traced by bulges with $n_{\rm sph}>2$. 
+That is, within the current dataset, 
+bulges with $n_{\rm sph}<2$ do not appear to be offset from the correlation traced by bulges with $n_{\rm sph}>2$. \\
 
 
 \begin{figure}[h]
@@ -583,7 +552,6 @@ S\'ersic (44) & BCES $(Y|X)$   & $7.71 \pm 0.09$ & $-0.41 \pm 0.08$ & $-22.92$ &
               & mFITEXY Bisector  & $7.72^{+0.11}_{-0.11}$ & $-0.61^{+0.10}_{-0.12}$ & $-22.92$ & $-$                    & $0.71$ \\
               & {\tt linmix\_err} Bisector & $7.73 \pm 0.12$ & $-0.62 \pm 0.09$ & $-22.92$ & $-$    & $0.71$ \\ [0.5em]
 
-
 {\bf Early-type (E+S0)} (45) & BCES $(Y|X)$    & $8.56 \pm 0.07$ & $-0.33 \pm 0.04$ & $-24.47$ & $-$    & $0.46$ \\
                              & mFITEXY $(Y|X)$ & $8.56^{+0.06}_{-0.06}$ & $-0.32^{+0.03}_{-0.04}$ & $-24.47$ & $0.40^{+0.06}_{-0.05}$ & $0.46$ \\
                              & {\tt linmix\_err} $(Y|X)$  & $8.55 \pm 0.07$ & $-0.32 \pm 0.04$ & $-24.47$ & $0.41 \pm 0.06$ & $0.46$ \\ [0.5em]
@@ -618,7 +586,7 @@ Both the early- and late-type subsamples do not contain the two galaxies classif
 Finally, we present the $M_{\rm BH} - M_{\rm *,sph}$ diagram in Figure \ref{fig:mbhmasssph}, 
 and its linear regression analysis in Table \ref{tab:lregmass}. 
 The bulges of the early-type galaxies follow $M_{\rm BH} \propto M_{\rm *,sph}^{1.04 \pm 0.10}$,
-consistent with a dry-merging formation scenario\footnote{\bf In dry mergers, the black hole and the bulge grow at the same pace, 
+consistent with a dry-merging formation scenario\footnote{In dry mergers, the black hole and the bulge grow at the same pace, 
 increasing their mass in lock step.},
 and define a tight \emph{early-type sequence} with intrinsic scatter $\epsilon_{(Y|X)} = 0.43 \pm 0.06\rm~dex$. 
 \cite{graham2012bent} reported that the $M_{\rm BH}/M_{\rm dyn,sph}$ ratio for core-S\'ersic galaxies was 0.36\% 
@@ -647,8 +615,25 @@ The majority of our spiral galaxies host an AGN\footnote{According to the nuclea
 we anticipate here that the correlation traced by our spiral galaxy bulges 
 may track the location of these lower mass AGN in the $M_{\rm BH} - M_{\rm *,sph}$ diagram.
 That is, the AGNs appear to be the low-mass continuation of our tentative \emph{late-type sequence} shown in Figure \ref{fig:mbhmasssph} 
-and this will be explored with more rigour in a forthcoming paper. 
+and this will be explored with more rigour in a forthcoming paper. \\
  
+{\bf 
+As a final remark, we comment on the work by \cite{reinesvolonteri2015}, 
+who investigated the relationship between black hole mass and total galaxy stellar mass, $M_{\rm *,gal}$. 
+Their Figure 8 presents the $M_{\rm BH} - M_{\rm *,gal}$ distribution 
+for a sample of $\approx 260$ local AGNs with virial black hole masses  
+and for $\approx 80$ galaxies with dynamical black hole masses. 
+They concluded that the AGN sample and the early-type galaxies with quiescent black holes define two distinct sequences 
+in their $M_{\rm BH} - M_{\rm *,gal}$ diagram; 
+these two sequences have similar slope, but a normalization factor different by more than one order of magnitude.  
+Since we noted that the \cite{jiang2011a} AGN sample follows the steeper $M_{\rm BH} - M_{\rm *,sph}$ correlation 
+traced by our spiral galaxy bulges (the majority of which host an AGN), 
+it would be interesting to recover the $M_{\rm BH} - M_{\rm *,sph}$ distribution 
+also for the AGN sample of \cite{reinesvolonteri2015}. \\
+However we do note that there is emerging evidence (e.g.~\citealt{busch2015,subramanian2015}) 
+for a population of bulges with black hole masses residing below (or to the right of) the red and blue $M_{\rm BH} - M_{\rm *,sph}$ 
+sequences constructed here using samples with directly measured black hole masses, as speculated by Batcheldor (2010).
+}
 
 \begin{figure}[h]
 \begin{center}
@@ -717,12 +702,19 @@ Our principal conclusions are: \\
       or that the transition from  $L_{\rm sph} \propto \sigma^2$ at low luminosities to $L_{\rm sph} \propto \sigma^{(5-6)}$ at high luminosities 
       is less sharp than previously thought.
       We intend to investigate this point in our future work. 
-\item Spheroids with S\'ersic index $n_{\rm sph}<2$, argued by some to be pseudo-bulges, 
-      are not offset to lower $M_{\rm BH}$ from the $M_{\rm BH} - L_{\rm sph}$ correlation defined by spheroids with $n_{\rm sph}>2$. 
+\item {\bf It has been argued that pseuso-bulges (disk-like, rotation-supported systems, built from secular processes) 
+      do not follow the $M_{\rm BH} - L_{\rm sph}$ correlation defined by classical bulges 
+      (spheroidal, pressure-supported systems, formed through violent processes).  
+      The recent literature (e.g.~\citealt{sani2011,beifiori2012}) has distinguished between pseudo- and classical bulges 
+      according to their S\'ersic index, $n_{\rm sph}$. 
+      Although we do not consider the S\'ersic index a good indicator of the nature of a bulge (e.g.~\citealt{grahamworley2008}), 
+      we investigated this point and found that, within the current dataset,  
+      spheroids with $n_{\rm sph}<2$ 
+      are not offset to lower $M_{\rm BH}$ from the $M_{\rm BH} - L_{\rm sph}$ correlation defined by spheroids with $n_{\rm sph}>2$. }
 \item The $M_{\rm BH} - L_{\rm gal}$ and $M_{\rm BH} - L_{\rm sph}$ correlations have the same level of intrinsic scatter 
       when considering early-type galaxies only. 
       Once reasonable numbers of spiral galaxies are included, 
-      $M_{\rm BH}$ correlates better with $L_{\rm sph}$ than with $L_{\rm gal}$ {\bf (see also \citealt{erwingadotti2012,beifiori2012})}. 
+      $M_{\rm BH}$ correlates better with $L_{\rm sph}$ than with $L_{\rm gal}$ (see also \citealt{erwingadotti2012,beifiori2012}). 
 \end{itemize} 
 
 Finally, we note that some of the literature-sourced black hole mass measurements used by \cite{kormendyho2013} are different from those used here.  
@@ -794,8 +786,7 @@ In the last two columns, we report $\epsilon$, the intrinsic scatter, and $\Delt
 
 \acknowledgments
 GS warmly thanks Luca Cortese, Elisabete Lima Da Cunha, Duncan Forbes and Gonzalo Diaz for useful discussion. 
-{\bf We thank the anonymous referee for their thorough review and highly appreciate the comments and suggestions, 
-which significantly contributed to improving the quality of the publication. } \\
+We also thank the anonymous referee for useful comments and suggestions. 
 This research was supported by Australian Research Council funding through grants
 DP110103509 and FT110100263.
 This work is based on observations made with the IRAC instrument \citep{fazio2004IRAC} 

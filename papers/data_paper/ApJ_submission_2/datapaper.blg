@@ -1,0 +1,75 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: datapaper.aux
+The style file: apj.bst
+Database file #1: datapaperNotes.bib
+Database file #2: SMBHbibliography.bib
+Repeated entry---line 1854 of file SMBHbibliography.bib
+ : @article{rixwhite1992
+ :                      ,
+I'm skipping whatever remains of this entry
+You're missing a field part---line 2026 of file SMBHbibliography.bib
+ :    volume = 
+ :             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2969 of file SMBHbibliography.bib
+ : @article{scorzabender1995
+ :                          ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 7622 of file SMBHbibliography.bib
+ :      year = 2014
+ :                 a,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 7641 of file SMBHbibliography.bib
+ :      year = 2014
+ :                 b,
+I'm skipping whatever remains of this entry
+Repeated entry---line 8108 of file SMBHbibliography.bib
+ : @article{haringrix2004
+ :                       ,
+I'm skipping whatever remains of this entry
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--empty publisher in RC3
+Warning--empty publisher in sersic1968
+You've used 139 entries,
+            3085 wiz_defined-function locations,
+            1563 strings with 38657 characters,
+and the built_in function-call counts, 69024 in all, are:
+= -- 5636
+> -- 5307
+< -- 58
++ -- 1780
+- -- 1919
+* -- 6015
+:= -- 13063
+add.period$ -- 139
+call.type$ -- 139
+change.case$ -- 957
+chr.to.int$ -- 134
+cite$ -- 141
+duplicate$ -- 2651
+empty$ -- 3954
+format.name$ -- 2112
+if$ -- 13607
+int.to.chr$ -- 6
+int.to.str$ -- 0
+missing$ -- 135
+newline$ -- 421
+num.names$ -- 560
+pop$ -- 1053
+preamble$ -- 1
+purify$ -- 957
+quote$ -- 0
+skip$ -- 2186
+stack$ -- 0
+substring$ -- 2876
+swap$ -- 44
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 1245
+warning$ -- 2
+while$ -- 532
+width$ -- 0
+write$ -- 1390
+(There were 6 error messages)

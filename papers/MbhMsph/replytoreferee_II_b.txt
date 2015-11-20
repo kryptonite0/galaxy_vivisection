@@ -1,0 +1,3 @@
+As suggested by the referee, we clearly stated and emphasized that we do not identify pseudo-bulges according to the n<2 criterion. 
+Text has been added to Section 4.2.1 and to the Conclusions. 
+All changes have been highlighted in boldface. 
