@@ -4,23 +4,35 @@ The top-level auxiliary file: mm.aux
 The style file: apj.bst
 Database file #1: mmNotes.bib
 Database file #2: /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
-You're missing a field part---line 2434 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+You're missing a field part---line 73 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+ :     month = 
+ :             ,
+I'm skipping whatever remains of this entry
+You're missing a field part---line 90 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+ :     month = 
+ :             ,
+I'm skipping whatever remains of this entry
+You're missing a field part---line 108 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+ :     month = 
+ :             ,
+I'm skipping whatever remains of this entry
+You're missing a field part---line 2708 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  :    volume = 
  :             ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3377 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+Repeated entry---line 3651 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  : @article{scorzabender1995
  :                          ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 8030 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+I was expecting a `,' or a `}'---line 8304 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  :      year = 2014
  :                 a,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 8049 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+I was expecting a `,' or a `}'---line 8323 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  :      year = 2014
  :                 b,
 I'm skipping whatever remains of this entry
-Repeated entry---line 8516 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+Repeated entry---line 8790 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  : @article{haringrix2004
  :                       ,
 I'm skipping whatever remains of this entry
@@ -28,45 +40,45 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--can't use both author and editor fields in graham2013review
 Warning--empty publisher in graham2013review
 Warning--empty publisher in press1992
-You've used 105 entries,
+You've used 108 entries,
             3085 wiz_defined-function locations,
-            1328 strings with 29013 characters,
-and the built_in function-call counts, 51082 in all, are:
-= -- 4151
-> -- 3801
-< -- 57
-+ -- 1271
-- -- 1358
-* -- 4383
-:= -- 9650
-add.period$ -- 105
-call.type$ -- 105
-change.case$ -- 690
-chr.to.int$ -- 101
-cite$ -- 108
-duplicate$ -- 2034
-empty$ -- 3033
-format.name$ -- 1497
-if$ -- 10110
+            1343 strings with 29707 characters,
+and the built_in function-call counts, 52504 in all, are:
+= -- 4267
+> -- 3915
+< -- 58
++ -- 1309
+- -- 1400
+* -- 4507
+:= -- 9926
+add.period$ -- 108
+call.type$ -- 108
+change.case$ -- 711
+chr.to.int$ -- 104
+cite$ -- 111
+duplicate$ -- 2093
+empty$ -- 3114
+format.name$ -- 1544
+if$ -- 10385
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 97
-newline$ -- 319
-num.names$ -- 429
-pop$ -- 768
+missing$ -- 100
+newline$ -- 328
+num.names$ -- 441
+pop$ -- 793
 preamble$ -- 1
-purify$ -- 690
+purify$ -- 711
 quote$ -- 0
-skip$ -- 1695
+skip$ -- 1735
 stack$ -- 0
-substring$ -- 2138
+substring$ -- 2178
 swap$ -- 78
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 939
+type$ -- 966
 warning$ -- 3
-while$ -- 406
+while$ -- 415
 width$ -- 0
-write$ -- 1052
-(There were 5 error messages)
+write$ -- 1082
+(There were 8 error messages)

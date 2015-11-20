@@ -32,6 +32,12 @@
 \bibitem[{{Bender}(1990)}]{bender1990}
 {Bender}, R. 1990, \aap, 229, 441
 
+\bibitem[{{Busch} {et~al.}(2015){Busch}, {Fazeli}, {Eckart}, {Valencia-S.},
+  {Smaji{\'c}}, {Moser}, {Scharw{\"a}chter}, {Dierkes}, \&
+  {Fischer}}]{busch2015}
+{Busch}, G., {Fazeli}, N., {Eckart}, A., {et~al.} 2015, ArXiv e-prints,
+  arXiv:1511.00904
+
 \bibitem[{{Capaccioli}(1987)}]{capaccioli1987}
 {Capaccioli}, M. 1987, in IAU Symposium, Vol. 127, Structure and Dynamics of
   Elliptical Galaxies, ed. P.~T. {de Zeeuw}, 47--60
@@ -353,6 +359,9 @@
 {Querejeta}, M., {Eliche-Moral}, M.~C., {Tapia}, T., {et~al.} 2015, \aap, 573,
   A78
 
+\bibitem[{{Reines} \& {Volonteri}(2015)}]{reinesvolonteri2015}
+{Reines}, A.~E., \& {Volonteri}, M. 2015, \apj, 813, 82
+
 \bibitem[{{Rix} \& {White}(1990)}]{rixwhite1990}
 {Rix}, H.-W., \& {White}, S.~D.~M. 1990, \apj, 362, 52
 
@@ -419,6 +428,11 @@
   {Mobasher}, {Ogle}, {Peng}, {Schinnerer}, {Surace}, {Zaritsky},
   {Comer{\'o}n}, {de Swardt}, {Meidt}, {Kasliwal}, \& {Aravena}}]{sheth2010}
 {Sheth}, K., {Regan}, M., {Hinz}, J.~L., {et~al.} 2010, \pasp, 122, 1397
+
+\bibitem[{{Subramanian} {et~al.}(2015){Subramanian}, {S}, {Das}, {George}, {T},
+  \& {Prabhu}}]{subramanian2015}
+{Subramanian}, S., {S}, R., {Das}, M., {et~al.} 2015, ArXiv e-prints,
+  arXiv:1510.07743
 
 \bibitem[{{Tortora} {et~al.}(2009){Tortora}, {Napolitano}, {Romanowsky},
   {Capaccioli}, \& {Covone}}]{tortora2009}
