@@ -1,25 +1,24 @@
 In our first paper, we performed a detailed (i.e.~bulge, disks, bars, spiral arms, rings, halo, nucleus, etc.) 
-decomposition of 66 galaxies, with directly measured black hole masses, $M_{ BH}$, 
-that had been imaged at $3.6~\mu m$ with \emph{Spitzer}.
+decomposition of 66 galaxies, with directly measured black hole masses, $M_{BH}$, 
+imaged at $3.6\rm~\mu m$ with \emph{Spitzer}.
 Our sample is the largest to date and, for the first time, the decompositions were checked for consistency with the galaxy kinematics. 
-We present correlations between $M_{ BH}$ 
-and the host spheroid (and galaxy) luminosity, $L_{ sph}$ (and $L_{ gal}$), 
-and also stellar mass, $M_{ *,sph}$.
+We present correlations between $M_{BH}$ 
+and the host spheroid (and galaxy) luminosity, $L_{sph}$ (and $L_{gal}$), 
+and also stellar mass, $M_{*,sph}$.
 While most previous studies have used galaxy samples that were overwhelmingly dominated by high-mass, early-type galaxies,
-our sample includes 17 spiral galaxies, half of which have $M_{ BH} < 10^7~M_\odot$, 
-and allows us to better investigate the poorly studied low-mass end of the $M_{ BH} - M_{ *,sph}$ correlation.
-The bulges of early-type galaxies follow $M_{ BH} \propto M_{ *,sph}^{1.04 \pm 0.10}$  
+our sample includes 17 spiral galaxies, half of which have $M_{BH}<10^7\rm~M_\odot$, 
+and allows us to better investigate the poorly studied low-mass end of the $M_{BH}~-~M_{*,sph}$ correlation.
+The bulges of early-type galaxies follow $M_{BH}~\propto~M_{*,sph}^{1.04~\pm~0.10}$  
 and define a tight 
-\emph{red sequence} with intrinsic scatter $\epsilon_{(M_{ BH}|M_{ *,sph})} = 0.43 \pm 0.06~dex$ 
-and a median $M_{ BH}/M_{ *,sph}$ ratio of $0.68 \pm 0.04\%$, 
-i.e.~a $\pm 2\sigma$ range of 0.1--5\%.
+\emph{red~sequence} with intrinsic scatter $\epsilon_{(M_{BH}|M_{*,sph})}~=~0.43~\pm~0.06\rm~dex$ 
+and a median $M_{BH}/M_{*,sph}$ ratio of $0.68~\pm~0.04\%$, 
+i.e.~a $\pm~2\sigma$ range of $0.1-5\%$.
 At the low-mass end, the bulges of late-type galaxies define a much steeper 
-\emph{blue sequence}, 
-with $M_{ BH} \propto M_{ *,sph}^{2-3}$ and $M_{ BH}/M_{ *,sph}$ equal to $0.02\%$ at $M_{ BH} \approx 10^6~ M_\odot$, 
-indicating that gas-rich processes feed the black hole more efficiently than the host bulge as they coevolve. 
-We additionally report that: i) our S\'ersic galaxy sample follows $M_{ BH} \propto M_{ *,sph}^{1.48 \pm 0.20}$, 
+\emph{blue~sequence}, 
+with $M_{BH}~\propto~M_{*,sph}^{2-3}$ and $M_{BH}/M_{*,sph}$ equal to $0.02\%$ at $M_{BH}~\approx~10^6\rm~M_\odot$. 
+We additionally report that: i)~our S\'ersic galaxy sample follows $M_{BH}~\propto~M_{*,sph}^{1.48~\pm~0.20}$, 
 a less steep sequence than previously reported; 
-ii) bulges with S\'ersic index $n_{ sph}<2$, argued by some to be pseudo-bulges, 
-are not offset to lower $M_{ BH}$ from the correlation defined by the current bulge sample with $n_{ sph}>2$; 
-and iii) $L_{ sph}$ and $L_{ gal}$ correlate equally well with $M_{ BH}$, in terms of intrinsic scatter, only for early-type galaxies 
--- once reasonable numbers of spiral galaxies are included, the correlation with $L_{ sph}$ is better than that with $L_{ gal}$. 
+ii)~bulges with S\'ersic index $n_{sph}<2$, argued by some to be pseudo-bulges, 
+are not offset to lower $M_{BH}$ from the correlation defined by the current bulge sample with $n_{sph}>2$; 
+and iii)~$L_{sph}$ and $L_{gal}$ correlate equally well with $M_{BH}$, in terms of intrinsic scatter, only for early-type 
+galaxies~--~once reasonable numbers of spiral galaxies are included, the correlation with $L_{sph}$ is better than that with $L_{gal}$. 

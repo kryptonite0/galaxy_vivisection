@@ -140,7 +140,8 @@ def mbh_vs_mass_sph():
 	mass_sph_n1277 = 2.69*10**11
 	mass_sph_n1277_b = mass_sph_n1277/11.65*6	
 	mass_sph_n1277_old = 2.88*10**10
-	mbh_n1277 = 1.7*10**10
+	#mbh_n1277 = 1.7*10**10 # van den bosch 2012
+	mbh_n1277 = 4.9*10**9 # walsh+2015
 	ax.scatter([mass_sph_n1277], [mbh_n1277], marker=r'$\star$', s=500, color='red', **scatter_kwargs)
 	#ax.scatter([mass_sph_n1277_b], [mbh_n1277], marker=r'$\star$', s=100, color='red', **scatter_kwargs)
 	ax.scatter([mass_sph_n1277_old], [mbh_n1277], marker=r'$\star$', s=500, color='gray', **scatter_kwargs)
@@ -181,15 +182,15 @@ def mbh_vs_mass_sph():
 	
 	x0 = mass_sph[gal_id=='n1332']
 	y0 = mbh[gal_id=='n1332']
-	ax.text(x0*1.2, y0/1.3, 'N1332', size=12, color='red')
+	ax.text(x0*1.3, y0/1.3, 'N1332', size=12, color='red')
 	
 	x0 = mass_sph_n1277
 	y0 = mbh_n1277
-	ax.text(x0*1.2, y0/1.3, 'N1277', size=12, color='red')
+	ax.text(x0*1.3, y0/1.2, 'N1277', size=12, color='red')
 	
 	x0 = mass_sph_n1271
 	y0 = mbh_n1271
-	ax.text(x0*1.1, y0*1.3, 'N1271', size=12, color='red')
+	ax.text(x0/2.2, y0*1.0, 'N1271', size=12, color='red')
 	
 	x0 = mass_sph_m1216
 	y0 = mbh_m1216

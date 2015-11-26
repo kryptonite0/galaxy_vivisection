@@ -4,35 +4,35 @@ The top-level auxiliary file: mm.aux
 The style file: apj.bst
 Database file #1: mmNotes.bib
 Database file #2: /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
-You're missing a field part---line 73 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+You're missing a field part---line 88 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  :     month = 
  :             ,
 I'm skipping whatever remains of this entry
-You're missing a field part---line 90 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+You're missing a field part---line 105 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  :     month = 
  :             ,
 I'm skipping whatever remains of this entry
-You're missing a field part---line 108 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+You're missing a field part---line 123 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  :     month = 
  :             ,
 I'm skipping whatever remains of this entry
-You're missing a field part---line 2708 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+You're missing a field part---line 2723 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  :    volume = 
  :             ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3651 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+Repeated entry---line 3666 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  : @article{scorzabender1995
  :                          ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 8304 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+I was expecting a `,' or a `}'---line 8319 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  :      year = 2014
  :                 a,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 8323 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+I was expecting a `,' or a `}'---line 8338 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  :      year = 2014
  :                 b,
 I'm skipping whatever remains of this entry
-Repeated entry---line 8790 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+Repeated entry---line 8805 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
  : @article{haringrix2004
  :                       ,
 I'm skipping whatever remains of this entry

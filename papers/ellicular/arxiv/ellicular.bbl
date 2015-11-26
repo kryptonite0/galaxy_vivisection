@@ -174,6 +174,10 @@
 {Ebneter} K.,  {Davis} M.,  {Jeske} N.,   {Stevens} M.,  1987, in Bulletin of
   the American Astronomical Society. p.~681
 
+\bibitem[\protect\citeauthoryear{{Emsellem}}{{Emsellem}}{2013}]{emsellem2013}
+{Emsellem} E.,  2013, \mn@doi [\mnras] {10.1093/mnras/stt840}, \href
+  {http://adsabs.harvard.edu/abs/2013MNRAS.433.1862E} {433, 1862}
+
 \bibitem[\protect\citeauthoryear{{Emsellem} et~al.,}{{Emsellem}
   et~al.}{2007}]{emsellem2007}
 {Emsellem} E.,  et~al., 2007, \mn@doi [\mnras]
@@ -451,11 +455,19 @@ Romanowsky A.~J.,  Fall S.~M.,  2012, The Astrophysical Journal Supplement
   {http://adsabs.harvard.edu/abs/2006MNRAS.373L..36T} {373, L36}
 
 \bibitem[\protect\citeauthoryear{{Walsh}, {van den Bosch}, {Gebhardt},
+  {Y{\i}ld{\i}r{\i}m}, {Richstone}, {G{\"u}ltekin}  \& {Husemann}}{{Walsh}
+  et~al.}{2015a}]{walsh2015n1277}
+{Walsh} J.~L.,  {van den Bosch} R.~C.~E.,  {Gebhardt} K.,  {Y{\i}ld{\i}r{\i}m}
+  A.,  {Richstone} D.~O.,  {G{\"u}ltekin} K.,   {Husemann} B.,  2015a,
+  preprint, \href {http://adsabs.harvard.edu/abs/2015arXiv151104455W} {}
+  (\mn@eprint {arXiv} {1511.04455})
+
+\bibitem[\protect\citeauthoryear{{Walsh}, {van den Bosch}, {Gebhardt},
   {Yildirim}, {G{\"u}ltekin}, {Husemann}  \& {Richstone}}{{Walsh}
-  et~al.}{2015}]{walsh2015}
+  et~al.}{2015b}]{walsh2015}
 {Walsh} J.~L.,  {van den Bosch} R.~C.~E.,  {Gebhardt} K.,  {Yildirim} A.,
-  {G{\"u}ltekin} K.,  {Husemann} B.,   {Richstone} D.~O.,  2015, \mn@doi [\apj]
-  {10.1088/0004-637X/808/2/183}, \href
+  {G{\"u}ltekin} K.,  {Husemann} B.,   {Richstone} D.~O.,  2015b, \mn@doi
+  [\apj] {10.1088/0004-637X/808/2/183}, \href
   {http://adsabs.harvard.edu/abs/2015ApJ...808..183W} {808, 183}
 
 \bibitem[\protect\citeauthoryear{{Y{\i}ld{\i}r{\i}m}, {van den Bosch}, {van de
