@@ -98,6 +98,12 @@
 \bibitem[{{Nipoti}(2015)}]{nipoti2015}
 {Nipoti}, C. 2015, \apjl, 805, L16
 
+\bibitem[{{Novak} {et~al.}(2006){Novak}, {Faber}, \& {Dekel}}]{novak2006}
+{Novak}, G.~S., {Faber}, S.~M., \& {Dekel}, A. 2006, \apj, 637, 96
+
+\bibitem[{{Park} {et~al.}(2012){Park}, {Kelly}, {Woo}, \& {Treu}}]{park2012}
+{Park}, D., {Kelly}, B.~C., {Woo}, J.-H., \& {Treu}, T. 2012, \apjs, 203, 6
+
 \bibitem[{{Press} {et~al.}(1992){Press}, {Teukolsky}, {Vetterling}, \&
   {Flannery}}]{press1992}
 {Press}, W.~H., {Teukolsky}, S.~A., {Vetterling}, W.~T., \& {Flannery}, B.~P.
@@ -116,6 +122,18 @@
   {Hunt}, {Vika}, \& {Driver}}]{savorgnan2013}
 {Savorgnan}, G., {Graham}, A.~W., {Marconi}, A., {et~al.} 2013, \mnras, 434,
   387
+
+\bibitem[{{Savorgnan} \& {Graham}(2015{\natexlab{a}})}]{ellicular}
+{Savorgnan}, G.~A.~D., \& {Graham}, A.~W. 2015{\natexlab{a}}, ArXiv e-prints,
+  arXiv:1511.05654
+
+\bibitem[{{Savorgnan} \& {Graham}(2015{\natexlab{b}})}]{paperI}
+---. 2015{\natexlab{b}}, ArXiv e-prints, arXiv:1511.07446
+
+\bibitem[{{Savorgnan} {et~al.}(2015){Savorgnan}, {Graham}, {Marconi}, \&
+  {Sani}}]{paperII}
+{Savorgnan}, G.~A.~D., {Graham}, A.~W., {Marconi}, A., \& {Sani}, E. 2015,
+  ArXiv e-prints, arXiv:1511.07437
 
 \bibitem[{{Scott} {et~al.}(2014){Scott}, {Davies}, {Houghton}, {Cappellari},
   {Graham}, \& {Pimbblet}}]{scott2014}
