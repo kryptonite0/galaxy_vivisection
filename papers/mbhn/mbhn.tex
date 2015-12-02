@@ -155,7 +155,9 @@ This method consists in comparing, for each of our galaxies, the measurements of
 with that obtained by us. 
 Systematic errors are typically not considered by popular 2D fitting codes, which report only the statistical errors 
 associated with their fitted parameters. 
-Readers should refer to \emph{Paper I} for a more detailed discussion on this topic. }.  
+Readers should refer to \emph{Paper I} for a more detailed discussion on this topic. }. 
+For this analysis, we elected to use the spheroid S\'ersic indices obtained from the decomposition of the one-dimensional 
+major-axis surface brightness profiles of our galaxies.  
 The morphological classification (E = elliptical; E/S0 = elliptical/lenticular; S0 = lenticular; 
 S0/Sp = lenticular/spiral; Sp = spiral; and ``merger'') follows from the galaxy decompositions illustrated in \emph{Paper I}. 
 As in \emph{Paper II}, we will refer to early-type galaxies (E+S0) and late-type galaxies (Sp). 
@@ -186,7 +188,8 @@ these problems can be overcome with the use of the modified FITEXY routine.
 \cite{park2012} also concluded that the modified FITEXY routine performs better and returns less biased results than the BCES estimator, 
 and noted that the the modified FITEXY routine is computationally less intensive than the Bayesian technique {\tt linmix\_err}. 
 Given that at least one of our subsamples (the lenticular galaxies) has a small size 
-and that the uncertainties associated to $n_{\rm sph}$ are relatively large compared to the range in $n_{\rm sph}$ values for most of our subsamples, 
+and that the uncertainties associated to $n_{\rm sph}$ are relatively large 
+compared to the range spanned by the $n_{\rm sph}$ values for most of our subsamples, 
 we put more trust in the results obtained with the modified FITEXY routine 
 and throughout the text we quote only those. \\ 
 We report both symmetrical and nonsymmetrical linear regressions.  
@@ -225,13 +228,13 @@ Given this, we conclude that in the $L_{\rm sph} - n_{\rm sph}$ diagram
 elliptical and lenticular galaxies form together a single (\emph{early-type}) sequence, 
 whereas the combination of lenticular and spiral galaxies do not. 
 According to the modified FITEXY routine, 
-early-type galaxies follow\footnote{Using the BCES estimator, 
+early-type galaxies\footnote{Using the BCES estimator, 
 \cite{savorgnan2013} re-analyzed the dataset from \cite{grahamguzman2003} 
 and obtained $L_{\rm sph} \propto n_{\rm sph}^{3.60 \pm 0.19}$ for the elliptical galaxies only. 
 This result is in excellent agreement with the BCES linear regression obtained here for the early-type galaxies 
 ($L_{\rm sph} \propto n_{\rm sph}^{3.89 \pm 0.42}$) 
 and, remarkably, it is exactly the same proportionality obtained here for the early-type galaxies with the modified FITEXY routine. } 
-$L_{\rm sph} \propto n_{\rm sph}^{3.60 \pm 0.19}$, 
+follow $L_{\rm sph} \propto n_{\rm sph}^{3.60 \pm 0.19}$, 
 whereas late-type galaxies follow a shallower $L_{\rm sph} \propto n_{\rm sph}^{1.44 \pm 0.52}$ sequence. 
 
 
@@ -295,10 +298,11 @@ The symmetrical linear regression for all galaxies obtained with the modified FI
 \end{equation*}
 \\
 
-We have seen that the early- and late-type galaxies in the $M_{\rm BH} - n_{\rm sph}$ diagram can be fit with a single power-law, 
-whereas they follow two separate correlations in the $M_{\rm BH} - L_{\rm sph}$ diagram (\emph{Paper II}). 
-We now want to compare the amount of scatter among these two plots. 
-In Table \ref{tab:intsc} we summarize the values of the intrinsic scatter 
+We have seen that the early- and late-type galaxies in the $M_{\rm BH} - n_{\rm sph}$ diagram 
+can be fit (together) with a single power-law, 
+whereas they follow two different correlations in the $M_{\rm BH} - L_{\rm sph}$ diagram (\emph{Paper II}). 
+We now want to compare the amount of intrinsic scatter in these two plots. 
+In Table \ref{tab:intsc} we report the values of the intrinsic scatter 
 in the $M_{\rm BH} - n_{\rm sph}$ and $M_{\rm BH} - L_{\rm sph}$ diagrams 
 for all, early- and late-type galaxies, 
 obtained with the modified FITEXY routine and the Bayesian estimator {\tt linmix\_err}. 
@@ -319,7 +323,7 @@ that of the $M_{\rm BH} - L_{\rm sph}$ relation,
 except for the inverse ($X|Y$) regression obtained with the modified FITEXY routine. \\
 In passing, we note that the values of the intrinsic scatter of the $M_{\rm BH} - n_{\rm sph}$ relation 
 are systematically smaller -- although consistent within the errors -- 
-than the corresponding values of the intrinsic scatter of the $M_{\rm BH} - L_{\rm sph}$ relation. 
+than the corresponding values of the intrinsic scatter of the $M_{\rm BH} - L_{\rm sph}$ relation.  
 In addition, the values of the intrinsic scatter returned by the modified FITEXY routine are systematically smaller than 
 those output by the Bayesian estimator {\tt linmix\_err}. 
 
