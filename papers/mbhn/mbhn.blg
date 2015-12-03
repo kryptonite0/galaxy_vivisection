@@ -20,48 +20,52 @@ I was expecting a `,' or a `}'---line 8381 of file /Users/gsavorgnan/galaxy_vivi
  :      year = 2014
  :                 b,
 I'm skipping whatever remains of this entry
+Repeated entry---line 8848 of file /Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography.bib
+ : @article{haringrix2004
+ :                       ,
+I'm skipping whatever remains of this entry
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty publisher in press1992
 Warning--empty publisher in sersic1968
-You've used 41 entries,
+You've used 47 entries,
             3085 wiz_defined-function locations,
-            926 strings with 14048 characters,
-and the built_in function-call counts, 19749 in all, are:
-= -- 1617
-> -- 1463
-< -- 19
-+ -- 487
-- -- 522
-* -- 1689
-:= -- 3726
-add.period$ -- 41
-call.type$ -- 41
-change.case$ -- 272
-chr.to.int$ -- 40
-cite$ -- 43
-duplicate$ -- 788
-empty$ -- 1179
-format.name$ -- 586
-if$ -- 3909
+            971 strings with 16355 characters,
+and the built_in function-call counts, 23365 in all, are:
+= -- 1867
+> -- 1835
+< -- 22
++ -- 611
+- -- 653
+* -- 2044
+:= -- 4434
+add.period$ -- 47
+call.type$ -- 47
+change.case$ -- 314
+chr.to.int$ -- 46
+cite$ -- 49
+duplicate$ -- 902
+empty$ -- 1347
+format.name$ -- 729
+if$ -- 4597
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 39
-newline$ -- 127
-num.names$ -- 166
-pop$ -- 307
+missing$ -- 45
+newline$ -- 145
+num.names$ -- 190
+pop$ -- 354
 preamble$ -- 1
-purify$ -- 272
+purify$ -- 314
 quote$ -- 0
-skip$ -- 651
+skip$ -- 745
 stack$ -- 0
-substring$ -- 813
+substring$ -- 939
 swap$ -- 16
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 363
+type$ -- 417
 warning$ -- 2
-while$ -- 155
+while$ -- 178
 width$ -- 0
-write$ -- 411
-(There were 4 error messages)
+write$ -- 471
+(There were 5 error messages)

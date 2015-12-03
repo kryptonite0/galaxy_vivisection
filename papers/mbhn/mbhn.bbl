@@ -34,8 +34,25 @@
 {Emsellem}, E., {Cappellari}, M., {Krajnovi{\'c}}, D., {et~al.} 2011, \mnras,
   414, 888
 
+\bibitem[{{Fazio} {et~al.}(2004){Fazio}, {Hora}, {Allen}, {Ashby}, {Barmby},
+  {Deutsch}, {Huang}, {Kleiner}, {Marengo}, {Megeath}, {Melnick}, {Pahre},
+  {Patten}, {Polizotti}, {Smith}, {Taylor}, {Wang}, {Willner}, {Hoffmann},
+  {Pipher}, {Forrest}, {McMurty}, {McCreight}, {McKelvey}, {McMurray}, {Koch},
+  {Moseley}, {Arendt}, {Mentzell}, {Marx}, {Losch}, {Mayman}, {Eichhorn},
+  {Krebs}, {Jhabvala}, {Gezari}, {Fixsen}, {Flores}, {Shakoorzadeh}, {Jungo},
+  {Hakun}, {Workman}, {Karpati}, {Kichak}, {Whitley}, {Mann}, {Tollestrup},
+  {Eisenhardt}, {Stern}, {Gorjian}, {Bhattacharya}, {Carey}, {Nelson},
+  {Glaccum}, {Lacy}, {Lowrance}, {Laine}, {Reach}, {Stauffer}, {Surace},
+  {Wilson}, {Wright}, {Hoffman}, {Domingo}, \& {Cohen}}]{fazio2004IRAC}
+{Fazio}, G.~G., {Hora}, J.~L., {Allen}, L.~E., {et~al.} 2004, \apjs, 154, 10
+
 \bibitem[{{Ferrarese} \& {Merritt}(2000)}]{ferraresemerritt2000}
 {Ferrarese}, L., \& {Merritt}, D. 2000, \apjl, 539, L9
+
+\bibitem[{{Gavazzi} {et~al.}(2003){Gavazzi}, {Boselli}, {Donati}, {Franzetti},
+  \& {Scodeggio}}]{goldmine}
+{Gavazzi}, G., {Boselli}, A., {Donati}, A., {Franzetti}, P., \& {Scodeggio}, M.
+  2003, \aap, 400, 451
 
 \bibitem[{{Gebhardt} {et~al.}(2000){Gebhardt}, {Bender}, {Bower}, {Dressler},
   {Faber}, {Filippenko}, {Green}, {Grillmair}, {Ho}, {Kormendy}, {Lauer},
@@ -65,6 +82,9 @@
 \bibitem[{{Graham} \& {Worley}(2008)}]{grahamworley2008}
 {Graham}, A.~W., \& {Worley}, C.~C. 2008, \mnras, 388, 1708
 
+\bibitem[{{H{\"a}ring} \& {Rix}(2004)}]{haringrix2004}
+{H{\"a}ring}, N., \& {Rix}, H.-W. 2004, \apjl, 604, L89
+
 \bibitem[{{Iodice} {et~al.}(1997){Iodice}, {D'Onofrio}, \&
   {Capaccioli}}]{iodice1997}
 {Iodice}, E., {D'Onofrio}, M., \& {Capaccioli}, M. 1997, in Astronomical
@@ -90,10 +110,21 @@
   {Kembhavi}}]{khosroshahi2000}
 {Khosroshahi}, H.~G., {Wadadekar}, Y., \& {Kembhavi}, A. 2000, \apj, 533, 162
 
+\bibitem[{{Kormendy} \& {Richstone}(1995)}]{kormendyrichstone1995}
+{Kormendy}, J., \& {Richstone}, D. 1995, \araa, 33, 581
+
 \bibitem[{{Magorrian} {et~al.}(1998){Magorrian}, {Tremaine}, {Richstone},
   {Bender}, {Bower}, {Dressler}, {Faber}, {Gebhardt}, {Green}, {Grillmair},
   {Kormendy}, \& {Lauer}}]{magorrian1998}
 {Magorrian}, J., {Tremaine}, S., {Richstone}, D., {et~al.} 1998, \aj, 115, 2285
+
+\bibitem[{{Marconi} \& {Hunt}(2003)}]{marconihunt2003}
+{Marconi}, A., \& {Hunt}, L.~K. 2003, \apjl, 589, L21
+
+\bibitem[{{Nemmen} {et~al.}(2012){Nemmen}, {Georganopoulos}, {Guiriec},
+  {Meyer}, {Gehrels}, \& {Sambruna}}]{nemmen2012}
+{Nemmen}, R.~S., {Georganopoulos}, M., {Guiriec}, S., {et~al.} 2012, Science,
+  338, 1445
 
 \bibitem[{{Nipoti}(2015)}]{nipoti2015}
 {Nipoti}, C. 2015, \apjl, 805, L16
