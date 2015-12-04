@@ -24,7 +24,7 @@
 
 
 \title{Supermassive black holes and their host spheroids \\ 
-III. A universal $M_{\rm BH} - n_{\rm sph}$ correlation }
+III. A universal $M_{\rm BH} - \lowercase{n_{\rm sph}}$ correlation }
 
 
 \author{Giulia A.~D.~Savorgnan\altaffilmark{1}}
@@ -40,10 +40,8 @@ with the mass of the central supermassive black hole, $M_{\rm BH}$.
 The $M_{\rm BH} - n_{\rm sph}$ correlation is also expected from other two well known scaling relations 
 involving the spheroid luminosity, $L_{\rm sph}$: 
 the $L_{\rm sph} - n_{\rm sph}$ and the $M_{\rm BH} - L_{\rm sph}$ correlations. 
-
-However, obtaining an accurate estimate of the spheroid S\'ersic index requires a careful modelling of the galaxy's light distribution 
+Obtaining an accurate estimate of the spheroid S\'ersic index requires a careful modelling of a galaxy's light distribution 
 and some studies have failed to recover a statistically significant $M_{\rm BH} - n_{\rm sph}$ correlation. 
-
 With the aim of re-investigating the $M_{\rm BH} - n_{\rm sph}$ 
 and other black hole mass scaling relations, 
 we performed a detailed (i.e.~bulge, disks, bars, spiral arms, rings, halo, nucleus, etc.) 
@@ -54,11 +52,12 @@ While early-type (elliptical+lenticular) and late-type (spiral) galaxies split i
 in the $L_{\rm sph} - n_{\rm sph}$ and $M_{\rm BH} - L_{\rm sph}$ diagrams, 
 they reunite into a single $M_{\rm BH} \propto n_{\rm sph}^{3.39 \pm 0.15}$ sequence
 with relatively small intrinsic scatter ($\epsilon_{(M_{\rm BH} | n_{\rm sph})} \simeq 0.25 \rm~dex$). 
-{\bf to be finished...}
+The black hole mass is therefore closely related to the spheroid central concentration of stars, 
+which mirrors the inner gradient of the spheroid gravitational potential. 
 \end{abstract}
 
 
-\keywords{keywords}
+\keywords{black hole physics; galaxies: bulges; galaxies: elliptical and lenticular, cD; galaxies: evolution; galaxies: structure}
 
 
 \section{Introduction}
@@ -70,11 +69,11 @@ with no attempt at distinguishing between classical bulges and disk-like pseudo-
 yet its physical origin has remained unexplained for decades. 
 The S\'ersic model parametrizes the intensity of light $I$ as a function of the projected galactic radius $R$ such that
 \begin{equation*}
-I(R; I_{\rm e},R_{\rm e},n) = I_{\rm e} \exp \biggl \{ -b_{\rm n} \biggl [ \Bigl (\frac{R}{R_{\rm e}} \bigr )^{1/n} -1 \biggr ] \biggr \}, 
+I(R; I_{\rm e},R_{\rm e},n) = I_{\rm e} \exp \biggl \{ -b_{\rm n} \biggl [ \biggl (\frac{R}{R_{\rm e}} \biggr )^{1/n} -1 \biggr ] \biggr \}, 
 \end{equation*}
 where $I_{\rm e}$ indicates the intensity at the effective radius $R_{\rm e}$ that encloses half of the total light from the model, 
 the S\'ersic index $n$ is the parameter that regulates the curvature of the radial light profile, 
-and $b_{\rm n}$ is a constant defined in terms of the S\'ersic index $n$ (see \citealt{grahamdriver2005}, and references therein). 
+and $b_{\rm n}$ is a constant defined in terms of the S\'ersic index (see \citealt{grahamdriver2005}, and references therein). 
 A large S\'ersic index corresponds to a steep inner profile and a shallow outer profile, 
 whereas a small S\'ersic index corresponds to a shallow inner profile and a steep outer profile. 
 This means that, for a stellar spheroidal system whose light distribution is well approximated by the S\'ersic model, 
@@ -113,13 +112,13 @@ This issue was tackled by \cite{savorgnan2013}, who collected the S\'ersic index
 and showed that, by rejecting the most discrepant measurements and averaging the remaning ones, 
 a strong $M_{\rm BH} - n_{\rm sph}$ relation was retrieved. 
 Remarkably, \cite{savorgnan2013} repeated their analysis upon excluding the S\'ersic index measurements of \cite{grahamdriver2007} 
-and still regained a significant $M_{\rm BH} - n_{\rm sph}$ relation. 
+and still regained a significant $M_{\rm BH} - n_{\rm sph}$ correlation. 
 This was suggesting that the individual galaxy decompositions of \cite{sani2011}, \cite{vika2012} and \cite{beifiori2012} were not accurate, 
 i.e.~each individual study obtained ``noisy'' S\'ersic index measurements 
 which prevented the recovery of a strong $M_{\rm BH} - n_{\rm sph}$ relation. \\
 Motivated by the need for more accurate galaxy decompositions to refine and re-investigate scaling relations 
-between the black hole mass and several galaxy structural parameters, 
-we performed state-of-the-art modelling for the largest sample of galaxies to date (\citealt{paperI}, hereafter \emph{Paper I}),  
+between the black hole mass and several host spheroid structural parameters, 
+we performed state-of-the-art modelling for the largest sample of galaxies to date (\citealt{paperI}, hereafter \emph{Paper I})  
 for which a dynamical measurement of the black hole mass was available.
 In doing so, we used $3.6\rm~\mu m$ \emph{Spitzer} satellite imagery, 
 given its superb capability to trace the stellar mass (\citealt{sheth2010}, and references therein). 
@@ -159,7 +158,7 @@ with that obtained by us.
 Systematic errors are typically not considered by popular 2D fitting codes, which report only the statistical errors 
 associated with their fitted parameters. 
 Readers should refer to \emph{Paper I} for a more detailed discussion on this topic. }. 
-For this analysis, we elected to use the spheroid S\'ersic indices obtained from the decomposition of the one-dimensional 
+For the present analysis, we elected to use the spheroid S\'ersic indices obtained from the decomposition of the one-dimensional 
 major-axis surface brightness profiles of our galaxies.  
 The morphological classification (E = elliptical; E/S0 = elliptical/lenticular; S0 = lenticular; 
 S0/Sp = lenticular/spiral; Sp = spiral; and ``merger'') follows from the galaxy decompositions illustrated in \emph{Paper I}. 
@@ -183,7 +182,7 @@ but only the FITEXY and the {\tt linmix\_err} codes allow one to quantify it.
 \cite{tremaine2002} cautioned that 
 the BCES estimator becomes ineffective when the dataset contains at least one low-precision measurement -- 
 regardless of how many high-precision measurements are in the sample -- 
-and tends to be biased in case of low number statistics 
+and tends to be biased in case of low number statistics, 
 or if the mean square of the uncertainties associated to the independent variable is comparable to 
 the variance of the distribution of the independent variable. 
 According to the results from the Monte Carlo Markov Chain simulations of \cite{tremaine2002} and \cite{novak2006}, 
@@ -278,11 +277,11 @@ Using the results from the modified FITEXY routine,
 we know that the early-type galaxies follow $M_{\rm BH} \propto L_{\rm sph}^{1.03 \pm 0.11}$ 
 and $L_{\rm sph} \propto n_{\rm sph}^{3.60 \pm 0.19}$, 
 therefore we expect to find $M_{\rm BH} \propto n_{\rm sph}^{3.69 \pm 0.44}$; 
-this prediction is in excellent agreement with the observed slope of $3.58 \pm 0.27$ obtained here. 
+this prediction is in excellent agreement with the observed log-slope of $3.58 \pm 0.27$ obtained here. 
 On the other hand, late-type galaxies follow $M_{\rm BH} \propto L_{\rm sph}^{2.58 \pm 1.06}$ 
 and $L_{\rm sph} \propto n_{\rm sph}^{1.44 \pm 0.52}$, 
 from which one can predict $M_{\rm BH} \propto n_{\rm sph}^{3.72 \pm 2.03}$; 
-this is consistent with the observed slope of $4.55 \pm 0.66$. 
+this is consistent with the observed log-slope of $4.55 \pm 0.66$. 
 The Bayesian estimator {\tt linmix\_err} returns consistent results: 
 a slope of $3.44 \pm 0.33$ for the early-type galaxies 
 and a slope of $4.12 \pm 1.07$ for the late-type galaxies. 
@@ -639,7 +638,7 @@ Both the early- and late-type subsamples do not contain the two galaxies classif
 \end{tabular}
 \label{tab:lregMn} 
 \tablecomments{For each subsample, we indicate $\langle \log n_{\rm sph} \rangle$, its average value of spheroid S\'ersic index. 
-In the last two columns, we report $\epsilon$, the intrinsic scatter, and $\Delta$, the total rms scatter in the $L_{\rm sph}$ direction. 
+In the last two columns, we report $\epsilon$, the intrinsic scatter, and $\Delta$, the total rms scatter in the $M_{\rm BH}$ direction. 
 The lenticular galaxies NGC 0524 and NGC 3998 were excluded from the linear regression analysis (see Section \ref{sec:anal}). 
 Both the early- and late-type subsamples do not contain the two galaxies classified as S0/Sp and the two galaxies classified as mergers (45+17=66-2-2).  }
 \end{table*}
@@ -703,7 +702,9 @@ under contract with the National Aeronautics and Space Administration.
 We acknowledge the usage of the HyperLeda database (\url{http://leda.univ-lyon1.fr}).
 The BCES routine \citep{akritasbershady1996} was run via the python module 
 written by Rodrigo Nemmen \citep{nemmen2012}, which is available at \url{https://github.com/rsnemmen/BCES}.
-
+The modified FITEXY linear regressions were performed using the IDL routine MPFITEXY \citep{williams2010}, 
+which is available at \url{http://purl.org/mike/mpfitexy}. 
+The MPFITEXY routine depends on the MPFIT package \citep{markwardt2009}.
 
 
 \bibliography{/Users/gsavorgnan/galaxy_vivisection/papers/SMBHbibliography}

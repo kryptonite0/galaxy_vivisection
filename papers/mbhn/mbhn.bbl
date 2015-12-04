@@ -121,6 +121,11 @@
 \bibitem[{{Marconi} \& {Hunt}(2003)}]{marconihunt2003}
 {Marconi}, A., \& {Hunt}, L.~K. 2003, \apjl, 589, L21
 
+\bibitem[{{Markwardt}(2009)}]{markwardt2009}
+{Markwardt}, C.~B. 2009, in Astronomical Society of the Pacific Conference
+  Series, Vol. 411, Astronomical Data Analysis Software and Systems XVIII, ed.
+  D.~A. {Bohlender}, D.~{Durand}, \& P.~{Dowler}, 251
+
 \bibitem[{{Nemmen} {et~al.}(2012){Nemmen}, {Georganopoulos}, {Guiriec},
   {Meyer}, {Gehrels}, \& {Sambruna}}]{nemmen2012}
 {Nemmen}, R.~S., {Georganopoulos}, M., {Guiriec}, S., {et~al.} 2012, Science,
@@ -204,6 +209,10 @@
   {Robotham}}]{vika2012}
 {Vika}, M., {Driver}, S.~P., {Cameron}, E., {Kelvin}, L., \& {Robotham}, A.
   2012, \mnras, 419, 2264
+
+\bibitem[{{Williams} {et~al.}(2010){Williams}, {Bureau}, \&
+  {Cappellari}}]{williams2010}
+{Williams}, M.~J., {Bureau}, M., \& {Cappellari}, M. 2010, \mnras, 409, 1330
 
 \bibitem[{{Young} \& {Currie}(1994)}]{youngcurrie1994}
 {Young}, C.~K., \& {Currie}, M.~J. 1994, \mnras, 268, L11
