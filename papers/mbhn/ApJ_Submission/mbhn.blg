@@ -1,0 +1,71 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: mbhn.aux
+The style file: apj.bst
+Database file #1: mbhnNotes.bib
+Database file #2: SMBHbibliography.bib
+You're missing a field part---line 183 of file SMBHbibliography.bib
+ :     month = 
+ :             ,
+I'm skipping whatever remains of this entry
+You're missing a field part---line 2783 of file SMBHbibliography.bib
+ :    volume = 
+ :             ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 8395 of file SMBHbibliography.bib
+ :      year = 2014
+ :                 a,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 8414 of file SMBHbibliography.bib
+ :      year = 2014
+ :                 b,
+I'm skipping whatever remains of this entry
+Repeated entry---line 8881 of file SMBHbibliography.bib
+ : @article{haringrix2004
+ :                       ,
+I'm skipping whatever remains of this entry
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--empty publisher in press1992
+Warning--empty publisher in sersic1968
+You've used 49 entries,
+            3085 wiz_defined-function locations,
+            987 strings with 16703 characters,
+and the built_in function-call counts, 24291 in all, are:
+= -- 1946
+> -- 1887
+< -- 24
++ -- 628
+- -- 670
+* -- 2116
+:= -- 4598
+add.period$ -- 49
+call.type$ -- 49
+change.case$ -- 326
+chr.to.int$ -- 48
+cite$ -- 51
+duplicate$ -- 948
+empty$ -- 1412
+format.name$ -- 749
+if$ -- 4788
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 46
+newline$ -- 151
+num.names$ -- 199
+pop$ -- 370
+preamble$ -- 1
+purify$ -- 326
+quote$ -- 0
+skip$ -- 785
+stack$ -- 0
+substring$ -- 980
+swap$ -- 24
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 435
+warning$ -- 2
+while$ -- 187
+width$ -- 0
+write$ -- 491
+(There were 5 error messages)
