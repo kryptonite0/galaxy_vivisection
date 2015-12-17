@@ -1,0 +1,16 @@
+[Table 1, column 5, header] ((arcsec)) -> (arcsec)
+[Table 1, column 8 (Vel. Map), NGC 3115]  ... -> S
+[Table 1, column 5 (Core), NGC 7619]  yes^a(0.5) -> yes^a (0.5)
+[page 4, footnote a from Table 1]  Figure 2 overlaps with the footnote, which can't be read
+[Section 2.1.7]  mskregions -> use same font as objmasks
+[Section 2.1.9]  C. Peng 2015 -> C. Peng 2013 
+[Table 2, caption]  spheroid apparent magnitude (in units of mag) -> spheroid apparent magnitude (in units of mag, Vega system) 
+[Table 2, caption]  and galaxy apparent magnitude (in units of mag) -> and galaxy apparent magnitude (in units of mag, Vega system) 
+[Table 2, caption]  spheroid apparent magnitude (in units of mag) -> spheroid apparent magnitude (in units of mag, Vega system)
+[Section 3.3]  see the  Appendix for -> see the Appendix for (double space removed)
+[Tables 4 - 69]  1D equation -> 1D eq. (eq. means equivalent axis, not equation)
+[Tables 4 - 69]  some of the tables contain a horizontal line to separate the first 2/3 rows, pertaining to the models of this work, 
+                 from the following rows, pertaining to the models of other works (GD07, S+11, etc.); 
+		 however, some tables do not contain such horizontal line, please make them uniform
+[Table 52] remove empty row at the bottom
+

@@ -1866,10 +1866,10 @@ def mbh_vs_n_sph_eq():
 		
 		
 def main():
-	mag_sph_vs_n_maj()
+	#mag_sph_vs_n_maj()
 	#mag_sph_vs_n_eq()
-	mbh_vs_n_sph_maj()
-	#mbh_vs_n_sph_eq()
+	#mbh_vs_n_sph_maj()
+	mbh_vs_n_sph_eq()
 	
 main()		
 		
