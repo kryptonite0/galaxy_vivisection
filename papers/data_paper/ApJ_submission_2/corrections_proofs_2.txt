@@ -1,0 +1,198 @@
+Q1, Q2:
+At the beginning of Section 5.1, modify the first sentence as:
+"For each galaxy, we show a figure (Figures 14-79) and a table (Tables 4-69). "
+
+------------------------------------------------------------------------------------------
+
+Q3:
+J. Falcon-Barroso 2014, private communication  
+
+------------------------------------------------------------------------------------------
+
+Q4:
+- Ciambur 2015:
+@ARTICLE{2015ApJ...810..120C,
+   author = {{Ciambur}, B.~C.},
+    title = "{Beyond Ellipse(s): Accurately Modelling the Isophotal Structure of Galaxies with ISOFIT and CMODEL}",
+  journal = {\apj},
+archivePrefix = "arXiv",
+   eprint = {1507.02691},
+ keywords = {galaxies: fundamental parameters, galaxies: photometry, galaxies: structure, techniques: image processing},
+     year = 2015,
+    month = sep,
+   volume = 810,
+      eid = {120},
+    pages = {120},
+      doi = {10.1088/0004-637X/810/2/120},
+   adsurl = {http://adsabs.harvard.edu/abs/2015ApJ...810..120C},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+-Comastri 2015:
+@ARTICLE{2015A&A...574L..10C,
+   author = {{Comastri}, A. and {Gilli}, R. and {Marconi}, A. and {Risaliti}, G. and 
+	{Salvati}, M.},
+    title = "{Mass without radiation: Heavily obscured AGNs, the X-ray background, and the black hole mass density}",
+  journal = {\aap},
+archivePrefix = "arXiv",
+   eprint = {1501.03620},
+ keywords = {galaxies: active, galaxies: bulges, X-rays: diffuse background, quasars: supermassive black holes},
+     year = 2015,
+    month = feb,
+   volume = 574,
+      eid = {L10},
+    pages = {L10},
+      doi = {10.1051/0004-6361/201425496},
+   adsurl = {http://adsabs.harvard.edu/abs/2015A%26A...574L..10C},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+-Dullo & Graham 2013:
+@ARTICLE{2013ApJ...768...36D,
+   author = {{Dullo}, B.~T. and {Graham}, A.~W.},
+    title = "{Central Stellar Mass Deficits in the Bulges of Local Lenticular Galaxies, and the Connection with Compact z \~{} 1.5 Galaxies}",
+  journal = {\apj},
+archivePrefix = "arXiv",
+   eprint = {1303.1273},
+ keywords = {galaxies: elliptical and lenticular, cD, galaxies: fundamental parameter, galaxies: nuclei, galaxies: photometry, galaxies: structure},
+     year = 2013,
+    month = may,
+   volume = 768,
+      eid = {36},
+    pages = {36},
+      doi = {10.1088/0004-637X/768/1/36},
+   adsurl = {http://adsabs.harvard.edu/abs/2013ApJ...768...36D},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+- Graham 2015:
+@ARTICLE{2016ASSL..418..263G,
+   author = {{Graham}, A.~W.},
+    title = "{Galaxy Bulges and Their Massive Black Holes: A Review}",
+  journal = {Galactic Bulges},
+archivePrefix = "arXiv",
+   eprint = {1501.02937},
+ keywords = {Physics},
+     year = 2016,
+   volume = 418,
+    pages = {263},
+      doi = {10.1007/978-3-319-19378-6_11},
+   adsurl = {http://adsabs.harvard.edu/abs/2016ASSL..418..263G},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+- Lasker 2014a:
+@ARTICLE{2014ApJ...780...69L,
+   author = {{L{\"a}sker}, R. and {Ferrarese}, L. and {van de Ven}, G.},
+    title = "{Supermassive Black Holes and Their Host Galaxies. I. Bulge Luminosities from Dedicated Near-infrared Data}",
+  journal = {\apj},
+archivePrefix = "arXiv",
+   eprint = {1311.1530},
+ keywords = {galaxies: bulges, galaxies: photometry, galaxies: structure, methods: observational, techniques: photometric },
+     year = 2014,
+    month = jan,
+   volume = 780,
+      eid = {69},
+    pages = {69},
+      doi = {10.1088/0004-637X/780/1/69},
+   adsurl = {http://adsabs.harvard.edu/abs/2014ApJ...780...69L},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+- Lasker 2014b:
+@ARTICLE{2014ApJ...780...70L,
+   author = {{L{\"a}sker}, R. and {Ferrarese}, L. and {van de Ven}, G. and 
+	{Shankar}, F.},
+    title = "{Supermassive Black Holes and Their Host Galaxies. II. The Correlation with Near-infrared Luminosity Revisited}",
+  journal = {\apj},
+archivePrefix = "arXiv",
+   eprint = {1311.1531},
+ keywords = {black hole physics, galaxies: evolution },
+     year = 2014,
+    month = jan,
+   volume = 780,
+      eid = {70},
+    pages = {70},
+      doi = {10.1088/0004-637X/780/1/70},
+   adsurl = {http://adsabs.harvard.edu/abs/2014ApJ...780...70L},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
+------------------------------------------------------------------------------------------
+
+Q5:
+- Capaccioli 1987:
+http://adsabs.harvard.edu/abs/1987IAUS..127...47C
+@INPROCEEDINGS{1987IAUS..127...47C,
+   author = {{Capaccioli}, M.},
+    title = "{Distribution of light - Outer regions}",
+ keywords = {Astronomical Photometry, Elliptical Galaxies, Light Emission, Radiation Distribution, Calibrating, Light Scattering},
+booktitle = {Structure and Dynamics of Elliptical Galaxies},
+     year = 1987,
+   series = {IAU Symposium},
+   volume = 127,
+   editor = {{de Zeeuw}, P.~T.},
+    pages = {47-60},
+   adsurl = {http://adsabs.harvard.edu/abs/1987IAUS..127...47C},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+- de Vaucouleurs et al. 1991:
+@BOOK{1991rc3..book.....D,
+   author = {{de Vaucouleurs}, G. and {de Vaucouleurs}, A. and {Corwin}, Jr., H.~G. and 
+	{Buta}, R.~J. and {Paturel}, G. and {Fouqu{\'e}}, P.},
+    title = "{Third Reference Catalogue of Bright Galaxies. Volume I: Explanations and references. Volume II: Data for galaxies between 0$^{h}$ and 12$^{h}$. Volume III: Data for galaxies between 12$^{h}$ and 24$^{h}$.}",
+booktitle = {Third Reference Catalogue of Bright Galaxies.~Volume I: Explanations and references.~ Volume II: Data for galaxies between 0$^{h}$ and 12$^{h}$.~ Volume III: Data for galaxies between 12$^{h}$ and 24$^{h}$., by de Vaucouleurs, G.; de Vaucouleurs, A.; Corwin, H.~G., Jr.; Buta, R.~J.; Paturel, G.; Fouqu{\'e}, P..~Springer, New York, NY (USA), 1991, 2091 p., ISBN 0-387-97552-7, Price US$ 198.00. ISBN 3-540-97552-7, Price DM 448.00. ISBN 0-387-97549-7 (Vol. I), ISBN 0-387-97550-0 (Vol. II), ISBN 0-387-97551-9 (Vol. III).},
+     year = 1991,
+   adsurl = {http://adsabs.harvard.edu/abs/1991rc3..book.....D},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+- Dressler 1989:
+@INPROCEEDINGS{1989IAUS..134..217D,
+   author = {{Dressler}, A.},
+    title = "{Observational Evidence for Supermassive Black Holes}",
+booktitle = {Active Galactic Nuclei},
+     year = 1989,
+   series = {IAU Symposium},
+   volume = 134,
+   editor = {{Osterbrock}, D.~E. and {Miller}, J.~S.},
+    pages = {217},
+   adsurl = {http://adsabs.harvard.edu/abs/1989IAUS..134..217D},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+- Sersic 1968:
+@BOOK{1968adga.book.....S,
+   author = {{Sersic}, J.~L.},
+    title = "{Atlas de galaxias australes}",
+ keywords = {GALAXIES, GROUPS OF GALAXIES, ATLASES},
+booktitle = {Cordoba, Argentina: Observatorio Astronomico, 1968},
+     year = 1968,
+   adsurl = {http://adsabs.harvard.edu/abs/1968adga.book.....S},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+------------------------------------------------------------------------------------------
+
+Q6:
+Reference for Savorgnan & Graham 2015a:
+
+Manuscript number: MN-15-3065-MJ.R1
+ID: stv2713
+
+@ARTICLE{2015arXiv151105654S,
+   author = {{Savorgnan}, G.~A.~D. and {Graham}, A.~W.},
+    title = "{Explaining the reportedly over-massive black holes in early-type galaxies with intermediate-scale discs}",
+  journal = {ArXiv e-prints},
+archivePrefix = "arXiv",
+   eprint = {1511.05654},
+ keywords = {Astrophysics - Astrophysics of Galaxies},
+     year = 2015,
+    month = nov,
+   adsurl = {http://adsabs.harvard.edu/abs/2015arXiv151105654S},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
