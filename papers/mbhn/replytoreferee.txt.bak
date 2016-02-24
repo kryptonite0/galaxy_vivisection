@@ -1,0 +1,50 @@
+I thank the referee for a prompt and insightful review that helped improve the quality of the manuscript. 
+I have modified the manuscript as suggested by the referee, and highlighted the changes in boldface. 
+Below is my response to the referee report. 
+
+Figures 1 and 2 have been modified to show the insets with error bars on the same scale as the main plots. 
+I wish to maintain the fancy symbols for continuity with Paper II and because they allow to identify 
+the two lenticular galaxies excluded from the linear regression analysis (orange crosses) and
+the four galaxies classified as E/S0 or S0/Sp. 
+If I was to show only the four-color error bars, these six data points could not be easily located. 
+I tried to combine fancy symbols and error bars in a single panel, but the result was a messy and 
+too "crowded" plot. 
+Hopefully a two-panel figure - with separate symbols and error bars - is a good compromise. 
+
+The linear regression for the "all" sample is now shown with a black dotted line in both Figures 1 and 2. 
+Indeed, the Figures are now more informative. 
+Looking at the bottom panel of Figure 1, one can notice that the blue and orange error bars 
+span basically the same range in spheroid magnitude and Sersic index, but they are offset from each other. 
+In effect, the L-n linear regression for all galaxies seems to almost exactly define a separation line 
+in between lenticular and spiral galaxies. 
+Going beyond a "by eye" assessment, the linear regression analysis, which takes into account the error bars, 
+confirms that the slopes of the correlations for early- and late-type galaxies are not consistent with each other
+within their 1 sigma uncertainties. 
+This is already a quantitative indication that early- and late-type galaxies define two separate L-n sequences, 
+which justifies the use of a 4-parameter model, rather than a 2-parameter one, to describe the L-n diagram. 
+I've also explored an independent method, drawn from Information Theory, to measure the relative quality of 
+a 2-parameter and a 4-parameter model for the given L-n dataset. 
+The Akaike Information Criterion rewards the goodness of a fit and penalizes the number of parameter used 
+in the model, therefore it provides a means for model selection. 
+The Akaike Information Criterion test confirms that a 4-parameter model is preferred over a 2-parameter model 
+to describe the L-n diagram, whereas a 2-parameter model is preferred over a 4-parameter model to describe 
+the Mbh-n dataset. 
+Details about the Akaike Information Criterion are given in the manuscript (Section 3.1). 
+
+Indeed, I agree with the referee's concern about the uncertain and sometimes misleading definition of "bulge" 
+adopted in the literature, which led us to prefer the use of a more general term such as "spheroid" as opposed 
+to disk, although we recognize that "spheroid" might not be fully appropriate to describe disk-like pseudobulges. 
+In Papers I, II and III, as long as in Savorgnan & Graham (2016, MNRAS, 457, 320), we adopted and tried to be 
+consistent with a point of view similar to that of the ATLAS3D team: local galaxies display a continuous distribution 
+of spheroid-to-total flux ratios (e.g. Figure 2 of Cappellari et al. 2011), going from disk-less, "pure" 
+elliptical galaxies (slow rotators) to disk-dominated lenticular and spiral galaxies (fast rotators). 
+In Paper I, we consistently modelled each galaxy's spheroid with a Sersic profile. Our identification of the spheroidal 
+component can probably be classified as a "photometric" identification: we associated the spheroid with the central 
+excess of light after the subtraction of disks, bars, nuclei, rings and disk-like comp0nents (possibly pseudobulges?). 
+
+
+
+
+
+
+

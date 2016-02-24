@@ -1,6 +1,9 @@
 \begin{thebibliography}{}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
+\bibitem[{{Akaike}(1974)}]{akaike1974}
+{Akaike}, H. 1974, Automatic Control, IEEE Transactions, 19, 716
+
 \bibitem[{{Akritas} \& {Bershady}(1996)}]{akritasbershady1996}
 {Akritas}, M.~G., \& {Bershady}, M.~A. 1996, \apj, 470, 706
 

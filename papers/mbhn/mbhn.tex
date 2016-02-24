@@ -33,25 +33,27 @@ III. The $M_{\rm BH} - \lowercase{n_{\rm sph}}$ correlation }
 
 
 \begin{abstract}
-The S\'ersic $R^{1/n}$ model is the best approximation known to date for describing the light distribution of stellar spheroidal and disk components, 
+The S\'ersic $R^{1/n}$ model is the best approximation known to date for describing the light distribution 
+of stellar spheroidal and disk components, 
 with the S\'ersic index $n$ providing a direct measure of the central radial concentration of stars. 
-The S\'ersic index of a galaxy's spheroidal component, $n_{\rm sph}$, has been shown to tightly correlate 
-with the mass of the central supermassive black hole, $M_{\rm BH}$. 
-The $M_{\rm BH} - n_{\rm sph}$ correlation is also expected from other two well known scaling relations 
-involving the spheroid luminosity, $L_{\rm sph}$: 
-the $L_{\rm sph} - n_{\rm sph}$ and the $M_{\rm BH} - L_{\rm sph}$. 
+The S\'ersic index of a galaxy's spheroidal component, $n_{sph}$, has been shown to tightly correlate 
+with the mass of the central supermassive black hole, $M_{BH}$. 
+The $M_{BH}-n_{sph}$ correlation is also expected from other two well known scaling relations 
+involving the spheroid luminosity, $L_{sph}$: 
+the $L_{sph}-n_{sph}$ and the $M_{BH}-L_{sph}$. 
 Obtaining an accurate estimate of the spheroid S\'ersic index requires a careful modelling of a galaxy's light distribution 
-and some studies have failed to recover a statistically significant $M_{\rm BH} - n_{\rm sph}$ correlation. 
-With the aim of re-investigating the $M_{\rm BH} - n_{\rm sph}$ 
+and some studies have failed to recover a statistically significant $M_{BH}-n_{sph}$ correlation. 
+With the aim of re-investigating the $M_{BH}-n_{sph}$ 
 and other black hole mass scaling relations, 
 we performed a detailed (i.e.~bulge, disks, bars, spiral arms, rings, halo, nucleus, etc.) 
 decomposition of 66 galaxies, with directly measured black hole masses, 
 that had been imaged at $3.6\rm~\mu m$ with \emph{Spitzer}. 
-In this paper, the third of this series, we present an analysis of the $L_{\rm sph} - n_{\rm sph}$ and $M_{\rm BH} - n_{\rm sph}$ diagrams. 
+In this paper, the third of this series, we present an analysis of the $L_{sph}-n_{sph}$ 
+and $M_{BH}-n_{sph}$ diagrams. 
 While early-type (elliptical+lenticular) and late-type (spiral) galaxies split into two separate relations 
-in the $L_{\rm sph} - n_{\rm sph}$ and $M_{\rm BH} - L_{\rm sph}$ diagrams, 
-they reunite into a single $M_{\rm BH} \propto n_{\rm sph}^{3.39 \pm 0.15}$ sequence
-with relatively small intrinsic scatter ($\epsilon_{(M_{\rm BH} | n_{\rm sph})} \simeq 0.25 \rm~dex$). 
+in the $L_{sph}-n_{sph}$ and $M_{BH}-L_{sph}$ diagrams, 
+they reunite into a single $M_{BH} \propto n_{sph}^{3.39 \pm 0.15}$ sequence
+with relatively small intrinsic scatter ($\epsilon \simeq 0.25 \rm~dex$). 
 The black hole mass appears to be closely related to the spheroid central concentration of stars, 
 which mirrors the inner gradient of the spheroid gravitational potential. 
 \end{abstract}
@@ -216,7 +218,7 @@ but they were a collection of results taken from various past bulge/disk decompo
 %It is also worth mentioning that, 
 %although the K-band luminosities of the bulges of disk galaxies had been corrected for internal dust absorption, 
 %{\bf such corrections are still not very accurate today?!? Driver et al. xxxx??? }  
-Here we re-investigate the $L_{\rm sph} - n_{\rm sph}$ diagram using only our high-quality dataset. 
+Here we re-investigate the $L_{\rm sph} - n_{\rm sph}$ diagram (Figure \ref{fig:magn}) using only our high-quality dataset. 
 Our spheroid luminosities and S\'ersic indices were obtained from accurate multicomponent decompositions,  
 performed in a consistent manner using the $3.6\rm~\mu m$ band, which is less affected by dust extinction than the K-band. \\
 \cite{grahamworley2008} presented a single $L_{\rm sph} - n_{\rm sph}$ correlation for the bulges of disk galaxies (S0+Sp).
@@ -236,24 +238,49 @@ This result is in excellent agreement with the BCES linear regression obtained h
 ($L_{\rm sph} \propto n_{\rm sph}^{3.89 \pm 0.42}$) 
 and, remarkably, it is exactly the same proportionality obtained here for the early-type galaxies with the modified FITEXY routine. } 
 follow $L_{\rm sph} \propto n_{\rm sph}^{3.60 \pm 0.19}$, 
-whereas late-type galaxies follow a shallower $L_{\rm sph} \propto n_{\rm sph}^{1.44 \pm 0.52}$ sequence. 
-
+whereas late-type galaxies follow a shallower $L_{\rm sph} \propto n_{\rm sph}^{1.44 \pm 0.52}$ sequence. \\
+{\bf Because the log-slopes of the correlations for early- and late-type galaxies are not consistent with each other 
+within their $1\sigma$ uncertainties, 
+our quantitative linear regression analysis suggests that 
+the $L_{\rm sph} - n_{\rm sph}$ diagram is better described with a four-parameter model 
+(two separate power-laws) 
+rather than with a two-parameter model (single power-law). 
+In addition, the relative quality of these two statistical models can be independently assessed 
+using the Akaike Information Criterion ($AIC$, \citealt{akaike1974}). 
+$AIC$ is a trade-off between the statistical significance of a fit and the complexity of the model used. 
+It benefits from the goodness of a fit, 
+but at the same time is also penalized by the number of parameters of the model, 
+hence it discourages overfitting. 
+The $AICc$ is a variation of the $AIC$ that takes into account a correction for finite sample sizes: 
+\begin{equation}
+AICc = 2k - 2 \ln(\mathcal{L}) + \frac{2k (k+1)}{n-k-1} ,
+\end{equation}
+where $k$ is the number of parameter of the model, 
+$n$ is the sample size, 
+and $\mathcal{L}$ is the maximum value of the likelihood function for the model. 
+Within a set of candidate models for a given dataset, 
+the best model has the smallest $AICc$ value. 
+Using our $L_{\rm sph} - n_{\rm sph}$ dataset, 
+the $AICc$ value for a double power-law model is a factor of $3/4$ smaller 
+than the $AICc$ value for a single power-law model. }
 
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[width=\columnwidth]{images/mag_vs_n_maj.pdf}
-\caption{Spheroid absolute magnitude (at $3.6\rm~\mu m$) plotted against spheroid S\'ersic index 
+\includegraphics[width=\columnwidth, trim = 20 0 220 0]{images/mag_vs_n_maj.pdf}
+\caption{\bf Spheroid absolute magnitude (at $3.6\rm~\mu m$) plotted against spheroid S\'ersic index 
 measured along the galaxy major-axis. 
-Symbols are coded according to the galaxy morphological type (see legend).
+The top and bottom panels show the data points and their error bars, respectively.  
+Symbols are coded according to the galaxy morphological type (see legend in the top panel).
 The orange crosses denote two lenticular galaxies (NGC 0524 and NGC 3998) which were excluded from the linear regression analysis 
 (see Section \ref{sec:anal}). 
-The red dashed line indicates the FITEXY bisector linear regression for the $45-2=43$  early-type galaxies (E+S0), 
+The black dotted line is the FITEXY bisector linear regression for all ($64$) galaxies, 
+with the gray shaded area denoting its $1\sigma$ uncertainty. 
+The red dashed line is the FITEXY bisector linear regression for the $45-2=43$  early-type galaxies (E+S0), 
 with the red shaded area denoting its $1\sigma$ uncertainty. 
-The shallower blue solid line shows the FITEXY bisector linear regression for the bulges of the 17 late-type (Sp) galaxies, 
+The shallower blue solid line is the FITEXY bisector linear regression for the bulges of the 17 late-type (Sp) galaxies, 
 with the blue shaded area denoting its $1\sigma$ uncertainty. 
-The inset panel shows the error bars associated to each data point,  
-where the error bars have the same color coding as the symbols in the main figure. 
+The error bars in the bottom panel have the same color coding as the symbols in the top panel. 
 }
 \label{fig:magn}
 \end{center}
@@ -292,8 +319,11 @@ the slopes of the relations for early- and late-type galaxies
 are only marginally consistent with each other within their $1\sigma$ uncertainties. 
 However, the same slopes obtained with Bayesian estimator {\tt linmix\_err} 
 are fully consistent with each other within their $1\sigma$ uncertainties. }.
-Our analysis shows that the early- and late-type galaxies do not follow two separate trends in the $M_{\rm BH} - n_{\rm sph}$ diagram, 
-i.e.~we do not identify any significant substructure based on the galaxy morphological type. \\
+Our analysis shows that the early- and late-type galaxies do not follow two separate trends 
+in the $M_{\rm BH} - n_{\rm sph}$ diagram, 
+i.e.~we do not identify any significant substructure based on the galaxy morphological type. 
+{\bf The $AICc$ value for a single power-law model is a factor of $2/3$ smaller 
+than the $AICc$ value for a double power-law model. } \\
 The symmetrical linear regression for all galaxies obtained with the modified FITEXY routine is: 
 \begin{equation*}
 \log \biggl( \frac{M_{\rm BH}}{\rm M_\odot} \biggr) = (8.15 \pm 0.06) + (3.37 \pm 0.15) \bigl(\log n_{\rm sph} - 0.50 \bigr) . 
@@ -332,18 +362,20 @@ those output by the Bayesian estimator {\tt linmix\_err}.
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[width=\columnwidth]{images/mbh_vs_n_maj.pdf}
-\caption{Black hole mass plotted against spheroid S\'ersic index measured along the galaxy major-axis. 
+\includegraphics[width=\columnwidth, trim = 20 0 220 0]{images/mbh_vs_n_maj.pdf}
+\caption{\bf Black hole mass plotted against spheroid S\'ersic index measured along the galaxy major-axis. 
+The top and bottom panels show the data points and their error bars, respectively.  
 Symbols are coded according to the galaxy morphological type (see legend). 
 The orange crosses denote two lenticular galaxies (NGC 0524 and NGC 3998) which were excluded from the linear regression analysis 
 (see Section \ref{sec:anal}). 
-The red dashed line indicates the FITEXY bisector linear regression for the $45-2=43$  early-type galaxies (E+S0), 
+The black dotted line is the FITEXY bisector linear regression for all ($64$) galaxies, 
+with the gray shaded area denoting its $1\sigma$ uncertainty. 
+The red dashed line is the FITEXY bisector linear regression for the $45-2=43$  early-type galaxies (E+S0), 
 with the red shaded area denoting its $1\sigma$ uncertainty. 
-The shallower blue solid line shows the FITEXY bisector linear regression for the bulges of the 17 late-type (Sp) galaxies, 
+The blue solid line is the FITEXY bisector linear regression for the bulges of the 17 late-type (Sp) galaxies, 
 with the blue shaded area denoting its $1\sigma$ uncertainty. 
 The linear regressions for early- and late-type galaxies are consistent with each other within their $1\sigma$ uncertainties.  
-The inset panel shows the error bars associated to each data point,  
-where the error bars have the same color coding as the symbols in the main figure. 
+The error bars in the bottom panel have the same color coding as the symbols in the top panel. 
 }
 \label{fig:mbhn}
 \end{center}
@@ -688,8 +720,8 @@ Both the early- and late-type subsamples do not contain the two galaxies classif
 
 %%
 \acknowledgments
-GS warmly thanks Alister Graham and Carlo Nipoti for useful discussion. 
-%We also thank the anonymous referee for useful comments and suggestions. 
+GS warmly thanks Chris Blake, Alister Graham and Carlo Nipoti for useful discussion. 
+We also thank the anonymous referee for useful comments and suggestions. 
 This research was supported by Australian Research Council funding through grants
 DP110103509 and FT110100263.
 This work is based on observations made with the IRAC instrument \citep{fazio2004IRAC} 

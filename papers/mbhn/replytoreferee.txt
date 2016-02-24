@@ -1,0 +1,62 @@
+I thank the referee for a prompt and insightful review that helped improve the quality of the manuscript. 
+I have modified the manuscript as suggested by the referee, and highlighted the changes in boldface. 
+Below is my response to the referee report. 
+
+Figures 1 and 2 have been modified to show the insets with error bars on the same scale as the main plots. 
+I wish to maintain the fancy symbols for continuity with Paper II and because they allow to identify 
+the two lenticular galaxies excluded from the linear regression analysis (orange crosses) and
+the four galaxies classified as E/S0 or S0/Sp. 
+If I was to show only the four-colour error bars, these six data points could not be easily located. 
+I tried to combine fancy symbols and error bars in a single panel, but the result was a messy and 
+too "crowded" plot. 
+Hopefully a two-panel figure - with separate symbols and error bars - is a good compromise. 
+
+The linear regression for the "all" sample is now shown with a black dotted line in both Figures 1 and 2. 
+Indeed, the Figures are now more informative. 
+Looking at the bottom panel of Figure 1, one can notice that the blue and orange error bars 
+span basically the same range in spheroid magnitude and Sérsic index, but they are offset from each other. 
+In effect, the L-n linear regression for all galaxies seems to almost exactly define a separation line 
+in between lenticular and spiral galaxies. 
+Going beyond a "by eye" assessment, the linear regression analysis, which takes into account the error bars, 
+confirms that the slopes of the correlations for early- and late-type galaxies are not consistent with each other
+within their 1 sigma uncertainties. 
+This is already a quantitative indication that early- and late-type galaxies define two separate L-n sequences, 
+which justifies the use of a 4-parameter model, rather than a 2-parameter one, to describe the L-n diagram. 
+I've also explored an independent method, drawn from Information Theory, to measure the relative quality of 
+a 2-parameter and a 4-parameter model for the given L-n dataset. 
+The Akaike Information Criterion rewards the goodness of a fit and penalises the number of parameter used 
+in the model, therefore it provides a means for model selection. 
+The Akaike Information Criterion test confirms that a 4-parameter model is preferred over a 2-parameter model 
+to describe the L-n diagram, whereas a 2-parameter model is preferred over a 4-parameter model to describe 
+the Mbh-n dataset. 
+Details about the Akaike Information Criterion are given in the manuscript (Section 3.1). 
+
+Indeed, I agree with the referee's concern about the uncertain and sometimes misleading definition of "bulge" 
+adopted in the literature, which led us to prefer the use of a more general term such as "spheroid" as opposed 
+to disk, although we recognise that "spheroid" might not be fully appropriate to describe disk-like pseudobulges. 
+In Papers I, II and III, as long as in Savorgnan & Graham (2016, MNRAS, 457, 320), we adopted and tried to be 
+consistent with a point of view similar to that of the ATLAS3D team: local galaxies display a continuous distribution 
+of spheroid-to-total flux ratios (e.g. Figure 2 of Cappellari et al. 2011), going from disc-less, "pure" 
+elliptical galaxies (slow rotators) to disc-dominated lenticular and spiral galaxies (fast rotators). 
+In Paper I, we consistently modelled each galaxy's spheroid with a Sérsic profile. Our identification of the spheroidal 
+component can be classified as a "photometric" identification: we associated the spheroidal component with the central 
+excess of light after the subtraction of discs, bars, nuclei, rings and disc-like components. 
+
+Since it was first presented in 2007 by Graham & Driver, the Mbh-n correlation did not receive enough attention 
+over the following years. Vika et al. and Beifiori et al. failed to recover the correlation, whereas Sani et al. 
+and Lasker et al. didn't even explore the Mbh-n diagram (and we checked that no strong Mbh-n correlation 
+could be obtained using their datasets). 
+In addition, none of these works explored the L-n diagram, whose more recent analysis was done by us (to our best knowledge) 
+in Savorgnan et al. (2013) using the Graham & Guzman (2003) and Graham & Worley (2008) (outdated) datasets. 
+For this reason, we felt that joining the analysis of the Mbh-n correlation with that of the more popular Mbh-L 
+correlation would not have given enough credit to the former. 
+At present, no simulations of black hole-galaxy coevolution take into account the observed Mbh-n correlation. 
+A separate analysis and a dedicated manuscript would therefore give more visibility to this relation.
+A separate analysis is also motivated by the following fact. The three linear regression routines 
+(BCES, mFITEXY and linmix_err) all gave consistent results for the Mbh-L correlation. 
+However, as explained in Section 3 of the manuscript, the modified FITEXY routine performs better than the BCES and 
+linmix_err codes when it comes to the analysis of our L-n and Mbh-n datasets. 
+To avoid confusion, we preferred to keep the analyses of the Mbh-L and Mbh-n relations separate. 
+
+
+
