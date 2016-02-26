@@ -1,0 +1,196 @@
+Q1:
+The bold values are the linear regression parameters quoted in the text. 
+
+Q2:
+At the end of Section 4.2.1, please correct the typo:
+<< ... all bulges from this regression. In Figure 3, we plot the vertical offset against n_sph. >>
+-> << ... all bulges from this regression. In Figure 4, we plot the vertical offset against n_sph. >>
+
+Q3:
+A. W. Graham et al. (in preparation)
+
+Q4:
+Please, add Batcheldor (2010) to the reference list. 
+@ARTICLE{2010ApJ...711L.108B,
+   author = {{Batcheldor}, D.},
+    title = "{The M $_{BH}$-{$\sigma$}$_{*}$ Relation Derived from Sphere of Influence Arguments}",
+  journal = {\apjl},
+archivePrefix = "arXiv",
+   eprint = {1002.1705},
+ keywords = {black hole physics, galaxies: bulges, galaxies: fundamental parameters},
+     year = 2010,
+    month = mar,
+   volume = 711,
+    pages = {L108-L111},
+      doi = {10.1088/2041-8205/711/2/L108},
+   adsurl = {http://adsabs.harvard.edu/abs/2010ApJ...711L.108B},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+Q5:
+References Graham, A. W. (2015b) and Graham, A. W. (2015c) are duplicates. 
+Please, merge them into one single reference and update such reference to Graham, A. W. (2016):
+@ARTICLE{2016ASSL..418..263G,
+   author = {{Graham}, A.~W.},
+    title = "{Galaxy Bulges and Their Massive Black Holes: A Review}",
+  journal = {Galactic Bulges},
+archivePrefix = "arXiv",
+   eprint = {1501.02937},
+ keywords = {Physics},
+     year = 2016,
+   volume = 418,
+    pages = {263},
+      doi = {10.1007/978-3-319-19378-6_11},
+   adsurl = {http://adsabs.harvard.edu/abs/2016ASSL..418..263G},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+Please, update reference Lasker et al. (2014a) to:
+@ARTICLE{2014ApJ...780...69L,
+   author = {{L{\"a}sker}, R. and {Ferrarese}, L. and {van de Ven}, G.},
+    title = "{Supermassive Black Holes and Their Host Galaxies. I. Bulge Luminosities from Dedicated Near-infrared Data}",
+  journal = {\apj},
+archivePrefix = "arXiv",
+   eprint = {1311.1530},
+ keywords = {galaxies: bulges, galaxies: photometry, galaxies: structure, methods: observational, techniques: photometric },
+     year = 2014,
+    month = jan,
+   volume = 780,
+      eid = {69},
+    pages = {69},
+      doi = {10.1088/0004-637X/780/1/69},
+   adsurl = {http://adsabs.harvard.edu/abs/2014ApJ...780...69L},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+Please, update reference Lasker et al. (2014b) to:
+@ARTICLE{2014ApJ...780...70L,
+   author = {{L{\"a}sker}, R. and {Ferrarese}, L. and {van de Ven}, G. and 
+	{Shankar}, F.},
+    title = "{Supermassive Black Holes and Their Host Galaxies. II. The Correlation with Near-infrared Luminosity Revisited}",
+  journal = {\apj},
+archivePrefix = "arXiv",
+   eprint = {1311.1531},
+ keywords = {black hole physics, galaxies: evolution },
+     year = 2014,
+    month = jan,
+   volume = 780,
+      eid = {70},
+    pages = {70},
+      doi = {10.1088/0004-637X/780/1/70},
+   adsurl = {http://adsabs.harvard.edu/abs/2014ApJ...780...70L},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+Please, update reference to Subramanian et al. (2015) to Subramanian et al. (2016):
+@ARTICLE{2016MNRAS.455.3148S,
+   author = {{Subramanian}, S. and {Ramya}, S. and {Das}, M. and {George}, K. and 
+	{Sivarani}, T. and {Prabhu}, T.~P.},
+    title = "{Investigating AGN black hole masses and the M$_{BH}$-{$\sigma$}$_{e}$ relation for low surface brightness galaxies}",
+  journal = {\mnras},
+archivePrefix = "arXiv",
+   eprint = {1510.07743},
+ keywords = {galaxies: active, galaxies: bulges, galaxies: general, galaxies: nuclei},
+     year = 2016,
+    month = jan,
+   volume = 455,
+    pages = {3148-3168},
+      doi = {10.1093/mnras/stv2500},
+   adsurl = {http://adsabs.harvard.edu/abs/2016MNRAS.455.3148S},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+Q6:
+@INPROCEEDINGS{bardeen1975,
+   author = {{Bardeen}, J.~M.},
+    title = "{Global Instabilities of Disks (invited Paper)}",
+booktitle = {Dynamics of the Solar Systems},
+     year = 1975,
+   series = {IAU Symposium},
+   volume = 69,
+   editor = {{Hayli}, A.},
+    pages = {297},
+   adsurl = {http://adsabs.harvard.edu/abs/1975IAUS...69..297B},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@INPROCEEDINGS{capaccioli1987,
+   author = {{Capaccioli}, M.},
+    title = "{Distribution of light - Outer regions}",
+ keywords = {Astronomical Photometry, Elliptical Galaxies, Light Emission, Radiation Distribution, Calibrating, Light Scattering},
+booktitle = {Structure and Dynamics of Elliptical Galaxies},
+     year = 1987,
+   series = {IAU Symposium},
+   volume = 127,
+   editor = {{de Zeeuw}, P.~T.},
+    pages = {47-60},
+   adsurl = {http://adsabs.harvard.edu/abs/1987IAUS..127...47C},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@INPROCEEDINGS{dressler1989,
+   author = {{Dressler}, A.},
+    title = "{Observational Evidence for Supermassive Black Holes}",
+booktitle = {Active Galactic Nuclei},
+     year = 1989,
+   series = {IAU Symposium},
+   volume = 134,
+   editor = {{Osterbrock}, D.~E. and {Miller}, J.~S.},
+    pages = {217},
+   adsurl = {http://adsabs.harvard.edu/abs/1989IAUS..134..217D},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@INPROCEEDINGS{held1992,
+   author = {{Held}, E.~V. and {de Zeeuw}, T. and {Mould}, J. and {Picard}, A.
+	},
+    title = "{NGC 185 and the Extended Faber-Jackson Relation}",
+booktitle = {The Stellar Populations of Galaxies},
+     year = 1992,
+   series = {IAU Symposium},
+   volume = 149,
+   editor = {{Barbuy}, B. and {Renzini}, A.},
+    pages = {429},
+   adsurl = {http://adsabs.harvard.edu/abs/1992IAUS..149..429H},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@INPROCEEDINGS{hohl1975,
+   author = {{Hohl}, F.},
+    title = "{N-Body Simulations of Disks (invited Paper)}",
+booktitle = {Dynamics of the Solar Systems},
+     year = 1975,
+   series = {IAU Symposium},
+   volume = 69,
+   editor = {{Hayli}, A.},
+    pages = {349},
+   adsurl = {http://adsabs.harvard.edu/abs/1975IAUS...69..349H},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@BOOK{press1992,
+   author = {{Press}, W.~H. and {Teukolsky}, S.~A. and {Vetterling}, W.~T. and 
+	{Flannery}, B.~P.},
+    title = "{Numerical recipes in FORTRAN. The art of scientific computing}",
+booktitle = {Cambridge: University Press, |c1992, 2nd ed.},
+     year = 1992,
+   adsurl = {http://adsabs.harvard.edu/abs/1992nrfa.book.....P},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+Q7:
+@INPROCEEDINGS{2015IAUS..309..359E,
+   author = {{Erwin}, P. and {Saglia}, R. and {Thomas}, J. and {Fabricius}, M. and 
+	{Bender}, R. and {Rusli}, S. and {Nowak}, N. and {Beckman}, J.~E. and 
+	{Vega Beltr{\'a}n}, J.~C.},
+    title = "{Using 3D Spectroscopy to Probe the Orbital Structure of Composite Bulges}",
+ keywords = {galaxies: elliptical and lenticular, cD, galaxies: evolution, galaxies: formation,},
+booktitle = {IAU Symposium},
+     year = 2015,
+   series = {IAU Symposium},
+   volume = 309,
+archivePrefix = "arXiv",
+   eprint = {1409.7946},
+   editor = {{Ziegler}, B.~L. and {Combes}, F. and {Dannerbauer}, H. and 
+	{Verdugo}, M.},
+    month = feb,
+    pages = {359-360},
+      doi = {10.1017/S1743921314010503},
+   adsurl = {http://adsabs.harvard.edu/abs/2015IAUS..309..359E},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}

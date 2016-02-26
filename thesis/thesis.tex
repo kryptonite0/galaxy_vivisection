@@ -1,0 +1,212 @@
+\documentclass[11pt,openright,a4wide]{book}
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{type1ec}
+\usepackage[T1]{fontenc}
+\usepackage{lettrine}
+%\usepackage{tgadventor}
+\usepackage{cmbright}
+%lxfonts
+
+\usepackage[top=3.0cm,bottom=2.0cm,left=4.0cm,right=2.0cm]{geometry}
+%\usepackage{setspace}
+\linespread{1.5}
+\usepackage{subfig}
+\usepackage{graphicx}
+\usepackage{appendix}
+%\usepackage{wasysym}
+\graphicspath{{Images/}}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{layout}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{fancybox}
+
+\usepackage{natbib}
+\bibliographystyle{mnras}
+%\bibliographystyle{apj}
+
+\usepackage{lscape}
+\usepackage[breaklinks]{hyperref}
+\usepackage{indentfirst} 
+\usepackage[Bjornstrup]{fncychap}
+%\pagestyle{plain}
+%\setlength{\parskip}{0.5 cm}
+%\setlength{\textwidth}{11 cm}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+%\usepackage{fancyvrb}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\fancyhf{}
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyhead[LO]{\bfseries\rightmark}
+\fancyhead[RE]{\bfseries\leftmark}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhead{} \renewcommand{\headrulewidth}{0.5pt}}
+\addtolength{\headheight}{0.5pt}
+\usepackage{pdfpages}
+
+
+
+
+
+%COMANDI SPECIFICI PER ASTROFISICA,TRA CUI LE ABBREVIAZIONI DEI NOMI DELLE RIVISTE CHE VENGONO USATE NELLE BIBTEX ENTRIES DI ADS
+
+\newcommand{\farcm}{\mbox{\ensuremath{.\mkern-4mu^\prime}}}%    % fractional arcminute symbol: 0.'0
+\newcommand{\farcs}{\mbox{\ensuremath{.\!\!^{\prime\prime}}}}%  % fractional arcsecond symbol: 0.''0
+\newcommand{\fdg}{\mbox{\ensuremath{.\!\!^\circ}}}%             % fractional degree symbol:     0.°0
+\newcommand{\arcdeg}{\ensuremath{^{\circ}}}%                    % degree symbol:  °
+\newcommand{\apj}{ApJ}%                                         % Journal abbreviations
+\newcommand{\apjs}{ApJS}
+\newcommand{\apjl}{ApJL}
+\newcommand{\aap}{A{\&}A}
+\newcommand{\aaps}{A{\&}AS}
+\newcommand{\apss}{Ap{\&}SS}
+\newcommand{\mnras}{MNRAS}
+\newcommand{\aj}{AJ}
+\newcommand{\araa}{ARAA}
+\newcommand{\pasa}{PASA}
+\newcommand{\pasp}{PASP}
+\newcommand{\pasj}{PASJ}
+\newcommand{\Teff}{\ensuremath{T_{\mathrm{eff}}}}%              % T_eff
+\newcommand{\logg}{\ensuremath{\log g}}%                        % log g
+\newcommand{\bv}{\ensuremath{B\!-\!V}}%                         % B-V
+\newcommand{\ub}{\ensuremath{U\!-\!B}}%                         % U-B
+\newcommand{\vr}{\ensuremath{V\!-\!R}}%                         % V-R
+\newcommand{\ur}{\ensuremath{U\!-\!R}}%                         % U-R
+\newcommand\ion[2]{#1$\;${\scshape{#2}}}%                       % ion, i.e., CII = \ion{C}{ii}
+\newcommand\nat{\ref@jnl{Nature}}%  % Nature 
+\newcommand\physscr{\ref@jnl{Phys.~Scr}}%        % Physica Scripta 
+\newcommand{\ssr}{Space Science Reviews} 
+\newcommand{\physrep}{Physics Reports}
+\newcommand{\skytel}{Sky and Telescope}
+%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{document}
+\hyphenation{CMBR}
+
+
+\pagestyle{empty}
+
+
+\input{titlepage.tex}
+
+
+\cleardoublepage 
+\vspace*{\stretch{1}} 
+\markboth{}{} 
+\thispagestyle{empty} 
+\begin{flushright} 
+\vspace{16cm}
+\itshape Abbandona questo mestiere non appena smette di essere un gioco. \\ 
+%Quit this job as soon as it stops being a game. \\ 
+Peppo Gavazzi (and, before him, Beppo Occhialini)
+\end{flushright} 
+\vspace*{\stretch{3}} 
+\newpage\null\thispagestyle{empty}\newpage
+
+\frontmatter
+
+%\input{abstract.tex}
+%\input{acknowledgement.tex}
+\input{declaration.tex}
+
+
+\pagestyle{fancy}
+\tableofcontents
+
+
+
+
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\fancyhf{}
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyhead[LO]{\bfseries\rightmark}
+\fancyhead[RE]{\bfseries\leftmark}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhead{} \renewcommand{\headrulewidth}{0.5pt}}
+\addtolength{\headheight}{0.5pt}
+
+
+
+\mainmatter
+
+last print: \today
+
+\input{introduction.tex}
+
+\input{recovery-mn.tex}
+
+\input{galaxyvivisection.tex}
+
+\input{mm.tex}
+
+\input{mn.tex}
+
+\input{ubermassive-msigma.tex}
+
+\input{ellicular.tex}
+
+\input{conclusions.tex}
+
+%\newpage
+
+
+%\phantomsection
+%\addcontentsline{toc}{chapter}{Acknowledgements}
+%\input{acknowledgements.tex}
+
+%\appendix
+%\appendixpage
+%\addappheadtotoc
+
+%\phantomsection
+%\addcontentsline{toc}{chapter}{Errors estimates}
+%\input{errors.tex}
+
+%\input{basic_data_2m.tex}
+%\input{basic_data_1m.tex}
+
+%\newpage
+%\input{obs_data_2m.tex}
+
+%\newpage
+%\input{halpha_data_2m.tex}
+%\input{halpha_data_1m.tex}
+
+%\newpage
+%\input{atlasthesis.tex}
+
+
+\backmatter
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliography{SMBHbibliography}
+
+
+%\pagestyle{empty}
+%\chapter*{Atlas}
+%\label{atlante}
+%\phantomsection
+%\addcontentsline{toc}{chapter}{Atlas}
+%%\begin{center}
+%%\vspace{3.5cm}
+%%\Huge{
+%%\bf{Atlante delle Immagini \\ della Survey \haa}
+%%}
+%%\end{center}
+%\markboth{Atlas}{Atlas}
+%\input{atlasthesis.tex}
+%\cleardoublepage
+
+\end{document}

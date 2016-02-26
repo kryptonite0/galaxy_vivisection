@@ -1,0 +1,97 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: thesis.aux
+The style file: mnras.bst
+Reallocated field_info (elt_size=4) to 10076 items from 5000.
+Database file #1: SMBHbibliography.bib
+Repeated entry---line 1693 of file SMBHbibliography.bib
+ : @article{Khosroshahi2000
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3211 of file SMBHbibliography.bib
+ : @article{simiendevaucouleurs1986
+ :                                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4222 of file SMBHbibliography.bib
+ : @article{andredakis1995
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4322 of file SMBHbibliography.bib
+ : @article{krajnovic2011
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4926 of file SMBHbibliography.bib
+ : @article{erwinsparke2003
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 5775 of file SMBHbibliography.bib
+ : @article{laurikainen2010
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 5793 of file SMBHbibliography.bib
+ : @article{hirschmann2010
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 6092 of file SMBHbibliography.bib
+ : @article{jahnkemaccio2011
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 6110 of file SMBHbibliography.bib
+ : @article{peng2007
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 8645 of file SMBHbibliography.bib
+ : @article{davies1983
+ :                    ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "paperIII"
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--can't use both author and editor fields in ferrarese2006book
+Warning--empty publisher in ferrarese2006book
+Warning--empty publisher in merritt2013book
+Warning--empty publisher in press1992
+Warning--empty publisher in sersic1968
+Warning--empty publisher in thorne1994
+You've used 187 entries,
+            2881 wiz_defined-function locations,
+            2157 strings with 56628 characters,
+and the built_in function-call counts, 89031 in all, are:
+= -- 7215
+> -- 6433
+< -- 524
++ -- 2861
+- -- 912
+* -- 11196
+:= -- 13996
+add.period$ -- 0
+call.type$ -- 187
+change.case$ -- 374
+chr.to.int$ -- 182
+cite$ -- 193
+duplicate$ -- 4288
+empty$ -- 4328
+format.name$ -- 1530
+if$ -- 15268
+int.to.chr$ -- 6
+int.to.str$ -- 0
+missing$ -- 192
+newline$ -- 575
+num.names$ -- 1333
+pop$ -- 951
+preamble$ -- 1
+purify$ -- 748
+quote$ -- 0
+skip$ -- 2553
+stack$ -- 0
+substring$ -- 4965
+swap$ -- 2465
+text.length$ -- 766
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 1668
+warning$ -- 6
+while$ -- 1430
+width$ -- 0
+write$ -- 1885
+(There were 10 error messages)
