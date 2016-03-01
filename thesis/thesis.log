@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  26 FEB 2016 15:50
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  1 MAR 2016 17:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3434,7 +3434,12 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 1--1
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--13
+Underfull \hbox (badness 10000) in paragraph at lines 4--12
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--50
 
  []
 
@@ -3447,141 +3452,141 @@ Package Fancyhdr Warning: \headheight is too small (13.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[140] <MNRAS2016.pdf, id=3054, page=1, 597.50627pt x 785.21959pt>
+[140] <MNRAS2016.pdf, id=3118, page=1, 597.50627pt x 785.21959pt>
 File: MNRAS2016.pdf Graphic file (type pdf)
 
 <use MNRAS2016.pdf, page 1>
-Package pdftex.def Info: MNRAS2016.pdf, page1 used on input line 40.
+Package pdftex.def Info: MNRAS2016.pdf, page1 used on input line 56.
 (pdftex.def)             Requested size: 597.5048pt x 785.21768pt.
 File: MNRAS2016.pdf Graphic file (type pdf)
  <use MNRAS2016.pdf, page 1>
-Package pdftex.def Info: MNRAS2016.pdf, page1 used on input line 40.
+Package pdftex.def Info: MNRAS2016.pdf, page1 used on input line 56.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
 File: MNRAS2016.pdf Graphic file (type pdf)
 
 <use MNRAS2016.pdf, page 1>
-Package pdftex.def Info: MNRAS2016.pdf, page1 used on input line 40.
+Package pdftex.def Info: MNRAS2016.pdf, page1 used on input line 56.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
 File: MNRAS2016.pdf Graphic file (type pdf)
  <use MNRAS2016.pdf, page 1>
-Package pdftex.def Info: MNRAS2016.pdf, page1 used on input line 40.
+Package pdftex.def Info: MNRAS2016.pdf, page1 used on input line 56.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
 File: MNRAS2016.pdf Graphic file (type pdf)
 
 <use MNRAS2016.pdf, page 1>
-Package pdftex.def Info: MNRAS2016.pdf, page1 used on input line 40.
+Package pdftex.def Info: MNRAS2016.pdf, page1 used on input line 56.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
  [141 <./MNRAS2016.pdf>]
-<MNRAS2016.pdf, id=3096, page=2, 597.50627pt x 785.21959pt>
+<MNRAS2016.pdf, id=3160, page=2, 597.50627pt x 785.21959pt>
 File: MNRAS2016.pdf Graphic file (type pdf)
 
 <use MNRAS2016.pdf, page 2>
-Package pdftex.def Info: MNRAS2016.pdf, page2 used on input line 40.
+Package pdftex.def Info: MNRAS2016.pdf, page2 used on input line 56.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
 File: MNRAS2016.pdf Graphic file (type pdf)
  <use MNRAS2016.pdf, page 2>
-Package pdftex.def Info: MNRAS2016.pdf, page2 used on input line 40.
+Package pdftex.def Info: MNRAS2016.pdf, page2 used on input line 56.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
 File: MNRAS2016.pdf Graphic file (type pdf)
 
 <use MNRAS2016.pdf, page 2>
-Package pdftex.def Info: MNRAS2016.pdf, page2 used on input line 40.
+Package pdftex.def Info: MNRAS2016.pdf, page2 used on input line 56.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
  [142 <./MNRAS2016.pdf>]
-<MNRAS2016.pdf, id=3106, page=3, 597.50627pt x 785.21959pt>
+<MNRAS2016.pdf, id=3171, page=3, 597.50627pt x 785.21959pt>
 File: MNRAS2016.pdf Graphic file (type pdf)
 
 <use MNRAS2016.pdf, page 3>
-Package pdftex.def Info: MNRAS2016.pdf, page3 used on input line 40.
+Package pdftex.def Info: MNRAS2016.pdf, page3 used on input line 56.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
 File: MNRAS2016.pdf Graphic file (type pdf)
  <use MNRAS2016.pdf, page 3>
-Package pdftex.def Info: MNRAS2016.pdf, page3 used on input line 40.
+Package pdftex.def Info: MNRAS2016.pdf, page3 used on input line 56.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
 File: MNRAS2016.pdf Graphic file (type pdf)
 
 <use MNRAS2016.pdf, page 3>
-Package pdftex.def Info: MNRAS2016.pdf, page3 used on input line 40.
+Package pdftex.def Info: MNRAS2016.pdf, page3 used on input line 56.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
  [143 <./MNRAS2016.pdf>]
-<MNRAS2016.pdf, id=3126, page=4, 597.50627pt x 785.21959pt>
+<MNRAS2016.pdf, id=3191, page=4, 597.50627pt x 785.21959pt>
 File: MNRAS2016.pdf Graphic file (type pdf)
 
 <use MNRAS2016.pdf, page 4>
-Package pdftex.def Info: MNRAS2016.pdf, page4 used on input line 40.
+Package pdftex.def Info: MNRAS2016.pdf, page4 used on input line 56.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
 File: MNRAS2016.pdf Graphic file (type pdf)
  <use MNRAS2016.pdf, page 4>
-Package pdftex.def Info: MNRAS2016.pdf, page4 used on input line 40.
+Package pdftex.def Info: MNRAS2016.pdf, page4 used on input line 56.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
 File: MNRAS2016.pdf Graphic file (type pdf)
 
 <use MNRAS2016.pdf, page 4>
-Package pdftex.def Info: MNRAS2016.pdf, page4 used on input line 40.
+Package pdftex.def Info: MNRAS2016.pdf, page4 used on input line 56.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
  [144 <./MNRAS2016.pdf>]
-<MNRAS2016.pdf, id=3138, page=5, 597.50627pt x 785.21959pt>
+<MNRAS2016.pdf, id=3203, page=5, 597.50627pt x 785.21959pt>
 File: MNRAS2016.pdf Graphic file (type pdf)
 
 <use MNRAS2016.pdf, page 5>
-Package pdftex.def Info: MNRAS2016.pdf, page5 used on input line 40.
+Package pdftex.def Info: MNRAS2016.pdf, page5 used on input line 56.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
 File: MNRAS2016.pdf Graphic file (type pdf)
  <use MNRAS2016.pdf, page 5>
-Package pdftex.def Info: MNRAS2016.pdf, page5 used on input line 40.
+Package pdftex.def Info: MNRAS2016.pdf, page5 used on input line 56.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
 File: MNRAS2016.pdf Graphic file (type pdf)
 
 <use MNRAS2016.pdf, page 5>
-Package pdftex.def Info: MNRAS2016.pdf, page5 used on input line 40.
+Package pdftex.def Info: MNRAS2016.pdf, page5 used on input line 56.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
  [145 <./MNRAS2016.pdf>]
-<MNRAS2016.pdf, id=3146, page=6, 597.50627pt x 785.21959pt>
+<MNRAS2016.pdf, id=3211, page=6, 597.50627pt x 785.21959pt>
 File: MNRAS2016.pdf Graphic file (type pdf)
 
 <use MNRAS2016.pdf, page 6>
-Package pdftex.def Info: MNRAS2016.pdf, page6 used on input line 40.
+Package pdftex.def Info: MNRAS2016.pdf, page6 used on input line 56.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
 File: MNRAS2016.pdf Graphic file (type pdf)
  <use MNRAS2016.pdf, page 6>
-Package pdftex.def Info: MNRAS2016.pdf, page6 used on input line 40.
+Package pdftex.def Info: MNRAS2016.pdf, page6 used on input line 56.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
 File: MNRAS2016.pdf Graphic file (type pdf)
 
 <use MNRAS2016.pdf, page 6>
-Package pdftex.def Info: MNRAS2016.pdf, page6 used on input line 40.
+Package pdftex.def Info: MNRAS2016.pdf, page6 used on input line 56.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
  [146 <./MNRAS2016.pdf>]
-<MNRAS2016.pdf, id=3156, page=7, 597.50627pt x 785.21959pt>
+<MNRAS2016.pdf, id=3221, page=7, 597.50627pt x 785.21959pt>
 File: MNRAS2016.pdf Graphic file (type pdf)
 
 <use MNRAS2016.pdf, page 7>
-Package pdftex.def Info: MNRAS2016.pdf, page7 used on input line 40.
+Package pdftex.def Info: MNRAS2016.pdf, page7 used on input line 56.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
 File: MNRAS2016.pdf Graphic file (type pdf)
  <use MNRAS2016.pdf, page 7>
-Package pdftex.def Info: MNRAS2016.pdf, page7 used on input line 40.
+Package pdftex.def Info: MNRAS2016.pdf, page7 used on input line 56.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
 File: MNRAS2016.pdf Graphic file (type pdf)
 
 <use MNRAS2016.pdf, page 7>
-Package pdftex.def Info: MNRAS2016.pdf, page7 used on input line 40.
+Package pdftex.def Info: MNRAS2016.pdf, page7 used on input line 56.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
  [147 <./MNRAS2016.pdf>]
-<MNRAS2016.pdf, id=3164, page=8, 597.50627pt x 785.21959pt>
+<MNRAS2016.pdf, id=3229, page=8, 597.50627pt x 785.21959pt>
 File: MNRAS2016.pdf Graphic file (type pdf)
 
 <use MNRAS2016.pdf, page 8>
-Package pdftex.def Info: MNRAS2016.pdf, page8 used on input line 40.
+Package pdftex.def Info: MNRAS2016.pdf, page8 used on input line 56.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
 File: MNRAS2016.pdf Graphic file (type pdf)
  <use MNRAS2016.pdf, page 8>
-Package pdftex.def Info: MNRAS2016.pdf, page8 used on input line 40.
+Package pdftex.def Info: MNRAS2016.pdf, page8 used on input line 56.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
 File: MNRAS2016.pdf Graphic file (type pdf)
 
 <use MNRAS2016.pdf, page 8>
-Package pdftex.def Info: MNRAS2016.pdf, page8 used on input line 40.
+Package pdftex.def Info: MNRAS2016.pdf, page8 used on input line 56.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
  [148 <./MNRAS2016.pdf>]) (./conclusions.tex
 Chapter 8.
@@ -3589,6 +3594,9 @@ Chapter 8.
 Overfull \hbox (10.0pt too wide) in paragraph at lines 1--1
 [][][][][][][][][]  
  []
+
+
+LaTeX Warning: Reference `' on page 149 undefined on input line 10.
 
 ) [149
 
@@ -3616,7 +3624,7 @@ Package Fancyhdr Warning: \headheight is too small (13.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [152]
-Underfull \hbox (badness 2285) in paragraph at lines 245--247
+Underfull \hbox (badness 2285) in paragraph at lines 300--302
 []\T1/cmbr/m/n/10.95 Ferrarese L., 2006, Ob-ser-va-tional Ev-i-dence for Su-per
 -mas-sive Black Holes. pp 1--62,
  []
@@ -3642,19 +3650,16 @@ Package Fancyhdr Warning: \headheight is too small (13.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [155]
-Underfull \hbox (badness 1389) in paragraph at lines 552--556
+Underfull \hbox (badness 1389) in paragraph at lines 630--634
 []\T1/cmbr/m/n/10.95 Lupi A., Haardt F., Dotti M., Fi-ac-coni D., Mayer L., Mad
 au P., 2015, preprint, [][]
  []
 
 
-LaTeX Warning: Reference `@' on page 156 undefined on input line 558.
+LaTeX Warning: Reference `@' on page 156 undefined on input line 636.
 
 
-LaTeX Warning: Reference `@' on page 156 undefined on input line 562.
-
-
-LaTeX Warning: Reference `@' on page 156 undefined on input line 604.
+LaTeX Warning: Reference `@' on page 156 undefined on input line 640.
 
 
 Package Fancyhdr Warning: \headheight is too small (13.0pt): 
@@ -3664,13 +3669,13 @@ Package Fancyhdr Warning: \headheight is too small (13.0pt):
 
 [156]
 
-LaTeX Warning: Reference `@' on page 157 undefined on input line 658.
+LaTeX Warning: Reference `@' on page 157 undefined on input line 688.
 
 
-LaTeX Warning: Reference `@' on page 157 undefined on input line 675.
+LaTeX Warning: Reference `@' on page 157 undefined on input line 747.
 
 
-LaTeX Warning: Reference `@' on page 157 undefined on input line 715.
+LaTeX Warning: Reference `@' on page 157 undefined on input line 764.
 
 
 Package Fancyhdr Warning: \headheight is too small (13.0pt): 
@@ -3680,13 +3685,10 @@ Package Fancyhdr Warning: \headheight is too small (13.0pt):
 
 [157]
 
-LaTeX Warning: Reference `@' on page 158 undefined on input line 757.
+LaTeX Warning: Reference `@' on page 158 undefined on input line 810.
 
 
-Underfull \hbox (badness 4634) in paragraph at lines 836--839
-[]\T1/cmbr/m/n/10.95 Scharwächter J., Combes F., Sa-lomé P., Sun M., Krips M., 
-2015, preprint, [][]
- []
+LaTeX Warning: Reference `@' on page 158 undefined on input line 852.
 
 
 Package Fancyhdr Warning: \headheight is too small (13.0pt): 
@@ -3695,8 +3697,13 @@ Package Fancyhdr Warning: \headheight is too small (13.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [158]
+Underfull \hbox (badness 4634) in paragraph at lines 931--934
+[]\T1/cmbr/m/n/10.95 Scharwächter J., Combes F., Sa-lomé P., Sun M., Krips M., 
+2015, preprint, [][]
+ []
 
-LaTeX Warning: Reference `@' on page 159 undefined on input line 871.
+
+LaTeX Warning: Reference `@' on page 159 undefined on input line 966.
 
 
 Package Fancyhdr Warning: \headheight is too small (13.0pt): 
@@ -3706,10 +3713,17 @@ Package Fancyhdr Warning: \headheight is too small (13.0pt):
 
 [159]
 
-LaTeX Warning: Reference `@' on page 160 undefined on input line 987.
+LaTeX Warning: Reference `@' on page 160 undefined on input line 1094.
 
 
-LaTeX Warning: Reference `@' on page 160 undefined on input line 1027.
+Package Fancyhdr Warning: \headheight is too small (13.0pt): 
+ Make it at least 13.69998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[160]
+
+LaTeX Warning: Reference `@' on page 161 undefined on input line 1139.
 
 )
 
@@ -3722,7 +3736,7 @@ Package Fancyhdr Warning: \headheight is too small (13.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[160]
+[161]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 212.
  (./thesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 212.
@@ -3736,13 +3750,13 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 212.
  ) 
 Here is how much of TeX's memory you used:
- 11370 strings out of 493488
- 173727 string characters out of 3141326
- 262183 words of memory out of 3000000
- 14016 multiletter control sequences out of 15000+200000
+ 11449 strings out of 493488
+ 175139 string characters out of 3141326
+ 263553 words of memory out of 3000000
+ 14074 multiletter control sequences out of 15000+200000
  31010 words of font info for 91 fonts, out of 3000000 for 9000
  958 hyphenation exceptions out of 8191
- 44i,18n,46p,838b,800s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,18n,46p,838b,848s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 {/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
 live/2012/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb></usr/local
@@ -3800,10 +3814,10 @@ live/2012/texmf-dist/fonts/type1/public/cm-super/sfbmr8.pfb></usr/local/texlive
 /2012/texmf-dist/fonts/type1/public/cm-super/sfbmr9.pfb></usr/local/texlive/201
 2/texmf-dist/fonts/type1/public/cm-super/sfbtl10.pfb></usr/local/texlive/2012/t
 exmf-dist/fonts/type1/urw/zapfchan/uzcmi8a.pfb>
-Output written on thesis.pdf (168 pages, 16045399 bytes).
+Output written on thesis.pdf (169 pages, 16056372 bytes).
 PDF statistics:
- 3756 PDF objects out of 4296 (max. 8388607)
- 2637 compressed objects within 27 object streams
- 404 named destinations out of 1000 (max. 500000)
+ 3878 PDF objects out of 4296 (max. 8388607)
+ 2757 compressed objects within 28 object streams
+ 425 named destinations out of 1000 (max. 500000)
  782 words of extra memory for PDF output out of 10000 (max. 10000000)
 
