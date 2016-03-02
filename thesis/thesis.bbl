@@ -39,6 +39,11 @@
   {10.1093/mnras/275.3.874}, \href
   {http://adsabs.harvard.edu/abs/1995MNRAS.275..874A} {275, 874}
 
+\bibitem[\protect\citeauthoryear{{Arnold} et~al.,}{{Arnold}
+  et~al.}{2014}]{arnold2014}
+{Arnold} J.~A.,  et~al., 2014, \mn@doi [\apj] {10.1088/0004-637X/791/2/80},
+  \href {http://adsabs.harvard.edu/abs/2014ApJ...791...80A} {791, 80}
+
 \bibitem[\protect\citeauthoryear{{Ba{\~n}ados} et~al.,}{{Ba{\~n}ados}
   et~al.}{2014}]{banados2014}
 {Ba{\~n}ados} E.,  et~al., 2014, \mn@doi [\aj] {10.1088/0004-6256/148/1/14},
@@ -235,6 +240,12 @@
 {Emsellem} E.,  et~al., 2007, \mn@doi [\mnras]
   {10.1111/j.1365-2966.2007.11752.x}, \href
   {http://adsabs.harvard.edu/abs/2007MNRAS.379..401E} {379, 401}
+
+\bibitem[\protect\citeauthoryear{{Emsellem} et~al.,}{{Emsellem}
+  et~al.}{2011}]{atlas3dIII}
+{Emsellem} E.,  et~al., 2011, \mn@doi [\mnras]
+  {10.1111/j.1365-2966.2011.18496.x}, \href
+  {http://adsabs.harvard.edu/abs/2011MNRAS.414..888E} {414, 888}
 
 \bibitem[\protect\citeauthoryear{{Erwin}}{{Erwin}}{2015}]{imfit}
 {Erwin} P.,  2015, \mn@doi [\apj] {10.1088/0004-637X/799/2/226}, \href
@@ -937,6 +948,12 @@ p.~91, \mn@doi{10.1007/978-94-007-5609-0_2}
 {Scott} N.,  {Graham} A.~W.,   {Schombert} J.,  2013, \mn@doi [\apj]
   {10.1088/0004-637X/768/1/76}, \href
   {http://adsabs.harvard.edu/abs/2013ApJ...768...76S} {768, 76}
+
+\bibitem[\protect\citeauthoryear{{Scott}, {Davies}, {Houghton}, {Cappellari},
+  {Graham}  \& {Pimbblet}}{{Scott} et~al.}{2014}]{scott2014}
+{Scott} N.,  {Davies} R.~L.,  {Houghton} R.~C.~W.,  {Cappellari} M.,  {Graham}
+  A.~W.,   {Pimbblet} K.~A.,  2014, \mn@doi [\mnras] {10.1093/mnras/stu472},
+  \href {http://adsabs.harvard.edu/abs/2014MNRAS.441..274S} {441, 274}
 
 \bibitem[\protect\citeauthoryear{{Seigar}, {Kennefick}, {Kennefick}  \&
   {Lacy}}{{Seigar} et~al.}{2008}]{seigar2008}

@@ -2,7 +2,7 @@ This is BibTeX, Version 0.99d (TeX Live 2012)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 The style file: mnras.bst
-Reallocated field_info (elt_size=4) to 10589 items from 5000.
+Reallocated field_info (elt_size=4) to 10670 items from 5000.
 Database file #1: SMBHbibliography.bib
 Repeated entry---line 88 of file SMBHbibliography.bib
  : @article{Hopkins2009
@@ -67,45 +67,45 @@ Warning--empty publisher in merritt2013book
 Warning--empty publisher in press1992
 Warning--empty publisher in sersic1968
 Warning--empty publisher in thorne1994
-You've used 206 entries,
+You've used 209 entries,
             2881 wiz_defined-function locations,
-            2296 strings with 62789 characters,
-and the built_in function-call counts, 98293 in all, are:
-= -- 7933
-> -- 7168
-< -- 559
-+ -- 3182
-- -- 1030
-* -- 12414
-:= -- 15468
+            2319 strings with 64229 characters,
+and the built_in function-call counts, 99608 in all, are:
+= -- 8043
+> -- 7261
+< -- 561
++ -- 3225
+- -- 1042
+* -- 12598
+:= -- 15666
 add.period$ -- 0
-call.type$ -- 206
-change.case$ -- 412
-chr.to.int$ -- 201
-cite$ -- 214
-duplicate$ -- 4720
-empty$ -- 4759
-format.name$ -- 1704
-if$ -- 16834
+call.type$ -- 209
+change.case$ -- 418
+chr.to.int$ -- 204
+cite$ -- 217
+duplicate$ -- 4785
+empty$ -- 4825
+format.name$ -- 1726
+if$ -- 17056
 int.to.chr$ -- 6
 int.to.str$ -- 0
-missing$ -- 212
-newline$ -- 633
-num.names$ -- 1463
-pop$ -- 1055
+missing$ -- 215
+newline$ -- 642
+num.names$ -- 1479
+pop$ -- 1070
 preamble$ -- 1
-purify$ -- 824
+purify$ -- 836
 quote$ -- 0
-skip$ -- 2794
+skip$ -- 2829
 stack$ -- 0
-substring$ -- 5453
-swap$ -- 2715
-text.length$ -- 843
+substring$ -- 5529
+swap$ -- 2743
+text.length$ -- 855
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1836
+type$ -- 1863
 warning$ -- 8
-while$ -- 1568
+while$ -- 1588
 width$ -- 0
-write$ -- 2078
+write$ -- 2108
 (There were 13 error messages)

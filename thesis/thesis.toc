@@ -19,5 +19,5 @@
 \contentsline {chapter}{\numberline {5}$M_{\rm BH} - n_{\rm sph}$}{117}{chapter.5}
 \contentsline {chapter}{\numberline {6}m-sigma}{129}{chapter.6}
 \contentsline {chapter}{\numberline {7}Monster black holes in compact massive spheroids with intermediate scale discs}{139}{chapter.7}
-\contentsline {chapter}{\numberline {8}concl}{149}{chapter.8}
+\contentsline {chapter}{\numberline {8}Final remarks}{149}{chapter.8}
 \contentsline {chapter}{Bibliography}{151}{section*.5}
