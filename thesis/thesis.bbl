@@ -251,6 +251,12 @@
 {Erwin} P.,  2015, \mn@doi [\apj] {10.1088/0004-637X/799/2/226}, \href
   {http://adsabs.harvard.edu/abs/2015ApJ...799..226E} {799, 226}
 
+\bibitem[\protect\citeauthoryear{{Erwin} \& {Gadotti}}{{Erwin} \&
+  {Gadotti}}{2012}]{erwingadotti2012}
+{Erwin} P.,  {Gadotti} D.~A.,  2012, \mn@doi [Advances in Astronomy]
+  {10.1155/2012/946368}, \href
+  {http://adsabs.harvard.edu/abs/2012AdAst2012E...4E} {2012, 4}
+
 \bibitem[\protect\citeauthoryear{{Erwin} \& {Sparke}}{{Erwin} \&
   {Sparke}}{2003}]{erwinsparke2003}
 {Erwin} P.,  {Sparke} L.~S.,  2003, \mn@doi [\apjs] {10.1086/367885}, \href
@@ -476,6 +482,11 @@ p.~91, \mn@doi{10.1007/978-94-007-5609-0_2}
   {10.1088/0004-637X/737/2/75}, \href
   {http://adsabs.harvard.edu/abs/2011ApJ...737...75G} {737, 75}
 
+\bibitem[\protect\citeauthoryear{{G{\"u}ltekin} et~al.,}{{G{\"u}ltekin}
+  et~al.}{2009}]{gultelkin2009}
+{G{\"u}ltekin} K.,  et~al., 2009, \mn@doi [\apj] {10.1088/0004-637X/698/1/198},
+  \href {http://adsabs.harvard.edu/abs/2009ApJ...698..198G} {698, 198}
+
 \bibitem[\protect\citeauthoryear{{H{\"a}ring} \& {Rix}}{{H{\"a}ring} \&
   {Rix}}{2004}]{haringrix2004}
 {H{\"a}ring} N.,  {Rix} H.-W.,  2004, \mn@doi [\apjl] {10.1086/383567}, \href
@@ -594,6 +605,14 @@ p.~91, \mn@doi{10.1007/978-94-007-5609-0_2}
   et~al.}{2008}]{kriek2008}
 {Kriek} M.,  et~al., 2008, \mn@doi [\apj] {10.1086/528945}, \href
   {http://adsabs.harvard.edu/abs/2008ApJ...677..219K} {677, 219}
+
+\bibitem[\protect\citeauthoryear{{Laor}}{{Laor}}{1998}]{laor1998}
+{Laor} A.,  1998, \mn@doi [\apjl] {10.1086/311619}, \href
+  {http://adsabs.harvard.edu/abs/1998ApJ...505L..83L} {505, L83}
+
+\bibitem[\protect\citeauthoryear{{Laor}}{{Laor}}{2001}]{laor2001}
+{Laor} A.,  2001, \mn@doi [\apj] {10.1086/320989}, \href
+  {http://adsabs.harvard.edu/abs/2001ApJ...553..677L} {553, 677}
 
 \bibitem[\protect\citeauthoryear{{L{\"a}sker}, {Ferrarese}  \& {van de
   Ven}}{{L{\"a}sker} et~al.}{2014a}]{lasker2014data}
@@ -884,6 +903,12 @@ p.~91, \mn@doi{10.1007/978-94-007-5609-0_2}
 {Rusli} S.~P.,  et~al., 2013, \mn@doi [\aj] {10.1088/0004-6256/146/3/45}, \href
   {http://adsabs.harvard.edu/abs/2013AJ....146...45R} {146, 45}
 
+\bibitem[\protect\citeauthoryear{{Ryan}, {De Robertis}, {Virani}, {Laor}  \&
+  {Dawson}}{{Ryan} et~al.}{2007}]{ryan2007}
+{Ryan} C.~J.,  {De Robertis} M.~M.,  {Virani} S.,  {Laor} A.,   {Dawson} P.~C.,
+   2007, \mn@doi [\apj] {10.1086/509313}, \href
+  {http://adsabs.harvard.edu/abs/2007ApJ...654..799R} {654, 799}
+
 \bibitem[\protect\citeauthoryear{{Sadoun} \& {Colin}}{{Sadoun} \&
   {Colin}}{2012}]{sadouncolin2012}
 {Sadoun} R.,  {Colin} J.,  2012, \mn@doi [\mnras]
@@ -904,6 +929,12 @@ p.~91, \mn@doi{10.1007/978-94-007-5609-0_2}
 {Salucci} P.,  {Szuszkiewicz} E.,  {Monaco} P.,   {Danese} L.,  1999, \mn@doi
   [\mnras] {10.1046/j.1365-8711.1999.02659.x}, \href
   {http://adsabs.harvard.edu/abs/1999MNRAS.307..637S} {307, 637}
+
+\bibitem[\protect\citeauthoryear{{Salucci}, {Ratnam}, {Monaco}  \&
+  {Danese}}{{Salucci} et~al.}{2000}]{salucci2000}
+{Salucci} P.,  {Ratnam} C.,  {Monaco} P.,   {Danese} L.,  2000, \mn@doi
+  [\mnras] {10.1046/j.1365-8711.2000.03622.x}, \href
+  {http://adsabs.harvard.edu/abs/2000MNRAS.317..488S} {317, 488}
 
 \bibitem[\protect\citeauthoryear{{Sani}, {Marconi}, {Hunt}  \&
   {Risaliti}}{{Sani} et~al.}{2011}]{sani2011}
@@ -1101,6 +1132,10 @@ p.~91, \mn@doi{10.1007/978-94-007-5609-0_2}
   {G{\"u}ltekin} K.,  {Husemann} B.,   {Richstone} D.~O.,  2015, \mn@doi [\apj]
   {10.1088/0004-637X/808/2/183}, \href
   {http://adsabs.harvard.edu/abs/2015ApJ...808..183W} {808, 183}
+
+\bibitem[\protect\citeauthoryear{{Wandel}}{{Wandel}}{1999}]{wandel1999}
+{Wandel} A.,  1999, \mn@doi [\apjl] {10.1086/312106}, \href
+  {http://adsabs.harvard.edu/abs/1999ApJ...519L..39W} {519, L39}
 
 \bibitem[\protect\citeauthoryear{{Wolfe} \& {Burbidge}}{{Wolfe} \&
   {Burbidge}}{1970}]{wolfeburbidge1970}
