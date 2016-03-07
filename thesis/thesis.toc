@@ -17,7 +17,7 @@
 \contentsline {chapter}{\numberline {3}Galaxy Vivisection}{43}{chapter.3}
 \contentsline {chapter}{\numberline {4}$M_{\rm BH} - L_{\rm gal}$, $M_{\rm BH} - L_{\rm sph}$ and $M_{\rm BH} - M_{\rm *,sph}$ }{103}{chapter.4}
 \contentsline {chapter}{\numberline {5}$M_{\rm BH} - n_{\rm sph}$}{117}{chapter.5}
-\contentsline {chapter}{\numberline {6}m-sigma}{129}{chapter.6}
+\contentsline {chapter}{\numberline {6}Monster black holes in Central Cluster Galaxies}{129}{chapter.6}
 \contentsline {chapter}{\numberline {7}Monster black holes in compact massive spheroids with intermediate scale discs}{139}{chapter.7}
-\contentsline {chapter}{\numberline {8}Final remarks}{149}{chapter.8}
+\contentsline {chapter}{\numberline {8}Final remarks and future perspectives}{149}{chapter.8}
 \contentsline {chapter}{Bibliography}{153}{section*.5}

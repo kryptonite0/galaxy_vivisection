@@ -49,6 +49,12 @@
 {Ba{\~n}ados} E.,  et~al., 2014, \mn@doi [\aj] {10.1088/0004-6256/148/1/14},
   \href {http://adsabs.harvard.edu/abs/2014AJ....148...14B} {148, 14}
 
+\bibitem[\protect\citeauthoryear{{Baldassare}, {Reines}, {Gallo}  \&
+  {Greene}}{{Baldassare} et~al.}{2015}]{Baldassare2015}
+{Baldassare} V.~F.,  {Reines} A.~E.,  {Gallo} E.,   {Greene} J.~E.,  2015,
+  \mn@doi [\apjl] {10.1088/2041-8205/809/1/L14}, \href
+  {http://adsabs.harvard.edu/abs/2015ApJ...809L..14B} {809, L14}
+
 \bibitem[\protect\citeauthoryear{{Begelman}, {Blandford}  \& {Rees}}{{Begelman}
   et~al.}{1980}]{begelman1980}
 {Begelman} M.~C.,  {Blandford} R.~D.,   {Rees} M.~J.,  1980, \mn@doi [\nat]
@@ -475,6 +481,20 @@ p.~91, \mn@doi{10.1007/978-94-007-5609-0_2}
   {10.1088/0004-637X/804/1/32}, \href
   {http://adsabs.harvard.edu/abs/2015ApJ...804...32G} {804, 32}
 
+\bibitem[\protect\citeauthoryear{{Graham}, {Durr{\'e}}, {Savorgnan}, {Medling},
+  {Batcheldor}, {Scott}, {Watson}  \& {Marconi}}{{Graham}
+  et~al.}{2016a}]{Graham2016n1277}
+{Graham} A.~W.,  {Durr{\'e}} M.,  {Savorgnan} G.~A.~D.,  {Medling} A.~M.,
+  {Batcheldor} D.,  {Scott} N.,  {Watson} B.,   {Marconi} A.,  2016a, preprint,
+  \href {http://adsabs.harvard.edu/abs/2016arXiv160105151G} {} (\mn@eprint
+  {arXiv} {1601.05151})
+
+\bibitem[\protect\citeauthoryear{{Graham}, {Ciambur}  \& {Soria}}{{Graham}
+  et~al.}{2016b}]{Graham2016LEDA}
+{Graham} A.~W.,  {Ciambur} B.~C.,   {Soria} R.,  2016b, \mn@doi [\apj]
+  {10.3847/0004-637X/818/2/172}, \href
+  {http://adsabs.harvard.edu/abs/2016ApJ...818..172G} {818, 172}
+
 \bibitem[\protect\citeauthoryear{{Greif}, {Springel}, {White}, {Glover},
   {Clark}, {Smith}, {Klessen}  \& {Bromm}}{{Greif} et~al.}{2011}]{greif2011}
 {Greif} T.~H.,  {Springel} V.,  {White} S.~D.~M.,  {Glover} S.~C.~O.,  {Clark}
@@ -743,10 +763,14 @@ p.~91, \mn@doi{10.1007/978-94-007-5609-0_2}
   {http://adsabs.harvard.edu/abs/2015arXiv151105494M} {} (\mn@eprint {arXiv}
   {1511.05494})
 
-\bibitem[\protect\citeauthoryear{{Merritt}}{{Merritt}}{2006}]{merritt2006RPP}
-{Merritt} D.,  2006, \mn@doi [Reports on Progress in Physics]
+\bibitem[\protect\citeauthoryear{{Merritt}}{{Merritt}}{2006a}]{merritt2006RPP}
+{Merritt} D.,  2006a, \mn@doi [Reports on Progress in Physics]
   {10.1088/0034-4885/69/9/R01}, \href
   {http://adsabs.harvard.edu/abs/2006RPPh...69.2513M} {69, 2513}
+
+\bibitem[\protect\citeauthoryear{{Merritt}}{{Merritt}}{2006b}]{merritt2006}
+{Merritt} D.,  2006b, \mn@doi [\apj] {10.1086/506139}, \href
+  {http://adsabs.harvard.edu/abs/2006ApJ...648..976M} {648, 976}
 
 \bibitem[\protect\citeauthoryear{{Merritt}}{{Merritt}}{2013a}]{merritt2013book}
 {Merritt} D.,  2013a, {Dynamics and Evolution of Galactic Nuclei}
@@ -1136,6 +1160,11 @@ p.~91, \mn@doi{10.1007/978-94-007-5609-0_2}
 \bibitem[\protect\citeauthoryear{{Wandel}}{{Wandel}}{1999}]{wandel1999}
 {Wandel} A.,  1999, \mn@doi [\apjl] {10.1086/312106}, \href
   {http://adsabs.harvard.edu/abs/1999ApJ...519L..39W} {519, L39}
+
+\bibitem[\protect\citeauthoryear{{Wellons} et~al.,}{{Wellons}
+  et~al.}{2016}]{wellons2016}
+{Wellons} S.,  et~al., 2016, \mn@doi [\mnras] {10.1093/mnras/stv2738}, \href
+  {http://adsabs.harvard.edu/abs/2016MNRAS.456.1030W} {456, 1030}
 
 \bibitem[\protect\citeauthoryear{{Wolfe} \& {Burbidge}}{{Wolfe} \&
   {Burbidge}}{1970}]{wolfeburbidge1970}
