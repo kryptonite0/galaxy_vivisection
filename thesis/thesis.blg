@@ -2,57 +2,57 @@ This is BibTeX, Version 0.99d (TeX Live 2012)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 The style file: mnras.bst
-Reallocated field_info (elt_size=4) to 10994 items from 5000.
+Reallocated field_info (elt_size=4) to 11129 items from 5000.
 Database file #1: SMBHbibliography.bib
-Repeated entry---line 171 of file SMBHbibliography.bib
+Repeated entry---line 242 of file SMBHbibliography.bib
  : @article{Hopkins2009
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2054 of file SMBHbibliography.bib
+Repeated entry---line 2125 of file SMBHbibliography.bib
  : @article{Khosroshahi2000
  :                         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3572 of file SMBHbibliography.bib
+Repeated entry---line 3643 of file SMBHbibliography.bib
  : @article{simiendevaucouleurs1986
  :                                 ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4583 of file SMBHbibliography.bib
+Repeated entry---line 4654 of file SMBHbibliography.bib
  : @article{andredakis1995
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4683 of file SMBHbibliography.bib
+Repeated entry---line 4754 of file SMBHbibliography.bib
  : @article{krajnovic2011
  :                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 5287 of file SMBHbibliography.bib
+Repeated entry---line 5358 of file SMBHbibliography.bib
  : @article{erwinsparke2003
  :                         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 6136 of file SMBHbibliography.bib
+Repeated entry---line 6207 of file SMBHbibliography.bib
  : @article{laurikainen2010
  :                         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 6154 of file SMBHbibliography.bib
+Repeated entry---line 6225 of file SMBHbibliography.bib
  : @article{hirschmann2010
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 6453 of file SMBHbibliography.bib
+Repeated entry---line 6524 of file SMBHbibliography.bib
  : @article{jahnkemaccio2011
  :                          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 6471 of file SMBHbibliography.bib
+Repeated entry---line 6542 of file SMBHbibliography.bib
  : @article{peng2007
  :                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 6505 of file SMBHbibliography.bib
+Repeated entry---line 6576 of file SMBHbibliography.bib
  : @article{naab2009
  :                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 9006 of file SMBHbibliography.bib
+Repeated entry---line 9077 of file SMBHbibliography.bib
  : @article{davies1983
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 9435 of file SMBHbibliography.bib
+Repeated entry---line 9506 of file SMBHbibliography.bib
  : @article{damjanov2009
  :                      ,
 I'm skipping whatever remains of this entry
@@ -68,45 +68,45 @@ Warning--empty publisher in merritt2013book
 Warning--empty publisher in press1992
 Warning--empty publisher in sersic1968
 Warning--empty publisher in thorne1994
-You've used 221 entries,
+You've used 226 entries,
             2881 wiz_defined-function locations,
-            2410 strings with 67349 characters,
-and the built_in function-call counts, 105168 in all, are:
-= -- 8488
-> -- 7674
-< -- 591
-+ -- 3412
-- -- 1102
-* -- 13317
-:= -- 16555
+            2445 strings with 69099 characters,
+and the built_in function-call counts, 107301 in all, are:
+= -- 8663
+> -- 7821
+< -- 595
++ -- 3483
+- -- 1118
+* -- 13613
+:= -- 16877
 add.period$ -- 0
-call.type$ -- 221
-change.case$ -- 442
-chr.to.int$ -- 214
-cite$ -- 229
-duplicate$ -- 5049
-empty$ -- 5091
-format.name$ -- 1818
-if$ -- 17993
+call.type$ -- 226
+change.case$ -- 452
+chr.to.int$ -- 219
+cite$ -- 234
+duplicate$ -- 5158
+empty$ -- 5203
+format.name$ -- 1850
+if$ -- 18350
 int.to.chr$ -- 8
 int.to.str$ -- 0
-missing$ -- 227
-newline$ -- 678
-num.names$ -- 1559
-pop$ -- 1130
+missing$ -- 232
+newline$ -- 693
+num.names$ -- 1587
+pop$ -- 1157
 preamble$ -- 1
-purify$ -- 884
+purify$ -- 904
 quote$ -- 0
-skip$ -- 2980
+skip$ -- 3038
 stack$ -- 0
-substring$ -- 5833
-swap$ -- 2883
-text.length$ -- 903
+substring$ -- 5949
+swap$ -- 2933
+text.length$ -- 923
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1971
+type$ -- 2016
 warning$ -- 8
-while$ -- 1678
+while$ -- 1710
 width$ -- 0
-write$ -- 2229
+write$ -- 2280
 (There were 13 error messages)

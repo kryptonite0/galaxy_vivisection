@@ -17,6 +17,12 @@
   {mn@eprint@\@tempb}{\@tempb:\@tempc}{\expandafter \expandafter \csname
   mn@eprint@\@tempb\endcsname \expandafter{\@tempc}}}
 
+\bibitem[\protect\citeauthoryear{{Abazajian} et~al.,}{{Abazajian}
+  et~al.}{2009}]{abazajian2009}
+{Abazajian} K.~N.,  et~al., 2009, \mn@doi [\apjs]
+  {10.1088/0067-0049/182/2/543}, \href
+  {http://adsabs.harvard.edu/abs/2009ApJS..182..543A} {182, 543}
+
 \bibitem[\protect\citeauthoryear{{Akritas} \& {Bershady}}{{Akritas} \&
   {Bershady}}{1996}]{akritasbershady1996}
 {Akritas} M.~G.,  {Bershady} M.~A.,  1996, \mn@doi [\apj] {10.1086/177901},
@@ -966,6 +972,12 @@ p.~91, \mn@doi{10.1007/978-94-007-5609-0_2}
   [\mnras] {10.1111/j.1365-2966.2011.18229.x}, \href
   {http://adsabs.harvard.edu/abs/2011MNRAS.413.1479S} {413, 1479}
 
+\bibitem[\protect\citeauthoryear{{Saulder}, {van den Bosch}  \&
+  {Mieske}}{{Saulder} et~al.}{2015}]{saulder2015}
+{Saulder} C.,  {van den Bosch} R.~C.~E.,   {Mieske} S.,  2015, \mn@doi [\aap]
+  {10.1051/0004-6361/201425472}, \href
+  {http://adsabs.harvard.edu/abs/2015A%26A...578A.134S} {578, A134}
+
 \bibitem[\protect\citeauthoryear{{Savorgnan} \& {Graham}}{{Savorgnan} \&
   {Graham}}{2015}]{savorgnangraham2015}
 {Savorgnan} G.~A.~D.,  {Graham} A.~W.,  2015, \mn@doi [\mnras]
@@ -1028,6 +1040,12 @@ p.~91, \mn@doi{10.1007/978-94-007-5609-0_2}
 {Shahbaz} T.,  1999, \mn@doi [Journal of Astrophysics and Astronomy]
   {10.1007/BF02702352}, \href
   {http://adsabs.harvard.edu/abs/1999JApA...20..197S} {20, 197}
+
+\bibitem[\protect\citeauthoryear{{Shankar} et~al.,}{{Shankar}
+  et~al.}{2016}]{shankar2016}
+{Shankar} F.,  et~al., 2016, preprint, \href
+  {http://adsabs.harvard.edu/abs/2016arXiv160301276S} {} (\mn@eprint {arXiv}
+  {1603.01276})
 
 \bibitem[\protect\citeauthoryear{{Sheth} et~al.,}{{Sheth}
   et~al.}{2010}]{sheth2010}
@@ -1183,6 +1201,12 @@ p.~91, \mn@doi{10.1007/978-94-007-5609-0_2}
   {G{\"u}ltekin} K.,  2015, \mn@doi [\mnras] {10.1093/mnras/stv1381}, \href
   {http://adsabs.harvard.edu/abs/2015MNRAS.452.1792Y} {452, 1792}
 
+\bibitem[\protect\citeauthoryear{{Y{\i}ld{\i}r{\i}m}
+  et~al.,}{{Y{\i}ld{\i}r{\i}m} et~al.}{2016}]{yildirim2016}
+{Y{\i}ld{\i}r{\i}m} A.,  et~al., 2016, \mn@doi [\mnras]
+  {10.1093/mnras/stv2665}, \href
+  {http://adsabs.harvard.edu/abs/2016MNRAS.456..538Y} {456, 538}
+
 \bibitem[\protect\citeauthoryear{{Zel'dovich} \& {Novikov}}{{Zel'dovich} \&
   {Novikov}}{1964}]{zeldovichnovikov1964}
 {Zel'dovich} Y.~B.,  {Novikov} I.~D.,  1964, Doklady Akad. Nauk. SSSR, 158, 811
@@ -1219,6 +1243,14 @@ p.~91, \mn@doi{10.1007/978-94-007-5609-0_2}
    {van der Wel} A.,   {Walsh} J.~L.,  2012, \mn@doi [\nat]
   {10.1038/nature11592}, \href
   {http://adsabs.harvard.edu/abs/2012Natur.491..729V} {491, 729}
+
+\bibitem[\protect\citeauthoryear{{van den Bosch}, {Gebhardt}, {G{\"u}ltekin},
+  {Y{\i}ld{\i}r{\i}m}  \& {Walsh}}{{van den Bosch}
+  et~al.}{2015}]{vandenBosch2015}
+{van den Bosch} R.~C.~E.,  {Gebhardt} K.,  {G{\"u}ltekin} K.,
+  {Y{\i}ld{\i}r{\i}m} A.,   {Walsh} J.~L.,  2015, \mn@doi [\apjs]
+  {10.1088/0067-0049/218/1/10}, \href
+  {http://adsabs.harvard.edu/abs/2015ApJS..218...10V} {218, 10}
 
 \bibitem[\protect\citeauthoryear{{van der Marel}}{{van der
   Marel}}{2004}]{vandermarel2004}
