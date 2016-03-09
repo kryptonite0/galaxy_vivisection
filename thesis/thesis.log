@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  8 MAR 2016 16:22
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  9 MAR 2016 17:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3624,21 +3624,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--24
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--62
-
- []
-
-
 Underfull \vbox (badness 7256) has occurred while \output is active []
 
  [149
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 63--113
-
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3649,7 +3639,17 @@ Package Fancyhdr Warning: \headheight is too small (13.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [150]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 70--75
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--126
+
+ []
+
+
+Underfull \vbox (badness 1259) has occurred while \output is active []
 
 
 
@@ -3659,14 +3659,13 @@ Package Fancyhdr Warning: \headheight is too small (13.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [151]
-Underfull \hbox (badness 10000) in paragraph at lines 114--115
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--143
+Underfull \vbox (badness 1259) has occurred while \output is active []
 
- []
 
 
 Package Fancyhdr Warning: \headheight is too small (13.0pt): 
@@ -3675,12 +3674,7 @@ Package Fancyhdr Warning: \headheight is too small (13.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [152]
-Underfull \hbox (badness 10000) in paragraph at lines 199--200
-
- []
-
-
-Underfull \vbox (badness 1248) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
@@ -3689,7 +3683,12 @@ Package Fancyhdr Warning: \headheight is too small (13.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[153])
+[153]
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
+
+ []
+
+)
 
 Package Fancyhdr Warning: \headheight is too small (13.0pt): 
  Make it at least 13.69998pt.
@@ -3698,7 +3697,7 @@ Package Fancyhdr Warning: \headheight is too small (13.0pt):
 
 [154] (./thesis.bbl
 
-LaTeX Warning: Reference `@' on page 155 undefined on input line 67.
+LaTeX Warning: Reference `@' on page 155 undefined on input line 71.
 
 [155
 
@@ -3712,7 +3711,7 @@ Package Fancyhdr Warning: \headheight is too small (13.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [156]
-Underfull \hbox (badness 2285) in paragraph at lines 329--331
+Underfull \hbox (badness 2285) in paragraph at lines 333--335
 []\T1/cmbr/m/n/10.95 Ferrarese L., 2006, Ob-ser-va-tional Ev-i-dence for Su-per
 -mas-sive Black Holes. pp 1--62,
  []
@@ -3745,19 +3744,19 @@ Package Fancyhdr Warning: \headheight is too small (13.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [160]
-Underfull \hbox (badness 1389) in paragraph at lines 686--690
+Underfull \hbox (badness 1389) in paragraph at lines 690--694
 []\T1/cmbr/m/n/10.95 Lupi A., Haardt F., Dotti M., Fi-ac-coni D., Mayer L., Mad
 au P., 2015, preprint, [][]
  []
 
 
-LaTeX Warning: Reference `@' on page 161 undefined on input line 692.
-
-
 LaTeX Warning: Reference `@' on page 161 undefined on input line 696.
 
 
-LaTeX Warning: Reference `@' on page 161 undefined on input line 744.
+LaTeX Warning: Reference `@' on page 161 undefined on input line 700.
+
+
+LaTeX Warning: Reference `@' on page 161 undefined on input line 748.
 
 
 Package Fancyhdr Warning: \headheight is too small (13.0pt): 
@@ -3767,13 +3766,13 @@ Package Fancyhdr Warning: \headheight is too small (13.0pt):
 
 [161]
 
-LaTeX Warning: Reference `@' on page 162 undefined on input line 807.
+LaTeX Warning: Reference `@' on page 162 undefined on input line 811.
 
 
-LaTeX Warning: Reference `@' on page 162 undefined on input line 824.
+LaTeX Warning: Reference `@' on page 162 undefined on input line 828.
 
 
-LaTeX Warning: Reference `@' on page 162 undefined on input line 870.
+LaTeX Warning: Reference `@' on page 162 undefined on input line 874.
 
 
 Package Fancyhdr Warning: \headheight is too small (13.0pt): 
@@ -3783,7 +3782,7 @@ Package Fancyhdr Warning: \headheight is too small (13.0pt):
 
 [162]
 
-LaTeX Warning: Reference `@' on page 163 undefined on input line 912.
+LaTeX Warning: Reference `@' on page 163 undefined on input line 916.
 
 
 Package Fancyhdr Warning: \headheight is too small (13.0pt): 
@@ -3792,13 +3791,13 @@ Package Fancyhdr Warning: \headheight is too small (13.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [163]
-Underfull \hbox (badness 4634) in paragraph at lines 1009--1012
+Underfull \hbox (badness 4634) in paragraph at lines 1013--1016
 []\T1/cmbr/m/n/10.95 Scharwächter J., Combes F., Sa-lomé P., Sun M., Krips M., 
 2015, preprint, [][]
  []
 
 
-LaTeX Warning: Reference `@' on page 164 undefined on input line 1056.
+LaTeX Warning: Reference `@' on page 164 undefined on input line 1060.
 
 
 Package Fancyhdr Warning: \headheight is too small (13.0pt): 
@@ -3808,7 +3807,7 @@ Package Fancyhdr Warning: \headheight is too small (13.0pt):
 
 [164]
 
-LaTeX Warning: Reference `@' on page 165 undefined on input line 1193.
+LaTeX Warning: Reference `@' on page 165 undefined on input line 1197.
 
 
 Package Fancyhdr Warning: \headheight is too small (13.0pt): 
@@ -3818,7 +3817,7 @@ Package Fancyhdr Warning: \headheight is too small (13.0pt):
 
 [165]
 
-LaTeX Warning: Reference `@' on page 166 undefined on input line 1244.
+LaTeX Warning: Reference `@' on page 166 undefined on input line 1248.
 
 )
 
@@ -3845,13 +3844,13 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 212.
  ) 
 Here is how much of TeX's memory you used:
- 11534 strings out of 493488
- 176859 string characters out of 3141326
- 264995 words of memory out of 3000000
- 14133 multiletter control sequences out of 15000+200000
+ 11538 strings out of 493488
+ 176928 string characters out of 3141326
+ 265032 words of memory out of 3000000
+ 14136 multiletter control sequences out of 15000+200000
  31010 words of font info for 91 fonts, out of 3000000 for 9000
  958 hyphenation exceptions out of 8191
- 44i,18n,46p,838b,884s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,18n,46p,838b,886s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 {/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
 live/2012/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb></usr/local
@@ -3908,10 +3907,10 @@ xlive/2012/texmf-dist/fonts/type1/public/cm-super/sfbmr8.pfb></usr/local/texliv
 e/2012/texmf-dist/fonts/type1/public/cm-super/sfbmr9.pfb></usr/local/texlive/20
 12/texmf-dist/fonts/type1/public/cm-super/sfbtl10.pfb></usr/local/texlive/2012/
 texmf-dist/fonts/type1/urw/zapfchan/uzcmi8a.pfb>
-Output written on thesis.pdf (174 pages, 16057590 bytes).
+Output written on thesis.pdf (174 pages, 16058588 bytes).
 PDF statistics:
- 4085 PDF objects out of 4296 (max. 8388607)
- 2958 compressed objects within 30 object streams
- 451 named destinations out of 1000 (max. 500000)
+ 4091 PDF objects out of 4296 (max. 8388607)
+ 2964 compressed objects within 30 object streams
+ 452 named destinations out of 1000 (max. 500000)
  782 words of extra memory for PDF output out of 10000 (max. 10000000)
 

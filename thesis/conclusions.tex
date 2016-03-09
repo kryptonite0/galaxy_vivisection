@@ -54,10 +54,26 @@ from the residual image of a 2D fit.
 As an additional warning, 
 given the level of detail to which our galaxy decompositions were carried out, 
 we do not consider possible for current automatic routines to reproduce our analysis. \\
-future: bayes analysis to estimate max number of components, comparison with "physical" components; 
+In our 1D galaxy decomposition code, the minimisation routine is based on the Levenberg-Marquardt algorithm, 
+which is known to be one of the fastest algorithms available, 
+but is also prone to ``get trapped'' into local minima of the chi-squared distribution. 
+As a future project, it would be interesting to implement in the code different minimisation algorithms, 
+such as those available in {\tt Imfit} \citep{imfit},  
+and test their performance. 
+It would also be beneficial to create a procedure to estimate the systematic uncertainties 
+associated with the best-fit parameters from the fit itself, 
+without the need to resort to decompositions performed by other authors as we did in this work. 
+One of the issues associated with multicomponent decomposition is the risk of ``overfitting'', 
+i.e.~having a model with more components (or parameters) than what is actually needed. 
+Information theory and Bayes analysis provide us with a number of methods 
+to estimate the maximum number of parameters required by a model 
+to fit a given dataset, 
+such as the \citep{akaike1974} Information Criterion that we used in Chapter \ref{ch:mn}. 
+One could check whether or not these methods agree with our human-supervised selection 
+of ``physically motivated'' model components. 
+
 improving kin-phot approach, large kin maps are needed, 
 combining hst + wide field obs to map galaxy outskirts, 
-use bayes analysis to estimate uncertainties on params so that we don't need other decompositions, 
 use of isofit and boggy's code for decomp, \\
 
 In Chapter \ref{ch:mm} \citep{paperII}, we used our dataset to derive and explore 

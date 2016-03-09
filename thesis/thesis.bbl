@@ -23,6 +23,10 @@
   {10.1088/0067-0049/182/2/543}, \href
   {http://adsabs.harvard.edu/abs/2009ApJS..182..543A} {182, 543}
 
+\bibitem[\protect\citeauthoryear{{Akaike}}{{Akaike}}{1974}]{akaike1974}
+{Akaike} H.,  1974, \mn@doi [Automatic Control, IEEE Transactions]
+  {10.1109/TAC.1974.1100705}, 19, 716
+
 \bibitem[\protect\citeauthoryear{{Akritas} \& {Bershady}}{{Akritas} \&
   {Bershady}}{1996}]{akritasbershady1996}
 {Akritas} M.~G.,  {Bershady} M.~A.,  1996, \mn@doi [\apj] {10.1086/177901},
