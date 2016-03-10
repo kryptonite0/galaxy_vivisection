@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  9 MAR 2016 14:54
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  10 MAR 2016 12:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -657,7 +657,7 @@ t/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2012/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2012/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2012/texmf-dist/fon
 ts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on mbhn.pdf (10 pages, 2585861 bytes).
+Output written on mbhn.pdf (10 pages, 2585474 bytes).
 PDF statistics:
  1002 PDF objects out of 1200 (max. 8388607)
  508 compressed objects within 6 object streams

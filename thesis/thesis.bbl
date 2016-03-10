@@ -133,6 +133,11 @@
 {Carter} D.,  1987, \mn@doi [\apj] {10.1086/164897}, \href
   {http://adsabs.harvard.edu/abs/1987ApJ...312..514C} {312, 514}
 
+\bibitem[\protect\citeauthoryear{{Ciambur}}{{Ciambur}}{2015}]{ciambur2015}
+{Ciambur} B.~C.,  2015, preprint, \href
+  {http://adsabs.harvard.edu/abs/2015arXiv150702691C} {} (\mn@eprint {arXiv}
+  {1507.02691})
+
 \bibitem[\protect\citeauthoryear{{Cimatti}, {Nipoti}  \& {Cassata}}{{Cimatti}
   et~al.}{2012}]{cimatti2012}
 {Cimatti} A.,  {Nipoti} C.,   {Cassata} P.,  2012, \mn@doi [\mnras]
@@ -167,6 +172,12 @@
 {Colpi} M.,  {Callegari} S.,  {Dotti} M.,   {Mayer} L.,  2009, \mn@doi
   [Classical and Quantum Gravity] {10.1088/0264-9381/26/9/094029}, \href
   {http://adsabs.harvard.edu/abs/2009CQGra..26i4029C} {26, 094029}
+
+\bibitem[\protect\citeauthoryear{{Croom} et~al.,}{{Croom}
+  et~al.}{2012}]{croom2012}
+{Croom} S.~M.,  et~al., 2012, \mn@doi [\mnras]
+  {10.1111/j.1365-2966.2011.20365.x}, \href
+  {http://adsabs.harvard.edu/abs/2012MNRAS.421..872C} {421, 872}
 
 \bibitem[\protect\citeauthoryear{{Croton} et~al.,}{{Croton}
   et~al.}{2006}]{croton2006}
@@ -684,6 +695,11 @@ p.~91, \mn@doi{10.1007/978-94-007-5609-0_2}
 {Laurikainen} E.,  {Peletier} R.,   {Gadotti} D.,  2016, \mn@doi [Galactic
   Bulges] {10.1007/978-3-319-19378-6}, \href
   {http://adsabs.harvard.edu/abs/2016ASSL..418.....L} {418}
+
+\bibitem[\protect\citeauthoryear{{Law} \& {MaNGA Team}}{{Law} \& {MaNGA
+  Team}}{2014}]{law2014}
+{Law} D.~R.,  {MaNGA Team} 2014, in American Astronomical Society Meeting
+  Abstracts \#223. p. 254.31
 
 \bibitem[\protect\citeauthoryear{{Lupi}, {Haardt}, {Dotti}, {Fiacconi}, {Mayer}
    \& {Madau}}{{Lupi} et~al.}{2015}]{lupi2015}

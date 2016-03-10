@@ -186,6 +186,14 @@ def mag_sph_vs_n_maj():
         	datfile.write(str(logNmaj) + ' ' + str(err_logNmaj) + ' ' + str(MAGsph) + ' ' + str(err_MAGsph) + ' ' + '\n')
         datfile.close()
 	
+        ### produce .dat file for Shankar
+        datfileName = '/Users/gsavorgnan/galaxy_vivisection/results/n_maj_sph_Francesco.dat'
+        datfile = open(datfileName, 'w')
+        datfile.write('# galaxy lognmaj err_logn \n')
+        for galaxy, logNmaj, err_logNmaj in zip(gal_id, log_n, 0.5*(perr_log_n + merr_log_n) ):
+        	datfile.write(galaxy + ' ' + str(logNmaj) + ' ' + str(err_logNmaj) + ' ' + '\n')
+        datfile.close()
+	
 	
 	#######################################
 	
@@ -610,7 +618,7 @@ def mag_sph_vs_n_maj():
 	
 	#plt.show()
 	#plt.savefig('test.pdf', format='pdf', dpi=100)
-	plt.savefig(path_paper_figures + 'mag_vs_n_maj.pdf', format='pdf', dpi=1000)
+	#plt.savefig(path_paper_figures + 'mag_vs_n_maj.pdf', format='pdf', dpi=1000)
 
 
 def mbh_vs_n_sph_maj():

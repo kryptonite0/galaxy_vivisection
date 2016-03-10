@@ -11,6 +11,7 @@ from instruments.linear_regression import fitexy
 from instruments import b_n
 from instruments.linear_regression import colorline
 from instruments.linear_regression import akaike
+import sys
 
 from matplotlib import rc
 rc('font',**{'family':'sans-serif','sans-serif':['CenturyGothic']})
@@ -24,6 +25,101 @@ matplotlib.rcParams.update({'font.size': 22})
 dbname = '/Users/gsavorgnan/galaxy_vivisection/python_codes/databases/galaxy_vivisection.db'
 
 path_tables = '/Users/gsavorgnan/galaxy_vivisection/results/tables/'
+
+def make_richard_table():
+	connection = sql3.connect(dbname)
+        cur = connection.cursor()
+
+        cur.execute('''SELECT anc.gal_id, anc.simplemorphtype, anc.core, anc.core_inferred_from_sigma, anc.distance,  
+		anc.mass_BH, anc.perr_mass_BH, anc.merr_mass_BH, 
+		physres.mag_sph_eq_moffat_comb, 
+		errV.perr_mag_sph, errV.merr_mag_sph, 
+		physres.mag_tot_eq_moffat_comb, 
+		col.color, anc.bar,
+		res.delta_eq_moffat_comb
+		FROM Ancillary AS anc 
+		JOIN OneDFitResultsPhysicalUnits AS physres ON anc.gal_id = physres.gal_id 
+		JOIN OneDFitResults AS res ON anc.gal_id = res.gal_id \
+		JOIN ErrorsVote as errV ON anc.gal_id = errV.gal_id 
+		JOIN Colors as col ON anc.gal_id = col.gal_id 
+		WHERE anc.fit1D_done = 1
+                ORDER BY anc.gal_id;''')
+                
+        datat = cur.fetchall()
+        data= np.asarray(datat).transpose()
+	
+        shape = np.shape(data)
+        columns = shape[0]
+        rows = shape[1]
+        #for i in range(columns):
+        #        for j in range(rows):
+        #                data[i,j] = putBlankInPlaceOfNone(data[i,j])
+        
+        gal_name = data[0]
+	gal_id = data[0]
+	morphtype = data[1]
+        core = data[2]
+        core[core=='1'] = 'yes'
+        core[core=='0'] = 'no'
+        core_inferred_from_sigma = data[3]
+        core_inferred_from_sigma[core_inferred_from_sigma=='1'] = '?'
+        core_inferred_from_sigma[core_inferred_from_sigma=='0'] = ' '
+        distance = data[4].astype(np.float)
+        mass_BH = data[5].astype(np.float)
+        perr_mass_BH = data[6].astype(np.float)
+        merr_mass_BH = data[7].astype(np.float)
+	mag_sph = data[8].astype(np.float)
+	perr_mag_sph = data[9].astype(np.float)
+	merr_mag_sph = data[10].astype(np.float)
+	mag_tot = data[11].astype(np.float)
+	color = data[12].astype(np.float)
+	bar = data[13].astype(np.int)
+	delta = data[14].astype(np.float)
+		
+	## error from 0 to 0.3 mag according to Delta_RMS of profile fit
+	## has mean error = 0.08
+	goodness = delta - min(delta)
+	goodness = goodness/max(goodness)
+	err_mag_tot = 0.3*goodness
+	       
+	log_ML = 3.98*color+0.13 # meidt+2014
+	ML = 10**log_ML
+	
+	mass_sph = ML*10**(-0.4*(mag_sph-3.25))
+	perr_mass_sph = (ML*10**(-0.4*(mag_sph-merr_mag_sph-3.25)) - mass_sph ) 
+	merr_mass_sph = (mass_sph - ML*10**(-0.4*(mag_sph+perr_mag_sph-3.25)) ) 
+		
+        mmsampletableFile = open(path_tables + 'mmtable_richard.dat', 'w')
+        sys.stdout = mmsampletableFile
+        
+        print '# galaxy  type  core  distance  mass_BH  merr_mass_BH  perr_mass_BH  mag_sph  merr_mag_sph  ',
+	print ' perr_mag_sph  mag_tot  err_mag_tot  color  mass_sph  merr_mass_sph  perr_mass_sph '
+        for i in range(rows):
+        	print gal_name[i], 
+        	if bar[i] == 0 or morphtype[i] == 'merger':
+        		print morphtype[i], 
+        	elif bar[i] == 1:
+        		print morphtype[i] + '-bar', 	
+        	print str(core[i])+str(core_inferred_from_sigma[i]),  
+        	print str("{0:.1f}".format(distance[i])), 
+		print mass_BH[i],merr_mass_BH[i],perr_mass_BH[i],
+        	print str("{0:.2f}".format(mag_sph[i])), str("{0:.2f}".format(merr_mag_sph[i])), str("{0:.2f}".format(perr_mag_sph[i])),
+        	if gal_name[i] in ['m94', 'n3079', 'n4388', 'n4945']:
+        		print str("{0:.2f}".format(mag_tot[i])), ' <= ', 
+        	else:	
+        		print str("{0:.2f}".format(mag_tot[i])), ' 0.25 ',  
+        	print str("{0:.2f}".format(color[i])), 
+        	print mass_sph[i],merr_mass_sph[i],perr_mass_sph[i]        	
+      
+        mmsampletableFile.close() 
+        terminal = sys.stdout
+	
+	#print mag_sph[gal_id=='ic1459'],merr_mag_sph[gal_id=='ic1459'],perr_mag_sph[gal_id=='ic1459'],color[gal_id=='ic1459'],mass_sph[gal_id=='ic1459']/10**10,merr_mass_sph[gal_id=='ic1459']/10**10,perr_mass_sph[gal_id=='ic1459']/10**10
+        #("{0:.2f}".format(b))
+        #("{0:.2f}".format(b))
+
+	
+
 
 def make_alister_table1():
         connection = sql3.connect(dbname)
@@ -247,4 +343,5 @@ def make_BHFP_data_table():
 	
 #make_alister_table1()	
 #make_BHFP_data_table()	
-make_shankar_table()
+#make_shankar_table()
+make_richard_table()
