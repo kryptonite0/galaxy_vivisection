@@ -20,4 +20,4 @@
 \contentsline {chapter}{\numberline {6}Monster black holes in Central Cluster Galaxies}{129}{chapter.6}
 \contentsline {chapter}{\numberline {7}Monster black holes in compact massive spheroids with intermediate scale discs}{139}{chapter.7}
 \contentsline {chapter}{\numberline {8}Final remarks and future perspectives}{149}{chapter.8}
-\contentsline {chapter}{Bibliography}{155}{section*.5}
+\contentsline {chapter}{Bibliography}{157}{section*.5}

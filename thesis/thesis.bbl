@@ -806,6 +806,18 @@ p.~91, \mn@doi{10.1007/978-94-007-5609-0_2}
   {10.1088/0264-9381/30/24/244005}, \href
   {http://adsabs.harvard.edu/abs/2013CQGra..30x4005M} {30, 244005}
 
+\bibitem[\protect\citeauthoryear{{Merritt} \& {Ferrarese}}{{Merritt} \&
+  {Ferrarese}}{2001a}]{merrittferrarese2001sphinfl}
+{Merritt} D.,  {Ferrarese} L.,  2001a, in {Knapen} J.~H.,  {Beckman} J.~E.,
+  {Shlosman} I.,   {Mahoney} T.~J.,  eds,  Astronomical Society of the Pacific
+  Conference Series Vol. 249, The Central Kiloparsec of Starbursts and AGN: The
+  La Palma Connection. p.~335 (\mn@eprint {} {astro-ph/0107134})
+
+\bibitem[\protect\citeauthoryear{{Merritt} \& {Ferrarese}}{{Merritt} \&
+  {Ferrarese}}{2001b}]{merrittferrarese2001ms}
+{Merritt} D.,  {Ferrarese} L.,  2001b, \mn@doi [\apj] {10.1086/318372}, \href
+  {http://adsabs.harvard.edu/abs/2001ApJ...547..140M} {547, 140}
+
 \bibitem[\protect\citeauthoryear{{Michard}}{{Michard}}{1984}]{michard1984}
 {Michard} R.,  1984, \aap, \href
   {http://adsabs.harvard.edu/abs/1984A%26A...140L..39M} {140, L39}
@@ -997,6 +1009,11 @@ p.~91, \mn@doi{10.1007/978-94-007-5609-0_2}
 {Saulder} C.,  {van den Bosch} R.~C.~E.,   {Mieske} S.,  2015, \mn@doi [\aap]
   {10.1051/0004-6361/201425472}, \href
   {http://adsabs.harvard.edu/abs/2015A%26A...578A.134S} {578, A134}
+
+\bibitem[\protect\citeauthoryear{{Savorgnan}}{{Savorgnan}}{2016}]{paperIII}
+{Savorgnan} G.~A.~D.,  2016, preprint, \href
+  {http://adsabs.harvard.edu/abs/2016arXiv160301910S} {} (\mn@eprint {arXiv}
+  {1603.01910})
 
 \bibitem[\protect\citeauthoryear{{Savorgnan} \& {Graham}}{{Savorgnan} \&
   {Graham}}{2015}]{savorgnangraham2015}

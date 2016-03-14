@@ -3,7 +3,7 @@
 
 In this thesis, we explored scaling relations between the supermassive black hole mass 
 and various properties of the host spheroid, 
-aiming at a more profound understanding of the co-evolution between SMBHs and galaxies. 
+aiming at a more profound understanding of the co-evolution between SMBHs and their host galaxies. 
 A summary of our principal findings and some additional considerations are presented here. 
 This Chapter incorporates also some promising future research directions. \\
 
@@ -53,7 +53,7 @@ We caution against the dangerous practice of identifying unsubtracted galaxy com
 from the residual image of a 2D fit. 
 As an additional warning, 
 given the level of detail to which our galaxy decompositions were carried out, 
-we do not consider possible for current automatic routines to reproduce our analysis. \\
+we do not consider possible for current automatic routines to reproduce our human-supervised analysis. \\
 In our 1D galaxy decomposition code, the minimisation routine is based on the Levenberg-Marquardt algorithm, 
 which is known to be one of the fastest algorithms available, 
 but is also prone to ``get trapped'' into local minima of the chi-squared distribution. 
@@ -129,10 +129,33 @@ whereas it is as low as $\approx 0.5\%$ in \citet{scott2013} and \citet{kormendy
 and even lower in previous studies. 
 A recalibration of the $M_{\rm BH} - M_{\rm *,sph}$ normalization has important consequences 
 for semi-analytical models and simulations of galaxy evolution that include black hole growth, 
-and it also affects calculations of gravitational waves background from SMBH binary coalescence 
-(but see \citealt{shankar2016}). \\
+and it also affects calculations of gravitational waves background from SMBH binary coalescence. 
+However, it is important to keep in mind the warnings of \citeauthor{merritt2013book} 
+(\citeyear{merritt2013book}; see also \citealt{ferraresemerritt2000,merrittferrarese2001ms,merrittferrarese2001sphinfl,
+valluri2004,ferrareseford2005}), 
+who cautioned that the majority of stellar-dynamics based black hole mass measurements 
+are likely to have been overestimated by a factor of $3$ to $4$ 
+due to an insufficient spatial resolution of the sphere-of-influence of black holes. 
+His concern seems to be confirmed by the very recent findings of \citet{shankar2016}, 
+who argued that the current sample of directly measured black hole masses 
+is highly biased by the fact that their detectability 
+is subject to the requirement of spatially resolve their gravitational sphere-of-influence. 
+This selection effect allows us to see only the upper envelope of the ``true'' black hole mass correlations, 
+artificially increasing the normalization of the $M_{\rm BH} - \sigma_*$ correlation by a factor of $\approx 3$ 
+and even more dramatically that of the $M_{\rm BH} - M_{\rm *,sph}$ correlation. 
+New black hole mass measurements obtained with the extraordinary spatial resolution of the next generation 
+30-meter class telescopes will help shed light on this point.  \\
 
-m-n? \\
+In Chapter \ref{ch:mn} \citep{paperIII}, 
+we analysed the $L_{\rm sph} - n_{\rm sph}$ and $M_{\rm BH} - n_{\rm sph}$ diagrams 
+and found that in the former early- and late-type galaxies split into two separate correlations, 
+whereas in the latter all galaxies -- irrespective of their morphological type -- define a single correlation. 
+Our $M_{\rm BH} - L_{\rm sph}$ and $M_{\rm BH} - n_{\rm sph}$ diagrams 
+show consistent amount of intrinsic scatter, 
+in agreement with the results from \citet{grahamdriver2007}. 
+The present dataset allows one to explore also the relation of the black hole mass with 
+the spheroid central surface density, $\mu_{\rm 0, sph}$, 
+and the spheroid deprojected central stellar density, $\rho_{\rm *,0,sph}$. \\
 
 In Chapter \ref{ch:msigma}, we focused on the $M_{\rm BH} - \sigma$ diagram 
 and in particular on the over-massive black holes that have been reported to exist 
@@ -214,12 +237,9 @@ It would be interesting to perform photometric decompositions for these 76 candi
 and select only those with compact massive \emph{spheroids}. 
 
 
-
-
-
-%(but see Shankar et al.~\emph{submitted to MNRAS} TBD). \\
-
-
-
+\vspace{5cm}
+\begin{flushright}
+\emph{Keep looking up. }
+\end{flushright}
 
  
