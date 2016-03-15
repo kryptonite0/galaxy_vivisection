@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  14 MAR 2016 15:34
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  15 MAR 2016 14:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -741,13 +741,10 @@ s/swincaslogo-eps-converted-to.pdf>]) [2
 ]
 LaTeX Font Info:    Font shape `T1/cmbr/m/it' in size <10.95> not available
 (Font)              Font shape `T1/cmbr/m/sl' tried instead on input line 108.
- [3] [4] (./abstract.tex) (./acknowledgement.tex [1
+ [3] [4] (./abstract.tex) (./declaration.tex [1
 
 
 ] [2
-
-])
-(./declaration.tex [3] [4
 
 ]
 LaTeX Font Info:    Try loading font information for OMS+cmbr on input line 15.
@@ -780,14 +777,14 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 25.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-) [5])
+) [3])
 
 Package Fancyhdr Warning: \headheight is too small (12.5pt): 
  Make it at least 13.69998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6] (./thesis.toc [7
+[4] (./thesis.toc [5
 
 ])
 \tf@toc=\write5
@@ -800,7 +797,7 @@ Package Fancyhdr Warning: \headheight is too small (13.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8] (./introduction.tex
+[6] (./introduction.tex
 
 Package Fancyhdr Warning: \headheight is too small (13.0pt): 
  Make it at least 13.69998pt.
@@ -1043,7 +1040,7 @@ s-converted-to.pdf images/sersiccoresersic.eps>
 (epstopdf)             \includegraphics on input line 414.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/sersiccoresersic-eps-converted-to.pdf, id=579, 1699.34875pt x 964.60374
+<images/sersiccoresersic-eps-converted-to.pdf, id=570, 1699.34875pt x 964.60374
 pt>
 File: images/sersiccoresersic-eps-converted-to.pdf Graphic file (type pdf)
  <use images/sersiccoresersic-eps-converted-to.pdf>
@@ -1155,7 +1152,7 @@ ps-converted-to.pdf images/galaxyvivisection.eps>
 (epstopdf)             \includegraphics on input line 593.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/galaxyvivisection-eps-converted-to.pdf, id=706, 1869.98625pt x 1139.256
+<images/galaxyvivisection-eps-converted-to.pdf, id=698, 1869.98625pt x 1139.256
 26pt>
 File: images/galaxyvivisection-eps-converted-to.pdf Graphic file (type pdf)
  <use images/galaxyvivisection-eps-converted-to.pdf>
@@ -1403,7 +1400,7 @@ Package Fancyhdr Warning: \headheight is too small (13.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[30] <MNRAS2013.pdf, id=1045, page=1, 597.50627pt x 785.21959pt>
+[30] <MNRAS2013.pdf, id=1037, page=1, 597.50627pt x 785.21959pt>
 File: MNRAS2013.pdf Graphic file (type pdf)
 
 <use MNRAS2013.pdf, page 1>
@@ -1428,7 +1425,7 @@ File: MNRAS2013.pdf Graphic file (type pdf)
 Package pdftex.def Info: MNRAS2013.pdf, page1 used on input line 72.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
  [31 <./MNRAS2013.pdf>]
-<MNRAS2013.pdf, id=1090, page=2, 597.50627pt x 785.21959pt>
+<MNRAS2013.pdf, id=1081, page=2, 597.50627pt x 785.21959pt>
 File: MNRAS2013.pdf Graphic file (type pdf)
 
 <use MNRAS2013.pdf, page 2>
@@ -1444,7 +1441,7 @@ File: MNRAS2013.pdf Graphic file (type pdf)
 Package pdftex.def Info: MNRAS2013.pdf, page2 used on input line 72.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
  [32 <./MNRAS2013.pdf>]
-<MNRAS2013.pdf, id=1107, page=3, 597.50627pt x 785.21959pt>
+<MNRAS2013.pdf, id=1098, page=3, 597.50627pt x 785.21959pt>
 File: MNRAS2013.pdf Graphic file (type pdf)
 
 <use MNRAS2013.pdf, page 3>
@@ -1460,7 +1457,7 @@ File: MNRAS2013.pdf Graphic file (type pdf)
 Package pdftex.def Info: MNRAS2013.pdf, page3 used on input line 72.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
  [33 <./MNRAS2013.pdf>]
-<MNRAS2013.pdf, id=1115, page=4, 597.50627pt x 785.21959pt>
+<MNRAS2013.pdf, id=1107, page=4, 597.50627pt x 785.21959pt>
 File: MNRAS2013.pdf Graphic file (type pdf)
 
 <use MNRAS2013.pdf, page 4>
@@ -1476,7 +1473,7 @@ File: MNRAS2013.pdf Graphic file (type pdf)
 Package pdftex.def Info: MNRAS2013.pdf, page4 used on input line 72.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
  [34 <./MNRAS2013.pdf>]
-<MNRAS2013.pdf, id=1127, page=5, 597.50627pt x 785.21959pt>
+<MNRAS2013.pdf, id=1119, page=5, 597.50627pt x 785.21959pt>
 File: MNRAS2013.pdf Graphic file (type pdf)
 
 <use MNRAS2013.pdf, page 5>
@@ -1492,7 +1489,7 @@ File: MNRAS2013.pdf Graphic file (type pdf)
 Package pdftex.def Info: MNRAS2013.pdf, page5 used on input line 72.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
  [35 <./MNRAS2013.pdf>]
-<MNRAS2013.pdf, id=1139, page=6, 597.50627pt x 785.21959pt>
+<MNRAS2013.pdf, id=1130, page=6, 597.50627pt x 785.21959pt>
 File: MNRAS2013.pdf Graphic file (type pdf)
 
 <use MNRAS2013.pdf, page 6>
@@ -1508,7 +1505,7 @@ File: MNRAS2013.pdf Graphic file (type pdf)
 Package pdftex.def Info: MNRAS2013.pdf, page6 used on input line 72.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
  [36 <./MNRAS2013.pdf>]
-<MNRAS2013.pdf, id=1152, page=7, 597.50627pt x 785.21959pt>
+<MNRAS2013.pdf, id=1144, page=7, 597.50627pt x 785.21959pt>
 File: MNRAS2013.pdf Graphic file (type pdf)
 
 <use MNRAS2013.pdf, page 7>
@@ -1524,7 +1521,7 @@ File: MNRAS2013.pdf Graphic file (type pdf)
 Package pdftex.def Info: MNRAS2013.pdf, page7 used on input line 72.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
  [37 <./MNRAS2013.pdf>]
-<MNRAS2013.pdf, id=1164, page=8, 597.50627pt x 785.21959pt>
+<MNRAS2013.pdf, id=1155, page=8, 597.50627pt x 785.21959pt>
 File: MNRAS2013.pdf Graphic file (type pdf)
 
 <use MNRAS2013.pdf, page 8>
@@ -1540,7 +1537,7 @@ File: MNRAS2013.pdf Graphic file (type pdf)
 Package pdftex.def Info: MNRAS2013.pdf, page8 used on input line 72.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
  [38 <./MNRAS2013.pdf>]
-<MNRAS2013.pdf, id=1172, page=9, 597.50627pt x 785.21959pt>
+<MNRAS2013.pdf, id=1163, page=9, 597.50627pt x 785.21959pt>
 File: MNRAS2013.pdf Graphic file (type pdf)
 
 <use MNRAS2013.pdf, page 9>
@@ -1556,7 +1553,7 @@ File: MNRAS2013.pdf Graphic file (type pdf)
 Package pdftex.def Info: MNRAS2013.pdf, page9 used on input line 72.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
  [39 <./MNRAS2013.pdf>]
-<MNRAS2013.pdf, id=1183, page=10, 597.50627pt x 785.21959pt>
+<MNRAS2013.pdf, id=1175, page=10, 597.50627pt x 785.21959pt>
 File: MNRAS2013.pdf Graphic file (type pdf)
 
 <use MNRAS2013.pdf, page 10>
@@ -1572,7 +1569,7 @@ File: MNRAS2013.pdf Graphic file (type pdf)
 Package pdftex.def Info: MNRAS2013.pdf, page10 used on input line 72.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
  [40 <./MNRAS2013.pdf>]
-<MNRAS2013.pdf, id=1191, page=11, 597.50627pt x 785.21959pt>
+<MNRAS2013.pdf, id=1183, page=11, 597.50627pt x 785.21959pt>
 File: MNRAS2013.pdf Graphic file (type pdf)
 
 <use MNRAS2013.pdf, page 11>
@@ -1654,7 +1651,7 @@ Package Fancyhdr Warning: \headheight is too small (13.0pt):
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1241, page=1, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1232, page=1, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 1>
@@ -1682,7 +1679,7 @@ Package pdftex.def Info: ApJS2016.pdf, page1 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1300, page=2, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1292, page=2, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 2>
@@ -1701,7 +1698,7 @@ Package pdftex.def Info: ApJS2016.pdf, page2 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1330, page=3, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1322, page=3, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 3>
@@ -1720,7 +1717,7 @@ Package pdftex.def Info: ApJS2016.pdf, page3 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1341, page=4, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1333, page=4, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 4>
@@ -1739,7 +1736,7 @@ Package pdftex.def Info: ApJS2016.pdf, page4 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1358, page=5, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1350, page=5, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 5>
@@ -1758,7 +1755,7 @@ Package pdftex.def Info: ApJS2016.pdf, page5 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1392, page=6, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1383, page=6, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 6>
@@ -1777,7 +1774,7 @@ Package pdftex.def Info: ApJS2016.pdf, page6 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1407, page=7, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1398, page=7, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 7>
@@ -1796,7 +1793,7 @@ Package pdftex.def Info: ApJS2016.pdf, page7 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1419, page=8, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1411, page=8, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 8>
@@ -1815,7 +1812,7 @@ Package pdftex.def Info: ApJS2016.pdf, page8 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1428, page=9, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1420, page=9, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 9>
@@ -1834,7 +1831,7 @@ Package pdftex.def Info: ApJS2016.pdf, page9 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1437, page=10, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1429, page=10, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 10>
@@ -1853,7 +1850,7 @@ Package pdftex.def Info: ApJS2016.pdf, page10 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1451, page=11, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1442, page=11, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 11>
@@ -1872,7 +1869,7 @@ Package pdftex.def Info: ApJS2016.pdf, page11 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1459, page=12, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1450, page=12, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 12>
@@ -1891,7 +1888,7 @@ Package pdftex.def Info: ApJS2016.pdf, page12 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1470, page=13, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1461, page=13, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 13>
@@ -1910,7 +1907,7 @@ Package pdftex.def Info: ApJS2016.pdf, page13 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1480, page=14, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1472, page=14, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 14>
@@ -1929,7 +1926,7 @@ Package pdftex.def Info: ApJS2016.pdf, page14 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1485, page=15, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1477, page=15, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 15>
@@ -1948,7 +1945,7 @@ Package pdftex.def Info: ApJS2016.pdf, page15 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1493, page=16, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1485, page=16, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 16>
@@ -1967,7 +1964,7 @@ Package pdftex.def Info: ApJS2016.pdf, page16 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1498, page=17, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1490, page=17, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 17>
@@ -1986,7 +1983,7 @@ Package pdftex.def Info: ApJS2016.pdf, page17 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1504, page=18, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1495, page=18, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 18>
@@ -2005,7 +2002,7 @@ Package pdftex.def Info: ApJS2016.pdf, page18 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1509, page=19, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1500, page=19, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 19>
@@ -2024,7 +2021,7 @@ Package pdftex.def Info: ApJS2016.pdf, page19 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1516, page=20, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1508, page=20, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 20>
@@ -2043,7 +2040,7 @@ Package pdftex.def Info: ApJS2016.pdf, page20 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1525, page=21, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1517, page=21, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 21>
@@ -2062,7 +2059,7 @@ Package pdftex.def Info: ApJS2016.pdf, page21 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1538, page=22, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1530, page=22, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 22>
@@ -2081,7 +2078,7 @@ Package pdftex.def Info: ApJS2016.pdf, page22 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1545, page=23, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1537, page=23, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 23>
@@ -2100,7 +2097,7 @@ Package pdftex.def Info: ApJS2016.pdf, page23 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1557, page=24, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1548, page=24, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 24>
@@ -2119,7 +2116,7 @@ Package pdftex.def Info: ApJS2016.pdf, page24 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1564, page=25, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1555, page=25, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 25>
@@ -2138,7 +2135,7 @@ Package pdftex.def Info: ApJS2016.pdf, page25 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1573, page=26, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1565, page=26, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 26>
@@ -2157,7 +2154,7 @@ Package pdftex.def Info: ApJS2016.pdf, page26 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1584, page=27, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1576, page=27, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 27>
@@ -2176,7 +2173,7 @@ Package pdftex.def Info: ApJS2016.pdf, page27 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1593, page=28, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1585, page=28, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 28>
@@ -2195,7 +2192,7 @@ Package pdftex.def Info: ApJS2016.pdf, page28 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1602, page=29, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1594, page=29, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 29>
@@ -2214,7 +2211,7 @@ Package pdftex.def Info: ApJS2016.pdf, page29 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1612, page=30, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1603, page=30, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 30>
@@ -2233,7 +2230,7 @@ Package pdftex.def Info: ApJS2016.pdf, page30 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1621, page=31, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1612, page=31, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 31>
@@ -2252,7 +2249,7 @@ Package pdftex.def Info: ApJS2016.pdf, page31 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1633, page=32, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1624, page=32, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 32>
@@ -2271,7 +2268,7 @@ Package pdftex.def Info: ApJS2016.pdf, page32 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1642, page=33, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1634, page=33, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 33>
@@ -2290,7 +2287,7 @@ Package pdftex.def Info: ApJS2016.pdf, page33 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1651, page=34, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1643, page=34, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 34>
@@ -2309,7 +2306,7 @@ Package pdftex.def Info: ApJS2016.pdf, page34 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1662, page=35, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1654, page=35, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 35>
@@ -2328,7 +2325,7 @@ Package pdftex.def Info: ApJS2016.pdf, page35 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1674, page=36, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1665, page=36, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 36>
@@ -2347,7 +2344,7 @@ Package pdftex.def Info: ApJS2016.pdf, page36 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1683, page=37, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1674, page=37, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 37>
@@ -2366,7 +2363,7 @@ Package pdftex.def Info: ApJS2016.pdf, page37 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1692, page=38, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1684, page=38, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 38>
@@ -2385,7 +2382,7 @@ Package pdftex.def Info: ApJS2016.pdf, page38 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1703, page=39, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1695, page=39, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 39>
@@ -2404,7 +2401,7 @@ Package pdftex.def Info: ApJS2016.pdf, page39 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1718, page=40, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1710, page=40, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 40>
@@ -2423,7 +2420,7 @@ Package pdftex.def Info: ApJS2016.pdf, page40 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1727, page=41, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1719, page=41, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 41>
@@ -2442,7 +2439,7 @@ Package pdftex.def Info: ApJS2016.pdf, page41 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1737, page=42, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1728, page=42, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 42>
@@ -2461,7 +2458,7 @@ Package pdftex.def Info: ApJS2016.pdf, page42 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1746, page=43, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1737, page=43, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 43>
@@ -2480,7 +2477,7 @@ Package pdftex.def Info: ApJS2016.pdf, page43 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1755, page=44, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1747, page=44, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 44>
@@ -2499,7 +2496,7 @@ Package pdftex.def Info: ApJS2016.pdf, page44 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1766, page=45, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1758, page=45, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 45>
@@ -2518,7 +2515,7 @@ Package pdftex.def Info: ApJS2016.pdf, page45 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1775, page=46, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1767, page=46, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 46>
@@ -2537,7 +2534,7 @@ Package pdftex.def Info: ApJS2016.pdf, page46 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1786, page=47, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1778, page=47, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 47>
@@ -2556,7 +2553,7 @@ Package pdftex.def Info: ApJS2016.pdf, page47 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1798, page=48, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1789, page=48, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 48>
@@ -2575,7 +2572,7 @@ Package pdftex.def Info: ApJS2016.pdf, page48 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1807, page=49, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1798, page=49, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 49>
@@ -2594,7 +2591,7 @@ Package pdftex.def Info: ApJS2016.pdf, page49 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1817, page=50, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1808, page=50, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 50>
@@ -2613,7 +2610,7 @@ Package pdftex.def Info: ApJS2016.pdf, page50 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1828, page=51, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1820, page=51, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 51>
@@ -2632,7 +2629,7 @@ Package pdftex.def Info: ApJS2016.pdf, page51 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1841, page=52, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1833, page=52, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 52>
@@ -2651,7 +2648,7 @@ Package pdftex.def Info: ApJS2016.pdf, page52 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1850, page=53, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1842, page=53, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 53>
@@ -2670,7 +2667,7 @@ Package pdftex.def Info: ApJS2016.pdf, page53 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1862, page=54, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1853, page=54, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 54>
@@ -2689,7 +2686,7 @@ Package pdftex.def Info: ApJS2016.pdf, page54 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1875, page=55, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1866, page=55, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 55>
@@ -2708,7 +2705,7 @@ Package pdftex.def Info: ApJS2016.pdf, page55 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1884, page=56, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1876, page=56, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 56>
@@ -2727,7 +2724,7 @@ Package pdftex.def Info: ApJS2016.pdf, page56 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1891, page=57, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1883, page=57, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 57>
@@ -2746,7 +2743,7 @@ Package pdftex.def Info: ApJS2016.pdf, page57 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./ApJS2016.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJS2016.pdf, id=1896, page=58, 614.295pt x 794.97pt>
+<ApJS2016.pdf, id=1888, page=58, 614.295pt x 794.97pt>
 File: ApJS2016.pdf Graphic file (type pdf)
 
 <use ApJS2016.pdf, page 58>
@@ -2851,7 +2848,7 @@ Package Fancyhdr Warning: \headheight is too small (13.0pt):
 
 pdfTeX warning: pdflatex (file ./ApJ2016a.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJ2016a.pdf, id=1958, page=1, 614.295pt x 794.97pt>
+<ApJ2016a.pdf, id=1949, page=1, 614.295pt x 794.97pt>
 File: ApJ2016a.pdf Graphic file (type pdf)
 
 <use ApJ2016a.pdf, page 1>
@@ -2879,7 +2876,7 @@ Package pdftex.def Info: ApJ2016a.pdf, page1 used on input line 71.
 
 pdfTeX warning: pdflatex (file ./ApJ2016a.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJ2016a.pdf, id=2057, page=2, 614.295pt x 794.97pt>
+<ApJ2016a.pdf, id=2049, page=2, 614.295pt x 794.97pt>
 File: ApJ2016a.pdf Graphic file (type pdf)
 
 <use ApJ2016a.pdf, page 2>
@@ -2898,7 +2895,7 @@ Package pdftex.def Info: ApJ2016a.pdf, page2 used on input line 71.
 
 pdfTeX warning: pdflatex (file ./ApJ2016a.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJ2016a.pdf, id=2065, page=3, 614.295pt x 794.97pt>
+<ApJ2016a.pdf, id=2057, page=3, 614.295pt x 794.97pt>
 File: ApJ2016a.pdf Graphic file (type pdf)
 
 <use ApJ2016a.pdf, page 3>
@@ -2917,7 +2914,7 @@ Package pdftex.def Info: ApJ2016a.pdf, page3 used on input line 71.
 
 pdfTeX warning: pdflatex (file ./ApJ2016a.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJ2016a.pdf, id=2077, page=4, 614.295pt x 794.97pt>
+<ApJ2016a.pdf, id=2069, page=4, 614.295pt x 794.97pt>
 File: ApJ2016a.pdf Graphic file (type pdf)
 
 <use ApJ2016a.pdf, page 4>
@@ -2936,7 +2933,7 @@ Package pdftex.def Info: ApJ2016a.pdf, page4 used on input line 71.
 
 pdfTeX warning: pdflatex (file ./ApJ2016a.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJ2016a.pdf, id=2091, page=5, 614.295pt x 794.97pt>
+<ApJ2016a.pdf, id=2083, page=5, 614.295pt x 794.97pt>
 File: ApJ2016a.pdf Graphic file (type pdf)
 
 <use ApJ2016a.pdf, page 5>
@@ -2955,7 +2952,7 @@ Package pdftex.def Info: ApJ2016a.pdf, page5 used on input line 71.
 
 pdfTeX warning: pdflatex (file ./ApJ2016a.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJ2016a.pdf, id=2113, page=6, 614.295pt x 794.97pt>
+<ApJ2016a.pdf, id=2104, page=6, 614.295pt x 794.97pt>
 File: ApJ2016a.pdf Graphic file (type pdf)
 
 <use ApJ2016a.pdf, page 6>
@@ -2974,7 +2971,7 @@ Package pdftex.def Info: ApJ2016a.pdf, page6 used on input line 71.
 
 pdfTeX warning: pdflatex (file ./ApJ2016a.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJ2016a.pdf, id=2126, page=7, 614.295pt x 794.97pt>
+<ApJ2016a.pdf, id=2117, page=7, 614.295pt x 794.97pt>
 File: ApJ2016a.pdf Graphic file (type pdf)
 
 <use ApJ2016a.pdf, page 7>
@@ -2993,7 +2990,7 @@ Package pdftex.def Info: ApJ2016a.pdf, page7 used on input line 71.
 
 pdfTeX warning: pdflatex (file ./ApJ2016a.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJ2016a.pdf, id=2131, page=8, 614.295pt x 794.97pt>
+<ApJ2016a.pdf, id=2123, page=8, 614.295pt x 794.97pt>
 File: ApJ2016a.pdf Graphic file (type pdf)
 
 <use ApJ2016a.pdf, page 8>
@@ -3012,7 +3009,7 @@ Package pdftex.def Info: ApJ2016a.pdf, page8 used on input line 71.
 
 pdfTeX warning: pdflatex (file ./ApJ2016a.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJ2016a.pdf, id=2144, page=9, 614.295pt x 794.97pt>
+<ApJ2016a.pdf, id=2135, page=9, 614.295pt x 794.97pt>
 File: ApJ2016a.pdf Graphic file (type pdf)
 
 <use ApJ2016a.pdf, page 9>
@@ -3031,7 +3028,7 @@ Package pdftex.def Info: ApJ2016a.pdf, page9 used on input line 71.
 
 pdfTeX warning: pdflatex (file ./ApJ2016a.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJ2016a.pdf, id=2153, page=10, 614.295pt x 794.97pt>
+<ApJ2016a.pdf, id=2145, page=10, 614.295pt x 794.97pt>
 File: ApJ2016a.pdf Graphic file (type pdf)
 
 <use ApJ2016a.pdf, page 10>
@@ -3050,7 +3047,7 @@ Package pdftex.def Info: ApJ2016a.pdf, page10 used on input line 71.
 
 pdfTeX warning: pdflatex (file ./ApJ2016a.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJ2016a.pdf, id=2158, page=11, 614.295pt x 794.97pt>
+<ApJ2016a.pdf, id=2150, page=11, 614.295pt x 794.97pt>
 File: ApJ2016a.pdf Graphic file (type pdf)
 
 <use ApJ2016a.pdf, page 11>
@@ -3069,7 +3066,7 @@ Package pdftex.def Info: ApJ2016a.pdf, page11 used on input line 71.
 
 pdfTeX warning: pdflatex (file ./ApJ2016a.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<ApJ2016a.pdf, id=2164, page=12, 614.295pt x 794.97pt>
+<ApJ2016a.pdf, id=2155, page=12, 614.295pt x 794.97pt>
 File: ApJ2016a.pdf Graphic file (type pdf)
 
 <use ApJ2016a.pdf, page 12>
@@ -3114,7 +3111,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--16
 
 [117
 
-] <ApJ2016b.pdf, id=2176, page=1, 614.295pt x 794.97pt>
+] <ApJ2016b.pdf, id=2168, page=1, 614.295pt x 794.97pt>
 File: ApJ2016b.pdf Graphic file (type pdf)
 
 <use ApJ2016b.pdf, page 1>
@@ -3139,7 +3136,7 @@ File: ApJ2016b.pdf Graphic file (type pdf)
 Package pdftex.def Info: ApJ2016b.pdf, page1 used on input line 25.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [118 <./ApJ2016b.pdf>]
-<ApJ2016b.pdf, id=2255, page=2, 614.295pt x 794.97pt>
+<ApJ2016b.pdf, id=2247, page=2, 614.295pt x 794.97pt>
 File: ApJ2016b.pdf Graphic file (type pdf)
 
 <use ApJ2016b.pdf, page 2>
@@ -3155,7 +3152,7 @@ File: ApJ2016b.pdf Graphic file (type pdf)
 Package pdftex.def Info: ApJ2016b.pdf, page2 used on input line 25.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [119 <./ApJ2016b.pdf>]
-<ApJ2016b.pdf, id=2275, page=3, 614.295pt x 794.97pt>
+<ApJ2016b.pdf, id=2267, page=3, 614.295pt x 794.97pt>
 File: ApJ2016b.pdf Graphic file (type pdf)
 
 <use ApJ2016b.pdf, page 3>
@@ -3171,7 +3168,7 @@ File: ApJ2016b.pdf Graphic file (type pdf)
 Package pdftex.def Info: ApJ2016b.pdf, page3 used on input line 25.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [120 <./ApJ2016b.pdf>]
-<ApJ2016b.pdf, id=2316, page=4, 614.295pt x 794.97pt>
+<ApJ2016b.pdf, id=2308, page=4, 614.295pt x 794.97pt>
 File: ApJ2016b.pdf Graphic file (type pdf)
 
 <use ApJ2016b.pdf, page 4>
@@ -3187,7 +3184,7 @@ File: ApJ2016b.pdf Graphic file (type pdf)
 Package pdftex.def Info: ApJ2016b.pdf, page4 used on input line 25.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [121 <./ApJ2016b.pdf>]
-<ApJ2016b.pdf, id=2327, page=5, 614.295pt x 794.97pt>
+<ApJ2016b.pdf, id=2318, page=5, 614.295pt x 794.97pt>
 File: ApJ2016b.pdf Graphic file (type pdf)
 
 <use ApJ2016b.pdf, page 5>
@@ -3203,7 +3200,7 @@ File: ApJ2016b.pdf Graphic file (type pdf)
 Package pdftex.def Info: ApJ2016b.pdf, page5 used on input line 25.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [122 <./ApJ2016b.pdf>]
-<ApJ2016b.pdf, id=2332, page=6, 614.295pt x 794.97pt>
+<ApJ2016b.pdf, id=2323, page=6, 614.295pt x 794.97pt>
 File: ApJ2016b.pdf Graphic file (type pdf)
 
 <use ApJ2016b.pdf, page 6>
@@ -3219,7 +3216,7 @@ File: ApJ2016b.pdf Graphic file (type pdf)
 Package pdftex.def Info: ApJ2016b.pdf, page6 used on input line 25.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [123 <./ApJ2016b.pdf>]
-<ApJ2016b.pdf, id=2602, page=7, 614.295pt x 794.97pt>
+<ApJ2016b.pdf, id=2594, page=7, 614.295pt x 794.97pt>
 File: ApJ2016b.pdf Graphic file (type pdf)
 
 <use ApJ2016b.pdf, page 7>
@@ -3235,7 +3232,7 @@ File: ApJ2016b.pdf Graphic file (type pdf)
 Package pdftex.def Info: ApJ2016b.pdf, page7 used on input line 25.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [124 <./ApJ2016b.pdf>]
-<ApJ2016b.pdf, id=2837, page=8, 614.295pt x 794.97pt>
+<ApJ2016b.pdf, id=2829, page=8, 614.295pt x 794.97pt>
 File: ApJ2016b.pdf Graphic file (type pdf)
 
 <use ApJ2016b.pdf, page 8>
@@ -3251,7 +3248,7 @@ File: ApJ2016b.pdf Graphic file (type pdf)
 Package pdftex.def Info: ApJ2016b.pdf, page8 used on input line 25.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [125 <./ApJ2016b.pdf>]
-<ApJ2016b.pdf, id=2862, page=9, 614.295pt x 794.97pt>
+<ApJ2016b.pdf, id=2854, page=9, 614.295pt x 794.97pt>
 File: ApJ2016b.pdf Graphic file (type pdf)
 
 <use ApJ2016b.pdf, page 9>
@@ -3267,7 +3264,7 @@ File: ApJ2016b.pdf Graphic file (type pdf)
 Package pdftex.def Info: ApJ2016b.pdf, page9 used on input line 25.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [126 <./ApJ2016b.pdf>]
-<ApJ2016b.pdf, id=2867, page=10, 614.295pt x 794.97pt>
+<ApJ2016b.pdf, id=2859, page=10, 614.295pt x 794.97pt>
 File: ApJ2016b.pdf Graphic file (type pdf)
 
 <use ApJ2016b.pdf, page 10>
@@ -3329,7 +3326,7 @@ Package Fancyhdr Warning: \headheight is too small (13.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[131] <MNRAS2015.pdf, id=2925, page=1, 597.50627pt x 785.21959pt>
+[131] <MNRAS2015.pdf, id=2917, page=1, 597.50627pt x 785.21959pt>
 File: MNRAS2015.pdf Graphic file (type pdf)
 
 <use MNRAS2015.pdf, page 1>
@@ -3354,7 +3351,7 @@ File: MNRAS2015.pdf Graphic file (type pdf)
 Package pdftex.def Info: MNRAS2015.pdf, page1 used on input line 120.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
  [132 <./MNRAS2015.pdf>]
-<MNRAS2015.pdf, id=2975, page=2, 597.50627pt x 785.21959pt>
+<MNRAS2015.pdf, id=2967, page=2, 597.50627pt x 785.21959pt>
 File: MNRAS2015.pdf Graphic file (type pdf)
 
 <use MNRAS2015.pdf, page 2>
@@ -3370,7 +3367,7 @@ File: MNRAS2015.pdf Graphic file (type pdf)
 Package pdftex.def Info: MNRAS2015.pdf, page2 used on input line 120.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
  [133 <./MNRAS2015.pdf>]
-<MNRAS2015.pdf, id=2989, page=3, 597.50627pt x 785.21959pt>
+<MNRAS2015.pdf, id=2980, page=3, 597.50627pt x 785.21959pt>
 File: MNRAS2015.pdf Graphic file (type pdf)
 
 <use MNRAS2015.pdf, page 3>
@@ -3386,7 +3383,7 @@ File: MNRAS2015.pdf Graphic file (type pdf)
 Package pdftex.def Info: MNRAS2015.pdf, page3 used on input line 120.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
  [134 <./MNRAS2015.pdf>]
-<MNRAS2015.pdf, id=3000, page=4, 597.50627pt x 785.21959pt>
+<MNRAS2015.pdf, id=2991, page=4, 597.50627pt x 785.21959pt>
 File: MNRAS2015.pdf Graphic file (type pdf)
 
 <use MNRAS2015.pdf, page 4>
@@ -3402,7 +3399,7 @@ File: MNRAS2015.pdf Graphic file (type pdf)
 Package pdftex.def Info: MNRAS2015.pdf, page4 used on input line 120.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
  [135 <./MNRAS2015.pdf>]
-<MNRAS2015.pdf, id=3011, page=5, 597.50627pt x 785.21959pt>
+<MNRAS2015.pdf, id=3003, page=5, 597.50627pt x 785.21959pt>
 File: MNRAS2015.pdf Graphic file (type pdf)
 
 <use MNRAS2015.pdf, page 5>
@@ -3418,7 +3415,7 @@ File: MNRAS2015.pdf Graphic file (type pdf)
 Package pdftex.def Info: MNRAS2015.pdf, page5 used on input line 120.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
  [136 <./MNRAS2015.pdf>]
-<MNRAS2015.pdf, id=3028, page=6, 597.50627pt x 785.21959pt>
+<MNRAS2015.pdf, id=3019, page=6, 597.50627pt x 785.21959pt>
 File: MNRAS2015.pdf Graphic file (type pdf)
 
 <use MNRAS2015.pdf, page 6>
@@ -3434,7 +3431,7 @@ File: MNRAS2015.pdf Graphic file (type pdf)
 Package pdftex.def Info: MNRAS2015.pdf, page6 used on input line 120.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
  [137 <./MNRAS2015.pdf>]
-<MNRAS2015.pdf, id=3036, page=7, 597.50627pt x 785.21959pt>
+<MNRAS2015.pdf, id=3028, page=7, 597.50627pt x 785.21959pt>
 File: MNRAS2015.pdf Graphic file (type pdf)
 
 <use MNRAS2015.pdf, page 7>
@@ -3475,7 +3472,7 @@ Package Fancyhdr Warning: \headheight is too small (13.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[140] <MNRAS2016.pdf, id=3134, page=1, 597.50627pt x 785.21959pt>
+[140] <MNRAS2016.pdf, id=3125, page=1, 597.50627pt x 785.21959pt>
 File: MNRAS2016.pdf Graphic file (type pdf)
 
 <use MNRAS2016.pdf, page 1>
@@ -3500,7 +3497,7 @@ File: MNRAS2016.pdf Graphic file (type pdf)
 Package pdftex.def Info: MNRAS2016.pdf, page1 used on input line 56.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
  [141 <./MNRAS2016.pdf>]
-<MNRAS2016.pdf, id=3177, page=2, 597.50627pt x 785.21959pt>
+<MNRAS2016.pdf, id=3169, page=2, 597.50627pt x 785.21959pt>
 File: MNRAS2016.pdf Graphic file (type pdf)
 
 <use MNRAS2016.pdf, page 2>
@@ -3516,7 +3513,7 @@ File: MNRAS2016.pdf Graphic file (type pdf)
 Package pdftex.def Info: MNRAS2016.pdf, page2 used on input line 56.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
  [142 <./MNRAS2016.pdf>]
-<MNRAS2016.pdf, id=3187, page=3, 597.50627pt x 785.21959pt>
+<MNRAS2016.pdf, id=3179, page=3, 597.50627pt x 785.21959pt>
 File: MNRAS2016.pdf Graphic file (type pdf)
 
 <use MNRAS2016.pdf, page 3>
@@ -3532,7 +3529,7 @@ File: MNRAS2016.pdf Graphic file (type pdf)
 Package pdftex.def Info: MNRAS2016.pdf, page3 used on input line 56.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
  [143 <./MNRAS2016.pdf>]
-<MNRAS2016.pdf, id=3206, page=4, 597.50627pt x 785.21959pt>
+<MNRAS2016.pdf, id=3198, page=4, 597.50627pt x 785.21959pt>
 File: MNRAS2016.pdf Graphic file (type pdf)
 
 <use MNRAS2016.pdf, page 4>
@@ -3548,7 +3545,7 @@ File: MNRAS2016.pdf Graphic file (type pdf)
 Package pdftex.def Info: MNRAS2016.pdf, page4 used on input line 56.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
  [144 <./MNRAS2016.pdf>]
-<MNRAS2016.pdf, id=3218, page=5, 597.50627pt x 785.21959pt>
+<MNRAS2016.pdf, id=3210, page=5, 597.50627pt x 785.21959pt>
 File: MNRAS2016.pdf Graphic file (type pdf)
 
 <use MNRAS2016.pdf, page 5>
@@ -3564,7 +3561,7 @@ File: MNRAS2016.pdf Graphic file (type pdf)
 Package pdftex.def Info: MNRAS2016.pdf, page5 used on input line 56.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
  [145 <./MNRAS2016.pdf>]
-<MNRAS2016.pdf, id=3227, page=6, 597.50627pt x 785.21959pt>
+<MNRAS2016.pdf, id=3218, page=6, 597.50627pt x 785.21959pt>
 File: MNRAS2016.pdf Graphic file (type pdf)
 
 <use MNRAS2016.pdf, page 6>
@@ -3580,7 +3577,7 @@ File: MNRAS2016.pdf Graphic file (type pdf)
 Package pdftex.def Info: MNRAS2016.pdf, page6 used on input line 56.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
  [146 <./MNRAS2016.pdf>]
-<MNRAS2016.pdf, id=3237, page=7, 597.50627pt x 785.21959pt>
+<MNRAS2016.pdf, id=3228, page=7, 597.50627pt x 785.21959pt>
 File: MNRAS2016.pdf Graphic file (type pdf)
 
 <use MNRAS2016.pdf, page 7>
@@ -3596,7 +3593,7 @@ File: MNRAS2016.pdf Graphic file (type pdf)
 Package pdftex.def Info: MNRAS2016.pdf, page7 used on input line 56.
 (pdftex.def)             Requested size: 605.0903pt x 795.18626pt.
  [147 <./MNRAS2016.pdf>]
-<MNRAS2016.pdf, id=3245, page=8, 597.50627pt x 785.21959pt>
+<MNRAS2016.pdf, id=3237, page=8, 597.50627pt x 785.21959pt>
 File: MNRAS2016.pdf Graphic file (type pdf)
 
 <use MNRAS2016.pdf, page 8>
@@ -3649,7 +3646,7 @@ Package Fancyhdr Warning: \headheight is too small (13.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [150]
-Underfull \hbox (badness 10000) in paragraph at lines 84--148
+Underfull \hbox (badness 10000) in paragraph at lines 84--149
 
  []
 
@@ -3664,7 +3661,7 @@ Package Fancyhdr Warning: \headheight is too small (13.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [151]
-Underfull \hbox (badness 10000) in paragraph at lines 149--159
+Underfull \hbox (badness 10000) in paragraph at lines 150--160
 
  []
 
@@ -3679,7 +3676,7 @@ Package Fancyhdr Warning: \headheight is too small (13.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [152]
-Underfull \hbox (badness 10000) in paragraph at lines 160--187
+Underfull \hbox (badness 10000) in paragraph at lines 161--188
 
  []
 
@@ -3865,9 +3862,9 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 212.
  ) 
 Here is how much of TeX's memory you used:
- 11573 strings out of 493488
- 177563 string characters out of 3141326
- 266361 words of memory out of 3000000
+ 11568 strings out of 493488
+ 177491 string characters out of 3141326
+ 265361 words of memory out of 3000000
  14153 multiletter control sequences out of 15000+200000
  31010 words of font info for 91 fonts, out of 3000000 for 9000
  958 hyphenation exceptions out of 8191
@@ -3928,10 +3925,10 @@ xlive/2012/texmf-dist/fonts/type1/public/cm-super/sfbmr8.pfb></usr/local/texliv
 e/2012/texmf-dist/fonts/type1/public/cm-super/sfbmr9.pfb></usr/local/texlive/20
 12/texmf-dist/fonts/type1/public/cm-super/sfbtl10.pfb></usr/local/texlive/2012/
 texmf-dist/fonts/type1/urw/zapfchan/uzcmi8a.pfb>
-Output written on thesis.pdf (180 pages, 16067412 bytes).
+Output written on thesis.pdf (178 pages, 16065924 bytes).
 PDF statistics:
- 4163 PDF objects out of 4296 (max. 8388607)
- 3029 compressed objects within 31 object streams
- 464 named destinations out of 1000 (max. 500000)
+ 4159 PDF objects out of 4296 (max. 8388607)
+ 3027 compressed objects within 31 object streams
+ 462 named destinations out of 1000 (max. 500000)
  782 words of extra memory for PDF output out of 10000 (max. 10000000)
 
