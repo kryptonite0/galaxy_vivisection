@@ -1,10 +1,12 @@
 \chapter{$M_{\rm BH} - L_{\rm gal}$, $M_{\rm BH} - L_{\rm sph}$ and $M_{\rm BH} - M_{\rm *,sph}$ }
 \label{ch:mm} 
 
-In Chapter \ref{ch:galviv} \citep{paperI} reliable and accurate multicomponent decompositions were presented 
-for 66 galaxies out of the 75 belonging to the initial sample. 
-These 66 galaxies constitute the final sample, 
-which is currently the largest sample to date used to investigate correlations between 
+In Chapter \ref{ch:galviv}, reliable and accurate multicomponent decompositions were presented 
+for 66 galaxies, our final sample, out of the 75 belonging to the initial sample. 
+These 66 galaxies currently constitute the largest sample to date 
+with reliable and homogeneous (i.e.~derived in a systematic and consistent manner) 
+structural decompositions 
+that can be used to investigate correlations between 
 directly measured black hole masses and host galaxy parameters. \\
 
 This Chapter is dedicated to the analysis of three black hole mass correlations: 
@@ -36,8 +38,14 @@ Four principal questions will be addressed.
 
 A robust linear regression analysis is crucial for the study of black hole mass correlations.
 In particular, more emphasis is typically given to the slope rather than the intercept of scaling relations, 
-because the slope is the parameter that theoretical models (currently) predict. 
-Several studies {\bf refs?} have pointed out inconstistencies between the values of the slope
+because the slope is the parameter that theoretical models (currently) 
+predict\footnote{However, more and more attention is being paid to the intercept of black hole mass scaling relations, 
+which plays a major role for the prediction of cosmic gravitational waves background from SMBH binary coalescence 
+(e.g.~\citealt{shannon2015,shankar2016}), 
+the derivation of the SMBH mass function and space density, 
+or the calibration of the reverberation mapping virial factor. }. 
+Several studies (e.g.~\citealt{tremaine2002,graham2007,tundo2007,graham2016review}) 
+have pointed out inconsistencies between the values of the slope
 measured by different groups for the same correlation. 
 These discrepancies can arise from the use of different galaxy samples, 
 selection biases, or the statistical techniques used to perform the linear regression analysis. \\
@@ -53,15 +61,18 @@ or if the mean square of the uncertainties associated with the independent varia
 the variance of the distribution of the independent variable \citep{tremaine2002}. 
 When any of these circumstances occur, 
 the modified {\tt FITEXY} routine and the Bayesian estimator {\tt linmix\_err} 
-perform better than the {\tt BCES} routine \citep{tremaine2002,novak2006,park2012}.
+perform better than the {\tt BCES} routine \citep{tremaine2002,novak2006,park2012}. 
 All of these three estimators take into account the intrinsic scatter of a correlation, 
-but only the FITEXY and the {\tt linmix\_err} codes allow one to measure it. \\
+but only the {\tt FITEXY} and the {\tt linmix\_err} codes allow one to measure it. 
+The interest in measuring the intrinsic scatter of black hole mass scaling relations 
+relies on the assumption that 
+the galaxy parameter associated with the smallest intrinsic residual variance 
+has the best chance of being causally correlated to the black hole mass. \\
 
-The remainder of this chapter comprises the published version of the paper 
+The remainder of this Chapter comprises the published version of the paper 
 ``Supermassive Black Holes and Their Host Spheroids. 
 II. The Red and Blue Sequence in the $M_{\rm BH} - M_{\rm *,sph}$ Diagram'' 
 by G.~A.~D.~Savorgnan et al.,  
 as it appears in Volume 817 of the \emph{The Astrophysical Journal}. 
 
-
-\includepdf[pages={1-13}]{ApJ2015b.pdf}
+\includepdf[pages={1-12}]{ApJ2016a.pdf}

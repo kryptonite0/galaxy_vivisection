@@ -1096,6 +1096,11 @@ p.~91, \mn@doi{10.1007/978-94-007-5609-0_2}
   {http://adsabs.harvard.edu/abs/2016arXiv160301276S} {} (\mn@eprint {arXiv}
   {1603.01276})
 
+\bibitem[\protect\citeauthoryear{{Shannon} et~al.,}{{Shannon}
+  et~al.}{2015}]{shannon2015}
+{Shannon} R.~M.,  et~al., 2015, \mn@doi [Science] {10.1126/science.aab1910},
+  \href {http://adsabs.harvard.edu/abs/2015Sci...349.1522S} {349, 1522}
+
 \bibitem[\protect\citeauthoryear{{Sheth} et~al.,}{{Sheth}
   et~al.}{2010}]{sheth2010}
 {Sheth} K.,  et~al., 2010, \mn@doi [\pasp] {10.1086/657638}, \href

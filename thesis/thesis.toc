@@ -1,23 +1,23 @@
 \select@language {english}
 \contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}
-\contentsline {section}{\numberline {1.1}Supermassive black holes}{4}{section.1.1}
-\contentsline {subsection}{\numberline {1.1.1}Measuring black hole masses}{5}{subsection.1.1.1}
-\contentsline {subsection}{\numberline {1.1.2}Scaling relations}{8}{subsection.1.1.2}
+\contentsline {section}{\numberline {1.1}Supermassive Black Holes}{4}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Measuring Black Hole Masses}{5}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Scaling Relations}{8}{subsection.1.1.2}
 \contentsline {subsection}{\numberline {1.1.3}Spheroid}{9}{subsection.1.1.3}
-\contentsline {subsection}{\numberline {1.1.4}Co-evolution and AGN feedback}{10}{subsection.1.1.4}
-\contentsline {subsection}{\numberline {1.1.5}The S\'ersic/core-S\'ersic paradigm}{11}{subsection.1.1.5}
-\contentsline {subsection}{\numberline {1.1.6}S\'ersic and core-S\'ersic spheroids}{13}{subsection.1.1.6}
-\contentsline {subsection}{\numberline {1.1.7}Origin of SMBHs}{15}{subsection.1.1.7}
-\contentsline {subsection}{\numberline {1.1.8}Monster black holes}{17}{subsection.1.1.8}
-\contentsline {section}{\numberline {1.2}Galaxy decomposition}{18}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Photometry and kinematics}{22}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}A compendium of the previous literature }{24}{subsection.1.2.2}
-\contentsline {section}{\numberline {1.3}Thesis outline}{25}{section.1.3}
-\contentsline {chapter}{\numberline {2}The recovery of the $M_{\rm BH} - n_{\rm sph}$ relation}{29}{chapter.2}
+\contentsline {subsection}{\numberline {1.1.4}Co-evolution and AGN Feedback}{10}{subsection.1.1.4}
+\contentsline {subsection}{\numberline {1.1.5}The S\'ersic/Core-S\'ersic Paradigm}{11}{subsection.1.1.5}
+\contentsline {subsection}{\numberline {1.1.6}S\'ersic and Core-S\'ersic Spheroids}{13}{subsection.1.1.6}
+\contentsline {subsection}{\numberline {1.1.7}Origin of Supermassive Black Holes}{15}{subsection.1.1.7}
+\contentsline {subsection}{\numberline {1.1.8}Monster Black Holes}{17}{subsection.1.1.8}
+\contentsline {section}{\numberline {1.2}Galaxy Decomposition}{18}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Photometry and Kinematics}{22}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}A Compendium of the Previous Literature }{24}{subsection.1.2.2}
+\contentsline {section}{\numberline {1.3}Thesis Outline}{25}{section.1.3}
+\contentsline {chapter}{\numberline {2}The Recovery of the $M_{\rm BH} - n_{\rm sph}$ Relation}{29}{chapter.2}
 \contentsline {chapter}{\numberline {3}Galaxy Vivisection}{43}{chapter.3}
 \contentsline {chapter}{\numberline {4}$M_{\rm BH} - L_{\rm gal}$, $M_{\rm BH} - L_{\rm sph}$ and $M_{\rm BH} - M_{\rm *,sph}$ }{103}{chapter.4}
 \contentsline {chapter}{\numberline {5}$M_{\rm BH} - n_{\rm sph}$}{117}{chapter.5}
-\contentsline {chapter}{\numberline {6}Monster black holes in Central Cluster Galaxies}{129}{chapter.6}
-\contentsline {chapter}{\numberline {7}Monster black holes in compact massive spheroids with intermediate scale discs}{139}{chapter.7}
-\contentsline {chapter}{\numberline {8}Final remarks and future perspectives}{149}{chapter.8}
+\contentsline {chapter}{\numberline {6}Monster Black Holes in Massive Galaxies}{129}{chapter.6}
+\contentsline {chapter}{\numberline {7}Monster Black Holes in (Compact) Massive Spheroids with Intermediate-Scale Discs}{139}{chapter.7}
+\contentsline {chapter}{\numberline {8}Final Remarks and Future Perspectives}{149}{chapter.8}
 \contentsline {chapter}{Bibliography}{157}{section*.5}
