@@ -26,8 +26,8 @@
 \usepackage{fancybox}
 
 \usepackage{natbib}
-\bibliographystyle{mnras}
-%\bibliographystyle{apj}
+%\bibliographystyle{mnras}
+\bibliographystyle{aasjournal}
 
 \usepackage{lscape}
 \usepackage[breaklinks]{hyperref}
@@ -79,9 +79,9 @@
 \newcommand{\ub}{\ensuremath{U\!-\!B}}%                         % U-B
 \newcommand{\vr}{\ensuremath{V\!-\!R}}%                         % V-R
 \newcommand{\ur}{\ensuremath{U\!-\!R}}%                         % U-R
+\newcommand{\nat}{Nature}%  % Nature 
 \newcommand\ion[2]{#1$\;${\scshape{#2}}}%                       % ion, i.e., CII = \ion{C}{ii}
-\newcommand\nat{\ref@jnl{Nature}}%  % Nature 
-\newcommand\physscr{\ref@jnl{Phys.~Scr}}%        % Physica Scripta 
+\newcommand{\physscr}{Phys.~Scr}%        % Physica Scripta 
 \newcommand{\ssr}{Space Science Reviews} 
 \newcommand{\physrep}{Physics Reports}
 \newcommand{\skytel}{Sky and Telescope}
@@ -158,55 +158,12 @@ last print: \today
 
 \input{conclusions.tex}
 
-%\newpage
-
-
-%\phantomsection
-%\addcontentsline{toc}{chapter}{Acknowledgements}
-%\input{acknowledgements.tex}
-
-%\appendix
-%\appendixpage
-%\addappheadtotoc
-
-%\phantomsection
-%\addcontentsline{toc}{chapter}{Errors estimates}
-%\input{errors.tex}
-
-%\input{basic_data_2m.tex}
-%\input{basic_data_1m.tex}
-
-%\newpage
-%\input{obs_data_2m.tex}
-
-%\newpage
-%\input{halpha_data_2m.tex}
-%\input{halpha_data_1m.tex}
-
-%\newpage
-%\input{atlasthesis.tex}
-
-
 \backmatter
 \cleardoublepage
 \phantomsection
 \addcontentsline{toc}{chapter}{Bibliography}
 \bibliography{SMBHbibliography}
 
-
-%\pagestyle{empty}
-%\chapter*{Atlas}
-%\label{atlante}
-%\phantomsection
-%\addcontentsline{toc}{chapter}{Atlas}
-%%\begin{center}
-%%\vspace{3.5cm}
-%%\Huge{
-%%\bf{Atlante delle Immagini \\ della Survey \haa}
-%%}
-%%\end{center}
-%\markboth{Atlas}{Atlas}
-%\input{atlasthesis.tex}
-%\cleardoublepage
+\input{publications.tex}
 
 \end{document}

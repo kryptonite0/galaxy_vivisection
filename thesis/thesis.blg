@@ -1,64 +1,62 @@
 This is BibTeX, Version 0.99d (TeX Live 2012)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
-The style file: mnras.bst
-Reallocated field_info (elt_size=4) to 11372 items from 5000.
+The style file: aasjournal.bst
+Reallocated field_info (elt_size=4) to 11580 items from 5000.
 Database file #1: SMBHbibliography.bib
-Repeated entry---line 355 of file SMBHbibliography.bib
+Repeated entry---line 359 of file SMBHbibliography.bib
  : @article{Hopkins2009
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2252 of file SMBHbibliography.bib
+Repeated entry---line 2265 of file SMBHbibliography.bib
  : @article{Khosroshahi2000
  :                         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3770 of file SMBHbibliography.bib
+Repeated entry---line 3783 of file SMBHbibliography.bib
  : @article{simiendevaucouleurs1986
  :                                 ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4781 of file SMBHbibliography.bib
+Repeated entry---line 4798 of file SMBHbibliography.bib
  : @article{andredakis1995
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4881 of file SMBHbibliography.bib
+Repeated entry---line 4898 of file SMBHbibliography.bib
  : @article{krajnovic2011
  :                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 5485 of file SMBHbibliography.bib
+Repeated entry---line 5502 of file SMBHbibliography.bib
  : @article{erwinsparke2003
  :                         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 6334 of file SMBHbibliography.bib
+Repeated entry---line 6351 of file SMBHbibliography.bib
  : @article{laurikainen2010
  :                         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 6352 of file SMBHbibliography.bib
+Repeated entry---line 6369 of file SMBHbibliography.bib
  : @article{hirschmann2010
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 6651 of file SMBHbibliography.bib
+Repeated entry---line 6668 of file SMBHbibliography.bib
  : @article{jahnkemaccio2011
  :                          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 6669 of file SMBHbibliography.bib
+Repeated entry---line 6686 of file SMBHbibliography.bib
  : @article{peng2007
  :                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 6703 of file SMBHbibliography.bib
+Repeated entry---line 6720 of file SMBHbibliography.bib
  : @article{naab2009
  :                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 9204 of file SMBHbibliography.bib
+Repeated entry---line 9207 of file SMBHbibliography.bib
  : @article{davies1983
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 9633 of file SMBHbibliography.bib
+Repeated entry---line 9622 of file SMBHbibliography.bib
  : @article{damjanov2009
  :                      ,
 I'm skipping whatever remains of this entry
-Reallocated str_pool (elt_size=1) to 130000 items from 65000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--can't use both author and editor fields in ferrarese2006book
 Warning--empty publisher in ferrarese2006book
 Warning--can't use both author and editor fields in graham2013review
@@ -67,45 +65,45 @@ Warning--empty publisher in merritt2013book
 Warning--empty publisher in press1992
 Warning--empty publisher in sersic1968
 Warning--empty publisher in thorne1994
-You've used 236 entries,
-            2881 wiz_defined-function locations,
-            2515 strings with 72113 characters,
-and the built_in function-call counts, 112025 in all, are:
-= -- 9054
-> -- 8124
-< -- 628
-+ -- 3626
-- -- 1152
-* -- 14176
-:= -- 17589
-add.period$ -- 0
-call.type$ -- 236
-change.case$ -- 472
-chr.to.int$ -- 228
-cite$ -- 244
-duplicate$ -- 5410
-empty$ -- 5463
-format.name$ -- 1920
-if$ -- 19193
+You've used 235 entries,
+            3183 wiz_defined-function locations,
+            2224 strings with 59106 characters,
+and the built_in function-call counts, 112216 in all, are:
+= -- 9293
+> -- 8092
+< -- 109
++ -- 2702
+- -- 2889
+* -- 9525
+:= -- 21182
+add.period$ -- 235
+call.type$ -- 235
+change.case$ -- 1545
+chr.to.int$ -- 227
+cite$ -- 243
+duplicate$ -- 4468
+empty$ -- 6728
+format.name$ -- 3220
+if$ -- 22287
 int.to.chr$ -- 9
 int.to.str$ -- 0
-missing$ -- 242
-newline$ -- 723
-num.names$ -- 1657
-pop$ -- 1220
+missing$ -- 226
+newline$ -- 709
+num.names$ -- 949
+pop$ -- 1677
 preamble$ -- 1
-purify$ -- 944
+purify$ -- 1545
 quote$ -- 0
-skip$ -- 3197
+skip$ -- 3758
 stack$ -- 0
-substring$ -- 6200
-swap$ -- 3070
-text.length$ -- 967
+substring$ -- 4902
+swap$ -- 97
+text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 2106
+type$ -- 2097
 warning$ -- 8
-while$ -- 1783
+while$ -- 903
 width$ -- 0
-write$ -- 2383
+write$ -- 2348
 (There were 13 error messages)
