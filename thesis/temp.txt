@@ -1,0 +1,7 @@
+forms/AuthorshipDeclaration_MNRAS2013-part1.pdf
+forms/AuthorshipDeclaration_MNRAS2013-part2.pdf
+forms/AuthorshipDeclaration_MNRAS2015.pdf
+forms/AuthorshipDeclaration_MNRAS2016.pdf
+forms/AuthorshipDeclaration_ApJS2016.pdf
+forms/AuthorshipDeclaration_ApJ2016a.pdf
+forms/AuthorshipDeclaration_ApJ2016b.pdf
