@@ -12,7 +12,7 @@ import shutil
 
 # local folders of project
 
-from reading.dataFileNames import readDataFileNames
+from reading.dataFileNames import readInitialSettings
 from reading.ellipseOutput import readEllipseOutput
 from reading.inputModel import readInputModel
 from reading.excludeData import readExcludedData
@@ -61,7 +61,7 @@ terminal = sys.stdout
 
 ########## FIT AND PLOT ################
 
-def performFitAndPlot(excludedRangeList, galaxy, axisFit, psfFunction, sampling, bestfitFig, equivalentAxisFit):
+def performFitAndPlot(excludedRangeList, galaxyName, axisFit, psfFunction, sampling, bestfitFig, equivalentAxisFit):
 
 	#build data arrays
 
@@ -94,7 +94,8 @@ def performFitAndPlot(excludedRangeList, galaxy, axisFit, psfFunction, sampling,
 	
 	# build parameters and component list (not really the best way to do it)
 
-	componentslist, params, psfwing_02pxscale_datatab, psfwing_logscale_datatab = readInputModel(inputModel, equivalentAxisFit, Settings)
+	componentslist, params, psfwing_02pxscale_datatab, psfwing_logscale_datatab = readInputModel(inputModel, 
+		equivalentAxisFit, Settings)
 	
 	# exclude data
 	
@@ -178,7 +179,9 @@ def performFitAndPlot(excludedRangeList, galaxy, axisFit, psfFunction, sampling,
 	if (Settings.performFit):
 		
 		# perform minimization (lm algorithm used)
-		fit = minimize(residual, params, args=(rrr, good_rrr, mu, good_mu, good_mu_up_err, goodIndexes, componentslist, psfFunction, Settings.fitConvolvedModel, psfwing_02pxscale_datatab, psfwing_logscale_datatab, Settings, sampling, gaussianSmoothing), method='leastsq')
+		fit = minimize(residual, params, args=(rrr, good_rrr, mu, good_mu, good_mu_up_err, goodIndexes, 
+			componentslist, psfFunction, Settings.fitConvolvedModel, psfwing_02pxscale_datatab, 
+			psfwing_logscale_datatab, Settings, sampling, gaussianSmoothing), method='leastsq')
 		# report fit
 		#printFitResult(fit, componentslist, psfFunction)
 		# calculate final result
@@ -188,7 +191,9 @@ def performFitAndPlot(excludedRangeList, galaxy, axisFit, psfFunction, sampling,
 		finalparams = params
 	
 	
-	y_finalmodel_sb, good_y_finalmodel_sb = buildModel(finalparams, componentslist, rrr, goodIndexes, psfFunction, Settings.plotConvolvedFinalModel, psfwing_02pxscale_datatab, psfwing_logscale_datatab, Settings, sampling, gaussianSmoothing)
+	y_finalmodel_sb, good_y_finalmodel_sb = buildModel(finalparams, componentslist, rrr, goodIndexes, 
+		psfFunction, Settings.plotConvolvedFinalModel, psfwing_02pxscale_datatab, 
+		psfwing_logscale_datatab, Settings, sampling, gaussianSmoothing)
 	resid = mu - y_finalmodel_sb
 	good_resid = good_mu - good_y_finalmodel_sb
 
@@ -238,33 +243,31 @@ def performFitAndPlot(excludedRangeList, galaxy, axisFit, psfFunction, sampling,
 		printFitResult(fit, componentslist, psfFunction)
 		
 		
-		produceOutputFile(Settings, galaxy, axisFit, psfFunction, sampling, componentslist, finalparams, deltarms)
+		produceOutputFile(Settings, galaxyName, axisFit, psfFunction, sampling, componentslist, finalparams, deltarms)
 		sys.stdout = terminal
 		
 #### produce figures here	
 	
-	#bestfitFig = addFitResPanels(bestfitFig, psfFunction, equivalentAxisFit, rrr, mu, good_rrr, good_mu, bad_rrr, bad_mu, maxsma_arcsec, minmu, maxmu, resid, good_resid, componentslist, finalparams, Settings, psfwing_02pxscale_datatab, psfwing_logscale_datatab, goodIndexes, skyRMS, deltarms, sampling, goodIndexes_integer, badIndexes_integer, gaussianSmoothing)
+	#bestfitFig = addFitResPanels(bestfitFig, psfFunction, equivalentAxisFit, rrr, mu, good_rrr, good_mu, 
+		#bad_rrr, bad_mu, maxsma_arcsec, minmu, maxmu, resid, good_resid, componentslist, finalparams, 
+		#Settings, psfwing_02pxscale_datatab, psfwing_logscale_datatab, goodIndexes, skyRMS, deltarms, 
+		#sampling, goodIndexes_integer, badIndexes_integer, gaussianSmoothing)
 					
 	
 ########## MAIN BODY HERE ############
 
-#samplingList = ['comb', 'log' ]
-#samplingList = ['log',  'comb']
-#samplingList = ['log' ]
-samplingList = ['comb']
-#samplingList = ['1lin', 'log']
+#samplingList = ['lin', 'log']
+samplingList = ['lin']
 
-suffixDict = {'comb' : '_combscale', '02lin' : '_linscale02px', '05lin' : '_linscale05px', 'log' : '_logscale', '1lin' : '_linscale1px', '2lin' : '_linscale2px'}
-suffixDict = {'comb' : '_combscale', '02lin' : '_linscale02px', '05lin' : '_linscale05px', 'log' : '_logscale', '1lin' : '_linscale1px', '2lin' : '_linscale2px'}
-
-psfList, gaussianSmoothing = createPsf(Settings)
+suffixDict = {'lin' : '_linscale', 'log' : '_logscale'}
 
 axisFitList = ['maj', 'eq']
 #axisFitList = ['maj']
 #axisFitList = ['eq']
 
-prefixEllipseOutput, galaxy, skyRMS = readDataFileNames('init.1dfit')
-excludedDataFileName = galaxy + '.excl'
+galaxyName, prefixEllipseOutput, skyRMS, Settings, psfFunction, gaussianSmoothing = readInitialSettings('settings.1dfit', Settings)
+
+excludedDataFileName = galaxyName + '.excl'
 excludedRangeList = readExcludedData(excludedDataFileName, Settings) # this is in pixels
 
 skyRMS = float(skyRMS)
@@ -277,17 +280,18 @@ for sampling in samplingList:
 	suffix = suffixDict[sampling]										       
 	ellipseOutput = prefixEllipseOutput + suffix + '.ell'
 	
-	for psfFunction in psfList:
+	#for psfFunction in psfList:
 	
-		for axisFit in axisFitList:	
+	for axisFit in axisFitList:	
+		
+		inputModel = galaxyName + '_' + axisFit + '.model'
+		
+		equivalentAxisFit = False
+		if (axisFit == 'eq'):
+			equivalentAxisFit = True	
 			
-			inputModel = galaxy + '_' + axisFit + '.model'
-			
-			equivalentAxisFit = False
-			if (axisFit == 'eq'):
-				equivalentAxisFit = True	
-				
-			performFitAndPlot(excludedRangeList, galaxy, axisFit, psfFunction, sampling, bestfitFig, equivalentAxisFit)					
+		performFitAndPlot(excludedRangeList, galaxyName, axisFit, psfFunction, sampling, bestfitFig, 
+			equivalentAxisFit)					
 	
 	#bestfitFig.subplots_adjust(wspace=0, hspace=0)
 	#bestfitFig.savefig(galaxy + 'bestfit_' + sampling + '.eps', format='eps', dpi=1000)

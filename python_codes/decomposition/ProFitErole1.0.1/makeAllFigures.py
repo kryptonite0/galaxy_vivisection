@@ -12,7 +12,7 @@ import shutil
 
 # local folders of project
 
-from reading.dataFileNames import readDataFileNames
+from reading.dataFileNames import readInitialSettings
 from reading.ellipseOutput import readEllipseOutput
 from reading.inputModel import readInputModel
 from reading.excludeData import readExcludedData
@@ -43,53 +43,12 @@ from instruments.plotting import *
 
 #################################################### 
 
-if (Settings.observation == 'spitzer3.6um'): 
-
-	moffatPsf = PsfFunction()
-	moffatPsf.name = 'moffat'
-	moffatPsf.moffatAlpha = (1.61467/(2*np.sqrt(2**(1/4.39)-1)) ) * Settings.pxlToArcsec  # alpha = fwhm / (2 * sqrt(2**(1/beta) - 1) )
-	moffatPsf.moffatBeta = 4.39  
-	        
-	psfList = [moffatPsf]
-	
-if (Settings.observation == 'n1271'):
-	print 'n1271'
-        gaussianPsf = PsfFunction()
-        gaussianPsf.name = 'gaussian'
-        gaussianPsf.gaussianFWHM = 2.3 * Settings.pxlToArcsec 
-        
-        psfList = [gaussianPsf]
-	
-if (Settings.observation == 'n4342'):
-	print 'n4342'
-        moffatPsf = PsfFunction()
-        moffatPsf.name = 'moffat'
-        moffatPsf.moffatAlpha = (2./(2*np.sqrt(2**(1/1.9)-1)) ) * Settings.pxlToArcsec  # alpha = fwhm / (2 * sqrt(2**(1/beta) - 1) )
-        moffatPsf.moffatBeta = 1.9  
-        
-        psfList = [moffatPsf]
-	
-if (Settings.observation == 'LEDA'):
-	print 'LEDA'
-        moffatPsf = PsfFunction()
-        moffatPsf.name = 'moffat'
-        moffatPsf.moffatAlpha = (2.69/(2*np.sqrt(2**(1/6.62)-1)) ) * Settings.pxlToArcsec  # alpha = fwhm / (2 * sqrt(2**(1/beta) - 1) )
-        moffatPsf.moffatBeta = 6.62  
-        
-        psfList = [moffatPsf]
-	
-gaussianSmoothing = PsfFunction()
-gaussianSmoothing.name = 'gaussian'
-gaussianSmoothing.gaussianFWHM = 5 * 2.3548 * Settings.pxlToArcsec 
-    
-####################################################
-
 terminal = sys.stdout
 
 
 ########## FIT AND PLOT ################
 
-def readFitAndPlot(excludedRangeList, galaxy, axisFit, psfFunction, sampling, bestfitFig, equivalentAxisFit):
+def readFitAndPlot(excludedRangeList, galaxyName, axisFit, psfFunction, sampling, bestfitFig, equivalentAxisFit):
 
     #build data arrays
     
@@ -196,10 +155,8 @@ def readFitAndPlot(excludedRangeList, galaxy, axisFit, psfFunction, sampling, be
         good_rrr = good_rrr * np.sqrt(1. - good_ellip) # semi equivalent axis	
         bad_rrr = bad_rrr * np.sqrt(1. - bad_ellip) 
         rrr = rrr * np.sqrt(1. - ellip) 
-    
-    
-    #bestFitParamsFileName = galaxy + '_' + axisFit + '_' + gaussianPsf.name + '_comb_par_SM.dat'
-    bestFitParamsFileName = galaxy + '_' + axisFit + '_' + moffatPsf.name + '_comb_par_SM.dat'
+        
+    bestFitParamsFileName = galaxyName + '_' + axisFit + '_' + psfFunction.name + '_' + sampling + '_par_SM.dat'
     
     componentslist, finalparams = readBestFitModel(bestFitParamsFileName)
     
@@ -222,17 +179,18 @@ def readFitAndPlot(excludedRangeList, galaxy, axisFit, psfFunction, sampling, be
 
 ########## MAIN BODY HERE ############
 
-samplingList = ['comb']
+#samplingList = ['lin', 'log']
+samplingList = ['lin']
 
-suffixDict = {'comb' : '_combscale', '02lin' : '_linscale02px', '05lin' : '_linscale05px', 'log' : '_logscale', '1lin' : '_linscale1px', '2lin' : '_linscale2px'}
-suffixDict = {'comb' : '_combscale', '02lin' : '_linscale02px', '05lin' : '_linscale05px', 'log' : '_logscale', '1lin' : '_linscale1px', '2lin' : '_linscale2px'}
-
-psfList, gaussianSmoothing = createPsf(Settings)
+suffixDict = {'lin' : '_linscale', 'log' : '_logscale'}
 
 axisFitList = ['maj', 'eq']
+#axisFitList = ['maj']
+#axisFitList = ['eq']
 
-prefixEllipseOutput, galaxy, skyRMS = readDataFileNames('init.1dfit')
-excludedDataFileName = galaxy + '.excl'
+galaxyName, prefixEllipseOutput, skyRMS, Settings, psfFunction, gaussianSmoothing = readInitialSettings('settings.1dfit', Settings)
+
+excludedDataFileName = galaxyName + '.excl'
 excludedRangeList = readExcludedData(excludedDataFileName, Settings) # this is in pixels
 
 skyRMS = float(skyRMS)
@@ -244,23 +202,21 @@ for sampling in samplingList:
 
     suffix = suffixDict[sampling]										       
     ellipseOutput = prefixEllipseOutput + suffix + '.ell'
-    
-    for psfFunction in psfList:
-    
-        for axisFit in axisFitList:	
+        
+    for axisFit in axisFitList:	
             
-            inputModel = galaxy + '_' + axisFit + '.model'
+    	inputModel = galaxyName + '_' + axisFit + '.model'
             
-            equivalentAxisFit = False
-            if (axisFit == 'eq'):
-                equivalentAxisFit = True	
+        equivalentAxisFit = False
+        if (axisFit == 'eq'):
+            equivalentAxisFit = True	
                 
-            readFitAndPlot(excludedRangeList, galaxy, axisFit, psfFunction, sampling, bestfitFig, equivalentAxisFit)					
+        readFitAndPlot(excludedRangeList, galaxyName, axisFit, psfFunction, sampling, bestfitFig, equivalentAxisFit)					
     
 
 
 bestfitFig.subplots_adjust(wspace=0, hspace=0)
-#bestfitFig.savefig('/Users/gsavorgnan/galaxy_vivisection/papers/data_paper/images/' + galaxy + '_1Dfit.eps', format='eps', dpi=1000)
-bestfitFig.savefig(galaxy + '_1Dfit.eps', format='eps', dpi=1000)
+#bestfitFig.savefig('/Users/gsavorgnan/galaxy_vivisection/papers/data_paper/images/' + galaxyName + '_1Dfit.eps', format='eps', dpi=1000)
+bestfitFig.savefig(galaxyName + '_1Dfit.eps', format='eps', dpi=1000)
 
 
