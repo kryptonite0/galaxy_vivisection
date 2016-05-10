@@ -103,24 +103,24 @@ def readFitAndPlot(excludedRangeList, galaxyName, axisFit, psfFunction, sampling
     goodIndexes_integer = goodIndexes
     badIndexes_integer = badIndexes		
 
-    if (sampling != 'log'):
-        if not Settings.smoothing:
-            for s in sma:
-                if not (s == int(s)):
-                    index = list(sma).index(s)
-                    if index in goodIndexes_integer:
-                        goodIndexes_integer.remove(index)
-                    elif index in badIndexes_integer:
-                        badIndexes_integer.remove(index)	
-        elif Settings.smoothing:
-            for s in sma:
-                if not (s%(int(gaussianSmoothing.gaussianFWHM / (2.35 * Settings.pxlToArcsec))) == 0):
-                    index = list(sma).index(s)
-                    if index in goodIndexes_integer:
-                        goodIndexes_integer.remove(index)
-                    elif index in badIndexes_integer:
-                        badIndexes_integer.remove(index)	
-                            
+   #if (sampling != 'log'):
+   #	if not Settings.smoothing:
+   #	    for s in sma:
+   #		if not (s == int(s)):
+   #		    index = list(sma).index(s)
+   #		    if index in goodIndexes_integer:
+   #			goodIndexes_integer.remove(index)
+   #		    elif index in badIndexes_integer:
+   #			badIndexes_integer.remove(index)	
+   #	elif Settings.smoothing:
+   #	    for s in sma:
+   #		if not (s%(int(gaussianSmoothing.gaussianFWHM / (2.35 * Settings.pxlToArcsec))) == 0):
+   #		    index = list(sma).index(s)
+   #		    if index in goodIndexes_integer:
+   #			goodIndexes_integer.remove(index)
+   #		    elif index in badIndexes_integer:
+   #			badIndexes_integer.remove(index)	
+   #			    
 
     good_rrr = np.array([])
     bad_rrr = np.array([])
@@ -173,7 +173,7 @@ def readFitAndPlot(excludedRangeList, galaxyName, axisFit, psfFunction, sampling
 
 
 #### produce figures here	
-
+    
     bestfitFig = makePaperFigure(bestfitFig, psfFunction, equivalentAxisFit, rrr, mu, good_rrr, good_mu, bad_rrr, bad_mu, maxsma_arcsec, minmu, maxmu, resid, good_resid, componentslist, finalparams, Settings, psfwing_02pxscale_datatab, psfwing_logscale_datatab, goodIndexes, skyRMS, deltarms, sampling, goodIndexes_integer, badIndexes_integer, gaussianSmoothing, datatab)
 
 

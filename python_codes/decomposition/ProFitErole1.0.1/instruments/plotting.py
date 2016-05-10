@@ -101,7 +101,7 @@ def doFitPanel(fitPanel, rrr, mu, good_rrr, good_mu, bad_rrr, bad_mu, maxsma_arc
 	if (sampling == 'log'):
 		fitPanel.plot(good_rrr, good_mu, 'ko', markersize=4)
 		fitPanel.plot(bad_rrr, bad_mu, 'wo', markersize=4)
-	elif (sampling == 'comb'):
+	elif (sampling == 'lin'):
 		good_rrr_undersampled = np.array([])
 		good_mu_undersampled = np.array([])
 		bad_rrr_undersampled = np.array([])
@@ -152,7 +152,7 @@ def doResPanel(resPanel, rrr, good_rrr, resid, good_resid, maxsma_arcsec, sampli
 	if (sampling == 'log'):
 		pylab.plot(rrr, resid, 'wo', markersize=4)
 		pylab.plot(good_rrr, good_resid, 'ko', markersize=4)
-	elif (sampling == 'comb'):
+	elif (sampling == 'lin'):
 		good_rrr_undersampled = np.array([])
 		good_resid_undersampled = np.array([])
 		bad_rrr_undersampled = np.array([])

@@ -61,6 +61,18 @@ terminal = sys.stdout
 
 ########## FIT AND PLOT ################
 
+def test_residual(params, x, data):
+    # unpack parameters:
+    #  extract .value attribute for each parameter
+    
+    a = params['slope'].value
+    b = params['intercept'].value
+    
+    model = a*x+b
+
+    return (model - data)**2
+
+
 def performFitAndPlot(excludedRangeList, galaxyName, axisFit, psfFunction, sampling, bestfitFig, equivalentAxisFit):
 
 	#build data arrays
@@ -180,8 +192,9 @@ def performFitAndPlot(excludedRangeList, galaxyName, axisFit, psfFunction, sampl
 		
 		# perform minimization (lm algorithm used)
 		fit = minimize(residual, params, args=(rrr, good_rrr, mu, good_mu, good_mu_up_err, goodIndexes, 
-			componentslist, psfFunction, Settings.fitConvolvedModel, psfwing_02pxscale_datatab, 
-			psfwing_logscale_datatab, Settings, sampling, gaussianSmoothing), method='leastsq')
+		       componentslist, psfFunction, Settings.fitConvolvedModel, psfwing_02pxscale_datatab, 
+		       psfwing_logscale_datatab, Settings, sampling, gaussianSmoothing), method='Nelder-Mead')
+		
 		# report fit
 		#printFitResult(fit, componentslist, psfFunction)
 		# calculate final result
@@ -205,7 +218,6 @@ def performFitAndPlot(excludedRangeList, galaxyName, axisFit, psfFunction, sampl
 	
 	
 			
-	#if happyOfFit and Settings.performFit:		
 	if Settings.performFit:		
 		logfile = open('1dfit.log', 'a+')
 		sys.stdout = logfile

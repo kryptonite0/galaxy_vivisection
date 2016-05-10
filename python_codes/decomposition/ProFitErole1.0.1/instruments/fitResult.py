@@ -31,24 +31,24 @@ def printFitResult(fit, componentslist, psfFunction):
 				mu_e = fit.params[namepar2].value
 				n = fit.params[namepar3].value				
 				b, m_tot = computeSersicParameters(mu_e, r_e, n) 
-				print 'R_e [arcsec] = ', ("{0:.2f}".format(r_e)), '+/-', ("{0:.2f}".format(fit.params[namepar1].stderr)), '	[initial value =', component.parameters[namepar1].value, ']'
-				print 'mu_e [mag/arcsec^2] = ', ("{0:.2f}".format(mu_e)), '+/-', ("{0:.2f}".format(fit.params[namepar2].stderr)), '	 [initial value =', component.parameters[namepar2].value, ']'
-				print 'n = ', ("{0:.2f}".format(n)), '+/-', ("{0:.2f}".format(fit.params[namepar3].stderr)), '       [initial value =', component.parameters[namepar3].value, ']'
+				print 'R_e [arcsec] = ', ("{0:.2f}".format(r_e)), '	[initial value =', component.parameters[namepar1].value, ']'
+				print 'mu_e [mag/arcsec^2] = ', ("{0:.2f}".format(mu_e)), '	 [initial value =', component.parameters[namepar2].value, ']'
+				print 'n = ', ("{0:.2f}".format(n)), '       [initial value =', component.parameters[namepar3].value, ']'
 				print 'b_n = ', ("{0:.2f}".format(b))
 				print 'm_tot [mag] = ', ("{0:.2f}".format(m_tot))
 			if (component.name == 'disc'):
 				h = fit.params[namepar1].value
 				mu_0 = fit.params[namepar2].value
 				m_tot = computeDiscParameters(mu_0, h) 
-				print 'h [arcsec] = ', ("{0:.2f}".format(h)), '+/-', ("{0:.2f}".format(fit.params[namepar1].stderr)), '       [initial value =', component.parameters[namepar1].value, ']'
-	 			print 'mu_0 [mag/arcsec^2] = ', ("{0:.2f}".format(mu_0)), '+/-', ("{0:.2f}".format(fit.params[namepar2].stderr)), '	 [initial value =', component.parameters[namepar2].value, ']'
+				print 'h [arcsec] = ', ("{0:.2f}".format(h)), '       [initial value =', component.parameters[namepar1].value, ']'
+	 			print 'mu_0 [mag/arcsec^2] = ', ("{0:.2f}".format(mu_0)), '	 [initial value =', component.parameters[namepar2].value, ']'
 				print 'm_tot [mag] = ', ("{0:.2f}".format(m_tot))
 			if (component.name == 'gaussian'):
 				fwhm = fit.params[namepar1].value
 				mu_0 = fit.params[namepar2].value
 				m_tot = computeGaussianParameters(fwhm, mu_0) 
-				print 'fwhm [arcsec] = ', ("{0:.2f}".format(fwhm)), '+/-', ("{0:.2f}".format(fit.params[namepar1].stderr)), '	 [initial value =', component.parameters[namepar1].value, ']'
-	 			print 'mu_0 [mag/arcsec^2] = ', ("{0:.2f}".format(mu_0)), '+/-', ("{0:.2f}".format(fit.params[namepar2].stderr)), '	[initial value =', component.parameters[namepar2].value, ']'
+				print 'fwhm [arcsec] = ', ("{0:.2f}".format(fwhm)), '	 [initial value =', component.parameters[namepar1].value, ']'
+	 			print 'mu_0 [mag/arcsec^2] = ', ("{0:.2f}".format(mu_0)), '	[initial value =', component.parameters[namepar2].value, ']'
 				print 'm_tot [mag] = ', ("{0:.2f}".format(m_tot))
 			if (component.name == 'psf'):
 	 			mu_0 = fit.params[namepar2].value
@@ -58,25 +58,25 @@ def printFitResult(fit, componentslist, psfFunction):
 					alpha = psfFunction.moffatAlpha
 					beta = psfFunction.moffatBeta
 					m_tot = computeMoffatParameters(alpha, beta, mu_0) 
-				print 'mu_0 [mag/arcsec^2] = ', ("{0:.2f}".format(mu_0)), '+/-', ("{0:.2f}".format(fit.params[namepar2].stderr)), '	[initial value =', component.parameters[namepar2].value, ']'
+				print 'mu_0 [mag/arcsec^2] = ', ("{0:.2f}".format(mu_0)), '	[initial value =', component.parameters[namepar2].value, ']'
 	 			print 'm_tot [mag] = ', ("{0:.2f}".format(m_tot))
 			if (component.name == 'ferrer'):
 				r_out = fit.params[namepar1].value
 				mu_0 = fit.params[namepar2].value
 				alpha = fit.params[namepar3].value
 				beta = fit.params[namepar4].value
-				print 'R_out [arcsec] = ', ("{0:.2f}".format(r_out)), '+/-', ("{0:.2f}".format(fit.params[namepar1].stderr)), '	[initial value =', component.parameters[namepar1].value, ']'
-				print 'mu_0 [mag/arcsec^2] = ', ("{0:.2f}".format(mu_0)), '+/-', ("{0:.2f}".format(fit.params[namepar2].stderr)), '	 [initial value =', component.parameters[namepar2].value, ']'
-				print 'alpha [pixel] = ', ("{0:.2f}".format(alpha)), '+/-', ("{0:.2f}".format(fit.params[namepar3].stderr)), '       [initial value =', component.parameters[namepar3].value, ']'
-				print 'beta = ', ("{0:.2f}".format(beta)), '+/-', ("{0:.2f}".format(fit.params[namepar4].stderr)), '       [initial value =', component.parameters[namepar4].value, ']'
+				print 'R_out [arcsec] = ', ("{0:.2f}".format(r_out)), '	[initial value =', component.parameters[namepar1].value, ']'
+				print 'mu_0 [mag/arcsec^2] = ', ("{0:.2f}".format(mu_0)), '	 [initial value =', component.parameters[namepar2].value, ']'
+				print 'alpha [pixel] = ', ("{0:.2f}".format(alpha)), '       [initial value =', component.parameters[namepar3].value, ']'
+				print 'beta = ', ("{0:.2f}".format(beta)), '       [initial value =', component.parameters[namepar4].value, ']'
 				print 'm_tot [mag] = -99'
 			if (component.name == 'tdisc'):
 				h = fit.params[namepar1].value
 				mu_0 = fit.params[namepar2].value
 				r_out = fit.params[namepar3].value
-				print 'h [arcsec] = ', ("{0:.2f}".format(h)), '+/-', ("{0:.2f}".format(fit.params[namepar1].stderr)), '       [initial value =', component.parameters[namepar1].value, ']'
-	 			print 'mu_0 [mag/arcsec^2] = ', ("{0:.2f}".format(mu_0)), '+/-', fit.params[namepar2].stderr, '	 [initial value =', component.parameters[namepar2].value, ']'
-				print 'R_out [arcsec] = ', ("{0:.2f}".format(r_out)), '+/-', ("{0:.2f}".format(fit.params[namepar3].stderr)), '	 [initial value =', component.parameters[namepar3].value, ']'
+				print 'h [arcsec] = ', ("{0:.2f}".format(h)), '       [initial value =', component.parameters[namepar1].value, ']'
+	 			print 'mu_0 [mag/arcsec^2] = ', ("{0:.2f}".format(mu_0)), '	 [initial value =', component.parameters[namepar2].value, ']'
+				print 'R_out [arcsec] = ', ("{0:.2f}".format(r_out)), '	 [initial value =', component.parameters[namepar3].value, ']'
 				print 'm_tot [mag] = 99'
 			if (component.name == 'tsersic'):
 				r_e = fit.params[namepar1].value
@@ -84,23 +84,23 @@ def printFitResult(fit, componentslist, psfFunction):
 				n = fit.params[namepar3].value
 				r_out = fit.params[namepar4].value
 				b, m_tot = computeSersicParameters(mu_e, r_e, n) 
-				print 'R_e [arcsec] = ', ("{0:.2f}".format(r_e)), '+/-', ("{0:.2f}".format(fit.params[namepar1].stderr)), '	[initial value =', component.parameters[namepar1].value, ']'
-				print 'mu_e [mag/arcsec^2] = ', ("{0:.2f}".format(mu_e)), '+/-', ("{0:.2f}".format(fit.params[namepar2].stderr)), '	 [initial value =', component.parameters[namepar2].value, ']'
-				print 'n = ', ("{0:.2f}".format(n)), '+/-', ("{0:.2f}".format(fit.params[namepar3].stderr)), '       [initial value =', component.parameters[namepar3].value, ']'
-				print 'R_out [arcsec] = ', ("{0:.2f}".format(r_out)), '+/-', ("{0:.2f}".format(fit.params[namepar4].stderr)), '	[initial value =', component.parameters[namepar4].value, ']'
+				print 'R_e [arcsec] = ', ("{0:.2f}".format(r_e)), '	[initial value =', component.parameters[namepar1].value, ']'
+				print 'mu_e [mag/arcsec^2] = ', ("{0:.2f}".format(mu_e)), '	 [initial value =', component.parameters[namepar2].value, ']'
+				print 'n = ', ("{0:.2f}".format(n)), '       [initial value =', component.parameters[namepar3].value, ']'
+				print 'R_out [arcsec] = ', ("{0:.2f}".format(r_out)), '	[initial value =', component.parameters[namepar4].value, ']'
 				print 'b_n = ', ("{0:.2f}".format(b))
 				print 'm_tot [mag] = 99'
 			if (component.name == 'gring'):
 				fwhm = fit.params[namepar1].value
 				mu_0 = fit.params[namepar2].value
 				r_0 = fit.params[namepar3].value
-				print 'fwhm [arcsec] = ', ("{0:.2f}".format(fwhm)), '+/-', ("{0:.2f}".format(fit.params[namepar1].stderr)), '	 [initial value =', component.parameters[namepar1].value, ']'
-	 			print 'mu_0 [mag/arcsec^2] = ', ("{0:.2f}".format(mu_0)), '+/-', ("{0:.2f}".format(fit.params[namepar2].stderr)), '	[initial value =', component.parameters[namepar2].value, ']'
-				print 'R_0 [arcsec] = ', ("{0:.2f}".format(r_0)), '+/-', ("{0:.2f}".format(fit.params[namepar3].stderr)), '	[initial value =', component.parameters[namepar3].value, ']'
+				print 'fwhm [arcsec] = ', ("{0:.2f}".format(fwhm)), '	 [initial value =', component.parameters[namepar1].value, ']'
+	 			print 'mu_0 [mag/arcsec^2] = ', ("{0:.2f}".format(mu_0)), '	[initial value =', component.parameters[namepar2].value, ']'
+				print 'R_0 [arcsec] = ', ("{0:.2f}".format(r_0)), '	[initial value =', component.parameters[namepar3].value, ']'
 				print 'm_tot [mag] = -99'
 			if (component.name == 'psfwing'):
 	 			mu_0 = fit.params[namepar2].value
-				print 'mu_0 [mag/arcsec^2] = ', ("{0:.2f}".format(mu_0)), '+/-', ("{0:.2f}".format(fit.params[namepar2].stderr)), '	[initial value =', component.parameters[namepar2].value, ']'
+				print 'mu_0 [mag/arcsec^2] = ', ("{0:.2f}".format(mu_0)), '	[initial value =', component.parameters[namepar2].value, ']'
 	 			print 'm_tot [mag] = -99'
 			print	
 	

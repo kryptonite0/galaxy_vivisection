@@ -12,6 +12,7 @@ def residual(params, x, good_x, y_meas, good_y_meas, good_y_err, goodIndexes, co
 	else:
 		#res = abs(good_y_meas-good_y_model)
 		res = (good_y_meas-good_y_model)**2
+
 	return res	
 	
 	
