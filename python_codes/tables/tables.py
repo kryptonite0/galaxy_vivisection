@@ -343,5 +343,5 @@ def make_BHFP_data_table():
 	
 #make_alister_table1()	
 #make_BHFP_data_table()	
-#make_shankar_table()
-make_richard_table()
+make_shankar_table()
+#make_richard_table()

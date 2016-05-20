@@ -1,4 +1,4 @@
-# at the moment, works well in pixels
+#!/usr/bin/python
 
 import numpy as np
 from lmfit import minimize, Parameters, report_fit
@@ -217,6 +217,12 @@ for sampling in samplingList:
 
 bestfitFig.subplots_adjust(wspace=0, hspace=0)
 #bestfitFig.savefig('/Users/gsavorgnan/galaxy_vivisection/papers/data_paper/images/' + galaxyName + '_1Dfit.eps', format='eps', dpi=1000)
-bestfitFig.savefig(galaxyName + '_1Dfit.eps', format='eps', dpi=1000)
+
+if (len(sys.argv)>1):
+	model_type = '_' + str(sys.argv[1])
+else:
+	model_type = ''	
+	
+bestfitFig.savefig(galaxyName + model_type + '_1Dfit.eps', format='eps', dpi=1000)
 
 

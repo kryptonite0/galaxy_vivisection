@@ -15,14 +15,14 @@ def readInitialSettings(txt, Settings):
     Settings.zeropoint = float((lines[4]).split()[0])
     psfType = str((lines[5]).split()[0])
     psf_par1 = Settings.pxlToArcsec*float((lines[6]).split()[0])
-    psf_par2 = float((lines[7]).split()[1])
-    smoothing = str((lines[8]).split()[0])
-    sigmaSmoothing = float((lines[9]).split()[0])
+    psf_par2 = float((lines[6]).split()[1])
+    smoothing = str((lines[7]).split()[0])
+    sigmaSmoothing = Settings.pxlToArcsec*float((lines[8]).split()[0])
         
     if smoothing == 'yes':
     	Settings.smoothing == True
 	
-    psfFunction, gaussianSmoothing = createPsf(Settings,psfType,psf_par1,psf_par2,sigmaSmoothing)
+    psfFunction, gaussianSmoothing = createPsf(psfType,psf_par1,psf_par2,sigmaSmoothing)
 
     return galaxyName, prefixEllipseOutput, skyRMS, Settings, psfFunction, gaussianSmoothing	
 	

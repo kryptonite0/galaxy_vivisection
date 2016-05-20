@@ -1,7 +1,7 @@
 from cls import PsfFunction
 import numpy as np
 
-def createPsf(Settings,psfType,psf_par1,psf_par2,sigmaSmoothing):
+def createPsf(psfType,psf_par1,psf_par2,sigmaSmoothing):
     
     psfFunction = None
     
@@ -20,10 +20,10 @@ def createPsf(Settings,psfType,psf_par1,psf_par2,sigmaSmoothing):
         
     gaussianSmoothing = PsfFunction()
     gaussianSmoothing.name = 'gaussian'
-    gaussianSmoothing.gaussianFWHM = sigmaSmoothing * 2.3548 * Settings.pxlToArcsec
-    #gaussianSmoothing.gaussianFWHM = 60 * 2.3548 * Settings.pxlToArcsec  # m31
-    #gaussianSmoothing.gaussianFWHM = 5 * 2.3548 * Settings.pxlToArcsec    # m81 n5128
-    #gaussianSmoothing.gaussianFWHM = 3 * 2.3548 * Settings.pxlToArcsec   # n4945
+    gaussianSmoothing.gaussianFWHM = sigmaSmoothing * 2.3548 
+    #gaussianSmoothing.gaussianFWHM = 60 * 2.3548  # m31
+    #gaussianSmoothing.gaussianFWHM = 5 * 2.3548     # m81 n5128
+    #gaussianSmoothing.gaussianFWHM = 3 * 2.3548    # n4945
     
     return psfFunction, gaussianSmoothing
 
