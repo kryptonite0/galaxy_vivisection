@@ -4,6 +4,7 @@ from modelComponents.sersic import computeSersicParameters
 from modelComponents.disc import computeDiscParameters
 from modelComponents.gaussian import computeGaussianParameters
 from modelComponents.moffat import computeMoffatParameters
+from modelComponents.ferrer import computeFerrerParameters
 
 ############# PRINT FIT RESULT ##############
 
@@ -65,11 +66,12 @@ def printFitResult(fit, componentslist, psfFunction):
 				mu_0 = fit.params[namepar2].value
 				alpha = fit.params[namepar3].value
 				beta = fit.params[namepar4].value
+				m_tot = computeFerrerParameters(r_out, mu_0, alpha, beta)
 				print 'R_out [arcsec] = ', ("{0:.2f}".format(r_out)), '	[initial value =', component.parameters[namepar1].value, ']'
 				print 'mu_0 [mag/arcsec^2] = ', ("{0:.2f}".format(mu_0)), '	 [initial value =', component.parameters[namepar2].value, ']'
 				print 'alpha [pixel] = ', ("{0:.2f}".format(alpha)), '       [initial value =', component.parameters[namepar3].value, ']'
 				print 'beta = ', ("{0:.2f}".format(beta)), '       [initial value =', component.parameters[namepar4].value, ']'
-				print 'm_tot [mag] = -99'
+				print 'm_tot [mag] = ', ("{0:.2f}".format(m_tot))
 			if (component.name == 'tdisc'):
 				h = fit.params[namepar1].value
 				mu_0 = fit.params[namepar2].value

@@ -43,6 +43,9 @@ def doFitPanel(fitPanel, rrr, mu, good_rrr, good_mu, bad_rrr, bad_mu, maxsma_arc
 	fitPanel.xaxis.set_minor_locator(minorLocator)
 #  	majorLocator   = MultipleLocator(xaxisMajorLocator)
 #  	fitPanel.xaxis.set_major_locator(majorLocator)
+	ticks = np.arange(0, maxsma_arcsec, 0.5)
+	fitPanel.xaxis.set_ticks(ticks)
+	fitPanel.xaxis.set_major_formatter(ticker.FormatStrFormatter('%0.1f'))
 
 	majorLocator   = MultipleLocator(2)
 	minorLocator   = MultipleLocator(1)
@@ -53,6 +56,8 @@ def doFitPanel(fitPanel, rrr, mu, good_rrr, good_mu, bad_rrr, bad_mu, maxsma_arc
 	ticks = np.arange(int(start)-1, int(end), -2)
 	fitPanel.yaxis.set_ticks(ticks)
 	fitPanel.yaxis.set_major_formatter(ticker.FormatStrFormatter('%0.0f'))
+	
+	fitPanel.tick_params(axis='both', which='major', labelsize=15)
 	
 	#xxx = np.arange(min(rrr),max(rrr),0.1)
 	xxx = rrr
@@ -134,18 +139,21 @@ def doFitPanel(fitPanel, rrr, mu, good_rrr, good_mu, bad_rrr, bad_mu, maxsma_arc
 def doResPanel(resPanel, rrr, good_rrr, resid, good_resid, maxsma_arcsec, sampling, goodIndexes_integer, badIndexes_integer):
 	
 	resPanel.set_xlim([maxsma_arcsec*(-0.1),1.1*maxsma_arcsec])
-	resPanel.set_ylim([+0.199,-0.199])
+	resPanel.set_ylim([+0.25,-0.25])
 	
 	minorLocator   = MultipleLocator(xaxisMinorLocator)
 	resPanel.xaxis.set_minor_locator(minorLocator)
 #  	majorLocator   = MultipleLocator(xaxisMajorLocator)
 #  	resPanel.xaxis.set_major_locator(majorLocator)
+	ticks = np.arange(0, maxsma_arcsec, 0.5)
+	resPanel.xaxis.set_ticks(ticks)
+	resPanel.xaxis.set_major_formatter(ticker.FormatStrFormatter('%0.1f'))
 
 	majorLocator   = MultipleLocator(0.1)
 	minorLocator   = MultipleLocator(0.02)
 	resPanel.yaxis.set_major_locator(majorLocator)
 	resPanel.yaxis.set_minor_locator(minorLocator)
-	resPanel.tick_params(axis = 'y', labelsize=10)
+	resPanel.tick_params(axis = 'y', labelsize=15)
 	
  	resPanel.hlines(0, maxsma_arcsec*(-0.1), 1.1*maxsma_arcsec, color='k', linestyles='solid', linewidth=1)
 	
@@ -220,6 +228,41 @@ def makePaperFigure(bestfitFig, psfFunction, equivalentAxisFit, rrr, mu, good_rr
 	
 	return bestfitFig
 	
+def makeSimpleFigure(bestfitFig, psfFunction, equivalentAxisFit, rrr, mu, good_rrr, good_mu, bad_rrr, bad_mu, maxsma_arcsec, minmu, maxmu, resid, good_resid, componentslist, finalparams, Settings, psfwing_02pxscale_datatab, psfwing_logscale_datatab, goodIndexes, skyRMS, deltarms, sampling, goodIndexes_integer, badIndexes_integer, gaussianSmoothing, datatab):
+	
+	initFitPanel = None
+	initResPanel = None
+	initEllPanel = None
+	
+	if not equivalentAxisFit:
+		initFitPanel = plt.subplot2grid((5,15), (0,1), rowspan=2, colspan=7)
+		initResPanel = plt.subplot2grid((5,15), (2,1), colspan=7)
+		initEllPanel = plt.subplot2grid((5,15), (3,1), colspan=7)
+		plt.setp(initFitPanel.get_xticklabels(), visible=False)
+		plt.setp(initResPanel.get_xticklabels(), visible=False)
+		initFitPanel.set_ylabel(r'$\mu$', rotation=0, fontsize=30, labelpad=20)	
+		initResPanel.set_ylabel(r'$\Delta\mu$', rotation=0, fontsize=30, labelpad=25)
+		initEllPanel.set_ylabel(r'$\epsilon$', rotation=0, fontsize=30, labelpad=20)
+		initEllPanel.set_xlabel(r'R$_{\rm maj}$ [arcsec]', fontsize=20)
+	if equivalentAxisFit:	
+		initFitPanel = plt.subplot2grid((5,15), (0,8), rowspan=2, colspan=7)
+		initResPanel = plt.subplot2grid((5,15), (2,8), colspan=7)
+		initEllPanel = plt.subplot2grid((5,15), (3,8), colspan=7)
+		plt.setp(initFitPanel.get_xticklabels(), visible=False)
+		plt.setp(initResPanel.get_xticklabels(), visible=False)
+		plt.setp(initFitPanel.get_yticklabels(), visible=False)
+		plt.setp(initResPanel.get_yticklabels(), visible=False)
+		plt.setp(initEllPanel.get_yticklabels(), visible=False)
+		initEllPanel.set_xlabel(r'R$_{\rm eq}$ [arcsec]', fontsize=20)
+			
+	fitPanel = doFitPanel(initFitPanel, rrr, mu, good_rrr, good_mu, bad_rrr, bad_mu, maxsma_arcsec, minmu, maxmu, componentslist, finalparams, Settings, psfFunction, psfwing_02pxscale_datatab, psfwing_logscale_datatab, goodIndexes, skyRMS, deltarms, sampling, goodIndexes_integer, badIndexes_integer, gaussianSmoothing, datatab)		
+	resPanel = doResPanel(initResPanel, rrr, good_rrr, resid, good_resid, maxsma_arcsec, sampling, goodIndexes_integer, badIndexes_integer)
+	ellPanel = doEllipticityPanel(initEllPanel, datatab, Settings, equivalentAxisFit, maxsma_arcsec) 
+	
+	bestfitFig.add_subplot(fitPanel, resPanel, ellPanel)
+	
+	return bestfitFig
+	
 def doEllipticityPanel(ellPanel, datatab, Settings, equivalentAxisFit, maxsma_arcsec):
 	
 	datatab = datatab[datatab['sma']>2]
@@ -231,6 +274,9 @@ def doEllipticityPanel(ellPanel, datatab, Settings, equivalentAxisFit, maxsma_ar
 	ellip = datatab['ellip']
 
 	ellPanel.set_xlim([maxsma_arcsec*(-0.1),1.1*maxsma_arcsec])
+	ticks = np.arange(0, maxsma_arcsec, 0.5)
+	ellPanel.xaxis.set_ticks(ticks)
+	ellPanel.xaxis.set_major_formatter(ticker.FormatStrFormatter('%0.1f'))
 	minorLocator   = MultipleLocator(xaxisMinorLocator)
 	ellPanel.xaxis.set_minor_locator(minorLocator)
 #  	majorLocator   = MultipleLocator(xaxisMajorLocator)
@@ -243,6 +289,7 @@ def doEllipticityPanel(ellPanel, datatab, Settings, equivalentAxisFit, maxsma_ar
 	ticks = ticks[1:]
 	ellPanel.yaxis.set_ticks(ticks)
 	ellPanel.yaxis.set_major_formatter(ticker.FormatStrFormatter('%0.2f'))
+	ellPanel.tick_params(axis='both', which='major', labelsize=15)
 	
 	return ellPanel
 		

@@ -1,6 +1,7 @@
 from convolution.psfConvolution import doPsfConvolution
 import numpy as np
 from scipy import special #.hyp2f1
+from scipy import integrate
 
 def buildFerrer(x, params, component, psfFunction, convolve, zeropoint):
 
@@ -22,6 +23,12 @@ def buildFerrer(x, params, component, psfFunction, convolve, zeropoint):
 
 def computeFerrerParameters(r_out, mu_0, alpha, beta):
 	
-	m_tot = mu_0 - 2.5 * np.log10(2 * np.pi * r_out**2 * (0.5 * special.hyp2f1(-alpha, 2/(2-beta), (-beta)/(2-beta), 1)))
+	#m_tot = mu_0 - 2.5 * np.log10(2 * np.pi * r_out**2 * (0.5 * special.hyp2f1(-alpha, 2/(2-beta), (-beta)/(2-beta), 1)))
+
+	x = np.linspace(0.0001, r_out, num=10000)
+	y = (10**(-mu_0/2.5)) * ( 1 - (x/r_out)**(2 - (beta)) )**(alpha)
+
+	y_int = np.trapz(y, x)
+	m_tot = -2.5 * np.log10(y_int)
 	
 	return m_tot
